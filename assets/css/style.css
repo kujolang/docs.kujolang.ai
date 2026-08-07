@@ -1,4 +1,7 @@
 :root {
+	--docs-font: "Departure Mono", "SFMono-Regular", "Cascadia Code", "Roboto Mono", "Liberation Mono", Menlo, Consolas, monospace;
+	--sk-font-sans: var(--docs-font);
+	--sk-font-mono: var(--docs-font);
 	--docs-page: var(--sk-surface-page);
 	--docs-panel: var(--sk-surface-card);
 	--docs-ink: var(--sk-text-primary);
@@ -6,10 +9,20 @@
 	--docs-muted: var(--sk-text-muted);
 	--docs-line: var(--sk-border-subtle);
 	--docs-strong-line: var(--sk-border-default);
-	--docs-accent: var(--sk-state-info);
+	--docs-accent: var(--sk-color-gray-700);
 	--docs-accent-soft: var(--sk-color-gray-100);
 	--docs-code: var(--sk-surface-inverse);
 	--docs-code-ink: var(--sk-text-inverse);
+	--sk-text-link: var(--sk-color-black);
+	--sk-text-danger: var(--sk-color-gray-700);
+	--sk-text-success: var(--sk-color-gray-700);
+	--sk-text-warning: var(--sk-color-gray-700);
+	--sk-action-danger: var(--sk-color-gray-700);
+	--sk-state-success: var(--sk-color-gray-700);
+	--sk-state-warning: var(--sk-color-gray-700);
+	--sk-state-danger: var(--sk-color-gray-700);
+	--sk-state-info: var(--sk-color-gray-700);
+	--sk-focus-ring: var(--sk-color-black);
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }

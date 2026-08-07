@@ -17,6 +17,25 @@ SSG_ROOT = ROOT.parent / "ssg"
 SECTIONS = ("learn", "build", "tools", "showcases", "collections", "ecosystem")
 
 
+DEPARTURE_MONO_CSS = """/* Kujo Docs typography: local Site Kit asset. */
+@font-face {
+  font-family: \"Departure Mono\";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(\"../sitekit/DepartureMono-Regular.woff2\") format(\"woff2\"),
+       url(\"../sitekit/DepartureMono-Regular.woff\") format(\"woff\");
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+button, input, textarea, select,
+code, pre, .title-font {
+  font-family: \"Departure Mono\", \"SFMono-Regular\", \"Cascadia Code\", \"Roboto Mono\", \"Liberation Mono\", Menlo, Consolas, monospace;
+}
+"""
+
+
 def run_build(content: Path, output: Path, site_url: str, *, no_index: bool, no_aux: bool) -> None:
     command = [
         "kujo",
@@ -84,6 +103,11 @@ def write_aux(output: Path, site_url: str) -> None:
     (output / "llms.txt").write_text("\n".join(llms) + "\n", encoding="utf-8")
 
 
+def write_font_css(output: Path) -> None:
+    """Point the generated font stylesheet at the vendored Site Kit font."""
+    (output / "assets" / "css" / "fonts.css").write_text(DEPARTURE_MONO_CSS, encoding="utf-8")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--site-url", default="http://127.0.0.1:4178")
@@ -122,6 +146,7 @@ def main() -> int:
     search_script = SSG_ROOT / "scripts" / "docs_search_index.py"
     subprocess.run(["python3", str(search_script), "--content", str(ROOT / "content"), "--output", str(ROOT / "assets/js/docs-search-index.json"), "--site-url", args.site_url], cwd=ROOT, check=True)
     shutil.copy2(ROOT / "assets/js/docs-search-index.json", output / "assets/js/docs-search-index.json")
+    write_font_css(output)
     write_aux(output, args.site_url)
     print(json.dumps({"output": str(output), "routes": len(routes()), "sections": list(SECTIONS)}))
     return 0
