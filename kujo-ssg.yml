@@ -1,0 +1,24 @@
+site_url: http://127.0.0.1:4178
+site_title: Kujo Docs
+site_tagline: The shortest path from language basics to reviewable, local-first software.
+
+output: output
+content: content
+templates: templates
+assets: assets
+
+blog_slug: updates
+posts_at_root: false
+posts_per_page: 12
+sort_by: order
+
+fonts: []
+
+robots: private
+llms: public
+
+watch: false
+minify: false
+download_remote_images: false
+no_index: false
+no_aux: false
