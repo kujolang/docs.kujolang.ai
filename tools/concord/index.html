@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="kujo-light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Concord | Kujo Docs</title>
+	<meta name="description" content="Find drift across code, docs, examples, specs, and generated artifacts.">
+	<meta name="keywords" content="SSG, Static Site Generator">
+	<meta name="author" content="Kujo">
+	<link rel="canonical" href="https://docs.kujolang.ai/tools/concord/">
+	<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+	<meta property="og:title" content="Concord">
+	<meta property="og:description" content="Find drift across code, docs, examples, specs, and generated artifacts.">
+	<meta property="og:url" content="https://docs.kujolang.ai/tools/concord/">
+	<meta property="og:type" content="article">
+	<meta property="og:site_name" content="Kujo Docs">
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Concord">
+	<meta name="twitter:description" content="Find drift across code, docs, examples, specs, and generated artifacts.">
+	
+	<link href="../../assets/css/fonts.css" rel="stylesheet">
+	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Concord","name":"Concord","description":"Find drift across code, docs, examples, specs, and generated artifacts.","url":"https://docs.kujolang.ai/tools/concord/","author":{"@type":"Person","name":"Unknown Author"},"publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="docs-topbar" id="navigation">
+	<div class="docs-topbar-row">
+		<a class="docs-brand" href="../../index.html"><img class="docs-brand-mark" src="../../assets/img/kujo-logomark-black.svg" alt=""> <span>Kujo Docs</span></a>
+		<button class="docs-menu-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu><span class="docs-menu-label">Menu</span><span class="docs-menu-close-icon" aria-hidden="true"></span></button>
+	</div>
+	<nav id="primary-navigation" class="docs-primary-nav" aria-label="Primary navigation">
+		<a href="/start-here/">Start here</a>
+		<a href="/learn/">Learn Kujo</a>
+		<a href="/build/">Build with Kujo</a>
+		<a href="/tools/">Tools</a>
+		<a href="/showcases/">Showcases</a>
+	</nav>
+	<label class="docs-search-shell">
+		<span class="sr-only">Search documentation</span>
+		<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
+	</label>
+</header>
+<div id="docs-search-results" class="docs-search-results" aria-live="polite"></div>
+<main class="docs-shell" id="main-content">
+	<aside class="docs-sidebar" aria-label="Documentation sections">
+		<p class="docs-sidebar-label">Browse</p>
+		<ul>
+			<li><a href="/start-here/">Start here</a></li>
+			<li><a href="/install/">Install Kujo</a></li>
+			<li><a href="/quickstart/">Quickstart</a></li>
+			<li><a href="/choose-a-path/">Choose a path</a></li>
+			<li><a href="/learn/">Learn Kujo</a></li>
+			<li><a href="/build/">Build with Kujo</a></li>
+			<li><a href="/review/">Reviewable work</a></li>
+			<li><a href="/tools/">Tools</a></li>
+			<li><a href="/showcases/">Showcases</a></li>
+			<li><a href="/collections/">Collections</a></li>
+			<li><a href="/ecosystem/">Ecosystem</a></li>
+			<li><a href="/reference/">Reference</a></li>
+			<li><a href="/security/">Security model</a></li>
+			<li><a href="/release-boundaries/">Release boundaries</a></li>
+			<li><a href="/support/">Support</a></li>
+		</ul>
+	</aside>
+	<article class="docs-article">
+		<p class="docs-eyebrow">Tools</p><h1>Concord</h1><p class="docs-description">Find drift across code, docs, examples, specs, and generated artifacts.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Tools</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span></div>
+		<div class="docs-body"><h2>Use it when…</h2>
+<p>The same contract appears in code, docs, examples, specs, or generated files and you want to know whether the surfaces still agree.</p>
+<h2>Interface overview</h2>
+<table><thead><tr>
+<th>Surface</th>
+<th>What is available</th>
+</tr></thead><tbody>
+<tr>
+<td>Scan</td>
+<td><code>scan</code> across the current or selected project directory</td>
+</tr>
+<tr>
+<td>Focused checks</td>
+<td><code>check &lt;rule&gt;</code> for CLI/docs and other known agreement contracts</td>
+</tr>
+<tr>
+<td>Outputs</td>
+<td>Markdown, JSON, output files, and actionable task lists</td>
+</tr>
+<tr>
+<td>Drift classes</td>
+<td>CLI/docs, Spec/Eval, manifest/docs, versions, examples, and generated artifacts</td>
+</tr>
+</tbody></table>
+<h2>Main workflows</h2>
+<ul>
+<li>Scan before release to find duplicated facts that no longer agree.</li>
+<li>Run a named check while iterating on one contract, such as CLI documentation.</li>
+<li>Export JSON into CI or write a Markdown report for maintainers.</li>
+<li>Generate tasks from findings while keeping the repository’s declared source of truth explicit.</li>
+</ul>
+<h2>Five-minute example</h2>
+<pre><code class="language-bash">kujo run concord.kujo -- scan --format json
+kujo run concord.kujo -- tasks</code></pre>
+<h2>What you get</h2>
+<p>Drift findings, task lists, and a report that points to the source-of-truth mismatch.</p>
+<h2>How it fits</h2>
+<p>Run after <a href="/tools/eval/">Eval</a> and before <a href="/tools/shipcheck/">ShipCheck</a>.</p>
+<h2>Boundaries</h2>
+<p>Preview/dogfood wording remains visible while the ecosystem continues to stabilize.</p>
+<h2>Reference</h2>
+<p>See the <a href="https://github.com/kujolang/concord">Concord repository</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/patchbrief/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/shipcheck/" rel="next"><span>Next</span></a></nav>
+	</article>
+	<nav class="docs-toc" aria-label="On this page"><h2>On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+</main>
+
+<footer class="docs-footer" id="footer">
+	<div><strong>Kujo Docs v1.0.0</strong><span>Local-first language and ecosystem guidance.</span></div>
+	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
+</footer>
+<script src="../../assets/sitekit/sitekit.js"></script>
+<script src="../../assets/js/docs.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="kujo-light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CMS | Kujo Docs</title>
+	<meta name="description" content="A server-first content system with models, delivery routes, auth boundaries, jobs, and operational checks.">
+	<meta name="keywords" content="SSG, Static Site Generator">
+	<meta name="author" content="Kujo">
+	<link rel="canonical" href="https://docs.kujolang.ai/showcases/cms/">
+	<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+	<meta property="og:title" content="CMS">
+	<meta property="og:description" content="A server-first content system with models, delivery routes, auth boundaries, jobs, and operational checks.">
+	<meta property="og:url" content="https://docs.kujolang.ai/showcases/cms/">
+	<meta property="og:type" content="article">
+	<meta property="og:site_name" content="Kujo Docs">
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="CMS">
+	<meta name="twitter:description" content="A server-first content system with models, delivery routes, auth boundaries, jobs, and operational checks.">
+	
+	<link href="../../assets/css/fonts.css" rel="stylesheet">
+	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"CMS","name":"CMS","description":"A server-first content system with models, delivery routes, auth boundaries, jobs, and operational checks.","url":"https://docs.kujolang.ai/showcases/cms/","author":{"@type":"Person","name":"Unknown Author"},"publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="docs-topbar" id="navigation">
+	<div class="docs-topbar-row">
+		<a class="docs-brand" href="../../index.html"><img class="docs-brand-mark" src="../../assets/img/kujo-logomark-black.svg" alt=""> <span>Kujo Docs</span></a>
+		<button class="docs-menu-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu><span class="docs-menu-label">Menu</span><span class="docs-menu-close-icon" aria-hidden="true"></span></button>
+	</div>
+	<nav id="primary-navigation" class="docs-primary-nav" aria-label="Primary navigation">
+		<a href="/start-here/">Start here</a>
+		<a href="/learn/">Learn Kujo</a>
+		<a href="/build/">Build with Kujo</a>
+		<a href="/tools/">Tools</a>
+		<a href="/showcases/">Showcases</a>
+	</nav>
+	<label class="docs-search-shell">
+		<span class="sr-only">Search documentation</span>
+		<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
+	</label>
+</header>
+<div id="docs-search-results" class="docs-search-results" aria-live="polite"></div>
+<main class="docs-shell" id="main-content">
+	<aside class="docs-sidebar" aria-label="Documentation sections">
+		<p class="docs-sidebar-label">Browse</p>
+		<ul>
+			<li><a href="/start-here/">Start here</a></li>
+			<li><a href="/install/">Install Kujo</a></li>
+			<li><a href="/quickstart/">Quickstart</a></li>
+			<li><a href="/choose-a-path/">Choose a path</a></li>
+			<li><a href="/learn/">Learn Kujo</a></li>
+			<li><a href="/build/">Build with Kujo</a></li>
+			<li><a href="/review/">Reviewable work</a></li>
+			<li><a href="/tools/">Tools</a></li>
+			<li><a href="/showcases/">Showcases</a></li>
+			<li><a href="/collections/">Collections</a></li>
+			<li><a href="/ecosystem/">Ecosystem</a></li>
+			<li><a href="/reference/">Reference</a></li>
+			<li><a href="/security/">Security model</a></li>
+			<li><a href="/release-boundaries/">Release boundaries</a></li>
+			<li><a href="/support/">Support</a></li>
+		</ul>
+	</aside>
+	<article class="docs-article">
+		<p class="docs-eyebrow">Showcases</p><h1>CMS</h1><p class="docs-description">A server-first content system with models, delivery routes, auth boundaries, jobs, and operational checks.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Showcases</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span></div>
+		<div class="docs-body"><h2>Use it when…</h2>
+<p>You want to see a server-first content application with explicit content models and delivery boundaries.</p>
+<h2>Interface overview</h2>
+<table><thead><tr>
+<th>Surface</th>
+<th>What is available</th>
+</tr></thead><tbody>
+<tr>
+<td>Runtime</td>
+<td><code>backend/runtime/main.kujo</code>; no separate CMS CLI wrapper</td>
+</tr>
+<tr>
+<td>Content API</td>
+<td>Types, taxonomies, entries, media, menus, plugins, themes, tenants, and workspaces</td>
+</tr>
+<tr>
+<td>Discovery</td>
+<td><code>/health</code>, <code>/v1</code>, <code>/v1/contract</code>, <code>/v1/openapi.json</code>, feeds, sitemap, robots, and <code>llms.txt</code></td>
+</tr>
+<tr>
+<td>Operations</td>
+<td>Auth-gated writes, rate limits, idempotency, jobs, webhooks, migrations, backup, and restore</td>
+</tr>
+</tbody></table>
+<h2>Main workflows</h2>
+<ul>
+<li>Start the API on its default local boundary and inspect the contract or OpenAPI route.</li>
+<li>Model content and deliver only published entries anonymously; protect drafts and mutations with bearer auth.</li>
+<li>Process webhook and background-job outboxes, including dead-letter replay.</li>
+<li>Run contract, startup, security, integration, and release-gate checks before deployment.</li>
+</ul>
+<h2>Five-minute example</h2>
+<pre><code class="language-bash">kujo run backend/runtime/main.kujo
+curl http://127.0.0.1:4200/v1/openapi.json</code></pre>
+<h2>What you get</h2>
+<p>Content models, delivery routes, auth boundaries, background jobs, migrations, and operational checks.</p>
+<h2>How it fits</h2>
+<p>Compare with <a href="/showcases/crud-api/">CRUD API</a> for a smaller API pattern and <a href="/showcases/ssg/">SSG</a> for deterministic publishing.</p>
+<h2>Boundaries</h2>
+<p>This is a local showcase. Hosted operations, identity, backups, and deployment require separate proof.</p>
+<h2>Reference</h2>
+<p>See the <a href="https://github.com/kujolang/cms">CMS repository</a> for route contracts and operational scripts.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/showcases/crud-api/" rel="next"><span>Next</span></a></nav>
+	</article>
+	<nav class="docs-toc" aria-label="On this page"><h2>On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+</main>
+
+<footer class="docs-footer" id="footer">
+	<div><strong>Kujo Docs v1.0.0</strong><span>Local-first language and ecosystem guidance.</span></div>
+	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
+</footer>
+<script src="../../assets/sitekit/sitekit.js"></script>
+<script src="../../assets/js/docs.js"></script>
+</body>
+</html>

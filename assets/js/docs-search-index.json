@@ -1,0 +1,1277 @@
+{
+  "schema_version": "kujo-docs-search/v1",
+  "items": [
+    {
+      "title": "AI and agents",
+      "description": "Move from a normalized model call to tools, approvals, handoffs, and local state.",
+      "url": "https://docs.kujolang.ai/build/ai-and-agents/",
+      "route": "build/ai-and-agents/",
+      "section": "Build with Kujo",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "launch scope",
+      "version": "current",
+      "tags": [
+        "[ai, agents, build]"
+      ],
+      "headings": [],
+      "text": "Lead with increasing responsibility: 1. AI SDK /tools/ai-sdk/ for normalized chat and embedding contracts. 2. Agents SDK /tools/agents-sdk/ for tools, approvals, handoffs, stores, and tracing. 3. Dispatch /tools/dispatch/ for resumable, auditable workflows. 4. Watchdog /tools/watchdog/ for local request, cost, latency, error, and audit visibility. Begin with"
+    },
+    {
+      "title": "Applications and publishing",
+      "description": "Choose a copyable application surface for chat, APIs, content, or deterministic static publishing.",
+      "url": "https://docs.kujolang.ai/build/applications-and-publishing/",
+      "route": "build/applications-and-publishing/",
+      "section": "Build with Kujo",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "showcase",
+      "version": "current",
+      "tags": [
+        "[applications, publishing, showcases]"
+      ],
+      "headings": [],
+      "text": "- AI Chat /showcases/ai-chat/ demonstrates a local multi-provider application. - CRUD API /showcases/crud-api/ demonstrates SQLite APIs, auth strategies, and a frontend playground. - CMS /showcases/cms/ demonstrates a server-first content system. - SSG /showcases/ssg/ demonstrates deterministic static publishing and documentation sites. - TotalRecall /showca"
+    },
+    {
+      "title": "Knowledge and retrieval",
+      "description": "Ingest local knowledge and answer with namespaces, citations, and offline fallbacks.",
+      "url": "https://docs.kujolang.ai/build/knowledge-and-retrieval/",
+      "route": "build/knowledge-and-retrieval/",
+      "section": "Build with Kujo",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "launch scope",
+      "version": "current",
+      "tags": [
+        "[knowledge, rag, citations]"
+      ],
+      "headings": [],
+      "text": "Use RAG /tools/rag/ when a workflow needs local ingestion, namespace isolation, citations, or offline fixture behavior. Keep the source documents, parser choices, chunking strategy, and retrieval result visible. The local-first boundary matters: this is a retrieval starter, not a hosted search service. Provider or deployment choices belong to the integrator."
+    },
+    {
+      "title": "Workflows and approvals",
+      "description": "Turn a sequence of steps into bounded, resumable, and auditable work.",
+      "url": "https://docs.kujolang.ai/build/workflows-and-approvals/",
+      "route": "build/workflows-and-approvals/",
+      "section": "Build with Kujo",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "launch scope",
+      "version": "current",
+      "tags": [
+        "[workflows, approvals, dispatch]"
+      ],
+      "headings": [],
+      "text": "Define the request with Spec /tools/spec/ , focus context with Scent /tools/scent/ , prepare execution with PackWrite /tools/packwrite/ , then use Dispatch /tools/dispatch/ for resumable steps and approvals. Leave the workflow receipt beside the run. It should be possible to see what was requested, what was allowed, what ran, and what remains."
+    },
+    {
+      "title": "Agents",
+      "description": "Reusable role contracts, chain of command, and evidence expectations.",
+      "url": "https://docs.kujolang.ai/collections/agents/",
+      "route": "collections/agents/",
+      "section": "Collections",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[collection, agents, roles]"
+      ],
+      "headings": [],
+      "text": "Agent roles should carry a clear objective, boundary, handoff format, and evidence expectation. Use them with Spec /tools/spec/ and Scent /tools/scent/ rather than treating a role prompt as a complete workflow."
+    },
+    {
+      "title": "Benchmarks",
+      "description": "Benchmark methodology, fixtures, scorecards, and reproducibility limits.",
+      "url": "https://docs.kujolang.ai/collections/benchmarks/",
+      "route": "collections/benchmarks/",
+      "section": "Collections",
+      "audience": "developer",
+      "difficulty": "advanced",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[collection, benchmarks, evaluation]"
+      ],
+      "headings": [],
+      "text": "Benchmarks are only useful when the fixture, environment, scoring rule, and limitation are visible. Record the run and compare like with like. Benchmark scores are evidence for the measured setup, not universal performance claims."
+    },
+    {
+      "title": "Skills",
+      "description": "Install, select, and validate Kujo-specific Agent Skills.",
+      "url": "https://docs.kujolang.ai/collections/skills/",
+      "route": "collections/skills/",
+      "section": "Collections",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[collection, skills, agents]"
+      ],
+      "headings": [],
+      "text": "Use the skill catalog to select a focused operating contract for a task. Read the skill instructions, follow their required evidence, and keep the selected skill's scope visible in the handoff. The collection is guidance and workflow glue; it is not a hosted agent marketplace."
+    },
+    {
+      "title": "Workflows",
+      "description": "Browse runnable workflow packs and the artifact each workflow leaves behind.",
+      "url": "https://docs.kujolang.ai/collections/workflows/",
+      "route": "collections/workflows/",
+      "section": "Collections",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[collection, workflows, receipts]"
+      ],
+      "headings": [],
+      "text": "Workflows connect a task contract to execution and evidence. Each pack should say what it consumes, what it runs, and where the receipt lives. Use Dispatch /tools/dispatch/ for resumable workflow primitives and RunLedger /tools/runledger/ for a run receipt."
+    },
+    {
+      "title": "Core / Foundation",
+      "description": "The Kujo language/runtime and Kennel package foundation.",
+      "url": "https://docs.kujolang.ai/ecosystem/core-foundation/",
+      "route": "ecosystem/core-foundation/",
+      "section": "Ecosystem",
+      "audience": "all",
+      "difficulty": "beginner",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[ecosystem, foundation]"
+      ],
+      "headings": [],
+      "text": "The foundation contains two repositories: - Kujo /tools/kujo/ \u2014 the language, VM-first runtime, CLI, standard library, and local project workflow. - Kennel /tools/kennel/ \u2014 deterministic manifests, dependencies, lockfiles, source policy, and trust policy. Both have Docker-backed Workcell proof at their audited commits. Public release artifacts and hosted pac"
+    },
+    {
+      "title": "Primitives",
+      "description": "Twelve reusable contracts for agents, evaluation, retrieval, orchestration, boundaries, and supervision.",
+      "url": "https://docs.kujolang.ai/ecosystem/primitives/",
+      "route": "ecosystem/primitives/",
+      "section": "Ecosystem",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[ecosystem, primitives]"
+      ],
+      "headings": [],
+      "text": "The twelve primitives are: - Spec /tools/spec/ \u2014 task contracts and acceptance criteria. - Eval /tools/eval/ \u2014 deterministic evaluation and acceptance verification. - Scout /tools/scout/ \u2014 repository intelligence and structured context maps. - Dispatch /tools/dispatch/ \u2014 resumable workflow orchestration and handoffs. - MCP /tools/mcp/ \u2014 guarded tool and reso"
+    },
+    {
+      "title": "Showcases",
+      "description": "Five proof applications demonstrating complete local workflows.",
+      "url": "https://docs.kujolang.ai/ecosystem/showcases/",
+      "route": "ecosystem/showcases/",
+      "section": "Ecosystem",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[ecosystem, showcases]"
+      ],
+      "headings": [],
+      "text": "The five showcases are: - CMS /showcases/cms/ \u2014 server-first content models, delivery, auth, jobs, and operations. - CRUD API Showcase /showcases/crud-api/ \u2014 SQLite CRUD contracts, auth strategies, concurrency, and a frontend playground. - AI Chat /showcases/ai-chat/ \u2014 local multi-provider chat, streaming, transcription, and durable conversations. - SSG /sho"
+    },
+    {
+      "title": "Tooling",
+      "description": "Eleven supporting tools for execution, evidence, review, release gates, browser QA, security, and launch artifacts.",
+      "url": "https://docs.kujolang.ai/ecosystem/tooling/",
+      "route": "ecosystem/tooling/",
+      "section": "Ecosystem",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[ecosystem, tooling]"
+      ],
+      "headings": [],
+      "text": "The eleven supporting tools are: - Muzzle /tools/muzzle/ \u2014 quiet execution with complete logs. - RunLedger /tools/runledger/ \u2014 run receipts, usage, verdicts, and follow-ups. - ChangeBucket /tools/changebucket/ \u2014 change footprint and blast-radius reports. - PatchBrief /tools/patchbrief/ \u2014 diff summaries and reviewer handoffs. - Concord /tools/concord/ \u2014 artif"
+    },
+    {
+      "title": "AI runtime basics",
+      "description": "See the shared controls for provider calls, replay, budgets, secrets, and egress.",
+      "url": "https://docs.kujolang.ai/learn/ai-runtime/",
+      "route": "learn/ai-runtime/",
+      "section": "Learn Kujo",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "launch scope",
+      "version": "current",
+      "tags": [
+        "[ai, runtime, budgets, secrets]"
+      ],
+      "headings": [
+        "Boundary"
+      ],
+      "text": "The AI runtime story is about controlled calls rather than a single provider: normalize the contract, bound spend and time, keep secrets out of source, and make replay or fixture mode possible. Start with the AI SDK /tools/ai-sdk/ for provider-gated chat or embeddings, then move to Agents SDK /tools/agents-sdk/ when tools, approvals, handoffs, or state enter"
+    },
+    {
+      "title": "Capabilities and safe execution",
+      "description": "Grant only the filesystem, clock, network, or process access a local task actually needs.",
+      "url": "https://docs.kujolang.ai/learn/capabilities/",
+      "route": "learn/capabilities/",
+      "section": "Learn Kujo",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "stable",
+      "version": "current",
+      "tags": [
+        "[security, capabilities, safe-execution]"
+      ],
+      "headings": [],
+      "text": "Trusted mode is convenient for local development. Untrusted mode makes host effects explicit and is useful when a workflow needs a visible boundary. Add --allow-net-client for deliberate network access and process capabilities only when the task requires them. Keep credentials in the runtime's secret path; do not put them in source, fixtures, or evidence bun"
+    },
+    {
+      "title": "Editor and CLI support",
+      "description": "Use the CLI, LSP, and editor adapters to keep feedback close to the file you are editing.",
+      "url": "https://docs.kujolang.ai/learn/editor-support/",
+      "route": "learn/editor-support/",
+      "section": "Learn Kujo",
+      "audience": "developer",
+      "difficulty": "beginner",
+      "status": "launch scope",
+      "version": "current",
+      "tags": [
+        "[editor, lsp, cli]"
+      ],
+      "headings": [],
+      "text": "The CLI is the compatibility baseline. LSP and editor adapters add completion, definition, references, hover, diagnostics, rename, and code actions where the adapter is available. Keep the command loop close to the file: When an editor integration behaves differently from the CLI, reproduce the issue with the CLI first and capture the exact version and comma"
+    },
+    {
+      "title": "Language basics",
+      "description": "Learn the small set of Kujo syntax and program shapes needed to read a real file.",
+      "url": "https://docs.kujolang.ai/learn/language-basics/",
+      "route": "learn/language-basics/",
+      "section": "Learn Kujo",
+      "audience": "beginner",
+      "difficulty": "beginner",
+      "status": "stable",
+      "version": "current",
+      "tags": [
+        "[language, syntax, beginner]"
+      ],
+      "headings": [
+        "A small program",
+        "Practice loop"
+      ],
+      "text": "Kujo files are plain text and are meant to stay readable in review. Start with values, bindings, functions, modules, and explicit errors. A small program Practice loop When you need exact syntax or builtin behavior, move to Reference /reference/ after understanding the intent of the program."
+    },
+    {
+      "title": "Packages with Kennel",
+      "description": "Keep manifests, lockfiles, source policy, and trust decisions deterministic.",
+      "url": "https://docs.kujolang.ai/learn/packages/",
+      "route": "learn/packages/",
+      "section": "Learn Kujo",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "stable",
+      "version": "current",
+      "tags": [
+        "[packages, kennel, lockfiles]"
+      ],
+      "headings": [],
+      "text": "kujo.toml describes a project and kujo.lock records the resolved dependency graph. Kennel keeps package indexes, file dependencies, trust policy, and source policy visible. Use the frozen path in verification when the lockfile is part of the contract. Start with Kennel /tools/kennel/ when you need registry or dependency behavior details."
+    },
+    {
+      "title": "How the runtime works",
+      "description": "Understand the VM-first execution path, interpreter fallback, and the role of the CLI.",
+      "url": "https://docs.kujolang.ai/learn/runtime/",
+      "route": "learn/runtime/",
+      "section": "Learn Kujo",
+      "audience": "developer",
+      "difficulty": "beginner",
+      "status": "stable",
+      "version": "current",
+      "tags": [
+        "[runtime, vm, interpreter]"
+      ],
+      "headings": [],
+      "text": "The normal path is the VM. It keeps the command developers use in production-like checks aligned with the command they use while learning. Use the interpreter when a compatibility or debugging workflow calls for it: The CLI also owns project initialization, checks, formatting, linting, packages, DocGen, and serving static output. That common surface is why t"
+    },
+    {
+      "title": "Choose a path",
+      "description": "Start with an intent and one small next step instead of browsing the whole ecosystem.",
+      "url": "https://docs.kujolang.ai/choose-a-path/",
+      "route": "choose-a-path/",
+      "section": "Start here",
+      "audience": "all",
+      "difficulty": "beginner",
+      "status": "stable",
+      "version": "current",
+      "tags": [
+        "[orientation, ecosystem]"
+      ],
+      "headings": [],
+      "text": "| If you want to\u2026 | Start with\u2026 | | --- | --- | | Learn the language | Learn Kujo /learn/ , Reference /reference/ , and Kennel /tools/kennel/ | | Call models or build agents | AI SDK /tools/ai-sdk/ , Agents SDK /tools/agents-sdk/ , and AI Chat /showcases/ai-chat/ | | Turn requests into bounded work | Spec /tools/spec/ , Scent /tools/scent/ , PackWrite /tools"
+    },
+    {
+      "title": "Install Kujo",
+      "description": "Build or install the CLI, add it to PATH, and verify the local toolchain.",
+      "url": "https://docs.kujolang.ai/install/",
+      "route": "install/",
+      "section": "Start here",
+      "audience": "developer",
+      "difficulty": "beginner",
+      "status": "release-candidate onboarding",
+      "version": "current",
+      "tags": [
+        "[install, cli, release-candidate]"
+      ],
+      "headings": [
+        "Source install",
+        "Optional ecosystem install",
+        "Verify",
+        "Troubleshooting"
+      ],
+      "text": "The final public artifact status is still a visible boundary in this launch draft. Until release binaries, checksums, and a clean-machine download smoke are complete, use the source-backed release-candidate path. Source install Optional ecosystem install The installer can place the CLI and selected ecosystem profiles in your local user directory. It is inten"
+    },
+    {
+      "title": "Quickstart",
+      "description": "Create one Kujo file, run it with the VM-first runtime, and check the source.",
+      "url": "https://docs.kujolang.ai/quickstart/",
+      "route": "quickstart/",
+      "section": "Start here",
+      "audience": "beginner",
+      "difficulty": "beginner",
+      "status": "stable",
+      "version": "current",
+      "tags": [
+        "[quickstart, cli, runtime]"
+      ],
+      "headings": [
+        "Create `hello.kujo`",
+        "Run and check it",
+        "Create a project",
+        "Next step"
+      ],
+      "text": "Make the smallest useful Kujo program before opening the ecosystem directory. Create hello.kujo Run and check it kujo run uses the VM-first runtime. The interpreter is available when you need a compatibility or debugging path: Create a project The generated project gives you kujo.toml and src/main.kujo; keep kujo check, kujo format, and kujo lint in the edit"
+    },
+    {
+      "title": "Reference",
+      "description": "Find CLI, language, standard-library, configuration, and generated source reference surfaces.",
+      "url": "https://docs.kujolang.ai/reference/",
+      "route": "reference/",
+      "section": "Reference",
+      "audience": "developer",
+      "difficulty": "reference",
+      "status": "generated-ready",
+      "version": "current",
+      "tags": [
+        "[reference, cli, generated]"
+      ],
+      "headings": [
+        "Core surfaces",
+        "Generate source reference"
+      ],
+      "text": "Reference material is deliberately secondary to the first-time path. Use it when you know the concept or symbol you need to look up. Core surfaces - CLI reference: kujo --help, kujo doctor --json, and command-specific help. - Language specification: source-backed syntax, values, functions, modules, and errors. - Standard library: the stable library and built"
+    },
+    {
+      "title": "Release boundaries",
+      "description": "Read the difference between release-ready within scope, preview, dogfood, and technical showcase.",
+      "url": "https://docs.kujolang.ai/release-boundaries/",
+      "route": "release-boundaries/",
+      "section": "Reference",
+      "audience": "all",
+      "difficulty": "beginner",
+      "status": "stable",
+      "version": "current",
+      "tags": [
+        "[release, maturity, scope]"
+      ],
+      "headings": [],
+      "text": "The docs use maturity labels beside recommendations so a reader can make an informed choice. | Label | Means | | --- | --- | | Launch scope | The smallest local workflow has a current source-backed proof. | | Preview / dogfood | Useful for evaluation and local teams; broader proof or wording is still in progress. | | Showcase | Demonstrates a pattern or appl"
+    },
+    {
+      "title": "Security model",
+      "description": "Understand capability gates, local boundaries, secrets, network access, and safe execution wording.",
+      "url": "https://docs.kujolang.ai/security/",
+      "route": "security/",
+      "section": "Reference",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "stable",
+      "version": "current",
+      "tags": [
+        "[security, capabilities, local-first]"
+      ],
+      "headings": [
+        "Make access explicit",
+        "Boundary language"
+      ],
+      "text": "Kujo gates host effects such as filesystem, network, and process access behind explicit runtime capabilities. The trusted path is convenient for local development; untrusted mode makes the allow-list visible. Make access explicit Add network or process capabilities only when the program needs them. A capability flag changes the runtime mode, so enumerate the"
+    },
+    {
+      "title": "Start here",
+      "description": "Choose the shortest path from discovering Kujo to running a local program.",
+      "url": "https://docs.kujolang.ai/start-here/",
+      "route": "start-here/",
+      "section": "Start here",
+      "audience": "all",
+      "difficulty": "beginner",
+      "status": "launch draft",
+      "version": "current",
+      "tags": [
+        "[orientation, onboarding]"
+      ],
+      "headings": [
+        "Pick a direction",
+        "What happens next"
+      ],
+      "text": "Kujo is a programming language and local-first ecosystem for building, checking, and operating AI-native software. The docs keep the first path short, then introduce tools when a developer naturally needs them. Pick a direction - I want to write Kujo \u2192 Install Kujo /install/ , then run the Quickstart /quickstart/ . - I want to build an AI application \u2192 start"
+    },
+    {
+      "title": "Support",
+      "description": "Find the right place to ask for help, report a problem, or verify a local failure.",
+      "url": "https://docs.kujolang.ai/support/",
+      "route": "support/",
+      "section": "Reference",
+      "audience": "all",
+      "difficulty": "beginner",
+      "status": "stable",
+      "version": "current",
+      "tags": [
+        "[support, troubleshooting]"
+      ],
+      "headings": [
+        "Before asking for help",
+        "Useful evidence tools"
+      ],
+      "text": "Start with the smallest reproducible command and the local artifact it leaves behind. Before asking for help Capture the exact command, platform, Kujo version, and relevant output. Remove secrets before sharing it. Useful evidence tools - CaseFile /tools/casefile/ captures a failure bundle. - RunLedger /tools/runledger/ records run metadata and verdicts. - P"
+    },
+    {
+      "title": "Browser, architecture, and privacy checks",
+      "description": "Keep browser evidence, dependency boundaries, and redaction in the same release conversation.",
+      "url": "https://docs.kujolang.ai/review/browser-architecture-and-privacy/",
+      "route": "review/browser-architecture-and-privacy/",
+      "section": "Keep work reviewable",
+      "audience": "developer",
+      "difficulty": "advanced",
+      "status": "preview-aware",
+      "version": "current",
+      "tags": [
+        "[browser, architecture, privacy]"
+      ],
+      "headings": [],
+      "text": "Browser QA is evidence from the browsers and viewport matrix actually run. Architecture checks are evidence from the configured boundary graph. Privacy checks are evidence from the input policy and redaction run. Keep the three claims separate, then link them in the release handoff. This prevents a passing visual smoke from implying a security review, or a c"
+    },
+    {
+      "title": "Context and task contracts",
+      "description": "Turn an open-ended request into a structured contract with scope, acceptance, and evidence.",
+      "url": "https://docs.kujolang.ai/review/context-and-task-contracts/",
+      "route": "review/context-and-task-contracts/",
+      "section": "Keep work reviewable",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "launch scope",
+      "version": "current",
+      "tags": [
+        "[spec, context, contracts]"
+      ],
+      "headings": [],
+      "text": "Start with Spec /tools/spec/ when the work needs a name, objective, acceptance criteria, constraints, and a clear completion state. Then use Scout /tools/scout/ to map the repository and Scent /tools/scent/ to package the narrow context that the task actually needs. The artifact is a contract and a focused context pack, not a giant transcript."
+    },
+    {
+      "title": "Evidence and run history",
+      "description": "Preserve the receipt, failure bundle, usage, and handoff that explain what happened.",
+      "url": "https://docs.kujolang.ai/review/evidence-and-run-history/",
+      "route": "review/evidence-and-run-history/",
+      "section": "Keep work reviewable",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "launch scope",
+      "version": "current",
+      "tags": [
+        "[evidence, casefile, runledger]"
+      ],
+      "headings": [],
+      "text": "- RunLedger /tools/runledger/ records run metadata, usage, cost, verdicts, and follow-ups. - CaseFile /tools/casefile/ captures a failure as a reproducible evidence bundle. - PatchBrief /tools/patchbrief/ turns a diff into a reviewable summary and handoff. - ChangeBucket /tools/changebucket/ measures change footprint and blast radius. Use these artifacts to "
+    },
+    {
+      "title": "Quality and release gates",
+      "description": "Check drift, boundaries, release readiness, browser behavior, and sensitive values before shipping.",
+      "url": "https://docs.kujolang.ai/review/quality-and-release-gates/",
+      "route": "review/quality-and-release-gates/",
+      "section": "Keep work reviewable",
+      "audience": "developer",
+      "difficulty": "advanced",
+      "status": "launch scope",
+      "version": "current",
+      "tags": [
+        "[quality, release, gates]"
+      ],
+      "headings": [],
+      "text": "Use the narrowest gate that answers the question: - Concord /tools/concord/ finds drift across code, docs, examples, specs, and generated artifacts. - Fence /tools/fence/ checks architecture boundaries and import rules. - ShipCheck /tools/shipcheck/ scans release readiness. - Lens /tools/lens/ reviews browser behavior and visual/accessibility contracts. - Sc"
+    },
+    {
+      "title": "Tests and evaluation",
+      "description": "Run deterministic acceptance checks locally or in CI and keep the expected result explicit.",
+      "url": "https://docs.kujolang.ai/review/tests-and-evaluation/",
+      "route": "review/tests-and-evaluation/",
+      "section": "Keep work reviewable",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "launch scope",
+      "version": "current",
+      "tags": [
+        "[eval, tests, acceptance]"
+      ],
+      "headings": [],
+      "text": "Use repository tests for implementation behavior and Eval /tools/eval/ for deterministic acceptance checks around JSON, HTTP, files, or commands. An evaluation result is strongest when the fixture, check, expected output, and policy are all reviewable. Eval is not a general sandbox and should not be described as one."
+    },
+    {
+      "title": "AI Chat",
+      "description": "A local multi-provider chat application with encrypted profiles, streaming, transcription, and fixture mode.",
+      "url": "https://docs.kujolang.ai/showcases/ai-chat/",
+      "route": "showcases/ai-chat/",
+      "section": "Showcases",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[showcase, ai, chat]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 You want a concrete local application surface for provider profiles, streaming, transcription, and offline fixtures. Interface overview | Surface | What is available | | --- | --- | | App | Local multi-pane chat UI, provider/model profiles, and saved pane layouts | | API | Health, providers, state, automations, chat, SSE streaming, and transcrip"
+    },
+    {
+      "title": "CMS",
+      "description": "A server-first content system with models, delivery routes, auth boundaries, jobs, and operational checks.",
+      "url": "https://docs.kujolang.ai/showcases/cms/",
+      "route": "showcases/cms/",
+      "section": "Showcases",
+      "audience": "developer",
+      "difficulty": "advanced",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[showcase, cms, content]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 You want to see a server-first content application with explicit content models and delivery boundaries. Interface overview | Surface | What is available | | --- | --- | | Runtime | backend/runtime/main.kujo; no separate CMS CLI wrapper | | Content API | Types, taxonomies, entries, media, menus, plugins, themes, tenants, and workspaces | | Disco"
+    },
+    {
+      "title": "CRUD API Showcase",
+      "description": "A SQLite API and frontend playground showing auth strategies, recovery patterns, and contracts.",
+      "url": "https://docs.kujolang.ai/showcases/crud-api/",
+      "route": "showcases/crud-api/",
+      "section": "Showcases",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[showcase, api, sqlite]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 You want a conventional API and frontend pattern with SQLite, explicit contracts, and recovery drills. Interface overview | Surface | What is available | | --- | --- | | API | Item and project CRUD, filtering, pagination, search, sorting, and health metadata | | Concurrency | If-Unmodified-Since, 428 preconditions, and 409 conflict responses | |"
+    },
+    {
+      "title": "SSG",
+      "description": "Deterministic Markdown-to-site publishing with templates, feeds, sitemap, and llms.txt.",
+      "url": "https://docs.kujolang.ai/showcases/ssg/",
+      "route": "showcases/ssg/",
+      "section": "Showcases",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[showcase, static, publishing]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 You need a transparent, deterministic static publishing pipeline whose content, templates, assets, and generated outputs stay visible. Interface overview | Surface | What is available | | --- | --- | | Inputs | Markdown content, YAML/JSON config, templates, assets, and custom collections | | Build | Output/content/template overrides, draft previ"
+    },
+    {
+      "title": "TotalRecall",
+      "description": "A local-first ingestion showcase for meetings, chat exports, Slack threads, and GitHub activity.",
+      "url": "https://docs.kujolang.ai/showcases/totalrecall/",
+      "route": "showcases/totalrecall/",
+      "section": "Showcases",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[showcase, ingestion, knowledge]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Local example",
+        "What it proves",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 You want to normalize work artifacts into a stable model and write them to local destinations such as Strata, Markdown, static HTML, or a JSON index. Interface overview | Surface | What is available | | --- | --- | | Providers | Fathom meetings, chat exports, Slack threads, and GitHub activity exports | | Destinations | Strata, Markdown folders,"
+    },
+    {
+      "title": "Agents SDK",
+      "description": "Build agents with tools, approvals, handoffs, tracing, stores, and budgets.",
+      "url": "https://docs.kujolang.ai/tools/agents-sdk/",
+      "route": "tools/agents-sdk/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, agents, approvals]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 An AI call needs tools, approval boundaries, handoffs, tracing, session state, or explicit budgets. Interface overview | Surface | What is available | | --- | --- | | Runtime | Agent configuration, runners, lifecycle events, cancellation, and bounded retries | | Tools and safety | Typed tool registry, permissions, approvals, guardrails, and reda"
+    },
+    {
+      "title": "AI SDK",
+      "description": "Use normalized chat and embedding contracts with fixtures, retries, and redaction.",
+      "url": "https://docs.kujolang.ai/tools/ai-sdk/",
+      "route": "tools/ai-sdk/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, ai, providers]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 You need a provider-gated chat or embedding call with a normalized contract and a fixture path for local checks. Interface overview | Surface | What is available | | --- | --- | | Library | create client, create message, chat completion, streaming, and embeddings | | Providers | OpenAI, OpenRouter, DeepSeek, and custom OpenAI-compatible endpoint"
+    },
+    {
+      "title": "CaseFile",
+      "description": "Capture a failure as a reproducible evidence bundle.",
+      "url": "https://docs.kujolang.ai/tools/casefile/",
+      "route": "tools/casefile/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "beginner",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, evidence, failures]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 A local failure needs to be handed to another person with enough context to reproduce it without leaking secrets. Interface overview | Surface | What is available | | --- | --- | | Capture | A failed command, --from-log, or --manual evidence | | Review | list, show latest, structured case JSON, Markdown, and reproduction notes | | Operations | d"
+    },
+    {
+      "title": "ChangeBucket",
+      "description": "Measure change footprint, categories, and blast radius.",
+      "url": "https://docs.kujolang.ai/tools/changebucket/",
+      "route": "tools/changebucket/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "beginner",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, review, blast-radius]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 You need a compact measure of how much changed and which parts of the repository are affected. Interface overview | Surface | What is available | | --- | --- | | Revision scope | --base, --head, and --repo | | Reports | Terminal summary plus --json, --markdown, and --output | | Budgets | check with maximum files, churn, and related thresholds | "
+    },
+    {
+      "title": "Concord",
+      "description": "Find drift across code, docs, examples, specs, and generated artifacts.",
+      "url": "https://docs.kujolang.ai/tools/concord/",
+      "route": "tools/concord/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, drift, docs]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 The same contract appears in code, docs, examples, specs, or generated files and you want to know whether the surfaces still agree. Interface overview | Surface | What is available | | --- | --- | | Scan | scan across the current or selected project directory | | Focused checks | check <rule for CLI/docs and other known agreement contracts | | O"
+    },
+    {
+      "title": "Dispatch",
+      "description": "Orchestrate resumable, approved, and auditable workflows.",
+      "url": "https://docs.kujolang.ai/tools/dispatch/",
+      "route": "tools/dispatch/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, workflows, orchestration]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 A task is a sequence of steps that can pause, resume, require approval, and leave a run receipt. Interface overview | Surface | What is available | | --- | --- | | Execute | demo, workflow templates, workflow files, JSON inputs, and tool allow/deny lists | | Continue | resume and decision-file resume paths | | Inspect | runs, show, inspect, JSON"
+    },
+    {
+      "title": "Eval",
+      "description": "Run deterministic acceptance checks locally or in CI.",
+      "url": "https://docs.kujolang.ai/tools/eval/",
+      "route": "tools/eval/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, evaluation, checks]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 You need explicit, deterministic checks around JSON, HTTP, files, commands, or a policy decision. Interface overview | Surface | What is available | | --- | --- | | Suites | JSON suite files with JSON, HTTP, file, command, and policy checks | | Execution | run, parallel workers, summary-only output, and output directories | | Review | report, co"
+    },
+    {
+      "title": "Fence",
+      "description": "Check architecture boundaries and import rules.",
+      "url": "https://docs.kujolang.ai/tools/fence/",
+      "route": "tools/fence/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, architecture, boundaries]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 The repository has architectural boundaries, import rules, or a baseline that should fail loudly when changed. Interface overview | Surface | What is available | | --- | --- | | Setup | init and validate for fence.toml rules | | Checks | Full or --changed-only boundary analysis with optional baselines | | Explanation | explain <path for the rule"
+    },
+    {
+      "title": "Howl",
+      "description": "Render verified examples into Markdown, HTML, SVG, gallery, and caption assets.",
+      "url": "https://docs.kujolang.ai/tools/howl/",
+      "route": "tools/howl/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "beginner",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, examples, publishing]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 Examples need deterministic cards, captions, galleries, or HTML artifacts that can be reviewed beside the source. Interface overview | Surface | What is available | | --- | --- | | Setup | howl init scaffolds howl.json and starter examples without overwriting | | Review | validate, list, show <id , and caption <id | | Render | SVG, Markdown, HTM"
+    },
+    {
+      "title": "Kennel",
+      "description": "Manage deterministic manifests, dependencies, lockfiles, and trust policy.",
+      "url": "https://docs.kujolang.ai/tools/kennel/",
+      "route": "tools/kennel/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, packages, dependencies]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 Your project needs a dependency manifest, resolved lockfile, source policy, or trust decision that should be reviewable. Interface overview | Surface | What is available | | --- | --- | | Project setup | new, init, and manifest generation | | Dependencies | add, install, and frozen lockfile validation | | Sources | Local file dependencies, stati"
+    },
+    {
+      "title": "Kujo",
+      "description": "Write and run local-first Kujo programs.",
+      "url": "https://docs.kujolang.ai/tools/kujo/",
+      "route": "tools/kujo/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "beginner",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, foundation, language]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 You want to write a small program, check it, and run it with the same VM-first CLI path used by the rest of the ecosystem. Interface overview | Surface | What is available | | --- | --- | | Run and inspect | kujo run <file , kujo check <file , kujo doctor | | Test and document | kujo test, kujo test-run <file , kujo docgen <path | | Projects and"
+    },
+    {
+      "title": "Leash",
+      "description": "Supervise local AI agents through policy-gated approvals and a mobile control plane.",
+      "url": "https://docs.kujolang.ai/tools/leash/",
+      "route": "tools/leash/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "advanced",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, approvals, supervision]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 Local coding agents need human approval, policy-as-code risk classification, durable decisions, and remote supervision without moving execution off the workstation. Interface overview | Surface | What is available | | --- | --- | | Daemon | Primary Rust service with health, session, device, action, and decision routes | | Policy | Kujo rules for"
+    },
+    {
+      "title": "Lens",
+      "description": "Review browser behavior with screenshots, accessibility, links, and flows.",
+      "url": "https://docs.kujolang.ai/tools/lens/",
+      "route": "tools/lens/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, browser, visual-qa]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 A browser surface needs deterministic flow, screenshot, accessibility, link, or visual baseline checks. Interface overview | Surface | What is available | | --- | --- | | Checks | Page load, screenshots, assertions, links, accessibility, performance, and crawls | | Inspection | lens inspect for semantic browser state and safe selector evidence |"
+    },
+    {
+      "title": "MCP",
+      "description": "Generate guarded MCP servers with roots, limits, auth, and safety tiers.",
+      "url": "https://docs.kujolang.ai/tools/mcp/",
+      "route": "tools/mcp/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "advanced",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, mcp, integrations]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 An agent needs a deliberate server boundary for tools or resources with roots, limits, auth, and a visible safety tier. Interface overview | Surface | What is available | | --- | --- | | Generator | make <repo with output and artifact-directory controls | | Profiles | Repo-specific discovery plus profile-only or artifacts-only generation | | Con"
+    },
+    {
+      "title": "Muzzle",
+      "description": "Run noisy workflows quietly while preserving complete logs and summaries.",
+      "url": "https://docs.kujolang.ai/tools/muzzle/",
+      "route": "tools/muzzle/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, workflows, logs]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 A trusted workflow produces too much console noise but its complete log and outcome still need to remain available. Interface overview | Surface | What is available | | --- | --- | | Setup | muzzle init and workflow definitions under .muzzle/workflows/ | | Execution | muzzle run <name , arguments, timeouts, dry-run, JSON, and verbose modes | | R"
+    },
+    {
+      "title": "PackWrite",
+      "description": "Compile repeatable agent execution packs from context and prompts.",
+      "url": "https://docs.kujolang.ai/tools/packwrite/",
+      "route": "tools/packwrite/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, agents, packs]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 A team repeats the same agent workflow and needs the context, prompt, model configuration, and evidence contract to be inspectable. Interface overview | Surface | What is available | | --- | --- | | Generate | packwrite init file builds an agent/ pack from MEGA PROMPT.md | | Validate | Deterministic validate plus environment-aware doctor --stric"
+    },
+    {
+      "title": "PatchBrief",
+      "description": "Turn a diff into a reviewable summary and handoff.",
+      "url": "https://docs.kujolang.ai/tools/patchbrief/",
+      "route": "tools/patchbrief/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "beginner",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, review, diff]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 The implementation is done and a reviewer needs the intent, changed files, risk, and test evidence in one compact brief. Interface overview | Surface | What is available | | --- | --- | | Summary | summarize for intent, changed files, risk, and diff statistics | | Tests | suggest-tests for evidence matched to the change | | Handoff | handoff for"
+    },
+    {
+      "title": "RAG",
+      "description": "Build local retrieval flows with namespaces, citations, and offline fallbacks.",
+      "url": "https://docs.kujolang.ai/tools/rag/",
+      "route": "tools/rag/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, retrieval, knowledge]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 You need to ingest local knowledge, isolate namespaces, retrieve relevant chunks, and return citations. Interface overview | Surface | What is available | | --- | --- | | CLI | ingest, query, serve, demo, and bootstrap | | Retrieval | Parser, chunking, embedding, namespace isolation, and citation metadata | | Server | Local ingest/query HTTP end"
+    },
+    {
+      "title": "RunLedger",
+      "description": "Record run metadata, usage, cost, verdicts, and follow-ups.",
+      "url": "https://docs.kujolang.ai/tools/runledger/",
+      "route": "tools/runledger/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "beginner",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, evidence, receipts]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 You need a durable receipt for what ran, when it ran, what it used, and whether it passed. Interface overview | Surface | What is available | | --- | --- | | Lifecycle | start and finish with task, status, verdict, and git metadata | | Accounting | usage, cost, and notes attached to a run | | Review | list, show, compare, and Markdown report | |"
+    },
+    {
+      "title": "Scent",
+      "description": "Package focused, bounded, and redacted context for a task.",
+      "url": "https://docs.kujolang.ai/tools/scent/",
+      "route": "tools/scent/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "beginner",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, context, redaction]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 The repository is larger than the task and the next agent or reviewer needs a compact, scoped context pack. Interface overview | Surface | What is available | | --- | --- | | Selection | Task text, model target, token budget, changed/staged filters, and path selectors | | Preview | --dry-run, compact --json, estimates, warnings, and no artifact "
+    },
+    {
+      "title": "Scout",
+      "description": "Build a structured map of an unfamiliar repository.",
+      "url": "https://docs.kujolang.ai/tools/scout/",
+      "route": "tools/scout/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "beginner",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, context, repository]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 You need to understand a repository's files, entry points, contracts, dependencies, and risk before changing it. Interface overview | Surface | What is available | | --- | --- | | Scan | Repository path, depth, quick mode, and output-directory controls | | Focus | Skip dependency, route, or security analysis when it is outside the task | | Secur"
+    },
+    {
+      "title": "ShipCheck",
+      "description": "Scan release readiness and produce a gate report.",
+      "url": "https://docs.kujolang.ai/tools/shipcheck/",
+      "route": "tools/shipcheck/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, release, gates]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 You want a release checklist and gate report that makes missing proof visible. Interface overview | Surface | What is available | | --- | --- | | Discovery | scan a repository for release-readiness evidence | | Checklist | Generate the applicable release checks and missing items | | Enforcement | gate with process-friendly exit semantics | | Com"
+    },
+    {
+      "title": "Spec",
+      "description": "Turn a request into a structured, checkable task contract.",
+      "url": "https://docs.kujolang.ai/tools/spec/",
+      "route": "tools/spec/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "beginner",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, contracts, tasks]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 The request is too open-ended to evaluate safely and needs an objective, constraints, acceptance checks, and completion state. Interface overview | Surface | What is available | | --- | --- | | Contracts | .spec.yml, .spec.yaml, .spec.toml, and .spec.json | | Authoring | spec init, template, list, search, and status | | Validation | spec validat"
+    },
+    {
+      "title": "Ward",
+      "description": "Monitor Dependabot alerts locally and prepare reviewable remediation plans.",
+      "url": "https://docs.kujolang.ai/tools/ward/",
+      "route": "tools/ward/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "advanced",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, dependabot, security]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 You need a local command center for Dependabot alerts across repositories, deterministic classification, reports, and guarded fix preparation. Interface overview | Surface | What is available | | --- | --- | | Collect | ward collect --all reads configured GitHub Dependabot alerts | | Decide | plan --unplanned and deterministic alert classificati"
+    },
+    {
+      "title": "Watchdog",
+      "description": "Observe AI requests, tools, costs, latency, errors, and audit events.",
+      "url": "https://docs.kujolang.ai/tools/watchdog/",
+      "route": "tools/watchdog/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "current",
+      "tags": [
+        "[tool, telemetry, ai]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 You need a local proxy or dashboard to understand AI request volume, cost, latency, errors, and audit records. Interface overview | Surface | What is available | | --- | --- | | Proxy | OpenAI-compatible requests under /proxy/v1 with passthrough or override auth | | APIs | /api/requests, /api/proxy-config, health, readiness, and structured expor"
+    }
+  ]
+}

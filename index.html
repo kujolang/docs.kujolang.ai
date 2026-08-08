@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="kujo-light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kujo Docs</title>
+	<meta name="description" content="The shortest path from language basics to reviewable, local-first software.">
+	<meta name="keywords" content="SSG, Static Site Generator">
+	<meta name="author" content="Kujo">
+	<link rel="canonical" href="https://docs.kujolang.ai/">
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+	<meta property="og:title" content="Kujo Docs">
+	<meta property="og:description" content="The shortest path from language basics to reviewable, local-first software.">
+	<meta property="og:url" content="https://docs.kujolang.ai/">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Kujo Docs">
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Kujo Docs">
+	<meta name="twitter:description" content="The shortest path from language basics to reviewable, local-first software.">
+	
+	<link href="assets/css/fonts.css" rel="stylesheet">
+	<link href="assets/sitekit/sitekit.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","headline":"Kujo Docs","name":"Kujo Docs","description":"The shortest path from language basics to reviewable, local-first software.","url":"https://docs.kujolang.ai/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="docs-topbar" id="navigation">
+	<div class="docs-topbar-row">
+		<a class="docs-brand" href="index.html"><img class="docs-brand-mark" src="assets/img/kujo-logomark-black.svg" alt=""> <span>Kujo Docs</span></a>
+		<button class="docs-menu-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu><span class="docs-menu-label">Menu</span><span class="docs-menu-close-icon" aria-hidden="true"></span></button>
+	</div>
+	<nav id="primary-navigation" class="docs-primary-nav" aria-label="Primary navigation">
+		<a href="/start-here/">Start here</a>
+		<a href="/learn/">Learn Kujo</a>
+		<a href="/build/">Build with Kujo</a>
+		<a href="/tools/">Tools</a>
+		<a href="/showcases/">Showcases</a>
+	</nav>
+	<label class="docs-search-shell">
+		<span class="sr-only">Search documentation</span>
+		<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
+	</label>
+</header>
+<div id="docs-search-results" class="docs-search-results" aria-live="polite"></div>
+<main class="docs-home" id="main-content">
+	<section class="sk-hero docs-home-hero" aria-labelledby="home-title">
+		<div class="docs-home-hero-copy">
+			<p class="docs-eyebrow">Local-first language + ecosystem</p>
+			<h1 id="home-title">Kujo Docs</h1>
+			<p class="docs-lede">The shortest path from language basics to reviewable, local-first software.</p>
+			<div class="docs-home-actions"><a class="sk-button" href="/start-here/">Start here</a><a class="sk-button sk-button--secondary" href="/quickstart/">Quickstart</a></div>
+		</div>
+		<figure class="sk-code-block docs-home-terminal"><figcaption><span>hello.kujo</span><button type="button" data-copy-code>Copy</button></figcaption><pre><code>print("hello, kujo")
+
+kujo check hello.kujo
+kujo run hello.kujo</code></pre></figure>
+	</section>
+	<section class="docs-home-paths" aria-labelledby="paths-title">
+		<div class="docs-section-heading"><p class="docs-eyebrow">Choose a direction</p><h2 id="paths-title">A path, not a warehouse.</h2><p>Start with the smallest useful next step. Every page tells you what it does, how to try it, and where its boundary is.</p></div>
+		<div class="docs-card-grid">
+			<a class="sk-card" href="/install/"><span class="docs-card-index">01</span><h3>Get the toolchain</h3><p>Install or build the CLI, add it to PATH, and verify your local environment.</p><span class="docs-card-link">Install Kujo →</span></a>
+			<a class="sk-card" href="/quickstart/"><span class="docs-card-index">02</span><h3>Run one program</h3><p>Create a tiny file, run it with the VM-first runtime, and check the source.</p><span class="docs-card-link">Quickstart →</span></a>
+			<a class="sk-card" href="/build/ai-and-agents/"><span class="docs-card-index">03</span><h3>Build with AI</h3><p>Move from provider calls to agents, approvals, retrieval, and resumable workflows.</p><span class="docs-card-link">Build with Kujo →</span></a>
+			<a class="sk-card" href="/review/"><span class="docs-card-index">04</span><h3>Keep work reviewable</h3><p>Define work, focus context, check results, capture proof, and gate releases.</p><span class="docs-card-link">Reviewable work →</span></a>
+		</div>
+	</section>
+	<aside class="sk-alert docs-home-note" data-variant="neutral"><div><strong>Kujo Docs v1.0.0</strong><p>Official documentation launched August 8, 2026. Each page keeps the verified local-first, showcase, or preview boundary of the repository it documents visible.</p></div></aside>
+	<section class="docs-home-footer-grid" aria-label="More documentation">
+		<div><p class="docs-eyebrow">Learn</p><a href="/learn/">Learn Kujo</a><a href="/learn/runtime/">Runtime and capabilities</a><a href="/learn/packages/">Packages with Kennel</a></div>
+		<div><p class="docs-eyebrow">Explore</p><a href="/tools/">Tool directory</a><a href="/showcases/">Showcases</a><a href="/collections/">Operating collections</a></div>
+		<div><p class="docs-eyebrow">Reference</p><a href="/reference/">CLI and generated reference</a><a href="/security/">Security model</a><a href="/support/">Support</a></div>
+	</section>
+</main>
+
+<footer class="docs-footer" id="footer">
+	<div><strong>Kujo Docs v1.0.0</strong><span>Local-first language and ecosystem guidance.</span></div>
+	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
+</footer>
+<script src="assets/sitekit/sitekit.js"></script>
+<script src="assets/js/docs.js"></script>
+</body>
+</html>
