@@ -85,21 +85,70 @@
 		});
 	}
 
+	var legacyCopyText = function(text) {
+		return new Promise(function(resolve, reject) {
+			var textarea = document.createElement('textarea');
+			textarea.value = text;
+			textarea.setAttribute('readonly', '');
+			textarea.style.position = 'fixed';
+			textarea.style.opacity = '0';
+			document.body.appendChild(textarea);
+			textarea.select();
+			try {
+				if (!document.execCommand('copy')) {
+					throw new Error('Copy command was rejected');
+				}
+				resolve();
+			} catch (error) {
+				reject(error);
+			} finally {
+				document.body.removeChild(textarea);
+			}
+		});
+	};
+
+	var copyText = function(text) {
+		return legacyCopyText(text).catch(function() {
+			if (navigator.clipboard && window.isSecureContext) {
+				return navigator.clipboard.writeText(text);
+			}
+			return Promise.reject(new Error('Clipboard access is unavailable'));
+		});
+	};
+
+	var bindCopyButton = function(button, block) {
+		button.addEventListener('click', function() {
+			copyText(block.textContent).then(function() {
+				button.textContent = 'Copied';
+				window.setTimeout(function() { button.textContent = 'Copy'; }, 3000);
+			}).catch(function() {
+				var selection = window.getSelection();
+				var range = document.createRange();
+				range.selectNodeContents(block);
+				selection.removeAllRanges();
+				selection.addRange(range);
+				button.textContent = 'Select and copy';
+			});
+		});
+	};
+
+	document.querySelectorAll('[data-copy-code]').forEach(function(button) {
+		var container = button.closest('.sk-code-block') || button.parentElement;
+		var block = container ? container.querySelector('pre code, pre') : null;
+		if (block) {
+			bindCopyButton(button, block);
+		}
+	});
+
 	document.querySelectorAll('pre').forEach(function(block) {
-		if (block.parentElement && block.parentElement.querySelector('[data-copy-code]')) {
+		if (block.closest('.sk-code-block') && block.closest('.sk-code-block').querySelector('[data-copy-code]')) {
 			return;
 		}
 		var button = document.createElement('button');
 		button.type = 'button';
 		button.className = 'copy-code-button';
 		button.textContent = 'Copy';
-		button.addEventListener('click', function() {
-			var copy = navigator.clipboard ? navigator.clipboard.writeText(block.innerText) : Promise.reject();
-			copy.then(function() {
-				button.textContent = 'Copied';
-				window.setTimeout(function() { button.textContent = 'Copy'; }, 1200);
-			}).catch(function() { button.textContent = 'Select and copy'; });
-		});
+		bindCopyButton(button, block);
 		block.appendChild(button);
 	});
 
