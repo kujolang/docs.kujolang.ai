@@ -50,6 +50,12 @@ Before release, also verify the generated sitemap routes, the themed 404 respons
 
 The Site Kit consumer bundle and Departure Mono font are vendored under `assets/sitekit/` so production builds do not depend on remote assets.
 
+The official K logomark is also published as SVG, ICO, standard PNG favicons, an Apple touch icon, Android web-app icons, and a Windows tile. The generated files are committed under `assets/favicons/` and copied to the site root during every build. To regenerate them from `assets/img/kujo-logomark-black.svg`, install CairoSVG and Pillow, then run:
+
+```bash
+python3 scripts/generate_favicons.py
+```
+
 ## Release policy
 
 The docs site has its own semantic version. Repository pages preserve the verified status and boundaries of the Kujo component they describe; releasing the documentation does not silently promote preview tools or hosted services to production-ready status.

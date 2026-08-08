@@ -113,6 +113,29 @@ def write_font_css(output: Path) -> None:
     (output / "assets" / "css" / "fonts.css").write_text(DEPARTURE_MONO_CSS, encoding="utf-8")
 
 
+def publish_favicons(output: Path) -> None:
+    """Publish the committed cross-platform favicon set at the site root."""
+    source = ROOT / "assets" / "favicons"
+    required = {
+        "favicon.svg",
+        "favicon.ico",
+        "favicon-16x16.png",
+        "favicon-32x32.png",
+        "favicon-48x48.png",
+        "apple-touch-icon.png",
+        "android-chrome-192x192.png",
+        "android-chrome-512x512.png",
+        "mstile-150x150.png",
+        "site.webmanifest",
+        "browserconfig.xml",
+    }
+    missing = sorted(name for name in required if not (source / name).is_file())
+    if missing:
+        raise FileNotFoundError(f"missing favicon assets: {', '.join(missing)}")
+    for name in sorted(required):
+        shutil.copy2(source / name, output / name)
+
+
 def finalize_html(output: Path) -> None:
     """Apply docs-specific cleanup that is not part of the generic SSG templates."""
     empty_prerequisites = re.compile(
@@ -191,6 +214,7 @@ def main() -> int:
     write_font_css(output)
     finalize_html(output)
     write_aux(output, args.site_url)
+    publish_favicons(output)
     print(json.dumps({"output": str(output), "routes": len(routes()), "sections": list(SECTIONS)}))
     return 0
 

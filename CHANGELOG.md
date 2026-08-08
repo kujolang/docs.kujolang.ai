@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+
+- Replaced the generic favicon with the official Kujo K logomark and added SVG, ICO, PNG, Apple touch, Android web-app, Windows tile, and web manifest assets.
+
 All notable changes to Kujo Docs are documented here.
 
 ## [1.0.0] - 2026-08-08
