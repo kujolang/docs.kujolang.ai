@@ -58,4 +58,23 @@ Release changes are recorded in [CHANGELOG.md](CHANGELOG.md). The current versio
 
 ## Deploy
 
-Publish the contents of `output/` to the static host for `docs.kujolang.ai`. Configure the host to serve `404.html` for unknown routes while preserving HTTP 404 status, and keep clean directory-index routes enabled.
+Production uses GitHub Pages behind Cloudflare:
+
+| Layer | Configuration |
+| --- | --- |
+| GitHub Pages | Repository `kujolang/docs.kujolang.ai`, branch `gh-pages`, path `/` |
+| Custom domain | `docs.kujolang.ai`, also emitted as `output/CNAME` |
+| Cloudflare DNS | Proxied CNAME `docs` to `kujolang.github.io` |
+| HTTPS | Cloudflare Universal SSL with **Always Use HTTPS** enabled |
+
+Build from `main`, replace the contents of the `gh-pages` branch with the generated `output/` directory, and push that branch. The generated `.nojekyll` file disables Jekyll processing, while `404.html` provides the themed catchall response.
+
+After deployment, verify the public edge rather than relying on a local DNS cache:
+
+```bash
+dig +short @1.1.1.1 docs.kujolang.ai A
+curl -I http://docs.kujolang.ai/
+curl -I https://docs.kujolang.ai/
+```
+
+The HTTP request should redirect to HTTPS, and the HTTPS request should return `200` from Cloudflare with GitHub Pages as the origin.
