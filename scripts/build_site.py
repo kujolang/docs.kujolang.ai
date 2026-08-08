@@ -104,6 +104,7 @@ def write_aux(output: Path, site_url: str) -> None:
     for route, title, description in items:
         llms.append(f"- [{title}]({site_url.rstrip('/')}{route}) — {description}")
     (output / "llms.txt").write_text("\n".join(llms) + "\n", encoding="utf-8")
+    (output / "CNAME").write_text("docs.kujolang.ai\n", encoding="utf-8")
 
 
 def write_font_css(output: Path) -> None:
