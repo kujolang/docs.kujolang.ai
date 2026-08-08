@@ -4,18 +4,18 @@ description: Check architecture boundaries and import rules.
 template: docs
 section: Tools
 nav_title: Fence
-order: 220
+order: 120
 audience: developer
 difficulty: intermediate
-status: launch scope; not a runtime sandbox
+status: local scope verified
 version: current
 scope: local-first
 source_repo: fence
-next: /tools/lens/
+previous: /tools/scent/
+next: /tools/watchdog/
 tags: [tool, architecture, boundaries]
 ---
 
-# Fence
 
 ## Use it when…
 

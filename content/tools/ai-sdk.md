@@ -4,18 +4,18 @@ description: Use normalized chat and embedding contracts with fixtures, retries,
 template: docs
 section: Tools
 nav_title: AI SDK
-order: 30
+order: 90
 audience: developer
 difficulty: intermediate
-status: launch scope
+status: local scope verified
 version: current
 scope: local-first
 source_repo: ai-sdk
+previous: /tools/rag/
 next: /tools/agents-sdk/
 tags: [tool, ai, providers]
 ---
 
-# AI SDK
 
 ## Use it when…
 

@@ -4,18 +4,18 @@ description: Run deterministic acceptance checks locally or in CI.
 template: docs
 section: Tools
 nav_title: Eval
-order: 60
+order: 40
 audience: developer
 difficulty: intermediate
-status: launch scope
+status: local scope verified
 version: current
 scope: local-first
 source_repo: eval
-next: /tools/dispatch/
+previous: /tools/spec/
+next: /tools/scout/
 tags: [tool, evaluation, checks]
 ---
 
-# Eval
 
 ## Use it when…
 

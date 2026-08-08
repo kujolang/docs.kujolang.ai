@@ -4,18 +4,18 @@ description: Record run metadata, usage, cost, verdicts, and follow-ups.
 template: docs
 section: Tools
 nav_title: RunLedger
-order: 170
+order: 160
 audience: developer
 difficulty: beginner
-status: launch scope; not automatic billing capture
+status: local scope verified
 version: current
 scope: local-first
 source_repo: runledger
-next: /tools/patchbrief/
+previous: /tools/muzzle/
+next: /tools/changebucket/
 tags: [tool, evidence, receipts]
 ---
 
-# RunLedger
 
 ## Use it when…
 

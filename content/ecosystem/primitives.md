@@ -1,0 +1,28 @@
+---
+title: Primitives
+description: Twelve reusable contracts for agents, evaluation, retrieval, orchestration, boundaries, and supervision.
+template: docs
+section: Ecosystem
+nav_title: Primitives
+order: 20
+audience: developer
+difficulty: intermediate
+status: local scope verified
+version: current
+tags: [ecosystem, primitives]
+---
+
+The twelve primitives are:
+
+- [Spec](/tools/spec/) — task contracts and acceptance criteria.
+- [Eval](/tools/eval/) — deterministic evaluation and acceptance verification.
+- [Scout](/tools/scout/) — repository intelligence and structured context maps.
+- [Dispatch](/tools/dispatch/) — resumable workflow orchestration and handoffs.
+- [MCP](/tools/mcp/) — guarded tool and resource server scaffolds.
+- [RAG](/tools/rag/) — local ingestion, retrieval, namespaces, and citations.
+- [AI SDK](/tools/ai-sdk/) — normalized provider and embedding contracts.
+- [Agents SDK](/tools/agents-sdk/) — agent runners, tools, approvals, stores, and budgets.
+- [Scent](/tools/scent/) — bounded context packs and redaction-aware manifests.
+- [Fence](/tools/fence/) — architecture boundary and policy checks.
+- [Watchdog](/tools/watchdog/) — local AI telemetry and proxy inspection.
+- [Leash](/tools/leash/) — human approval and remote supervision.

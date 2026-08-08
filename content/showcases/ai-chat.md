@@ -4,18 +4,18 @@ description: A local multi-provider chat application with encrypted profiles, st
 template: docs
 section: Showcases
 nav_title: AI Chat
-order: 10
+order: 30
 audience: developer
 difficulty: intermediate
-status: showcase
+status: local scope verified
 version: current
 scope: local-first
 source_repo: ai-chat
-next: /showcases/cms/
+previous: /showcases/crud-api/
+next: /showcases/ssg/
 tags: [showcase, ai, chat]
 ---
 
-# AI Chat
 
 ## Use it when…
 

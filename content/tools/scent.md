@@ -4,18 +4,18 @@ description: Package focused, bounded, and redacted context for a task.
 template: docs
 section: Tools
 nav_title: Scent
-order: 130
+order: 110
 audience: developer
 difficulty: beginner
-status: launch scope
+status: local scope verified
 version: current
 scope: local-first
 source_repo: scent
-next: /tools/packwrite/
+previous: /tools/agents-sdk/
+next: /tools/fence/
 tags: [tool, context, redaction]
 ---
 
-# Scent
 
 ## Use it when…
 

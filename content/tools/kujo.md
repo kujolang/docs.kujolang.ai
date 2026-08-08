@@ -7,7 +7,7 @@ nav_title: Kujo
 order: 10
 audience: developer
 difficulty: beginner
-status: release-candidate scope
+status: local scope verified
 version: current
 scope: local-first
 source_repo: kujo
@@ -15,7 +15,6 @@ next: /tools/kennel/
 tags: [tool, foundation, language]
 ---
 
-# Kujo
 
 ## Use it when…
 

@@ -4,18 +4,18 @@ description: Compile repeatable agent execution packs from context and prompts.
 template: docs
 section: Tools
 nav_title: PackWrite
-order: 140
+order: 210
 audience: developer
 difficulty: intermediate
-status: launch scope; local/team workflow
+status: local scope verified
 version: current
 scope: local-first
 source_repo: packwrite
-next: /tools/muzzle/
+previous: /tools/shipcheck/
+next: /tools/casefile/
 tags: [tool, agents, packs]
 ---
 
-# PackWrite
 
 ## Use it when…
 

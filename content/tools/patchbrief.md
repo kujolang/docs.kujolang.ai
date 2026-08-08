@@ -7,15 +7,15 @@ nav_title: PatchBrief
 order: 180
 audience: developer
 difficulty: beginner
-status: preview / dogfood
+status: local scope verified
 version: current
 scope: local-first
 source_repo: patchbrief
-next: /tools/changebucket/
+previous: /tools/changebucket/
+next: /tools/concord/
 tags: [tool, review, diff]
 ---
 
-# PatchBrief
 
 ## Use it when…
 

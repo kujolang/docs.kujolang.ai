@@ -4,18 +4,18 @@ description: Build a structured map of an unfamiliar repository.
 template: docs
 section: Tools
 nav_title: Scout
-order: 120
+order: 50
 audience: developer
 difficulty: beginner
-status: launch scope
+status: local scope verified
 version: current
 scope: local-first
 source_repo: scout
-next: /tools/scent/
+previous: /tools/eval/
+next: /tools/dispatch/
 tags: [tool, context, repository]
 ---
 
-# Scout
 
 ## Use it when…
 

@@ -7,15 +7,15 @@ nav_title: SSG
 order: 40
 audience: developer
 difficulty: intermediate
-status: launch scope
+status: local scope verified
 version: current
 scope: local-first
 source_repo: ssg
-next: /showcases/intake/
+previous: /showcases/ai-chat/
+next: /showcases/totalrecall/
 tags: [showcase, static, publishing]
 ---
 
-# SSG
 
 ## Use it when…
 
@@ -34,9 +34,8 @@ Markdown routes, custom collections, templates, local search, feeds, sitemap, ro
 
 ## How it fits
 
-This docs site uses the reusable [docs starter](../starters/docs-site/README.md) and vendors the [Site Kit](/ecosystem/site-kit/) bundle.
+This docs site uses the reusable SSG docs starter and vendors the Kujo Site Kit assets directly.
 
 ## Boundaries
 
 SSG is a generator, not a hosted publishing service or a guarantee of SEO/accessibility outcomes. Review generated output.
-

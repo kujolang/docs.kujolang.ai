@@ -4,18 +4,18 @@ description: Turn a request into a structured, checkable task contract.
 template: docs
 section: Tools
 nav_title: Spec
-order: 50
+order: 30
 audience: developer
 difficulty: beginner
-status: launch scope
+status: local scope verified
 version: current
 scope: local-first
 source_repo: spec
+previous: /tools/kennel/
 next: /tools/eval/
 tags: [tool, contracts, tasks]
 ---
 
-# Spec
 
 ## Use it when…
 

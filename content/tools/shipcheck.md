@@ -4,18 +4,18 @@ description: Scan release readiness and produce a gate report.
 template: docs
 section: Tools
 nav_title: ShipCheck
-order: 210
+order: 200
 audience: developer
 difficulty: intermediate
-status: preview / experimental wording visible
+status: local scope verified
 version: current
 scope: local-first
 source_repo: shipcheck
-next: /tools/fence/
+previous: /tools/concord/
+next: /tools/packwrite/
 tags: [tool, release, gates]
 ---
 
-# ShipCheck
 
 ## Use it when…
 

@@ -7,15 +7,15 @@ nav_title: Workflows
 order: 20
 audience: developer
 difficulty: intermediate
-status: launch scope
+status: local scope verified
 version: current
 scope: local-first
 source_repo: kujo-workflows
+previous: /collections/skills/
 next: /collections/agents/
 tags: [collection, workflows, receipts]
 ---
 
-# Workflows
 
 Workflows connect a task contract to execution and evidence. Each pack should say what it consumes, what it runs, and where the receipt lives.
 

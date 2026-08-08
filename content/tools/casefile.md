@@ -4,18 +4,18 @@ description: Capture a failure as a reproducible evidence bundle.
 template: docs
 section: Tools
 nav_title: CaseFile
-order: 160
+order: 220
 audience: developer
 difficulty: beginner
-status: launch scope
+status: local scope verified
 version: current
 scope: local-first
 source_repo: casefile
-next: /tools/runledger/
+previous: /tools/packwrite/
+next: /tools/lens/
 tags: [tool, evidence, failures]
 ---
 
-# CaseFile
 
 ## Use it when…
 
@@ -34,7 +34,7 @@ A redacted failure bundle with commands, environment facts, logs, and reproducti
 
 ## How it fits
 
-Pair it with [RunLedger](/tools/runledger/) for run metadata and [Redact](/tools/redact/) for sensitive input policy.
+Pair it with [RunLedger](/tools/runledger/) for run metadata and [Scent](/tools/scent/) for bounded context policy.
 
 ## Boundaries
 
@@ -43,4 +43,3 @@ Capture only scoped, reviewable evidence; never store credentials or unrelated p
 ## Reference
 
 See the [CaseFile repository](https://github.com/kujolang/casefile).
-

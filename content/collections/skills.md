@@ -7,15 +7,15 @@ nav_title: Skills
 order: 10
 audience: developer
 difficulty: intermediate
-status: launch scope
+status: local scope verified
 version: current
 scope: local-first
 source_repo: kujo-skills
+previous: /showcases/
 next: /collections/workflows/
 tags: [collection, skills, agents]
 ---
 
-# Skills
 
 Use the skill catalog to select a focused operating contract for a task. Read the skill instructions, follow their required evidence, and keep the selected skill's scope visible in the handoff.
 

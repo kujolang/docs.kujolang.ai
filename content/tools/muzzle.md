@@ -7,15 +7,15 @@ nav_title: Muzzle
 order: 150
 audience: developer
 difficulty: intermediate
-status: launch scope; trusted scripts only
+status: local scope verified
 version: current
 scope: local-first
 source_repo: muzzle
-next: /tools/casefile/
+previous: /tools/leash/
+next: /tools/runledger/
 tags: [tool, workflows, logs]
 ---
 
-# Muzzle
 
 ## Use it when…
 

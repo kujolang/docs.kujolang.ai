@@ -7,15 +7,15 @@ nav_title: Howl
 order: 250
 audience: developer
 difficulty: beginner
-status: launch scope
+status: local scope verified
 version: current
 scope: local-first
 source_repo: howl
-next: /tools/intake/
+previous: /tools/ward/
+next: /showcases/
 tags: [tool, examples, publishing]
 ---
 
-# Howl
 
 ## Use it when…
 

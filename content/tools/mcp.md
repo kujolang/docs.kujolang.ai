@@ -4,18 +4,18 @@ description: Generate guarded MCP servers with roots, limits, auth, and safety t
 template: docs
 section: Tools
 nav_title: MCP
-order: 90
+order: 70
 audience: developer
 difficulty: advanced
-status: launch scope
+status: local scope verified
 version: current
 scope: local-first
 source_repo: mcp
+previous: /tools/dispatch/
 next: /tools/rag/
 tags: [tool, mcp, integrations]
 ---
 
-# MCP
 
 ## Use it when…
 
@@ -33,7 +33,7 @@ A repo-specific MCP scaffold, manifest, tool/resource registry, and safety metad
 
 ## How it fits
 
-Pair MCP with [Agents SDK](/tools/agents-sdk/) and [Redact](/tools/redact/) before exposing context.
+Pair MCP with [Agents SDK](/tools/agents-sdk/) and [Scent](/tools/scent/) before exposing context.
 
 ## Boundaries
 
@@ -42,4 +42,3 @@ This is a guarded local/server scaffold, not managed enterprise infrastructure.
 ## Reference
 
 See the [MCP repository](https://github.com/kujolang/mcp).
-

@@ -4,18 +4,18 @@ description: Build agents with tools, approvals, handoffs, tracing, stores, and 
 template: docs
 section: Tools
 nav_title: Agents SDK
-order: 40
+order: 100
 audience: developer
 difficulty: intermediate
-status: launch scope
+status: local scope verified
 version: current
 scope: local-first
 source_repo: agents-sdk
-next: /tools/spec/
+previous: /tools/ai-sdk/
+next: /tools/scent/
 tags: [tool, agents, approvals]
 ---
 
-# Agents SDK
 
 ## Use it when…
 

@@ -7,15 +7,15 @@ nav_title: Lens
 order: 230
 audience: developer
 difficulty: intermediate
-status: preview / stabilizing
+status: local scope verified
 version: current
 scope: local-first
 source_repo: lens
-next: /tools/redact/
+previous: /tools/casefile/
+next: /tools/ward/
 tags: [tool, browser, visual-qa]
 ---
 
-# Lens
 
 ## Use it when…
 
@@ -33,7 +33,7 @@ Run artifacts, screenshots, accessibility findings, link checks, and an Agent Re
 
 ## How it fits
 
-Use after the SSG or application build and alongside [Fence](/tools/fence/) and [Redact](/tools/redact/).
+Use after the SSG or application build and alongside [Fence](/tools/fence/) and [Scent](/tools/scent/).
 
 ## Boundaries
 
@@ -42,4 +42,3 @@ Browser proof is limited to the browsers, viewports, and flows actually run. Thi
 ## Reference
 
 See the [Lens repository](https://github.com/kujolang/lens).
-

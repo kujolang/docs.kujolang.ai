@@ -4,18 +4,18 @@ description: Observe AI requests, tools, costs, latency, errors, and audit event
 template: docs
 section: Tools
 nav_title: Watchdog
-order: 80
+order: 130
 audience: developer
 difficulty: intermediate
-status: launch scope
+status: local scope verified
 version: current
 scope: local-first
 source_repo: watchdog
-next: /tools/mcp/
+previous: /tools/fence/
+next: /tools/leash/
 tags: [tool, telemetry, ai]
 ---
 
-# Watchdog
 
 ## Use it when…
 

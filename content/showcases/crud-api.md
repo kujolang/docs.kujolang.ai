@@ -1,21 +1,21 @@
 ---
-title: CRUD API
+title: CRUD API Showcase
 description: A SQLite API and frontend playground showing auth strategies, recovery patterns, and contracts.
 template: docs
 section: Showcases
-nav_title: CRUD API
-order: 30
+nav_title: CRUD API Showcase
+order: 20
 audience: developer
 difficulty: intermediate
-status: showcase
+status: local scope verified
 version: current
 scope: local-first
 source_repo: crud-api
-next: /showcases/ssg/
+previous: /showcases/cms/
+next: /showcases/ai-chat/
 tags: [showcase, api, sqlite]
 ---
 
-# CRUD API
 
 ## Use it when…
 
@@ -34,9 +34,8 @@ SQLite item/project APIs, auth strategies, a Next.js playground, smoke tests, an
 
 ## How it fits
 
-Use it as the application baseline before exploring [CMS](/showcases/cms/) or [Intake](/showcases/intake/).
+Use it as the application baseline before exploring [CMS](/showcases/cms/) or [AI Chat](/showcases/ai-chat/).
 
 ## Boundaries
 
 The showcase is not a hosted API product; persistence, auth, and deployment proof are environment-specific.
-

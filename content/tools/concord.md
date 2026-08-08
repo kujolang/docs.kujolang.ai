@@ -4,18 +4,18 @@ description: Find drift across code, docs, examples, specs, and generated artifa
 template: docs
 section: Tools
 nav_title: Concord
-order: 200
+order: 190
 audience: developer
 difficulty: intermediate
-status: preview / dogfood
+status: local scope verified
 version: current
 scope: local-first
 source_repo: concord
+previous: /tools/patchbrief/
 next: /tools/shipcheck/
 tags: [tool, drift, docs]
 ---
 
-# Concord
 
 ## Use it when…
 

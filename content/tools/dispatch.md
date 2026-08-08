@@ -4,18 +4,18 @@ description: Orchestrate resumable, approved, and auditable workflows.
 template: docs
 section: Tools
 nav_title: Dispatch
-order: 70
+order: 60
 audience: developer
 difficulty: intermediate
-status: launch scope
+status: local scope verified
 version: current
 scope: local-first
 source_repo: dispatch
-next: /tools/watchdog/
+previous: /tools/scout/
+next: /tools/mcp/
 tags: [tool, workflows, orchestration]
 ---
 
-# Dispatch
 
 ## Use it when…
 

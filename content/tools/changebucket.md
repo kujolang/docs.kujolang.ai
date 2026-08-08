@@ -4,18 +4,18 @@ description: Measure change footprint, categories, and blast radius.
 template: docs
 section: Tools
 nav_title: ChangeBucket
-order: 190
+order: 170
 audience: developer
 difficulty: beginner
-status: launch scope
+status: local scope verified
 version: current
 scope: local-first
 source_repo: changebucket
-next: /tools/concord/
+previous: /tools/runledger/
+next: /tools/patchbrief/
 tags: [tool, review, blast-radius]
 ---
 
-# ChangeBucket
 
 ## Use it when…
 

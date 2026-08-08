@@ -4,18 +4,18 @@ description: Build local retrieval flows with namespaces, citations, and offline
 template: docs
 section: Tools
 nav_title: RAG
-order: 100
+order: 80
 audience: developer
 difficulty: intermediate
-status: launch scope
+status: local scope verified
 version: current
 scope: local-first
 source_repo: rag
-next: /tools/kujo-doctor/
+previous: /tools/mcp/
+next: /tools/ai-sdk/
 tags: [tool, retrieval, knowledge]
 ---
 
-# RAG
 
 ## Use it when…
 

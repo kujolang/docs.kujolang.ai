@@ -7,15 +7,15 @@ nav_title: Kennel
 order: 20
 audience: developer
 difficulty: intermediate
-status: launch-safe local/source scope
+status: local scope verified
 version: current
 scope: local-first
 source_repo: kennel
-next: /tools/ai-sdk/
+previous: /tools/kujo/
+next: /tools/spec/
 tags: [tool, packages, dependencies]
 ---
 
-# Kennel
 
 ## Use it when…
 

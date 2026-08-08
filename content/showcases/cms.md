@@ -4,18 +4,18 @@ description: A server-first content system with models, delivery routes, auth bo
 template: docs
 section: Showcases
 nav_title: CMS
-order: 20
+order: 10
 audience: developer
 difficulty: advanced
-status: showcase
+status: local scope verified
 version: current
 scope: local-first
 source_repo: cms
+previous: /tools/
 next: /showcases/crud-api/
 tags: [showcase, cms, content]
 ---
 
-# CMS
 
 ## Use it when…
 
