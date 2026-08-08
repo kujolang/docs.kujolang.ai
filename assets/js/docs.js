@@ -1,11 +1,75 @@
 (function() {
 	var menuButton = document.querySelector('[data-docs-menu]');
 	var primaryNavigation = document.getElementById('primary-navigation');
-	if (menuButton && primaryNavigation) {
-		menuButton.addEventListener('click', function() {
-			var isOpen = primaryNavigation.classList.toggle('is-open');
+	var topbar = document.querySelector('.docs-topbar');
+	if (menuButton && primaryNavigation && topbar) {
+		var setMenuOpen = function(isOpen, restoreFocus) {
+			primaryNavigation.classList.toggle('is-open', isOpen);
+			topbar.classList.toggle('is-menu-open', isOpen);
+			document.documentElement.classList.toggle('docs-menu-open', isOpen);
 			menuButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+			menuButton.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+			if (isOpen) {
+				window.requestAnimationFrame(function() {
+					var firstLink = primaryNavigation.querySelector('a');
+					if (firstLink) {
+						firstLink.focus();
+					}
+				});
+			} else if (restoreFocus) {
+				menuButton.focus();
+			}
+		};
+
+		menuButton.addEventListener('click', function() {
+			setMenuOpen(menuButton.getAttribute('aria-expanded') !== 'true', false);
 		});
+
+		primaryNavigation.querySelectorAll('a').forEach(function(link) {
+			link.addEventListener('click', function() {
+				setMenuOpen(false, false);
+			});
+		});
+
+		document.addEventListener('keydown', function(event) {
+			if (menuButton.getAttribute('aria-expanded') !== 'true') {
+				return;
+			}
+			if (event.key === 'Escape') {
+				event.preventDefault();
+				setMenuOpen(false, true);
+				return;
+			}
+			if (event.key !== 'Tab') {
+				return;
+			}
+			var focusable = Array.prototype.slice.call(topbar.querySelectorAll('a, button, input'))
+				.filter(function(element) { return !element.disabled && element.offsetParent !== null; });
+			if (!focusable.length) {
+				return;
+			}
+			var first = focusable[0];
+			var last = focusable[focusable.length - 1];
+			if (event.shiftKey && document.activeElement === first) {
+				event.preventDefault();
+				last.focus();
+			} else if (!event.shiftKey && document.activeElement === last) {
+				event.preventDefault();
+				first.focus();
+			}
+		});
+
+		var desktopNavigation = window.matchMedia('(min-width: 52.01rem)');
+		var resetDesktopNavigation = function(event) {
+			if (event.matches) {
+				setMenuOpen(false, false);
+			}
+		};
+		if (desktopNavigation.addEventListener) {
+			desktopNavigation.addEventListener('change', resetDesktopNavigation);
+		} else {
+			desktopNavigation.addListener(resetDesktopNavigation);
+		}
 	}
 
 	document.querySelectorAll('.docs-sidebar a').forEach(function(link) {
