@@ -1,20 +1,61 @@
-# Kujo Docs demo
+# Kujo Docs
 
-This is a launch-draft documentation site built from the Kujo SSG docs starter and the SiteKit distribution. It follows `../ssg/starters/docs-site/INFORMATION_ARCHITECTURE.md`: a short first-time path, task-oriented learning, intent-based tools, reviewable-work workflows, showcases, collections, and secondary reference surfaces.
+The official documentation site for the Kujo language and ecosystem, published at [docs.kujolang.ai](https://docs.kujolang.ai).
 
-## Build and preview
+Version **1.0.0** launched on **August 8, 2026**. The site follows the Kujo documentation information architecture: a short first-run path, task-oriented learning, intent-based tool guidance, reviewable-work workflows, showcases, collections, and reference material.
 
-From this directory:
+## Build
+
+Requirements:
+
+- Python 3
+- The `kujo` CLI on `PATH`
+- The sibling Kujo SSG repository at `../ssg`
+
+Build the production site:
 
 ```bash
-python3 scripts/build_demo.py --site-url http://127.0.0.1:4178
+python3 scripts/build_site.py --site-url https://docs.kujolang.ai
+```
+
+The generated static site is written to `output/`. It is disposable build output; edit files under `content/`, `templates/`, or `assets/` instead.
+
+## Local preview
+
+```bash
+python3 scripts/build_site.py --site-url http://127.0.0.1:4178
 kujo serve output --port 4178
 ```
 
-The build script uses the SSG once for the first-time path and once per IA collection, then composes the generated routes so the demo stays practical to rebuild while preserving the SSG templates, metadata, and generated artifacts.
+Then open [http://127.0.0.1:4178](http://127.0.0.1:4178).
 
-The generated site is in `output/`. `output/` is disposable build output; edit Markdown, templates, or assets instead.
+## Validate
 
-`assets/sitekit/` vendors the source-built SiteKit consumer bundle. Page-level overrides consume SiteKit tokens and keep the SSG docs layout readable without introducing a second visual language.
+```bash
+bash ../ssg/scripts/validate-generated-output.sh output
+```
 
-This is a local-first technical preview. Tool pages describe the smallest useful local workflow and state their boundaries; they do not imply hosted services or final public release artifacts.
+Before release, also verify the generated sitemap routes, the themed 404 response, desktop and mobile layouts, same-origin links, keyboard interactions, and automated accessibility checks.
+
+## Project structure
+
+| Path | Purpose |
+| --- | --- |
+| `content/` | Markdown pages and repository guides |
+| `templates/` | SSG layouts, listings, and error pages |
+| `assets/` | Kujo Docs styles, scripts, Site Kit distribution, fonts, and images |
+| `scripts/build_site.py` | Composes the IA sections into one generated site |
+| `kujo-ssg.yml` | Production SSG defaults for `docs.kujolang.ai` |
+| `output/` | Ignored generated site ready for static hosting |
+
+The Site Kit consumer bundle and Departure Mono font are vendored under `assets/sitekit/` so production builds do not depend on remote assets.
+
+## Release policy
+
+The docs site has its own semantic version. Repository pages preserve the verified status and boundaries of the Kujo component they describe; releasing the documentation does not silently promote preview tools or hosted services to production-ready status.
+
+Release changes are recorded in [CHANGELOG.md](CHANGELOG.md). The current version is stored in [VERSION](VERSION).
+
+## Deploy
+
+Publish the contents of `output/` to the static host for `docs.kujolang.ai`. Configure the host to serve `404.html` for unknown routes while preserving HTTP 404 status, and keep clean directory-index routes enabled.

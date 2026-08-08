@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the Kujo docs demo as one navigable site from SSG section builds."""
+"""Build the official Kujo documentation site from SSG section builds."""
 
 from __future__ import annotations
 
@@ -146,7 +146,7 @@ def finalize_html(output: Path) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--site-url", default="http://127.0.0.1:4178")
+    parser.add_argument("--site-url", default="https://docs.kujolang.ai")
     args = parser.parse_args()
 
     output = ROOT / "output"
@@ -179,7 +179,7 @@ def main() -> int:
                     destination.parent.mkdir(parents=True, exist_ok=True)
                     shutil.copy2(source, destination)
 
-    for blog_artifact in (output / "updates", output / "feed"):
+    for blog_artifact in (output / "blog", output / "updates", output / "feed"):
         if blog_artifact.exists():
             shutil.rmtree(blog_artifact)
 
