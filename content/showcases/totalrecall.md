@@ -20,6 +20,22 @@ tags: [showcase, ingestion, knowledge]
 
 You want to normalize work artifacts into a stable model and write them to local destinations such as Strata, Markdown, static HTML, or a JSON index.
 
+## Interface overview
+
+| Surface | What is available |
+| --- | --- |
+| Providers | Fathom meetings, chat exports, Slack threads, and GitHub activity exports |
+| Destinations | Strata, Markdown folders, static HTML, and a local JSON index |
+| CLI | Provider import commands, `config validate`, `doctor`, and state inspect/prune |
+| Reliability | Dry-run, plans, JSON reports, checkpoints, retries, deduplication, reconciliation, and audit logs |
+
+## Main workflows
+
+- Validate local configuration and destination health before importing anything.
+- Preview a live or exported provider run with `--dry-run` and machine-readable reporting.
+- Import into the selected destination, then repeat the command to verify idempotent duplicate protection.
+- Inspect or prune checkpointed state deliberately when reconciling an existing destination.
+
 ## Local example
 
 ```bash
@@ -31,6 +47,8 @@ You want to normalize work artifacts into a stable model and write them to local
 ## What it proves
 
 TotalRecall demonstrates provider-to-artifact-to-destination ingestion, filtering, mapping, deduplication, reconciliation, checkpoints, and idempotent local state.
+
+For live Fathom ingestion use `fathom pull`; local sources use `chat-export import`, `slack import`, or `github-activity import`. Run `./scripts/totalrecall --help` for the full flag surface.
 
 ## Boundaries
 

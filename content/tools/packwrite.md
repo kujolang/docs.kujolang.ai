@@ -21,10 +21,28 @@ tags: [tool, agents, packs]
 
 A team repeats the same agent workflow and needs the context, prompt, model configuration, and evidence contract to be inspectable.
 
+## Interface overview
+
+| Surface | What is available |
+| --- | --- |
+| Generate | `packwrite init [file]` builds an `agent/` pack from `MEGA_PROMPT.md` |
+| Validate | Deterministic `validate` plus environment-aware `doctor --strict` |
+| Prompts | `prompt <target>` for implementation and review agents |
+| Configuration | `packwrite.toml`, provider/model settings, and offline fake-response tests |
+
+## Main workflows
+
+- Preview pack generation with `--dry-run` before writing the repo-local `agent/` directory.
+- Validate the generated execution pack before handing it to an implementation agent.
+- Print the exact prompt for a supported target so it can be piped without decoration.
+- Use `doctor` to separate config, endpoint, credential, and generated-state problems.
+
 ## Five-minute example
 
 ```bash
-kujo run packwrite.kujo prompt --config packwrite.toml
+packwrite init MEGA_PROMPT.md --dry-run
+packwrite validate
+packwrite prompt codex-review
 ```
 
 ## What you get
@@ -42,4 +60,3 @@ PackWrite is a local/team workflow compiler; provider and hosted execution remai
 ## Reference
 
 See the [PackWrite repository](https://github.com/kujolang/packwrite).
-

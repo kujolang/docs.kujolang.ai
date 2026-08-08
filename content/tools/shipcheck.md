@@ -21,6 +21,22 @@ tags: [tool, release, gates]
 
 You want a release checklist and gate report that makes missing proof visible.
 
+## Interface overview
+
+| Surface | What is available |
+| --- | --- |
+| Discovery | `scan` a repository for release-readiness evidence |
+| Checklist | Generate the applicable release checks and missing items |
+| Enforcement | `gate` with process-friendly exit semantics |
+| Communication | JSON/YAML-style reports and release-note material |
+
+## Main workflows
+
+- Scan the current or selected repository to inventory available release proof.
+- Review the generated checklist and close missing evidence deliberately.
+- Run `gate` in CI to convert the catalog into an enforceable verdict.
+- Generate release-note material from verified repository state, then edit it for users.
+
 ## Five-minute example
 
 ```bash
@@ -43,4 +59,3 @@ Preview/experimental wording stays visible. A gate report is not a production ce
 ## Reference
 
 See the [ShipCheck repository](https://github.com/kujolang/shipcheck).
-

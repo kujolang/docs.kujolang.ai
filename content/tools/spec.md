@@ -21,10 +21,28 @@ tags: [tool, contracts, tasks]
 
 The request is too open-ended to evaluate safely and needs an objective, constraints, acceptance checks, and completion state.
 
+## Interface overview
+
+| Surface | What is available |
+| --- | --- |
+| Contracts | `.spec.yml`, `.spec.yaml`, `.spec.toml`, and `.spec.json` |
+| Authoring | `spec init`, `template`, `list`, `search`, and `status` |
+| Validation | `spec validate`, `validate-all`, and `ci` |
+| Handoffs | `render`, `export`, `export-agent-context`, `export-eval`, and `graph` |
+
+## Main workflows
+
+- Start from a blank contract, a local template, JSON, or an approved GitHub issue source.
+- Validate objectives, scope, constraints, acceptance checks, and completion criteria before execution.
+- Export a human-readable brief, agent context, Eval input, or a structured automation envelope.
+- Run the CI command to make invalid or stale task contracts fail deterministically.
+
 ## Five-minute example
 
 ```bash
-kujo run spec.kujo validate task.spec.yml
+spec validate task.spec.yml
+spec render task.spec.yml
+spec export-agent-context task.spec.yml
 ```
 
 ## What you get
@@ -42,4 +60,3 @@ Spec defines work; it does not itself run untrusted code or prove that an implem
 ## Reference
 
 See the [Spec repository](https://github.com/kujolang/spec).
-

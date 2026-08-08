@@ -21,11 +21,28 @@ tags: [tool, evidence, failures]
 
 A local failure needs to be handed to another person with enough context to reproduce it without leaking secrets.
 
+## Interface overview
+
+| Surface | What is available |
+| --- | --- |
+| Capture | A failed command, `--from-log`, or `--manual` evidence |
+| Review | `list`, `show latest`, structured case JSON, Markdown, and reproduction notes |
+| Operations | `doctor`, cleanup, output scoping, and optional `--mirror-exit-code` |
+| Safety | Repository-bound paths, argument/log/note redaction, and bounded capture size |
+
+## Main workflows
+
+- Wrap a failing command so CaseFile records its output, exit code, duration, and environment context.
+- Import an existing log when rerunning the failure is unsafe or expensive.
+- Create a manual case for failures that cannot be represented by one command.
+- Review the redacted bundle before sharing it and mirror the captured exit code when CI must preserve failure status.
+
 ## Five-minute example
 
 ```bash
-casefile capture --from-log build.log
-casefile show latest
+kujo run casefile.kujo --interpreter -- capture --from-log build.log
+kujo run casefile.kujo --interpreter -- list
+kujo run casefile.kujo --interpreter -- show latest
 ```
 
 ## What you get

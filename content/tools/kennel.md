@@ -21,12 +21,29 @@ tags: [tool, packages, dependencies]
 
 Your project needs a dependency manifest, resolved lockfile, source policy, or trust decision that should be reviewable.
 
+## Interface overview
+
+| Surface | What is available |
+| --- | --- |
+| Project setup | `new`, `init`, and manifest generation |
+| Dependencies | `add`, `install`, and frozen lockfile validation |
+| Sources | Local file dependencies, static indexes, mirrors, and semver resolution |
+| Policy | Source allowlists, trust rules, checksums, and lockfile integrity |
+
+## Main workflows
+
+- Initialize a package manifest and add local or indexed dependencies deliberately.
+- Resolve dependencies into a reproducible lockfile, then use frozen mode in CI.
+- Validate source and trust policy before accepting artifacts from a mirror or index.
+- Keep registry publication separate: current publish behavior is metadata preview, not public transport.
+
 ## Five-minute example
 
 ```bash
-kujo package-add example-package
-kujo package-install
-kujo package-install --frozen
+kujo run kennel.kujo --interpreter -- init --name kennel-demo
+kujo run kennel.kujo --interpreter -- add file:../some-local-package --alias some-local-package
+kujo run kennel.kujo --interpreter -- install
+kujo run kennel.kujo --interpreter -- validate
 ```
 
 ## What you get
@@ -44,4 +61,3 @@ This is local/source workflow scope, not a managed package registry promise.
 ## Reference
 
 See the [Kennel repository](https://github.com/kujolang/kennel) for manifest and trust policy details.
-

@@ -20,6 +20,22 @@ tags: [tool, approvals, supervision]
 
 Local coding agents need human approval, policy-as-code risk classification, durable decisions, and remote supervision without moving execution off the workstation.
 
+## Interface overview
+
+| Surface | What is available |
+| --- | --- |
+| Daemon | Primary Rust service with health, session, device, action, and decision routes |
+| Policy | Kujo rules for risk classification, validation, and notification behavior |
+| Agent adapters | Generic tmux, Copilot, Claude Code, Codex, and native Dispatch events |
+| Mobile | Android control surface, JWT device identity, FCM notifications, and decision audit trail |
+
+## Main workflows
+
+- Run the daemon beside tmux-hosted agents so execution and working data remain local.
+- Convert agent prompts and lifecycle output into structured, policy-classified events.
+- Approve or reject actions through the API or mobile surface, with stronger confirmation for dangerous actions.
+- Use the append-only audit trail to review who decided what and when.
+
 ## Five-minute example
 
 ```bash

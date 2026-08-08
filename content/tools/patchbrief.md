@@ -21,10 +21,27 @@ tags: [tool, review, diff]
 
 The implementation is done and a reviewer needs the intent, changed files, risk, and test evidence in one compact brief.
 
+## Interface overview
+
+| Surface | What is available |
+| --- | --- |
+| Summary | `summarize` for intent, changed files, risk, and diff statistics |
+| Tests | `suggest-tests` for evidence matched to the change |
+| Handoff | `handoff` for an implementation-to-reviewer brief |
+| Formats | Human-readable output or structured JSON with optional pretty printing |
+
+## Main workflows
+
+- Summarize the current diff before asking another person or agent to review it.
+- Generate test suggestions, then record which checks actually ran rather than treating suggestions as proof.
+- Produce a compact handoff after implementation and verification are complete.
+- Use JSON output when another tool needs to consume the brief deterministically.
+
 ## Five-minute example
 
 ```bash
-kujo run patchbrief.kujo summarize --base main --head HEAD
+kujo run patchbrief.kujo -- summarize
+kujo run patchbrief.kujo -- summarize --format json --pretty
 ```
 
 ## What you get
@@ -42,4 +59,3 @@ This remains preview/dogfood wording until broader release proof is available.
 ## Reference
 
 See the [PatchBrief repository](https://github.com/kujolang/patchbrief).
-

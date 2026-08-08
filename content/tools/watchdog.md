@@ -21,11 +21,27 @@ tags: [tool, telemetry, ai]
 
 You need a local proxy or dashboard to understand AI request volume, cost, latency, errors, and audit records.
 
+## Interface overview
+
+| Surface | What is available |
+| --- | --- |
+| Proxy | OpenAI-compatible requests under `/proxy/v1` with passthrough or override auth |
+| APIs | `/api/requests`, `/api/proxy-config`, health, readiness, and structured exports |
+| Dashboard | Request, tool, agent-step, latency, token, cost-estimate, and failure views |
+| Operations | SQLite storage, token auth, host policy, redaction, rate limits, and retention controls |
+
+## Main workflows
+
+- Start the local dashboard server and point an OpenAI-compatible client at its proxy base URL.
+- Inspect requests through the dashboard or JSON APIs without changing the application contract.
+- Enable API and proxy tokens before exposing the server beyond a trusted local boundary.
+- Treat displayed cost as a versioned direct-provider estimate, not an invoice.
+
 ## Five-minute example
 
 ```bash
-kujo run dashboard_server.kujo
-curl http://127.0.0.1:8787/api/requests
+kujo run --interpreter dashboard_server.kujo
+curl http://127.0.0.1:7700/api/proxy-config
 ```
 
 ## What you get
@@ -43,4 +59,3 @@ Watchdog is not a managed observability service; credentials and deployment rema
 ## Reference
 
 See the [Watchdog repository](https://github.com/kujolang/watchdog).
-

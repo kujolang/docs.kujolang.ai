@@ -21,10 +21,27 @@ tags: [tool, browser, visual-qa]
 
 A browser surface needs deterministic flow, screenshot, accessibility, link, or visual baseline checks.
 
+## Interface overview
+
+| Surface | What is available |
+| --- | --- |
+| Checks | Page load, screenshots, assertions, links, accessibility, performance, and crawls |
+| Inspection | `lens inspect` for semantic browser state and safe selector evidence |
+| Flows | Validated JSON flows with execution, recording, and walkthrough artifacts |
+| Review | `lens-report.json`, screenshots, HTML reports, baselines, and Agent Repair Briefs |
+
+## Main workflows
+
+- Run a one-page check first, then opt into link, accessibility, or bounded crawl checks.
+- Inspect the live page before authoring selectors for an interactive flow.
+- Validate a flow definition before execution, then record proof for review.
+- Save and compare baselines only when the browser and viewport are intentionally controlled.
+
 ## Five-minute example
 
 ```bash
-kujo run lens.kujo check --config .lens.toml
+lens check http://localhost:3000 --check-links --accessibility
+lens flow flow.json --validate
 ```
 
 ## What you get

@@ -21,10 +21,26 @@ tags: [tool, ai, providers]
 
 You need a provider-gated chat or embedding call with a normalized contract and a fixture path for local checks.
 
+## Interface overview
+
+| Surface | What is available |
+| --- | --- |
+| Library | `create_client`, `create_message`, chat completion, streaming, and embeddings |
+| Providers | OpenAI, OpenRouter, DeepSeek, and custom OpenAI-compatible endpoints |
+| Reliability | Retries, backoff, timeouts, fallback providers, circuit breakers, and budgets |
+| Safety and proof | Endpoint allowlists, protected headers, redaction, fixtures, schemas, and benchmarks |
+
+## Main workflows
+
+- Import `src/ai_sdk.kujo` and `src/providers.kujo`; this library does not add a separate user-facing CLI.
+- Run the bundled example with no key to exercise deterministic fixture mode.
+- Add a provider preset or custom endpoint while keeping the application response contract unchanged.
+- Stream normalized `delta`, `done`, and `error` events, or request embeddings through the same client boundary.
+
 ## Five-minute example
 
 ```bash
-kujo run main.kujo --interpreter fixture
+kujo run examples/main.kujo
 ```
 
 ## What you get
@@ -42,4 +58,3 @@ Provider-specific proof and credentials remain integrator-owned; this is not a h
 ## Reference
 
 See the [AI SDK repository](https://github.com/kujolang/ai-sdk) and the [AI runtime basics](/learn/ai-runtime/) guide.
-

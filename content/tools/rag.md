@@ -21,10 +21,27 @@ tags: [tool, retrieval, knowledge]
 
 You need to ingest local knowledge, isolate namespaces, retrieve relevant chunks, and return citations.
 
+## Interface overview
+
+| Surface | What is available |
+| --- | --- |
+| CLI | `ingest`, `query`, `serve`, `demo`, and `bootstrap` |
+| Retrieval | Parser, chunking, embedding, namespace isolation, and citation metadata |
+| Server | Local ingest/query HTTP endpoints with OpenAPI and SDK contract parity |
+| Storage | Local indexes, maintenance utilities, and deterministic offline fixtures |
+
+## Main workflows
+
+- Ingest one file or a recursive directory into a named namespace.
+- Query that namespace and inspect the chunks and citations used in the answer.
+- Run the local server when an application needs HTTP ingestion and query boundaries.
+- Bootstrap a reference repository or use demo mode to verify the full path without a hosted service.
+
 ## Five-minute example
 
 ```bash
-kujo run main.kujo --interpreter demo
+kujo run main.kujo --interpreter ingest --path ./docs --recursive true --namespace team_a
+kujo run main.kujo --interpreter query --question "How does this work?" --namespace team_a
 ```
 
 ## What you get
@@ -42,4 +59,3 @@ RAG is not a hosted retrieval service; parser, embedding, and deployment proof s
 ## Reference
 
 See the [RAG repository](https://github.com/kujolang/rag).
-

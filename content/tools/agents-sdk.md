@@ -21,10 +21,27 @@ tags: [tool, agents, approvals]
 
 An AI call needs tools, approval boundaries, handoffs, tracing, session state, or explicit budgets.
 
+## Interface overview
+
+| Surface | What is available |
+| --- | --- |
+| Runtime | Agent configuration, runners, lifecycle events, cancellation, and bounded retries |
+| Tools and safety | Typed tool registry, permissions, approvals, guardrails, and redaction hooks |
+| State | Session, memory, artifact, and retrieval store contracts with in-memory fixtures |
+| Coordination | Handoffs, tracing, budgets, MCP helpers, and integration adapters |
+
+## Main workflows
+
+- Import the modules under `src/agents/`; there is no separate end-user CLI.
+- Build an agent around injected AI SDK callbacks so provider concerns stay outside the runtime.
+- Register tools with schemas and risk metadata, then enforce approval before invocation.
+- Persist sessions, memory, artifacts, traces, and handoff receipts through replaceable store interfaces.
+
 ## Five-minute example
 
 ```bash
-kujo run examples/approval-agent.kujo --interpreter fixture
+kujo run examples/examples_smoke_runner.kujo --interpreter
+kujo test
 ```
 
 ## What you get
@@ -42,4 +59,3 @@ Hosted adapters remain integrator-owned. Use fixture mode when proving the workf
 ## Reference
 
 See the [Agents SDK repository](https://github.com/kujolang/agents-sdk).
-

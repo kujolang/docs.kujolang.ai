@@ -21,12 +21,28 @@ tags: [tool, evidence, receipts]
 
 You need a durable receipt for what ran, when it ran, what it used, and whether it passed.
 
+## Interface overview
+
+| Surface | What is available |
+| --- | --- |
+| Lifecycle | `start` and `finish` with task, status, verdict, and git metadata |
+| Accounting | `usage`, `cost`, and notes attached to a run |
+| Review | `list`, `show`, `compare`, and Markdown `report` |
+| Follow-up | Structured follow-up items stored with `.runledger/` receipts |
+
+## Main workflows
+
+- Start a receipt before an agent or automation run and retain the returned run ID.
+- Add usage, cost, or decision notes as evidence becomes available.
+- Finish with an explicit pass, partial, or fail state and a concise verdict.
+- Compare related runs or render a Markdown report for review and handoff.
+
 ## Five-minute example
 
 ```bash
 runledger start --name quickstart-check
-runledger finish --verdict pass
-runledger show latest
+runledger finish <run-id> --status pass --verdict "checks passed"
+runledger list
 ```
 
 ## What you get
@@ -44,4 +60,3 @@ RunLedger records declared run information; it is not automatic billing capture 
 ## Reference
 
 See the [RunLedger repository](https://github.com/kujolang/runledger).
-

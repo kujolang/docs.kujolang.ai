@@ -20,6 +20,22 @@ tags: [tool, dependabot, security]
 
 You need a local command center for Dependabot alerts across repositories, deterministic classification, reports, and guarded fix preparation.
 
+## Interface overview
+
+| Surface | What is available |
+| --- | --- |
+| Collect | `ward collect --all` reads configured GitHub Dependabot alerts |
+| Decide | `plan --unplanned` and deterministic alert classification |
+| Review | Markdown/JSON reports plus a local static dashboard |
+| Remediate | Dry-run fix preparation; changes require explicit `--apply` |
+
+## Main workflows
+
+- Run `doctor`, configure repositories, and collect alerts with a token limited to required scopes.
+- Classify unplanned alerts and review suggested ecosystem-specific commands.
+- Generate a recent report or open the dashboard for cross-repository triage.
+- Apply an approved safe fix explicitly, then review and push it through normal repository controls.
+
 ## Five-minute example
 
 ```bash

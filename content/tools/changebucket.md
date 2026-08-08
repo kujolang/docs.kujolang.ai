@@ -21,10 +21,27 @@ tags: [tool, review, blast-radius]
 
 You need a compact measure of how much changed and which parts of the repository are affected.
 
+## Interface overview
+
+| Surface | What is available |
+| --- | --- |
+| Revision scope | `--base`, `--head`, and `--repo` |
+| Reports | Terminal summary plus `--json`, `--markdown`, and `--output` |
+| Budgets | `check` with maximum files, churn, and related thresholds |
+| Analysis | File categories, risk signals, and blast-radius summaries |
+
+## Main workflows
+
+- Compare a base and head revision to establish the review footprint.
+- Export JSON for automation or Markdown for a pull request and handoff.
+- Enforce explicit budgets with `changebucket check`; a breach exits non-zero.
+- Use the result to focus review, then rely on tests and architecture checks for correctness.
+
 ## Five-minute example
 
 ```bash
-changebucket check --base main --head HEAD --markdown
+changebucket --base main --head HEAD --markdown
+changebucket check --max-files 20 --max-churn 800
 ```
 
 ## What you get
@@ -42,4 +59,3 @@ Footprint is a decision aid, not a substitute for tests, review, or architecture
 ## Reference
 
 See the [ChangeBucket repository](https://github.com/kujolang/changebucket).
-
