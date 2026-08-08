@@ -131,6 +131,16 @@ def finalize_html(output: Path) -> None:
             lambda match: f'{match.group(1)}View {match.group("title")}{match.group(4)}',
             html,
         )
+        if path == output / "404.html":
+            for relative, absolute in (
+                ('href="assets/', 'href="/assets/'),
+                ('src="assets/', 'src="/assets/'),
+                ('href="favicon.svg"', 'href="/favicon.svg"'),
+                ('href="index.html"', 'href="/"'),
+                ('href="sitemap.xml"', 'href="/sitemap.xml"'),
+                ('href="llms.txt"', 'href="/llms.txt"'),
+            ):
+                html = html.replace(relative, absolute)
         path.write_text(html, encoding="utf-8")
 
 
