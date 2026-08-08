@@ -15,7 +15,6 @@ next: /learn/editor-support/
 tags: [packages, kennel, lockfiles]
 ---
 
-# Packages with Kennel
 
 `kujo.toml` describes a project and `kujo.lock` records the resolved dependency graph. Kennel keeps package indexes, file dependencies, trust policy, and source policy visible.
 

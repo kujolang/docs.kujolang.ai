@@ -14,7 +14,6 @@ next: /tools/ai-sdk/
 tags: [ai, agents, build]
 ---
 
-# AI and agents
 
 Lead with increasing responsibility:
 

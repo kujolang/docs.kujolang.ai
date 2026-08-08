@@ -15,7 +15,6 @@ next: /tools/rag/
 tags: [knowledge, rag, citations]
 ---
 
-# Knowledge and retrieval
 
 Use [RAG](/tools/rag/) when a workflow needs local ingestion, namespace isolation, citations, or offline fixture behavior. Keep the source documents, parser choices, chunking strategy, and retrieval result visible.
 

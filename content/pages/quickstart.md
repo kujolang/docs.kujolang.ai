@@ -1,10 +1,10 @@
 ---
-title: Five-minute quickstart
+title: Quickstart
 description: Create one Kujo file, run it with the VM-first runtime, and check the source.
 custom_url: quickstart
 template: docs
 section: Start here
-nav_title: Five-minute quickstart
+nav_title: Quickstart
 order: 30
 audience: beginner
 difficulty: beginner
@@ -19,7 +19,6 @@ estimated_time: 5 minutes
 tags: [quickstart, cli, runtime]
 ---
 
-# Five-minute quickstart
 
 Make the smallest useful Kujo program before opening the ecosystem directory.
 
@@ -56,4 +55,3 @@ The generated project gives you `kujo.toml` and `src/main.kujo`; keep `kujo chec
 ## Next step
 
 Use [Choose a path](/choose-a-path/) when you know what you want to build, or continue with [Language basics](/learn/language-basics/).
-

@@ -15,7 +15,6 @@ next: /learn/capabilities/
 tags: [runtime, vm, interpreter]
 ---
 
-# How the runtime works
 
 The normal path is the VM. It keeps the command developers use in production-like checks aligned with the command they use while learning.
 

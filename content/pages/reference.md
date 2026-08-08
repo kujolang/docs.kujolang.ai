@@ -14,7 +14,6 @@ next: /security/
 tags: [reference, cli, generated]
 ---
 
-# Reference
 
 Reference material is deliberately secondary to the first-time path. Use it when you know the concept or symbol you need to look up.
 

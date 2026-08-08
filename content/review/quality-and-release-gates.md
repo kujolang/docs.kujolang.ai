@@ -1,7 +1,7 @@
 ---
 title: Quality and release gates
 description: Check drift, boundaries, release readiness, browser behavior, and sensitive values before shipping.
-custom_url: review/quality-and-release-gates
+custom_url: quality-and-release-gates
 template: docs
 section: Keep work reviewable
 nav_title: Quality and release gates
@@ -15,7 +15,6 @@ next: /review/browser-architecture-and-privacy/
 tags: [quality, release, gates]
 ---
 
-# Quality and release gates
 
 Use the narrowest gate that answers the question:
 
@@ -23,11 +22,10 @@ Use the narrowest gate that answers the question:
 - [Fence](/tools/fence/) checks architecture boundaries and import rules.
 - [ShipCheck](/tools/shipcheck/) scans release readiness.
 - [Lens](/tools/lens/) reviews browser behavior and visual/accessibility contracts.
-- [Redact](/tools/redact/) transforms sensitive values before context leaves the workspace.
+- [Scent](/tools/scent/) limits task context and records redaction-aware packaging decisions.
 
 ```bash
 kujo run shipcheck.kujo gate
 ```
 
 Preview labels remain visible where broader proof is still in progress.
-

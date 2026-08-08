@@ -13,7 +13,6 @@ version: current
 tags: [support, troubleshooting]
 ---
 
-# Support
 
 Start with the smallest reproducible command and the local artifact it leaves behind.
 
@@ -32,5 +31,4 @@ Capture the exact command, platform, Kujo version, and relevant output. Remove s
 - [CaseFile](/tools/casefile/) captures a failure bundle.
 - [RunLedger](/tools/runledger/) records run metadata and verdicts.
 - [PatchBrief](/tools/patchbrief/) prepares a diff handoff.
-- [Redact](/tools/redact/) removes sensitive values before context leaves the workspace.
-
+- [Scent](/tools/scent/) creates bounded context packs before context leaves the workspace.

@@ -15,7 +15,6 @@ next: /learn/ai-runtime/
 tags: [editor, lsp, cli]
 ---
 
-# Editor and CLI support
 
 The CLI is the compatibility baseline. LSP and editor adapters add completion, definition, references, hover, diagnostics, rename, and code actions where the adapter is available.
 

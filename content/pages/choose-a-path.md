@@ -11,21 +11,19 @@ difficulty: beginner
 status: stable
 version: current
 previous: /quickstart/
-next: /learn/language-basics/
+next: /learn/
 tags: [orientation, ecosystem]
 ---
 
-# Choose a path
 
 | If you want to… | Start with… |
 | --- | --- |
-| Learn the language | [Language basics](/learn/language-basics/), [Standard Library](/reference/), and [Kennel](/tools/kennel/) |
+| Learn the language | [Learn Kujo](/learn/), [Reference](/reference/), and [Kennel](/tools/kennel/) |
 | Call models or build agents | [AI SDK](/tools/ai-sdk/), [Agents SDK](/tools/agents-sdk/), and [AI Chat](/showcases/ai-chat/) |
 | Turn requests into bounded work | [Spec](/tools/spec/), [Scent](/tools/scent/), [PackWrite](/tools/packwrite/), and [Dispatch](/tools/dispatch/) |
 | Check changes before they ship | [Eval](/tools/eval/), [Concord](/tools/concord/), [ShipCheck](/tools/shipcheck/), and [Lens](/tools/lens/) |
 | Capture proof and handoffs | [CaseFile](/tools/casefile/), [RunLedger](/tools/runledger/), [PatchBrief](/tools/patchbrief/), and [ChangeBucket](/tools/changebucket/) |
-| Build an application | [CRUD API](/showcases/crud-api/), [CMS](/showcases/cms/), [SSG](/showcases/ssg/), or [Intake](/showcases/intake/) |
-| Build a guarded integration | [MCP](/tools/mcp/), [RAG](/tools/rag/), [Relay](/tools/relay/), [Tribunal](/tools/tribunal/), or [Workcell](/tools/workcell/) |
+| Build an application | [CMS](/showcases/cms/), [CRUD API Showcase](/showcases/crud-api/), [AI Chat](/showcases/ai-chat/), [SSG](/showcases/ssg/), or [TotalRecall](/showcases/totalrecall/) |
+| Build a guarded integration | [MCP](/tools/mcp/), [RAG](/tools/rag/), [Watchdog](/tools/watchdog/), or [Leash](/tools/leash/) |
 
 Every destination page uses the same shape: what it does, when to choose it, one example, the artifact you get, its boundaries, and one next step.
-

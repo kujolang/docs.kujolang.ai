@@ -1,7 +1,7 @@
 ---
 title: Context and task contracts
 description: Turn an open-ended request into a structured contract with scope, acceptance, and evidence.
-custom_url: review/context-and-task-contracts
+custom_url: context-and-task-contracts
 template: docs
 section: Keep work reviewable
 nav_title: Context and task contracts
@@ -10,11 +10,10 @@ audience: developer
 difficulty: intermediate
 status: launch scope
 version: current
-next: /review/tests-and-evaluation/
+next: /ecosystem/
 tags: [spec, context, contracts]
 ---
 
-# Context and task contracts
 
 Start with [Spec](/tools/spec/) when the work needs a name, objective, acceptance criteria, constraints, and a clear completion state.
 
@@ -23,4 +22,3 @@ kujo run spec.kujo validate task.spec.yml
 ```
 
 Then use [Scout](/tools/scout/) to map the repository and [Scent](/tools/scent/) to package the narrow context that the task actually needs. The artifact is a contract and a focused context pack, not a giant transcript.
-

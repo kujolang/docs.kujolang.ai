@@ -13,7 +13,6 @@ version: current
 tags: [release, maturity, scope]
 ---
 
-# Release boundaries
 
 The docs use maturity labels beside recommendations so a reader can make an informed choice.
 

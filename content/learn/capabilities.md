@@ -15,7 +15,6 @@ next: /learn/packages/
 tags: [security, capabilities, safe-execution]
 ---
 
-# Capabilities and safe execution
 
 Trusted mode is convenient for local development. Untrusted mode makes host effects explicit and is useful when a workflow needs a visible boundary.
 

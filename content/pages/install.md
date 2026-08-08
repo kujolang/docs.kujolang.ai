@@ -18,7 +18,6 @@ prerequisites:
 tags: [install, cli, release-candidate]
 ---
 
-# Install Kujo
 
 The final public artifact status is still a visible boundary in this launch draft. Until release binaries, checksums, and a clean-machine download smoke are complete, use the source-backed release-candidate path.
 

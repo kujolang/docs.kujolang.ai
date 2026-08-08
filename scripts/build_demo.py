@@ -5,6 +5,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
+import re
 import shutil
 import subprocess
 import tempfile
@@ -14,7 +16,8 @@ from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 SSG_ROOT = ROOT.parent / "ssg"
-SECTIONS = ("learn", "build", "tools", "showcases", "collections", "ecosystem")
+SECTIONS = ("learn", "build", "review", "tools", "showcases", "collections", "ecosystem")
+KUJO_BIN = os.environ.get("KUJO_BIN", "kujo")
 
 
 DEPARTURE_MONO_CSS = """/* Kujo Docs typography: local Site Kit asset. */
@@ -38,7 +41,7 @@ code, pre, .title-font {
 
 def run_build(content: Path, output: Path, site_url: str, *, no_index: bool, no_aux: bool) -> None:
     command = [
-        "kujo",
+        KUJO_BIN,
         "run",
         str(SSG_ROOT / "build.kujo"),
         "--",
@@ -108,6 +111,29 @@ def write_font_css(output: Path) -> None:
     (output / "assets" / "css" / "fonts.css").write_text(DEPARTURE_MONO_CSS, encoding="utf-8")
 
 
+def finalize_html(output: Path) -> None:
+    """Apply docs-specific cleanup that is not part of the generic SSG templates."""
+    empty_prerequisites = re.compile(
+        r'\s*<section class="docs-prerequisites"[^>]*>'
+        r'\s*<h2[^>]*>Prerequisites</h2>\s*</section>'
+    )
+    listing_link = re.compile(
+        r'(<li class="listing-card">.*?<h2 class="listing-card-title">'
+        r'<a href="(?P<href>[^"]+)"[^>]*>(?P<title>[^<]+)</a></h2>.*?'
+        r'<a href="(?P=href)" class="listing-card-button">)View Product(</a>.*?</li>)',
+        re.DOTALL,
+    )
+
+    for path in output.rglob("*.html"):
+        html = path.read_text(encoding="utf-8")
+        html = empty_prerequisites.sub("", html)
+        html = listing_link.sub(
+            lambda match: f'{match.group(1)}View {match.group("title")}{match.group(4)}',
+            html,
+        )
+        path.write_text(html, encoding="utf-8")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--site-url", default="http://127.0.0.1:4178")
@@ -143,10 +169,15 @@ def main() -> int:
                     destination.parent.mkdir(parents=True, exist_ok=True)
                     shutil.copy2(source, destination)
 
+    for blog_artifact in (output / "updates", output / "feed"):
+        if blog_artifact.exists():
+            shutil.rmtree(blog_artifact)
+
     search_script = SSG_ROOT / "scripts" / "docs_search_index.py"
     subprocess.run(["python3", str(search_script), "--content", str(ROOT / "content"), "--output", str(ROOT / "assets/js/docs-search-index.json"), "--site-url", args.site_url], cwd=ROOT, check=True)
     shutil.copy2(ROOT / "assets/js/docs-search-index.json", output / "assets/js/docs-search-index.json")
     write_font_css(output)
+    finalize_html(output)
     write_aux(output, args.site_url)
     print(json.dumps({"output": str(output), "routes": len(routes()), "sections": list(SECTIONS)}))
     return 0

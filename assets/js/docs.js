@@ -8,6 +8,14 @@
 		});
 	}
 
+	document.querySelectorAll('.docs-sidebar a').forEach(function(link) {
+		var currentPath = window.location.pathname.replace(/index\.html$/, '');
+		var linkPath = new URL(link.href, window.location.origin).pathname.replace(/index\.html$/, '');
+		if (currentPath === linkPath || (linkPath !== '/' && currentPath.indexOf(linkPath) === 0)) {
+			link.setAttribute('aria-current', 'page');
+		}
+	});
+
 	var input = document.getElementById('docs-search');
 	var panel = document.getElementById('docs-search-results');
 	var index = [];
@@ -78,6 +86,9 @@
 	}
 
 	document.querySelectorAll('pre').forEach(function(block) {
+		if (block.parentElement && block.parentElement.querySelector('[data-copy-code]')) {
+			return;
+		}
 		var button = document.createElement('button');
 		button.type = 'button';
 		button.className = 'copy-code-button';

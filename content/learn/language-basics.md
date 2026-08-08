@@ -14,7 +14,6 @@ next: /learn/runtime/
 tags: [language, syntax, beginner]
 ---
 
-# Language basics
 
 Kujo files are plain text and are meant to stay readable in review. Start with values, bindings, functions, modules, and explicit errors.
 

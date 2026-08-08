@@ -15,7 +15,6 @@ next: /tools/spec/
 tags: [workflows, approvals, dispatch]
 ---
 
-# Workflows and approvals
 
 Define the request with [Spec](/tools/spec/), focus context with [Scent](/tools/scent/), prepare execution with [PackWrite](/tools/packwrite/), then use [Dispatch](/tools/dispatch/) for resumable steps and approvals.
 

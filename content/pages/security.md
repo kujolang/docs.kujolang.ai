@@ -14,7 +14,6 @@ next: /release-boundaries/
 tags: [security, capabilities, local-first]
 ---
 
-# Security model
 
 Kujo gates host effects such as filesystem, network, and process access behind explicit runtime capabilities. The trusted path is convenient for local development; untrusted mode makes the allow-list visible.
 
@@ -35,5 +34,4 @@ Add network or process capabilities only when the program needs them. A capabili
 - Security and network showcases use authorized, inert fixtures.
 - Redaction belongs before context leaves the workspace.
 
-See [Redact](/tools/redact/) and [MCP](/tools/mcp/) for boundary-specific workflows.
-
+See [Scent](/tools/scent/) and [MCP](/tools/mcp/) for boundary-specific workflows.
