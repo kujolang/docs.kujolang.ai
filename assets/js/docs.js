@@ -172,6 +172,84 @@
 		});
 	}
 
+	var syntaxRules = {
+		bash: [
+			['syntax-string', /"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'/y],
+			['syntax-comment', /#[^\n]*/y],
+			['syntax-variable', /\$(?:\{[^}\n]+\}|[A-Za-z_][A-Za-z0-9_]*|\d+)/y],
+			['syntax-flag', /--?[A-Za-z][A-Za-z0-9-]*/y],
+			['syntax-command', /(?<![A-Za-z0-9_.-])(?:bash|cargo|cat|cd|command|cp|curl|git|kujo|mkdir|mv|npm|npx|python3?|rg|rm|sort)\b/y],
+			['syntax-number', /\b\d+(?:\.\d+)?\b/y],
+			['syntax-operator', /&&|\|\||[|\\;]/y]
+		],
+		kujo: [
+			['syntax-string', /"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'/y],
+			['syntax-comment', /\/\/[^\n]*/y],
+			['syntax-keyword', /\b(?:as|async|await|break|catch|continue|else|false|for|from|func|if|import|in|let|match|module|mut|null|pub|return|throw|true|try|while)\b/y],
+			['syntax-command', /(?<![A-Za-z0-9_.-])kujo\b/y],
+			['syntax-function', /\b[A-Za-z_][A-Za-z0-9_]*(?=\s*\()/y],
+			['syntax-number', /\b\d+(?:\.\d+)?\b/y],
+			['syntax-operator', /:=|==|!=|<=|>=|=>|[-+*/%=<>]/y]
+		]
+	};
+
+	var appendSyntaxToken = function(fragment, className, value) {
+		if (!className) {
+			fragment.appendChild(document.createTextNode(value));
+			return;
+		}
+		var token = document.createElement('span');
+		token.className = className;
+		token.textContent = value;
+		fragment.appendChild(token);
+	};
+
+	var highlightCode = function(block) {
+		var languageMatch = block.className.match(/(?:^|\s)language-([\w-]+)/);
+		var language = languageMatch ? languageMatch[1].toLowerCase() : '';
+		var rules = syntaxRules[language];
+		if (!rules) {
+			return;
+		}
+		var source = block.textContent;
+		var fragment = document.createDocumentFragment();
+		var plain = '';
+		var index = 0;
+		while (index < source.length) {
+			var matchedClass = '';
+			var matchedValue = '';
+			for (var ruleIndex = 0; ruleIndex < rules.length; ruleIndex += 1) {
+				var expression = rules[ruleIndex][1];
+				expression.lastIndex = index;
+				var match = expression.exec(source);
+				if (match) {
+					matchedClass = rules[ruleIndex][0];
+					matchedValue = match[0];
+					break;
+				}
+			}
+			if (matchedValue) {
+				if (plain) {
+					appendSyntaxToken(fragment, '', plain);
+					plain = '';
+				}
+				appendSyntaxToken(fragment, matchedClass, matchedValue);
+				index += matchedValue.length;
+			} else {
+				plain += source.charAt(index);
+				index += 1;
+			}
+		}
+		if (plain) {
+			appendSyntaxToken(fragment, '', plain);
+		}
+		block.replaceChildren(fragment);
+		block.parentElement.classList.add('has-syntax-highlighting');
+		block.parentElement.dataset.languageLabel = language === 'bash' ? 'Terminal' : 'Kujo';
+	};
+
+	document.querySelectorAll('pre > code[class*="language-"]').forEach(highlightCode);
+
 	var legacyCopyText = function(text) {
 		return new Promise(function(resolve, reject) {
 			var textarea = document.createElement('textarea');
@@ -235,7 +313,7 @@
 		button.type = 'button';
 		button.className = 'copy-code-button';
 		button.textContent = 'Copy';
-		bindCopyButton(button, block);
+		bindCopyButton(button, block.querySelector('code') || block);
 		block.appendChild(button);
 	});
 
