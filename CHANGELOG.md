@@ -7,6 +7,7 @@
 - Replaced the generic favicon with the official Kujo K logomark and added SVG, ICO, PNG, Apple touch, Android web-app, Windows tile, and web manifest assets.
 - Reworked the mobile header with Tabler menu and theme icons, persistent header search, and a light/dark mode toggle.
 - Updated the footer with the Kujo wordmark and current Docs version.
+- Simplified the header brand to the K logomark and Docs label, reordered the mobile controls, and added IDE-style syntax highlighting to code blocks.
 
 All notable changes to Kujo Docs are documented here.
 
