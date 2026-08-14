@@ -3,6 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		(function() {
+			try {
+				if (window.localStorage.getItem('sk-theme') === 'kujo-dark') {
+					document.documentElement.dataset.theme = 'kujo-dark';
+				}
+			} catch (error) {}
+		})();
+	</script>
 	<title>Showcases | Kujo Docs</title>
 	<meta name="description" content="The shortest path from language basics to reviewable, local-first software.">
 	<meta name="keywords" content="SSG, Static Site Generator">
@@ -40,7 +49,20 @@
 <header class="docs-topbar" id="navigation">
 	<div class="docs-topbar-row">
 		<a class="docs-brand" href="../index.html"><img class="docs-brand-mark" src="../assets/img/kujo-logomark-black.svg" alt=""> <span>Kujo Docs</span></a>
-		<button class="docs-menu-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu><span class="docs-menu-label">Menu</span><span class="docs-menu-close-icon" aria-hidden="true"></span></button>
+		<label class="docs-search-shell">
+			<span class="sr-only">Search documentation</span>
+			<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
+		</label>
+		<div class="docs-header-actions">
+			<button class="docs-menu-button docs-icon-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu>
+				<svg class="docs-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+				<svg class="docs-close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+			</button>
+			<button class="docs-theme-button docs-icon-button" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-docs-theme>
+				<svg class="docs-moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c.132 0 .263 .003 .393 .008a7.5 7.5 0 0 0 7.599 9.6A9 9 0 1 1 12 3"/></svg>
+				<svg class="docs-sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-4 0a4 4 0 1 0 8 0 4 4 0 1 0-8 0M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+			</button>
+		</div>
 	</div>
 	<nav id="primary-navigation" class="docs-primary-nav" aria-label="Primary navigation">
 		<a href="/start-here/">Start here</a>
@@ -49,16 +71,12 @@
 		<a href="/tools/">Tools</a>
 		<a href="/showcases/">Showcases</a>
 	</nav>
-	<label class="docs-search-shell">
-		<span class="sr-only">Search documentation</span>
-		<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
-	</label>
 </header>
 <div id="docs-search-results" class="docs-search-results" aria-live="polite"></div>
 <main class="docs-listing" id="main-content"><div class="docs-listing-header"><p class="docs-eyebrow">Proof applications</p><h1>Showcases</h1><p>Five verified repositories demonstrate complete application, API, publishing, chat, and ingestion workflows.</p><p class="docs-listing-note">These are local proof surfaces, not promises of hosted services or production traffic.</p></div><ul class="docs-card-grid"><li class="listing-card"><a class="listing-card-image-link" href="/showcases/cms/"><span class="listing-card-image-placeholder" aria-hidden="true"></span></a><div class="listing-card-body"><div class="listing-card-tags"><span class="tag listing-tag">showcase</span><span class="tag listing-tag">cms</span><span class="tag listing-tag">content</span></div><h2 class="listing-card-title"><a href="/showcases/cms/" class="text-links">CMS</a></h2><p class="listing-card-excerpt">Use it when… You want to see a server-first content application with explicit content models and delivery boundaries. Interface overview Surface What is available Runtime backend/runtime/main.kujo ; no separate CMS...</p><a href="/showcases/cms/" class="listing-card-button">View CMS</a></div></li><li class="listing-card"><a class="listing-card-image-link" href="/showcases/crud-api/"><span class="listing-card-image-placeholder" aria-hidden="true"></span></a><div class="listing-card-body"><div class="listing-card-tags"><span class="tag listing-tag">showcase</span><span class="tag listing-tag">api</span><span class="tag listing-tag">sqlite</span></div><h2 class="listing-card-title"><a href="/showcases/crud-api/" class="text-links">CRUD API Showcase</a></h2><p class="listing-card-excerpt">Use it when… You want a conventional API and frontend pattern with SQLite, explicit contracts, and recovery drills. Interface overview Surface What is available API Item and project CRUD, filtering,...</p><a href="/showcases/crud-api/" class="listing-card-button">View CRUD API Showcase</a></div></li><li class="listing-card"><a class="listing-card-image-link" href="/showcases/ai-chat/"><span class="listing-card-image-placeholder" aria-hidden="true"></span></a><div class="listing-card-body"><div class="listing-card-tags"><span class="tag listing-tag">showcase</span><span class="tag listing-tag">ai</span><span class="tag listing-tag">chat</span></div><h2 class="listing-card-title"><a href="/showcases/ai-chat/" class="text-links">AI Chat</a></h2><p class="listing-card-excerpt">Use it when… You want a concrete local application surface for provider profiles, streaming, transcription, and offline fixtures. Interface overview Surface What is available App Local multi-pane chat UI, provider/model...</p><a href="/showcases/ai-chat/" class="listing-card-button">View AI Chat</a></div></li><li class="listing-card"><a class="listing-card-image-link" href="/showcases/ssg/"><span class="listing-card-image-placeholder" aria-hidden="true"></span></a><div class="listing-card-body"><div class="listing-card-tags"><span class="tag listing-tag">showcase</span><span class="tag listing-tag">static</span><span class="tag listing-tag">publishing</span></div><h2 class="listing-card-title"><a href="/showcases/ssg/" class="text-links">SSG</a></h2><p class="listing-card-excerpt">Use it when… You need a transparent, deterministic static publishing pipeline whose content, templates, assets, and generated outputs stay visible. Interface overview Surface What is available Inputs Markdown content, YAML/JSON...</p><a href="/showcases/ssg/" class="listing-card-button">View SSG</a></div></li><li class="listing-card"><a class="listing-card-image-link" href="/showcases/totalrecall/"><span class="listing-card-image-placeholder" aria-hidden="true"></span></a><div class="listing-card-body"><div class="listing-card-tags"><span class="tag listing-tag">showcase</span><span class="tag listing-tag">ingestion</span><span class="tag listing-tag">knowledge</span></div><h2 class="listing-card-title"><a href="/showcases/totalrecall/" class="text-links">TotalRecall</a></h2><p class="listing-card-excerpt">Use it when… You want to normalize work artifacts into a stable model and write them to local destinations such as Strata, Markdown, static HTML, or a JSON index. Interface...</p><a href="/showcases/totalrecall/" class="listing-card-button">View TotalRecall</a></div></li></ul></main>
 
 <footer class="docs-footer" id="footer">
-	<div><strong>Kujo Docs v1.0.0</strong><span>Local-first language and ecosystem guidance.</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.0.0</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../assets/sitekit/sitekit.js"></script>
