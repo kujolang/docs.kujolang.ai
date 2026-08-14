@@ -1,4 +1,27 @@
 (function() {
+	var themeButton = document.querySelector('[data-docs-theme]');
+	var root = document.documentElement;
+	var themeColor = document.querySelector('meta[name="theme-color"]');
+	var updateThemeControl = function() {
+		var isDark = root.dataset.theme === 'kujo-dark';
+		if (themeButton) {
+			themeButton.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+			themeButton.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+			themeButton.title = isDark ? 'Switch to light mode' : 'Switch to dark mode';
+		}
+		if (themeColor) {
+			themeColor.setAttribute('content', isDark ? '#0b0b0b' : '#ffffff');
+		}
+	};
+	updateThemeControl();
+	if (themeButton) {
+		themeButton.addEventListener('click', function() {
+			root.dataset.theme = root.dataset.theme === 'kujo-dark' ? 'kujo-light' : 'kujo-dark';
+			try { window.localStorage.setItem('sk-theme', root.dataset.theme); } catch (error) {}
+			updateThemeControl();
+		});
+	}
+
 	var menuButton = document.querySelector('[data-docs-menu]');
 	var primaryNavigation = document.getElementById('primary-navigation');
 	var topbar = document.querySelector('.docs-topbar');
