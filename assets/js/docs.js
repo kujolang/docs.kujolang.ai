@@ -281,18 +281,38 @@
 		});
 	};
 
+	var renderCopyButton = function(button, state) {
+		var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+		svg.setAttribute('viewBox', '0 0 24 24');
+		svg.setAttribute('aria-hidden', 'true');
+		var paths = state === 'copied'
+			? ['M5 12l5 5L20 7']
+			: ['M7 8m0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z', 'M13 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h3'];
+		paths.forEach(function(pathData) {
+			var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+			path.setAttribute('d', pathData);
+			svg.appendChild(path);
+		});
+		var label = state === 'copied' ? 'Copied' : state === 'manual' ? 'Code selected; copy manually' : 'Copy code';
+		button.replaceChildren(svg);
+		button.dataset.copyState = state;
+		button.setAttribute('aria-label', label);
+		button.title = label;
+	};
+
 	var bindCopyButton = function(button, block) {
+		renderCopyButton(button, 'copy');
 		button.addEventListener('click', function() {
 			copyText(block.textContent).then(function() {
-				button.textContent = 'Copied';
-				window.setTimeout(function() { button.textContent = 'Copy'; }, 3000);
+				renderCopyButton(button, 'copied');
+				window.setTimeout(function() { renderCopyButton(button, 'copy'); }, 3000);
 			}).catch(function() {
 				var selection = window.getSelection();
 				var range = document.createRange();
 				range.selectNodeContents(block);
 				selection.removeAllRanges();
 				selection.addRange(range);
-				button.textContent = 'Select and copy';
+				renderCopyButton(button, 'manual');
 			});
 		});
 	};
@@ -312,9 +332,13 @@
 		var button = document.createElement('button');
 		button.type = 'button';
 		button.className = 'copy-code-button';
-		button.textContent = 'Copy';
+		button.setAttribute('data-copy-code', '');
 		bindCopyButton(button, block.querySelector('code') || block);
-		block.appendChild(button);
+		var shell = document.createElement('div');
+		shell.className = 'docs-code-shell';
+		block.parentNode.insertBefore(shell, block);
+		shell.appendChild(block);
+		shell.appendChild(button);
 	});
 
 	document.querySelectorAll('.docs-body h2, .docs-body h3').forEach(function(heading) {
