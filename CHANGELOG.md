@@ -8,6 +8,7 @@
 - Reworked the mobile header with Tabler menu and theme icons, persistent header search, and a light/dark mode toggle.
 - Updated the footer with the Kujo wordmark and current Docs version.
 - Simplified the header brand to the K logomark and Docs label, reordered the mobile controls, and added IDE-style syntax highlighting to code blocks.
+- Styled code-block scrollbars, pinned copy controls outside horizontal scrolling, and replaced copy text with Tabler icons.
 
 All notable changes to Kujo Docs are documented here.
 
