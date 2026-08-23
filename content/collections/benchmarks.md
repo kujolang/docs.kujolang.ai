@@ -7,10 +7,10 @@ nav_title: Benchmarks
 order: 40
 audience: developer
 difficulty: advanced
-status: local scope verified
+status: guidance
 version: current
+last_updated: 2026-08-23
 scope: local-first
-source_repo: kujo-benchmarks
 previous: /collections/agents/
 next: /ecosystem/
 tags: [collection, benchmarks, evaluation]
@@ -24,3 +24,5 @@ runledger start --name benchmark-run
 ```
 
 Benchmark scores are evidence for the measured setup, not universal performance claims.
+
+There is currently no dedicated `kujolang/kujo-benchmarks` repository. Benchmark fixtures live with the tools and workflow kits they measure; keep the originating repository and commit in every receipt.

@@ -7,8 +7,9 @@ nav_title: Ward
 order: 240
 audience: developer
 difficulty: advanced
-status: local scope verified
+status: private preview
 version: current
+last_updated: 2026-08-23
 scope: local-first security operations
 source_repo: ward
 previous: /tools/lens/
@@ -60,4 +61,4 @@ Ward is read-only by default. Live GitHub collection requires approved credentia
 
 ## Reference
 
-See the [Ward repository](https://github.com/robertdevore/ward).
+Ward source is currently a private repository, so public source access and installation are not available. Treat this page as capability orientation rather than public onboarding.

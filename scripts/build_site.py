@@ -15,7 +15,7 @@ from urllib.parse import quote
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SSG_ROOT = ROOT.parent / "ssg"
+SSG_ROOT = Path(os.environ.get("SSG_ROOT", ROOT.parent / "ssg")).resolve()
 SECTIONS = ("learn", "build", "review", "tools", "showcases", "collections", "ecosystem")
 KUJO_BIN = os.environ.get("KUJO_BIN", "kujo")
 

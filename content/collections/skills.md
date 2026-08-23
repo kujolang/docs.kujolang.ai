@@ -9,6 +9,7 @@ audience: developer
 difficulty: intermediate
 status: local scope verified
 version: current
+last_updated: 2026-08-23
 scope: local-first
 source_repo: kujo-skills
 previous: /showcases/
@@ -25,3 +26,4 @@ rg --files skills | sort
 
 The collection is guidance and workflow glue; it is not a hosted agent marketplace.
 
+See the [Kujo Skills repository](https://github.com/kujolang/kujo-skills).

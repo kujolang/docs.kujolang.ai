@@ -8,8 +8,9 @@ nav_title: Start here
 order: 10
 audience: all
 difficulty: beginner
-status: launch draft
+status: stable
 version: current
+last_updated: 2026-08-23
 next: /install/
 tags: [orientation, onboarding]
 ---

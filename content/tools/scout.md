@@ -9,6 +9,7 @@ audience: developer
 difficulty: beginner
 status: local scope verified
 version: current
+last_updated: 2026-08-23
 scope: local-first
 source_repo: scout
 previous: /tools/eval/

@@ -9,6 +9,7 @@ audience: developer
 difficulty: intermediate
 status: local scope verified
 version: current
+last_updated: 2026-08-23
 scope: local-first
 source_repo: kujo-agents
 previous: /collections/workflows/
@@ -19,3 +20,4 @@ tags: [collection, agents, roles]
 
 Agent roles should carry a clear objective, boundary, handoff format, and evidence expectation. Use them with [Spec](/tools/spec/) and [Scent](/tools/scent/) rather than treating a role prompt as a complete workflow.
 
+See the [Kujo Agents repository](https://github.com/kujolang/kujo-agents).

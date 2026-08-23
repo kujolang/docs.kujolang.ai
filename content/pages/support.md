@@ -10,6 +10,7 @@ audience: all
 difficulty: beginner
 status: stable
 version: current
+last_updated: 2026-08-23
 tags: [support, troubleshooting]
 ---
 

@@ -10,6 +10,7 @@ audience: developer
 difficulty: advanced
 status: launch scope
 version: current
+last_updated: 2026-08-23
 previous: /review/evidence-and-run-history/
 next: /review/browser-architecture-and-privacy/
 tags: [quality, release, gates]

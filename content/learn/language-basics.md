@@ -10,6 +10,7 @@ audience: beginner
 difficulty: beginner
 status: stable
 version: current
+last_updated: 2026-08-23
 next: /learn/runtime/
 tags: [language, syntax, beginner]
 ---

@@ -10,6 +10,7 @@ audience: developer
 difficulty: beginner
 status: stable
 version: current
+last_updated: 2026-08-23
 previous: /learn/language-basics/
 next: /learn/capabilities/
 tags: [runtime, vm, interpreter]

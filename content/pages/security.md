@@ -10,6 +10,7 @@ audience: developer
 difficulty: intermediate
 status: stable
 version: current
+last_updated: 2026-08-23
 next: /release-boundaries/
 tags: [security, capabilities, local-first]
 ---

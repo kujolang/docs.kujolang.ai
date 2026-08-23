@@ -10,6 +10,7 @@ audience: developer
 difficulty: intermediate
 status: launch scope
 version: current
+last_updated: 2026-08-23
 previous: /learn/editor-support/
 next: /build/ai-and-agents/
 tags: [ai, runtime, budgets, secrets]

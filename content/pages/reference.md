@@ -8,8 +8,9 @@ nav_title: Reference
 order: 70
 audience: developer
 difficulty: reference
-status: generated-ready
+status: stable source-backed links
 version: current
+last_updated: 2026-08-23
 next: /security/
 tags: [reference, cli, generated]
 ---
@@ -23,13 +24,12 @@ Reference material is deliberately secondary to the first-time path. Use it when
 - **Language specification:** source-backed syntax, values, functions, modules, and errors.
 - **Standard library:** the stable library and builtin reference generated from source.
 - **Configuration:** `kujo.toml`, lockfiles, runtime capability flags, and docs-site configuration.
-- **Generated reference:** DocGen output bridged into SSG Markdown under `content/reference/generated/`.
+- **Generated reference:** DocGen can emit HTML, Markdown, JSON, or all formats from a selected source path.
 
 ## Generate source reference
 
 ```bash
-kujo docgen --output .docgen/output
+kujo docgen . --out-dir .docgen/output
 ```
 
-The docs bridge turns the stable `docgen-summary/v1` result into reviewable Markdown. Treat generated files as outputs of the source tree, not as hand-authored narrative.
-
+DocGen emits the stable `docgen-summary/v1` result alongside the selected output formats. This site does not currently publish a generated API-reference subtree, so use the repository source references and generate exact-version output locally when symbol-level detail matters.

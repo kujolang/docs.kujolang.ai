@@ -10,6 +10,7 @@ audience: developer
 difficulty: intermediate
 status: stable
 version: current
+last_updated: 2026-08-23
 previous: /learn/runtime/
 next: /learn/packages/
 tags: [security, capabilities, safe-execution]

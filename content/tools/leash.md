@@ -7,8 +7,9 @@ nav_title: Leash
 order: 140
 audience: developer
 difficulty: advanced
-status: local scope verified
+status: private preview
 version: current
+last_updated: 2026-08-23
 scope: local-first supervision
 source_repo: leash
 previous: /tools/watchdog/
@@ -60,4 +61,4 @@ The Rust daemon is the primary implementation. Android device, FCM, signing, not
 
 ## Reference
 
-See the [Leash repository](https://github.com/kujolang/leash).
+Leash source is currently a private repository, so public source access and installation are not available. Treat this page as capability orientation rather than public onboarding.

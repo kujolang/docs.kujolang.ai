@@ -10,6 +10,7 @@ audience: developer
 difficulty: advanced
 status: preview-aware
 version: current
+last_updated: 2026-08-23
 previous: /review/quality-and-release-gates/
 tags: [browser, architecture, privacy]
 ---

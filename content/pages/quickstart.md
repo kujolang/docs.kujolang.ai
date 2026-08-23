@@ -10,6 +10,7 @@ audience: beginner
 difficulty: beginner
 status: stable
 version: current
+last_updated: 2026-08-23
 previous: /install/
 next: /choose-a-path/
 prerequisites:
@@ -45,7 +46,7 @@ kujo run --interpreter hello.kujo
 ## Create a project
 
 ```bash
-kujo init --name hello-kujo
+kujo init --dir hello-kujo --name hello-kujo
 cd hello-kujo
 kujo run src/main.kujo
 ```

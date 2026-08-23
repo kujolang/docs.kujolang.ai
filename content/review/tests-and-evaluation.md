@@ -10,6 +10,7 @@ audience: developer
 difficulty: intermediate
 status: launch scope
 version: current
+last_updated: 2026-08-23
 previous: /review/context-and-task-contracts/
 next: /review/evidence-and-run-history/
 tags: [eval, tests, acceptance]

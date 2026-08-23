@@ -10,6 +10,7 @@ audience: developer
 difficulty: beginner
 status: launch scope
 version: current
+last_updated: 2026-08-23
 previous: /learn/packages/
 next: /learn/ai-runtime/
 tags: [editor, lsp, cli]
