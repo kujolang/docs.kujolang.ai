@@ -1,6 +1,6 @@
 ---
 title: Tooling
-description: Eleven supporting tools for execution, evidence, review, release gates, browser QA, security, and launch artifacts.
+description: Supporting tools for execution, evidence, web operations, editorial production, review, and release gates.
 template: docs
 section: Ecosystem
 nav_title: Tooling
@@ -9,10 +9,11 @@ audience: developer
 difficulty: intermediate
 status: local scope verified
 version: current
+last_updated: 2026-08-23
 tags: [ecosystem, tooling]
 ---
 
-The eleven supporting tools are:
+Core engineering tools include:
 
 - [Muzzle](/tools/muzzle/) — quiet execution with complete logs.
 - [RunLedger](/tools/runledger/) — run receipts, usage, verdicts, and follow-ups.
@@ -25,3 +26,19 @@ The eleven supporting tools are:
 - [Lens](/tools/lens/) — browser, accessibility, link, flow, and visual checks.
 - [Ward](/tools/ward/) — local Dependabot monitoring and remediation planning.
 - [Howl](/tools/howl/) — deterministic example and launch-proof artifacts.
+
+Web and publishing tools include:
+
+- [SiteKit](/tools/site-kit/) — accessible, token-driven static-site components and themes.
+- [Commerce](/tools/commerce/) — provider-agnostic commerce contracts for static sites.
+- [SiteProbe](/tools/siteprobe/) — bounded, read-only website intelligence and evidence.
+- [SearchBridge](/tools/searchbridge/) — normalized search, analytics, performance, and submission adapters.
+- [ContentGraph](/tools/contentgraph/) — inspectable content relationships, clusters, gaps, and link opportunities.
+- [StoryDesk](/tools/storydesk/) — editorial planning, assignment, handoff, and review queues.
+- [Dossier](/tools/dossier/) — claims, sources, evidence, consent, rights, and freshness records.
+- [BluePencil](/tools/bluepencil/) — structured editorial review and quality calibration.
+- [GalleyPack](/tools/galleypack/) — versioned editorial packages, lineage, freeze, and drift checks.
+- [AssetWorks](/tools/assetworks/) — media plans, provenance, accessibility artifacts, and checksums.
+- [VersionSeal](/tools/versionseal/) — checksum-bound human approvals, authority, and revocation.
+- [PressWire](/tools/presswire/) — approval-gated publication effects and receipts.
+- [ReaderSignal](/tools/readersignal/) — privacy-bounded measurement and evidence-linked learning.

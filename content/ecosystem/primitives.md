@@ -1,6 +1,6 @@
 ---
 title: Primitives
-description: Twelve reusable contracts for agents, evaluation, retrieval, orchestration, boundaries, and supervision.
+description: Reusable contracts for agents, evaluation, retrieval, orchestration, privacy, decisions, boundaries, and supervision.
 template: docs
 section: Ecosystem
 nav_title: Primitives
@@ -9,10 +9,11 @@ audience: developer
 difficulty: intermediate
 status: local scope verified
 version: current
+last_updated: 2026-08-23
 tags: [ecosystem, primitives]
 ---
 
-The twelve primitives are:
+The current primitive set includes:
 
 - [Spec](/tools/spec/) — task contracts and acceptance criteria.
 - [Eval](/tools/eval/) — deterministic evaluation and acceptance verification.
@@ -26,3 +27,7 @@ The twelve primitives are:
 - [Fence](/tools/fence/) — architecture boundary and policy checks.
 - [Watchdog](/tools/watchdog/) — local AI telemetry and proxy inspection.
 - [Leash](/tools/leash/) — human approval and remote supervision.
+- [Redact](/tools/redact/) — deterministic, review-required redaction for local text and Markdown.
+- [Tribunal](/tools/tribunal/) — adversarial decision review with sealed, replayable evidence.
+- [Relay](/tools/relay/) — bounded agent missions, lifecycle control, and verifiable local evidence.
+- [Workcell](/tools/workcell/) — container-backed execution boundaries and integrity receipts.

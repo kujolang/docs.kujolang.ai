@@ -1,6 +1,6 @@
 ---
 title: Showcases
-description: Five proof applications demonstrating complete local workflows.
+description: Proof applications demonstrating complete local workflows and product surfaces.
 template: docs
 section: Ecosystem
 nav_title: Showcases
@@ -9,13 +9,16 @@ audience: developer
 difficulty: intermediate
 status: local scope verified
 version: current
+last_updated: 2026-08-23
 tags: [ecosystem, showcases]
 ---
 
-The five showcases are:
+The showcase set includes:
 
 - [CMS](/showcases/cms/) — server-first content models, delivery, auth, jobs, and operations.
 - [CRUD API Showcase](/showcases/crud-api/) — SQLite CRUD contracts, auth strategies, concurrency, and a frontend playground.
 - [AI Chat](/showcases/ai-chat/) — local multi-provider chat, streaming, transcription, and durable conversations.
 - [SSG](/showcases/ssg/) — deterministic Markdown publishing, templates, feeds, sitemap, and `llms.txt`.
 - [TotalRecall](/showcases/totalrecall/) — local-first ingestion into Strata and filesystem destinations.
+- [Intake](/showcases/intake/) — local-first inbound work normalization, policy, approval, and learning export.
+- [Cinch](/showcases/cinch/) — a macOS-first development harness for files, Git, commands, AI context, and proof.

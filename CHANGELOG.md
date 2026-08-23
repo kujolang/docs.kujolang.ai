@@ -2,8 +2,22 @@
 
 ## Unreleased
 
+## [1.1.0] - 2026-08-23
+
+### Added
+
+- Added source-backed guides for Workcell, Source, Redact, Tribunal, Relay, SiteKit, Commerce, SiteProbe, SearchBridge, ContentGraph, StoryDesk, Dossier, BluePencil, GalleyPack, AssetWorks, VersionSeal, PressWire, ReaderSignal, Intake, and Cinch.
+- Added current WebOps and publishing-house routes to the ecosystem and path-selection pages.
+
 ### Changed
 
+- Fact-checked the language, package, workflow, tooling, showcase, maturity, and deployment claims against current repository contracts.
+- Updated installation for the stable Kujo `v1.0.1` release and its published platform binaries and checksums.
+- Removed stale fixed repository counts and the unsupported Kujo JIT flag, corrected the DocGen and project-init examples, and replaced the nonexistent generic workflow command.
+- Clarified that benchmark guidance is distributed with originating repositories rather than a nonexistent `kujo-benchmarks` repository.
+- Marked Leash and Ward as private previews instead of presenting private repositories as public onboarding surfaces.
+- Made the SSG checkout path configurable through `SSG_ROOT` for reproducible builds outside the original sibling layout.
+- Ranked search results by exact and prefix title matches before broader body-text matches.
 - Replaced the generic favicon with the official Kujo K logomark and added SVG, ICO, PNG, Apple touch, Android web-app, Windows tile, and web manifest assets.
 - Reworked the mobile header with Tabler menu and theme icons, persistent header search, and a light/dark mode toggle.
 - Updated the footer with the Kujo wordmark and current Docs version.

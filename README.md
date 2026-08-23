@@ -2,7 +2,7 @@
 
 The official documentation site for the Kujo language and ecosystem, published at [docs.kujolang.ai](https://docs.kujolang.ai).
 
-Version **1.0.0** launched on **August 8, 2026**. The site follows the Kujo documentation information architecture: a short first-run path, task-oriented learning, intent-based tool guidance, reviewable-work workflows, showcases, collections, and reference material.
+Version **1.1.0** was released on **August 23, 2026** after a source-backed sweep of the current Kujo organization. The site follows the Kujo documentation information architecture: a short first-run path, task-oriented learning, intent-based tool guidance, reviewable-work workflows, showcases, collections, and reference material.
 
 ## Build
 
@@ -10,12 +10,18 @@ Requirements:
 
 - Python 3
 - The `kujo` CLI on `PATH`
-- The sibling Kujo SSG repository at `../ssg`
+- The sibling Kujo SSG repository at `../ssg`, or `SSG_ROOT` set to another checkout
 
 Build the production site:
 
 ```bash
 python3 scripts/build_site.py --site-url https://docs.kujolang.ai
+```
+
+For a non-sibling checkout:
+
+```bash
+SSG_ROOT=/path/to/ssg python3 scripts/build_site.py --site-url https://docs.kujolang.ai
 ```
 
 The generated static site is written to `output/`. It is disposable build output; edit files under `content/`, `templates/`, or `assets/` instead.
