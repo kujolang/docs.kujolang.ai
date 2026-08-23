@@ -13,7 +13,7 @@
 		})();
 	</script>
 	<title>Core / Foundation | Kujo Docs</title>
-	<meta name="description" content="The Kujo language/runtime and Kennel package foundation.">
+	<meta name="description" content="The Kujo runtime, package, execution, and collaboration foundation.">
 	<meta name="keywords" content="SSG, Static Site Generator">
 	<meta name="author" content="Kujo">
 	<link rel="canonical" href="https://docs.kujolang.ai/ecosystem/core-foundation/">
@@ -30,19 +30,19 @@
 	<meta name="msapplication-config" content="/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<meta property="og:title" content="Core / Foundation">
-	<meta property="og:description" content="The Kujo language/runtime and Kennel package foundation.">
+	<meta property="og:description" content="The Kujo runtime, package, execution, and collaboration foundation.">
 	<meta property="og:url" content="https://docs.kujolang.ai/ecosystem/core-foundation/">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="Kujo Docs">
 	
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Core / Foundation">
-	<meta name="twitter:description" content="The Kujo language/runtime and Kennel package foundation.">
+	<meta name="twitter:description" content="The Kujo runtime, package, execution, and collaboration foundation.">
 	
 	<link href="../../assets/css/fonts.css" rel="stylesheet">
 	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
 	<link href="../../assets/css/style.css" rel="stylesheet">
-	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Core / Foundation","name":"Core / Foundation","description":"The Kujo language/runtime and Kennel package foundation.","url":"https://docs.kujolang.ai/ecosystem/core-foundation/","author":{"@type":"Person","name":"Unknown Author"},"publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Core / Foundation","name":"Core / Foundation","description":"The Kujo runtime, package, execution, and collaboration foundation.","url":"https://docs.kujolang.ai/ecosystem/core-foundation/","author":{"@type":"Person","name":"Unknown Author"},"publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -95,19 +95,21 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<p class="docs-eyebrow">Ecosystem</p><h1>Core / Foundation</h1><p class="docs-description">The Kujo language/runtime and Kennel package foundation.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Ecosystem</span><span class="docs-badge docs-badge-audience"><span>Audience</span>all</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span></div>
-		<div class="docs-body"><p>The foundation contains two repositories:</p>
+		<p class="docs-eyebrow">Ecosystem</p><h1>Core / Foundation</h1><p class="docs-description">The Kujo runtime, package, execution, and collaboration foundation.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Ecosystem</span><span class="docs-badge docs-badge-audience"><span>Audience</span>all</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
+		<div class="docs-body"><p>The foundation contains four primary repositories:</p>
 <ul>
 <li><a href="/tools/kujo/">Kujo</a> — the language, VM-first runtime, CLI, standard library, and local project workflow.</li>
 <li><a href="/tools/kennel/">Kennel</a> — deterministic manifests, dependencies, lockfiles, source policy, and trust policy.</li>
+<li><a href="/tools/workcell/">Workcell</a> — bounded Docker or Podman execution with declared artifacts and integrity receipts.</li>
+<li><a href="/tools/source/">Source</a> — an agent-first collaboration platform built around Git, work, evidence, and bounded capabilities.</li>
 </ul>
-<p>Both have Docker-backed Workcell proof at their audited commits. Public release artifacts and hosted package infrastructure remain separate release boundaries.</p></div>
+<p>Kujo <code>v1.0.1</code> is published with platform binaries and checksums. Kennel and Workcell keep local and deployment boundaries explicit. Source is an MVP platform whose production storage and worker paths require deployment-specific validation.</p></div>
 	</article>
 	
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.0.0</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.1.0</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../../assets/sitekit/sitekit.js"></script>

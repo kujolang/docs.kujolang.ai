@@ -4,7 +4,9 @@
   <url><loc>https://docs.kujolang.ai/build/</loc></url>
   <url><loc>https://docs.kujolang.ai/build/ai-and-agents/</loc></url>
   <url><loc>https://docs.kujolang.ai/build/applications-and-publishing/</loc></url>
+  <url><loc>https://docs.kujolang.ai/build/editorial-publishing/</loc></url>
   <url><loc>https://docs.kujolang.ai/build/knowledge-and-retrieval/</loc></url>
+  <url><loc>https://docs.kujolang.ai/build/web-operations/</loc></url>
   <url><loc>https://docs.kujolang.ai/build/workflows-and-approvals/</loc></url>
   <url><loc>https://docs.kujolang.ai/choose-a-path/</loc></url>
   <url><loc>https://docs.kujolang.ai/collections/</loc></url>
@@ -37,8 +39,10 @@
   <url><loc>https://docs.kujolang.ai/security/</loc></url>
   <url><loc>https://docs.kujolang.ai/showcases/</loc></url>
   <url><loc>https://docs.kujolang.ai/showcases/ai-chat/</loc></url>
+  <url><loc>https://docs.kujolang.ai/showcases/cinch/</loc></url>
   <url><loc>https://docs.kujolang.ai/showcases/cms/</loc></url>
   <url><loc>https://docs.kujolang.ai/showcases/crud-api/</loc></url>
+  <url><loc>https://docs.kujolang.ai/showcases/intake/</loc></url>
   <url><loc>https://docs.kujolang.ai/showcases/ssg/</loc></url>
   <url><loc>https://docs.kujolang.ai/showcases/totalrecall/</loc></url>
   <url><loc>https://docs.kujolang.ai/start-here/</loc></url>
@@ -46,12 +50,18 @@
   <url><loc>https://docs.kujolang.ai/tools/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/agents-sdk/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/ai-sdk/</loc></url>
+  <url><loc>https://docs.kujolang.ai/tools/assetworks/</loc></url>
+  <url><loc>https://docs.kujolang.ai/tools/bluepencil/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/casefile/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/changebucket/</loc></url>
+  <url><loc>https://docs.kujolang.ai/tools/commerce/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/concord/</loc></url>
+  <url><loc>https://docs.kujolang.ai/tools/contentgraph/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/dispatch/</loc></url>
+  <url><loc>https://docs.kujolang.ai/tools/dossier/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/eval/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/fence/</loc></url>
+  <url><loc>https://docs.kujolang.ai/tools/galleypack/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/howl/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/kennel/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/kujo/</loc></url>
@@ -61,12 +71,24 @@
   <url><loc>https://docs.kujolang.ai/tools/muzzle/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/packwrite/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/patchbrief/</loc></url>
+  <url><loc>https://docs.kujolang.ai/tools/presswire/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/rag/</loc></url>
+  <url><loc>https://docs.kujolang.ai/tools/readersignal/</loc></url>
+  <url><loc>https://docs.kujolang.ai/tools/redact/</loc></url>
+  <url><loc>https://docs.kujolang.ai/tools/relay/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/runledger/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/scent/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/scout/</loc></url>
+  <url><loc>https://docs.kujolang.ai/tools/searchbridge/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/shipcheck/</loc></url>
+  <url><loc>https://docs.kujolang.ai/tools/site-kit/</loc></url>
+  <url><loc>https://docs.kujolang.ai/tools/siteprobe/</loc></url>
+  <url><loc>https://docs.kujolang.ai/tools/source/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/spec/</loc></url>
+  <url><loc>https://docs.kujolang.ai/tools/storydesk/</loc></url>
+  <url><loc>https://docs.kujolang.ai/tools/tribunal/</loc></url>
+  <url><loc>https://docs.kujolang.ai/tools/versionseal/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/ward/</loc></url>
   <url><loc>https://docs.kujolang.ai/tools/watchdog/</loc></url>
+  <url><loc>https://docs.kujolang.ai/tools/workcell/</loc></url>
 </urlset>

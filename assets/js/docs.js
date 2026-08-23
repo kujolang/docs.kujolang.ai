@@ -133,7 +133,9 @@
 		if (!q) {
 			return [];
 		}
-		return index.filter(function(item) {
+		return index.map(function(item, position) {
+			var title = (item.title || '').toLowerCase();
+			var description = (item.description || '').toLowerCase();
 			var haystack = [
 				item.title,
 				item.description,
@@ -146,7 +148,26 @@
 				(item.headings || []).join(' '),
 				item.text
 			].join(' ').toLowerCase();
-			return haystack.indexOf(q) >= 0;
+			if (haystack.indexOf(q) < 0) {
+				return null;
+			}
+			var score = 4;
+			if (title === q) {
+				score = 0;
+			} else if (title.indexOf(q) === 0) {
+				score = 1;
+			} else if (title.indexOf(q) >= 0) {
+				score = 2;
+			} else if (description.indexOf(q) >= 0) {
+				score = 3;
+			}
+			return {item: item, score: score, position: position};
+		}).filter(function(result) {
+			return result !== null;
+		}).sort(function(left, right) {
+			return left.score - right.score || left.position - right.position;
+		}).map(function(result) {
+			return result.item;
 		});
 	};
 

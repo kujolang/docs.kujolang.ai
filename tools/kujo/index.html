@@ -95,7 +95,7 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<p class="docs-eyebrow">Tools</p><h1>Kujo</h1><p class="docs-description">Write and run local-first Kujo programs.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Tools</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span></div>
+		<p class="docs-eyebrow">Tools</p><h1>Kujo</h1><p class="docs-description">Write and run local-first Kujo programs.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Tools</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable v1.0.1</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
 		<div class="docs-body"><h2>Use it when…</h2>
 <p>You want to write a small program, check it, and run it with the same VM-first CLI path used by the rest of the ecosystem.</p>
 <h2>Interface overview</h2>
@@ -117,7 +117,7 @@
 </tr>
 <tr>
 <td>Runtime modes</td>
-<td>VM by default; interpreter fallback with <code>--interpreter</code>; experimental JIT with <code>--jit</code></td>
+<td>VM by default; tree-walking interpreter fallback with <code>--interpreter</code></td>
 </tr>
 </tbody></table>
 <h2>Main workflows</h2>
@@ -136,15 +136,15 @@ kujo doctor --json</code></pre>
 <h2>How it fits</h2>
 <p>Start here, then add <a href="/tools/kennel/">Kennel</a> when the project needs dependencies.</p>
 <h2>Boundaries</h2>
-<p>This page keeps release-candidate onboarding visible until public artifacts, checksums, and clean-machine download proof are complete.</p>
+<p>Kujo <code>v1.0.1</code> is the current published stable release. Core does not include hosted provider routing, RAG, agents, MCP, evaluation, observability, or a public package registry; those remain separate ecosystem components.</p>
 <h2>Reference</h2>
-<p>Use <code>kujo --help</code>, <code>kujo doctor --json</code>, and the <a href="/learn/language-basics/">language basics</a> guide.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-next" href="/tools/kennel/" rel="next"><span>Next</span></a></nav>
+<p>Use <code>kujo --help</code>, <code>kujo doctor --json</code>, the <a href="/learn/language-basics/">language basics</a> guide, and the <a href="https://github.com/kujolang/kujo">Kujo repository</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-next" href="/tools/kennel/" rel="next"><span>Next</span></a></nav>
 	</article>
 	<nav class="docs-toc" aria-label="On this page"><h2>On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.0.0</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.1.0</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../../assets/sitekit/sitekit.js"></script>

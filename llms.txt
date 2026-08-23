@@ -6,7 +6,9 @@ A local-first path through the Kujo language and ecosystem.
 - [Build](https://docs.kujolang.ai/build/) — Kujo build documentation.
 - [AI and agents](https://docs.kujolang.ai/build/ai-and-agents/) — Move from a normalized model call to tools, approvals, handoffs, and local state.
 - [Applications and publishing](https://docs.kujolang.ai/build/applications-and-publishing/) — Choose a copyable application surface for chat, APIs, content, or deterministic static publishing.
+- [Editorial publishing](https://docs.kujolang.ai/build/editorial-publishing/) — Move a commissioned idea through evidence, review, packaging, approval, publication, and learning.
 - [Knowledge and retrieval](https://docs.kujolang.ai/build/knowledge-and-retrieval/) — Ingest local knowledge and answer with namespaces, citations, and offline fallbacks.
+- [Web operations](https://docs.kujolang.ai/build/web-operations/) — Move from site source to crawl evidence, search data, content relationships, browser proof, and bounded fixes.
 - [Workflows and approvals](https://docs.kujolang.ai/build/workflows-and-approvals/) — Turn a sequence of steps into bounded, resumable, and auditable work.
 - [Choose a path](https://docs.kujolang.ai/choose-a-path/) — Start with an intent and one small next step instead of browsing the whole ecosystem.
 - [Collections](https://docs.kujolang.ai/collections/) — Kujo collections documentation.
@@ -15,11 +17,11 @@ A local-first path through the Kujo language and ecosystem.
 - [Skills](https://docs.kujolang.ai/collections/skills/) — Install, select, and validate Kujo-specific Agent Skills.
 - [Workflows](https://docs.kujolang.ai/collections/workflows/) — Browse runnable workflow packs and the artifact each workflow leaves behind.
 - [Ecosystem](https://docs.kujolang.ai/ecosystem/) — Kujo ecosystem documentation.
-- [Core / Foundation](https://docs.kujolang.ai/ecosystem/core-foundation/) — The Kujo language/runtime and Kennel package foundation.
-- [Primitives](https://docs.kujolang.ai/ecosystem/primitives/) — Twelve reusable contracts for agents, evaluation, retrieval, orchestration, boundaries, and supervision.
-- [Showcases](https://docs.kujolang.ai/ecosystem/showcases/) — Five proof applications demonstrating complete local workflows.
-- [Tooling](https://docs.kujolang.ai/ecosystem/tooling/) — Eleven supporting tools for execution, evidence, review, release gates, browser QA, security, and launch artifacts.
-- [Install Kujo](https://docs.kujolang.ai/install/) — Build or install the CLI, add it to PATH, and verify the local toolchain.
+- [Core / Foundation](https://docs.kujolang.ai/ecosystem/core-foundation/) — The Kujo runtime, package, execution, and collaboration foundation.
+- [Primitives](https://docs.kujolang.ai/ecosystem/primitives/) — Reusable contracts for agents, evaluation, retrieval, orchestration, privacy, decisions, boundaries, and supervision.
+- [Showcases](https://docs.kujolang.ai/ecosystem/showcases/) — Proof applications demonstrating complete local workflows and product surfaces.
+- [Tooling](https://docs.kujolang.ai/ecosystem/tooling/) — Supporting tools for execution, evidence, web operations, editorial production, review, and release gates.
+- [Install Kujo](https://docs.kujolang.ai/install/) — Install the current stable CLI or build it from source, then verify the local toolchain.
 - [Learn](https://docs.kujolang.ai/learn/) — Kujo learn documentation.
 - [AI runtime basics](https://docs.kujolang.ai/learn/ai-runtime/) — See the shared controls for provider calls, replay, budgets, secrets, and egress.
 - [Capabilities and safe execution](https://docs.kujolang.ai/learn/capabilities/) — Grant only the filesystem, clock, network, or process access a local task actually needs.
@@ -39,8 +41,10 @@ A local-first path through the Kujo language and ecosystem.
 - [Security model](https://docs.kujolang.ai/security/) — Understand capability gates, local boundaries, secrets, network access, and safe execution wording.
 - [Showcases](https://docs.kujolang.ai/showcases/) — Kujo showcases documentation.
 - [AI Chat](https://docs.kujolang.ai/showcases/ai-chat/) — A local multi-provider chat application with encrypted profiles, streaming, transcription, and fixture mode.
+- [Cinch](https://docs.kujolang.ai/showcases/cinch/) — A local development harness for files, Git, commands, AI context, tools, and proof.
 - [CMS](https://docs.kujolang.ai/showcases/cms/) — A server-first content system with models, delivery routes, auth boundaries, jobs, and operational checks.
 - [CRUD API Showcase](https://docs.kujolang.ai/showcases/crud-api/) — A SQLite API and frontend playground showing auth strategies, recovery patterns, and contracts.
+- [Intake](https://docs.kujolang.ai/showcases/intake/) — Normalize inbound work, route it through policy, and require approval before external effects.
 - [SSG](https://docs.kujolang.ai/showcases/ssg/) — Deterministic Markdown-to-site publishing with templates, feeds, sitemap, and llms.txt.
 - [TotalRecall](https://docs.kujolang.ai/showcases/totalrecall/) — A local-first ingestion showcase for meetings, chat exports, Slack threads, and GitHub activity.
 - [Start here](https://docs.kujolang.ai/start-here/) — Choose the shortest path from discovering Kujo to running a local program.
@@ -48,12 +52,18 @@ A local-first path through the Kujo language and ecosystem.
 - [Tools](https://docs.kujolang.ai/tools/) — Kujo tools documentation.
 - [Agents SDK](https://docs.kujolang.ai/tools/agents-sdk/) — Build agents with tools, approvals, handoffs, tracing, stores, and budgets.
 - [AI SDK](https://docs.kujolang.ai/tools/ai-sdk/) — Use normalized chat and embedding contracts with fixtures, retries, and redaction.
+- [AssetWorks](https://docs.kujolang.ai/tools/assetworks/) — Plan media assets and preserve provenance, accessibility records, and checksums.
+- [BluePencil](https://docs.kujolang.ai/tools/bluepencil/) — Record structured editorial reviews, verdicts, disagreements, and calibration evidence.
 - [CaseFile](https://docs.kujolang.ai/tools/casefile/) — Capture a failure as a reproducible evidence bundle.
 - [ChangeBucket](https://docs.kujolang.ai/tools/changebucket/) — Measure change footprint, categories, and blast radius.
+- [Commerce](https://docs.kujolang.ai/tools/commerce/) — Add provider-agnostic catalog and checkout contracts to Kujo static sites.
 - [Concord](https://docs.kujolang.ai/tools/concord/) — Find drift across code, docs, examples, specs, and generated artifacts.
+- [ContentGraph](https://docs.kujolang.ai/tools/contentgraph/) — Build an inspectable graph of content relationships, clusters, gaps, and link opportunities.
 - [Dispatch](https://docs.kujolang.ai/tools/dispatch/) — Orchestrate resumable, approved, and auditable workflows.
+- [Dossier](https://docs.kujolang.ai/tools/dossier/) — Preserve claims, sources, evidence, quotations, consent, rights, and freshness.
 - [Eval](https://docs.kujolang.ai/tools/eval/) — Run deterministic acceptance checks locally or in CI.
 - [Fence](https://docs.kujolang.ai/tools/fence/) — Check architecture boundaries and import rules.
+- [GalleyPack](https://docs.kujolang.ai/tools/galleypack/) — Bind editorial artifacts into versioned, checksum-backed production packages.
 - [Howl](https://docs.kujolang.ai/tools/howl/) — Render verified examples into Markdown, HTML, SVG, gallery, and caption assets.
 - [Kennel](https://docs.kujolang.ai/tools/kennel/) — Manage deterministic manifests, dependencies, lockfiles, and trust policy.
 - [Kujo](https://docs.kujolang.ai/tools/kujo/) — Write and run local-first Kujo programs.
@@ -63,11 +73,23 @@ A local-first path through the Kujo language and ecosystem.
 - [Muzzle](https://docs.kujolang.ai/tools/muzzle/) — Run noisy workflows quietly while preserving complete logs and summaries.
 - [PackWrite](https://docs.kujolang.ai/tools/packwrite/) — Compile repeatable agent execution packs from context and prompts.
 - [PatchBrief](https://docs.kujolang.ai/tools/patchbrief/) — Turn a diff into a reviewable summary and handoff.
+- [PressWire](https://docs.kujolang.ai/tools/presswire/) — Execute approval-gated publication effects with idempotency and receipts.
 - [RAG](https://docs.kujolang.ai/tools/rag/) — Build local retrieval flows with namespaces, citations, and offline fallbacks.
+- [ReaderSignal](https://docs.kujolang.ai/tools/readersignal/) — Record privacy-bounded audience measurements, feedback, comparisons, and learning.
+- [Redact](https://docs.kujolang.ai/tools/redact/) — Produce deterministic, review-required redactions for local text and Markdown.
+- [Relay](https://docs.kujolang.ai/tools/relay/) — Compose and run bounded agent missions with lifecycle control and verifiable evidence.
 - [RunLedger](https://docs.kujolang.ai/tools/runledger/) — Record run metadata, usage, cost, verdicts, and follow-ups.
 - [Scent](https://docs.kujolang.ai/tools/scent/) — Package focused, bounded, and redacted context for a task.
 - [Scout](https://docs.kujolang.ai/tools/scout/) — Build a structured map of an unfamiliar repository.
+- [SearchBridge](https://docs.kujolang.ai/tools/searchbridge/) — Normalize search, analytics, performance, keyword, backlink, and submission providers.
 - [ShipCheck](https://docs.kujolang.ai/tools/shipcheck/) — Scan release readiness and produce a gate report.
+- [SiteKit](https://docs.kujolang.ai/tools/site-kit/) — Vendor an accessible, semantic, token-driven design system for static sites.
+- [SiteProbe](https://docs.kujolang.ai/tools/siteprobe/) — Crawl a bounded website surface and preserve deterministic intelligence evidence.
+- [Source](https://docs.kujolang.ai/tools/source/) — Coordinate agent-first software work, evidence, decisions, and canonical Git state.
 - [Spec](https://docs.kujolang.ai/tools/spec/) — Turn a request into a structured, checkable task contract.
+- [StoryDesk](https://docs.kujolang.ai/tools/storydesk/) — Plan editorial work with immutable ideas, commissions, assignments, handoffs, and queues.
+- [Tribunal](https://docs.kujolang.ai/tools/tribunal/) — Turn consequential proposals into adversarial, replayable decision evidence.
+- [VersionSeal](https://docs.kujolang.ai/tools/versionseal/) — Bind human approval and authority to an exact checksum-verified version.
 - [Ward](https://docs.kujolang.ai/tools/ward/) — Monitor Dependabot alerts locally and prepare reviewable remediation plans.
 - [Watchdog](https://docs.kujolang.ai/tools/watchdog/) — Observe AI requests, tools, costs, latency, errors, and audit events.
+- [Workcell](https://docs.kujolang.ai/tools/workcell/) — Run bounded Kujo and agent workflows in disposable Docker or Podman worktrees.
