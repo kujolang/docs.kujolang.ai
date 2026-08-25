@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Added
+
+- Documented the installable `kujo-way-development` skill as the cross-cutting starting point for Kujo project implementation and substantial review.
+
 ## [1.1.0] - 2026-08-23
 
 ### Added
