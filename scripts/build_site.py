@@ -166,6 +166,7 @@ def finalize_html(output: Path) -> None:
                 ('href="llms.txt"', 'href="/llms.txt"'),
             ):
                 html = html.replace(relative, absolute)
+        html = "\n".join(line.rstrip() for line in html.splitlines()) + "\n"
         path.write_text(html, encoding="utf-8")
 
 
