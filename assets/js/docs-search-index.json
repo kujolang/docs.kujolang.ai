@@ -15,7 +15,7 @@
         "[ai, agents, build]"
       ],
       "headings": [],
-      "text": "Lead with increasing responsibility: 1. AI SDK /tools/ai-sdk/ for normalized chat and embedding contracts. 2. Agents SDK /tools/agents-sdk/ for tools, approvals, handoffs, stores, and tracing. 3. Dispatch /tools/dispatch/ for resumable, auditable workflows. 4. Watchdog /tools/watchdog/ for local request, cost, latency, error, and audit visibility. Begin with"
+      "text": "Lead with increasing responsibility: For a cross-cutting Kujo project, begin with the kujo-way-development /collections/skills/ start-with-the-kujo-way skill so repository ownership, contracts, capability boundaries, deterministic execution, and completion evidence are decided before implementation. 1. AI SDK /tools/ai-sdk/ for normalized chat and embedding "
     },
     {
       "title": "Applications and publishing",
@@ -142,8 +142,11 @@
       "tags": [
         "[collection, skills, agents]"
       ],
-      "headings": [],
-      "text": "Use the skill catalog to select a focused operating contract for a task. Read the skill instructions, follow their required evidence, and keep the selected skill's scope visible in the handoff. The collection is guidance and workflow glue; it is not a hosted agent marketplace. See the Kujo Skills repository https://github.com/kujolang/kujo-skills ."
+      "headings": [
+        "Start with the Kujo Way",
+        "Browse the catalog"
+      ],
+      "text": "Use the skill catalog to select a focused operating contract for a task. Read the skill instructions, follow their required evidence, and keep the selected skill's scope visible in the handoff. Start with the Kujo Way Use kujo-way-development https://kujolang.ai/ecosystem/skills/kujo-way-development/ when building or substantially reviewing a Kujo project th"
     },
     {
       "title": "Workflows",
