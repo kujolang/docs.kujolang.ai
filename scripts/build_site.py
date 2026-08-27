@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+from html import unescape
 import json
 import os
 import re
@@ -169,6 +170,27 @@ def finalize_html(output: Path) -> None:
         re.DOTALL,
     )
 
+    def add_heading_ids(document: str) -> str:
+        """Give rendered headings stable fragment targets for docs links and TOCs."""
+        used: set[str] = set()
+        heading = re.compile(r"<h([1-6])(?P<attrs>[^>]*)>(?P<body>.*?)</h\1>", re.DOTALL)
+
+        def replace(match: re.Match[str]) -> str:
+            attrs = match.group("attrs")
+            if re.search(r"\bid=", attrs):
+                return match.group(0)
+            plain = re.sub(r"<[^>]+>", " ", unescape(match.group("body")))
+            slug = re.sub(r"[^a-z0-9]+", "-", plain.lower()).strip("-") or "section"
+            candidate = slug
+            suffix = 2
+            while candidate in used:
+                candidate = f"{slug}-{suffix}"
+                suffix += 1
+            used.add(candidate)
+            return f'<h{match.group(1)} id="{candidate}"{attrs}>{match.group("body")}</h{match.group(1)}>'
+
+        return heading.sub(replace, document)
+
     for path in output.rglob("*.html"):
         html = path.read_text(encoding="utf-8")
         html = empty_prerequisites.sub("", html)
@@ -176,6 +198,7 @@ def finalize_html(output: Path) -> None:
             lambda match: f'{match.group(1)}View {match.group("title")}{match.group(4)}',
             html,
         )
+        html = add_heading_ids(html)
         if path == output / "404.html":
             for relative, absolute in (
                 ('href="assets/', 'href="/assets/'),
