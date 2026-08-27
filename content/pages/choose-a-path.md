@@ -10,7 +10,7 @@ audience: all
 difficulty: beginner
 status: stable
 version: current
-last_updated: 2026-08-23
+last_updated: 2026-08-27
 previous: /quickstart/
 next: /learn/
 tags: [orientation, ecosystem]

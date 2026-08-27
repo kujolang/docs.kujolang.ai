@@ -9,7 +9,7 @@ audience: developer
 difficulty: advanced
 status: private preview
 version: current
-last_updated: 2026-08-23
+last_updated: 2026-08-27
 scope: local-first supervision
 source_repo: leash
 previous: /tools/watchdog/

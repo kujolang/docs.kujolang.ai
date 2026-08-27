@@ -10,7 +10,7 @@ audience: developer
 difficulty: intermediate
 status: launch scope
 version: current
-last_updated: 2026-08-25
+last_updated: 2026-08-27
 next: /tools/ai-sdk/
 tags: [ai, agents, build]
 ---

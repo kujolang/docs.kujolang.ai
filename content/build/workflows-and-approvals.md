@@ -10,7 +10,7 @@ audience: developer
 difficulty: intermediate
 status: launch scope
 version: current
-last_updated: 2026-08-23
+last_updated: 2026-08-27
 previous: /build/ai-and-agents/
 next: /tools/spec/
 tags: [workflows, approvals, dispatch]
@@ -24,4 +24,3 @@ kujo run dispatch.kujo demo
 ```
 
 Leave the workflow receipt beside the run. It should be possible to see what was requested, what was allowed, what ran, and what remains.
-
