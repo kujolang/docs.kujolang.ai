@@ -137,6 +137,25 @@ def publish_favicons(output: Path) -> None:
         shutil.copy2(source / name, output / name)
 
 
+def merge_webmcp_indexes(output: Path, section_indexes: list[Path]) -> None:
+    """Combine the core and section SSG indexes into one public docs catalog."""
+    index_path = output / ".well-known" / "kujo-site-index.json"
+    document = json.loads(index_path.read_text(encoding="utf-8"))
+    items_by_id = {item["id"]: item for item in document.get("items", [])}
+    types_by_name = {entry["name"]: entry for entry in document.get("content_types", [])}
+    for section_index in section_indexes:
+        section = json.loads(section_index.read_text(encoding="utf-8"))
+        for item in section.get("items", []):
+            items_by_id[item["id"]] = item
+        for entry in section.get("content_types", []):
+            types_by_name[entry["name"]] = entry
+    document["items"] = sorted(items_by_id.values(), key=lambda item: item["url"])
+    document["content_types"] = [types_by_name[name] for name in sorted(types_by_name)]
+    for entry in document["content_types"]:
+        entry["count"] = sum(1 for item in document["items"] if item["type"] == entry["name"])
+    index_path.write_text(json.dumps(document, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n", encoding="utf-8")
+
+
 def finalize_html(output: Path) -> None:
     """Apply docs-specific cleanup that is not part of the generic SSG templates."""
     empty_prerequisites = re.compile(
@@ -182,6 +201,7 @@ def main() -> int:
 
     with tempfile.TemporaryDirectory(prefix="kujo-docs-build-") as temporary:
         temp_root = Path(temporary)
+        section_indexes: list[Path] = []
         core_content = temp_root / "core-content"
         for directory in ("pages", "posts"):
             destination = core_content / directory
@@ -197,14 +217,21 @@ def main() -> int:
                 shutil.copy2(source, section_content / section / source.name)
             section_output = temp_root / f"{section}-output"
             run_build(section_content, section_output, args.site_url, no_index=True, no_aux=True)
+            section_index = section_output / ".well-known" / "kujo-site-index.json"
+            if section_index.is_file():
+                section_indexes.append(section_index)
             for source in section_output.rglob("*"):
                 relative = source.relative_to(section_output)
+                if relative == Path(".well-known/kujo-site-index.json"):
+                    continue
                 destination = output / relative
                 if source.is_dir():
                     destination.mkdir(parents=True, exist_ok=True)
                 else:
                     destination.parent.mkdir(parents=True, exist_ok=True)
                     shutil.copy2(source, destination)
+
+        merge_webmcp_indexes(output, section_indexes)
 
     for blog_artifact in (output / "blog", output / "updates", output / "feed"):
         if blog_artifact.exists():
