@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## [1.2.0] - 2026-08-27
+
+### Changed
+
+- Updated the Dispatch tool page for the Dispatch 1.2 release, including deterministic routing, evaluation, fallback, and persisted route evidence.
+- Updated site-wide version markers and release date.
+
 ### Added
 
 - Documented the installable `kujo-way-development` skill as the cross-cutting starting point for Kujo project implementation and substantial review.

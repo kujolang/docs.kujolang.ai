@@ -2,7 +2,7 @@
 
 The official documentation site for the Kujo language and ecosystem, published at [docs.kujolang.ai](https://docs.kujolang.ai).
 
-Version **1.1.0** was released on **August 23, 2026** after a source-backed sweep of the current Kujo organization. The site follows the Kujo documentation information architecture: a short first-run path, task-oriented learning, intent-based tool guidance, reviewable-work workflows, showcases, collections, and reference material.
+Version **1.2.0** was released on **August 27, 2026** with the Dispatch 1.2 release documentation refreshed against the current source contracts. The site follows the Kujo documentation information architecture: a short first-run path, task-oriented learning, intent-based tool guidance, reviewable-work workflows, showcases, collections, and reference material.
 
 ## Build
 

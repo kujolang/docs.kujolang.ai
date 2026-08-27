@@ -9,7 +9,7 @@ audience: developer
 difficulty: intermediate
 status: local scope verified
 version: current
-last_updated: 2026-08-23
+last_updated: 2026-08-27
 scope: local-first
 source_repo: dispatch
 previous: /tools/scout/
@@ -30,6 +30,7 @@ A task is a sequence of steps that can pause, resume, require approval, and leav
 | Continue | `resume` and decision-file resume paths |
 | Inspect | `runs`, `show`, `inspect`, JSON output, filtering, and diagnostics |
 | Operate | `doctor`, guarded `cleanup`, `export-run`, and `import-run` |
+| Route | Deterministic agent/provider/model selection with policy constraints, evaluation, and bounded fallback |
 
 ## Main workflows
 
@@ -37,6 +38,7 @@ A task is a sequence of steps that can pause, resume, require approval, and leav
 - Pause at approval or cancellation points and resume from persisted run state.
 - Inspect lifecycle events and trace payloads without rerunning the workflow.
 - Export a signed run bundle for handoff, then verify it when importing elsewhere.
+- Validate and explain a routed workflow before execution; persisted route decisions and fallback evidence remain inspectable on resume.
 
 ## Five-minute example
 
@@ -47,7 +49,7 @@ kujo run dispatch.kujo runs
 
 ## What you get
 
-Resumable workflow state, step events, approval boundaries, and an inspectable run record.
+Resumable workflow state, step events, approval boundaries, route decisions, and an inspectable run record.
 
 ## How it fits
 
