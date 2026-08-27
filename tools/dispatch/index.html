@@ -34,11 +34,11 @@
 	<meta property="og:url" content="https://docs.kujolang.ai/tools/dispatch/">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="Kujo Docs">
-
+	
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Dispatch">
 	<meta name="twitter:description" content="Orchestrate resumable, approved, and auditable workflows.">
-
+	
 	<link href="../../assets/css/fonts.css" rel="stylesheet">
 	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
 	<link href="../../assets/css/style.css" rel="stylesheet">
@@ -95,7 +95,8 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<p class="docs-eyebrow">Tools</p><h1>Dispatch</h1><p class="docs-description">Orchestrate resumable, approved, and auditable workflows.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Tools</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
+		<p class="docs-eyebrow">Tools</p><h1>Dispatch</h1><p class="docs-description">Orchestrate resumable, approved, and auditable workflows.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Tools</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-27</span></div>
+		<section class="docs-prerequisites" aria-label="Prerequisites"><h2>Prerequisites</h2></section>
 		<div class="docs-body"><h2>Use it when…</h2>
 <p>A task is a sequence of steps that can pause, resume, require approval, and leave a run receipt.</p>
 <h2>Interface overview</h2>
@@ -119,6 +120,10 @@
 <td>Operate</td>
 <td><code>doctor</code>, guarded <code>cleanup</code>, <code>export-run</code>, and <code>import-run</code></td>
 </tr>
+<tr>
+<td>Route</td>
+<td>Deterministic agent/provider/model selection with policy constraints, evaluation, and bounded fallback</td>
+</tr>
 </tbody></table>
 <h2>Main workflows</h2>
 <ul>
@@ -126,12 +131,13 @@
 <li>Pause at approval or cancellation points and resume from persisted run state.</li>
 <li>Inspect lifecycle events and trace payloads without rerunning the workflow.</li>
 <li>Export a signed run bundle for handoff, then verify it when importing elsewhere.</li>
+<li>Validate and explain a routed workflow before execution; persisted route decisions and fallback evidence remain inspectable on resume.</li>
 </ul>
 <h2>Five-minute example</h2>
 <pre><code class="language-bash">kujo run dispatch.kujo demo &quot;Research topic&quot; --yes --non-interactive
 kujo run dispatch.kujo runs</code></pre>
 <h2>What you get</h2>
-<p>Resumable workflow state, step events, approval boundaries, and an inspectable run record.</p>
+<p>Resumable workflow state, step events, approval boundaries, route decisions, and an inspectable run record.</p>
 <h2>How it fits</h2>
 <p>Start with <a href="/tools/spec/">Spec</a> and capture the result with <a href="/tools/runledger/">RunLedger</a>.</p>
 <h2>Boundaries</h2>
@@ -143,7 +149,7 @@ kujo run dispatch.kujo runs</code></pre>
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.1.0</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.2.0</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../../assets/sitekit/sitekit.js"></script>
