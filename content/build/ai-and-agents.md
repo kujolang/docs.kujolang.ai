@@ -25,4 +25,4 @@ For a cross-cutting Kujo project, begin with the [`kujo-way-development`](/colle
 3. [Dispatch](/tools/dispatch/) for resumable, auditable workflows.
 4. [Watchdog](/tools/watchdog/) for local request, cost, latency, error, and audit visibility.
 
-Begin with fixture mode when a provider is not part of the question you are trying to answer. Add live credentials only at the boundary where they are needed.
+Choose a package from the [provider index](/ecosystem/providers/) when a live model is part of the question. Begin with fixture mode when it is not. Add live credentials only at the boundary where they are needed.

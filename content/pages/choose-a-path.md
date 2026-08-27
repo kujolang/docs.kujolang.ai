@@ -20,7 +20,7 @@ tags: [orientation, ecosystem]
 | If you want to… | Start with… |
 | --- | --- |
 | Learn the language | [Learn Kujo](/learn/), [Reference](/reference/), and [Kennel](/tools/kennel/) |
-| Call models or build agents | [AI SDK](/tools/ai-sdk/), [Agents SDK](/tools/agents-sdk/), and [AI Chat](/showcases/ai-chat/) |
+| Call models or build agents | [Provider packages](/ecosystem/providers/), [AI SDK](/tools/ai-sdk/), [Agents SDK](/tools/agents-sdk/), and [AI Chat](/showcases/ai-chat/) |
 | Turn requests into bounded work | [Spec](/tools/spec/), [Scent](/tools/scent/), [PackWrite](/tools/packwrite/), and [Dispatch](/tools/dispatch/) |
 | Check changes before they ship | [Eval](/tools/eval/), [Concord](/tools/concord/), [ShipCheck](/tools/shipcheck/), and [Lens](/tools/lens/) |
 | Capture proof and handoffs | [CaseFile](/tools/casefile/), [RunLedger](/tools/runledger/), [PatchBrief](/tools/patchbrief/), and [ChangeBucket](/tools/changebucket/) |

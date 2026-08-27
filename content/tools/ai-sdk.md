@@ -27,7 +27,7 @@ You need a provider-gated chat or embedding call with a normalized contract and 
 | Surface | What is available |
 | --- | --- |
 | Library | `create_client`, `create_message`, chat completion, streaming, and embeddings |
-| Providers | OpenAI, OpenRouter, DeepSeek, and custom OpenAI-compatible endpoints |
+| Providers | Provider packages with public AI SDK drivers, plus custom OpenAI-compatible endpoints |
 | Reliability | Retries, backoff, timeouts, fallback providers, circuit breakers, and budgets |
 | Safety and proof | Endpoint allowlists, protected headers, redaction, fixtures, schemas, and benchmarks |
 
@@ -54,7 +54,7 @@ Move to [Agents SDK](/tools/agents-sdk/) when calls need tools, approvals, hando
 
 ## Boundaries
 
-Provider-specific proof and credentials remain integrator-owned; this is not a hosted model gateway.
+Provider-specific proof and credentials remain integrator-owned; this is not a hosted model gateway. See the [provider index](/ecosystem/providers/) for package versions, native APIs, authentication variables, and driver availability.
 
 ## Reference
 

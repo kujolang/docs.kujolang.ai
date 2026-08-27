@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Added
+
+- Added a source-backed provider index covering all 25 current Kujo provider packages, immutable release tags, official provider references, authentication boundaries, native APIs, and AI SDK availability.
+
 ## [1.2.0] - 2026-08-27
 
 ### Changed

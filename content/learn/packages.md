@@ -25,5 +25,4 @@ kujo package-install
 kujo package-install --frozen
 ```
 
-Use the frozen path in verification when the lockfile is part of the contract. Start with [Kennel](/tools/kennel/) when you need registry or dependency behavior details.
-
+Use the frozen path in verification when the lockfile is part of the contract. Start with [Kennel](/tools/kennel/) for dependency behavior, or browse the [provider index](/ecosystem/providers/) for immutable provider installs.
