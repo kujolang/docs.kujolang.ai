@@ -19,3 +19,4 @@ minify: false
 download_remote_images: false
 no_index: false
 no_aux: false
+webmcp: true

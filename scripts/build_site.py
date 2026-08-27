@@ -52,6 +52,7 @@ def run_build(content: Path, output: Path, site_url: str, *, no_index: bool, no_
         "--site-url",
         site_url,
         "--no-aliases",
+        "--webmcp",
     ]
     if no_index:
         command.append("--no-index")
