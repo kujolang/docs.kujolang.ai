@@ -68,6 +68,7 @@
 		<a href="/start-here/">Start here</a>
 		<a href="/learn/">Learn Kujo</a>
 		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
 		<a href="/tools/">Tools</a>
 		<a href="/showcases/">Showcases</a>
 	</nav>
@@ -95,29 +96,29 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<p class="docs-eyebrow">Tools</p><h1>Source</h1><p class="docs-description">Coordinate agent-first software work, evidence, decisions, and canonical Git state.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Tools</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>MVP</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
-		<div class="docs-body"><h2>Use it when…</h2>
+		<p class="docs-eyebrow">Tools</p><h1 id="source">Source</h1><p class="docs-description">Coordinate agent-first software work, evidence, decisions, and canonical Git state.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Tools</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>MVP</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
+		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>A project needs work, sessions, changes, evidence, decisions, bounded agent capabilities, and canonical Git state represented in one inspectable system.</p>
-<h2>Interface overview</h2>
+<h2 id="interface-overview">Interface overview</h2>
 <p>Source includes a CLI, HTTP API, management UI, smart-HTTP Git transport, capability-gated auth, JSON/SQLite/Postgres storage paths, organization and project isolation, a durable job queue, and evidence integration seams for Kujo tools.</p>
-<h2>Five-minute example</h2>
+<h2 id="five-minute-example">Five-minute example</h2>
 <pre><code class="language-bash">npm install
 npm test
 node bin/source.js demo --password &apos;&lt;12+ character local password&gt;&apos;
 node bin/source.js serve --port 8787</code></pre>
 <p>The demo prints the exact IDs used to sign in and does not create a shared default password.</p>
-<h2>What you get</h2>
+<h2 id="what-you-get">What you get</h2>
 <p>A local vertical slice for <code>Project → Work → Session → Change → Evidence → Decision → Canonical Git State</code>, plus agent discovery and Git contribution surfaces.</p>
-<h2>Boundaries</h2>
+<h2 id="boundaries">Boundaries</h2>
 <p>Source is an MVP, not a blanket hosted-service claim. JSON is single-process; exposed or multi-process serving requires the documented Postgres, writer-fencing, TLS, worker, capacity, and operations controls.</p>
-<h2>Reference</h2>
+<h2 id="reference">Reference</h2>
 <p>See the <a href="https://github.com/kujolang/source">Source repository</a>.</p></div>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2>On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.1.0</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.2.0</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../../assets/sitekit/sitekit.js"></script>

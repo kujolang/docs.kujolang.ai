@@ -34,11 +34,11 @@
 	<meta property="og:url" content="https://docs.kujolang.ai/tools/dispatch/">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="Kujo Docs">
-	
+
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Dispatch">
 	<meta name="twitter:description" content="Orchestrate resumable, approved, and auditable workflows.">
-	
+
 	<link href="../../assets/css/fonts.css" rel="stylesheet">
 	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
 	<link href="../../assets/css/style.css" rel="stylesheet">
@@ -68,6 +68,7 @@
 		<a href="/start-here/">Start here</a>
 		<a href="/learn/">Learn Kujo</a>
 		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
 		<a href="/tools/">Tools</a>
 		<a href="/showcases/">Showcases</a>
 	</nav>
@@ -95,11 +96,10 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<p class="docs-eyebrow">Tools</p><h1>Dispatch</h1><p class="docs-description">Orchestrate resumable, approved, and auditable workflows.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Tools</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-27</span></div>
-		<section class="docs-prerequisites" aria-label="Prerequisites"><h2>Prerequisites</h2></section>
-		<div class="docs-body"><h2>Use it when…</h2>
+		<p class="docs-eyebrow">Tools</p><h1 id="dispatch">Dispatch</h1><p class="docs-description">Orchestrate resumable, approved, and auditable workflows.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Tools</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-27</span></div>
+		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>A task is a sequence of steps that can pause, resume, require approval, and leave a run receipt.</p>
-<h2>Interface overview</h2>
+<h2 id="interface-overview">Interface overview</h2>
 <table><thead><tr>
 <th>Surface</th>
 <th>What is available</th>
@@ -125,7 +125,7 @@
 <td>Deterministic agent/provider/model selection with policy constraints, evaluation, and bounded fallback</td>
 </tr>
 </tbody></table>
-<h2>Main workflows</h2>
+<h2 id="main-workflows">Main workflows</h2>
 <ul>
 <li>Run a named or file-based workflow with explicit inputs, policy profile, and tool boundaries.</li>
 <li>Pause at approval or cancellation points and resume from persisted run state.</li>
@@ -133,19 +133,19 @@
 <li>Export a signed run bundle for handoff, then verify it when importing elsewhere.</li>
 <li>Validate and explain a routed workflow before execution; persisted route decisions and fallback evidence remain inspectable on resume.</li>
 </ul>
-<h2>Five-minute example</h2>
+<h2 id="five-minute-example">Five-minute example</h2>
 <pre><code class="language-bash">kujo run dispatch.kujo demo &quot;Research topic&quot; --yes --non-interactive
 kujo run dispatch.kujo runs</code></pre>
-<h2>What you get</h2>
+<h2 id="what-you-get">What you get</h2>
 <p>Resumable workflow state, step events, approval boundaries, route decisions, and an inspectable run record.</p>
-<h2>How it fits</h2>
+<h2 id="how-it-fits">How it fits</h2>
 <p>Start with <a href="/tools/spec/">Spec</a> and capture the result with <a href="/tools/runledger/">RunLedger</a>.</p>
-<h2>Boundaries</h2>
+<h2 id="boundaries">Boundaries</h2>
 <p>Live integrations need separate proof; local workflow orchestration is the documented scope.</p>
-<h2>Reference</h2>
+<h2 id="reference">Reference</h2>
 <p>See the <a href="https://github.com/kujolang/dispatch">Dispatch repository</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/scout/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/mcp/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2>On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">

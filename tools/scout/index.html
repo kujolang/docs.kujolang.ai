@@ -34,11 +34,11 @@
 	<meta property="og:url" content="https://docs.kujolang.ai/tools/scout/">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="Kujo Docs">
-	
+
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Scout">
 	<meta name="twitter:description" content="Build a structured map of an unfamiliar repository.">
-	
+
 	<link href="../../assets/css/fonts.css" rel="stylesheet">
 	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
 	<link href="../../assets/css/style.css" rel="stylesheet">
@@ -68,6 +68,7 @@
 		<a href="/start-here/">Start here</a>
 		<a href="/learn/">Learn Kujo</a>
 		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
 		<a href="/tools/">Tools</a>
 		<a href="/showcases/">Showcases</a>
 	</nav>
@@ -95,11 +96,10 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<p class="docs-eyebrow">Tools</p><h1>Scout</h1><p class="docs-description">Build a structured map of an unfamiliar repository.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Tools</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-27</span></div>
-		<section class="docs-prerequisites" aria-label="Prerequisites"><h2>Prerequisites</h2></section>
-		<div class="docs-body"><h2>Use it when…</h2>
+		<p class="docs-eyebrow">Tools</p><h1 id="scout">Scout</h1><p class="docs-description">Build a structured map of an unfamiliar repository.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Tools</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-27</span></div>
+		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>You need to understand a repository&apos;s files, entry points, contracts, dependencies, and risk before changing it.</p>
-<h2>Interface overview</h2>
+<h2 id="interface-overview">Interface overview</h2>
 <table><thead><tr>
 <th>Surface</th>
 <th>What is available</th>
@@ -121,26 +121,26 @@
 <td><code>FILE_TREE.md</code>, <code>llms.txt</code>, <code>AGENTS.md</code>, <code>CHECKLIST.md</code>, <code>intelligence.json</code>, and <code>scan_manifest.json</code></td>
 </tr>
 </tbody></table>
-<h2>Main workflows</h2>
+<h2 id="main-workflows">Main workflows</h2>
 <ul>
 <li>Run a quick scan for orientation or a bounded-depth scan for a focused subsystem.</li>
 <li>Generate durable repository context files for humans and downstream agents.</li>
 <li>Export security findings into machine-readable formats for existing review systems.</li>
 <li>Compare findings with a reviewed baseline while keeping suppressed items visible on demand.</li>
 </ul>
-<h2>Five-minute example</h2>
+<h2 id="five-minute-example">Five-minute example</h2>
 <pre><code class="language-bash">kujo run scout.kujo -- . --quick
 kujo run scout.kujo -- ./src -o ./reports -d 3</code></pre>
-<h2>What you get</h2>
+<h2 id="what-you-get">What you get</h2>
 <p>A structured context map, file tree, intelligence summary, and optional security or dependency exports.</p>
-<h2>How it fits</h2>
+<h2 id="how-it-fits">How it fits</h2>
 <p>Pass only the useful parts to <a href="/tools/scent/">Scent</a> before execution.</p>
-<h2>Boundaries</h2>
+<h2 id="boundaries">Boundaries</h2>
 <p>Scout is repository intelligence, not an automatic implementation plan or security certification.</p>
-<h2>Reference</h2>
+<h2 id="reference">Reference</h2>
 <p>See the <a href="https://github.com/kujolang/scout">Scout repository</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/eval/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/dispatch/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2>On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">

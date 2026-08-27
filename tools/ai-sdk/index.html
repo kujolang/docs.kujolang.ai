@@ -68,6 +68,7 @@
 		<a href="/start-here/">Start here</a>
 		<a href="/learn/">Learn Kujo</a>
 		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
 		<a href="/tools/">Tools</a>
 		<a href="/showcases/">Showcases</a>
 	</nav>
@@ -95,10 +96,10 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<p class="docs-eyebrow">Tools</p><h1>AI SDK</h1><p class="docs-description">Use normalized chat and embedding contracts with fixtures, retries, and redaction.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Tools</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
-		<div class="docs-body"><h2>Use it when…</h2>
+		<p class="docs-eyebrow">Tools</p><h1 id="ai-sdk">AI SDK</h1><p class="docs-description">Use normalized chat and embedding contracts with fixtures, retries, and redaction.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Tools</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
+		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>You need a provider-gated chat or embedding call with a normalized contract and a fixture path for local checks.</p>
-<h2>Interface overview</h2>
+<h2 id="interface-overview">Interface overview</h2>
 <table><thead><tr>
 <th>Surface</th>
 <th>What is available</th>
@@ -109,7 +110,7 @@
 </tr>
 <tr>
 <td>Providers</td>
-<td>OpenAI, OpenRouter, DeepSeek, and custom OpenAI-compatible endpoints</td>
+<td>Provider packages with public AI SDK drivers, plus custom OpenAI-compatible endpoints</td>
 </tr>
 <tr>
 <td>Reliability</td>
@@ -120,29 +121,29 @@
 <td>Endpoint allowlists, protected headers, redaction, fixtures, schemas, and benchmarks</td>
 </tr>
 </tbody></table>
-<h2>Main workflows</h2>
+<h2 id="main-workflows">Main workflows</h2>
 <ul>
 <li>Import <code>src/ai_sdk.kujo</code> and <code>src/providers.kujo</code>; this library does not add a separate user-facing CLI.</li>
 <li>Run the bundled example with no key to exercise deterministic fixture mode.</li>
 <li>Add a provider preset or custom endpoint while keeping the application response contract unchanged.</li>
 <li>Stream normalized <code>delta</code>, <code>done</code>, and <code>error</code> events, or request embeddings through the same client boundary.</li>
 </ul>
-<h2>Five-minute example</h2>
+<h2 id="five-minute-example">Five-minute example</h2>
 <pre><code class="language-bash">kujo run examples/main.kujo</code></pre>
-<h2>What you get</h2>
+<h2 id="what-you-get">What you get</h2>
 <p>Normalized response and embedding shapes, retry/backoff behavior, redaction, and an offline fixture mode.</p>
-<h2>How it fits</h2>
+<h2 id="how-it-fits">How it fits</h2>
 <p>Move to <a href="/tools/agents-sdk/">Agents SDK</a> when calls need tools, approvals, handoffs, or stores.</p>
-<h2>Boundaries</h2>
-<p>Provider-specific proof and credentials remain integrator-owned; this is not a hosted model gateway.</p>
-<h2>Reference</h2>
+<h2 id="boundaries">Boundaries</h2>
+<p>Provider-specific proof and credentials remain integrator-owned; this is not a hosted model gateway. See the <a href="/ecosystem/providers/">provider index</a> for package versions, native APIs, authentication variables, and driver availability.</p>
+<h2 id="reference">Reference</h2>
 <p>See the <a href="https://github.com/kujolang/ai-sdk">AI SDK repository</a> and the <a href="/learn/ai-runtime/">AI runtime basics</a> guide.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/rag/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/agents-sdk/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2>On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.1.0</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.2.0</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../../assets/sitekit/sitekit.js"></script>

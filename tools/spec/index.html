@@ -68,6 +68,7 @@
 		<a href="/start-here/">Start here</a>
 		<a href="/learn/">Learn Kujo</a>
 		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
 		<a href="/tools/">Tools</a>
 		<a href="/showcases/">Showcases</a>
 	</nav>
@@ -95,10 +96,10 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<p class="docs-eyebrow">Tools</p><h1>Spec</h1><p class="docs-description">Turn a request into a structured, checkable task contract.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Tools</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
-		<div class="docs-body"><h2>Use it when…</h2>
+		<p class="docs-eyebrow">Tools</p><h1 id="spec">Spec</h1><p class="docs-description">Turn a request into a structured, checkable task contract.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Tools</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
+		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>The request is too open-ended to evaluate safely and needs an objective, constraints, acceptance checks, and completion state.</p>
-<h2>Interface overview</h2>
+<h2 id="interface-overview">Interface overview</h2>
 <table><thead><tr>
 <th>Surface</th>
 <th>What is available</th>
@@ -120,31 +121,31 @@
 <td><code>render</code>, <code>export</code>, <code>export-agent-context</code>, <code>export-eval</code>, and <code>graph</code></td>
 </tr>
 </tbody></table>
-<h2>Main workflows</h2>
+<h2 id="main-workflows">Main workflows</h2>
 <ul>
 <li>Start from a blank contract, a local template, JSON, or an approved GitHub issue source.</li>
 <li>Validate objectives, scope, constraints, acceptance checks, and completion criteria before execution.</li>
 <li>Export a human-readable brief, agent context, Eval input, or a structured automation envelope.</li>
 <li>Run the CI command to make invalid or stale task contracts fail deterministically.</li>
 </ul>
-<h2>Five-minute example</h2>
+<h2 id="five-minute-example">Five-minute example</h2>
 <pre><code class="language-bash">spec validate task.spec.yml
 spec render task.spec.yml
 spec export-agent-context task.spec.yml</code></pre>
-<h2>What you get</h2>
+<h2 id="what-you-get">What you get</h2>
 <p>A structured task contract that can be handed to an agent or workflow and checked after the run.</p>
-<h2>How it fits</h2>
+<h2 id="how-it-fits">How it fits</h2>
 <p>Use <a href="/tools/scout/">Scout</a> and <a href="/tools/scent/">Scent</a> to focus the context before execution.</p>
-<h2>Boundaries</h2>
+<h2 id="boundaries">Boundaries</h2>
 <p>Spec defines work; it does not itself run untrusted code or prove that an implementation is correct.</p>
-<h2>Reference</h2>
+<h2 id="reference">Reference</h2>
 <p>See the <a href="https://github.com/kujolang/spec">Spec repository</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/kennel/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/eval/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2>On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.1.0</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.2.0</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../../assets/sitekit/sitekit.js"></script>

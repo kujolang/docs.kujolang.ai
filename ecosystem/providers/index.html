@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="kujo-light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		(function() {
+			try {
+				if (window.localStorage.getItem('sk-theme') === 'kujo-dark') {
+					document.documentElement.dataset.theme = 'kujo-dark';
+				}
+			} catch (error) {}
+		})();
+	</script>
+	<title>Providers | Kujo Docs</title>
+	<meta name="description" content="Choose and install a Kujo provider package, then move from a first request to native features.">
+	<meta name="keywords" content="SSG, Static Site Generator">
+	<meta name="author" content="Kujo">
+	<link rel="canonical" href="https://docs.kujolang.ai/ecosystem/providers/">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/assets/img/kujo-logomark-black.svg" color="#000000">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="application-name" content="Kujo Docs">
+	<meta name="apple-mobile-web-app-title" content="Kujo Docs">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Providers">
+	<meta property="og:description" content="Choose and install a Kujo provider package, then move from a first request to native features.">
+	<meta property="og:url" content="https://docs.kujolang.ai/ecosystem/providers/">
+	<meta property="og:type" content="article">
+	<meta property="og:site_name" content="Kujo Docs">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Providers">
+	<meta name="twitter:description" content="Choose and install a Kujo provider package, then move from a first request to native features.">
+
+	<link href="../../assets/css/fonts.css" rel="stylesheet">
+	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Providers","name":"Providers","description":"Choose and install a Kujo provider package, then move from a first request to native features.","url":"https://docs.kujolang.ai/ecosystem/providers/","author":{"@type":"Person","name":"Unknown Author"},"publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="docs-topbar" id="navigation">
+	<div class="docs-topbar-row">
+		<a class="docs-brand" href="../../index.html"><img class="docs-brand-mark" src="../../assets/img/kujo-logomark-black.svg" alt=""> <span>Docs</span></a>
+		<label class="docs-search-shell">
+			<span class="sr-only">Search documentation</span>
+			<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
+		</label>
+		<div class="docs-header-actions">
+			<button class="docs-theme-button docs-icon-button" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-docs-theme>
+				<svg class="docs-moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c.132 0 .263 .003 .393 .008a7.5 7.5 0 0 0 7.599 9.6A9 9 0 1 1 12 3"/></svg>
+				<svg class="docs-sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-4 0a4 4 0 1 0 8 0 4 4 0 1 0-8 0M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+			</button>
+			<button class="docs-menu-button docs-icon-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu>
+				<svg class="docs-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+				<svg class="docs-close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+			</button>
+		</div>
+	</div>
+	<nav id="primary-navigation" class="docs-primary-nav" aria-label="Primary navigation">
+		<a href="/start-here/">Start here</a>
+		<a href="/learn/">Learn Kujo</a>
+		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
+		<a href="/tools/">Tools</a>
+		<a href="/showcases/">Showcases</a>
+	</nav>
+</header>
+<div id="docs-search-results" class="docs-search-results" aria-live="polite"></div>
+<main class="docs-shell" id="main-content">
+	<aside class="docs-sidebar" aria-label="Documentation sections">
+		<p class="docs-sidebar-label">Browse</p>
+		<ul>
+			<li><a href="/start-here/">Start here</a></li>
+			<li><a href="/install/">Install Kujo</a></li>
+			<li><a href="/quickstart/">Quickstart</a></li>
+			<li><a href="/choose-a-path/">Choose a path</a></li>
+			<li><a href="/learn/">Learn Kujo</a></li>
+			<li><a href="/build/">Build with Kujo</a></li>
+			<li><a href="/review/">Reviewable work</a></li>
+			<li><a href="/tools/">Tools</a></li>
+			<li><a href="/showcases/">Showcases</a></li>
+			<li><a href="/collections/">Collections</a></li>
+			<li><a href="/ecosystem/">Ecosystem</a></li>
+			<li><a href="/reference/">Reference</a></li>
+			<li><a href="/security/">Security model</a></li>
+			<li><a href="/release-boundaries/">Release boundaries</a></li>
+			<li><a href="/support/">Support</a></li>
+		</ul>
+	</aside>
+	<article class="docs-article">
+		<p class="docs-eyebrow">Ecosystem</p><h1 id="providers">Providers</h1><p class="docs-description">Choose and install a Kujo provider package, then move from a first request to native features.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Ecosystem</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>source-backed inventory</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-27</span></div>
+		<div class="docs-body"><p>Kujo provider packages keep each provider&apos;s wire format visible while offering a normalized AI SDK driver when the package supports one. Choose a package here, install its immutable tag with Kennel, and use the provider&apos;s native API first when you need provider-specific fields.</p>
+<h2 id="choose-a-provider">Choose a provider</h2>
+<p>The inventory below is checked against the official Kujo provider repositories on <strong>2026-08-27</strong>. <code>AI SDK</code> means the package exports a public provider factory and depends on AI SDK <code>v1.1.0</code>; <code>Native only</code> means no normalized driver is advertised in that package release.</p>
+<table><thead><tr>
+<th>Provider</th>
+<th>Kujo package</th>
+<th>Release tag</th>
+<th>Protocol</th>
+<th>AI SDK</th>
+<th>Authentication</th>
+</tr></thead><tbody>
+<tr>
+<td><a href="#ollama">Ollama</a></td>
+<td><code>ollama</code></td>
+<td><code>v0.1.11</code></td>
+<td>Ollama API; local HTTP and NDJSON streams</td>
+<td>Yes</td>
+<td><code>OLLAMA_API_KEY</code> for ollama.com; none for local use</td>
+</tr>
+<tr>
+<td><a href="#anthropic">Anthropic</a></td>
+<td><code>anthropic</code></td>
+<td><code>v0.1.3</code></td>
+<td>Messages API and SSE</td>
+<td>Yes</td>
+<td><code>ANTHROPIC_API_KEY</code></td>
+</tr>
+<tr>
+<td><a href="#gemini">Gemini</a></td>
+<td><code>gemini</code></td>
+<td><code>v0.1.3</code></td>
+<td>Gemini Developer API</td>
+<td>Yes</td>
+<td><code>GEMINI_API_KEY</code></td>
+</tr>
+<tr>
+<td><a href="#openai">OpenAI</a></td>
+<td><code>openai</code></td>
+<td><code>v0.1.2</code></td>
+<td>Responses API</td>
+<td>Yes</td>
+<td><code>OPENAI_API_KEY</code></td>
+</tr>
+<tr>
+<td><a href="#openrouter">OpenRouter</a></td>
+<td><code>openrouter</code></td>
+<td><code>v0.1.2</code></td>
+<td>OpenAI-compatible routing API</td>
+<td>Yes</td>
+<td><code>OPENROUTER_API_KEY</code></td>
+</tr>
+<tr>
+<td><a href="#xai">xAI</a></td>
+<td><code>xai</code></td>
+<td><code>v0.1.2</code></td>
+<td>OpenAI-compatible chat API</td>
+<td>Yes</td>
+<td><code>XAI_API_KEY</code></td>
+</tr>
+<tr>
+<td><a href="#groq">Groq</a></td>
+<td><code>groq</code></td>
+<td><code>v0.1.1</code></td>
+<td>OpenAI-compatible chat API</td>
+<td>Yes</td>
+<td><code>GROQ_API_KEY</code></td>
+</tr>
+<tr>
+<td><a href="#together-ai">Together AI</a></td>
+<td><code>together</code></td>
+<td><code>v0.1.1</code></td>
+<td>OpenAI-compatible chat API</td>
+<td>Yes</td>
+<td><code>TOGETHER_API_KEY</code></td>
+</tr>
+<tr>
+<td><a href="#fireworks-ai">Fireworks AI</a></td>
+<td><code>fireworks</code></td>
+<td><code>v0.1.1</code></td>
+<td>OpenAI-compatible chat API</td>
+<td>Yes</td>
+<td><code>FIREWORKS_API_KEY</code></td>
+</tr>
+<tr>
+<td><a href="#mistral">Mistral</a></td>
+<td><code>mistral</code></td>
+<td><code>v0.1.1</code></td>
+<td>Mistral chat API</td>
+<td>Yes</td>
+<td><code>MISTRAL_API_KEY</code></td>
+</tr>
+<tr>
+<td><a href="#cerebras">Cerebras</a></td>
+<td><code>cerebras</code></td>
+<td><code>v0.1.1</code></td>
+<td>OpenAI-compatible chat API</td>
+<td>Yes</td>
+<td><code>CEREBRAS_API_KEY</code></td>
+</tr>
+<tr>
+<td><a href="#deepinfra">DeepInfra</a></td>
+<td><code>deepinfra</code></td>
+<td><code>v0.1.1</code></td>
+<td>OpenAI-compatible chat API</td>
+<td>Yes</td>
+<td><code>DEEPINFRA_API_KEY</code></td>
+</tr>
+<tr>
+<td><a href="#deepseek">DeepSeek</a></td>
+<td><code>deepseek</code></td>
+<td><code>v0.1.1</code></td>
+<td>OpenAI-compatible chat API</td>
+<td>Yes</td>
+<td><code>DEEPSEEK_API_KEY</code></td>
+</tr>
+<tr>
+<td><a href="#cloudflare-workers-ai">Cloudflare Workers AI</a></td>
+<td><code>cloudflare_ai</code></td>
+<td><code>v0.1.1</code></td>
+<td>Workers AI chat API</td>
+<td>Yes</td>
+<td><code>CLOUDFLARE_API_TOKEN</code></td>
+</tr>
+<tr>
+<td><a href="#hugging-face">Hugging Face</a></td>
+<td><code>huggingface</code></td>
+<td><code>v0.1.2</code></td>
+<td>Inference Providers router</td>
+<td>Yes</td>
+<td><code>HF_TOKEN</code></td>
+</tr>
+<tr>
+<td><a href="#replicate">Replicate</a></td>
+<td><code>replicate</code></td>
+<td><code>v0.1.0</code></td>
+<td>Predictions API</td>
+<td>Native only</td>
+<td><code>REPLICATE_API_TOKEN</code></td>
+</tr>
+<tr>
+<td><a href="#cohere">Cohere</a></td>
+<td><code>cohere</code></td>
+<td><code>v0.1.1</code></td>
+<td>Cohere chat, embed, and rerank APIs</td>
+<td>Yes</td>
+<td><code>COHERE_API_KEY</code></td>
+</tr>
+<tr>
+<td><a href="#amazon-bedrock">Amazon Bedrock</a></td>
+<td><code>bedrock</code></td>
+<td><code>v0.1.1</code></td>
+<td>Bedrock Converse and InvokeModel</td>
+<td>Native only</td>
+<td>Caller-supplied SigV4 authorization</td>
+</tr>
+<tr>
+<td><a href="#azure-ai">Azure AI</a></td>
+<td><code>azure-ai</code></td>
+<td><code>v0.1.1</code></td>
+<td>Azure OpenAI / Foundry deployments</td>
+<td>Native only</td>
+<td><code>AZURE_OPENAI_API_KEY</code> or access token</td>
+</tr>
+<tr>
+<td><a href="#vertex-ai">Vertex AI</a></td>
+<td><code>vertex-ai</code></td>
+<td><code>v0.1.1</code></td>
+<td>Vertex AI publisher models and predictions</td>
+<td>Native only</td>
+<td>Google ADC-derived access token</td>
+</tr>
+<tr>
+<td><a href="#nvidia-nim">NVIDIA NIM</a></td>
+<td><code>nvidia-nim</code></td>
+<td><code>v0.1.1</code></td>
+<td>OpenAI-compatible NIM API</td>
+<td>Yes</td>
+<td><code>NVIDIA_API_KEY</code></td>
+</tr>
+<tr>
+<td><a href="#perplexity">Perplexity</a></td>
+<td><code>perplexity</code></td>
+<td><code>v0.1.1</code></td>
+<td>Search-grounded chat API</td>
+<td>Yes</td>
+<td><code>PERPLEXITY_API_KEY</code></td>
+</tr>
+<tr>
+<td><a href="#z-ai-glm">Z.ai / GLM</a></td>
+<td><code>zai</code></td>
+<td><code>v0.1.1</code></td>
+<td>OpenAI-compatible chat API</td>
+<td>Yes</td>
+<td><code>ZAI_API_KEY</code></td>
+</tr>
+<tr>
+<td><a href="#fal-ai">fal.ai</a></td>
+<td><code>fal</code></td>
+<td><code>v0.1.1</code></td>
+<td>Queue and media inference API</td>
+<td>Native only</td>
+<td><code>FAL_KEY</code></td>
+</tr>
+<tr>
+<td><a href="#baseten">Baseten</a></td>
+<td><code>baseten</code></td>
+<td><code>v0.1.1</code></td>
+<td>OpenAI-compatible deployment API</td>
+<td>Yes</td>
+<td><code>BASETEN_API_KEY</code></td>
+</tr>
+</tbody></table>
+<p>All package versions above are immutable Git tags. The public package registry is not yet operated, so install from GitHub tags rather than using an unqualified package name.</p>
+<h2 id="install-a-provider">Install a provider</h2>
+<p>Install the package into the project&apos;s Kennel lockfile. Replace <code>PACKAGE</code> and <code>TAG</code> with a row from the table:</p>
+<pre><code class="language-bash">kujo kennel add github:kujolang/PACKAGE@TAG
+kujo kennel install</code></pre>
+<p>Then export the provider&apos;s credential in your shell or secret manager. Never put a real key in a <code>.kujo</code> file, a lockfile, or a committed example. The package repositories and <a href="/learn/packages/">Packages with Kennel</a> explain the local lockfile and trust boundary.</p>
+<h2 id="provider-sections">Provider sections</h2>
+<p>Each section gives the package, immutable release, official documentation, native surface, AI SDK status, authentication variable, and a small starting point. Model IDs are copied from the provider repository examples; verify availability with the provider before using them in production.</p>
+<h3 id="ollama">Ollama</h3>
+<p>Package: <code>ollama</code> <code>v0.1.11</code> · <a href="https://github.com/kujolang/ollama">Kujo repository</a> · <a href="https://docs.ollama.com/api">Ollama API docs</a></p>
+<p>Native API: local or cloud chat, generation, embeddings, model lifecycle, tools, structured output, thinking, and NDJSON streaming. AI SDK: <code>ollama_provider</code> for normalized chat and embeddings. Local Ollama needs no key; ollama.com uses <code>OLLAMA_API_KEY</code>.</p>
+<pre><code class="language-kujo">from ollama import chat
+response := chat({&quot;model&quot;: &quot;some-installed-model&quot;, &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Hello!&quot;}]})
+print(response[&quot;data&quot;][&quot;message&quot;][&quot;content&quot;])</code></pre>
+<h3 id="anthropic">Anthropic</h3>
+<p>Package: <code>anthropic</code> <code>v0.1.3</code> · <a href="https://github.com/kujolang/anthropic">Kujo repository</a> · <a href="https://docs.anthropic.com/en/api/messages">Messages API docs</a></p>
+<p>Native API: Messages, content blocks, tools, thinking, multimodal input, token counting, and SSE. AI SDK: <code>anthropic_provider</code> for normalized chat and streaming; embeddings are not advertised. Set <code>ANTHROPIC_API_KEY</code> and <code>ANTHROPIC_MODEL</code>.</p>
+<pre><code class="language-kujo">from anthropic import messages
+response := messages({&quot;model&quot;: env(&quot;ANTHROPIC_MODEL&quot;), &quot;max_tokens&quot;: 256, &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Hello from Kujo!&quot;}]})
+print(response[&quot;data&quot;][&quot;content&quot;][0][&quot;text&quot;])</code></pre>
+<h3 id="gemini">Gemini</h3>
+<p>Package: <code>gemini</code> <code>v0.1.3</code> · <a href="https://github.com/kujolang/gemini">Kujo repository</a> · <a href="https://ai.google.dev/gemini-api/docs">Gemini API docs</a></p>
+<p>Native API: contents and parts, streaming, tools, structured output, multimodal input, safety metadata, and usage. AI SDK: <code>gemini_provider</code> where the selected model supports the normalized capability. Set <code>GEMINI_API_KEY</code>.</p>
+<pre><code class="language-kujo">from gemini import create_client, client_generate_content
+client := create_client({})
+result := client_generate_content(client, &quot;gemini-2.5-flash&quot;, [{&quot;role&quot;: &quot;user&quot;, &quot;parts&quot;: [{&quot;text&quot;: &quot;Hello from Kujo!&quot;}]}], {})
+print(result[&quot;data&quot;][&quot;candidates&quot;][0][&quot;content&quot;][&quot;parts&quot;][0][&quot;text&quot;])</code></pre>
+<h3 id="openai">OpenAI</h3>
+<p>Package: <code>openai</code> <code>v0.1.2</code> · <a href="https://github.com/kujolang/openai">Kujo repository</a> · <a href="https://platform.openai.com/docs/api-reference/responses">Responses API docs</a></p>
+<p>Native API: Responses output items, built-in tools, reasoning, structured output, streaming, embeddings, and usage. AI SDK: <code>openai_provider</code> for normalized chat and streaming. Set <code>OPENAI_API_KEY</code>.</p>
+<pre><code class="language-kujo">from openai import create_client, client_responses
+result := client_responses(create_client({}), {&quot;model&quot;: &quot;gpt-5.5&quot;, &quot;input&quot;: &quot;Hello from Kujo!&quot;})
+print(result[&quot;data&quot;][&quot;output&quot;][0][&quot;content&quot;][0][&quot;text&quot;])</code></pre>
+<h3 id="openrouter">OpenRouter</h3>
+<p>Package: <code>openrouter</code> <code>v0.1.2</code> · <a href="https://github.com/kujolang/openrouter">Kujo repository</a> · <a href="https://openrouter.ai/docs/api-reference/overview">OpenRouter API docs</a></p>
+<p>Native API: model discovery, provider routing and preferences, fallbacks, privacy controls, and usage metadata. AI SDK: <code>openrouter_provider</code> for normalized chat and streaming. Set <code>OPENROUTER_API_KEY</code>.</p>
+<pre><code class="language-kujo">from openrouter import create_client, client_chat
+result := client_chat(create_client({}), {&quot;model&quot;: &quot;openai/gpt-5.5&quot;, &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Hello!&quot;}]})
+print(result[&quot;data&quot;][&quot;choices&quot;][0][&quot;message&quot;][&quot;content&quot;])</code></pre>
+<h3 id="xai">xAI</h3>
+<p>Package: <code>xai</code> <code>v0.1.2</code> · <a href="https://github.com/kujolang/xai">Kujo repository</a> · <a href="https://docs.x.ai/docs/api-reference">xAI API docs</a></p>
+<p>Native API: xAI chat responses, reasoning controls, tools, multimodal inputs, and usage. AI SDK: <code>xai_provider</code> through the compatible driver. Set <code>XAI_API_KEY</code>; the repository example uses <code>grok-4.6</code>.</p>
+<pre><code class="language-kujo">from xai import create_client, client_chat
+result := client_chat(create_client({}), {&quot;model&quot;: &quot;grok-4.6&quot;, &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Hello!&quot;}]})
+print(result[&quot;data&quot;][&quot;choices&quot;][0][&quot;message&quot;][&quot;content&quot;])</code></pre>
+<h3 id="groq">Groq</h3>
+<p>Package: <code>groq</code> <code>v0.1.1</code> · <a href="https://github.com/kujolang/groq">Kujo repository</a> · <a href="https://console.groq.com/docs/api-reference">Groq API docs</a></p>
+<p>Native API: compatible chat, reasoning controls, tools, supported vision, Compound behavior, citations, and usage. AI SDK: <code>groq_provider</code>. Set <code>GROQ_API_KEY</code>; the repository example uses <code>llama-3.3-70b-versatile</code>.</p>
+<pre><code class="language-kujo">from groq import create_client, client_chat
+result := client_chat(create_client({}), {&quot;model&quot;: &quot;llama-3.3-70b-versatile&quot;, &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Hello!&quot;}]})
+print(result[&quot;data&quot;][&quot;choices&quot;][0][&quot;message&quot;][&quot;content&quot;])</code></pre>
+<h3 id="together-ai">Together AI</h3>
+<p>Package: <code>together</code> <code>v0.1.1</code> · <a href="https://github.com/kujolang/together">Kujo repository</a> · <a href="https://docs.together.ai/reference/chat-completions">Together API docs</a></p>
+<p>Native API: chat, tools, reasoning, vision, model metadata, and embeddings. AI SDK: <code>together_provider</code>; media, fine-tuning, files, and batch workflows remain provider-native. Set <code>TOGETHER_API_KEY</code>.</p>
+<pre><code class="language-kujo">from together import create_client, client_chat
+result := client_chat(create_client({}), {&quot;model&quot;: &quot;meta-llama/Llama-3.3-70B-Instruct-Turbo&quot;, &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Hello!&quot;}]})
+print(result[&quot;data&quot;][&quot;choices&quot;][0][&quot;message&quot;][&quot;content&quot;])</code></pre>
+<h3 id="fireworks-ai">Fireworks AI</h3>
+<p>Package: <code>fireworks</code> <code>v0.1.1</code> · <a href="https://github.com/kujolang/fireworks">Kujo repository</a> · <a href="https://docs.fireworks.ai/api-reference/post-chatcompletions">Fireworks API docs</a></p>
+<p>Native API: Fireworks chat, streaming, tools, reasoning, vision, and hosted-model controls. AI SDK: <code>fireworks_provider</code>. Set <code>FIREWORKS_API_KEY</code> and choose a currently available Fireworks model.</p>
+<pre><code class="language-kujo">from fireworks import create_client, client_chat
+result := client_chat(create_client({}), {&quot;model&quot;: &quot;accounts/fireworks/models/kimi-k2-instruct-0905&quot;, &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Hello!&quot;}]})
+print(result[&quot;data&quot;][&quot;choices&quot;][0][&quot;message&quot;][&quot;content&quot;])</code></pre>
+<h3 id="mistral">Mistral</h3>
+<p>Package: <code>mistral</code> <code>v0.1.1</code> · <a href="https://github.com/kujolang/mistral">Kujo repository</a> · <a href="https://docs.mistral.ai/api/">Mistral API docs</a></p>
+<p>Native API: Mistral chat and its provider-specific request and response fields. AI SDK: <code>mistral_provider</code> for normalized chat and streaming. Set <code>MISTRAL_API_KEY</code>.</p>
+<pre><code class="language-kujo">from mistral import create_client, client_chat
+result := client_chat(create_client({}), {&quot;model&quot;: &quot;mistral-small-latest&quot;, &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Hello!&quot;}]})
+print(result[&quot;data&quot;][&quot;choices&quot;][0][&quot;message&quot;][&quot;content&quot;])</code></pre>
+<h3 id="cerebras">Cerebras</h3>
+<p>Package: <code>cerebras</code> <code>v0.1.1</code> · <a href="https://github.com/kujolang/cerebras">Kujo repository</a> · <a href="https://inference-docs.cerebras.ai/api-reference/chat-completions">Cerebras API docs</a></p>
+<p>Native API: compatible chat, streaming, tools, reasoning, vision, and usage. AI SDK: <code>cerebras_provider</code>. Set <code>CEREBRAS_API_KEY</code>.</p>
+<pre><code class="language-kujo">from cerebras import create_client, client_chat
+result := client_chat(create_client({}), {&quot;model&quot;: &quot;llama-3.3-70b&quot;, &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Hello!&quot;}]})
+print(result[&quot;data&quot;][&quot;choices&quot;][0][&quot;message&quot;][&quot;content&quot;])</code></pre>
+<h3 id="deepinfra">DeepInfra</h3>
+<p>Package: <code>deepinfra</code> <code>v0.1.1</code> · <a href="https://github.com/kujolang/deepinfra">Kujo repository</a> · <a href="https://deepinfra.com/docs/openai_api">DeepInfra API docs</a></p>
+<p>Native API: compatible chat, streaming, tools, reasoning, vision, and usage. AI SDK: <code>deepinfra_provider</code>. Set <code>DEEPINFRA_API_KEY</code> and use a model ID available from DeepInfra.</p>
+<pre><code class="language-kujo">from deepinfra import create_client, client_chat
+result := client_chat(create_client({}), {&quot;model&quot;: &quot;meta-llama/Meta-Llama-3.1-8B-Instruct&quot;, &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Hello!&quot;}]})
+print(result[&quot;data&quot;][&quot;choices&quot;][0][&quot;message&quot;][&quot;content&quot;])</code></pre>
+<h3 id="deepseek">DeepSeek</h3>
+<p>Package: <code>deepseek</code> <code>v0.1.1</code> · <a href="https://github.com/kujolang/deepseek">Kujo repository</a> · <a href="https://api-docs.deepseek.com">DeepSeek API docs</a></p>
+<p>Native API: compatible chat, reasoning, tools, streaming, and usage. AI SDK: <code>deepseek_provider</code>. Set <code>DEEPSEEK_API_KEY</code> and verify the current DeepSeek model ID before use.</p>
+<pre><code class="language-kujo">from deepseek import create_client, client_chat
+result := client_chat(create_client({}), {&quot;model&quot;: &quot;deepseek-chat&quot;, &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Hello!&quot;}]})
+print(result[&quot;data&quot;][&quot;choices&quot;][0][&quot;message&quot;][&quot;content&quot;])</code></pre>
+<h3 id="cloudflare-workers-ai">Cloudflare Workers AI</h3>
+<p>Package: <code>cloudflare_ai</code> <code>v0.1.1</code> · <a href="https://github.com/kujolang/cloudflare-ai">Kujo repository</a> · <a href="https://developers.cloudflare.com/workers-ai/">Workers AI docs</a></p>
+<p>Native API: Workers AI chat and provider-specific account/model routing. AI SDK: <code>cloudflare_ai_provider</code>. Set the Cloudflare token and account configuration required by the package; do not confuse this package with Cloudflare&apos;s unrelated OpenAI-compatible gateway.</p>
+<pre><code class="language-kujo">from cloudflare_ai import create_client, client_chat
+result := client_chat(create_client({}), {&quot;model&quot;: &quot;@cf/meta/llama-3.1-8b-instruct&quot;, &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Hello!&quot;}]})
+print(result[&quot;data&quot;])</code></pre>
+<h3 id="hugging-face">Hugging Face</h3>
+<p>Package: <code>huggingface</code> <code>v0.1.2</code> · <a href="https://github.com/kujolang/huggingface">Kujo repository</a> · <a href="https://huggingface.co/docs/inference-providers">Inference Providers docs</a></p>
+<p>Native API: routed chat plus native task operations through the Inference Providers router. AI SDK: <code>huggingface_provider</code> for normalized chat. Set <code>HF_TOKEN</code>; model and routed provider availability are dynamic.</p>
+<pre><code class="language-kujo">from huggingface import create_client, chat
+result := chat(create_client({}), {&quot;model&quot;: &quot;meta-llama/Llama-3.1-8B-Instruct&quot;, &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Hello!&quot;}]})
+print(result[&quot;data&quot;])</code></pre>
+<h3 id="replicate">Replicate</h3>
+<p>Package: <code>replicate</code> <code>v0.1.0</code> · <a href="https://github.com/kujolang/replicate">Kujo repository</a> · <a href="https://replicate.com/docs/reference/http">Replicate HTTP API docs</a></p>
+<p>Native API: create, inspect, poll, cancel, and retrieve predictions. AI SDK: none in this release because prediction and media jobs do not have a stable one-to-one normalized chat semantic. Set <code>REPLICATE_API_TOKEN</code>.</p>
+<pre><code class="language-kujo">from replicate import create_client, create_prediction
+prediction := create_prediction(create_client({}), {&quot;version&quot;: &quot;VERSION_OR_MODEL&quot;, &quot;input&quot;: {&quot;prompt&quot;: &quot;Hello!&quot;}})
+print(prediction[&quot;data&quot;][&quot;id&quot;])</code></pre>
+<h3 id="cohere">Cohere</h3>
+<p>Package: <code>cohere</code> <code>v0.1.1</code> · <a href="https://github.com/kujolang/cohere">Kujo repository</a> · <a href="https://docs.cohere.com/reference/chat">Cohere API docs</a></p>
+<p>Native API: chat, embeddings, and reranking. AI SDK: <code>cohere_provider</code> for chat and embeddings; reranking remains native-only. Set <code>COHERE_API_KEY</code>.</p>
+<pre><code class="language-kujo">from cohere import create_client, chat
+result := chat(create_client({&quot;model&quot;: &quot;command-a-03-2025&quot;}), {&quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Explain Kujo in one sentence.&quot;}]})
+print(result[&quot;output_text&quot;])</code></pre>
+<h3 id="amazon-bedrock">Amazon Bedrock</h3>
+<p>Package: <code>bedrock</code> <code>v0.1.1</code> · <a href="https://github.com/kujolang/bedrock">Kujo repository</a> · <a href="https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html">Bedrock API reference</a></p>
+<p>Native API: regional Converse and InvokeModel calls with model IDs, content blocks, guardrails, and native responses. AI SDK: none advertised; caller-supplied SigV4 authorization remains explicit. Set short-lived authorization and date values through your deployment&apos;s secret boundary.</p>
+<pre><code class="language-kujo">from bedrock import create_client, converse
+result := converse(create_client({&quot;region&quot;: &quot;us-east-1&quot;, &quot;authorization&quot;: env(&quot;AWS_BEDROCK_AUTHORIZATION&quot;)}), {&quot;model_id&quot;: &quot;amazon.nova-lite-v1:0&quot;, &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: [{&quot;text&quot;: &quot;Say hello.&quot;}]}]})
+print(result[&quot;data&quot;])</code></pre>
+<h3 id="azure-ai">Azure AI</h3>
+<p>Package: <code>azure-ai</code> <code>v0.1.1</code> · <a href="https://github.com/kujolang/azure-ai">Kujo repository</a> · <a href="https://learn.microsoft.com/en-us/azure/ai-services/openai/reference">Azure OpenAI REST reference</a></p>
+<p>Native API: deployment-scoped Azure OpenAI and Microsoft Foundry requests, API versions, and native response data. AI SDK: none advertised until deployment-scoped auth and API-version behavior have a governed adapter. Set <code>AZURE_OPENAI_API_KEY</code> or <code>AZURE_OPENAI_ACCESS_TOKEN</code>.</p>
+<pre><code class="language-kujo">from azure_ai import create_client, chat
+result := chat(create_client({&quot;endpoint&quot;: env(&quot;AZURE_OPENAI_ENDPOINT&quot;), &quot;api_key&quot;: env(&quot;AZURE_OPENAI_API_KEY&quot;), &quot;deployment&quot;: &quot;my-model&quot;}), {&quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Say hello.&quot;}]})
+print(result[&quot;data&quot;])</code></pre>
+<h3 id="vertex-ai">Vertex AI</h3>
+<p>Package: <code>vertex-ai</code> <code>v0.1.1</code> · <a href="https://github.com/kujolang/vertex-ai">Kujo repository</a> · <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/inference">Vertex AI model reference</a></p>
+<p>Native API: project and location-scoped publisher models, content parts, and prediction endpoints. AI SDK: none advertised; Google Cloud authentication remains an explicit integration boundary. Supply a short-lived ADC-derived token through <code>GOOGLE_ACCESS_TOKEN</code>.</p>
+<pre><code class="language-kujo">from vertex_ai import create_client, generate_content
+result := generate_content(create_client({&quot;project&quot;: env(&quot;GOOGLE_CLOUD_PROJECT&quot;), &quot;location&quot;: &quot;us-central1&quot;, &quot;access_token&quot;: env(&quot;GOOGLE_ACCESS_TOKEN&quot;)}), {&quot;model&quot;: &quot;gemini-2.5-flash&quot;, &quot;contents&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;parts&quot;: [{&quot;text&quot;: &quot;Say hello.&quot;}]}]})
+print(result[&quot;data&quot;])</code></pre>
+<h3 id="nvidia-nim">NVIDIA NIM</h3>
+<p>Package: <code>nvidia-nim</code> <code>v0.1.1</code> · <a href="https://github.com/kujolang/nvidia-nim">Kujo repository</a> · <a href="https://docs.nvidia.com/nim/">NVIDIA NIM docs</a></p>
+<p>Native API: hosted or self-managed OpenAI-compatible chat with explicit host and model configuration. AI SDK: <code>nvidia_nim_provider</code>. Set <code>NVIDIA_API_KEY</code> for the hosted endpoint.</p>
+<pre><code class="language-kujo">from nvidia_nim import create_client, chat
+result := chat(create_client({&quot;api_key&quot;: env(&quot;NVIDIA_API_KEY&quot;), &quot;model&quot;: &quot;meta/llama-3.1-8b-instruct&quot;}), {&quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Say hello.&quot;}]})
+print(result[&quot;data&quot;])</code></pre>
+<h3 id="perplexity">Perplexity</h3>
+<p>Package: <code>perplexity</code> <code>v0.1.1</code> · <a href="https://github.com/kujolang/perplexity">Kujo repository</a> · <a href="https://docs.perplexity.ai/docs/getting-started/overview">Perplexity API docs</a></p>
+<p>Native API: the Kujo package&apos;s search-grounded chat, citations, search filters, usage, and native metadata. AI SDK: <code>perplexity_provider</code> for normalized chat; citations remain native provider data. Perplexity&apos;s current documentation also describes a separate Router API in private preview, so do not assume Router features are available through this package. Set <code>PERPLEXITY_API_KEY</code>.</p>
+<pre><code class="language-kujo">from perplexity import create_client, chat
+result := chat(create_client({&quot;api_key&quot;: env(&quot;PERPLEXITY_API_KEY&quot;), &quot;model&quot;: &quot;sonar-pro&quot;}), {&quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;What is Kujo?&quot;}]})
+print(result[&quot;data&quot;])</code></pre>
+<h3 id="z-ai-glm">Z.ai / GLM</h3>
+<p>Package: <code>zai</code> <code>v0.1.1</code> · <a href="https://github.com/kujolang/zai">Kujo repository</a> · <a href="https://docs.z.ai/api-reference">Z.ai API reference</a></p>
+<p>Native API: GLM chat with reasoning, tools, and multimodal fields. AI SDK: <code>zai_provider</code> through the compatible driver; GLM-specific fields remain native. Set <code>ZAI_API_KEY</code>.</p>
+<pre><code class="language-kujo">from zai import create_client, chat
+result := chat(create_client({&quot;api_key&quot;: env(&quot;ZAI_API_KEY&quot;), &quot;model&quot;: &quot;glm-4.5&quot;}), {&quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Say hello.&quot;}]})
+print(result[&quot;data&quot;])</code></pre>
+<h3 id="fal-ai">fal.ai</h3>
+<p>Package: <code>fal</code> <code>v0.1.1</code> · <a href="https://github.com/kujolang/fal">Kujo repository</a> · <a href="https://docs.fal.ai/model-apis">fal.ai model APIs</a></p>
+<p>Native API: queued image, video, audio, and other model inference with submit, status, result, and cancel operations. AI SDK: none in this release because queued media has no stable normalized chat semantic. Set <code>FAL_KEY</code>.</p>
+<pre><code class="language-kujo">from fal import create_client, submit
+request := submit(create_client({&quot;key&quot;: env(&quot;FAL_KEY&quot;), &quot;model&quot;: &quot;fal-ai/flux/schnell&quot;}), {&quot;input&quot;: {&quot;prompt&quot;: &quot;A monochrome Kujo mascot&quot;}})
+print(request[&quot;data&quot;][&quot;request_id&quot;])</code></pre>
+<h3 id="baseten">Baseten</h3>
+<p>Package: <code>baseten</code> <code>v0.1.1</code> · <a href="https://github.com/kujolang/baseten">Kujo repository</a> · <a href="https://docs.baseten.co/api-reference/openai">Baseten API reference</a></p>
+<p>Native API: deployment-scoped OpenAI-compatible chat, streaming-ready fields, and provider metadata. AI SDK: <code>baseten_provider</code>; keep the deployment and base URL explicit. Set <code>BASETEN_API_KEY</code>.</p>
+<pre><code class="language-kujo">from baseten import create_client, chat
+result := chat(create_client({&quot;api_key&quot;: env(&quot;BASETEN_API_KEY&quot;), &quot;model&quot;: &quot;my-deployment&quot;}), {&quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Say hello.&quot;}]})
+print(result[&quot;data&quot;])</code></pre>
+<h2 id="contracts-and-related-guides">Contracts and related guides</h2>
+<p>The current baseline is Kujo <code>v1.0.1</code>, Kennel <code>v1.0.0</code>, AI SDK <code>v1.1.0</code>, AI SDK normalized response contract <code>1.0.0</code>, AI SDK provider-driver contract <code>1.0.0</code>, and Kujo Provider Package Contract <code>1.0.1</code>. Provider package versions are independent of these contracts.</p>
+<ul>
+<li><a href="/tools/ai-sdk/">AI SDK</a> — normalized chat and embedding behavior, retries, fixtures, and redaction.</li>
+<li><a href="/learn/ai-runtime/">AI runtime basics</a> — credentials, budgets, replay, and egress boundaries.</li>
+<li><a href="/learn/packages/">Packages with Kennel</a> — manifests, lockfiles, and frozen installs.</li>
+<li><a href="/build/ai-and-agents/">AI and agents</a> — the path from a provider call to agents and workflows.</li>
+<li><a href="/release-boundaries/">Release boundaries</a> — how to interpret repository maturity and evidence.</li>
+</ul>
+<p>Evidence date: 2026-08-27. Recheck the linked Kujo repository and official provider documentation before pinning a new release or model in a production system.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/learn/packages/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/ai-sdk/" rel="next"><span>Next</span></a></nav>
+	</article>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#choose-a-provider">Choose a provider</a></li><li class="toc-level-2"><a href="#install-a-provider">Install a provider</a></li><li class="toc-level-2"><a href="#provider-sections">Provider sections</a></li><li class="toc-level-2"><a href="#contracts-and-related-guides">Contracts and related guides</a></li></ol></nav>
+</main>
+
+<footer class="docs-footer" id="footer">
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.2.0</span></div>
+	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
+</footer>
+<script src="../../assets/sitekit/sitekit.js"></script>
+<script src="../../assets/js/docs.js"></script>
+<script src="../../assets/js/kujo-webmcp.js" data-kujo-webmcp data-kujo-site-index="../../.well-known/kujo-site-index.json" defer></script></body>
+</html>

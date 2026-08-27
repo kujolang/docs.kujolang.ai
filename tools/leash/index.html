@@ -34,11 +34,11 @@
 	<meta property="og:url" content="https://docs.kujolang.ai/tools/leash/">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="Kujo Docs">
-	
+
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Leash">
 	<meta name="twitter:description" content="Supervise local AI agents through policy-gated approvals and a mobile control plane.">
-	
+
 	<link href="../../assets/css/fonts.css" rel="stylesheet">
 	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
 	<link href="../../assets/css/style.css" rel="stylesheet">
@@ -68,6 +68,7 @@
 		<a href="/start-here/">Start here</a>
 		<a href="/learn/">Learn Kujo</a>
 		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
 		<a href="/tools/">Tools</a>
 		<a href="/showcases/">Showcases</a>
 	</nav>
@@ -95,11 +96,10 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<p class="docs-eyebrow">Tools</p><h1>Leash</h1><p class="docs-description">Supervise local AI agents through policy-gated approvals and a mobile control plane.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Tools</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>private preview</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-27</span></div>
-		<section class="docs-prerequisites" aria-label="Prerequisites"><h2>Prerequisites</h2></section>
-		<div class="docs-body"><h2>Use it when…</h2>
+		<p class="docs-eyebrow">Tools</p><h1 id="leash">Leash</h1><p class="docs-description">Supervise local AI agents through policy-gated approvals and a mobile control plane.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Tools</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>private preview</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-27</span></div>
+		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>Local coding agents need human approval, policy-as-code risk classification, durable decisions, and remote supervision without moving execution off the workstation.</p>
-<h2>Interface overview</h2>
+<h2 id="interface-overview">Interface overview</h2>
 <table><thead><tr>
 <th>Surface</th>
 <th>What is available</th>
@@ -121,29 +121,29 @@
 <td>Android control surface, JWT device identity, FCM notifications, and decision audit trail</td>
 </tr>
 </tbody></table>
-<h2>Main workflows</h2>
+<h2 id="main-workflows">Main workflows</h2>
 <ul>
 <li>Run the daemon beside tmux-hosted agents so execution and working data remain local.</li>
 <li>Convert agent prompts and lifecycle output into structured, policy-classified events.</li>
 <li>Approve or reject actions through the API or mobile surface, with stronger confirmation for dangerous actions.</li>
 <li>Use the append-only audit trail to review who decided what and when.</li>
 </ul>
-<h2>Five-minute example</h2>
+<h2 id="five-minute-example">Five-minute example</h2>
 <pre><code class="language-bash">cd daemon
 cargo build --release
 cp config.example.yml config.yml
 ./target/release/leashd config.yml
 curl http://127.0.0.1:9191/health</code></pre>
-<h2>What you get</h2>
+<h2 id="what-you-get">What you get</h2>
 <p>A local daemon, Kujo policy rules, tmux-based agent adapters, an audit trail, and an Android control surface for approval decisions.</p>
-<h2>How it fits</h2>
+<h2 id="how-it-fits">How it fits</h2>
 <p>Leash can supervise <a href="/tools/dispatch/">Dispatch</a> workflows and use <a href="/tools/spec/">Spec</a> or <a href="/tools/eval/">Eval</a> results as approval context.</p>
-<h2>Boundaries</h2>
+<h2 id="boundaries">Boundaries</h2>
 <p>The Rust daemon is the primary implementation. Android device, FCM, signing, notarization, packaged distribution, and public release proof remain external actions.</p>
-<h2>Reference</h2>
+<h2 id="reference">Reference</h2>
 <p>Leash source is currently a private repository, so public source access and installation are not available. Treat this page as capability orientation rather than public onboarding.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/watchdog/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/muzzle/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2>On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">

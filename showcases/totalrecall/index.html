@@ -68,6 +68,7 @@
 		<a href="/start-here/">Start here</a>
 		<a href="/learn/">Learn Kujo</a>
 		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
 		<a href="/tools/">Tools</a>
 		<a href="/showcases/">Showcases</a>
 	</nav>
@@ -95,10 +96,10 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<p class="docs-eyebrow">Showcases</p><h1>TotalRecall</h1><p class="docs-description">A local-first ingestion showcase for meetings, chat exports, Slack threads, and GitHub activity.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Showcases</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
-		<div class="docs-body"><h2>Use it when…</h2>
+		<p class="docs-eyebrow">Showcases</p><h1 id="totalrecall">TotalRecall</h1><p class="docs-description">A local-first ingestion showcase for meetings, chat exports, Slack threads, and GitHub activity.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Showcases</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
+		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>You want to normalize work artifacts into a stable model and write them to local destinations such as Strata, Markdown, static HTML, or a JSON index.</p>
-<h2>Interface overview</h2>
+<h2 id="interface-overview">Interface overview</h2>
 <table><thead><tr>
 <th>Surface</th>
 <th>What is available</th>
@@ -120,30 +121,30 @@
 <td>Dry-run, plans, JSON reports, checkpoints, retries, deduplication, reconciliation, and audit logs</td>
 </tr>
 </tbody></table>
-<h2>Main workflows</h2>
+<h2 id="main-workflows">Main workflows</h2>
 <ul>
 <li>Validate local configuration and destination health before importing anything.</li>
 <li>Preview a live or exported provider run with <code>--dry-run</code> and machine-readable reporting.</li>
 <li>Import into the selected destination, then repeat the command to verify idempotent duplicate protection.</li>
 <li>Inspect or prune checkpointed state deliberately when reconciling an existing destination.</li>
 </ul>
-<h2>Local example</h2>
+<h2 id="local-example">Local example</h2>
 <pre><code class="language-bash">./scripts/totalrecall config validate
 ./scripts/totalrecall doctor --output json
 ./scripts/totalrecall chat-export import --dry-run</code></pre>
-<h2>What it proves</h2>
+<h2 id="what-it-proves">What it proves</h2>
 <p>TotalRecall demonstrates provider-to-artifact-to-destination ingestion, filtering, mapping, deduplication, reconciliation, checkpoints, and idempotent local state.</p>
 <p>For live Fathom ingestion use <code>fathom pull</code>; local sources use <code>chat-export import</code>, <code>slack import</code>, or <code>github-activity import</code>. Run <code>./scripts/totalrecall --help</code> for the full flag surface.</p>
-<h2>Boundaries</h2>
+<h2 id="boundaries">Boundaries</h2>
 <p>Live Fathom and Strata destination checks require approved credentials or a running local destination. It is a local-first proof app, not a hosted sync service.</p>
-<h2>Reference</h2>
+<h2 id="reference">Reference</h2>
 <p>See the <a href="https://github.com/robertdevore/totalrecall">TotalRecall repository</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/showcases/ssg/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/collections/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2>On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#local-example">Local example</a></li><li class="toc-level-2"><a href="#what-it-proves">What it proves</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#local-example">Local example</a></li><li class="toc-level-2"><a href="#what-it-proves">What it proves</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.1.0</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.2.0</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../../assets/sitekit/sitekit.js"></script>

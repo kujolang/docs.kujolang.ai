@@ -68,6 +68,7 @@
 		<a href="/start-here/">Start here</a>
 		<a href="/learn/">Learn Kujo</a>
 		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
 		<a href="/tools/">Tools</a>
 		<a href="/showcases/">Showcases</a>
 	</nav>
@@ -83,6 +84,7 @@
 			<li><a href="/choose-a-path/">Choose a path</a></li>
 			<li><a href="/learn/">Learn Kujo</a></li>
 			<li><a href="/build/">Build with Kujo</a></li>
+			<li><a href="/ecosystem/providers/">Provider packages</a></li>
 			<li><a href="/review/">Reviewable work</a></li>
 			<li><a href="/tools/">Tools</a></li>
 			<li><a href="/showcases/">Showcases</a></li>
@@ -95,9 +97,9 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<p class="docs-eyebrow">Reference</p><h1>Reference</h1><p class="docs-description">Find CLI, language, standard-library, configuration, and generated source reference surfaces.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Reference</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>reference</span><span class="docs-badge docs-badge-status"><span>Status</span>stable source-backed links</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
+		<p class="docs-eyebrow">Reference</p><h1 id="reference">Reference</h1><p class="docs-description">Find CLI, language, standard-library, configuration, and generated source reference surfaces.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Reference</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>reference</span><span class="docs-badge docs-badge-status"><span>Status</span>stable source-backed links</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
 		<div class="docs-body"><p>Reference material is deliberately secondary to the first-time path. Use it when you know the concept or symbol you need to look up.</p>
-<h2>Core surfaces</h2>
+<h2 id="core-surfaces">Core surfaces</h2>
 <ul>
 <li><strong>CLI reference:</strong> <code>kujo --help</code>, <code>kujo doctor --json</code>, and command-specific help.</li>
 <li><strong>Language specification:</strong> source-backed syntax, values, functions, modules, and errors.</li>
@@ -105,15 +107,15 @@
 <li><strong>Configuration:</strong> <code>kujo.toml</code>, lockfiles, runtime capability flags, and docs-site configuration.</li>
 <li><strong>Generated reference:</strong> DocGen can emit HTML, Markdown, JSON, or all formats from a selected source path.</li>
 </ul>
-<h2>Generate source reference</h2>
+<h2 id="generate-source-reference">Generate source reference</h2>
 <pre><code class="language-bash">kujo docgen . --out-dir .docgen/output</code></pre>
 <p>DocGen emits the stable <code>docgen-summary/v1</code> result alongside the selected output formats. This site does not currently publish a generated API-reference subtree, so use the repository source references and generate exact-version output locally when symbol-level detail matters.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-next" href="/security/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2>On this page</h2><ol><li class="toc-level-2"><a href="#core-surfaces">Core surfaces</a></li><li class="toc-level-2"><a href="#generate-source-reference">Generate source reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#core-surfaces">Core surfaces</a></li><li class="toc-level-2"><a href="#generate-source-reference">Generate source reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.1.0</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.2.0</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../assets/sitekit/sitekit.js"></script>

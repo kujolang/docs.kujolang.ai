@@ -68,6 +68,7 @@
 		<a href="/start-here/">Start here</a>
 		<a href="/learn/">Learn Kujo</a>
 		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
 		<a href="/tools/">Tools</a>
 		<a href="/showcases/">Showcases</a>
 	</nav>
@@ -95,25 +96,25 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<p class="docs-eyebrow">Learn Kujo</p><h1>Language basics</h1><p class="docs-description">Learn the small set of Kujo syntax and program shapes needed to read a real file.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Learn Kujo</span><span class="docs-badge docs-badge-audience"><span>Audience</span>beginner</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
+		<p class="docs-eyebrow">Learn Kujo</p><h1 id="language-basics">Language basics</h1><p class="docs-description">Learn the small set of Kujo syntax and program shapes needed to read a real file.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Learn Kujo</span><span class="docs-badge docs-badge-audience"><span>Audience</span>beginner</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
 		<div class="docs-body"><p>Kujo files are plain text and are meant to stay readable in review. Start with values, bindings, functions, modules, and explicit errors.</p>
-<h2>A small program</h2>
+<h2 id="a-small-program">A small program</h2>
 <pre><code class="language-kujo">func greet(name) {
 return &quot;hello, &quot; + name
 }
 message := greet(&quot;Kujo&quot;)
 print(message)</code></pre>
-<h2>Practice loop</h2>
+<h2 id="practice-loop">Practice loop</h2>
 <pre><code class="language-bash">kujo check hello.kujo
 kujo format hello.kujo
 kujo run hello.kujo</code></pre>
 <p>When you need exact syntax or builtin behavior, move to <a href="/reference/">Reference</a> after understanding the intent of the program.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-next" href="/learn/runtime/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2>On this page</h2><ol><li class="toc-level-2"><a href="#a-small-program">A small program</a></li><li class="toc-level-2"><a href="#practice-loop">Practice loop</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#a-small-program">A small program</a></li><li class="toc-level-2"><a href="#practice-loop">Practice loop</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.1.0</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.2.0</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../../assets/sitekit/sitekit.js"></script>

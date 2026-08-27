@@ -68,6 +68,7 @@
 		<a href="/start-here/">Start here</a>
 		<a href="/learn/">Learn Kujo</a>
 		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
 		<a href="/tools/">Tools</a>
 		<a href="/showcases/">Showcases</a>
 	</nav>
@@ -83,6 +84,7 @@
 			<li><a href="/choose-a-path/">Choose a path</a></li>
 			<li><a href="/learn/">Learn Kujo</a></li>
 			<li><a href="/build/">Build with Kujo</a></li>
+			<li><a href="/ecosystem/providers/">Provider packages</a></li>
 			<li><a href="/review/">Reviewable work</a></li>
 			<li><a href="/tools/">Tools</a></li>
 			<li><a href="/showcases/">Showcases</a></li>
@@ -95,30 +97,30 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<p class="docs-eyebrow">Start here</p><h1>Quickstart</h1><p class="docs-description">Create one Kujo file, run it with the VM-first runtime, and check the source.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Start here</span><span class="docs-badge docs-badge-audience"><span>Audience</span>beginner</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
-		<section class="docs-prerequisites" aria-label="Prerequisites"><h2>Prerequisites</h2><ul class="docs-prerequisites-list"><li>Kujo CLI on PATH</li><li>A writable terminal workspace</li></ul></section>
+		<p class="docs-eyebrow">Start here</p><h1 id="quickstart">Quickstart</h1><p class="docs-description">Create one Kujo file, run it with the VM-first runtime, and check the source.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Start here</span><span class="docs-badge docs-badge-audience"><span>Audience</span>beginner</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
+		<section class="docs-prerequisites" aria-label="Prerequisites"><h2 id="prerequisites">Prerequisites</h2><ul class="docs-prerequisites-list"><li>Kujo CLI on PATH</li><li>A writable terminal workspace</li></ul></section>
 		<div class="docs-body"><p>Make the smallest useful Kujo program before opening the ecosystem directory.</p>
-<h2>Create <code>hello.kujo</code></h2>
+<h2 id="create-hello-kujo">Create <code>hello.kujo</code></h2>
 <pre><code class="language-kujo">message := &quot;hello from Kujo&quot;
 print(message)</code></pre>
-<h2>Run and check it</h2>
+<h2 id="run-and-check-it">Run and check it</h2>
 <pre><code class="language-bash">kujo run hello.kujo
 kujo check hello.kujo</code></pre>
 <p><code>kujo run</code> uses the VM-first runtime. The interpreter is available when you need a compatibility or debugging path:</p>
 <pre><code class="language-bash">kujo run --interpreter hello.kujo</code></pre>
-<h2>Create a project</h2>
+<h2 id="create-a-project">Create a project</h2>
 <pre><code class="language-bash">kujo init --dir hello-kujo --name hello-kujo
 cd hello-kujo
 kujo run src/main.kujo</code></pre>
 <p>The generated project gives you <code>kujo.toml</code> and <code>src/main.kujo</code>; keep <code>kujo check</code>, <code>kujo format</code>, and <code>kujo lint</code> in the edit loop.</p>
-<h2>Next step</h2>
+<h2 id="next-step">Next step</h2>
 <p>Use <a href="/choose-a-path/">Choose a path</a> when you know what you want to build, or continue with <a href="/learn/language-basics/">Language basics</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/install/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/choose-a-path/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2>On this page</h2><ol><li class="toc-level-2"><a href="#create-hello-kujo">Create `hello.kujo`</a></li><li class="toc-level-2"><a href="#run-and-check-it">Run and check it</a></li><li class="toc-level-2"><a href="#create-a-project">Create a project</a></li><li class="toc-level-2"><a href="#next-step">Next step</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#create-hello-kujo">Create `hello.kujo`</a></li><li class="toc-level-2"><a href="#run-and-check-it">Run and check it</a></li><li class="toc-level-2"><a href="#create-a-project">Create a project</a></li><li class="toc-level-2"><a href="#next-step">Next step</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.1.0</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.2.0</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../assets/sitekit/sitekit.js"></script>

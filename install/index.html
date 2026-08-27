@@ -68,6 +68,7 @@
 		<a href="/start-here/">Start here</a>
 		<a href="/learn/">Learn Kujo</a>
 		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
 		<a href="/tools/">Tools</a>
 		<a href="/showcases/">Showcases</a>
 	</nav>
@@ -83,6 +84,7 @@
 			<li><a href="/choose-a-path/">Choose a path</a></li>
 			<li><a href="/learn/">Learn Kujo</a></li>
 			<li><a href="/build/">Build with Kujo</a></li>
+			<li><a href="/ecosystem/providers/">Provider packages</a></li>
 			<li><a href="/review/">Reviewable work</a></li>
 			<li><a href="/tools/">Tools</a></li>
 			<li><a href="/showcases/">Showcases</a></li>
@@ -95,24 +97,24 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<p class="docs-eyebrow">Start here</p><h1>Install Kujo</h1><p class="docs-description">Install the current stable CLI or build it from source, then verify the local toolchain.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Start here</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
-		<section class="docs-prerequisites" aria-label="Prerequisites"><h2>Prerequisites</h2><ul class="docs-prerequisites-list"><li>A supported macOS or Linux workstation</li><li>Git, Rust, and a writable terminal workspace</li></ul></section>
+		<p class="docs-eyebrow">Start here</p><h1 id="install-kujo">Install Kujo</h1><p class="docs-description">Install the current stable CLI or build it from source, then verify the local toolchain.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Start here</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
+		<section class="docs-prerequisites" aria-label="Prerequisites"><h2 id="prerequisites">Prerequisites</h2><ul class="docs-prerequisites-list"><li>A supported macOS or Linux workstation</li><li>Git, Rust, and a writable terminal workspace</li></ul></section>
 		<div class="docs-body"><p>Kujo <code>v1.0.1</code> is the current stable release. GitHub Releases provides prebuilt Linux x64, macOS x64/arm64, and Windows x64 archives, per-asset SHA-256 files, and a consolidated <code>checksums.txt</code>. Verify the checksum before placing the binary on <code>PATH</code>.</p>
-<h2>Release install</h2>
+<h2 id="release-install">Release install</h2>
 <p>Download the archive for your platform from the <a href="https://github.com/kujolang/kujo/releases/tag/v1.0.1">Kujo v1.0.1 release</a>, verify it against the matching SHA-256 file or <code>checksums.txt</code>, then install the <code>kujo</code> executable in a directory on <code>PATH</code>.</p>
-<h2>Source install</h2>
+<h2 id="source-install">Source install</h2>
 <pre><code class="language-bash">git clone https://github.com/kujolang/kujo.git
 cd kujo
 cargo build --release
 cargo install --path .</code></pre>
-<h2>Optional ecosystem install</h2>
+<h2 id="optional-ecosystem-install">Optional ecosystem install</h2>
 <p>The source-backed ecosystem installer can place the CLI and selected ecosystem profiles in your local user directory. It is intentionally separate from this docs site so every installed profile remains reviewable.</p>
 <pre><code class="language-bash">curl -fsSL https://raw.githubusercontent.com/kujolang/kujo/main/install.sh | bash -s -- --source
 export PATH=&quot;$HOME/.local/bin:$PATH&quot;</code></pre>
-<h2>Verify</h2>
+<h2 id="verify">Verify</h2>
 <pre><code class="language-bash">kujo --version
 kujo doctor --json</code></pre>
-<h2>Troubleshooting</h2>
+<h2 id="troubleshooting">Troubleshooting</h2>
 <ul>
 <li><strong>Rust is missing:</strong> install the stable Rust toolchain, then rerun <code>cargo build --release</code>.</li>
 <li><strong><code>kujo</code> is not found:</strong> add <code>$HOME/.local/bin</code> or Cargo&apos;s bin directory to PATH and open a new shell.</li>
@@ -120,11 +122,11 @@ kujo doctor --json</code></pre>
 <li><strong>Platform notes:</strong> use the published release matrix for supported archives; build from source for other targets.</li>
 </ul></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/start-here/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/quickstart/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2>On this page</h2><ol><li class="toc-level-2"><a href="#release-install">Release install</a></li><li class="toc-level-2"><a href="#source-install">Source install</a></li><li class="toc-level-2"><a href="#optional-ecosystem-install">Optional ecosystem install</a></li><li class="toc-level-2"><a href="#verify">Verify</a></li><li class="toc-level-2"><a href="#troubleshooting">Troubleshooting</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#release-install">Release install</a></li><li class="toc-level-2"><a href="#source-install">Source install</a></li><li class="toc-level-2"><a href="#optional-ecosystem-install">Optional ecosystem install</a></li><li class="toc-level-2"><a href="#verify">Verify</a></li><li class="toc-level-2"><a href="#troubleshooting">Troubleshooting</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.1.0</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.2.0</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../assets/sitekit/sitekit.js"></script>
