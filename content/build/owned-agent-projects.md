@@ -63,15 +63,36 @@ and custom OpenAI-compatible choices use AI SDK for the request and normalized
 response, followed by Agents SDK execution.
 
 ```bash
-kujo agent new live-agent --provider openai --model gpt-5-mini
-cd live-agent && kennel install
-export OPENAI_API_KEY=...
+kujo agent auth set openai
+kujo agent new live-agent --install
+cd live-agent
 kujo agent run "Say hello"
 ```
 
-Keep only the credential variable name in Git. Never put the value in the
-project. Custom endpoints require HTTPS unless a loopback URL is explicitly
-enabled for local development.
+The first command accepts hidden input and saves the key in macOS Keychain,
+Windows Credential Manager, or Linux Secret Service. Every later OpenAI Agent
+Project can reuse it. If a live provider is selected without a saved key,
+interactive `agent new` offers the same masked setup instead of leaving a broken
+project behind.
+
+Kujo resolves credentials from the CI environment, an ignored owner-only project
+`.env.local`, then the operating-system credential store. Use `kujo agent auth
+set openai --project` only for a project-specific override. `auth status` reports
+where a credential came from without revealing it; `auth remove` revokes it.
+Non-interactive automation reads credentials from stdin rather than a command
+argument or shell history.
+
+API-key connectors use the same storage contract while their reviewed project
+configuration retains only the expected variable name:
+
+```bash
+kujo agent auth set --name LINEAR_API_TOKEN
+```
+
+OAuth connectors should retain their scoped consent and refresh-token flow;
+Kujo's API-key store is not a reason to replace OAuth with a long-lived token.
+Custom endpoints require HTTPS unless a loopback URL is explicitly enabled for
+local development.
 
 ## Harden execution
 
