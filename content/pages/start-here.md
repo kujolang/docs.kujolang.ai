@@ -21,6 +21,7 @@ Kujo is a programming language and local-first ecosystem for building, checking,
 ## Pick a direction
 
 - **I want to write Kujo** → [Install Kujo](/install/), then run the [Quickstart](/quickstart/).
+- **I want to own an agent in my repository** → start with [Repository-owned Agent Projects](/build/owned-agent-projects/).
 - **I want to build an AI application** → start with [AI and agents](/build/ai-and-agents/) or the [AI SDK](/tools/ai-sdk/).
 - **I want agent work to be reviewable** → follow [Keep work reviewable](/review/) and start with [context and task contracts](/review/context-and-task-contracts/).
 

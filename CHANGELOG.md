@@ -4,6 +4,9 @@
 
 ### Added
 
+- Document the repository-owned Agent Project lifecycle, profiles, live-provider
+  boundary, Workcell path, self-hosted example, and executable workflow with
+  automatic `llms.txt` and WebMCP discovery.
 - Added a source-backed provider index covering all 25 current Kujo provider packages, immutable release tags, official provider references, authentication boundaries, native APIs, and AI SDK availability.
 
 ## [1.2.0] - 2026-08-27
