@@ -4,10 +4,14 @@ A local-first path through the Kujo language and ecosystem.
 
 - [Kujo Docs](https://docs.kujolang.ai/) — The shortest path from language basics to reviewable, local-first software.
 - [Build](https://docs.kujolang.ai/build/) — Kujo build documentation.
-- [AI and agents](https://docs.kujolang.ai/build/ai-and-agents/) — Move from a normalized model call to tools, approvals, handoffs, and local state.
+- [Manage Agent Credentials and Connectors](https://docs.kujolang.ai/build/agent-credentials/) — Store reusable provider keys safely, configure project overrides, and connect Kujo Agent Projects without putting secrets in commands or Git.
+- [Operate and Harden Agent Projects](https://docs.kujolang.ai/build/agent-operations/) — Diagnose, inspect, run, evaluate, automate, and isolate a repository-owned Kujo Agent Project.
+- [Choose an Agent Project Profile](https://docs.kujolang.ai/build/agent-profiles/) — Select the smallest Kujo Agent Project profile that matches the tools, knowledge, workflow, isolation, and observability you need.
+- [AI and agents](https://docs.kujolang.ai/build/ai-and-agents/) — Move from a repository-owned agent or normalized model call to tools, approvals, handoffs, and local state.
 - [Applications and publishing](https://docs.kujolang.ai/build/applications-and-publishing/) — Choose a copyable application surface for chat, APIs, content, or deterministic static publishing.
 - [Editorial publishing](https://docs.kujolang.ai/build/editorial-publishing/) — Move a commissioned idea through evidence, review, packaging, approval, publication, and learning.
 - [Knowledge and retrieval](https://docs.kujolang.ai/build/knowledge-and-retrieval/) — Ingest local knowledge and answer with namespaces, citations, and offline fallbacks.
+- [Repository-owned Agent Projects](https://docs.kujolang.ai/build/owned-agent-projects/) — Install Kujo's agent platform, create a repository-owned agent, and prove its local lifecycle.
 - [Web operations](https://docs.kujolang.ai/build/web-operations/) — Move from site source to crawl evidence, search data, content relationships, browser proof, and bounded fixes.
 - [Workflows and approvals](https://docs.kujolang.ai/build/workflows-and-approvals/) — Turn a sequence of steps into bounded, resumable, and auditable work.
 - [Choose a path](https://docs.kujolang.ai/choose-a-path/) — Start with an intent and one small next step instead of browsing the whole ecosystem.
@@ -22,7 +26,7 @@ A local-first path through the Kujo language and ecosystem.
 - [Providers](https://docs.kujolang.ai/ecosystem/providers/) — Choose and install a Kujo provider package, then move from a first request to native features.
 - [Showcases](https://docs.kujolang.ai/ecosystem/showcases/) — Proof applications demonstrating complete local workflows and product surfaces.
 - [Tooling](https://docs.kujolang.ai/ecosystem/tooling/) — Supporting tools for execution, evidence, web operations, editorial production, review, and release gates.
-- [Install Kujo](https://docs.kujolang.ai/install/) — Install the current stable CLI or build it from source, then verify the local toolchain.
+- [Install Kujo](https://docs.kujolang.ai/install/) — Install Kujo v1.1.0 and the tool group you need, or build the CLI from source.
 - [Learn](https://docs.kujolang.ai/learn/) — Kujo learn documentation.
 - [AI runtime basics](https://docs.kujolang.ai/learn/ai-runtime/) — See the shared controls for provider calls, replay, budgets, secrets, and egress.
 - [Capabilities and safe execution](https://docs.kujolang.ai/learn/capabilities/) — Grant only the filesystem, clock, network, or process access a local task actually needs.
@@ -43,12 +47,12 @@ A local-first path through the Kujo language and ecosystem.
 - [Showcases](https://docs.kujolang.ai/showcases/) — Kujo showcases documentation.
 - [AI Chat](https://docs.kujolang.ai/showcases/ai-chat/) — A local multi-provider chat application with encrypted profiles, streaming, transcription, and fixture mode.
 - [Cinch](https://docs.kujolang.ai/showcases/cinch/) — A local development harness for files, Git, commands, AI context, tools, and proof.
-- [CMS](https://docs.kujolang.ai/showcases/cms/) — A server-first content system with models, delivery routes, auth boundaries, jobs, and operational checks.
+- [CMS](https://docs.kujolang.ai/showcases/cms/) — A framework-neutral content backend with first-class administration, extensions, SEO, identity, AI abilities, MCP, and WebMCP.
 - [CRUD API Showcase](https://docs.kujolang.ai/showcases/crud-api/) — A SQLite API and frontend playground showing auth strategies, recovery patterns, and contracts.
 - [Intake](https://docs.kujolang.ai/showcases/intake/) — Normalize inbound work, route it through policy, and require approval before external effects.
 - [SSG](https://docs.kujolang.ai/showcases/ssg/) — Deterministic Markdown-to-site publishing with templates, feeds, sitemap, and llms.txt.
 - [TotalRecall](https://docs.kujolang.ai/showcases/totalrecall/) — A local-first ingestion showcase for meetings, chat exports, Slack threads, and GitHub activity.
-- [Start here](https://docs.kujolang.ai/start-here/) — Choose the shortest path from discovering Kujo to running a local program.
+- [Start here](https://docs.kujolang.ai/start-here/) — Choose the shortest path from discovering Kujo to running a program or repository-owned agent.
 - [Support](https://docs.kujolang.ai/support/) — Find the right place to ask for help, report a problem, or verify a local failure.
 - [Tools](https://docs.kujolang.ai/tools/) — Kujo tools documentation.
 - [Agents SDK](https://docs.kujolang.ai/tools/agents-sdk/) — Build agents with tools, approvals, handoffs, tracing, stores, and budgets.

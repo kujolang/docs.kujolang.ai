@@ -2,20 +2,82 @@
   "schema_version": "kujo-docs-search/v1",
   "items": [
     {
+      "title": "Manage Agent Credentials and Connectors",
+      "description": "Store reusable provider keys safely, configure project overrides, and connect Kujo Agent Projects without putting secrets in commands or Git.",
+      "url": "https://docs.kujolang.ai/build/agent-credentials/",
+      "route": "build/agent-credentials/",
+      "section": "Build with Kujo",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "stable",
+      "version": "1.1.0",
+      "tags": [
+        "[ai, agents, credentials, connectors, security]"
+      ],
+      "headings": [
+        "Save a provider key once",
+        "Use safe automation inputs",
+        "Choose credential scope",
+        "Add API-key connectors"
+      ],
+      "text": "Kujo stores reusable provider keys in macOS Keychain, Windows Credential Manager, or Linux Secret Service. The project keeps only credential names and ignored local overrides, so secrets do not become part of the agent contract. Save a provider key once auth set accepts masked interactive input. Built-in provider names include OpenAI, OpenRouter, and DeepSee"
+    },
+    {
+      "title": "Operate and Harden Agent Projects",
+      "description": "Diagnose, inspect, run, evaluate, automate, and isolate a repository-owned Kujo Agent Project.",
+      "url": "https://docs.kujolang.ai/build/agent-operations/",
+      "route": "build/agent-operations/",
+      "section": "Build with Kujo",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "stable",
+      "version": "1.1.0",
+      "tags": [
+        "[ai, agents, operations, evaluation, security]"
+      ],
+      "headings": [
+        "Diagnose without spending model tokens",
+        "Run prompts and prompt files",
+        "Isolate effects with Workcell",
+        "Make the run reviewable"
+      ],
+      "text": "Kujo gives the Agent Project one local lifecycle for people and automation. | Task | Command | | --- | --- | | Diagnose the installed platform | kujo doctor agent | | Describe the resolved contract | kujo agent inspect | | Execute an agent | kujo agent run \"Your prompt\" | | Run the project evaluation | kujo agent eval | Add --json to any of these commands fo"
+    },
+    {
+      "title": "Choose an Agent Project Profile",
+      "description": "Select the smallest Kujo Agent Project profile that matches the tools, knowledge, workflow, isolation, and observability you need.",
+      "url": "https://docs.kujolang.ai/build/agent-profiles/",
+      "route": "build/agent-profiles/",
+      "section": "Build with Kujo",
+      "audience": "developer",
+      "difficulty": "beginner",
+      "status": "stable",
+      "version": "1.1.0",
+      "tags": [
+        "[ai, agents, profiles, integrations]"
+      ],
+      "headings": [
+        "Profiles",
+        "Inspect before running",
+        "Understand integration ownership"
+      ],
+      "text": "Start with the smallest profile that expresses the agent you intend to own. Every profile produces the same repository-owned contract and can be reviewed before anything is installed or run. Profiles | Profile | Included capability | External requirement | | --- | --- | --- | | basic | Agents SDK fixture execution and Eval | None | | tools | Project tools an"
+    },
+    {
       "title": "AI and agents",
-      "description": "Move from a normalized model call to tools, approvals, handoffs, and local state.",
+      "description": "Move from a repository-owned agent or normalized model call to tools, approvals, handoffs, and local state.",
       "url": "https://docs.kujolang.ai/build/ai-and-agents/",
       "route": "build/ai-and-agents/",
       "section": "Build with Kujo",
       "audience": "developer",
       "difficulty": "intermediate",
-      "status": "launch scope",
-      "version": "current",
+      "status": "stable agent path",
+      "version": "1.1.0",
       "tags": [
         "[ai, agents, build]"
       ],
       "headings": [],
-      "text": "Lead with increasing responsibility: For a cross-cutting Kujo project, begin with the kujo-way-development /collections/skills/ start-with-the-kujo-way skill so repository ownership, contracts, capability boundaries, deterministic execution, and completion evidence are decided before implementation. 1. AI SDK /tools/ai-sdk/ for normalized chat and embedding "
+      "text": "Start with the ownership boundary that matches the job. For an agent that should live in Git, use Kujo's Agent Development Platform: The basic profile is offline and deterministic. Continue through Agent Projects /build/owned-agent-projects/ , then select a profile /build/agent-profiles/ , add credentials /build/agent-credentials/ only if a live provider is "
     },
     {
       "title": "Applications and publishing",
@@ -31,7 +93,7 @@
         "[applications, publishing, showcases]"
       ],
       "headings": [],
-      "text": "- AI Chat /showcases/ai-chat/ demonstrates a local multi-provider application. - CRUD API /showcases/crud-api/ demonstrates SQLite APIs, auth strategies, and a frontend playground. - CMS /showcases/cms/ demonstrates a server-first content system. - SSG /showcases/ssg/ demonstrates deterministic static publishing and documentation sites. - TotalRecall /showca"
+      "text": "- AI Chat /showcases/ai-chat/ demonstrates a local multi-provider application. - CRUD API /showcases/crud-api/ demonstrates SQLite APIs, auth strategies, and a frontend playground. - CMS /showcases/cms/ provides a framework-neutral content backend with a complete administration example, portable themes and plugins, SEO and social workflows, and first-class a"
     },
     {
       "title": "Editorial publishing",
@@ -64,6 +126,27 @@
       ],
       "headings": [],
       "text": "Use RAG /tools/rag/ when a workflow needs local ingestion, namespace isolation, citations, or offline fixture behavior. Keep the source documents, parser choices, chunking strategy, and retrieval result visible. The local-first boundary matters: this is a retrieval starter, not a hosted search service. Provider or deployment choices belong to the integrator."
+    },
+    {
+      "title": "Repository-owned Agent Projects",
+      "description": "Install Kujo's agent platform, create a repository-owned agent, and prove its local lifecycle.",
+      "url": "https://docs.kujolang.ai/build/owned-agent-projects/",
+      "route": "build/owned-agent-projects/",
+      "section": "Build with Kujo",
+      "audience": "developer",
+      "difficulty": "beginner",
+      "status": "stable",
+      "version": "1.1.0",
+      "tags": [
+        "[ai, agents, projects, build]"
+      ],
+      "headings": [
+        "Install the focused agent toolchain",
+        "Create and run an agent",
+        "Prove the complete local lifecycle",
+        "Continue building"
+      ],
+      "text": "An Agent Project keeps the agent in your repository. Its instructions, model preference, skills, tools, knowledge, policies, workflows, evaluation, exact dependency pins, and runtime boundaries remain reviewable files instead of hidden hosted state. Install the focused agent toolchain The public installer downloads published Kujo v1.1.0 release assets, verif"
     },
     {
       "title": "Web operations",
@@ -256,7 +339,7 @@
         "[ecosystem, showcases]"
       ],
       "headings": [],
-      "text": "The showcase set includes: - CMS /showcases/cms/ \u2014 server-first content models, delivery, auth, jobs, and operations. - CRUD API Showcase /showcases/crud-api/ \u2014 SQLite CRUD contracts, auth strategies, concurrency, and a frontend playground. - AI Chat /showcases/ai-chat/ \u2014 local multi-provider chat, streaming, transcription, and durable conversations. - SSG /"
+      "text": "The showcase set includes: - CMS /showcases/cms/ \u2014 framework-neutral content, administration, extensions, SEO, identity, abilities, MCP, WebMCP, and production operations. - CRUD API Showcase /showcases/crud-api/ \u2014 SQLite CRUD contracts, auth strategies, concurrency, and a frontend playground. - AI Chat /showcases/ai-chat/ \u2014 local multi-provider chat, stream"
     },
     {
       "title": "Tooling",
@@ -389,29 +472,28 @@
         "[orientation, ecosystem]"
       ],
       "headings": [],
-      "text": "| If you want to\u2026 | Start with\u2026 | | --- | --- | | Learn the language | Learn Kujo /learn/ , Reference /reference/ , and Kennel /tools/kennel/ | | Call models or build agents | Provider packages /ecosystem/providers/ , AI SDK /tools/ai-sdk/ , Agents SDK /tools/agents-sdk/ , and AI Chat /showcases/ai-chat/ | | Turn requests into bounded work | Spec /tools/spec"
+      "text": "| If you want to\u2026 | Start with\u2026 | | --- | --- | | Learn the language | Learn Kujo /learn/ , Reference /reference/ , and Kennel /tools/kennel/ | | Create a repository-owned agent | Agent Projects /build/owned-agent-projects/ , profiles /build/agent-profiles/ , credentials /build/agent-credentials/ , and operations /build/agent-operations/ | | Call models or b"
     },
     {
       "title": "Install Kujo",
-      "description": "Install the current stable CLI or build it from source, then verify the local toolchain.",
+      "description": "Install Kujo v1.1.0 and the tool group you need, or build the CLI from source.",
       "url": "https://docs.kujolang.ai/install/",
       "route": "install/",
       "section": "Start here",
       "audience": "developer",
       "difficulty": "beginner",
       "status": "stable",
-      "version": "current",
+      "version": "1.1.0",
       "tags": [
         "[install, cli, stable]"
       ],
       "headings": [
-        "Release install",
+        "Install Kujo",
         "Source install",
-        "Optional ecosystem install",
         "Verify",
         "Troubleshooting"
       ],
-      "text": "Kujo v1.0.1 is the current stable release. GitHub Releases provides prebuilt Linux x64, macOS x64/arm64, and Windows x64 archives, per-asset SHA-256 files, and a consolidated checksums.txt. Verify the checksum before placing the binary on PATH. Release install Download the archive for your platform from the Kujo v1.0.1 release https://github.com/kujolang/kuj"
+      "text": "Kujo v1.1.0 is the current stable release. The public installer selects the correct archive for your platform, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory. Install Kujo Use a focused group when you want Kujo and the tools for one job. For the Agent Development Platform: Run curl -fsSL https://kujo"
     },
     {
       "title": "Quickstart",
@@ -490,7 +572,7 @@
     },
     {
       "title": "Start here",
-      "description": "Choose the shortest path from discovering Kujo to running a local program.",
+      "description": "Choose the shortest path from discovering Kujo to running a program or repository-owned agent.",
       "url": "https://docs.kujolang.ai/start-here/",
       "route": "start-here/",
       "section": "Start here",
@@ -505,7 +587,7 @@
         "Pick a direction",
         "What happens next"
       ],
-      "text": "Kujo is a programming language and local-first ecosystem for building, checking, and operating AI-native software. The docs keep the first path short, then introduce tools when a developer naturally needs them. Pick a direction - I want to write Kujo \u2192 Install Kujo /install/ , then run the Quickstart /quickstart/ . - I want to build an AI application \u2192 start"
+      "text": "Kujo is a programming language and local-first ecosystem for building, checking, and operating AI-native software. The docs keep the first path short, then introduce tools when a developer naturally needs them. Pick a direction - I want to write Kujo \u2192 Install Kujo /install/ , then run the Quickstart /quickstart/ . - I want to create and talk to an agent \u2192 i"
     },
     {
       "title": "Support",
@@ -655,28 +737,29 @@
     },
     {
       "title": "CMS",
-      "description": "A server-first content system with models, delivery routes, auth boundaries, jobs, and operational checks.",
+      "description": "A framework-neutral content backend with first-class administration, extensions, SEO, identity, AI abilities, MCP, and WebMCP.",
       "url": "https://docs.kujolang.ai/showcases/cms/",
       "route": "showcases/cms/",
       "section": "Showcases",
       "audience": "developer",
-      "difficulty": "advanced",
-      "status": "local scope verified",
-      "version": "current",
+      "difficulty": "intermediate",
+      "status": "released",
+      "version": "1.1.0",
       "tags": [
-        "[showcase, cms, content]"
+        "[showcase, cms, content, agents, webmcp, extensions]"
       ],
       "headings": [
         "Use it when\u2026",
         "Interface overview",
-        "Main workflows",
+        "One contract for people and agents",
+        "Portable themes and plugins",
         "Five-minute example",
-        "What you get",
+        "API and terminal parity",
         "How it fits",
         "Boundaries",
         "Reference"
       ],
-      "text": "Use it when\u2026 You want to see a server-first content application with explicit content models and delivery boundaries. Interface overview | Surface | What is available | | --- | --- | | Runtime | backend/runtime/main.kujo; no separate CMS CLI wrapper | | Content API | Types, taxonomies, entries, media, menus, plugins, themes, tenants, and workspaces | | Disco"
+      "text": "Kujo CMS 1.1.0 is a server-first content backend for human administration, custom frontends, integrations, terminal workflows, and agents. The core owns portable content behavior; the separate CMS Example shows one complete Next.js-based administration and publication experience without making that framework part of the CMS contract. Use it when\u2026 You need st"
     },
     {
       "title": "CRUD API Showcase",
@@ -1164,8 +1247,8 @@
       "section": "Tools",
       "audience": "developer",
       "difficulty": "beginner",
-      "status": "stable v1.0.1",
-      "version": "current",
+      "status": "stable v1.1.0",
+      "version": "1.1.0",
       "tags": [
         "[tool, foundation, language]"
       ],

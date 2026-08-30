@@ -13,7 +13,7 @@
 		})();
 	</script>
 	<title>CMS | Kujo Docs</title>
-	<meta name="description" content="A server-first content system with models, delivery routes, auth boundaries, jobs, and operational checks.">
+	<meta name="description" content="A framework-neutral content backend with first-class administration, extensions, SEO, identity, AI abilities, MCP, and WebMCP.">
 	<meta name="keywords" content="SSG, Static Site Generator">
 	<meta name="author" content="Kujo">
 	<link rel="canonical" href="https://docs.kujolang.ai/showcases/cms/">
@@ -30,19 +30,19 @@
 	<meta name="msapplication-config" content="/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<meta property="og:title" content="CMS">
-	<meta property="og:description" content="A server-first content system with models, delivery routes, auth boundaries, jobs, and operational checks.">
+	<meta property="og:description" content="A framework-neutral content backend with first-class administration, extensions, SEO, identity, AI abilities, MCP, and WebMCP.">
 	<meta property="og:url" content="https://docs.kujolang.ai/showcases/cms/">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="Kujo Docs">
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="CMS">
-	<meta name="twitter:description" content="A server-first content system with models, delivery routes, auth boundaries, jobs, and operational checks.">
+	<meta name="twitter:description" content="A framework-neutral content backend with first-class administration, extensions, SEO, identity, AI abilities, MCP, and WebMCP.">
 
 	<link href="../../assets/css/fonts.css" rel="stylesheet">
 	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
 	<link href="../../assets/css/style.css" rel="stylesheet">
-	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"CMS","name":"CMS","description":"A server-first content system with models, delivery routes, auth boundaries, jobs, and operational checks.","url":"https://docs.kujolang.ai/showcases/cms/","author":{"@type":"Person","name":"Unknown Author"},"publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"CMS","name":"CMS","description":"A framework-neutral content backend with first-class administration, extensions, SEO, identity, AI abilities, MCP, and WebMCP.","url":"https://docs.kujolang.ai/showcases/cms/","author":{"@type":"Person","name":"Unknown Author"},"publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -96,9 +96,16 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<p class="docs-eyebrow">Showcases</p><h1 id="cms">CMS</h1><p class="docs-description">A server-first content system with models, delivery routes, auth boundaries, jobs, and operational checks.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Showcases</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
-		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
-<p>You want to see a server-first content application with explicit content models and delivery boundaries.</p>
+		<p class="docs-eyebrow">Showcases</p><h1 id="cms">CMS</h1><p class="docs-description">A framework-neutral content backend with first-class administration, extensions, SEO, identity, AI abilities, MCP, and WebMCP.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Showcases</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>released</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-30</span></div>
+		<div class="docs-body"><p>Kujo CMS 1.1.0 is a server-first content backend for human administration,</p>
+<p>custom frontends, integrations, terminal workflows, and agents. The core owns</p>
+<p>portable content behavior; the separate CMS Example shows one complete</p>
+<p>Next.js-based administration and publication experience without making that</p>
+<p>framework part of the CMS contract.</p>
+<h2 id="use-it-when">Use it when…</h2>
+<p>You need structured publishing that can serve a custom website, application,</p>
+<p>CLI, or agent without rebuilding the same identity, editorial, SEO, extension,</p>
+<p>and permission rules in every client.</p>
 <h2 id="interface-overview">Interface overview</h2>
 <table><thead><tr>
 <th>Surface</th>
@@ -109,42 +116,105 @@
 <td><code>backend/runtime/main.kujo</code>; no separate CMS CLI wrapper</td>
 </tr>
 <tr>
-<td>Content API</td>
-<td>Types, taxonomies, entries, media, menus, plugins, themes, tenants, and workspaces</td>
+<td>Editorial core</td>
+<td>Content types, entries, taxonomies, terms, media, menus, revisions, rollback, locking, and scheduling</td>
 </tr>
 <tr>
-<td>Discovery</td>
-<td><code>/health</code>, <code>/v1</code>, <code>/v1/contract</code>, <code>/v1/openapi.json</code>, feeds, sitemap, robots, and <code>llms.txt</code></td>
+<td>Identity and access</td>
+<td>Users, profiles, roles, registration policy, trusted identity exchange, revocable sessions, API tokens, and effective administration capabilities</td>
+</tr>
+<tr>
+<td>SEO and sharing</td>
+<td>Filterable SEO inventory, issue signals, focused edits, bulk updates, network selection, and per-network account attribution</td>
+</tr>
+<tr>
+<td>Themes and plugins</td>
+<td>Versioned manifests, validation, verified ZIP ingestion, installation receipts, activation, export, settings, branded artwork, and ordered administration links</td>
+</tr>
+<tr>
+<td>Agent access</td>
+<td>Schema-described Abilities API, permission-scoped execution, confirmation-gated mutations, audit receipts, plugin abilities, connectors, MCP-ready descriptors, and built-in WebMCP</td>
+</tr>
+<tr>
+<td>Clients</td>
+<td>Dependency-free JavaScript and PHP clients plus documented adapter boundaries for other frameworks and languages</td>
+</tr>
+<tr>
+<td>Discovery and delivery</td>
+<td><code>/health</code>, <code>/v1</code>, <code>/v1/contract</code>, <code>/v1/openapi.json</code>, published content, feeds, sitemap, robots, <code>llms.txt</code>, and WebMCP discovery</td>
 </tr>
 <tr>
 <td>Operations</td>
-<td>Auth-gated writes, rate limits, idempotency, jobs, webhooks, migrations, backup, and restore</td>
+<td>Rate limits, idempotency, jobs, webhooks, migrations, audit logs, backup, restore, dead-letter replay, and release gates</td>
 </tr>
 </tbody></table>
-<h2 id="main-workflows">Main workflows</h2>
-<ul>
-<li>Start the API on its default local boundary and inspect the contract or OpenAPI route.</li>
-<li>Model content and deliver only published entries anonymously; protect drafts and mutations with bearer auth.</li>
-<li>Process webhook and background-job outboxes, including dead-letter replay.</li>
-<li>Run contract, startup, security, integration, and release-gate checks before deployment.</li>
-</ul>
+<h2 id="one-contract-for-people-and-agents">One contract for people and agents</h2>
+<p>The administration UI, API, terminal helpers, and agent integrations share the</p>
+<p>same backend rules. An editor can correct SEO metadata in the CMS Example while</p>
+<p>an authorized agent can make the equivalent focused or bulk update through the</p>
+<p>API. A plugin can register an ability or connector, and compatible clients can</p>
+<p>inspect its schema, permission, and mutation boundary before calling it.</p>
+<p>WebMCP is enabled by default. Its public browser tools expose site information,</p>
+<p>search, published-content listings, and exact published records. Drafts and</p>
+<p>mutations remain behind the CMS authorization boundary. Traditional MCP clients</p>
+<p>can use the CMS tool descriptors and connector layer alongside WebMCP.</p>
+<h2 id="portable-themes-and-plugins">Portable themes and plugins</h2>
+<p>Theme packages describe frontend entrypoints, templates, assets, settings,</p>
+<p>content types, menu locations, author links, branded artwork, and administration</p>
+<p>navigation. Plugin packages can declare connector, webhook, browser, or hybrid</p>
+<p>runtimes plus events, abilities, connectors, settings, and administration links.</p>
+<p>ZIP installation verifies compressed and expanded size, file count, package</p>
+<p>structure, manifest location, and SHA-256 integrity before registering the</p>
+<p>package. Uploading a package does not execute its code. The standalone</p>
+<p><a href="https://github.com/kujolang/cms-field-notes-theme">Field Notes theme</a> and</p>
+<p><a href="https://github.com/kujolang/cms-contact-form">contact form plugin</a> provide</p>
+<p>forkable package examples.</p>
 <h2 id="five-minute-example">Five-minute example</h2>
-<pre><code class="language-bash">kujo run backend/runtime/main.kujo
+<pre><code class="language-bash">git clone https://github.com/kujolang/cms.git
+cd cms
+cp .env.example .env
+kujo run --interpreter backend/runtime/main.kujo
 curl http://127.0.0.1:4200/v1/openapi.json</code></pre>
-<h2 id="what-you-get">What you get</h2>
-<p>Content models, delivery routes, auth boundaries, background jobs, migrations, and operational checks.</p>
+<p>To run the full site and administration showcase, clone</p>
+<p><a href="https://github.com/kujolang/cms-example">CMS Example</a>, install its dependencies,</p>
+<p>then start the backend, seed data, and launch the frontend in separate terminals:</p>
+<pre><code class="language-bash">npm run cms:start
+npm run cms:seed
+npm run dev</code></pre>
+<p>Local startup generates a private development token. Production deployments</p>
+<p>must use rotated secrets, a trusted identity adapter, explicit ingress and rate</p>
+<p>limits, durable storage, backups, and the documented security review.</p>
+<h2 id="api-and-terminal-parity">API and terminal parity</h2>
+<p>The core repository includes focused terminal helpers for SEO and social</p>
+<p>settings, content and media workflows, extension packages, and AI abilities and</p>
+<p>connectors. There is intentionally no second all-purpose CMS CLI that could</p>
+<p>drift from the HTTP contract.</p>
 <h2 id="how-it-fits">How it fits</h2>
-<p>Compare with <a href="/showcases/crud-api/">CRUD API</a> for a smaller API pattern and <a href="/showcases/ssg/">SSG</a> for deterministic publishing.</p>
+<p>Use the CMS when content needs an ongoing editorial and administration backend.</p>
+<p>Compare it with <a href="/showcases/crud-api/">CRUD API</a> for a smaller application API</p>
+<p>pattern and <a href="/showcases/ssg/">SSG</a> for deterministic file-based publishing.</p>
 <h2 id="boundaries">Boundaries</h2>
-<p>This is a local showcase. Hosted operations, identity, backups, and deployment require separate proof.</p>
+<p>CMS 1.1.0 supplies production-oriented application contracts and release gates;</p>
+<p>it does not make every deployment enterprise-complete. Infrastructure,</p>
+<p>compliance, observability, storage, recovery targets, provider credentials, and</p>
+<p>governance still require environment-specific proof. The default WebMCP tools</p>
+<p>are intentionally read-only, and extension code is not executed during package</p>
+<p>installation.</p>
 <h2 id="reference">Reference</h2>
-<p>See the <a href="https://github.com/kujolang/cms">CMS repository</a> for route contracts and operational scripts.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/showcases/crud-api/" rel="next"><span>Next</span></a></nav>
+<ul>
+<li><a href="https://github.com/kujolang/cms/releases/tag/v1.1.0">CMS 1.1.0 release</a></li>
+<li><a href="https://github.com/kujolang/cms">CMS repository</a></li>
+<li><a href="https://github.com/kujolang/cms-example/releases/tag/v1.1.0">CMS Example 1.1.0 release</a></li>
+<li><a href="https://github.com/kujolang/cms/blob/main/docs/framework-adapters.md">Framework adapter guidance</a></li>
+<li><a href="https://github.com/kujolang/cms/blob/main/docs/extensions.md">Extension package contract</a></li>
+<li><a href="https://github.com/kujolang/cms/blob/main/docs/webmcp.md">WebMCP contract</a></li>
+</ul></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/showcases/crud-api/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#one-contract-for-people-and-agents">One contract for people and agents</a></li><li class="toc-level-2"><a href="#portable-themes-and-plugins">Portable themes and plugins</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#api-and-terminal-parity">API and terminal parity</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.2.0</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.3.0</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../../assets/sitekit/sitekit.js"></script>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="kujo-light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		(function() {
+			try {
+				if (window.localStorage.getItem('sk-theme') === 'kujo-dark') {
+					document.documentElement.dataset.theme = 'kujo-dark';
+				}
+			} catch (error) {}
+		})();
+	</script>
+	<title>Operate and Harden Agent Projects | Kujo Docs</title>
+	<meta name="description" content="Diagnose, inspect, run, evaluate, automate, and isolate a repository-owned Kujo Agent Project.">
+	<meta name="keywords" content="SSG, Static Site Generator">
+	<meta name="author" content="Kujo">
+	<link rel="canonical" href="https://docs.kujolang.ai/build/agent-operations/">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/assets/img/kujo-logomark-black.svg" color="#000000">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="application-name" content="Kujo Docs">
+	<meta name="apple-mobile-web-app-title" content="Kujo Docs">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Operate and Harden Agent Projects">
+	<meta property="og:description" content="Diagnose, inspect, run, evaluate, automate, and isolate a repository-owned Kujo Agent Project.">
+	<meta property="og:url" content="https://docs.kujolang.ai/build/agent-operations/">
+	<meta property="og:type" content="article">
+	<meta property="og:site_name" content="Kujo Docs">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Operate and Harden Agent Projects">
+	<meta name="twitter:description" content="Diagnose, inspect, run, evaluate, automate, and isolate a repository-owned Kujo Agent Project.">
+
+	<link href="../../assets/css/fonts.css" rel="stylesheet">
+	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Operate and Harden Agent Projects","name":"Operate and Harden Agent Projects","description":"Diagnose, inspect, run, evaluate, automate, and isolate a repository-owned Kujo Agent Project.","url":"https://docs.kujolang.ai/build/agent-operations/","author":{"@type":"Person","name":"Unknown Author"},"publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="docs-topbar" id="navigation">
+	<div class="docs-topbar-row">
+		<a class="docs-brand" href="../../index.html"><img class="docs-brand-mark" src="../../assets/img/kujo-logomark-black.svg" alt=""> <span>Docs</span></a>
+		<label class="docs-search-shell">
+			<span class="sr-only">Search documentation</span>
+			<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
+		</label>
+		<div class="docs-header-actions">
+			<button class="docs-theme-button docs-icon-button" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-docs-theme>
+				<svg class="docs-moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c.132 0 .263 .003 .393 .008a7.5 7.5 0 0 0 7.599 9.6A9 9 0 1 1 12 3"/></svg>
+				<svg class="docs-sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-4 0a4 4 0 1 0 8 0 4 4 0 1 0-8 0M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+			</button>
+			<button class="docs-menu-button docs-icon-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu>
+				<svg class="docs-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+				<svg class="docs-close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+			</button>
+		</div>
+	</div>
+	<nav id="primary-navigation" class="docs-primary-nav" aria-label="Primary navigation">
+		<a href="/start-here/">Start here</a>
+		<a href="/learn/">Learn Kujo</a>
+		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
+		<a href="/tools/">Tools</a>
+		<a href="/showcases/">Showcases</a>
+	</nav>
+</header>
+<div id="docs-search-results" class="docs-search-results" aria-live="polite"></div>
+<main class="docs-shell" id="main-content">
+	<aside class="docs-sidebar" aria-label="Documentation sections">
+		<p class="docs-sidebar-label">Browse</p>
+		<ul>
+			<li><a href="/start-here/">Start here</a></li>
+			<li><a href="/install/">Install Kujo</a></li>
+			<li><a href="/quickstart/">Quickstart</a></li>
+			<li><a href="/choose-a-path/">Choose a path</a></li>
+			<li><a href="/learn/">Learn Kujo</a></li>
+			<li><a href="/build/">Build with Kujo</a></li>
+			<li><a href="/review/">Reviewable work</a></li>
+			<li><a href="/tools/">Tools</a></li>
+			<li><a href="/showcases/">Showcases</a></li>
+			<li><a href="/collections/">Collections</a></li>
+			<li><a href="/ecosystem/">Ecosystem</a></li>
+			<li><a href="/reference/">Reference</a></li>
+			<li><a href="/security/">Security model</a></li>
+			<li><a href="/release-boundaries/">Release boundaries</a></li>
+			<li><a href="/support/">Support</a></li>
+		</ul>
+	</aside>
+	<article class="docs-article">
+		<p class="docs-eyebrow">Build with Kujo</p><h1 id="operate-and-harden-agent-projects">Operate and Harden Agent Projects</h1><p class="docs-description">Diagnose, inspect, run, evaluate, automate, and isolate a repository-owned Kujo Agent Project.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Build with Kujo</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-30</span></div>
+		<div class="docs-body"><p>Kujo gives the Agent Project one local lifecycle for people and automation.</p>
+<table><thead><tr>
+<th>Task</th>
+<th>Command</th>
+</tr></thead><tbody>
+<tr>
+<td>Diagnose the installed platform</td>
+<td><code>kujo doctor agent</code></td>
+</tr>
+<tr>
+<td>Describe the resolved contract</td>
+<td><code>kujo agent inspect</code></td>
+</tr>
+<tr>
+<td>Execute an agent</td>
+<td><code>kujo agent run &quot;Your prompt&quot;</code></td>
+</tr>
+<tr>
+<td>Run the project evaluation</td>
+<td><code>kujo agent eval</code></td>
+</tr>
+</tbody></table>
+<p>Add <code>--json</code> to any of these commands for versioned machine output. Commands</p>
+<p>return a nonzero status when a required dependency, policy, evaluation, or run</p>
+<p>fails, so CI does not have to parse human prose.</p>
+<h2 id="diagnose-without-spending-model-tokens">Diagnose without spending model tokens</h2>
+<pre><code class="language-bash">kujo doctor agent
+kujo agent inspect --json</code></pre>
+<p>The default diagnostic validates local dependencies and configuration without a</p>
+<p>provider request. <code>kujo doctor agent --deep</code> adds the live probes declared by</p>
+<p>the project.</p>
+<h2 id="run-prompts-and-prompt-files">Run prompts and prompt files</h2>
+<pre><code class="language-bash">kujo agent run &quot;Summarize the project contract&quot;
+kujo agent run --file prompts/release-review.md</code></pre>
+<p>The fixture path remains deterministic. A live provider run uses the configured</p>
+<p>model and the credential resolution rules described in</p>
+<p><a href="/build/agent-credentials/">Agent Credentials</a>.</p>
+<h2 id="isolate-effects-with-workcell">Isolate effects with Workcell</h2>
+<p>Capability declarations authorize effects; they are not a sandbox. The</p>
+<p><code>hardened</code> profile adds a separate Workcell container boundary with a read-only</p>
+<p>root, bounded command, resource limits, fixture-network denial, and a receipt.</p>
+<pre><code class="language-bash">kujo agent new isolated-agent --profile hardened --install
+cd isolated-agent
+git add . &amp;&amp; git commit -m &quot;Initialize owned agent&quot;
+kujo agent run --workcell</code></pre>
+<p>Workcell requires a supported local container runtime and a trusted host. Kujo</p>
+<p>fails closed when a referenced path escapes the project, a credential is</p>
+<p>missing, a required dependency is absent, or a declared security boundary</p>
+<p>cannot be established.</p>
+<h2 id="make-the-run-reviewable">Make the run reviewable</h2>
+<p>Use Eval for repeatable acceptance checks, RunLedger for local run receipts,</p>
+<p>and Watchdog only when you want its telemetry proxy. The <code>basic</code> profile does</p>
+<p>not require either observability tool.</p>
+<p>Return to <a href="/build/owned-agent-projects/">Agent Projects</a> or explore the</p>
+<p><a href="https://agents.kujolang.ai/">Agents showcase</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/build/agent-credentials/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/build/review-and-ship/" rel="next"><span>Next</span></a></nav>
+	</article>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#diagnose-without-spending-model-tokens">Diagnose without spending model tokens</a></li><li class="toc-level-2"><a href="#run-prompts-and-prompt-files">Run prompts and prompt files</a></li><li class="toc-level-2"><a href="#isolate-effects-with-workcell">Isolate effects with Workcell</a></li><li class="toc-level-2"><a href="#make-the-run-reviewable">Make the run reviewable</a></li></ol></nav>
+</main>
+
+<footer class="docs-footer" id="footer">
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.3.0</span></div>
+	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
+</footer>
+<script src="../../assets/sitekit/sitekit.js"></script>
+<script src="../../assets/js/docs.js"></script>
+<script src="../../assets/js/kujo-webmcp.js" data-kujo-webmcp data-kujo-site-index="../../.well-known/kujo-site-index.json" defer></script></body>
+</html>

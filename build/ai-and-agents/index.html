@@ -13,7 +13,7 @@
 		})();
 	</script>
 	<title>AI and agents | Kujo Docs</title>
-	<meta name="description" content="Move from a normalized model call to tools, approvals, handoffs, and local state.">
+	<meta name="description" content="Move from a repository-owned agent or normalized model call to tools, approvals, handoffs, and local state.">
 	<meta name="keywords" content="SSG, Static Site Generator">
 	<meta name="author" content="Kujo">
 	<link rel="canonical" href="https://docs.kujolang.ai/build/ai-and-agents/">
@@ -30,19 +30,19 @@
 	<meta name="msapplication-config" content="/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<meta property="og:title" content="AI and agents">
-	<meta property="og:description" content="Move from a normalized model call to tools, approvals, handoffs, and local state.">
+	<meta property="og:description" content="Move from a repository-owned agent or normalized model call to tools, approvals, handoffs, and local state.">
 	<meta property="og:url" content="https://docs.kujolang.ai/build/ai-and-agents/">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="Kujo Docs">
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="AI and agents">
-	<meta name="twitter:description" content="Move from a normalized model call to tools, approvals, handoffs, and local state.">
+	<meta name="twitter:description" content="Move from a repository-owned agent or normalized model call to tools, approvals, handoffs, and local state.">
 
 	<link href="../../assets/css/fonts.css" rel="stylesheet">
 	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
 	<link href="../../assets/css/style.css" rel="stylesheet">
-	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"AI and agents","name":"AI and agents","description":"Move from a normalized model call to tools, approvals, handoffs, and local state.","url":"https://docs.kujolang.ai/build/ai-and-agents/","author":{"@type":"Person","name":"Unknown Author"},"publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"AI and agents","name":"AI and agents","description":"Move from a repository-owned agent or normalized model call to tools, approvals, handoffs, and local state.","url":"https://docs.kujolang.ai/build/ai-and-agents/","author":{"@type":"Person","name":"Unknown Author"},"publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -96,20 +96,29 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<p class="docs-eyebrow">Build with Kujo</p><h1 id="ai-and-agents">AI and agents</h1><p class="docs-description">Move from a normalized model call to tools, approvals, handoffs, and local state.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Build with Kujo</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>launch scope</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-27</span></div>
-		<div class="docs-body"><p>Lead with increasing responsibility:</p>
+		<p class="docs-eyebrow">Build with Kujo</p><h1 id="ai-and-agents">AI and agents</h1><p class="docs-description">Move from a repository-owned agent or normalized model call to tools, approvals, handoffs, and local state.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Build with Kujo</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>stable agent path</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-30</span></div>
+		<div class="docs-body"><p>Start with the ownership boundary that matches the job.</p>
+<p>For an agent that should live in Git, use Kujo&apos;s Agent Development Platform:</p>
+<pre><code class="language-bash">curl -fsSL https://kujolang.ai/install.sh | bash -s -- --group agent
+kujo agent new my-agent --profile basic --install</code></pre>
+<p>The basic profile is offline and deterministic. Continue through [Agent</p>
+<p>Projects](/build/owned-agent-projects/), then select a</p>
+<p><a href="/build/agent-profiles/">profile</a>, add <a href="/build/agent-credentials/">credentials</a></p>
+<p>only if a live provider is required, and use the [operations</p>
+<p>guide](/build/agent-operations/) for diagnostics, evaluation, and isolation.</p>
+<p>For custom application code, add responsibility in layers:</p>
 <p>For a cross-cutting Kujo project, begin with the <a href="/collections/skills/#start-with-the-kujo-way"><code>kujo-way-development</code></a> skill so repository ownership, contracts, capability boundaries, deterministic execution, and completion evidence are decided before implementation.</p>
 <p>1. <a href="/tools/ai-sdk/">AI SDK</a> for normalized chat and embedding contracts.</p>
 <p>2. <a href="/tools/agents-sdk/">Agents SDK</a> for tools, approvals, handoffs, stores, and tracing.</p>
 <p>3. <a href="/tools/dispatch/">Dispatch</a> for resumable, auditable workflows.</p>
 <p>4. <a href="/tools/watchdog/">Watchdog</a> for local request, cost, latency, error, and audit visibility.</p>
-<p>Choose a package from the <a href="/ecosystem/providers/">provider index</a> when a live model is part of the question. Begin with fixture mode when it is not. Add live credentials only at the boundary where they are needed.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-next" href="/tools/ai-sdk/" rel="next"><span>Next</span></a></nav>
+<p>Choose a package from the <a href="/ecosystem/providers/">provider index</a> when a live model is part of the question. Begin with fixture mode when it is not. Add live credentials only at the boundary where they are needed.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-next" href="/build/owned-agent-projects/" rel="next"><span>Next</span></a></nav>
 	</article>
 
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.2.0</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.3.0</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../../assets/sitekit/sitekit.js"></script>
