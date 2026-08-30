@@ -19,7 +19,7 @@ tags: [applications, publishing, showcases]
 
 - [AI Chat](/showcases/ai-chat/) demonstrates a local multi-provider application.
 - [CRUD API](/showcases/crud-api/) demonstrates SQLite APIs, auth strategies, and a frontend playground.
-- [CMS](/showcases/cms/) demonstrates a server-first content system.
+- [CMS](/showcases/cms/) provides a framework-neutral content backend with a complete administration example, portable themes and plugins, SEO and social workflows, and first-class agent access through abilities, MCP descriptors, and WebMCP.
 - [SSG](/showcases/ssg/) demonstrates deterministic static publishing and documentation sites.
 - [TotalRecall](/showcases/totalrecall/) demonstrates local provider-to-artifact knowledge ingestion.
 - [Intake](/showcases/intake/) demonstrates policy-gated inbound work and learning export.

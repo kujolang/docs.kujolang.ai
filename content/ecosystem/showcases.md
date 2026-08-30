@@ -15,7 +15,7 @@ tags: [ecosystem, showcases]
 
 The showcase set includes:
 
-- [CMS](/showcases/cms/) — server-first content models, delivery, auth, jobs, and operations.
+- [CMS](/showcases/cms/) — framework-neutral content, administration, extensions, SEO, identity, abilities, MCP, WebMCP, and production operations.
 - [CRUD API Showcase](/showcases/crud-api/) — SQLite CRUD contracts, auth strategies, concurrency, and a frontend playground.
 - [AI Chat](/showcases/ai-chat/) — local multi-provider chat, streaming, transcription, and durable conversations.
 - [SSG](/showcases/ssg/) — deterministic Markdown publishing, templates, feeds, sitemap, and `llms.txt`.
