@@ -97,15 +97,9 @@
 	</aside>
 	<article class="docs-article">
 		<p class="docs-eyebrow">Showcases</p><h1 id="cms">CMS</h1><p class="docs-description">A framework-neutral content backend with first-class administration, extensions, SEO, identity, AI abilities, MCP, and WebMCP.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Showcases</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>released</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-30</span></div>
-		<div class="docs-body"><p>Kujo CMS 1.1.0 is a server-first content backend for human administration,</p>
-<p>custom frontends, integrations, terminal workflows, and agents. The core owns</p>
-<p>portable content behavior; the separate CMS Example shows one complete</p>
-<p>Next.js-based administration and publication experience without making that</p>
-<p>framework part of the CMS contract.</p>
+		<div class="docs-body"><p>Kujo CMS 1.1.0 is a server-first content backend for human administration, custom frontends, integrations, terminal workflows, and agents. The core owns portable content behavior; the separate CMS Example shows one complete Next.js-based administration and publication experience without making that framework part of the CMS contract.</p>
 <h2 id="use-it-when">Use it when…</h2>
-<p>You need structured publishing that can serve a custom website, application,</p>
-<p>CLI, or agent without rebuilding the same identity, editorial, SEO, extension,</p>
-<p>and permission rules in every client.</p>
+<p>You need structured publishing that can serve a custom website, application, CLI, or agent without rebuilding the same identity, editorial, SEO, extension, and permission rules in every client.</p>
 <h2 id="interface-overview">Interface overview</h2>
 <table><thead><tr>
 <th>Surface</th>
@@ -149,57 +143,28 @@
 </tr>
 </tbody></table>
 <h2 id="one-contract-for-people-and-agents">One contract for people and agents</h2>
-<p>The administration UI, API, terminal helpers, and agent integrations share the</p>
-<p>same backend rules. An editor can correct SEO metadata in the CMS Example while</p>
-<p>an authorized agent can make the equivalent focused or bulk update through the</p>
-<p>API. A plugin can register an ability or connector, and compatible clients can</p>
-<p>inspect its schema, permission, and mutation boundary before calling it.</p>
-<p>WebMCP is enabled by default. Its public browser tools expose site information,</p>
-<p>search, published-content listings, and exact published records. Drafts and</p>
-<p>mutations remain behind the CMS authorization boundary. Traditional MCP clients</p>
-<p>can use the CMS tool descriptors and connector layer alongside WebMCP.</p>
+<p>The administration UI, API, terminal helpers, and agent integrations share the same backend rules. An editor can correct SEO metadata in the CMS Example while an authorized agent can make the equivalent focused or bulk update through the API. A plugin can register an ability or connector, and compatible clients can inspect its schema, permission, and mutation boundary before calling it.</p>
+<p>WebMCP is enabled by default. Its public browser tools expose site information, search, published-content listings, and exact published records. Drafts and mutations remain behind the CMS authorization boundary. Traditional MCP clients can use the CMS tool descriptors and connector layer alongside WebMCP.</p>
 <h2 id="portable-themes-and-plugins">Portable themes and plugins</h2>
-<p>Theme packages describe frontend entrypoints, templates, assets, settings,</p>
-<p>content types, menu locations, author links, branded artwork, and administration</p>
-<p>navigation. Plugin packages can declare connector, webhook, browser, or hybrid</p>
-<p>runtimes plus events, abilities, connectors, settings, and administration links.</p>
-<p>ZIP installation verifies compressed and expanded size, file count, package</p>
-<p>structure, manifest location, and SHA-256 integrity before registering the</p>
-<p>package. Uploading a package does not execute its code. The standalone</p>
-<p><a href="https://github.com/kujolang/cms-field-notes-theme">Field Notes theme</a> and</p>
-<p><a href="https://github.com/kujolang/cms-contact-form">contact form plugin</a> provide</p>
-<p>forkable package examples.</p>
+<p>Theme packages describe frontend entrypoints, templates, assets, settings, content types, menu locations, author links, branded artwork, and administration navigation. Plugin packages can declare connector, webhook, browser, or hybrid runtimes plus events, abilities, connectors, settings, and administration links.</p>
+<p>ZIP installation verifies compressed and expanded size, file count, package structure, manifest location, and SHA-256 integrity before registering the package. Uploading a package does not execute its code. The standalone <a href="https://github.com/kujolang/cms-field-notes-theme">Field Notes theme</a> and <a href="https://github.com/kujolang/cms-contact-form">contact form plugin</a> provide forkable package examples.</p>
 <h2 id="five-minute-example">Five-minute example</h2>
 <pre><code class="language-bash">git clone https://github.com/kujolang/cms.git
 cd cms
 cp .env.example .env
 kujo run --interpreter backend/runtime/main.kujo
 curl http://127.0.0.1:4200/v1/openapi.json</code></pre>
-<p>To run the full site and administration showcase, clone</p>
-<p><a href="https://github.com/kujolang/cms-example">CMS Example</a>, install its dependencies,</p>
-<p>then start the backend, seed data, and launch the frontend in separate terminals:</p>
+<p>To run the full site and administration showcase, clone <a href="https://github.com/kujolang/cms-example">CMS Example</a>, install its dependencies, then start the backend, seed data, and launch the frontend in separate terminals:</p>
 <pre><code class="language-bash">npm run cms:start
 npm run cms:seed
 npm run dev</code></pre>
-<p>Local startup generates a private development token. Production deployments</p>
-<p>must use rotated secrets, a trusted identity adapter, explicit ingress and rate</p>
-<p>limits, durable storage, backups, and the documented security review.</p>
+<p>Local startup generates a private development token. Production deployments must use rotated secrets, a trusted identity adapter, explicit ingress and rate limits, durable storage, backups, and the documented security review.</p>
 <h2 id="api-and-terminal-parity">API and terminal parity</h2>
-<p>The core repository includes focused terminal helpers for SEO and social</p>
-<p>settings, content and media workflows, extension packages, and AI abilities and</p>
-<p>connectors. There is intentionally no second all-purpose CMS CLI that could</p>
-<p>drift from the HTTP contract.</p>
+<p>The core repository includes focused terminal helpers for SEO and social settings, content and media workflows, extension packages, and AI abilities and connectors. There is intentionally no second all-purpose CMS CLI that could drift from the HTTP contract.</p>
 <h2 id="how-it-fits">How it fits</h2>
-<p>Use the CMS when content needs an ongoing editorial and administration backend.</p>
-<p>Compare it with <a href="/showcases/crud-api/">CRUD API</a> for a smaller application API</p>
-<p>pattern and <a href="/showcases/ssg/">SSG</a> for deterministic file-based publishing.</p>
+<p>Use the CMS when content needs an ongoing editorial and administration backend. Compare it with <a href="/showcases/crud-api/">CRUD API</a> for a smaller application API pattern and <a href="/showcases/ssg/">SSG</a> for deterministic file-based publishing.</p>
 <h2 id="boundaries">Boundaries</h2>
-<p>CMS 1.1.0 supplies production-oriented application contracts and release gates;</p>
-<p>it does not make every deployment enterprise-complete. Infrastructure,</p>
-<p>compliance, observability, storage, recovery targets, provider credentials, and</p>
-<p>governance still require environment-specific proof. The default WebMCP tools</p>
-<p>are intentionally read-only, and extension code is not executed during package</p>
-<p>installation.</p>
+<p>CMS 1.1.0 supplies production-oriented application contracts and release gates; it does not make every deployment enterprise-complete. Infrastructure, compliance, observability, storage, recovery targets, provider credentials, and governance still require environment-specific proof. The default WebMCP tools are intentionally read-only, and extension code is not executed during package installation.</p>
 <h2 id="reference">Reference</h2>
 <ul>
 <li><a href="https://github.com/kujolang/cms/releases/tag/v1.1.0">CMS 1.1.0 release</a></li>
