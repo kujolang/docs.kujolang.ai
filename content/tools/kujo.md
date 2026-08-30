@@ -7,9 +7,9 @@ nav_title: Kujo
 order: 10
 audience: developer
 difficulty: beginner
-status: stable v1.0.1
-version: current
-last_updated: 2026-08-23
+status: stable v1.1.0
+version: 1.1.0
+last_updated: 2026-08-30
 scope: local-first
 source_repo: kujo
 next: /tools/kennel/
@@ -28,6 +28,7 @@ You want to write a small program, check it, and run it with the same VM-first C
 | Run and inspect | `kujo run <file>`, `kujo check <file>`, `kujo doctor` |
 | Test and document | `kujo test`, `kujo test-run <file>`, `kujo docgen <path>` |
 | Projects and packages | `kujo init`, `kujo package-add`, `kujo package-install --frozen` |
+| Agent Projects | `kujo agent new`, `kujo agent inspect`, `kujo agent run`, `kujo agent eval` |
 | Runtime modes | VM by default; tree-walking interpreter fallback with `--interpreter` |
 
 ## Main workflows
@@ -55,8 +56,13 @@ Start here, then add [Kennel](/tools/kennel/) when the project needs dependencie
 
 ## Boundaries
 
-Kujo `v1.0.1` is the current published stable release. Core does not include hosted provider routing, RAG, agents, MCP, evaluation, observability, or a public package registry; those remain separate ecosystem components.
+Kujo `v1.1.0` is the current published stable release. The CLI now coordinates
+repository-owned Agent Projects, but their provider, runtime, retrieval,
+evaluation, observability, and package capabilities remain explicit ecosystem
+dependencies rather than hidden core services.
 
 ## Reference
 
-Use `kujo --help`, `kujo doctor --json`, the [language basics](/learn/language-basics/) guide, and the [Kujo repository](https://github.com/kujolang/kujo).
+Use `kujo --help`, `kujo agent --help`, `kujo doctor --json`, the [language
+basics](/learn/language-basics/) guide, the [Agent Projects
+guide](/build/owned-agent-projects/), and the [Kujo repository](https://github.com/kujolang/kujo).

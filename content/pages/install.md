@@ -1,6 +1,6 @@
 ---
 title: Install Kujo
-description: Install the current stable CLI or build it from source, then verify the local toolchain.
+description: Install Kujo v1.1.0 and the tool group you need, or build the CLI from source.
 custom_url: install
 template: docs
 section: Start here
@@ -9,22 +9,38 @@ order: 20
 audience: developer
 difficulty: beginner
 status: stable
-version: current
-last_updated: 2026-08-23
+version: 1.1.0
+last_updated: 2026-08-30
 previous: /start-here/
 next: /quickstart/
 prerequisites:
-  - A supported macOS or Linux workstation
-  - Git, Rust, and a writable terminal workspace
+  - A supported macOS, Linux, or Windows workstation
+  - A writable terminal workspace
 tags: [install, cli, stable]
 ---
 
 
-Kujo `v1.0.1` is the current stable release. GitHub Releases provides prebuilt Linux x64, macOS x64/arm64, and Windows x64 archives, per-asset SHA-256 files, and a consolidated `checksums.txt`. Verify the checksum before placing the binary on `PATH`.
+Kujo `v1.1.0` is the current stable release. The public installer selects the
+correct archive for your platform, verifies its SHA-256 checksum, and places the
+CLI and requested ecosystem tools under your user directory.
 
-## Release install
+## Install Kujo
 
-Download the archive for your platform from the [Kujo v1.0.1 release](https://github.com/kujolang/kujo/releases/tag/v1.0.1), verify it against the matching SHA-256 file or `checksums.txt`, then install the `kujo` executable in a directory on `PATH`.
+```bash
+curl -fsSL https://kujolang.ai/install.sh | bash
+export PATH="$HOME/.local/bin:$PATH"
+```
+
+Use a focused group when you want Kujo and the tools for one job. For the Agent
+Development Platform:
+
+```bash
+curl -fsSL https://kujolang.ai/install.sh | bash -s -- --group agent
+```
+
+Run `curl -fsSL https://kujolang.ai/install.sh | bash -s -- --help` to review
+available groups and installer options before making changes. Direct archives
+and checksums remain available from the [Kujo v1.1.0 release](https://github.com/kujolang/kujo/releases/tag/v1.1.0).
 
 ## Source install
 
@@ -35,15 +51,6 @@ cargo build --release
 cargo install --path .
 ```
 
-## Optional ecosystem install
-
-The source-backed ecosystem installer can place the CLI and selected ecosystem profiles in your local user directory. It is intentionally separate from this docs site so every installed profile remains reviewable.
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/kujolang/kujo/main/install.sh | bash -s -- --source
-export PATH="$HOME/.local/bin:$PATH"
-```
-
 ## Verify
 
 ```bash
@@ -51,9 +58,13 @@ kujo --version
 kujo doctor --json
 ```
 
+An agent-focused install can be verified with `kujo doctor agent`. Continue to
+[Repository-owned Agent Projects](/build/owned-agent-projects/) to create and
+run one locally.
+
 ## Troubleshooting
 
-- **Rust is missing:** install the stable Rust toolchain, then rerun `cargo build --release`.
+- **Rust is missing during a source build:** install the stable Rust toolchain, then rerun `cargo build --release`.
 - **`kujo` is not found:** add `$HOME/.local/bin` or Cargo's bin directory to PATH and open a new shell.
 - **The wrong binary runs:** use `command -v kujo` and compare it with the path printed by `cargo install`.
 - **Platform notes:** use the published release matrix for supported archives; build from source for other targets.

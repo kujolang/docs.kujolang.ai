@@ -2,7 +2,12 @@
 
 The official documentation site for the Kujo language and ecosystem, published at [docs.kujolang.ai](https://docs.kujolang.ai).
 
-Version **1.2.0** was released on **August 27, 2026** with the Dispatch 1.2 release documentation refreshed against the current source contracts. The site follows the Kujo documentation information architecture: a short first-run path, task-oriented learning, intent-based tool guidance, reviewable-work workflows, showcases, collections, and reference material.
+Version **1.3.0** was released on **August 30, 2026** with complete Kujo v1.1.0
+Agent Development Platform documentation, the official focused installer path,
+and source-backed profiles, credentials, operations, and security boundaries.
+The site follows the Kujo documentation information architecture: a short
+first-run path, task-oriented learning, intent-based tool guidance,
+reviewable-work workflows, showcases, collections, and reference material.
 
 ## Build
 
@@ -39,6 +44,7 @@ Then open [http://127.0.0.1:4178](http://127.0.0.1:4178).
 
 ```bash
 bash ../ssg/scripts/validate-generated-output.sh output
+bash scripts/verify-agent-platform-docs.sh output
 ```
 
 Before release, also verify the generated sitemap routes, the themed 404 response, desktop and mobile layouts, same-origin links, keyboard interactions, and automated accessibility checks.

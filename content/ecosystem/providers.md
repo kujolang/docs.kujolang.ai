@@ -9,7 +9,7 @@ audience: developer
 difficulty: beginner
 status: source-backed inventory
 version: current
-last_updated: 2026-08-27
+last_updated: 2026-08-30
 previous: /learn/packages/
 next: /tools/ai-sdk/
 tags: [ecosystem, providers, ai, packages]
@@ -19,7 +19,7 @@ Kujo provider packages keep each provider's wire format visible while offering a
 
 ## Choose a provider
 
-The inventory below is checked against the official Kujo provider repositories on **2026-08-27**. `AI SDK` means the package exports a public provider factory and depends on AI SDK `v1.1.0`; `Native only` means no normalized driver is advertised in that package release.
+The inventory below is checked against the official Kujo provider repositories on **2026-08-30**. `AI SDK` means the package exports a public provider factory and depends on AI SDK `v1.1.0`; `Native only` means no normalized driver is advertised in that package release.
 
 | Provider | Kujo package | Release tag | Protocol | AI SDK | Authentication |
 | --- | --- | --- | --- | --- | --- |
@@ -394,7 +394,7 @@ print(result["data"])
 
 ## Contracts and related guides
 
-The current baseline is Kujo `v1.0.1`, Kennel `v1.0.0`, AI SDK `v1.1.0`, AI SDK normalized response contract `1.0.0`, AI SDK provider-driver contract `1.0.0`, and Kujo Provider Package Contract `1.0.1`. Provider package versions are independent of these contracts.
+The current baseline is Kujo `v1.1.0`, Kennel `v1.0.0`, AI SDK `v1.1.0`, AI SDK normalized response contract `1.0.0`, AI SDK provider-driver contract `1.0.0`, and Kujo Provider Package Contract `1.0.1`. Provider package versions are independent of these contracts.
 
 - [AI SDK](/tools/ai-sdk/) — normalized chat and embedding behavior, retries, fixtures, and redaction.
 - [AI runtime basics](/learn/ai-runtime/) — credentials, budgets, replay, and egress boundaries.
@@ -402,4 +402,4 @@ The current baseline is Kujo `v1.0.1`, Kennel `v1.0.0`, AI SDK `v1.1.0`, AI SDK 
 - [AI and agents](/build/ai-and-agents/) — the path from a provider call to agents and workflows.
 - [Release boundaries](/release-boundaries/) — how to interpret repository maturity and evidence.
 
-Evidence date: 2026-08-27. Recheck the linked Kujo repository and official provider documentation before pinning a new release or model in a production system.
+Evidence date: 2026-08-30. Recheck the linked Kujo repository and official provider documentation before pinning a new release or model in a production system.

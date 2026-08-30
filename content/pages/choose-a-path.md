@@ -10,7 +10,7 @@ audience: all
 difficulty: beginner
 status: stable
 version: current
-last_updated: 2026-08-27
+last_updated: 2026-08-30
 previous: /quickstart/
 next: /learn/
 tags: [orientation, ecosystem]
@@ -20,6 +20,7 @@ tags: [orientation, ecosystem]
 | If you want to… | Start with… |
 | --- | --- |
 | Learn the language | [Learn Kujo](/learn/), [Reference](/reference/), and [Kennel](/tools/kennel/) |
+| Create a repository-owned agent | [Agent Projects](/build/owned-agent-projects/), [profiles](/build/agent-profiles/), [credentials](/build/agent-credentials/), and [operations](/build/agent-operations/) |
 | Call models or build agents | [Provider packages](/ecosystem/providers/), [AI SDK](/tools/ai-sdk/), [Agents SDK](/tools/agents-sdk/), and [AI Chat](/showcases/ai-chat/) |
 | Turn requests into bounded work | [Spec](/tools/spec/), [Scent](/tools/scent/), [PackWrite](/tools/packwrite/), and [Dispatch](/tools/dispatch/) |
 | Check changes before they ship | [Eval](/tools/eval/), [Concord](/tools/concord/), [ShipCheck](/tools/shipcheck/), and [Lens](/tools/lens/) |
