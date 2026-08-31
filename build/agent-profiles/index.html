@@ -97,9 +97,7 @@
 	</aside>
 	<article class="docs-article">
 		<p class="docs-eyebrow">Build with Kujo</p><h1 id="choose-an-agent-project-profile">Choose an Agent Project Profile</h1><p class="docs-description">Select the smallest Kujo Agent Project profile that matches the tools, knowledge, workflow, isolation, and observability you need.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Build with Kujo</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-30</span></div>
-		<div class="docs-body"><p>Start with the smallest profile that expresses the agent you intend to own.</p>
-<p>Every profile produces the same repository-owned contract and can be reviewed</p>
-<p>before anything is installed or run.</p>
+		<div class="docs-body"><p>Start with the smallest profile that expresses the agent you intend to own. Every profile produces the same repository-owned contract and can be reviewed before anything is installed or run.</p>
 <pre><code class="language-bash">kujo agent new my-agent --profile basic --install</code></pre>
 <h2 id="profiles">Profiles</h2>
 <table><thead><tr>
@@ -143,20 +141,14 @@
 <td>Requirements of the capabilities you enable</td>
 </tr>
 </tbody></table>
-<p><code>--install</code> is an explicit convenience boundary. Without it, Kujo only writes</p>
-<p>the project. With it, Kujo asks Kennel to install the exact revisions in the</p>
-<p>generated manifest. Optional external services are reported by Inspect and</p>
-<p>Doctor; they are not silently treated as mandatory for unrelated commands.</p>
+<p><code>--install</code> is an explicit convenience boundary. Without it, Kujo only writes the project. With it, Kujo asks Kennel to install the exact revisions in the generated manifest. Optional external services are reported by Inspect and Doctor; they are not silently treated as mandatory for unrelated commands.</p>
 <h2 id="inspect-before-running">Inspect before running</h2>
 <pre><code class="language-bash">cd my-agent
 kujo agent inspect
 kujo doctor agent</code></pre>
-<p>Inspect separates required dependencies, optional external services,</p>
-<p>credential names, policies, and integration paths. Doctor verifies the local</p>
-<p>toolchain and can add live probes with <code>--deep</code>.</p>
+<p>Inspect separates required dependencies, optional external services, credential names, policies, and integration paths. Doctor verifies the local toolchain and can add live probes with <code>--deep</code>.</p>
 <h2 id="understand-integration-ownership">Understand integration ownership</h2>
-<p>The generated repository owns the configuration for each integration. Kujo</p>
-<p>does not hide a second hosted copy of the contract.</p>
+<p>The generated repository owns the configuration for each integration. Kujo does not hide a second hosted copy of the contract.</p>
 <ul>
 <li><a href="/tools/agents-sdk/">Agents SDK</a> owns agent execution primitives.</li>
 <li><a href="/tools/ai-sdk/">AI SDK</a> owns normalized provider requests.</li>
@@ -166,8 +158,7 @@ kujo doctor agent</code></pre>
 <li><a href="/tools/workcell/">Workcell</a> owns the container isolation boundary.</li>
 <li><a href="/tools/watchdog/">Watchdog</a> and <a href="/tools/runledger/">RunLedger</a> add optional telemetry and receipts.</li>
 </ul>
-<p>Next, <a href="/build/agent-credentials/">configure credentials and connectors</a> or</p>
-<p><a href="/build/agent-operations/">review operational controls</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/build/owned-agent-projects/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/build/agent-credentials/" rel="next"><span>Next</span></a></nav>
+<p>Next, <a href="/build/agent-credentials/">configure credentials and connectors</a> or <a href="/build/agent-operations/">review operational controls</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/build/owned-agent-projects/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/build/agent-credentials/" rel="next"><span>Next</span></a></nav>
 	</article>
 	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#profiles">Profiles</a></li><li class="toc-level-2"><a href="#inspect-before-running">Inspect before running</a></li><li class="toc-level-2"><a href="#understand-integration-ownership">Understand integration ownership</a></li></ol></nav>
 </main>

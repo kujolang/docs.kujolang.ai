@@ -97,33 +97,22 @@
 	</aside>
 	<article class="docs-article">
 		<p class="docs-eyebrow">Build with Kujo</p><h1 id="repository-owned-agent-projects">Repository-owned Agent Projects</h1><p class="docs-description">Install Kujo&apos;s agent platform, create a repository-owned agent, and prove its local lifecycle.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Build with Kujo</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-30</span></div>
-		<div class="docs-body"><p>An Agent Project keeps the agent in your repository. Its instructions, model</p>
-<p>preference, skills, tools, knowledge, policies, workflows, evaluation, exact</p>
-<p>dependency pins, and runtime boundaries remain reviewable files instead of</p>
-<p>hidden hosted state.</p>
+		<div class="docs-body"><p>An Agent Project keeps the agent in your repository. Its instructions, model preference, skills, tools, knowledge, policies, workflows, evaluation, exact dependency pins, and runtime boundaries remain reviewable files instead of hidden hosted state.</p>
 <h2 id="install-the-focused-agent-toolchain">Install the focused agent toolchain</h2>
 <pre><code class="language-bash">curl -fsSL https://kujolang.ai/install.sh | bash -s -- --group agent
 export PATH=&quot;$HOME/.local/bin:$PATH&quot;</code></pre>
-<p>The public installer downloads published Kujo <code>v1.1.0</code> release assets, verifies</p>
-<p>their checksums, and installs the focused Agent Project dependencies.</p>
+<p>The public installer downloads published Kujo <code>v1.1.0</code> release assets, verifies their checksums, and installs the focused Agent Project dependencies.</p>
 <h2 id="create-and-run-an-agent">Create and run an agent</h2>
 <pre><code class="language-bash">kujo agent new my-agent --profile basic --install
 cd my-agent
 kujo agent run &quot;What can you help me with?&quot;</code></pre>
-<p>The <code>basic</code> profile is deterministic and offline by default. It needs no API</p>
-<p>key, provider network, Watchdog, or RunLedger. The <code>--install</code> flag resolves the</p>
-<p>exact Kennel dependency pins after scaffolding so the project is ready to run.</p>
+<p>The <code>basic</code> profile is deterministic and offline by default. It needs no API key, provider network, Watchdog, or RunLedger. The <code>--install</code> flag resolves the exact Kennel dependency pins after scaffolding so the project is ready to run.</p>
 <h2 id="prove-the-complete-local-lifecycle">Prove the complete local lifecycle</h2>
 <pre><code class="language-bash">kujo doctor agent --deep
 kujo agent inspect
 kujo agent eval</code></pre>
-<p>There is deliberately no <code>kujo agent doctor</code>. Agent diagnostics extend Kujo&apos;s</p>
-<p>canonical Doctor architecture through <code>kujo doctor agent</code>. Use <code>--json</code> with</p>
-<p>Doctor, Inspect, Run, or Eval when automation needs a versioned machine result.</p>
-<p><code>agent.project.json</code> is the root contract. Kujo discovers the project from a</p>
-<p>nested directory without crossing a Git boundary, validates every referenced</p>
-<p>path stays inside the project, and uses immutable Kennel pins instead of sibling</p>
-<p>checkout dependencies.</p>
+<p>There is deliberately no <code>kujo agent doctor</code>. Agent diagnostics extend Kujo&apos;s canonical Doctor architecture through <code>kujo doctor agent</code>. Use <code>--json</code> with Doctor, Inspect, Run, or Eval when automation needs a versioned machine result.</p>
+<p><code>agent.project.json</code> is the root contract. Kujo discovers the project from a nested directory without crossing a Git boundary, validates every referenced path stays inside the project, and uses immutable Kennel pins instead of sibling checkout dependencies.</p>
 <h2 id="continue-building">Continue building</h2>
 <ul>
 <li><a href="/build/agent-profiles/">Choose an Agent Project profile</a></li>
@@ -131,11 +120,8 @@ kujo agent eval</code></pre>
 <li><a href="/build/agent-operations/">Operate, evaluate, and harden an agent</a></li>
 <li><a href="https://agents.kujolang.ai/">Explore agent examples and starter sets</a></li>
 </ul>
-<p>The working sources are the <a href="https://github.com/kujolang/kujo/tree/main/examples/owned-agent-project">self-hosted example</a>,</p>
-<p>the <a href="https://github.com/kujolang/kujo-workflows/tree/main/owned-agent-project">lifecycle workflow</a>,</p>
-<p>and the <a href="https://github.com/kujolang/kujo/blob/main/docs/BUILD_AN_AGENT.md">implementation guide</a>.</p>
-<p>This page appears in <code>llms.txt</code> and the static WebMCP index. Those discovery</p>
-<p>surfaces expose documentation only; they never grant execution authority.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-next" href="/build/agent-profiles/" rel="next"><span>Next</span></a></nav>
+<p>The working sources are the <a href="https://github.com/kujolang/kujo/tree/main/examples/owned-agent-project">self-hosted example</a>, the <a href="https://github.com/kujolang/kujo-workflows/tree/main/owned-agent-project">lifecycle workflow</a>, and the <a href="https://github.com/kujolang/kujo/blob/main/docs/BUILD_AN_AGENT.md">implementation guide</a>.</p>
+<p>This page appears in <code>llms.txt</code> and the static WebMCP index. Those discovery surfaces expose documentation only; they never grant execution authority.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-next" href="/build/agent-profiles/" rel="next"><span>Next</span></a></nav>
 	</article>
 	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#install-the-focused-agent-toolchain">Install the focused agent toolchain</a></li><li class="toc-level-2"><a href="#create-and-run-an-agent">Create and run an agent</a></li><li class="toc-level-2"><a href="#prove-the-complete-local-lifecycle">Prove the complete local lifecycle</a></li><li class="toc-level-2"><a href="#continue-building">Continue building</a></li></ol></nav>
 </main>

@@ -101,17 +101,15 @@
 <p>For an agent that should live in Git, use Kujo&apos;s Agent Development Platform:</p>
 <pre><code class="language-bash">curl -fsSL https://kujolang.ai/install.sh | bash -s -- --group agent
 kujo agent new my-agent --profile basic --install</code></pre>
-<p>The basic profile is offline and deterministic. Continue through [Agent</p>
-<p>Projects](/build/owned-agent-projects/), then select a</p>
-<p><a href="/build/agent-profiles/">profile</a>, add <a href="/build/agent-credentials/">credentials</a></p>
-<p>only if a live provider is required, and use the [operations</p>
-<p>guide](/build/agent-operations/) for diagnostics, evaluation, and isolation.</p>
+<p>The basic profile is offline and deterministic. Continue through <a href="/build/owned-agent-projects/">Agent Projects</a>, then select a <a href="/build/agent-profiles/">profile</a>, add <a href="/build/agent-credentials/">credentials</a> only if a live provider is required, and use the <a href="/build/agent-operations/">operations guide</a> for diagnostics, evaluation, and isolation.</p>
 <p>For custom application code, add responsibility in layers:</p>
 <p>For a cross-cutting Kujo project, begin with the <a href="/collections/skills/#start-with-the-kujo-way"><code>kujo-way-development</code></a> skill so repository ownership, contracts, capability boundaries, deterministic execution, and completion evidence are decided before implementation.</p>
-<p>1. <a href="/tools/ai-sdk/">AI SDK</a> for normalized chat and embedding contracts.</p>
-<p>2. <a href="/tools/agents-sdk/">Agents SDK</a> for tools, approvals, handoffs, stores, and tracing.</p>
-<p>3. <a href="/tools/dispatch/">Dispatch</a> for resumable, auditable workflows.</p>
-<p>4. <a href="/tools/watchdog/">Watchdog</a> for local request, cost, latency, error, and audit visibility.</p>
+<ul>
+<li><a href="/tools/ai-sdk/">AI SDK</a> for normalized chat and embedding contracts.</li>
+<li><a href="/tools/agents-sdk/">Agents SDK</a> for tools, approvals, handoffs, stores, and tracing.</li>
+<li><a href="/tools/dispatch/">Dispatch</a> for resumable, auditable workflows.</li>
+<li><a href="/tools/watchdog/">Watchdog</a> for local request, cost, latency, error, and audit visibility.</li>
+</ul>
 <p>Choose a package from the <a href="/ecosystem/providers/">provider index</a> when a live model is part of the question. Begin with fixture mode when it is not. Add live credentials only at the boundary where they are needed.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-next" href="/build/owned-agent-projects/" rel="next"><span>Next</span></a></nav>
 	</article>
 

@@ -97,44 +97,46 @@
 	</aside>
 	<article class="docs-article">
 		<p class="docs-eyebrow">Build with Kujo</p><h1 id="manage-agent-credentials-and-connectors">Manage Agent Credentials and Connectors</h1><p class="docs-description">Store reusable provider keys safely, configure project overrides, and connect Kujo Agent Projects without putting secrets in commands or Git.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Build with Kujo</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-30</span></div>
-		<div class="docs-body"><p>Kujo stores reusable provider keys in macOS Keychain, Windows Credential</p>
-<p>Manager, or Linux Secret Service. The project keeps only credential names and</p>
-<p>ignored local overrides, so secrets do not become part of the agent contract.</p>
+		<div class="docs-body"><p>Kujo stores reusable provider keys in macOS Keychain, Windows Credential Manager, or Linux Secret Service. The project keeps only credential names and ignored local overrides, so secrets do not become part of the agent contract.</p>
 <h2 id="save-a-provider-key-once">Save a provider key once</h2>
 <pre><code class="language-bash">kujo agent auth set openai
 kujo agent auth status openai</code></pre>
-<p><code>auth set</code> accepts masked interactive input. Built-in provider names include</p>
-<p>OpenAI, OpenRouter, and DeepSeek. A later Agent Project using the same provider</p>
-<p>can reuse the saved key.</p>
+<p><code>auth set</code> accepts masked interactive input. Built-in provider names include OpenAI, OpenRouter, and DeepSeek. A later Agent Project using the same provider can reuse the saved key.</p>
 <pre><code class="language-bash">kujo agent new live-agent --provider openai --model gpt-5 --install
 cd live-agent
 kujo agent run &quot;Say hello&quot;</code></pre>
-<p>If an interactive scaffold selects a live provider without a saved key, Kujo</p>
-<p>offers the same masked setup before leaving the project behind.</p>
+<p>If an interactive scaffold selects a live provider without a saved key, Kujo offers the same masked setup before leaving the project behind.</p>
 <h2 id="use-safe-automation-inputs">Use safe automation inputs</h2>
-<p>Pass secrets through stdin or an existing environment variable, never a command</p>
-<p>argument that can land in shell history or process listings.</p>
+<p>Pass secrets through stdin or an existing environment variable, never a command argument that can land in shell history or process listings.</p>
 <pre><code class="language-bash">printf &apos;%s&apos; &quot;$OPENAI_API_KEY&quot; | kujo agent auth set openai --from-stdin
 kujo agent auth set openai --from-env OPENAI_API_KEY
 kujo agent new ci-agent --credential-stdin --install</code></pre>
-<p>Use <code>--no-credential</code> when scaffolding should remain offline or credentials will</p>
-<p>be supplied later.</p>
+<p>Use <code>--no-credential</code> when scaffolding should remain offline or credentials will be supplied later.</p>
 <h2 id="choose-credential-scope">Choose credential scope</h2>
-<p>Kujo resolves a credential in this order:</p>
-<p>1. the current process environment;</p>
-<p>2. an owner-only, Git-ignored project <code>.env.local</code>;</p>
-<p>3. the operating-system credential store.</p>
-<p>Use <code>kujo agent auth set openai --project</code> for a project-specific override.</p>
-<p><code>auth status</code> reports the source without revealing the value. Revoke a saved</p>
-<p>credential with <code>kujo agent auth remove openai</code>.</p>
+<p>Kujo resolves credentials in this order:</p>
+<table><thead><tr>
+<th>Priority</th>
+<th>Source</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>Current process environment</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Owner-only, Git-ignored project <code>.env.local</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Operating-system credential store</td>
+</tr>
+</tbody></table>
+<p>Use <code>kujo agent auth set openai --project</code> for a project-specific override. <code>auth status</code> reports the source without revealing the value. Revoke a saved credential with <code>kujo agent auth remove openai</code>.</p>
 <h2 id="add-api-key-connectors">Add API-key connectors</h2>
 <p>Named connector credentials use the same storage contract:</p>
 <pre><code class="language-bash">kujo agent auth set --name LINEAR_API_TOKEN
 kujo agent auth status --name LINEAR_API_TOKEN</code></pre>
-<p>Keep OAuth connectors on their scoped consent and refresh-token flow. The</p>
-<p>API-key store does not turn OAuth into a long-lived token. Custom</p>
-<p>OpenAI-compatible provider endpoints require HTTPS unless a loopback URL is</p>
-<p>explicitly enabled for local development.</p>
+<p>Keep OAuth connectors on their scoped consent and refresh-token flow. The API-key store does not turn OAuth into a long-lived token. Custom OpenAI-compatible provider endpoints require HTTPS unless a loopback URL is explicitly enabled for local development.</p>
 <p>Kujo never prints the stored secret in status, Inspect, Doctor, or JSON output.</p>
 <p>Continue with <a href="/build/agent-operations/">agent operations and hardening</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/build/agent-profiles/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/build/agent-operations/" rel="next"><span>Next</span></a></nav>
 	</article>

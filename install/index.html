@@ -99,18 +99,13 @@
 	<article class="docs-article">
 		<p class="docs-eyebrow">Start here</p><h1 id="install-kujo">Install Kujo</h1><p class="docs-description">Install Kujo v1.1.0 and the tool group you need, or build the CLI from source.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-section"><span>Section</span>Start here</span><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-30</span></div>
 		<section class="docs-prerequisites" aria-label="Prerequisites"><h2 id="prerequisites">Prerequisites</h2><ul class="docs-prerequisites-list"><li>A supported macOS, Linux, or Windows workstation</li><li>A writable terminal workspace</li></ul></section>
-		<div class="docs-body"><p>Kujo <code>v1.1.0</code> is the current stable release. The public installer selects the</p>
-<p>correct archive for your platform, verifies its SHA-256 checksum, and places the</p>
-<p>CLI and requested ecosystem tools under your user directory.</p>
+		<div class="docs-body"><p>Kujo <code>v1.1.0</code> is the current stable release. The public installer selects the correct archive for your platform, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory.</p>
 <h2 id="install-kujo-2">Install Kujo</h2>
 <pre><code class="language-bash">curl -fsSL https://kujolang.ai/install.sh | bash
 export PATH=&quot;$HOME/.local/bin:$PATH&quot;</code></pre>
-<p>Use a focused group when you want Kujo and the tools for one job. For the Agent</p>
-<p>Development Platform:</p>
+<p>Use a focused group when you want Kujo and the tools for one job. For the Agent Development Platform:</p>
 <pre><code class="language-bash">curl -fsSL https://kujolang.ai/install.sh | bash -s -- --group agent</code></pre>
-<p>Run <code>curl -fsSL https://kujolang.ai/install.sh | bash -s -- --help</code> to review</p>
-<p>available groups and installer options before making changes. Direct archives</p>
-<p>and checksums remain available from the <a href="https://github.com/kujolang/kujo/releases/tag/v1.1.0">Kujo v1.1.0 release</a>.</p>
+<p>Run <code>curl -fsSL https://kujolang.ai/install.sh | bash -s -- --help</code> to review available groups and installer options before making changes. Direct archives and checksums remain available from the <a href="https://github.com/kujolang/kujo/releases/tag/v1.1.0">Kujo v1.1.0 release</a>.</p>
 <h2 id="source-install">Source install</h2>
 <pre><code class="language-bash">git clone https://github.com/kujolang/kujo.git
 cd kujo
@@ -119,9 +114,7 @@ cargo install --path .</code></pre>
 <h2 id="verify">Verify</h2>
 <pre><code class="language-bash">kujo --version
 kujo doctor --json</code></pre>
-<p>An agent-focused install can be verified with <code>kujo doctor agent</code>. Continue to</p>
-<p><a href="/build/owned-agent-projects/">Repository-owned Agent Projects</a> to create and</p>
-<p>run one locally.</p>
+<p>An agent-focused install can be verified with <code>kujo doctor agent</code>. Continue to <a href="/build/owned-agent-projects/">Repository-owned Agent Projects</a> to create and run one locally.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <ul>
 <li><strong>Rust is missing during a source build:</strong> install the stable Rust toolchain, then rerun <code>cargo build --release</code>.</li>
