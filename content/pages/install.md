@@ -20,9 +20,7 @@ tags: [install, cli, stable]
 ---
 
 
-Kujo `v1.1.0` is the current stable release. The public installer selects the
-correct archive for your platform, verifies its SHA-256 checksum, and places the
-CLI and requested ecosystem tools under your user directory.
+Kujo `v1.1.0` is the current stable release. The public installer selects the correct archive for your platform, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory.
 
 ## Install Kujo
 
@@ -31,16 +29,13 @@ curl -fsSL https://kujolang.ai/install.sh | bash
 export PATH="$HOME/.local/bin:$PATH"
 ```
 
-Use a focused group when you want Kujo and the tools for one job. For the Agent
-Development Platform:
+Use a focused group when you want Kujo and the tools for one job. For the Agent Development Platform:
 
 ```bash
 curl -fsSL https://kujolang.ai/install.sh | bash -s -- --group agent
 ```
 
-Run `curl -fsSL https://kujolang.ai/install.sh | bash -s -- --help` to review
-available groups and installer options before making changes. Direct archives
-and checksums remain available from the [Kujo v1.1.0 release](https://github.com/kujolang/kujo/releases/tag/v1.1.0).
+Run `curl -fsSL https://kujolang.ai/install.sh | bash -s -- --help` to review available groups and installer options before making changes. Direct archives and checksums remain available from the [Kujo v1.1.0 release](https://github.com/kujolang/kujo/releases/tag/v1.1.0).
 
 ## Source install
 
@@ -58,9 +53,7 @@ kujo --version
 kujo doctor --json
 ```
 
-An agent-focused install can be verified with `kujo doctor agent`. Continue to
-[Repository-owned Agent Projects](/build/owned-agent-projects/) to create and
-run one locally.
+An agent-focused install can be verified with `kujo doctor agent`. Continue to [Repository-owned Agent Projects](/build/owned-agent-projects/) to create and run one locally.
 
 ## Troubleshooting
 

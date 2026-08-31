@@ -25,19 +25,15 @@ curl -fsSL https://kujolang.ai/install.sh | bash -s -- --group agent
 kujo agent new my-agent --profile basic --install
 ```
 
-The basic profile is offline and deterministic. Continue through [Agent
-Projects](/build/owned-agent-projects/), then select a
-[profile](/build/agent-profiles/), add [credentials](/build/agent-credentials/)
-only if a live provider is required, and use the [operations
-guide](/build/agent-operations/) for diagnostics, evaluation, and isolation.
+The basic profile is offline and deterministic. Continue through [Agent Projects](/build/owned-agent-projects/), then select a [profile](/build/agent-profiles/), add [credentials](/build/agent-credentials/) only if a live provider is required, and use the [operations guide](/build/agent-operations/) for diagnostics, evaluation, and isolation.
 
 For custom application code, add responsibility in layers:
 
 For a cross-cutting Kujo project, begin with the [`kujo-way-development`](/collections/skills/#start-with-the-kujo-way) skill so repository ownership, contracts, capability boundaries, deterministic execution, and completion evidence are decided before implementation.
 
-1. [AI SDK](/tools/ai-sdk/) for normalized chat and embedding contracts.
-2. [Agents SDK](/tools/agents-sdk/) for tools, approvals, handoffs, stores, and tracing.
-3. [Dispatch](/tools/dispatch/) for resumable, auditable workflows.
-4. [Watchdog](/tools/watchdog/) for local request, cost, latency, error, and audit visibility.
+- [AI SDK](/tools/ai-sdk/) for normalized chat and embedding contracts.
+- [Agents SDK](/tools/agents-sdk/) for tools, approvals, handoffs, stores, and tracing.
+- [Dispatch](/tools/dispatch/) for resumable, auditable workflows.
+- [Watchdog](/tools/watchdog/) for local request, cost, latency, error, and audit visibility.
 
 Choose a package from the [provider index](/ecosystem/providers/) when a live model is part of the question. Begin with fixture mode when it is not. Add live credentials only at the boundary where they are needed.

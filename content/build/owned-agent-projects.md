@@ -15,10 +15,7 @@ next: /build/agent-profiles/
 tags: [ai, agents, projects, build]
 ---
 
-An Agent Project keeps the agent in your repository. Its instructions, model
-preference, skills, tools, knowledge, policies, workflows, evaluation, exact
-dependency pins, and runtime boundaries remain reviewable files instead of
-hidden hosted state.
+An Agent Project keeps the agent in your repository. Its instructions, model preference, skills, tools, knowledge, policies, workflows, evaluation, exact dependency pins, and runtime boundaries remain reviewable files instead of hidden hosted state.
 
 ## Install the focused agent toolchain
 
@@ -27,8 +24,7 @@ curl -fsSL https://kujolang.ai/install.sh | bash -s -- --group agent
 export PATH="$HOME/.local/bin:$PATH"
 ```
 
-The public installer downloads published Kujo `v1.1.0` release assets, verifies
-their checksums, and installs the focused Agent Project dependencies.
+The public installer downloads published Kujo `v1.1.0` release assets, verifies their checksums, and installs the focused Agent Project dependencies.
 
 ## Create and run an agent
 
@@ -38,9 +34,7 @@ cd my-agent
 kujo agent run "What can you help me with?"
 ```
 
-The `basic` profile is deterministic and offline by default. It needs no API
-key, provider network, Watchdog, or RunLedger. The `--install` flag resolves the
-exact Kennel dependency pins after scaffolding so the project is ready to run.
+The `basic` profile is deterministic and offline by default. It needs no API key, provider network, Watchdog, or RunLedger. The `--install` flag resolves the exact Kennel dependency pins after scaffolding so the project is ready to run.
 
 ## Prove the complete local lifecycle
 
@@ -50,14 +44,9 @@ kujo agent inspect
 kujo agent eval
 ```
 
-There is deliberately no `kujo agent doctor`. Agent diagnostics extend Kujo's
-canonical Doctor architecture through `kujo doctor agent`. Use `--json` with
-Doctor, Inspect, Run, or Eval when automation needs a versioned machine result.
+There is deliberately no `kujo agent doctor`. Agent diagnostics extend Kujo's canonical Doctor architecture through `kujo doctor agent`. Use `--json` with Doctor, Inspect, Run, or Eval when automation needs a versioned machine result.
 
-`agent.project.json` is the root contract. Kujo discovers the project from a
-nested directory without crossing a Git boundary, validates every referenced
-path stays inside the project, and uses immutable Kennel pins instead of sibling
-checkout dependencies.
+`agent.project.json` is the root contract. Kujo discovers the project from a nested directory without crossing a Git boundary, validates every referenced path stays inside the project, and uses immutable Kennel pins instead of sibling checkout dependencies.
 
 ## Continue building
 
@@ -66,9 +55,6 @@ checkout dependencies.
 - [Operate, evaluate, and harden an agent](/build/agent-operations/)
 - [Explore agent examples and starter sets](https://agents.kujolang.ai/)
 
-The working sources are the [self-hosted example](https://github.com/kujolang/kujo/tree/main/examples/owned-agent-project),
-the [lifecycle workflow](https://github.com/kujolang/kujo-workflows/tree/main/owned-agent-project),
-and the [implementation guide](https://github.com/kujolang/kujo/blob/main/docs/BUILD_AN_AGENT.md).
+The working sources are the [self-hosted example](https://github.com/kujolang/kujo/tree/main/examples/owned-agent-project), the [lifecycle workflow](https://github.com/kujolang/kujo-workflows/tree/main/owned-agent-project), and the [implementation guide](https://github.com/kujolang/kujo/blob/main/docs/BUILD_AN_AGENT.md).
 
-This page appears in `llms.txt` and the static WebMCP index. Those discovery
-surfaces expose documentation only; they never grant execution authority.
+This page appears in `llms.txt` and the static WebMCP index. Those discovery surfaces expose documentation only; they never grant execution authority.

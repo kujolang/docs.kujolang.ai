@@ -27,7 +27,7 @@ Kujo is a programming language and local-first ecosystem for building, checking,
 
 ## What happens next
 
-1. Install the CLI or a focused tool group and verify the environment.
-2. Run `hello.kujo` or scaffold a basic Agent Project.
-3. Choose a build path or a review path.
-4. Add credentials and external services only when that path needs them.
+- Install the CLI or a focused tool group and verify the environment.
+- Run `hello.kujo` or scaffold a basic Agent Project.
+- Choose a build path or a review path.
+- Add credentials and external services only when that path needs them.

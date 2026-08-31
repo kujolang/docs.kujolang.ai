@@ -16,9 +16,7 @@ next: /build/agent-credentials/
 tags: [ai, agents, profiles, integrations]
 ---
 
-Start with the smallest profile that expresses the agent you intend to own.
-Every profile produces the same repository-owned contract and can be reviewed
-before anything is installed or run.
+Start with the smallest profile that expresses the agent you intend to own. Every profile produces the same repository-owned contract and can be reviewed before anything is installed or run.
 
 ```bash
 kujo agent new my-agent --profile basic --install
@@ -36,10 +34,7 @@ kujo agent new my-agent --profile basic --install
 | `observable` | Watchdog adapter configuration and RunLedger receipts | Watchdog only when you enable its proxy; RunLedger is installed with the profile |
 | `full` | Compatible local composition, including Relay | Requirements of the capabilities you enable |
 
-`--install` is an explicit convenience boundary. Without it, Kujo only writes
-the project. With it, Kujo asks Kennel to install the exact revisions in the
-generated manifest. Optional external services are reported by Inspect and
-Doctor; they are not silently treated as mandatory for unrelated commands.
+`--install` is an explicit convenience boundary. Without it, Kujo only writes the project. With it, Kujo asks Kennel to install the exact revisions in the generated manifest. Optional external services are reported by Inspect and Doctor; they are not silently treated as mandatory for unrelated commands.
 
 ## Inspect before running
 
@@ -49,14 +44,11 @@ kujo agent inspect
 kujo doctor agent
 ```
 
-Inspect separates required dependencies, optional external services,
-credential names, policies, and integration paths. Doctor verifies the local
-toolchain and can add live probes with `--deep`.
+Inspect separates required dependencies, optional external services, credential names, policies, and integration paths. Doctor verifies the local toolchain and can add live probes with `--deep`.
 
 ## Understand integration ownership
 
-The generated repository owns the configuration for each integration. Kujo
-does not hide a second hosted copy of the contract.
+The generated repository owns the configuration for each integration. Kujo does not hide a second hosted copy of the contract.
 
 - [Agents SDK](/tools/agents-sdk/) owns agent execution primitives.
 - [AI SDK](/tools/ai-sdk/) owns normalized provider requests.
@@ -66,5 +58,4 @@ does not hide a second hosted copy of the contract.
 - [Workcell](/tools/workcell/) owns the container isolation boundary.
 - [Watchdog](/tools/watchdog/) and [RunLedger](/tools/runledger/) add optional telemetry and receipts.
 
-Next, [configure credentials and connectors](/build/agent-credentials/) or
-[review operational controls](/build/agent-operations/).
+Next, [configure credentials and connectors](/build/agent-credentials/) or [review operational controls](/build/agent-operations/).

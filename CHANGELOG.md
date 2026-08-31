@@ -4,21 +4,15 @@
 
 ### Added
 
-- Documented the complete repository-owned Agent Project lifecycle with focused
-  installation, scaffold-and-install ergonomics, all seven profiles, reusable
-  credentials and connectors, local operations, evaluation, Workcell isolation,
-  the self-hosted example, and executable workflow.
-- Added separate task guides for Agent profiles, credential management, and
-  production operations, all included in `llms.txt` and WebMCP discovery.
+- Documented the complete repository-owned Agent Project lifecycle with focused installation, scaffold-and-install ergonomics, all seven profiles, reusable credentials and connectors, local operations, evaluation, Workcell isolation, the self-hosted example, and executable workflow.
+- Added separate task guides for Agent profiles, credential management, and production operations, all included in `llms.txt` and WebMCP discovery.
 - Added a source-backed provider index covering all 25 current Kujo provider packages, immutable release tags, official provider references, authentication boundaries, native APIs, and AI SDK availability.
 
 ### Changed
 
-- Updated the install, Start Here, path selection, AI build path, Kujo tool, and
-  foundation pages for the v1.1.0 release and official `kujolang.ai` installer.
+- Updated the install, Start Here, path selection, AI build path, Kujo tool, and foundation pages for the v1.1.0 release and official `kujolang.ai` installer.
 - Promoted Agent Projects across the documentation home and Build directory.
-- Added a generated-site contract for the Agent Development Platform routes,
-  commands, metadata, internal links, `llms.txt`, sitemap, and WebMCP index.
+- Added a generated-site contract for the Agent Development Platform routes, commands, metadata, internal links, `llms.txt`, sitemap, and WebMCP index.
 
 ## [1.2.0] - 2026-08-27
 

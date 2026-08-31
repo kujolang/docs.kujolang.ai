@@ -56,13 +56,8 @@ Start here, then add [Kennel](/tools/kennel/) when the project needs dependencie
 
 ## Boundaries
 
-Kujo `v1.1.0` is the current published stable release. The CLI now coordinates
-repository-owned Agent Projects, but their provider, runtime, retrieval,
-evaluation, observability, and package capabilities remain explicit ecosystem
-dependencies rather than hidden core services.
+Kujo `v1.1.0` is the current published stable release. The CLI now coordinates repository-owned Agent Projects, but their provider, runtime, retrieval, evaluation, observability, and package capabilities remain explicit ecosystem dependencies rather than hidden core services.
 
 ## Reference
 
-Use `kujo --help`, `kujo agent --help`, `kujo doctor --json`, the [language
-basics](/learn/language-basics/) guide, the [Agent Projects
-guide](/build/owned-agent-projects/), and the [Kujo repository](https://github.com/kujolang/kujo).
+Use `kujo --help`, `kujo agent --help`, `kujo doctor --json`, the [language basics](/learn/language-basics/) guide, the [Agent Projects guide](/build/owned-agent-projects/), and the [Kujo repository](https://github.com/kujolang/kujo).
