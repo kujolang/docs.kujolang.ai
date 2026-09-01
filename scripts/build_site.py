@@ -163,6 +163,9 @@ def finalize_html(output: Path) -> None:
         r'\s*<section class="docs-prerequisites"[^>]*>'
         r'\s*<h2[^>]*>Prerequisites</h2>\s*</section>'
     )
+    section_badge = re.compile(
+        r'<span class="docs-badge docs-badge-section"><span>Section</span>.*?</span>'
+    )
     listing_link = re.compile(
         r'(<li class="listing-card">.*?<h2 class="listing-card-title">'
         r'<a href="(?P<href>[^"]+)"[^>]*>(?P<title>[^<]+)</a></h2>.*?'
@@ -194,6 +197,7 @@ def finalize_html(output: Path) -> None:
     for path in output.rglob("*.html"):
         html = path.read_text(encoding="utf-8")
         html = empty_prerequisites.sub("", html)
+        html = section_badge.sub("", html)
         html = listing_link.sub(
             lambda match: f'{match.group(1)}View {match.group("title")}{match.group(4)}',
             html,

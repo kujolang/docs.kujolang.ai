@@ -36,6 +36,14 @@ for route in \
   require_file "$route"
 done
 
+for route in \
+  start-here/index.html \
+  build/owned-agent-projects/index.html \
+  tools/kujo/index.html; do
+  reject_text "$route" 'class="docs-eyebrow"'
+  reject_text "$route" 'docs-badge-section'
+done
+
 require_text "install/index.html" "https://kujolang.ai/install.sh"
 require_text "install/index.html" "--group agent"
 require_text "build/owned-agent-projects/index.html" "kujo agent new my-agent --profile basic --install"
