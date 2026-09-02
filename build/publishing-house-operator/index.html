@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="kujo-light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		(function() {
+			try {
+				if (window.localStorage.getItem('sk-theme') === 'kujo-dark') {
+					document.documentElement.dataset.theme = 'kujo-dark';
+				}
+			} catch (error) {}
+		})();
+	</script>
+	<title>Publishing House operator | Kujo Docs</title>
+	<meta name="description" content="Run publication-profile-driven editorial work through a resumable, policy-bound Kujo control loop.">
+	<meta name="keywords" content="SSG, Static Site Generator">
+	<meta name="author" content="Kujo">
+	<link rel="canonical" href="https://docs.kujolang.ai/build/publishing-house-operator/">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/assets/img/kujo-logomark-black.svg" color="#000000">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="application-name" content="Kujo Docs">
+	<meta name="apple-mobile-web-app-title" content="Kujo Docs">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Publishing House operator">
+	<meta property="og:description" content="Run publication-profile-driven editorial work through a resumable, policy-bound Kujo control loop.">
+	<meta property="og:url" content="https://docs.kujolang.ai/build/publishing-house-operator/">
+	<meta property="og:type" content="article">
+	<meta property="og:site_name" content="Kujo Docs">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Publishing House operator">
+	<meta name="twitter:description" content="Run publication-profile-driven editorial work through a resumable, policy-bound Kujo control loop.">
+
+	<link href="../../assets/css/fonts.css" rel="stylesheet">
+	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Publishing House operator","name":"Publishing House operator","description":"Run publication-profile-driven editorial work through a resumable, policy-bound Kujo control loop.","url":"https://docs.kujolang.ai/build/publishing-house-operator/","author":{"@type":"Person","name":"Unknown Author"},"publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="docs-topbar" id="navigation">
+	<div class="docs-topbar-row">
+		<a class="docs-brand" href="../../index.html"><img class="docs-brand-mark" src="../../assets/img/kujo-logomark-black.svg" alt=""> <span>Docs</span></a>
+		<label class="docs-search-shell">
+			<span class="sr-only">Search documentation</span>
+			<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
+		</label>
+		<div class="docs-header-actions">
+			<button class="docs-theme-button docs-icon-button" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-docs-theme>
+				<svg class="docs-moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c.132 0 .263 .003 .393 .008a7.5 7.5 0 0 0 7.599 9.6A9 9 0 1 1 12 3"/></svg>
+				<svg class="docs-sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-4 0a4 4 0 1 0 8 0 4 4 0 1 0-8 0M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+			</button>
+			<button class="docs-menu-button docs-icon-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu>
+				<svg class="docs-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+				<svg class="docs-close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+			</button>
+		</div>
+	</div>
+	<nav id="primary-navigation" class="docs-primary-nav" aria-label="Primary navigation">
+		<a href="/start-here/">Start here</a>
+		<a href="/learn/">Learn Kujo</a>
+		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
+		<a href="/tools/">Tools</a>
+		<a href="/showcases/">Showcases</a>
+	</nav>
+</header>
+<div id="docs-search-results" class="docs-search-results" aria-live="polite"></div>
+<main class="docs-shell" id="main-content">
+	<aside class="docs-sidebar" aria-label="Documentation sections">
+		<p class="docs-sidebar-label">Browse</p>
+		<ul>
+			<li><a href="/start-here/">Start here</a></li>
+			<li><a href="/install/">Install Kujo</a></li>
+			<li><a href="/quickstart/">Quickstart</a></li>
+			<li><a href="/choose-a-path/">Choose a path</a></li>
+			<li><a href="/learn/">Learn Kujo</a></li>
+			<li><a href="/build/">Build with Kujo</a></li>
+			<li><a href="/review/">Reviewable work</a></li>
+			<li><a href="/tools/">Tools</a></li>
+			<li><a href="/showcases/">Showcases</a></li>
+			<li><a href="/collections/">Collections</a></li>
+			<li><a href="/ecosystem/">Ecosystem</a></li>
+			<li><a href="/reference/">Reference</a></li>
+			<li><a href="/security/">Security model</a></li>
+			<li><a href="/release-boundaries/">Release boundaries</a></li>
+			<li><a href="/support/">Support</a></li>
+		</ul>
+	</aside>
+	<article class="docs-article">
+		<h1 id="publishing-house-operator">Publishing House operator</h1><p class="docs-description">Run publication-profile-driven editorial work through a resumable, policy-bound Kujo control loop.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>all</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>fixture-operational; live adapters required</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-02</span></div>
+		<div class="docs-body"><p>The Publishing House Operator is the small, durable control layer above Kujo&apos;s eleven Publishing House workflows. It wakes for a manual, scheduled, or event-driven run, reads eligible work from <a href="/tools/storydesk/">StoryDesk</a>, acquires a local lease, selects the narrowest workflow, records checkpoints and receipts, and exits. Agents are bounded workers; they are not the scheduler, state database, or publication authority.</p>
+<h2 id="ownership">Ownership</h2>
+<pre><code class="language-mermaid">flowchart TD
+Scheduler[Manual, cron, launchd, or event] --&gt; Operator[Publishing House Operator]
+Operator --&gt; StoryDesk[StoryDesk: editorial queue and state]
+Operator --&gt; Dispatch[Dispatch: retry and resume]
+Dispatch --&gt; Workers[Bounded Agents SDK workers]
+Workers --&gt; Dossier[Dossier: claims and evidence]
+Workers --&gt; BluePencil[BluePencil: independent review]
+Workers --&gt; GalleyPack[GalleyPack: versions and lineage]
+Workers --&gt; AssetWorks[AssetWorks and Howl: media]
+GalleyPack --&gt; VersionSeal[VersionSeal: exact-version authority]
+VersionSeal --&gt; PressWire[PressWire: bounded publication effects]
+PressWire --&gt; Verification[SiteProbe and Lens: verification]
+Verification --&gt; Learning[ReaderSignal and WebOps: measurement]
+Learning --&gt; StoryDesk</code></pre>
+<p>The operator stores leases, scheduling checkpoints, notifications, and references. It does not duplicate the durable responsibilities of the Publishing House tools. Publication profiles keep repository paths, voice, policy, commands, destinations, and verification rules out of agent prompts.</p>
+<h2 id="configure-publications">Configure publications</h2>
+<p>The checked-in profiles describe:</p>
+<ul>
+<li>the personal blog, with an author voice distinct from Kujo product copy;</li>
+<li><code>kujolang.ai</code>, including Markdown source, Kujo SSG, SiteKit validation, Howl cards, and GitHub Pages behavior;</li>
+<li><code>docs.kujolang.ai</code>, with source-backed technical claims and docs-specific build checks;</li>
+<li><code>agents.kujolang.ai</code>, where <code>kujo-agents</code> remains canonical and the site is a generated representation.</li>
+</ul>
+<p>Profiles include source-of-truth paths, audience and mission, voice and style, formats and frontmatter, evidence and research rules, linking and search policy, assets and accessibility, build/test/preview commands, deployment, public verification, measurement, approval, refresh, correction, and rollback behavior. Adding another publication is configuration work:</p>
+<pre><code class="language-bash">publishing-house-operator/bin/publishing-house --json publication add ./my-publication.json</code></pre>
+<h2 id="intake-and-planning">Intake and planning</h2>
+<p>SourcePack preserves the original bytes of notes, transcripts, structured files, or other local sources before creating a normalized editorial view. Repeating the same intake returns the same deterministic SourcePack and StoryDesk identity.</p>
+<pre><code class="language-bash">publishing-house-operator/bin/publishing-house --json intake \
+--publication personal-blog \
+--format technical-essay \
+--priority high \
+--source ./rambled-notes.md</code></pre>
+<p>Weekly, monthly, campaign, release, and evergreen plans import deterministic StoryDesk commissions. Dependencies, priorities, publication windows, series, clusters, adaptations, and refresh lineage remain attached to the work.</p>
+<pre><code class="language-bash">publishing-house-operator/bin/publishing-house --json plan import ./september-2026.json</code></pre>
+<h2 id="operate-the-queue">Operate the queue</h2>
+<pre><code class="language-bash">export KUJO_REPOS=/path/to/kujo-repos
+export PUBLISHING_HOUSE_STATE=/private/path/to/publishing-house-state
+publishing-house-operator/bin/publishing-house --json init
+publishing-house-operator/bin/publishing-house --json doctor
+publishing-house-operator/bin/publishing-house --json tick --limit 4
+publishing-house-operator/bin/publishing-house --json status
+publishing-house-operator/bin/publishing-house --json approvals
+publishing-house-operator/bin/publishing-house --json blocked
+publishing-house-operator/bin/publishing-house --json history</code></pre>
+<p>A tick is lease-protected, idempotent, retry-bounded, checkpointed, and safe to resume. It considers only dependency-ready work within policy and resource limits. An item failure does not stop unrelated publications. Routine success stays in summaries; approvals, evidence conflicts, source gaps, failures, policy violations, and deadline or budget risks become exception notifications.</p>
+<p>The scheduler remains deliberately simple. Cron or launchd should invoke the same <code>tick</code> command with absolute state and repository paths. Event systems record a candidate with <code>event --input FILE</code>, then trigger a normal tick. Editorial routing remains inside the operator rather than the scheduler.</p>
+<h2 id="approval-and-publication-safety">Approval and publication safety</h2>
+<p><code>REQUIRE_EXACT_HUMAN_APPROVAL</code> is the default. A profile may explicitly allow narrow, low-risk classes such as canonical agent-site sync, metadata fixes, or strongly sourced documentation corrections to flow automatically. The permission is publication-specific, content-class-specific, checksum-aware, and auditable. A changed artifact checksum invalidates its approval.</p>
+<p><a href="/tools/versionseal/">VersionSeal</a> remains authoritative for the approved version. <a href="/tools/presswire/">PressWire</a> remains the only publication-effect boundary. A successful file write, commit, or push is not a verified publication; configured public checks must pass before the record can claim success. Corrections, reversals, and unpublishing create new authorized effects and preserve the previous receipts.</p>
+<h2 id="events-documentation-and-learning">Events, documentation, and learning</h2>
+<p>Event intake classifies releases, CLI/API/contract changes, agent changes, broken pages, stale evidence, search opportunities, and performance changes. It creates policy-selected StoryDesk candidates rather than publishing directly.</p>
+<p>Documentation claims must trace to source, tests, CLI help, schemas, contracts, or release artifacts. Agent-site work distinguishes a canonical edit in <code>kujo-agents</code> from regeneration and verification of <code>agents.kujolang.ai</code>. ReaderSignal and WebOps observations may propose refreshes, follow-ups, internal-link changes, adaptations, or retirement; they do not silently rewrite published work or overstate causation.</p>
+<h2 id="current-readiness">Current readiness</h2>
+<p>Deterministic fixture mode proves SourcePack intake, plan import, workflow routing, evidence and review artifacts, exact-version approval, adaptation lineage, resumability, duplicate prevention, local publication effects, and verification across the eleven Publishing House workflows.</p>
+<p>Live Agents SDK model and retrieval adapters, authenticated Git push/PR/merge effects, and live measurement credentials are not included in the checked-in configuration. Missing capabilities fail closed. Use <code>--fixture</code> only for rehearsals; a non-fixture run never substitutes fixture output silently.</p>
+<p>See the <a href="https://github.com/kujolang/kujo-workflows/tree/main/publishing-house-operator">Publishing House Operator source</a> and the <a href="/build/editorial-publishing/">Editorial publishing ownership guide</a>.</p></div>
+	</article>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#ownership">Ownership</a></li><li class="toc-level-2"><a href="#configure-publications">Configure publications</a></li><li class="toc-level-2"><a href="#intake-and-planning">Intake and planning</a></li><li class="toc-level-2"><a href="#operate-the-queue">Operate the queue</a></li><li class="toc-level-2"><a href="#approval-and-publication-safety">Approval and publication safety</a></li><li class="toc-level-2"><a href="#events-documentation-and-learning">Events, documentation, and learning</a></li><li class="toc-level-2"><a href="#current-readiness">Current readiness</a></li></ol></nav>
+</main>
+
+<footer class="docs-footer" id="footer">
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.3.0</span></div>
+	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
+</footer>
+<script src="../../assets/sitekit/sitekit.js"></script>
+<script src="../../assets/js/docs.js"></script>
+<script src="../../assets/js/kujo-webmcp.js" data-kujo-webmcp data-kujo-site-index="../../.well-known/kujo-site-index.json" defer></script></body>
+</html>

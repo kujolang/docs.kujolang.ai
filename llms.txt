@@ -12,6 +12,7 @@ A local-first path through the Kujo language and ecosystem.
 - [Editorial publishing](https://docs.kujolang.ai/build/editorial-publishing/) — Move a commissioned idea through evidence, review, packaging, approval, publication, and learning.
 - [Knowledge and retrieval](https://docs.kujolang.ai/build/knowledge-and-retrieval/) — Ingest local knowledge and answer with namespaces, citations, and offline fallbacks.
 - [Repository-owned Agent Projects](https://docs.kujolang.ai/build/owned-agent-projects/) — Install Kujo's agent platform, create a repository-owned agent, and prove its local lifecycle.
+- [Publishing House operator](https://docs.kujolang.ai/build/publishing-house-operator/) — Run publication-profile-driven editorial work through a resumable, policy-bound Kujo control loop.
 - [Web operations](https://docs.kujolang.ai/build/web-operations/) — Move from site source to crawl evidence, search data, content relationships, browser proof, and bounded fixes.
 - [Workflows and approvals](https://docs.kujolang.ai/build/workflows-and-approvals/) — Turn a sequence of steps into bounded, resumable, and auditable work.
 - [Choose a path](https://docs.kujolang.ai/choose-a-path/) — Start with an intent and one small next step instead of browsing the whole ecosystem.

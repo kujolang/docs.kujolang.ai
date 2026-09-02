@@ -149,6 +149,30 @@
       "text": "An Agent Project keeps the agent in your repository. Its instructions, model preference, skills, tools, knowledge, policies, workflows, evaluation, exact dependency pins, and runtime boundaries remain reviewable files instead of hidden hosted state. Install the focused agent toolchain The public installer downloads published Kujo v1.1.0 release assets, verif"
     },
     {
+      "title": "Publishing House operator",
+      "description": "Run publication-profile-driven editorial work through a resumable, policy-bound Kujo control loop.",
+      "url": "https://docs.kujolang.ai/build/publishing-house-operator/",
+      "route": "build/publishing-house-operator/",
+      "section": "Build with Kujo",
+      "audience": "all",
+      "difficulty": "advanced",
+      "status": "fixture-operational; live adapters required",
+      "version": "current",
+      "tags": [
+        "[editorial, publishing, automation, approvals, StoryDesk, Dispatch]"
+      ],
+      "headings": [
+        "Ownership",
+        "Configure publications",
+        "Intake and planning",
+        "Operate the queue",
+        "Approval and publication safety",
+        "Events, documentation, and learning",
+        "Current readiness"
+      ],
+      "text": "The Publishing House Operator is the small, durable control layer above Kujo's eleven Publishing House workflows. It wakes for a manual, scheduled, or event-driven run, reads eligible work from StoryDesk /tools/storydesk/ , acquires a local lease, selects the narrowest workflow, records checkpoints and receipts, and exits. Agents are bounded workers; they ar"
+    },
+    {
       "title": "Web operations",
       "description": "Move from site source to crawl evidence, search data, content relationships, browser proof, and bounded fixes.",
       "url": "https://docs.kujolang.ai/build/web-operations/",
