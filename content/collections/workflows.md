@@ -9,7 +9,7 @@ audience: developer
 difficulty: intermediate
 status: local scope verified
 version: current
-last_updated: 2026-08-23
+last_updated: 2026-09-02
 scope: local-first
 source_repo: kujo-workflows
 previous: /collections/skills/
@@ -25,5 +25,7 @@ Workflows connect a task contract to execution and evidence. Each pack should sa
 ```
 
 The collection is a locally verified `0.3.0` technical preview. Kits have individual Ready, Limited, or Experimental labels; hosted runners and blanket production readiness are not claimed. Use [Dispatch](/tools/dispatch/) for resumable workflow primitives and [RunLedger](/tools/runledger/) for a run receipt.
+
+The [Publishing House Operator](/build/publishing-house-operator/) composes the eleven editorial workflow kits into a lease-protected daily control loop while preserving StoryDesk, VersionSeal, PressWire, and the other tools' separate authority.
 
 See the [Kujo Workflows repository](https://github.com/kujolang/kujo-workflows).

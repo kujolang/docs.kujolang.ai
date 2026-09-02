@@ -1,5 +1,15 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- Added a source-backed guide to the Publishing House Operator control layer, including ownership, publication profiles, SourcePack intake, plans, daily operation, approval boundaries, event routing, scheduling, and current fail-closed live-adapter limits.
+
+### Changed
+
+- Connected the Editorial publishing and Workflows collection guides to the new operator and its four initial publication profiles.
+
 ## [1.3.0] - 2026-08-30
 
 ### Added

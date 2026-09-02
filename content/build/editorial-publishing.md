@@ -10,7 +10,7 @@ audience: all
 difficulty: advanced
 status: fixture-first local scope
 version: current
-last_updated: 2026-08-23
+last_updated: 2026-09-02
 tags: [editorial, publishing, evidence, approvals]
 ---
 
@@ -25,4 +25,6 @@ The publishing-house tools keep ownership and evidence separate:
 7. [PressWire](/tools/presswire/) owns bounded publication effects, reconciliation, corrections, and receipts.
 8. [ReaderSignal](/tools/readersignal/) owns privacy-bounded measurements and evidence-linked learning.
 
-The `kujo-workflows` collection provides eleven fixture-tested publishing-house kits and a locked local installer. No tool silently grants authority held by another stage, and fixture proof does not establish live-provider or organization-specific production readiness.
+The [Publishing House Operator](/build/publishing-house-operator/) is the durable control loop above these tools and the eleven fixture-tested workflow kits. It reads StoryDesk, delegates resumable execution to Dispatch, invokes bounded workers, records checkpoints, routes exact-version approval, and lets PressWire own publication effects. Publication profiles currently cover the personal blog, `kujolang.ai`, `docs.kujolang.ai`, and `agents.kujolang.ai` without forking the agent roles.
+
+The operator is fixture-operational. Live model/retrieval workers, authenticated Git publication effects, and live measurement credentials remain explicit, fail-closed adapter work. No tool silently grants authority held by another stage, and fixture proof does not establish live-provider or organization-specific production readiness.
