@@ -103,7 +103,7 @@
       "section": "Build with Kujo",
       "audience": "all",
       "difficulty": "advanced",
-      "status": "fixture-first local scope",
+      "status": "production-capable control plane",
       "version": "current",
       "tags": [
         "[editorial, publishing, evidence, approvals]"
@@ -156,7 +156,7 @@
       "section": "Build with Kujo",
       "audience": "all",
       "difficulty": "advanced",
-      "status": "fixture-operational; live adapters required",
+      "status": "production-capable control plane",
       "version": "current",
       "tags": [
         "[editorial, publishing, automation, approvals, StoryDesk, Dispatch]"
@@ -166,9 +166,10 @@
         "Configure publications",
         "Intake and planning",
         "Operate the queue",
+        "Configure live execution",
         "Approval and publication safety",
         "Events, documentation, and learning",
-        "Current readiness"
+        "Production deployment gates"
       ],
       "text": "The Publishing House Operator is the small, durable control layer above Kujo's eleven Publishing House workflows. It wakes for a manual, scheduled, or event-driven run, reads eligible work from StoryDesk /tools/storydesk/ , acquires a local lease, selects the narrowest workflow, records checkpoints and receipts, and exits. Agents are bounded workers; they ar"
     },
@@ -180,7 +181,7 @@
       "section": "Build with Kujo",
       "audience": "developer",
       "difficulty": "intermediate",
-      "status": "fixture-first local scope",
+      "status": "production-capable workflows",
       "version": "current",
       "tags": [
         "[webops, websites, search, content]"
