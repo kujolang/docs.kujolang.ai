@@ -171,7 +171,7 @@
         "Events, documentation, and learning",
         "Production deployment gates"
       ],
-      "text": "The Publishing House Operator is the small, durable control layer above Kujo's eleven Publishing House workflows. It wakes for a manual, scheduled, or event-driven run, reads eligible work from StoryDesk /tools/storydesk/ , acquires a local lease, selects the narrowest workflow, records checkpoints and receipts, and exits. Agents are bounded workers; they ar"
+      "text": "The Publishing House Operator is the small, durable control layer above Kujo's eleven Publishing House workflows, released in kujo-workflows 0.4.0 https://github.com/kujolang/kujo-workflows/releases/tag/v0.4.0 . It wakes for a manual, scheduled, or event-driven run, reads eligible work from StoryDesk /tools/storydesk/ , acquires a local lease, selects the na"
     },
     {
       "title": "Web operations",
@@ -270,7 +270,7 @@
         "[collection, workflows, receipts]"
       ],
       "headings": [],
-      "text": "Workflows connect a task contract to execution and evidence. Each pack should say what it consumes, what it runs, and where the receipt lives. The collection is a locally verified 0.3.0 technical preview. Kits have individual Ready, Limited, or Experimental labels; hosted runners and blanket production readiness are not claimed. Use Dispatch /tools/dispatch/"
+      "text": "Workflows connect a task contract to execution and evidence. Each pack should say what it consumes, what it runs, and where the receipt lives. The collection is the locally verified 0.4.0 release https://github.com/kujolang/kujo-workflows/releases/tag/v0.4.0 , with 38 workflow kits. Kits have individual Ready, Limited, or Experimental labels; hosted runners "
     },
     {
       "title": "Core / Foundation",
