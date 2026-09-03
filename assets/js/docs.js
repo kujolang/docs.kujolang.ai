@@ -362,6 +362,21 @@
 		shell.appendChild(button);
 	});
 
+	var updateScrollableCodeBlocks = function() {
+		document.querySelectorAll('pre').forEach(function(block) {
+			if (block.scrollWidth > block.clientWidth + 1) {
+				block.tabIndex = 0;
+			} else {
+				block.removeAttribute('tabindex');
+			}
+		});
+	};
+	updateScrollableCodeBlocks();
+	window.addEventListener('load', updateScrollableCodeBlocks, { once: true });
+	window.addEventListener('resize', function() {
+		window.requestAnimationFrame(updateScrollableCodeBlocks);
+	});
+
 	document.querySelectorAll('.docs-body h2, .docs-body h3').forEach(function(heading) {
 		if (heading.id) {
 			return;

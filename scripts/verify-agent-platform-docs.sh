@@ -93,5 +93,10 @@ require_text "llms.txt" "Repository-owned Agent Projects"
 require_text ".well-known/kujo-site-index.json" "owned-agent-projects"
 require_text ".well-known/kujo-site-index.json" "agent-credentials"
 require_text "build/owned-agent-projects/index.html" "data-kujo-webmcp"
+require_text "build/publishing-house-operator/index.html" "Configure live execution"
+require_text "build/publishing-house-operator/index.html" "PUBLISHING_HOUSE_PHASE_ADAPTER"
+require_text "build/publishing-house-operator/index.html" "--json resume ITEM_ID"
+reject_text "build/publishing-house-operator/index.html" "fixture-operational"
+require_text "assets/js/docs.js" "updateScrollableCodeBlocks"
 
 printf 'Agent platform documentation contract passed.\n'
