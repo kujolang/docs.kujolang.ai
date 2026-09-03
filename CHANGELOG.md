@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Updated the Workflows collection and Publishing House guides for the official
+  kujo-workflows 0.4.0 release, its 38-kit catalog, and the new Owned Agent
+  Project workflow.
+
 - Reframed the Publishing House Operator as a production-capable control plane
   and documented its live phase-adapter contract, checksum-bound receipts,
   bounded retries, explicit resume flow, and deployment authority gates.

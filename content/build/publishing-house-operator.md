@@ -15,7 +15,7 @@ source_repo: kujo-workflows
 tags: [editorial, publishing, automation, approvals, StoryDesk, Dispatch]
 ---
 
-The Publishing House Operator is the small, durable control layer above Kujo's eleven Publishing House workflows. It wakes for a manual, scheduled, or event-driven run, reads eligible work from [StoryDesk](/tools/storydesk/), acquires a local lease, selects the narrowest workflow, records checkpoints and receipts, and exits. Agents are bounded workers; they are not the scheduler, state database, or publication authority.
+The Publishing House Operator is the small, durable control layer above Kujo's eleven Publishing House workflows, released in [kujo-workflows 0.4.0](https://github.com/kujolang/kujo-workflows/releases/tag/v0.4.0). It wakes for a manual, scheduled, or event-driven run, reads eligible work from [StoryDesk](/tools/storydesk/), acquires a local lease, selects the narrowest workflow, records checkpoints and receipts, and exits. Agents are bounded workers; they are not the scheduler, state database, or publication authority.
 
 ## Ownership
 
@@ -129,4 +129,4 @@ The checked-in operator now has the live execution boundary, validated receipts,
 
 Each installation still supplies its chosen model and retrieval providers through the phase adapter. Repositories that permit automated Git effects also require a configured, authenticated PressWire Git/static provider, and enabled measurement sources require their ReaderSignal or WebOps credentials. These are explicit deployment gates because they carry provider, repository, and publication authority. Missing gates block the affected item; they do not cause a fixture fallback or a false success.
 
-See the [Publishing House Operator source](https://github.com/kujolang/kujo-workflows/tree/main/publishing-house-operator) and the [Editorial publishing ownership guide](/build/editorial-publishing/).
+See the [Publishing House Operator 0.4.0 source](https://github.com/kujolang/kujo-workflows/tree/v0.4.0/publishing-house-operator), the [official release](https://github.com/kujolang/kujo-workflows/releases/tag/v0.4.0), and the [Editorial publishing ownership guide](/build/editorial-publishing/).
