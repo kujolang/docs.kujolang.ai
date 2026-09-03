@@ -8,7 +8,7 @@ nav_title: Publishing House operator
 order: 65
 audience: all
 difficulty: advanced
-status: fixture-operational; live adapters required
+status: production-capable control plane
 version: current
 last_updated: 2026-09-02
 source_repo: kujo-workflows
@@ -86,9 +86,30 @@ publishing-house-operator/bin/publishing-house --json blocked
 publishing-house-operator/bin/publishing-house --json history
 ```
 
-A tick is lease-protected, idempotent, retry-bounded, checkpointed, and safe to resume. It considers only dependency-ready work within policy and resource limits. An item failure does not stop unrelated publications. Routine success stays in summaries; approvals, evidence conflicts, source gaps, failures, policy violations, and deadline or budget risks become exception notifications.
+A tick is lease-protected, idempotent, retry-bounded, checkpointed, and safe to resume. It considers dependency-ready work up to its configured per-tick limit, while plan records preserve publication windows for workflow policy. An item failure does not stop unrelated publications. Routine success stays in summaries; approvals, evidence conflicts, source gaps, failures, policy violations, and deadline or budget risks become exception notifications.
 
 The scheduler remains deliberately simple. Cron or launchd should invoke the same `tick` command with absolute state and repository paths. Event systems record a candidate with `event --input FILE`, then trigger a normal tick. Editorial routing remains inside the operator rather than the scheduler.
+
+## Configure live execution
+
+The operator is provider-portable. For non-fixture work, point it at one executable phase adapter:
+
+```bash
+export PUBLISHING_HOUSE_PHASE_ADAPTER=/absolute/path/to/phase-adapter
+export PUBLISHING_HOUSE_PHASE_TIMEOUT_SECONDS=900
+publishing-house-operator/bin/publishing-house --json tick --limit 4
+```
+
+The adapter reads a `publishing-house.phase-request` JSON object from stdin and returns a `publishing-house.phase-receipt`. The receipt binds the requested item and phase to an existing artifact and its SHA-256 checksum. Only the approval/publication phase may report an external effect, and a real effect must identify itself as published, corrected, or unpublished. The operator checks the receipt before advancing durable state.
+
+The deployment adapter composes Agents SDK and AI SDK model workers, retrieval, and the appropriate Kujo tools. Publication effects still pass through PressWire. Credentials stay in the adapter's OS-backed environment and never enter the request, publication profile, prompt, or artifact tree.
+
+Provider errors receive a bounded retry. The affected item then enters a hard blocked state without stopping unrelated work. After correcting the adapter, credential, evidence, or publication problem, release only that item:
+
+```bash
+publishing-house-operator/bin/publishing-house --json resume ITEM_ID
+publishing-house-operator/bin/publishing-house --json tick
+```
 
 ## Approval and publication safety
 
@@ -102,10 +123,10 @@ Event intake classifies releases, CLI/API/contract changes, agent changes, broke
 
 Documentation claims must trace to source, tests, CLI help, schemas, contracts, or release artifacts. Agent-site work distinguishes a canonical edit in `kujo-agents` from regeneration and verification of `agents.kujolang.ai`. ReaderSignal and WebOps observations may propose refreshes, follow-ups, internal-link changes, adaptations, or retirement; they do not silently rewrite published work or overstate causation.
 
-## Current readiness
+## Production deployment gates
 
-Deterministic fixture mode proves SourcePack intake, plan import, workflow routing, evidence and review artifacts, exact-version approval, adaptation lineage, resumability, duplicate prevention, local publication effects, and verification across the eleven Publishing House workflows.
+The checked-in operator now has the live execution boundary, validated receipts, bounded retries, blocked-item recovery, durable state, and exact-version authority needed for production operation. Deterministic mode remains available for rehearsal and clean-machine verification; it is not the operator's only execution path.
 
-Live Agents SDK model and retrieval adapters, authenticated Git push/PR/merge effects, and live measurement credentials are not included in the checked-in configuration. Missing capabilities fail closed. Use `--fixture` only for rehearsals; a non-fixture run never substitutes fixture output silently.
+Each installation still supplies its chosen model and retrieval providers through the phase adapter. Repositories that permit automated Git effects also require a configured, authenticated PressWire Git/static provider, and enabled measurement sources require their ReaderSignal or WebOps credentials. These are explicit deployment gates because they carry provider, repository, and publication authority. Missing gates block the affected item; they do not cause a fixture fallback or a false success.
 
 See the [Publishing House Operator source](https://github.com/kujolang/kujo-workflows/tree/main/publishing-house-operator) and the [Editorial publishing ownership guide](/build/editorial-publishing/).

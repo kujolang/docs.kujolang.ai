@@ -8,7 +8,7 @@ nav_title: Editorial publishing
 order: 60
 audience: all
 difficulty: advanced
-status: fixture-first local scope
+status: production-capable control plane
 version: current
 last_updated: 2026-09-02
 tags: [editorial, publishing, evidence, approvals]
@@ -25,6 +25,6 @@ The publishing-house tools keep ownership and evidence separate:
 7. [PressWire](/tools/presswire/) owns bounded publication effects, reconciliation, corrections, and receipts.
 8. [ReaderSignal](/tools/readersignal/) owns privacy-bounded measurements and evidence-linked learning.
 
-The [Publishing House Operator](/build/publishing-house-operator/) is the durable control loop above these tools and the eleven fixture-tested workflow kits. It reads StoryDesk, delegates resumable execution to Dispatch, invokes bounded workers, records checkpoints, routes exact-version approval, and lets PressWire own publication effects. Publication profiles currently cover the personal blog, `kujolang.ai`, `docs.kujolang.ai`, and `agents.kujolang.ai` without forking the agent roles.
+The [Publishing House Operator](/build/publishing-house-operator/) is the durable control loop above these tools and the eleven workflow kits. It reads StoryDesk, delegates resumable execution to Dispatch, invokes bounded workers through an explicit phase-adapter boundary, validates checksum-bound receipts, records checkpoints, routes exact-version approval, and lets PressWire own publication effects. Publication profiles currently cover the personal blog, `kujolang.ai`, `docs.kujolang.ai`, and `agents.kujolang.ai` without forking the agent roles.
 
-The operator is fixture-operational. Live model/retrieval workers, authenticated Git publication effects, and live measurement credentials remain explicit, fail-closed adapter work. No tool silently grants authority held by another stage, and fixture proof does not establish live-provider or organization-specific production readiness.
+The control plane supports live execution and deterministic rehearsal. A production installation configures its model and retrieval phase adapter, authenticated PressWire provider for any authorized Git effect, and enabled ReaderSignal or WebOps measurement credentials. Missing deployment capabilities block only the affected work. No tool silently grants authority held by another stage, and no fixture result is presented as a live publication effect.

@@ -8,9 +8,9 @@ nav_title: Web operations
 order: 50
 audience: developer
 difficulty: intermediate
-status: fixture-first local scope
+status: production-capable workflows
 version: current
-last_updated: 2026-08-23
+last_updated: 2026-09-02
 tags: [webops, websites, search, content]
 ---
 
@@ -23,6 +23,8 @@ Use the smallest specialist that owns the evidence you need:
 5. [ContentGraph](/tools/contentgraph/) for content relationships and explainable opportunities.
 6. [Lens](/tools/lens/) for browser, accessibility, link, flow, and visual proof.
 
-The `kujo-workflows` collection includes fixture-first site bootstrap, weekly health, search intelligence, content intelligence, post-publish, refresh, portfolio, benchmark, and finding-to-fix kits. Each kit keeps OBSERVE, PROPOSE, and ACT boundaries explicit.
+The `kujo-workflows` collection includes site bootstrap, weekly health, search intelligence, content intelligence, post-publish, refresh, portfolio, benchmark, and finding-to-fix kits. Each workflow supports deterministic rehearsal and the same profile-driven live boundary. Optional provider credentials add measurements; they never expand OBSERVE, PROPOSE, or ACT authority.
+
+Publishing House post-publication verification and learning compose these WebOps workflows rather than duplicating them. Findings return to StoryDesk as evidence-linked candidates. They do not silently mutate a site or historical publication record.
 
 Do not treat crawl or analytics evidence as permission to modify a site. Route proposed changes through a task contract, review, and the site's own release gate.

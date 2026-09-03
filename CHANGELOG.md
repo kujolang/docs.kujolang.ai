@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+- Reframed the Publishing House Operator as a production-capable control plane
+  and documented its live phase-adapter contract, checksum-bound receipts,
+  bounded retries, explicit resume flow, and deployment authority gates.
+- Updated the Web operations guide to its production-capable, profile-driven
+  workflow boundary and documented its StoryDesk feedback relationship.
+- Made horizontally scrollable documentation code blocks keyboard-focusable
+  when their rendered content exceeds the viewport.
+
 ### Added
 
 - Added a source-backed guide to the Publishing House Operator control layer, including ownership, publication profiles, SourcePack intake, plans, daily operation, approval boundaries, event routing, scheduling, and current fail-closed live-adapter limits.
