@@ -1,0 +1,24 @@
+{
+  "project": {
+    "name": "Kujo Docs",
+    "tagline": "Clarity. Context. Control.",
+    "url": "docs.kujolang.ai"
+  },
+  "theme": {
+    "name": "kujolang-docs",
+    "mode": "light"
+  },
+  "cards": [
+    {
+      "id": "kujo-docs",
+      "title": "KUJO DOCS",
+      "tagline": "Build reviewable, local-first software with Kujo.",
+      "file": "social-card.txt",
+      "variant": "social",
+      "label": "documentation",
+      "url": "docs.kujolang.ai",
+      "background_image": "assets/img/social/docs-background.webp",
+      "font_file": "assets/sitekit/DepartureMono-Regular.woff2"
+    }
+  ]
+}

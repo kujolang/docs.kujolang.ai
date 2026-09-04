@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+### Added
+
+- Added a deterministic Howl social-card source and a 1200-by-630 raster card used by every documentation route for Open Graph and X previews.
+
+### Changed
+
+- Added exact generated-site assertions for the shared social image, dimensions, and per-page Open Graph/X metadata.
+
 ## [1.3.3] - 2026-09-04
 
 ### Added

@@ -117,5 +117,14 @@ reject_text "build/agent-profiles/index.html" '/tools/rag-starter-kit/'
 require_text "ecosystem/showcases/index.html" '<title>Showcase Directory | Kujo Docs</title>'
 require_text "tools/index.html" 'Use Kujo tools for agents, orchestration, evidence, quality, publishing, and operations.'
 require_text "index.html" 'width="32" height="32"'
+require_file "assets/img/social/kujo-docs.jpg"
+
+while IFS= read -r generated_page; do
+  relative_page="${generated_page#${output_dir}/}"
+  require_text "$relative_page" '<meta property="og:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">'
+  require_text "$relative_page" '<meta property="og:image:width" content="1200">'
+  require_text "$relative_page" '<meta property="og:image:height" content="630">'
+  require_text "$relative_page" '<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">'
+done < <(find "$output_dir" -type f -name '*.html' | sort)
 
 printf 'Agent platform documentation contract passed.\n'

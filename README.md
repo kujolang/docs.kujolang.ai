@@ -51,11 +51,25 @@ Before release, also verify the generated sitemap routes, the themed 404 respons
 | `content/` | Markdown pages and repository guides |
 | `templates/` | SSG layouts, listings, and error pages |
 | `assets/` | Kujo Docs styles, scripts, Site Kit distribution, fonts, and images |
+| `howl-social.json` | Source contract for the shared Kujo Docs social card |
+| `scripts/render-social-card.sh` | Validates, renders, and rasterizes the Howl social card |
 | `scripts/build_site.py` | Composes the IA sections into one generated site |
 | `kujo-ssg.yml` | Production SSG defaults for `docs.kujolang.ai` |
 | `output/` | Ignored generated site ready for static hosting |
 
 The Site Kit consumer bundle and Departure Mono font are vendored under `assets/sitekit/` so production builds do not depend on remote assets.
+
+Every generated page uses the shared 1200-by-630 Howl card at
+`assets/img/social/kujo-docs.jpg` for Open Graph and X previews. Regenerate it
+with a local Howl checkout and a trusted Sharp installation:
+
+```bash
+bash scripts/render-social-card.sh
+```
+
+Set `HOWL_BIN` when Howl is not in its default sibling-repository location.
+The raster step uses macOS `sips` when available or a trusted Sharp entrypoint
+provided through `SHARP_ENTRY`; it fails closed when neither is available.
 
 The official K logomark is also published as SVG, ICO, standard PNG favicons, an Apple touch icon, Android web-app icons, and a Windows tile. The generated files are committed under `assets/favicons/` and copied to the site root during every build. To regenerate them from `assets/img/kujo-logomark-black.svg`, install CairoSVG and Pillow, then run:
 
