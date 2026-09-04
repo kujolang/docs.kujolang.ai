@@ -1,0 +1,3 @@
+id,phase,category,severity,affected_urls,affected_count,evidence,expected_benefit,confidence,difficulty,recommended_action,owner,status
+ABILITY-CONTENT,after,content,P1,https://docs.kujolang.ai/tools/ability/,1,baseline content and release v1.1.0,Accurate discovery and user expectations,High,Low,Publish factual Ability coverage and link installation guidance,repository maintainers,resolved
+PRIVATE-SOURCE,after,external links,P2,https://docs.kujolang.ai,2,baseline-external-links.csv; authenticated GitHub API confirms private repository visibility,Accurate discovery and user expectations,High,Low,Remove public links to private repositories; state source access,repository maintainers,resolved

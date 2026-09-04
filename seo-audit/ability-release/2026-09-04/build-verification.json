@@ -1,0 +1,17 @@
+{
+  "command": "KUJO_BIN=/tmp/kujo-v123-x64.AfuLjK/kujo bash tests/site-contract.sh",
+  "target": "docs.kujolang.ai/output",
+  "exit_code": 0,
+  "ssg_commit": "e165dbc1b596ea759a2b9c2ff0b9ca988c333eea",
+  "source_commit": "fa78ecb",
+  "deployment_commit": "dc77cc0",
+  "routes": 99,
+  "html_files_validated": 100,
+  "search_items": 91,
+  "browser_checks": {
+    "mobile_viewport": 390,
+    "document_scroll_width": 379,
+    "fresh_origin_search_first_result": "Ability",
+    "note": "An earlier browser cache held the index served during the build; a fresh origin verified the completed index."
+  }
+}

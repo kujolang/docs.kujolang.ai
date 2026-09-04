@@ -1,0 +1,25 @@
+{
+  "release": "https://github.com/kujolang/ability/releases/tag/v1.1.0",
+  "source_commit": "e5a7480",
+  "local_release_gate": {
+    "command": "KUJO_BIN=/Users/robertdevore/2026/Kujolang/kujo-repos/kujo/target/release/kujo bash scripts/verify-release.sh",
+    "cwd": "ability",
+    "exit_code": 0
+  },
+  "github_release_run": "https://github.com/kujolang/ability/actions/runs/33926671786",
+  "github_ci_run": "https://github.com/kujolang/ability/actions/runs/33926668436",
+  "ci_result": "success",
+  "assets": [
+    "ability-v1.1.0.tar.gz",
+    "ability-v1.1.0.sbom.spdx.json",
+    "SHA256SUMS"
+  ],
+  "downloaded_checksums": "both asset checks passed",
+  "devkit_archive_entries": [
+    "ability-1.1.0/devkit/cli.mjs",
+    "ability-1.1.0/devkit/index.mjs"
+  ],
+  "package_version": "1.1.0",
+  "runtime_receipt_digest": "unchanged",
+  "sdk_status": "local previews, not published packages"
+}

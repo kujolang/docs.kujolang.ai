@@ -1,0 +1,7 @@
+{
+  "artifact_files": 142,
+  "source_commit": "22303b6da6cc19284253a9adcf71d94d56378468",
+  "upstream_build": "gh-pages f856e51, source 8fddff9, same-day prior validation artifacts",
+  "reused_baseline": true,
+  "reason": "Source changes since the qualified build are audit records/gitignore only; redundant local builds stopped under heavy load."
+}
