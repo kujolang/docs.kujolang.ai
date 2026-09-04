@@ -351,7 +351,7 @@
       "text": "Kujo provider packages keep each provider's wire format visible while offering a normalized AI SDK driver when the package supports one. Choose a package here, install its immutable tag with Kennel, and use the provider's native API first when you need provider-specific fields. Choose a provider The inventory below is checked against the official Kujo provid"
     },
     {
-      "title": "Showcases",
+      "title": "Showcase Directory",
       "description": "Proof applications demonstrating complete local workflows and product surfaces.",
       "url": "https://docs.kujolang.ai/ecosystem/showcases/",
       "route": "ecosystem/showcases/",

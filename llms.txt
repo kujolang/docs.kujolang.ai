@@ -25,7 +25,7 @@ A local-first path through the Kujo language and ecosystem.
 - [Core / Foundation](https://docs.kujolang.ai/ecosystem/core-foundation/) — The Kujo runtime, package, execution, and collaboration foundation.
 - [Primitives](https://docs.kujolang.ai/ecosystem/primitives/) — Reusable contracts for agents, evaluation, retrieval, orchestration, privacy, decisions, boundaries, and supervision.
 - [Providers](https://docs.kujolang.ai/ecosystem/providers/) — Choose and install a Kujo provider package, then move from a first request to native features.
-- [Showcases](https://docs.kujolang.ai/ecosystem/showcases/) — Proof applications demonstrating complete local workflows and product surfaces.
+- [Showcase Directory](https://docs.kujolang.ai/ecosystem/showcases/) — Proof applications demonstrating complete local workflows and product surfaces.
 - [Tooling](https://docs.kujolang.ai/ecosystem/tooling/) — Supporting tools for execution, evidence, web operations, editorial production, review, and release gates.
 - [Install Kujo](https://docs.kujolang.ai/install/) — Install Kujo v1.1.0 and the tool group you need, or build the CLI from source.
 - [Learn](https://docs.kujolang.ai/learn/) — Kujo learn documentation.
