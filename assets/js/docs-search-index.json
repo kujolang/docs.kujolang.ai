@@ -1659,14 +1659,14 @@
     },
     {
       "title": "SearchBridge",
-      "description": "Normalize search, analytics, performance, keyword, backlink, and submission providers.",
+      "description": "Fetch normalized search, analytics, page-performance, backlink, keyword, and indexing evidence through bounded provider contracts.",
       "url": "https://docs.kujolang.ai/tools/searchbridge/",
       "route": "tools/searchbridge/",
       "section": "Tools",
       "audience": "developer",
       "difficulty": "advanced",
-      "status": "preview 0.3.0",
-      "version": "current",
+      "status": "stable 1.0.0",
+      "version": "1.0.0",
       "tags": [
         "[tool, search, analytics, web]"
       ],
@@ -1674,10 +1674,11 @@
         "Use it when\u2026",
         "Five-minute example",
         "What you get",
+        "Provider status in 1.0.0",
         "Boundaries",
         "Reference"
       ],
-      "text": "Use it when\u2026 A WebOps workflow needs one bounded contract for search performance, analytics, URL inspection, PageSpeed, CrUX, backlinks, keyword data, or explicit index submission. Five-minute example What you get Credential-redacted, bounded evidence that can use fixtures, caches, protected replay, or explicitly configured provider adapters. Boundaries Sear"
+      "text": "Use it when\u2026 A WebOps workflow needs one bounded contract for search performance, analytics, URL inspection, PageSpeed, CrUX, backlinks, keyword data, or explicit index submission. Five-minute example What you get Credential-redacted, bounded searchbridge.result/v1 evidence that can use deterministic fixtures, caches, protected replay, or explicitly configur"
     },
     {
       "title": "ShipCheck",
@@ -1914,7 +1915,7 @@
     },
     {
       "title": "Workcell",
-      "description": "Run bounded Kujo and agent workflows in disposable Docker or Podman worktrees.",
+      "description": "Run bounded Kujo and agent workflows with Workcell 1.1's stable Docker and Podman lifecycle.",
       "url": "https://docs.kujolang.ai/tools/workcell/",
       "route": "tools/workcell/",
       "section": "Tools",
@@ -1928,12 +1929,13 @@
       "headings": [
         "Use it when\u2026",
         "Interface overview",
+        "Portable backend preview",
         "Five-minute example",
         "What you get",
         "Boundaries",
         "Reference"
       ],
-      "text": "Use it when\u2026 A workflow needs a disposable Git worktree, bounded container resources, explicit network and filesystem policy, declared artifact export, and an integrity-verifiable receipt. Interface overview doctor, init, validate, inspect, run, verify, and ownership-scoped clean form the stable v1 lifecycle. Docker and Podman are supported; inspect resolves"
+      "text": "Use it when\u2026 A workflow needs a disposable Git worktree, bounded container resources, explicit network and filesystem policy, declared artifact export, and an integrity-verifiable receipt. Interface overview doctor, init, validate, inspect, run, verify, ownership-scoped clean, backends, and recover form the Workcell 1.1 command surface. Docker and Podman pro"
     }
   ]
 }

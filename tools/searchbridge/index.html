@@ -13,7 +13,7 @@
 		})();
 	</script>
 	<title>SearchBridge | Kujo Docs</title>
-	<meta name="description" content="Normalize search, analytics, performance, keyword, backlink, and submission providers.">
+	<meta name="description" content="Fetch normalized search, analytics, page-performance, backlink, keyword, and indexing evidence through bounded provider contracts.">
 	<meta name="keywords" content="SSG, Static Site Generator">
 	<meta name="author" content="Kujo">
 	<link rel="canonical" href="https://docs.kujolang.ai/tools/searchbridge/">
@@ -30,7 +30,7 @@
 	<meta name="msapplication-config" content="/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<meta property="og:title" content="SearchBridge">
-	<meta property="og:description" content="Normalize search, analytics, performance, keyword, backlink, and submission providers.">
+	<meta property="og:description" content="Fetch normalized search, analytics, page-performance, backlink, keyword, and indexing evidence through bounded provider contracts.">
 	<meta property="og:url" content="https://docs.kujolang.ai/tools/searchbridge/">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="Kujo Docs">
@@ -40,13 +40,13 @@
 	<meta property="og:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="SearchBridge">
-	<meta name="twitter:description" content="Normalize search, analytics, performance, keyword, backlink, and submission providers.">
+	<meta name="twitter:description" content="Fetch normalized search, analytics, page-performance, backlink, keyword, and indexing evidence through bounded provider contracts.">
 	<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
 	<meta name="twitter:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
 	<link href="../../assets/css/fonts.css" rel="stylesheet">
 	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
 	<link href="../../assets/css/style.css" rel="stylesheet">
-	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"SearchBridge","name":"SearchBridge","description":"Normalize search, analytics, performance, keyword, backlink, and submission providers.","url":"https://docs.kujolang.ai/tools/searchbridge/","author":{"@type":"Person","name":"Unknown Author"},"publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"SearchBridge","name":"SearchBridge","description":"Fetch normalized search, analytics, page-performance, backlink, keyword, and indexing evidence through bounded provider contracts.","url":"https://docs.kujolang.ai/tools/searchbridge/","author":{"@type":"Person","name":"Unknown Author"},"publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -100,7 +100,7 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="searchbridge">SearchBridge</h1><p class="docs-description">Normalize search, analytics, performance, keyword, backlink, and submission providers.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>preview 0.3.0</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
+		<h1 id="searchbridge">SearchBridge</h1><p class="docs-description">Fetch normalized search, analytics, page-performance, backlink, keyword, and indexing evidence through bounded provider contracts.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>stable 1.0.0</span><span class="docs-badge docs-badge-version"><span>Version</span>1.0.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-04</span></div>
 		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>A WebOps workflow needs one bounded contract for search performance, analytics, URL inspection, PageSpeed, CrUX, backlinks, keyword data, or explicit index submission.</p>
 <h2 id="five-minute-example">Five-minute example</h2>
@@ -109,17 +109,40 @@
 ./searchbridge search-performance --fixture --offline --deterministic
 ./searchbridge batch --fixture --offline --commands pagespeed,crux</code></pre>
 <h2 id="what-you-get">What you get</h2>
-<p>Credential-redacted, bounded evidence that can use fixtures, caches, protected replay, or explicitly configured provider adapters.</p>
+<p>Credential-redacted, bounded <code>searchbridge.result/v1</code> evidence that can use deterministic fixtures, caches, protected replay, or explicitly configured provider adapters. The supported release channel is a checksum-verified self-contained GitHub release bundle; TypeScript, Rust, and Go SDK archives ship with the release.</p>
+<h2 id="provider-status-in-1-0-0">Provider status in 1.0.0</h2>
+<table><thead><tr>
+<th>Tier</th>
+<th>Providers</th>
+</tr></thead><tbody>
+<tr>
+<td><code>stable-live</code></td>
+<td>Google Search Console, Google Analytics 4, PageSpeed Insights, Chrome UX Report</td>
+</tr>
+<tr>
+<td><code>fixture-only</code></td>
+<td>Cloudflare, IndexNow, Bing Webmaster, Ahrefs, DataForSEO, SerpApi</td>
+</tr>
+<tr>
+<td><code>external-reference</code></td>
+<td>Plausible signed adapter package</td>
+</tr>
+<tr>
+<td><code>disabled</code></td>
+<td>Semrush</td>
+</tr>
+</tbody></table>
+<p>The stable-live tier passed an owner-authorized 16-case live matrix before release. Cloudflare and IndexNow remain fixture-only until the separately documented v1.1 review; no live success or indexing outcome is claimed for either provider.</p>
 <h2 id="boundaries">Boundaries</h2>
-<p>SearchBridge <code>0.3.0</code> currently pins a prepared Kujo <code>v1.0.2</code> source commit until that runtime is released. Live provider credentials, quotas, property access, and active submission remain explicit operator boundaries.</p>
+<p>SearchBridge fetches and normalizes provider evidence; it does not interpret SEO performance. Missing access degrades individual capabilities instead of disabling the entire tool. Live provider credentials, quotas, property access, paid-call authorization, and every submission remain explicit operator boundaries. Evidence commands are read-only; submission is separate and requires the exact capability plus <code>--act --yes</code> on every invocation. A submission receipt never claims indexing.</p>
 <h2 id="reference">Reference</h2>
-<p>See the <a href="https://github.com/kujolang/searchbridge">SearchBridge repository</a>.</p></div>
+<p>See the <a href="https://github.com/kujolang/searchbridge/releases/tag/v1.0.0">SearchBridge v1.0.0 release</a>, <a href="https://github.com/kujolang/searchbridge">repository</a>, and <a href="https://github.com/kujolang/searchbridge/blob/v1.0.0/docs/support-matrix.md">support matrix</a>.</p></div>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#provider-status-in-1-0-0">Provider status in 1.0.0</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.3.3</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.3.4</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../../assets/sitekit/sitekit.js"></script>

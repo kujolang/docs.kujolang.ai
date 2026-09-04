@@ -88,7 +88,7 @@ A local-first path through the Kujo language and ecosystem.
 - [RunLedger](https://docs.kujolang.ai/tools/runledger/) — Record run metadata, usage, cost, verdicts, and follow-ups.
 - [Scent](https://docs.kujolang.ai/tools/scent/) — Package focused, bounded, and redacted context for a task.
 - [Scout](https://docs.kujolang.ai/tools/scout/) — Build a structured map of an unfamiliar repository.
-- [SearchBridge](https://docs.kujolang.ai/tools/searchbridge/) — Normalize search, analytics, performance, keyword, backlink, and submission providers.
+- [SearchBridge](https://docs.kujolang.ai/tools/searchbridge/) — Fetch normalized search, analytics, page-performance, backlink, keyword, and indexing evidence through bounded provider contracts.
 - [ShipCheck](https://docs.kujolang.ai/tools/shipcheck/) — Scan release readiness and produce a gate report.
 - [SiteKit](https://docs.kujolang.ai/tools/site-kit/) — Vendor an accessible, semantic, token-driven design system for static sites.
 - [SiteProbe](https://docs.kujolang.ai/tools/siteprobe/) — Crawl a bounded website surface and preserve deterministic intelligence evidence.
@@ -99,4 +99,4 @@ A local-first path through the Kujo language and ecosystem.
 - [VersionSeal](https://docs.kujolang.ai/tools/versionseal/) — Bind human approval and authority to an exact checksum-verified version.
 - [Ward](https://docs.kujolang.ai/tools/ward/) — Monitor Dependabot alerts locally and prepare reviewable remediation plans.
 - [Watchdog](https://docs.kujolang.ai/tools/watchdog/) — Observe AI requests, tools, costs, latency, errors, and audit events.
-- [Workcell](https://docs.kujolang.ai/tools/workcell/) — Run bounded Kujo and agent workflows in disposable Docker or Podman worktrees.
+- [Workcell](https://docs.kujolang.ai/tools/workcell/) — Run bounded Kujo and agent workflows with Workcell 1.1's stable Docker and Podman lifecycle.
