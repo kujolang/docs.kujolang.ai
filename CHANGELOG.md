@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Changed
+
+- Updated the Workcell guide for the 1.1.0 source release, its stable Docker and Podman lifecycle, and the explicit alpha boundary around portable contracts and remote adapters.
+
 ## [1.3.4] - 2026-09-04
 
 ### Added

@@ -1,6 +1,6 @@
 ---
 title: Workcell
-description: Run bounded Kujo and agent workflows in disposable Docker or Podman worktrees.
+description: Run bounded Kujo and agent workflows with Workcell 1.1's stable Docker and Podman lifecycle.
 template: docs
 section: Tools
 nav_title: Workcell
@@ -9,7 +9,7 @@ audience: developer
 difficulty: advanced
 status: stable within local and CI scope
 version: current
-last_updated: 2026-08-23
+last_updated: 2026-09-04
 scope: local and CI
 source_repo: workcell
 tags: [tool, execution, containers, security]
@@ -21,7 +21,13 @@ A workflow needs a disposable Git worktree, bounded container resources, explici
 
 ## Interface overview
 
-`doctor`, `init`, `validate`, `inspect`, `run`, `verify`, and ownership-scoped `clean` form the stable v1 lifecycle. Docker and Podman are supported; `inspect` resolves policy without starting a container.
+`doctor`, `init`, `validate`, `inspect`, `run`, `verify`, ownership-scoped `clean`, `backends`, and `recover` form the Workcell 1.1 command surface. Docker and Podman provide the stable lifecycle; `inspect` resolves policy without starting a container.
+
+## Portable backend preview
+
+Workcell 1.1 includes alpha provider-neutral definitions, strict capability negotiation, portable receipts, ownership-bound recovery, and digest-pinned adapters for E2B, Vercel Sandbox, and Daytona. A workload can switch profiles without embedding provider configuration in its definition.
+
+The portable contracts and remote adapters are not part of the stable guarantee. Offline conformance does not certify a live provider account, plan, region, control boundary, latency, cost, or cleanup behavior. Use the repository's live-certification procedure before promoting any adapter.
 
 ## Five-minute example
 
@@ -42,4 +48,4 @@ Workcell does not protect against a compromised daemon or host kernel, provide m
 
 ## Reference
 
-See the [Workcell repository](https://github.com/kujolang/workcell).
+See the [Workcell repository](https://github.com/kujolang/workcell) and the [Workcell 1.1.0 release](https://github.com/kujolang/workcell/releases/tag/v1.1.0).
