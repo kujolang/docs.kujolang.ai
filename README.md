@@ -2,7 +2,7 @@
 
 The official documentation site for the Kujo language and ecosystem, published at [docs.kujolang.ai](https://docs.kujolang.ai).
 
-Version **1.3.1** was released on **September 4, 2026** with a source-standardized PackWrite 1.1.0 guide covering the current CLI, generated pack, providers, configuration, safety controls, and offline/CI workflows. The site follows the Kujo documentation information architecture: a short first-run path, task-oriented learning, intent-based tool guidance, reviewable-work workflows, showcases, collections, and reference material.
+Version **1.3.2** was released on **September 4, 2026** with a complete Kujo for Paperclip guide and the source-standardized PackWrite 1.1.0 guide. The site follows the Kujo documentation information architecture: a short first-run path, task-oriented learning, intent-based tool guidance, reviewable-work workflows, showcases, collections, and reference material.
 
 ## Build
 

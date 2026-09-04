@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+## [1.3.2] - 2026-09-04
+
+### Added
+
+- Added a source-backed Kujo for Paperclip guide with installation, first use, agent tools, component roles, safety boundaries, current compatibility, and direct release references.
+
+### Changed
+
+- Linked Paperclip into the Tooling directory and adjacent tool navigation, and updated site-wide release markers for Docs 1.3.2.
+
 ## [1.3.1] - 2026-09-04
 
 ### Changed
