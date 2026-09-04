@@ -1,0 +1,3 @@
+phase,source_url,destination_url,anchor_text,link_context,http_status,final_url,chain_length,verification,rel,recommended_action
+after,https://docs.kujolang.ai/showcases/cinch/,https://github.com/kujolang/cinch,Cinch repository,article,404,https://github.com/kujolang/cinch,0,confirmed unavailable by live request,,review destination
+after,https://docs.kujolang.ai/tools/source/,https://github.com/kujolang/source,Source repository,article,404,https://github.com/kujolang/source,0,confirmed unavailable by live request,,review destination

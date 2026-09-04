@@ -1,0 +1,7 @@
+phase,source_url,destination_url,anchor_text,link_context,http_status,final_url,chain_length,verification,rel,recommended_action
+baseline,https://docs.kujolang.ai/build/agent-operations/,https://docs.kujolang.ai/build/review-and-ship/,Next,nav,404,https://docs.kujolang.ai/build/review-and-ship/,0,rendered local route,next,fix or remove
+baseline,https://docs.kujolang.ai/build/agent-profiles/,https://docs.kujolang.ai/tools/rag-starter-kit/,RAG Starter Kit,article,404,https://docs.kujolang.ai/tools/rag-starter-kit/,0,rendered local route,,fix or remove
+baseline,https://docs.kujolang.ai/showcases/cinch/,https://github.com/kujolang/cinch,Cinch repository,article,404,https://github.com/kujolang/cinch,0,confirmed unavailable by live request,,review destination
+baseline,https://docs.kujolang.ai/tools/source/,https://github.com/kujolang/source,Source repository,article,404,https://github.com/kujolang/source,0,confirmed unavailable by live request,,review destination
+baseline,https://docs.kujolang.ai/showcases/cinch/,https://github.com/kujolang/cinch,Cinch repository,article,404,https://github.com/kujolang/cinch,0,confirmed unavailable by live request,,review destination
+baseline,https://docs.kujolang.ai/tools/source/,https://github.com/kujolang/source,Source repository,article,404,https://github.com/kujolang/source,0,confirmed unavailable by live request,,review destination
