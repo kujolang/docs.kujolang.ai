@@ -239,6 +239,8 @@ def main() -> int:
     args = parser.parse_args()
 
     output = ROOT / "output"
+    if output.is_symlink():
+        raise RuntimeError(f"Refusing to replace symlinked output directory: {output}")
     if output.exists():
         shutil.rmtree(output)
 
