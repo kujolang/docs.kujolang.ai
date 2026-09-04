@@ -60,3 +60,7 @@ This is a guarded local/server scaffold, not managed enterprise infrastructure.
 ## Reference
 
 See the [MCP repository](https://github.com/kujolang/mcp).
+
+## Portable operation contracts
+
+Use [Ability](/tools/ability/) to preserve an operation’s identity, schemas, effects, and retry semantics across application and agent surfaces. Its SDK previews and fixture development kit help check contracts; the application retains execution authority.

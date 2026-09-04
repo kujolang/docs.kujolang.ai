@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+- Document Ability 1.1.0 installation, SDK preview limits, digest compatibility, offline pack trust, fixture tooling, and application-owned execution.
+- Link the guide from Primitives, Agents SDK, and MCP.
+
+
+## Unreleased
+
 ### Changed
 
 - Reworked the Workcell guide as a durable product overview without release-specific copy.

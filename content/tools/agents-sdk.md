@@ -60,3 +60,7 @@ Hosted adapters remain integrator-owned. Use fixture mode when proving the workf
 ## Reference
 
 See the [Agents SDK repository](https://github.com/kujolang/agents-sdk).
+
+## Portable operation contracts
+
+Use [Ability](/tools/ability/) to preserve an operation’s identity, schemas, effects, and retry semantics across application and agent surfaces. Its SDK previews and fixture development kit help check contracts; the application retains execution authority.

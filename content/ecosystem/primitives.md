@@ -19,6 +19,7 @@ The current primitive set includes:
 - [Eval](/tools/eval/) — deterministic evaluation and acceptance verification.
 - [Scout](/tools/scout/) — repository intelligence and structured context maps.
 - [Dispatch](/tools/dispatch/) — resumable workflow orchestration and handoffs.
+- [Ability](/tools/ability/) — portable operation contracts, signed-pack verification, and fixture tooling.
 - [MCP](/tools/mcp/) — guarded tool and resource server scaffolds.
 - [RAG](/tools/rag/) — local ingestion, retrieval, namespaces, and citations.
 - [AI SDK](/tools/ai-sdk/) — normalized provider and embedding contracts.
