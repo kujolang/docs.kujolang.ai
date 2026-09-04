@@ -103,4 +103,13 @@ require_text "collections/workflows/index.html" "Owned Agent Project workflow"
 reject_text "build/publishing-house-operator/index.html" "fixture-operational"
 require_text "assets/js/docs.js" "updateScrollableCodeBlocks"
 
+require_file "tools/paperclip/index.html"
+require_text "tools/paperclip/index.html" "npx paperclipai plugin install @kujolang/paperclip"
+require_text "tools/paperclip/index.html" "kujolang.paperclip:get-context-content"
+require_text "tools/paperclip/index.html" "paperclipai/paperclip/pull/12745"
+require_text "ecosystem/tooling/index.html" 'href="/tools/paperclip/"'
+require_text "sitemap.xml" "/tools/paperclip/"
+require_text "llms.txt" "Kujo for Paperclip"
+require_text ".well-known/kujo-site-index.json" "paperclip"
+
 printf 'Agent platform documentation contract passed.\n'

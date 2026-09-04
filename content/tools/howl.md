@@ -13,7 +13,7 @@ last_updated: 2026-08-23
 scope: local-first
 source_repo: howl
 previous: /tools/ward/
-next: /showcases/
+next: /tools/paperclip/
 tags: [tool, examples, publishing]
 ---
 
