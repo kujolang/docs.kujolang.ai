@@ -1,0 +1,2 @@
+id,phase,category,severity,affected_urls,affected_count,evidence,expected_benefit,confidence,difficulty,recommended_action,owner,status
+SEO-REL-001,baseline,content-currentness,P1,https://docs.kujolang.ai/tools/searchbridge/,1,"Guide described SearchBridge as a 0.3 preview despite the approved 1.0.0 release evidence.","Accurate product/entity interpretation and a trustworthy release journey.",high,low,"Update only source-backed version, provider tiers, boundaries, and release links.",documentation,resolved
