@@ -56,6 +56,7 @@ A local-first path through the Kujo language and ecosystem.
 - [Start here](https://docs.kujolang.ai/start-here/) — Choose the shortest path from discovering Kujo to running a program or repository-owned agent.
 - [Support](https://docs.kujolang.ai/support/) — Find the right place to ask for help, report a problem, or verify a local failure.
 - [Tools](https://docs.kujolang.ai/tools/) — Kujo tools documentation.
+- [Ability](https://docs.kujolang.ai/tools/ability/) — Define portable operation contracts, validate cross-language digests, verify signed packs offline, and test approvals with a local fixture kit.
 - [Agents SDK](https://docs.kujolang.ai/tools/agents-sdk/) — Build agents with tools, approvals, handoffs, tracing, stores, and budgets.
 - [AI SDK](https://docs.kujolang.ai/tools/ai-sdk/) — Use normalized chat and embedding contracts with fixtures, retries, and redaction.
 - [AssetWorks](https://docs.kujolang.ai/tools/assetworks/) — Plan media assets and preserve provenance, accessibility records, and checksums.

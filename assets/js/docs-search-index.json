@@ -302,7 +302,7 @@
         "[ecosystem, primitives]"
       ],
       "headings": [],
-      "text": "The current primitive set includes: - Spec /tools/spec/ \u2014 task contracts and acceptance criteria. - Eval /tools/eval/ \u2014 deterministic evaluation and acceptance verification. - Scout /tools/scout/ \u2014 repository intelligence and structured context maps. - Dispatch /tools/dispatch/ \u2014 resumable workflow orchestration and handoffs. - MCP /tools/mcp/ \u2014 guarded tool"
+      "text": "The current primitive set includes: - Spec /tools/spec/ \u2014 task contracts and acceptance criteria. - Eval /tools/eval/ \u2014 deterministic evaluation and acceptance verification. - Scout /tools/scout/ \u2014 repository intelligence and structured context maps. - Dispatch /tools/dispatch/ \u2014 resumable workflow orchestration and handoffs. - Ability /tools/ability/ \u2014 port"
     },
     {
       "title": "Providers",
@@ -883,6 +883,29 @@
       "text": "Use it when\u2026 You want to normalize work artifacts into a stable model and write them to local destinations such as Strata, Markdown, static HTML, or a JSON index. Interface overview | Surface | What is available | | --- | --- | | Providers | Fathom meetings, chat exports, Slack threads, and GitHub activity exports | | Destinations | Strata, Markdown folders,"
     },
     {
+      "title": "Ability",
+      "description": "Define portable operation contracts, validate cross-language digests, verify signed packs offline, and test approvals with a local fixture kit.",
+      "url": "https://docs.kujolang.ai/tools/ability/",
+      "route": "tools/ability/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "advanced",
+      "status": "stable runtime; SDK previews",
+      "version": "1.1.0",
+      "tags": [
+        "[tool, contracts, agents, mcp]"
+      ],
+      "headings": [
+        "Install",
+        "What the release includes",
+        "Digest compatibility",
+        "Try the development kit",
+        "Connect applications and agents",
+        "Verify and learn more"
+      ],
+      "text": "Kujo Ability gives an operation a stable identity, input and output schemas, declared effects, and retry semantics. Applications bind that definition to handlers and retain control of identity, permissions, credentials, approvals, storage, and transport. Install Ability 1.1.0 requires Kujo 1.2.0 or newer. Install the tagged release with Kennel /tools/kennel/"
+    },
+    {
       "title": "Agents SDK",
       "description": "Build agents with tools, approvals, handoffs, tracing, stores, and budgets.",
       "url": "https://docs.kujolang.ai/tools/agents-sdk/",
@@ -903,7 +926,8 @@
         "What you get",
         "How it fits",
         "Boundaries",
-        "Reference"
+        "Reference",
+        "Portable operation contracts"
       ],
       "text": "Use it when\u2026 An AI call needs tools, approval boundaries, handoffs, tracing, session state, or explicit budgets. Interface overview | Surface | What is available | | --- | --- | | Runtime | Agent configuration, runners, lifecycle events, cancellation, and bounded retries | | Tools and safety | Typed tool registry, permissions, approvals, guardrails, and reda"
     },
@@ -1360,7 +1384,8 @@
         "What you get",
         "How it fits",
         "Boundaries",
-        "Reference"
+        "Reference",
+        "Portable operation contracts"
       ],
       "text": "Use it when\u2026 An agent needs a deliberate server boundary for tools or resources with roots, limits, auth, and a visible safety tier. Interface overview | Surface | What is available | | --- | --- | | Generator | make <repo with output and artifact-directory controls | | Profiles | Repo-specific discovery plus profile-only or artifacts-only generation | | Con"
     },

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="kujo-light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		(function() {
+			try {
+				if (window.localStorage.getItem('sk-theme') === 'kujo-dark') {
+					document.documentElement.dataset.theme = 'kujo-dark';
+				}
+			} catch (error) {}
+		})();
+	</script>
+	<title>Ability | Kujo Docs</title>
+	<meta name="description" content="Define portable operation contracts, validate cross-language digests, verify signed packs offline, and test approvals with a local fixture kit.">
+	<meta name="keywords" content="SSG, Static Site Generator">
+	<meta name="author" content="Kujo">
+	<link rel="canonical" href="https://docs.kujolang.ai/tools/ability/">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/assets/img/kujo-logomark-black.svg" color="#000000">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="application-name" content="Kujo Docs">
+	<meta name="apple-mobile-web-app-title" content="Kujo Docs">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Ability">
+	<meta property="og:description" content="Define portable operation contracts, validate cross-language digests, verify signed packs offline, and test approvals with a local fixture kit.">
+	<meta property="og:url" content="https://docs.kujolang.ai/tools/ability/">
+	<meta property="og:type" content="article">
+	<meta property="og:site_name" content="Kujo Docs">
+	<meta property="og:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Ability">
+	<meta name="twitter:description" content="Define portable operation contracts, validate cross-language digests, verify signed packs offline, and test approvals with a local fixture kit.">
+	<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta name="twitter:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<link href="../../assets/css/fonts.css" rel="stylesheet">
+	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Ability","name":"Ability","description":"Define portable operation contracts, validate cross-language digests, verify signed packs offline, and test approvals with a local fixture kit.","url":"https://docs.kujolang.ai/tools/ability/","author":{"@type":"Person","name":"Unknown Author"},"publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="docs-topbar" id="navigation">
+	<div class="docs-topbar-row">
+		<a class="docs-brand" href="../../index.html"><img class="docs-brand-mark" src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"> <span>Docs</span></a>
+		<label class="docs-search-shell">
+			<span class="sr-only">Search documentation</span>
+			<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
+		</label>
+		<div class="docs-header-actions">
+			<button class="docs-theme-button docs-icon-button" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-docs-theme>
+				<svg class="docs-moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c.132 0 .263 .003 .393 .008a7.5 7.5 0 0 0 7.599 9.6A9 9 0 1 1 12 3"/></svg>
+				<svg class="docs-sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-4 0a4 4 0 1 0 8 0 4 4 0 1 0-8 0M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+			</button>
+			<button class="docs-menu-button docs-icon-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu>
+				<svg class="docs-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+				<svg class="docs-close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+			</button>
+		</div>
+	</div>
+	<nav id="primary-navigation" class="docs-primary-nav" aria-label="Primary navigation">
+		<a href="/start-here/">Start here</a>
+		<a href="/learn/">Learn Kujo</a>
+		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
+		<a href="/tools/">Tools</a>
+		<a href="/showcases/">Showcases</a>
+	</nav>
+</header>
+<div id="docs-search-results" class="docs-search-results" aria-live="polite"></div>
+<main class="docs-shell" id="main-content">
+	<aside class="docs-sidebar" aria-label="Documentation sections">
+		<p class="docs-sidebar-label">Browse</p>
+		<ul>
+			<li><a href="/start-here/">Start here</a></li>
+			<li><a href="/install/">Install Kujo</a></li>
+			<li><a href="/quickstart/">Quickstart</a></li>
+			<li><a href="/choose-a-path/">Choose a path</a></li>
+			<li><a href="/learn/">Learn Kujo</a></li>
+			<li><a href="/build/">Build with Kujo</a></li>
+			<li><a href="/review/">Reviewable work</a></li>
+			<li><a href="/tools/">Tools</a></li>
+			<li><a href="/showcases/">Showcases</a></li>
+			<li><a href="/collections/">Collections</a></li>
+			<li><a href="/ecosystem/">Ecosystem</a></li>
+			<li><a href="/reference/">Reference</a></li>
+			<li><a href="/security/">Security model</a></li>
+			<li><a href="/release-boundaries/">Release boundaries</a></li>
+			<li><a href="/support/">Support</a></li>
+		</ul>
+	</aside>
+	<article class="docs-article">
+		<h1 id="ability">Ability</h1><p class="docs-description">Define portable operation contracts, validate cross-language digests, verify signed packs offline, and test approvals with a local fixture kit.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>stable runtime; SDK previews</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-04</span></div>
+		<div class="docs-body"><p>Kujo Ability gives an operation a stable identity, input and output schemas, declared effects, and retry semantics. Applications bind that definition to handlers and retain control of identity, permissions, credentials, approvals, storage, and transport.</p>
+<h2 id="install">Install</h2>
+<p>Ability 1.1.0 requires Kujo 1.2.0 or newer. Install the tagged release with <a href="/tools/kennel/">Kennel</a> and commit the generated lockfile:</p>
+<pre><code class="language-bash">kujo run /path/to/kennel/kennel.kujo --interpreter -- add github:kujolang/ability@v1.1.0 --alias ability
+kujo run /path/to/kennel/kennel.kujo --interpreter -- install</code></pre>
+<pre><code class="language-kujo">from ability import validate_ability_definition, ability_definition_digest</code></pre>
+<p>Use the <a href="https://github.com/kujolang/ability/blob/v1.1.0/examples/content_find.json">complete definition example</a> to start. It is a documentation fixture, not a built-in content service.</p>
+<h2 id="what-the-release-includes">What the release includes</h2>
+<table><thead><tr>
+<th>Surface</th>
+<th>Use and boundary</th>
+</tr></thead><tbody>
+<tr>
+<td>Definition and execution contracts</td>
+<td>Validate the stable <code>kujo.ability/v1</code> definition, bindings, exposures, invocations, policy decisions, approvals, and receipts.</td>
+</tr>
+<tr>
+<td>Exact registry and runtime</td>
+<td>Resolve exact identities and run policy, approval, idempotency, audit, handler, and output checks. Required services fail closed.</td>
+</tr>
+<tr>
+<td>TypeScript and Python SDK previews</td>
+<td>Validate definition envelopes and receipt identity, summarize effects, and share a cross-language definition digest. These local packages are not published SDKs or execution runtimes.</td>
+</tr>
+<tr>
+<td>Offline pack verifier</td>
+<td>Check Ed25519 signatures, artifact checksums, publisher allowlists, revocations, compatibility, effects, contained paths, and tenant visibility. Verification grants no execution permission.</td>
+</tr>
+<tr>
+<td>Fixture development kit</td>
+<td>Validate definitions, render reference docs, simulate request-bound approvals and keyed replay, and inspect receipts through a bounded local fixture server.</td>
+</tr>
+</tbody></table>
+<h2 id="digest-compatibility">Digest compatibility</h2>
+<p>The explicit <code>sha256-canonical-json-v2</code> digest agrees across Kujo, TypeScript, and Python. It accepts JSON strings, booleans, null, arrays, objects, and integers within JavaScript&apos;s safe range. It rejects decimals and larger integers rather than changing their values.</p>
+<p>The existing Kujo runtime and stored receipts keep their original digest. Use the explicit v2 digest for new offline pack trust tooling; do not silently replace live invocation or receipt identity. See the <a href="https://github.com/kujolang/ability/blob/v1.1.0/docs/SDK.md">SDK compatibility notes</a>.</p>
+<h2 id="try-the-development-kit">Try the development kit</h2>
+<p>Run these commands from an Ability checkout:</p>
+<pre><code class="language-bash">node devkit/cli.mjs validate examples/content_find.json
+node devkit/cli.mjs docs examples/content_find.json /tmp/content-find.md
+KUJO_ABILITY_DEV_TOKEN=&apos;replace-with-a-local-secret&apos; node devkit/cli.mjs serve examples/dev-manifest.json --port 7777</code></pre>
+<p>The loopback server uses authenticated discovery, approval, and invocation endpoints. Its manifest supplies static fixture outputs. Non-read fixtures need a short-lived, one-time approval bound to the request; keyed fixtures replay matching requests and reject conflicting reuse. It cannot run shell commands, load provider credentials, or serve as a production gateway.</p>
+<h2 id="connect-applications-and-agents">Connect applications and agents</h2>
+<p><a href="/showcases/cms/">CMS</a> owns domain definitions and application authorization. <a href="/tools/agents-sdk/">Agents SDK</a> projects definitions into agent tools. <a href="/tools/mcp/">MCP</a> projects explicitly enabled definitions into MCP tools and maintains the portable host bridge. <a href="/showcases/ssg/">SSG</a> supplies inspect, validate, and approval-gated build definitions.</p>
+<p>An Ability definition describes an operation; it never grants permission. The application must authenticate and authorize requests, persist approvals and audit evidence, isolate tenants, and enforce timeouts at the handler boundary.</p>
+<h2 id="verify-and-learn-more">Verify and learn more</h2>
+<pre><code class="language-bash">bash tests/run_tests.sh
+bash scripts/verify-release.sh</code></pre>
+<p>The release gate includes cross-language conformance, offline trust checks, fixture execution, available consumer conformance, and Fence architecture checks. See the <a href="https://github.com/kujolang/ability/releases/tag/v1.1.0">release</a>, <a href="https://github.com/kujolang/ability/blob/v1.1.0/docs/RUNTIME.md">runtime guide</a>, <a href="https://github.com/kujolang/ability/blob/v1.1.0/docs/REGISTRY.md">pack trust model</a>, and <a href="https://github.com/kujolang/ability/blob/v1.1.0/docs/DEVKIT.md">development kit guide</a>.</p></div>
+	</article>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#install">Install</a></li><li class="toc-level-2"><a href="#what-the-release-includes">What the release includes</a></li><li class="toc-level-2"><a href="#digest-compatibility">Digest compatibility</a></li><li class="toc-level-2"><a href="#try-the-development-kit">Try the development kit</a></li><li class="toc-level-2"><a href="#connect-applications-and-agents">Connect applications and agents</a></li><li class="toc-level-2"><a href="#verify-and-learn-more">Verify and learn more</a></li></ol></nav>
+</main>
+
+<footer class="docs-footer" id="footer">
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.3.4</span></div>
+	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
+</footer>
+<script src="../../assets/sitekit/sitekit.js"></script>
+<script src="../../assets/js/docs.js"></script>
+<script src="../../assets/js/kujo-webmcp.js" data-kujo-webmcp data-kujo-site-index="../../.well-known/kujo-site-index.json" defer></script></body>
+</html>
