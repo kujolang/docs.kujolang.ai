@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## [1.3.1] - 2026-09-04
+
+### Changed
+
+- Replaced the compact PackWrite overview with a source-standardized 1.1.0 guide covering every current command, the generated pack contract, installation, configuration precedence, provider compatibility, safe overwrite behavior, and offline/CI use.
+- Updated site-wide version and release markers for the 1.3.1 documentation release.
+
 - Updated the Workflows collection and Publishing House guides for the official
   kujo-workflows 0.4.0 release, its 38-kit catalog, and the new Owned Agent
   Project workflow.
