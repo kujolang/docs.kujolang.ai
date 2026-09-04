@@ -1,3 +1,7 @@
 output/
 .output-*/
 assets/js/docs-search-index.json
+
+# Keep local SEO audit workspaces out of commits. Reviewed evidence already
+# tracked by Git remains tracked until it is removed explicitly.
+/seo-audit/
