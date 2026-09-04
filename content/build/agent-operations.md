@@ -12,7 +12,7 @@ status: stable
 version: 1.1.0
 last_updated: 2026-08-30
 previous: /build/agent-credentials/
-next: /build/review-and-ship/
+next: /review/
 tags: [ai, agents, operations, evaluation, security]
 ---
 

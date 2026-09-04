@@ -19,6 +19,15 @@ ROOT = Path(__file__).resolve().parents[1]
 SSG_ROOT = Path(os.environ.get("SSG_ROOT", ROOT.parent / "ssg")).resolve()
 SECTIONS = ("learn", "build", "review", "tools", "showcases", "collections", "ecosystem")
 KUJO_BIN = os.environ.get("KUJO_BIN", "kujo")
+SECTION_DESCRIPTIONS = {
+    "learn": "Learn Kujo syntax, runtime behavior, packages, capabilities, AI, and editor support.",
+    "build": "Build applications, agents, retrieval systems, workflows, and publishing systems with Kujo.",
+    "review": "Review Kujo tests, evidence, architecture, privacy, and release gates.",
+    "tools": "Use Kujo tools for agents, orchestration, evidence, quality, publishing, and operations.",
+    "showcases": "Explore complete Kujo applications and local-first workflow demonstrations.",
+    "collections": "Browse Kujo workflows, skills, agents, and reproducible benchmarks.",
+    "ecosystem": "Understand the Kujo runtime, providers, primitives, tooling, and showcase ecosystem.",
+}
 
 
 DEPARTURE_MONO_CSS = """/* Kujo Docs typography: local Site Kit asset. */
@@ -196,6 +205,13 @@ def finalize_html(output: Path) -> None:
 
     for path in output.rglob("*.html"):
         html = path.read_text(encoding="utf-8")
+        relative = path.relative_to(output)
+        if len(relative.parts) == 2 and relative.name == "index.html" and relative.parts[0] in SECTION_DESCRIPTIONS:
+            section_description = SECTION_DESCRIPTIONS[relative.parts[0]]
+            html = html.replace(
+                "The shortest path from language basics to reviewable, local-first software.",
+                section_description,
+            )
         html = empty_prerequisites.sub("", html)
         html = section_badge.sub("", html)
         html = listing_link.sub(

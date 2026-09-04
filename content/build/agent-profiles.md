@@ -53,7 +53,7 @@ The generated repository owns the configuration for each integration. Kujo does 
 - [Agents SDK](/tools/agents-sdk/) owns agent execution primitives.
 - [AI SDK](/tools/ai-sdk/) owns normalized provider requests.
 - [MCP](/tools/mcp/) owns tool and resource interoperability.
-- [RAG Starter Kit](/tools/rag-starter-kit/) owns local knowledge retrieval.
+- [RAG Starter Kit](/tools/rag/) owns local knowledge retrieval.
 - [Dispatch](/tools/dispatch/) owns durable workflows.
 - [Workcell](/tools/workcell/) owns the container isolation boundary.
 - [Watchdog](/tools/watchdog/) and [RunLedger](/tools/runledger/) add optional telemetry and receipts.

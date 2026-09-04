@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+## [1.3.3] - 2026-09-04
+
+### Added
+
+- Added a reproducible full-site SEO and AI-search audit covering all 98 canonical documentation pages, production delivery, crawler access, links, schema, media, search observations, and representative lab performance.
+
+### Changed
+
+- Added unique descriptions to generated section landing pages and distinguished the ecosystem showcase directory from the showcase collection.
+- Repaired two stale internal links and added intrinsic dimensions to the shared header and footer logomarks.
+
 ## [1.3.2] - 2026-09-04
 
 ### Added

@@ -1,5 +1,5 @@
 ---
-title: Showcases
+title: Showcase Directory
 description: Proof applications demonstrating complete local workflows and product surfaces.
 template: docs
 section: Ecosystem

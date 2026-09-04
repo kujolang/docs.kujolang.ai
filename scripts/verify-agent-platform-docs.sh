@@ -111,5 +111,11 @@ require_text "ecosystem/tooling/index.html" 'href="/tools/paperclip/"'
 require_text "sitemap.xml" "/tools/paperclip/"
 require_text "llms.txt" "Kujo for Paperclip"
 require_text ".well-known/kujo-site-index.json" "paperclip"
+require_text "build/agent-operations/index.html" 'href="/review/" rel="next"'
+require_text "build/agent-profiles/index.html" 'href="/tools/rag/"'
+reject_text "build/agent-profiles/index.html" '/tools/rag-starter-kit/'
+require_text "ecosystem/showcases/index.html" '<title>Showcase Directory | Kujo Docs</title>'
+require_text "tools/index.html" 'Use Kujo tools for agents, orchestration, evidence, quality, publishing, and operations.'
+require_text "index.html" 'width="32" height="32"'
 
 printf 'Agent platform documentation contract passed.\n'
