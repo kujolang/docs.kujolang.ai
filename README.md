@@ -2,7 +2,7 @@
 
 The official documentation site for the Kujo language and ecosystem, published at [docs.kujolang.ai](https://docs.kujolang.ai).
 
-Version **1.3.3** was released on **September 4, 2026** with a complete SEO and AI-search audit, unique section metadata, repaired internal navigation, and explicit image dimensions. It retains the Kujo for Paperclip and source-standardized PackWrite 1.1.0 guides. The site follows the Kujo documentation information architecture: a short first-run path, task-oriented learning, intent-based tool guidance, reviewable-work workflows, showcases, collections, and reference material.
+Version **1.3.4** was released on **September 4, 2026** with the SearchBridge 1.0.0 guide, release-scoped SEO and AI-search verification, and site-wide social metadata contracts. It retains the complete 1.3.3 technical audit, Kujo for Paperclip, and source-standardized PackWrite 1.1.0 guides. The site follows the Kujo documentation information architecture: a short first-run path, task-oriented learning, intent-based tool guidance, reviewable-work workflows, showcases, collections, and reference material.
 
 ## Build
 
@@ -40,6 +40,12 @@ Then open [http://127.0.0.1:4178](http://127.0.0.1:4178).
 ```bash
 bash ../ssg/scripts/validate-generated-output.sh output
 bash scripts/verify-agent-platform-docs.sh output
+```
+
+The release contract runs the same build and checks from one entrypoint:
+
+```bash
+bash tests/site-contract.sh
 ```
 
 Before release, also verify the generated sitemap routes, the themed 404 response, desktop and mobile layouts, same-origin links, keyboard interactions, and automated accessibility checks.

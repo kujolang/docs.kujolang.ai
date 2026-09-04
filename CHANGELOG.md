@@ -2,13 +2,17 @@
 
 ## Unreleased
 
+## [1.3.4] - 2026-09-04
+
 ### Added
 
 - Added a deterministic Howl social-card source and a 1200-by-630 raster card used by every documentation route for Open Graph and X previews.
+- Added a release-scoped SEO and AI-search audit for the SearchBridge 1.0.0 documentation publication.
 
 ### Changed
 
 - Added exact generated-site assertions for the shared social image, dimensions, and per-page Open Graph/X metadata.
+- Updated SearchBridge from its stale 0.3.0 preview description to the released 1.0.0 product contract, verified stable-live providers, fixture-only boundaries, and v1.1 follow-ups.
 
 ## [1.3.3] - 2026-09-04
 
