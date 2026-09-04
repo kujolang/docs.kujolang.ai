@@ -1,0 +1,6 @@
+url,page_type,primary_topic,search_intent,audience,distinctive_evidence,cannibalization_note,recommended_action
+https://docs.kujolang.ai/,home,Kujo documentation,navigational/developer onboarding,Kujo developers,"Path-based documentation entry",Distinct from product homepage,Maintain clear task paths
+https://docs.kujolang.ai/start-here/,page,getting started with Kujo,how-to,new Kujo users,"Ordered first-run path",Quickstart supplies executable detail,Maintain navigational distinction
+https://docs.kujolang.ai/build/,collection,building with Kujo,how-to/development,application builders,"Architecture and workflow topic hub",Child pages own narrow tasks,Maintain hub links
+https://docs.kujolang.ai/tools/,collection,Kujo tools documentation,comparison/how-to,tool users,"Complete tool guide directory",Product site serves marketing intent,Maintain guide coverage
+https://docs.kujolang.ai/tools/packwrite/,docs,PackWrite agent execution packs,how-to,agent workflow engineers,"Current PackWrite 1.1 commands configuration and pack contract",Product page serves evaluation intent,Measure discovery and preserve concrete examples
