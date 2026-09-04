@@ -1420,6 +1420,31 @@
       "text": "Use it when\u2026 You have a substantial project brief, feature plan, or repository migration that is too large to trust to one transient chat. PackWrite turns that intent into a versionable agent/ operating manual with bounded phases, acceptance criteria, handoff state, decisions, and reviewer guidance. PackWrite is local-first and AI-assisted. It compiles the p"
     },
     {
+      "title": "Kujo for Paperclip",
+      "description": "Add focused context, change review, and reproducible failure evidence to Paperclip tasks.",
+      "url": "https://docs.kujolang.ai/tools/paperclip/",
+      "route": "tools/paperclip/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "beginner",
+      "status": "released",
+      "version": "0.1.7",
+      "tags": [
+        "[tool, agents, context, review, evidence]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Install",
+        "Interface overview",
+        "First use",
+        "Agent tools",
+        "Safety boundary",
+        "Current install note",
+        "Reference"
+      ],
+      "text": "Use it when\u2026 Paperclip agents need a small, visible set of repository context, a clear review of change scope, or a safe record of failed command output. Kujo works in Paperclip's current task view. You do not need the Classic Task Interface. Install You need Paperclip 2026.824.1 or later and Node.js 24.11.0 or later. Restart Paperclip if it is already runni"
+    },
+    {
       "title": "PatchBrief",
       "description": "Turn a diff into a reviewable summary and handoff.",
       "url": "https://docs.kujolang.ai/tools/patchbrief/",

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="kujo-light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		(function() {
+			try {
+				if (window.localStorage.getItem('sk-theme') === 'kujo-dark') {
+					document.documentElement.dataset.theme = 'kujo-dark';
+				}
+			} catch (error) {}
+		})();
+	</script>
+	<title>Kujo for Paperclip | Kujo Docs</title>
+	<meta name="description" content="Add focused context, change review, and reproducible failure evidence to Paperclip tasks.">
+	<meta name="keywords" content="SSG, Static Site Generator">
+	<meta name="author" content="Kujo">
+	<link rel="canonical" href="https://docs.kujolang.ai/tools/paperclip/">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/assets/img/kujo-logomark-black.svg" color="#000000">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="application-name" content="Kujo Docs">
+	<meta name="apple-mobile-web-app-title" content="Kujo Docs">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Kujo for Paperclip">
+	<meta property="og:description" content="Add focused context, change review, and reproducible failure evidence to Paperclip tasks.">
+	<meta property="og:url" content="https://docs.kujolang.ai/tools/paperclip/">
+	<meta property="og:type" content="article">
+	<meta property="og:site_name" content="Kujo Docs">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Kujo for Paperclip">
+	<meta name="twitter:description" content="Add focused context, change review, and reproducible failure evidence to Paperclip tasks.">
+
+	<link href="../../assets/css/fonts.css" rel="stylesheet">
+	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Kujo for Paperclip","name":"Kujo for Paperclip","description":"Add focused context, change review, and reproducible failure evidence to Paperclip tasks.","url":"https://docs.kujolang.ai/tools/paperclip/","author":{"@type":"Person","name":"Unknown Author"},"publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="docs-topbar" id="navigation">
+	<div class="docs-topbar-row">
+		<a class="docs-brand" href="../../index.html"><img class="docs-brand-mark" src="../../assets/img/kujo-logomark-black.svg" alt=""> <span>Docs</span></a>
+		<label class="docs-search-shell">
+			<span class="sr-only">Search documentation</span>
+			<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
+		</label>
+		<div class="docs-header-actions">
+			<button class="docs-theme-button docs-icon-button" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-docs-theme>
+				<svg class="docs-moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c.132 0 .263 .003 .393 .008a7.5 7.5 0 0 0 7.599 9.6A9 9 0 1 1 12 3"/></svg>
+				<svg class="docs-sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-4 0a4 4 0 1 0 8 0 4 4 0 1 0-8 0M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+			</button>
+			<button class="docs-menu-button docs-icon-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu>
+				<svg class="docs-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+				<svg class="docs-close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+			</button>
+		</div>
+	</div>
+	<nav id="primary-navigation" class="docs-primary-nav" aria-label="Primary navigation">
+		<a href="/start-here/">Start here</a>
+		<a href="/learn/">Learn Kujo</a>
+		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
+		<a href="/tools/">Tools</a>
+		<a href="/showcases/">Showcases</a>
+	</nav>
+</header>
+<div id="docs-search-results" class="docs-search-results" aria-live="polite"></div>
+<main class="docs-shell" id="main-content">
+	<aside class="docs-sidebar" aria-label="Documentation sections">
+		<p class="docs-sidebar-label">Browse</p>
+		<ul>
+			<li><a href="/start-here/">Start here</a></li>
+			<li><a href="/install/">Install Kujo</a></li>
+			<li><a href="/quickstart/">Quickstart</a></li>
+			<li><a href="/choose-a-path/">Choose a path</a></li>
+			<li><a href="/learn/">Learn Kujo</a></li>
+			<li><a href="/build/">Build with Kujo</a></li>
+			<li><a href="/review/">Reviewable work</a></li>
+			<li><a href="/tools/">Tools</a></li>
+			<li><a href="/showcases/">Showcases</a></li>
+			<li><a href="/collections/">Collections</a></li>
+			<li><a href="/ecosystem/">Ecosystem</a></li>
+			<li><a href="/reference/">Reference</a></li>
+			<li><a href="/security/">Security model</a></li>
+			<li><a href="/release-boundaries/">Release boundaries</a></li>
+			<li><a href="/support/">Support</a></li>
+		</ul>
+	</aside>
+	<article class="docs-article">
+		<h1 id="kujo-for-paperclip">Kujo for Paperclip</h1><p class="docs-description">Add focused context, change review, and reproducible failure evidence to Paperclip tasks.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>released</span><span class="docs-badge docs-badge-version"><span>Version</span>0.1.7</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-04</span></div>
+		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
+<p>Paperclip agents need a small, visible set of repository context, a clear review of change scope, or a safe record of failed command output.</p>
+<p>Kujo works in Paperclip&apos;s current task view. You do not need the Classic Task Interface.</p>
+<h2 id="install">Install</h2>
+<p>You need Paperclip <code>2026.824.1</code> or later and Node.js <code>24.11.0</code> or later.</p>
+<pre><code class="language-bash">npx paperclipai plugin install @kujolang/paperclip</code></pre>
+<p>Restart Paperclip if it is already running, then open an issue. The Kujo workspace appears in the task view. You can also open the <strong>Kujo</strong> tab on project, issue, and run pages.</p>
+<p>The npm package includes the right Kujo runtime for supported macOS, Linux, and Windows systems. You do not need a separate Kujo install or Kujo API key.</p>
+<h2 id="interface-overview">Interface overview</h2>
+<table><thead><tr>
+<th>Surface</th>
+<th>What it does</th>
+</tr></thead><tbody>
+<tr>
+<td>Context Pack</td>
+<td>Uses Scent to select a bounded, task-specific file set before broad reading</td>
+</tr>
+<tr>
+<td>Review Pack</td>
+<td>Uses ChangeBucket and PatchBrief to measure scope, show risk signals, and prepare a handoff</td>
+</tr>
+<tr>
+<td>Failure Evidence</td>
+<td>Uses CaseFile to save supplied command details and bounded logs with sensitive values redacted</td>
+</tr>
+<tr>
+<td>Agent tools</td>
+<td>Exposes four Paperclip tools for context selection, approved file reads, change review, and failure capture</td>
+</tr>
+</tbody></table>
+<h2 id="first-use">First use</h2>
+<p>1. Open the Paperclip issue you want to work on.</p>
+<p>2. Create a focused Context Pack.</p>
+<p>3. Make and test the change with the repository&apos;s normal tools.</p>
+<p>4. Create a Review Pack.</p>
+<p>5. Save Failure Evidence when a command fails.</p>
+<p>The plugin stores the latest result in Paperclip plugin state. It does not write reports into the repository.</p>
+<h2 id="agent-tools">Agent tools</h2>
+<table><thead><tr>
+<th>Tool</th>
+<th>Use</th>
+</tr></thead><tbody>
+<tr>
+<td><code>kujolang.paperclip:get-context</code></td>
+<td>Select files at minimal, focused, or broad depth</td>
+</tr>
+<tr>
+<td><code>kujolang.paperclip:get-context-content</code></td>
+<td>Read safe content only from files selected by that Context Pack</td>
+</tr>
+<tr>
+<td><code>kujolang.paperclip:review-changes</code></td>
+<td>Measure a working tree or Git range and create a review handoff</td>
+</tr>
+<tr>
+<td><code>kujolang.paperclip:capture-failure</code></td>
+<td>Save supplied command output as redacted evidence without running it</td>
+</tr>
+</tbody></table>
+<pre><code class="language-text">Use kujolang.paperclip:get-context with task &quot;trace the OAuth callback&quot; and depth &quot;focused&quot;.
+Read only the selected files needed for the change.
+Use kujolang.paperclip:review-changes after the edit.
+If a check fails, use kujolang.paperclip:capture-failure with the command, exit code, and bounded log.</code></pre>
+<h2 id="safety-boundary">Safety boundary</h2>
+<p>The worker starts child processes without a shell, uses a canonical Paperclip workspace, caps time and output, and passes a small environment. The content tool rejects files outside the matching Context Pack, traversal, symlink escapes, binary files, and oversized files. Failure Evidence never runs a command.</p>
+<p>Suggested checks remain suggestions until another system records that they ran.</p>
+<h2 id="current-install-note">Current install note</h2>
+<p>Use the unversioned package name in the install command for now. Current Paperclip releases mishandle an exact version suffix on scoped npm packages. The fix is under review in <a href="https://github.com/paperclipai/paperclip/pull/12745">paperclipai/paperclip#12745</a>. Normal installation and use are not blocked.</p>
+<h2 id="reference">Reference</h2>
+<p>Read the <a href="https://github.com/kujolang/paperclip">Kujo for Paperclip repository</a>, <a href="https://github.com/kujolang/paperclip/blob/v0.1.7/docs/USAGE.md">complete usage guide</a>, <a href="https://github.com/kujolang/paperclip/blob/v0.1.7/docs/COMPATIBILITY.md">compatibility contract</a>, and <a href="https://github.com/kujolang/paperclip/releases/tag/v0.1.7">v0.1.7 release</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/howl/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/site-kit/" rel="next"><span>Next</span></a></nav>
+	</article>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#install">Install</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#first-use">First use</a></li><li class="toc-level-2"><a href="#agent-tools">Agent tools</a></li><li class="toc-level-2"><a href="#safety-boundary">Safety boundary</a></li><li class="toc-level-2"><a href="#current-install-note">Current install note</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+</main>
+
+<footer class="docs-footer" id="footer">
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.3.2</span></div>
+	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
+</footer>
+<script src="../../assets/sitekit/sitekit.js"></script>
+<script src="../../assets/js/docs.js"></script>
+<script src="../../assets/js/kujo-webmcp.js" data-kujo-webmcp data-kujo-site-index="../../.well-known/kujo-site-index.json" defer></script></body>
+</html>
