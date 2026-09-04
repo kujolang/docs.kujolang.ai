@@ -1,10 +1,10 @@
 # Lens Report
 
 Status: PASS
-URL: https://docs.kujolang.ai/build/publishing-house-operator/
-Started: 2026-09-04T15:37:54Z
-Finished: 2026-09-04T15:38:20Z
-Duration: 26285ms
+URL: https://docs.kujolang.ai/build/publishing-house-operator/?social-audit=final
+Started: 2026-09-04T16:14:50Z
+Finished: 2026-09-04T16:15:15Z
+Duration: 24717ms
 Viewports: desktop, 390x844
 Output Directory: /Users/robertdevore/2026/Kujolang/kujo-repos/docs.kujolang.ai/seo-audit/workflows-v040/2026-09-04/raw/lens-after/operator
 

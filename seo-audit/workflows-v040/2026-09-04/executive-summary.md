@@ -21,6 +21,8 @@ heuristics for before/after comparison, not search-engine scores.
   the same `Showcases` title.
 - Both shared brand images omitted intrinsic dimensions on every page, for 196
   affected occurrences.
+- All 98 canonical pages requested a large X card but emitted no Open Graph or
+  X image metadata.
 - Two public links led to GitHub repositories that return 404 anonymously.
 - Search-console, analytics, field-performance, backlink, and controlled
   AI-answer measurements were unavailable.
@@ -31,6 +33,8 @@ heuristics for before/after comparison, not search-engine scores.
 - Seven section landing pages now have distinct descriptions, and the ecosystem
   listing is titled `Showcase Directory`.
 - Both shared brand images now render with 32-by-32 intrinsic dimensions.
+- A deterministic Howl source now generates a shared 1200-by-630 Kujo Docs card;
+  every page declares it for Open Graph and X with dimensions and alt text.
 - The docs contract now asserts the repaired links, metadata, and image
   dimensions. Docs v1.3.3 was built cleanly and deployed through `gh-pages`.
 
@@ -42,7 +46,7 @@ missing image dimensions, canonical errors, H1 issues, orphan pages, or schema
 parse errors. Both representative publishing guides pass desktop and 390px
 mobile Lens checks with zero accessibility violations, failed internal links,
 page overflow, console errors, or failed requests. The internal
-technical-readiness score is 94/100 and AI-search-readiness score is 86/100;
+technical-readiness score is 95/100 and AI-search-readiness score is 88/100;
 remaining deductions reflect unavailable destinations and outcome data.
 
 ## Available measurements

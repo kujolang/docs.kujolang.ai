@@ -28,11 +28,17 @@ remains an experimental discovery aid, not a ranking requirement.
 
 ```bash
 PATH=/absolute/path/to/kujo:$PATH python3 scripts/build_site.py --site-url https://docs.kujolang.ai
+bash scripts/render-social-card.sh
 bash ../ssg/scripts/validate-generated-output.sh output
 bash scripts/verify-agent-platform-docs.sh output
 python3 ../kujolang.ai-work/scripts/seo_audit.py --repo . --output output --audit-dir seo-audit/workflows-v040/2026-09-04 --phase after --origin https://docs.kujolang.ai --probe-production
 python3 ../kujolang.ai-work/scripts/probe_site.py --audit-dir seo-audit/workflows-v040/2026-09-04 --origin https://docs.kujolang.ai --phase after --key-path /build/publishing-house-operator/ --skip-www --feed-path ''
 ```
+
+The Howl manifest and source text are committed beside the 1200-by-630 raster
+artifact. The render is deterministic for a fixed Howl version, background,
+font, and source; the generated-site contract requires the exact public image
+URL on every HTML page.
 
 ## Interpretation limits
 
