@@ -13,7 +13,7 @@
 		})();
 	</script>
 	<title>PackWrite | Kujo Docs</title>
-	<meta name="description" content="Compile repeatable agent execution packs from context and prompts.">
+	<meta name="description" content="Compile a repository mega prompt and bounded context into deterministic execution packs for implementation agents and reviewers.">
 	<meta name="keywords" content="SSG, Static Site Generator">
 	<meta name="author" content="Kujo">
 	<link rel="canonical" href="https://docs.kujolang.ai/tools/packwrite/">
@@ -30,19 +30,19 @@
 	<meta name="msapplication-config" content="/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<meta property="og:title" content="PackWrite">
-	<meta property="og:description" content="Compile repeatable agent execution packs from context and prompts.">
+	<meta property="og:description" content="Compile a repository mega prompt and bounded context into deterministic execution packs for implementation agents and reviewers.">
 	<meta property="og:url" content="https://docs.kujolang.ai/tools/packwrite/">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="Kujo Docs">
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="PackWrite">
-	<meta name="twitter:description" content="Compile repeatable agent execution packs from context and prompts.">
+	<meta name="twitter:description" content="Compile a repository mega prompt and bounded context into deterministic execution packs for implementation agents and reviewers.">
 
 	<link href="../../assets/css/fonts.css" rel="stylesheet">
 	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
 	<link href="../../assets/css/style.css" rel="stylesheet">
-	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"PackWrite","name":"PackWrite","description":"Compile repeatable agent execution packs from context and prompts.","url":"https://docs.kujolang.ai/tools/packwrite/","author":{"@type":"Person","name":"Unknown Author"},"publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"PackWrite","name":"PackWrite","description":"Compile a repository mega prompt and bounded context into deterministic execution packs for implementation agents and reviewers.","url":"https://docs.kujolang.ai/tools/packwrite/","author":{"@type":"Person","name":"Unknown Author"},"publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -96,9 +96,10 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="packwrite">PackWrite</h1><p class="docs-description">Compile repeatable agent execution packs from context and prompts.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
+		<h1 id="packwrite">PackWrite</h1><p class="docs-description">Compile a repository mega prompt and bounded context into deterministic execution packs for implementation agents and reviewers.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>released</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-04</span></div>
 		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
-<p>A team repeats the same agent workflow and needs the context, prompt, model configuration, and evidence contract to be inspectable.</p>
+<p>You have a substantial project brief, feature plan, or repository migration that is too large to trust to one transient chat. PackWrite turns that intent into a versionable <code>agent/</code> operating manual with bounded phases, acceptance criteria, handoff state, decisions, and reviewer guidance.</p>
+<p>PackWrite is local-first and AI-assisted. It compiles the pack; it does not implement the project.</p>
 <h2 id="interface-overview">Interface overview</h2>
 <table><thead><tr>
 <th>Surface</th>
@@ -109,43 +110,127 @@
 <td><code>packwrite init [file]</code> builds an <code>agent/</code> pack from <code>MEGA_PROMPT.md</code></td>
 </tr>
 <tr>
+<td>Preview</td>
+<td><code>packwrite init MEGA_PROMPT.md --dry-run</code> calls the model and validates its manifest without writing</td>
+</tr>
+<tr>
 <td>Validate</td>
-<td>Deterministic <code>validate</code> plus environment-aware <code>doctor --strict</code></td>
+<td><code>packwrite validate</code> checks pack structure deterministically; <code>--json</code> supports CI</td>
+</tr>
+<tr>
+<td>Summarize</td>
+<td><code>packwrite summary</code> reports phase count, missing files, warnings, and the next command</td>
+</tr>
+<tr>
+<td>Diagnose</td>
+<td><code>packwrite doctor</code> explains prompt, provider, endpoint, credential, and output state; <code>--strict</code> fails on blockers</td>
 </tr>
 <tr>
 <td>Prompts</td>
-<td><code>prompt &lt;target&gt;</code> for implementation and review agents</td>
+<td><code>packwrite prompt deepseek</code> prints the implementation handoff; <code>prompt codex-review</code> prints the independent review handoff</td>
 </tr>
 <tr>
 <td>Configuration</td>
-<td><code>packwrite.toml</code>, provider/model settings, and offline fake-response tests</td>
+<td><code>packwrite config</code> shows the resolved defaults, global config, project config, and CLI overrides</td>
+</tr>
+<tr>
+<td>Automation</td>
+<td><code>--quiet</code>, JSON status, and fake-response inputs support offline tests and CI</td>
 </tr>
 </tbody></table>
 <h2 id="main-workflows">Main workflows</h2>
-<ul>
-<li>Preview pack generation with <code>--dry-run</code> before writing the repo-local <code>agent/</code> directory.</li>
-<li>Validate the generated execution pack before handing it to an implementation agent.</li>
-<li>Print the exact prompt for a supported target so it can be piped without decoration.</li>
-<li>Use <code>doctor</code> to separate config, endpoint, credential, and generated-state problems.</li>
-</ul>
+<p>1. Write <code>MEGA_PROMPT.md</code> with purpose, users, use cases, non-goals, architecture guardrails, and a definition of done.</p>
+<p>2. Run <code>doctor --strict</code> before spending a provider call.</p>
+<p>3. Preview generation with <code>--dry-run</code>.</p>
+<p>4. Generate and inspect the repository-local <code>agent/</code> pack.</p>
+<p>5. Run deterministic validation and summary checks.</p>
+<p>6. Hand the implementation prompt to an agent, then use the separate review prompt for independent verification.</p>
 <h2 id="five-minute-example">Five-minute example</h2>
-<pre><code class="language-bash">packwrite init MEGA_PROMPT.md --dry-run
+<pre><code class="language-bash">packwrite doctor --strict
+packwrite init MEGA_PROMPT.md --dry-run
+packwrite init MEGA_PROMPT.md --provider deepseek --model deepseek-v4-pro
 packwrite validate
+packwrite summary
+packwrite prompt deepseek
 packwrite prompt codex-review</code></pre>
+<p>The launcher preserves your current working directory, so configuration discovery and pack output belong to the repository where you run it.</p>
+<h2 id="install-and-run">Install and run</h2>
+<p>PackWrite is written in Kujo and requires the <code>kujo</code> interpreter. Clone the repository and run its launcher directly, or install the launcher symlink:</p>
+<pre><code class="language-bash">git clone https://github.com/kujolang/packwrite.git
+cd packwrite
+./bin/packwrite --help
+make install
+packwrite version</code></pre>
+<p>API keys are environment variables only. PackWrite checks <code>PACKWRITE_API_KEY</code> first and then provider-specific variables such as <code>DEEPSEEK_API_KEY</code> and <code>OPENAI_API_KEY</code>.</p>
 <h2 id="what-you-get">What you get</h2>
-<p>An execution pack, prompt, config, doctor output, and deterministic validation result.</p>
+<p>The default pack is:</p>
+<pre><code class="language-text">agent/
+MASTER.md
+TODO.md
+HANDOFF.md
+DECISIONS.md
+REVIEW_CHECKLIST.md
+DEEPSEEK_START.md
+CODEX_REVIEW_PROMPT.md
+phases/
+00-project-brief.md
+01-*.md</code></pre>
+<p><code>MASTER.md</code> holds stable intent. Phase files define scope and acceptance criteria. <code>HANDOFF.md</code> and <code>DECISIONS.md</code> preserve mutable run state. The checklist and two prompts separate implementation from review.</p>
+<p>Optional prompt and review files are controlled by <code>[pack]</code> settings and remain part of validation when enabled.</p>
+<h2 id="configure-packwrite">Configure PackWrite</h2>
+<p>Resolution order is:</p>
+<pre><code class="language-text">defaults &lt; ~/.config/packwrite/config.toml &lt; ./packwrite.toml &lt; CLI flags</code></pre>
+<pre><code class="language-toml">[prompt]
+file = &quot;MEGA_PROMPT.md&quot;
+[output]
+dir = &quot;agent&quot;
+overwrite = false
+[model]
+provider = &quot;deepseek&quot;
+model = &quot;deepseek-v4-pro&quot;
+temperature = 0.1
+[repo_context]
+include = [&quot;README.md&quot;, &quot;src&quot;, &quot;tests&quot;, &quot;docs&quot;]
+exclude = [&quot;.env&quot;, &quot;.git&quot;, &quot;node_modules&quot;, &quot;dist&quot;, &quot;build&quot;]
+[pack]
+min_phases = 6
+max_phases = 12
+include_deepseek_prompt = true
+include_codex_review_prompt = true
+include_review_checklist = true</code></pre>
+<p><code>[output].mode</code> and <code>--run-name</code> are reserved in 1.1 and do not yet drive execution behavior.</p>
+<h2 id="providers">Providers</h2>
+<p>The adapter speaks the OpenAI-compatible chat-completions protocol. Built-in endpoint presets cover DeepSeek, OpenAI, and a local compatible server. Other providers require an explicit <code>--endpoint</code> pointing to an OpenAI-compatible gateway.</p>
+<p>Anthropic is not a native endpoint in 1.1 because its API uses a different protocol. Use an explicit compatible gateway when you need Claude or another non-compatible provider.</p>
+<h2 id="safe-generation-and-overwrite">Safe generation and overwrite</h2>
+<ul>
+<li>Repository context is bounded and skips common dependency, build, and secret-looking paths by default.</li>
+<li>Output directories must be non-empty relative paths that cannot escape the project.</li>
+<li>Generated file paths reject traversal, backslash ambiguity, home expansion, control characters, symlink ancestors, and secret-looking names.</li>
+<li>Model output must be a JSON object with a non-empty <code>files</code> array of string paths and content.</li>
+<li>Response size and diagnostics are bounded before writes.</li>
+<li><code>--overwrite</code> stages a clean replacement, validates it, promotes it atomically, prunes stale files, and rolls back a failed promotion.</li>
+<li><code>--save-raw-response</code> is explicit, owner-only, and no-overwrite because model payloads can contain sensitive context.</li>
+</ul>
+<h2 id="offline-and-ci-use">Offline and CI use</h2>
+<p>Use a reviewed fake response to exercise the complete write and validation path without credentials or network access:</p>
+<pre><code class="language-bash">export PACKWRITE_FAKE_RESPONSE_FILE=/path/to/manifest.json
+packwrite init MEGA_PROMPT.md
+packwrite validate --json
+packwrite doctor --strict --json</code></pre>
+<p><code>PACKWRITE_FAKE_RESPONSE</code> also accepts an inline manifest. <code>packwrite init --quiet</code> suppresses successful progress and summary output while keeping errors visible.</p>
 <h2 id="how-it-fits">How it fits</h2>
-<p>Compile from <a href="/tools/scent/">Scent</a> and run quietly with <a href="/tools/muzzle/">Muzzle</a>.</p>
+<p>Use <a href="/tools/spec/">Spec</a> to define a precise task contract, <a href="/tools/scent/">Scent</a> to prepare focused context, PackWrite to compile the execution manual, <a href="/tools/muzzle/">Muzzle</a> for quiet repeatable runs, and the <a href="/collections/workflows/">workflow catalog</a> to evaluate and record bounded implementation work.</p>
 <h2 id="boundaries">Boundaries</h2>
-<p>PackWrite is a local/team workflow compiler; provider and hosted execution remain separate concerns.</p>
+<p>PackWrite 1.1.0 is a released local/team workflow compiler, not a hosted agent platform. It does not supply SaaS authentication, organization policy, multi-user coordination, audit storage, signing, deployment controls, or a universal provider protocol. Generated packs still require review for scope, authority, model configuration, repository constraints, and real release gates.</p>
 <h2 id="reference">Reference</h2>
-<p>See the <a href="https://github.com/kujolang/packwrite">PackWrite repository</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/shipcheck/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/casefile/" rel="next"><span>Next</span></a></nav>
+<p>See the <a href="https://github.com/kujolang/packwrite">PackWrite repository</a>, <a href="https://github.com/kujolang/packwrite/releases/tag/v1.1.0">v1.1.0 release</a>, <a href="https://github.com/kujolang/packwrite/blob/v1.1.0/docs/CONFIGURATION.md">configuration reference</a>, and <a href="https://github.com/kujolang/packwrite/blob/v1.1.0/docs/HOWTO.md">end-to-end guide</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/shipcheck/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/casefile/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#install-and-run">Install and run</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#configure-packwrite">Configure PackWrite</a></li><li class="toc-level-2"><a href="#providers">Providers</a></li><li class="toc-level-2"><a href="#safe-generation-and-overwrite">Safe generation and overwrite</a></li><li class="toc-level-2"><a href="#offline-and-ci-use">Offline and CI use</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.3.0</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt=""><strong>Kujo</strong></a><span>Docs v1.3.1</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../../assets/sitekit/sitekit.js"></script>
