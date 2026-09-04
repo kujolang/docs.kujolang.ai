@@ -1,6 +1,6 @@
 ---
 title: Workcell
-description: Run bounded Kujo and agent workflows with Workcell 1.1's stable Docker and Podman lifecycle.
+description: Run bounded Kujo and agent workflows in disposable Docker or Podman workspaces.
 template: docs
 section: Tools
 nav_title: Workcell
@@ -21,13 +21,15 @@ A workflow needs a disposable Git worktree, bounded container resources, explici
 
 ## Interface overview
 
-`doctor`, `init`, `validate`, `inspect`, `run`, `verify`, ownership-scoped `clean`, `backends`, and `recover` form the Workcell 1.1 command surface. Docker and Podman provide the stable lifecycle; `inspect` resolves policy without starting a container.
+Workcell validates an execution definition, prepares a disposable Git workspace, runs the workload through Docker or Podman, exports declared artifacts, records evidence, and removes resources it owns.
 
-## Portable backend preview
+The main commands are `doctor`, `init`, `validate`, `inspect`, `run`, `verify`, `clean`, `backends`, and `recover`. Use `inspect` to resolve policy without starting a container.
 
-Workcell 1.1 includes alpha provider-neutral definitions, strict capability negotiation, portable receipts, ownership-bound recovery, and digest-pinned adapters for E2B, Vercel Sandbox, and Daytona. A workload can switch profiles without embedding provider configuration in its definition.
+## Portable backends
 
-The portable contracts and remote adapters are not part of the stable guarantee. Offline conformance does not certify a live provider account, plan, region, control boundary, latency, cost, or cleanup behavior. Use the repository's live-certification procedure before promoting any adapter.
+Provider-neutral definitions let a workload switch host profiles without embedding provider configuration. Before provisioning, Workcell compares the workload's requirements with the backend's capabilities. The receipt then records which controls were accepted, enforced, observed, unsupported, or unknown.
+
+Docker and Podman provide the supported execution path. Adapters for E2B, Vercel Sandbox, and Daytona are previews. Offline conformance checks their protocol behavior but does not certify a live provider account, plan, region, security boundary, latency, cost, or cleanup path. Run the repository's live-certification procedure before production use.
 
 ## Five-minute example
 
@@ -38,9 +40,9 @@ The portable contracts and remote adapters are not part of the stable guarantee.
 ./bin/workcell run --file workcell.json --repo . --no-pull
 ```
 
-## What you get
+## Evidence and recovery
 
-A run under `.workcell/runs/<run-id>/` with the receipt, manifest, verification result, exported artifacts, and cleanup outcome separated explicitly.
+Each run writes evidence under `.workcell/runs/<run-id>/`. The run directory separates the receipt, integrity manifest, logs, changes, exported artifacts, verification result, and cleanup outcome. `workcell verify` checks sealed evidence offline, while `recover` reconciles interrupted external resources by ownership.
 
 ## Boundaries
 
@@ -48,4 +50,4 @@ Workcell does not protect against a compromised daemon or host kernel, provide m
 
 ## Reference
 
-See the [Workcell repository](https://github.com/kujolang/workcell) and the [Workcell 1.1.0 release](https://github.com/kujolang/workcell/releases/tag/v1.1.0).
+See the [Workcell repository](https://github.com/kujolang/workcell) for installation, examples, contract references, provider operations, and current releases.
