@@ -44,4 +44,4 @@ Source is an MVP, not a blanket hosted-service claim. JSON is single-process; ex
 
 ## Reference
 
-See the [Source repository](https://github.com/kujolang/source).
+Source source is currently private. Public source access and installation are not available; the commands above are for authorized checkout owners.

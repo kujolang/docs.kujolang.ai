@@ -37,4 +37,4 @@ Signing, notarization, broader native automation, and fresh-machine Windows/Linu
 
 ## Reference
 
-See the [Cinch repository](https://github.com/kujolang/cinch).
+Cinch source is currently private. Public source access and installation are not available; the commands above are for authorized checkout owners.
