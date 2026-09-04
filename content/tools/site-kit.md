@@ -12,6 +12,7 @@ version: current
 last_updated: 2026-08-23
 scope: source and vendored distribution
 source_repo: site-kit
+previous: /tools/paperclip/
 tags: [tool, design-system, accessibility, web]
 ---
 

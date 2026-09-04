@@ -26,6 +26,7 @@ Core engineering tools include:
 - [Lens](/tools/lens/) — browser, accessibility, link, flow, and visual checks.
 - [Ward](/tools/ward/) — local Dependabot monitoring and remediation planning.
 - [Howl](/tools/howl/) — deterministic example and launch-proof artifacts.
+- [Kujo for Paperclip](/tools/paperclip/) — focused context, change review, and failure evidence inside Paperclip tasks.
 
 Web and publishing tools include:
 
