@@ -166,6 +166,33 @@ def merge_webmcp_indexes(output: Path, section_indexes: list[Path]) -> None:
     index_path.write_text(json.dumps(document, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n", encoding="utf-8")
 
 
+def remove_placeholder_authors(document: str) -> str:
+    """Omit the generic SSG's unknown-person placeholder, preserving real authors."""
+    def clean(value: object) -> None:
+        if isinstance(value, dict):
+            author = value.get("author")
+            if isinstance(author, dict) and author.get("@type") == "Person" and author.get("name") == "Unknown Author":
+                del value["author"]
+            for child in value.values():
+                clean(child)
+        elif isinstance(value, list):
+            for child in value:
+                clean(child)
+
+    def replace(match: re.Match[str]) -> str:
+        value = json.loads(match.group("body"))
+        clean(value)
+        body = json.dumps(value, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
+        return match.group("open") + body + match.group("close")
+
+    return re.sub(
+        r'(?P<open><script\b[^>]*\btype=[\'"]application/ld\+json[\'"][^>]*>)(?P<body>.*?)(?P<close></script\s*>)',
+        replace,
+        document,
+        flags=re.DOTALL | re.IGNORECASE,
+    )
+
+
 def finalize_html(output: Path) -> None:
     """Apply docs-specific cleanup that is not part of the generic SSG templates."""
     empty_prerequisites = re.compile(
@@ -219,6 +246,7 @@ def finalize_html(output: Path) -> None:
             html,
         )
         html = add_heading_ids(html)
+        html = remove_placeholder_authors(html)
         if path == output / "404.html":
             for relative, absolute in (
                 ('href="assets/', 'href="/assets/'),
