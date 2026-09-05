@@ -20,6 +20,7 @@ Kujo is a programming language and local-first ecosystem for building, checking,
 
 ## Pick a direction
 
+- **I already use Kujo** → read [runtime upgrade and bootstrap guidance](/upgrade/). The native command is implemented but unreleased.
 - **I want to write Kujo** → [Install Kujo](/install/), then run the [Quickstart](/quickstart/).
 - **I want to create and talk to an agent** → install the focused toolchain, then follow [Repository-owned Agent Projects](/build/owned-agent-projects/).
 - **I want to build an AI application** → start with [AI and agents](/build/ai-and-agents/) or the [AI SDK](/tools/ai-sdk/).

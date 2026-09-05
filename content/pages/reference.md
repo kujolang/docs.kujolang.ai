@@ -10,7 +10,7 @@ audience: developer
 difficulty: reference
 status: stable source-backed links
 version: current
-last_updated: 2026-08-23
+last_updated: 2026-09-05
 next: /security/
 tags: [reference, cli, generated]
 ---
@@ -20,6 +20,7 @@ Reference material is deliberately secondary to the first-time path. Use it when
 
 ## Core surfaces
 
+- **Runtime upgrade (unreleased):** [`kujo upgrade` syntax, checks, JSON, and recovery](/upgrade/). Not included in v1.2.3.
 - **CLI reference:** `kujo --help`, `kujo doctor --json`, and command-specific help.
 - **Language specification:** source-backed syntax, values, functions, modules, and errors.
 - **Standard library:** the stable library and builtin reference generated from source.

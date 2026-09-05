@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Add native runtime upgrade documentation, bootstrap and recovery guidance, and discovery links. Clarify that v1.2.3 does not include the command.
+
 - Document Ability 1.1.0 installation, SDK preview limits, digest compatibility, offline pack trust, fixture tooling, and application-owned execution.
 - Link the guide from Primitives, Agents SDK, and MCP.
 

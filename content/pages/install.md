@@ -1,6 +1,6 @@
 ---
 title: Install Kujo
-description: Install Kujo v1.1.0 and the tool group you need, or build the CLI from source.
+description: Install Kujo v1.2.3 and the tool group you need, or build the CLI from source.
 custom_url: install
 template: docs
 section: Start here
@@ -9,8 +9,8 @@ order: 20
 audience: developer
 difficulty: beginner
 status: stable
-version: 1.1.0
-last_updated: 2026-08-30
+version: 1.2.3
+last_updated: 2026-09-05
 previous: /start-here/
 next: /quickstart/
 prerequisites:
@@ -20,7 +20,7 @@ tags: [install, cli, stable]
 ---
 
 
-Kujo `v1.1.0` is the current stable release. The public installer selects the correct archive for your platform, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory.
+Kujo `v1.2.3` is the current stable release. The public installer selects the correct archive for your platform, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory.
 
 ## Install Kujo
 
@@ -35,7 +35,11 @@ Use a focused group when you want Kujo and the tools for one job. For the Agent 
 curl -fsSL https://kujolang.ai/install.sh | bash -s -- --group agent
 ```
 
-Run `curl -fsSL https://kujolang.ai/install.sh | bash -s -- --help` to review available groups and installer options before making changes. Direct archives and checksums remain available from the [Kujo v1.1.0 release](https://github.com/kujolang/kujo/releases/tag/v1.1.0).
+Run `curl -fsSL https://kujolang.ai/install.sh | bash -s -- --help` to review available groups and installer options before making changes. Direct archives and checksums remain available from the [Kujo v1.2.3 release](https://github.com/kujolang/kujo/releases/tag/v1.2.3).
+
+## Upgrade an existing runtime
+
+The native [`kujo upgrade` command](/upgrade/) is implemented in source but **not included in v1.2.3**. When a release containing it is published, bootstrap through your existing installer or package manager first. The guide covers read-only checks, exact versions, JSON output, managed installations, and backup recovery. Native upgrades replace only the runtime executable; ecosystem tools and package pins have separate update workflows.
 
 ## Source install
 
