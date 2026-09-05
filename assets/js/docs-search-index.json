@@ -1852,19 +1852,21 @@
       "section": "Tools",
       "audience": "all",
       "difficulty": "advanced",
-      "status": "stable 1.0 operator-controlled scope",
+      "status": "stable 1.0.1 operator-controlled scope",
       "version": "current",
       "tags": [
         "[tool, decisions, review, evidence]"
       ],
       "headings": [
         "Use it when\u2026",
+        "Current release: 1.0.1",
         "Five-minute example",
         "What you get",
         "Boundaries",
+        "Recover an interrupted index update",
         "Reference"
       ],
-      "text": "Use it when\u2026 A consequential proposal needs independent specialist testimony, cross-examination, a fatal-flaw pass, a ruling, and an execution-ready decision packet. Five-minute example Mock mode is the deterministic, offline, credential-free default. What you get Structured, replayable, SHA-256-sealed evidence with optional RSA signing and a portable decisi"
+      "text": "Use it when\u2026 A consequential proposal needs independent specialist testimony, cross-examination, a fatal-flaw pass, a ruling, and an execution-ready decision packet. Current release: 1.0.1 Tribunal 1.0.1 https://github.com/kujolang/tribunal/releases/tag/v1.0.1 is a patch release for local and operator-controlled review. It strengthens credential redaction, b"
     },
     {
       "title": "VersionSeal",

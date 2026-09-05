@@ -46,7 +46,7 @@
 	<link href="../../assets/css/fonts.css" rel="stylesheet">
 	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
 	<link href="../../assets/css/style.css" rel="stylesheet">
-	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Tribunal","name":"Tribunal","description":"Turn consequential proposals into adversarial, replayable decision evidence.","url":"https://docs.kujolang.ai/tools/tribunal/","author":{"@type":"Person","name":"Unknown Author"},"publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Tribunal","name":"Tribunal","description":"Turn consequential proposals into adversarial, replayable decision evidence.","url":"https://docs.kujolang.ai/tools/tribunal/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -100,9 +100,12 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="tribunal">Tribunal</h1><p class="docs-description">Turn consequential proposals into adversarial, replayable decision evidence.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>all</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>stable 1.0 operator-controlled scope</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
+		<h1 id="tribunal">Tribunal</h1><p class="docs-description">Turn consequential proposals into adversarial, replayable decision evidence.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>all</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>stable 1.0.1 operator-controlled scope</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-05</span></div>
 		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>A consequential proposal needs independent specialist testimony, cross-examination, a fatal-flaw pass, a ruling, and an execution-ready decision packet.</p>
+<h2 id="current-release-1-0-1">Current release: 1.0.1</h2>
+<p><a href="https://github.com/kujolang/tribunal/releases/tag/v1.0.1">Tribunal 1.0.1</a> is a patch release for local and operator-controlled review. It strengthens credential redaction, bridge failure handling, bundle integrity, and concurrent index coordination, and reduces repeated prompt and memory work. The v1 library API and evidence formats are unchanged.</p>
+<p>Download the release archive and its receipt, then follow <a href="https://github.com/kujolang/tribunal/blob/v1.0.1/docs/RELEASE_VERIFICATION.md">release verification</a> before running it. Use the pinned Kujo runtime and integrations in the <a href="https://github.com/kujolang/tribunal/blob/v1.0.1/docs/INTEGRATION_MATRIX.md">integration matrix</a> to reproduce release checks.</p>
 <h2 id="five-minute-example">Five-minute example</h2>
 <pre><code class="language-bash">./bin/tribunal doctor
 ./bin/tribunal validate examples/product-decision.md
@@ -113,10 +116,12 @@
 <p>Structured, replayable, SHA-256-sealed evidence with optional RSA signing and a portable decision packet.</p>
 <h2 id="boundaries">Boundaries</h2>
 <p>Tribunal does not certify hosted, regulated, shared-filesystem, identity, signing-custody, remote-storage, or provider deployments. Windows is outside the documented v1 platform scope.</p>
+<h2 id="recover-an-interrupted-index-update">Recover an interrupted index update</h2>
+<p>An interrupted index mutation can leave a lock or dirty marker. Follow the <a href="https://github.com/kujolang/tribunal/blob/v1.0.1/docs/OPERATIONS.md">index recovery procedure</a> before rebuilding; confirm that no writer is active. Do not run older Tribunal versions against the same storage concurrently because they bypass the new index coordination. Preserve sealed run evidence during recovery.</p>
 <h2 id="reference">Reference</h2>
 <p>See the <a href="https://github.com/kujolang/tribunal">Tribunal repository</a>.</p></div>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#current-release-1-0-1">Current release: 1.0.1</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#recover-an-interrupted-index-update">Recover an interrupted index update</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
