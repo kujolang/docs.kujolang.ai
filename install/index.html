@@ -13,7 +13,7 @@
 		})();
 	</script>
 	<title>Install Kujo | Kujo Docs</title>
-	<meta name="description" content="Install Kujo v1.1.0 and the tool group you need, or build the CLI from source.">
+	<meta name="description" content="Install Kujo v1.2.3 and the tool group you need, or build the CLI from source.">
 	<meta name="keywords" content="SSG, Static Site Generator">
 	<meta name="author" content="Kujo">
 	<link rel="canonical" href="https://docs.kujolang.ai/install/">
@@ -30,7 +30,7 @@
 	<meta name="msapplication-config" content="/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<meta property="og:title" content="Install Kujo">
-	<meta property="og:description" content="Install Kujo v1.1.0 and the tool group you need, or build the CLI from source.">
+	<meta property="og:description" content="Install Kujo v1.2.3 and the tool group you need, or build the CLI from source.">
 	<meta property="og:url" content="https://docs.kujolang.ai/install/">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="Kujo Docs">
@@ -40,13 +40,13 @@
 	<meta property="og:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Install Kujo">
-	<meta name="twitter:description" content="Install Kujo v1.1.0 and the tool group you need, or build the CLI from source.">
+	<meta name="twitter:description" content="Install Kujo v1.2.3 and the tool group you need, or build the CLI from source.">
 	<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
 	<meta name="twitter:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
 	<link href="../assets/css/fonts.css" rel="stylesheet">
 	<link href="../assets/sitekit/sitekit.css" rel="stylesheet">
 	<link href="../assets/css/style.css" rel="stylesheet">
-	<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","headline":"Install Kujo","name":"Install Kujo","description":"Install Kujo v1.1.0 and the tool group you need, or build the CLI from source.","url":"https://docs.kujolang.ai/install/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","headline":"Install Kujo","name":"Install Kujo","description":"Install Kujo v1.2.3 and the tool group you need, or build the CLI from source.","url":"https://docs.kujolang.ai/install/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -84,6 +84,7 @@
 		<ul>
 			<li><a href="/start-here/">Start here</a></li>
 			<li><a href="/install/">Install Kujo</a></li>
+			<li><a href="/upgrade/">Upgrade Kujo</a></li>
 			<li><a href="/quickstart/">Quickstart</a></li>
 			<li><a href="/choose-a-path/">Choose a path</a></li>
 			<li><a href="/learn/">Learn Kujo</a></li>
@@ -101,15 +102,17 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="install-kujo">Install Kujo</h1><p class="docs-description">Install Kujo v1.1.0 and the tool group you need, or build the CLI from source.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-30</span></div>
+		<h1 id="install-kujo">Install Kujo</h1><p class="docs-description">Install Kujo v1.2.3 and the tool group you need, or build the CLI from source.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>1.2.3</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-05</span></div>
 		<section class="docs-prerequisites" aria-label="Prerequisites"><h2 id="prerequisites">Prerequisites</h2><ul class="docs-prerequisites-list"><li>A supported macOS, Linux, or Windows workstation</li><li>A writable terminal workspace</li></ul></section>
-		<div class="docs-body"><p>Kujo <code>v1.1.0</code> is the current stable release. The public installer selects the correct archive for your platform, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory.</p>
+		<div class="docs-body"><p>Kujo <code>v1.2.3</code> is the current stable release. The public installer selects the correct archive for your platform, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory.</p>
 <h2 id="install-kujo-2">Install Kujo</h2>
 <pre><code class="language-bash">curl -fsSL https://kujolang.ai/install.sh | bash
 export PATH=&quot;$HOME/.local/bin:$PATH&quot;</code></pre>
 <p>Use a focused group when you want Kujo and the tools for one job. For the Agent Development Platform:</p>
 <pre><code class="language-bash">curl -fsSL https://kujolang.ai/install.sh | bash -s -- --group agent</code></pre>
-<p>Run <code>curl -fsSL https://kujolang.ai/install.sh | bash -s -- --help</code> to review available groups and installer options before making changes. Direct archives and checksums remain available from the <a href="https://github.com/kujolang/kujo/releases/tag/v1.1.0">Kujo v1.1.0 release</a>.</p>
+<p>Run <code>curl -fsSL https://kujolang.ai/install.sh | bash -s -- --help</code> to review available groups and installer options before making changes. Direct archives and checksums remain available from the <a href="https://github.com/kujolang/kujo/releases/tag/v1.2.3">Kujo v1.2.3 release</a>.</p>
+<h2 id="upgrade-an-existing-runtime">Upgrade an existing runtime</h2>
+<p>The native <a href="/upgrade/"><code>kujo upgrade</code> command</a> is implemented in source but <strong>not included in v1.2.3</strong>. When a release containing it is published, bootstrap through your existing installer or package manager first. The guide covers read-only checks, exact versions, JSON output, managed installations, and backup recovery. Native upgrades replace only the runtime executable; ecosystem tools and package pins have separate update workflows.</p>
 <h2 id="source-install">Source install</h2>
 <pre><code class="language-bash">git clone https://github.com/kujolang/kujo.git
 cd kujo
@@ -127,7 +130,7 @@ kujo doctor --json</code></pre>
 <li><strong>Platform notes:</strong> use the published release matrix for supported archives; build from source for other targets.</li>
 </ul></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/start-here/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/quickstart/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#install-kujo">Install Kujo</a></li><li class="toc-level-2"><a href="#source-install">Source install</a></li><li class="toc-level-2"><a href="#verify">Verify</a></li><li class="toc-level-2"><a href="#troubleshooting">Troubleshooting</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#install-kujo">Install Kujo</a></li><li class="toc-level-2"><a href="#upgrade-an-existing-runtime">Upgrade an existing runtime</a></li><li class="toc-level-2"><a href="#source-install">Source install</a></li><li class="toc-level-2"><a href="#verify">Verify</a></li><li class="toc-level-2"><a href="#troubleshooting">Troubleshooting</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">

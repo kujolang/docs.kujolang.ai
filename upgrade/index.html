@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="kujo-light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		(function() {
+			try {
+				if (window.localStorage.getItem('sk-theme') === 'kujo-dark') {
+					document.documentElement.dataset.theme = 'kujo-dark';
+				}
+			} catch (error) {}
+		})();
+	</script>
+	<title>Upgrade the Kujo runtime | Kujo Docs</title>
+	<meta name="description" content="Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery. The command is implemented but unreleased.">
+	<meta name="keywords" content="SSG, Static Site Generator">
+	<meta name="author" content="Kujo">
+	<link rel="canonical" href="https://docs.kujolang.ai/upgrade/">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/assets/img/kujo-logomark-black.svg" color="#000000">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="application-name" content="Kujo Docs">
+	<meta name="apple-mobile-web-app-title" content="Kujo Docs">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Upgrade the Kujo runtime">
+	<meta property="og:description" content="Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery. The command is implemented but unreleased.">
+	<meta property="og:url" content="https://docs.kujolang.ai/upgrade/">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Kujo Docs">
+	<meta property="og:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Upgrade the Kujo runtime">
+	<meta name="twitter:description" content="Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery. The command is implemented but unreleased.">
+	<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta name="twitter:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<link href="../assets/css/fonts.css" rel="stylesheet">
+	<link href="../assets/sitekit/sitekit.css" rel="stylesheet">
+	<link href="../assets/css/style.css" rel="stylesheet">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","headline":"Upgrade the Kujo runtime","name":"Upgrade the Kujo runtime","description":"Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery. The command is implemented but unreleased.","url":"https://docs.kujolang.ai/upgrade/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="docs-topbar" id="navigation">
+	<div class="docs-topbar-row">
+		<a class="docs-brand" href="../index.html"><img class="docs-brand-mark" src="../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"> <span>Docs</span></a>
+		<label class="docs-search-shell">
+			<span class="sr-only">Search documentation</span>
+			<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
+		</label>
+		<div class="docs-header-actions">
+			<button class="docs-theme-button docs-icon-button" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-docs-theme>
+				<svg class="docs-moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c.132 0 .263 .003 .393 .008a7.5 7.5 0 0 0 7.599 9.6A9 9 0 1 1 12 3"/></svg>
+				<svg class="docs-sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-4 0a4 4 0 1 0 8 0 4 4 0 1 0-8 0M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+			</button>
+			<button class="docs-menu-button docs-icon-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu>
+				<svg class="docs-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+				<svg class="docs-close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+			</button>
+		</div>
+	</div>
+	<nav id="primary-navigation" class="docs-primary-nav" aria-label="Primary navigation">
+		<a href="/start-here/">Start here</a>
+		<a href="/learn/">Learn Kujo</a>
+		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
+		<a href="/tools/">Tools</a>
+		<a href="/showcases/">Showcases</a>
+	</nav>
+</header>
+<div id="docs-search-results" class="docs-search-results" aria-live="polite"></div>
+<main class="docs-shell" id="main-content">
+	<aside class="docs-sidebar" aria-label="Documentation sections">
+		<p class="docs-sidebar-label">Browse</p>
+		<ul>
+			<li><a href="/start-here/">Start here</a></li>
+			<li><a href="/install/">Install Kujo</a></li>
+			<li><a href="/upgrade/">Upgrade Kujo</a></li>
+			<li><a href="/quickstart/">Quickstart</a></li>
+			<li><a href="/choose-a-path/">Choose a path</a></li>
+			<li><a href="/learn/">Learn Kujo</a></li>
+			<li><a href="/build/">Build with Kujo</a></li>
+			<li><a href="/ecosystem/providers/">Provider packages</a></li>
+			<li><a href="/review/">Reviewable work</a></li>
+			<li><a href="/tools/">Tools</a></li>
+			<li><a href="/showcases/">Showcases</a></li>
+			<li><a href="/collections/">Collections</a></li>
+			<li><a href="/ecosystem/">Ecosystem</a></li>
+			<li><a href="/reference/">Reference</a></li>
+			<li><a href="/security/">Security model</a></li>
+			<li><a href="/release-boundaries/">Release boundaries</a></li>
+			<li><a href="/support/">Support</a></li>
+		</ul>
+	</aside>
+	<article class="docs-article">
+		<h1 id="upgrade-the-kujo-runtime">Upgrade the Kujo runtime</h1><p class="docs-description">Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery. The command is implemented but unreleased.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>implemented — unreleased</span><span class="docs-badge docs-badge-version"><span>Version</span>source main</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-05</span></div>
+		<section class="docs-prerequisites" aria-label="Prerequisites"><h2 id="prerequisites">Prerequisites</h2><ul class="docs-prerequisites-list"><li>A Kujo release containing the native upgrade command</li><li>A supported standalone installation with a writable destination</li></ul></section>
+		<div class="docs-body"><p><code>kujo upgrade</code> updates the running standalone Kujo executable from official GitHub release binaries. It does not update ecosystem tools, source snapshots, install profiles, package pins, or project dependencies.</p>
+<h2 id="availability-and-first-upgrade">Availability and first upgrade</h2>
+<p><strong>As of September 5, 2026, the command is implemented on the Kujo repository&apos;s main branch but is not in the latest published runtime, <a href="https://github.com/kujolang/kujo/releases/tag/v1.2.3">v1.2.3</a>.</strong> This guide documents that unreleased implementation. It does not announce a new runtime release.</p>
+<p>Releases that predate the command cannot run it. First use your <a href="/install/">existing installer</a> or original package manager to install a release containing <code>kujo upgrade</code>, once one is published. Check <code>kujo --version</code> and <code>kujo upgrade --help</code>. A local <code>kujo-upgrade</code> helper is a separate custom tool; this native command does not invoke or replace it.</p>
+<h2 id="check-or-install-an-update">Check or install an update</h2>
+<p>Once your runtime includes the command, inspect the latest stable release without writing files:</p>
+<pre><code class="language-bash">kujo upgrade --check
+kujo upgrade --check --json</code></pre>
+<p>Install the latest stable release:</p>
+<pre><code class="language-bash">kujo upgrade</code></pre>
+<p>Running the install command authorizes replacement without an interactive confirmation. It downloads a prebuilt archive, verifies its published SHA-256, and reports the actual executable destination. Supported targets are Linux x64 and arm64, macOS x64 and arm64, and Windows x64.</p>
+<table><thead><tr>
+<th>Request</th>
+<th>Behavior</th>
+</tr></thead><tbody>
+<tr>
+<td><code>kujo upgrade</code></td>
+<td>Install the latest published stable release; preserve a newer local runtime.</td>
+</tr>
+<tr>
+<td><code>kujo upgrade VERSION</code></td>
+<td>Select one exact stable version, optionally prefixed by <code>v</code>.</td>
+</tr>
+<tr>
+<td><code>--check</code></td>
+<td>Resolve availability without installation, staging, backup, receipt, or lock-file writes.</td>
+</tr>
+<tr>
+<td><code>--json</code></td>
+<td>Write one success object to stdout; progress and errors go to stderr.</td>
+</tr>
+<tr>
+<td><code>--allow-downgrade</code></td>
+<td>Allow installation of an explicitly selected older version.</td>
+</tr>
+</tbody></table>
+<p><code>VERSION</code> must be an exact <code>MAJOR.MINOR.PATCH</code>. Ranges, prereleases, and build metadata are rejected. Same-version requests succeed without replacement. Missing releases, archives, or checksums fail without building from source.</p>
+<p>These exact-version examples illustrate syntax; <strong>v1.2.4 is not a published-release claim</strong>:</p>
+<pre><code class="language-bash">kujo upgrade 1.2.4 --check
+kujo upgrade v1.2.4</code></pre>
+<p>An intentional downgrade requires an explicit older target:</p>
+<pre><code class="language-bash">kujo upgrade 1.2.3 --allow-downgrade</code></pre>
+<p>Downgrading to a release without this command removes the ability to upgrade natively until you bootstrap again. <code>--check</code> can inspect an older target without downgrade permission. Latest never downgrades, even with <code>--allow-downgrade</code>.</p>
+<h2 id="package-managers-and-executable-paths">Package managers and executable paths</h2>
+<p>Use the original package manager for npm, Cargo, or other managed installations. Native installation refuses recognized managed paths and development <code>target</code> binaries, while <code>--check</code> can still report availability and installation kind. Examples below use <code>VERSION</code> as a placeholder for a published package version:</p>
+<pre><code class="language-bash">npm install --global @kujolang/kujo-runtime@VERSION
+cargo install kujolang --version VERSION --locked --force</code></pre>
+<p>For project-local npm dependencies, use the project&apos;s package manager and scope. Recognized Homebrew, Nix, Scoop, Chocolatey, Snap, WinGet, WindowsApps, and system binary locations also receive a refusal instead of replacement.</p>
+<p>The destination is the resolved path of the executable actually running. Invoking through a symlink preserves that link and updates its target. Legacy standalone binaries, including <code>~/.local/bin/kujo</code>, are recognized by executable name and the absence of known manager metadata. That heuristic is not proof of ownership; relocated package binaries or custom managers may evade recognition. Keep using their original manager.</p>
+<h2 id="json-output-and-exit-codes">JSON output and exit codes</h2>
+<p>Successful checks, no-ops, and installations exit <code>0</code>. The object contains <code>current_version</code>, <code>target_version</code>, <code>status</code>, <code>changed</code>, <code>platform</code>, <code>destination</code>, <code>installation</code>, <code>upgrade_available</code>, and <code>backup</code>.</p>
+<ul>
+<li><code>status</code> is <code>upgrade_available</code>, <code>up_to_date</code>, <code>newer_local</code>, <code>upgraded</code>, or <code>downgraded</code>.</li>
+<li><code>changed</code> is true only after replacement. <code>upgrade_available</code> compares the target with the original installed version, including after installation.</li>
+<li>Versions omit the <code>v</code> prefix. <code>installation</code> is <code>standalone</code>, <code>npm</code>, <code>cargo</code>, <code>development</code>, or <code>managed</code>.</li>
+<li><code>destination</code> is the resolved executable path. <code>backup</code> is null until successful replacement, then contains the retained prior executable&apos;s path.</li>
+</ul>
+<p>Malformed arguments exit <code>2</code>; resolution, ownership, transport, verification, permission, and replacement failures exit <code>4</code>; an internal blocking-worker failure exits <code>6</code>. Errors use normal stderr diagnostics, with no failure JSON. See the <a href="https://github.com/kujolang/kujo/blob/main/docs/CLI_MACHINE_READABLE_CONTRACTS.md#kujo-upgrade-version---json">machine-readable contract</a> for the complete example object.</p>
+<h2 id="verification-and-recovery">Verification and recovery</h2>
+<p>HTTPS requests, downloads, extraction, and staged version checks have time and size limits. The published checksum is verified before extraction or execution. This provides integrity through the official release channel, not independent artifact signing.</p>
+<p>The replacement is staged beside the destination, and its <code>--version</code> must match the selected release. An OS lock prevents overlapping cooperating upgrades; the destination&apos;s identity and ownership are rechecked before replacement. The <code>.kujo-upgrade.lock</code> file remains after exit, but the OS releases its lock.</p>
+<p>A successful upgrade retains a <code>kujo-backup-UUID</code> file beside the destination (<code>.exe</code> on Windows) and reports its path. Keep it until the new runtime is confirmed usable. To recover, stop Kujo processes and move the reported backup to the reported destination, preserving executable permissions on Unix.</p>
+<p>Unix preserves a copy before renaming the replacement. Windows moves the running executable to its backup and then renames the staged replacement into place. Ordinary failures attempt rollback; <strong>a crash between the two Windows renames can require manual recovery from the backup</strong>. Universal crash atomicity and power-loss durability are not promised. Kujo does not elevate privileges automatically.</p>
+<p>For archive restrictions, exact resource limits, ownership detection, and validation evidence, read the <a href="https://github.com/kujolang/kujo/blob/main/docs/RUNTIME_UPGRADE.md">source runtime-upgrade documentation</a>. For package and ecosystem changes, use their own <a href="/learn/packages/">package workflows</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/install/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/quickstart/" rel="next"><span>Next</span></a></nav>
+	</article>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#availability-and-first-upgrade">Availability and first upgrade</a></li><li class="toc-level-2"><a href="#check-or-install-an-update">Check or install an update</a></li><li class="toc-level-2"><a href="#package-managers-and-executable-paths">Package managers and executable paths</a></li><li class="toc-level-2"><a href="#json-output-and-exit-codes">JSON output and exit codes</a></li><li class="toc-level-2"><a href="#verification-and-recovery">Verification and recovery</a></li></ol></nav>
+</main>
+
+<footer class="docs-footer" id="footer">
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.3.4</span></div>
+	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
+</footer>
+<script src="../assets/sitekit/sitekit.js"></script>
+<script src="../assets/js/docs.js"></script>
+<script src="../assets/js/kujo-webmcp.js" data-kujo-webmcp data-kujo-site-index="../.well-known/kujo-site-index.json" defer></script></body>
+</html>

@@ -84,6 +84,7 @@
 		<ul>
 			<li><a href="/start-here/">Start here</a></li>
 			<li><a href="/install/">Install Kujo</a></li>
+			<li><a href="/upgrade/">Upgrade Kujo</a></li>
 			<li><a href="/quickstart/">Quickstart</a></li>
 			<li><a href="/choose-a-path/">Choose a path</a></li>
 			<li><a href="/learn/">Learn Kujo</a></li>
@@ -100,7 +101,7 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="kujo">Kujo</h1><p class="docs-description">Write and run local-first Kujo programs.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable v1.1.0</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-30</span></div>
+		<h1 id="kujo">Kujo</h1><p class="docs-description">Write and run local-first Kujo programs.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable v1.2.3</span><span class="docs-badge docs-badge-version"><span>Version</span>1.2.3</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-05</span></div>
 		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>You want to write a small program, check it, and run it with the same VM-first CLI path used by the rest of the ecosystem.</p>
 <h2 id="interface-overview">Interface overview</h2>
@@ -145,11 +146,13 @@ kujo doctor --json</code></pre>
 <h2 id="how-it-fits">How it fits</h2>
 <p>Start here, then add <a href="/tools/kennel/">Kennel</a> when the project needs dependencies.</p>
 <h2 id="boundaries">Boundaries</h2>
-<p>Kujo <code>v1.1.0</code> is the current published stable release. The CLI now coordinates repository-owned Agent Projects, but their provider, runtime, retrieval, evaluation, observability, and package capabilities remain explicit ecosystem dependencies rather than hidden core services.</p>
+<p>Kujo <code>v1.2.3</code> is the current published stable release. The CLI now coordinates repository-owned Agent Projects, but their provider, runtime, retrieval, evaluation, observability, and package capabilities remain explicit ecosystem dependencies rather than hidden core services.</p>
+<h2 id="native-runtime-upgrades-unreleased">Native runtime upgrades (unreleased)</h2>
+<p><a href="/upgrade/"><code>kujo upgrade</code></a> is implemented on main but is not in v1.2.3. It will let supported standalone installations check or install official stable runtime binaries, with exact-version selection, JSON output, and retained backups. Package-manager installations use their original manager. Read the guide for bootstrap and recovery boundaries.</p>
 <h2 id="reference">Reference</h2>
 <p>Use <code>kujo --help</code>, <code>kujo agent --help</code>, <code>kujo doctor --json</code>, the <a href="/learn/language-basics/">language basics</a> guide, the <a href="/build/owned-agent-projects/">Agent Projects guide</a>, and the <a href="https://github.com/kujolang/kujo">Kujo repository</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-next" href="/tools/kennel/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#native-runtime-upgrades-unreleased">Native runtime upgrades (unreleased)</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
