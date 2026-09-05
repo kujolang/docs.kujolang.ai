@@ -1,0 +1,100 @@
+url,source_file,basis
+https://docs.kujolang.ai/,scripts/build_site.py; templates/page.html,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/build/agent-credentials/,content/build/agent-credentials.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/build/agent-operations/,content/build/agent-operations.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/build/agent-profiles/,content/build/agent-profiles.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/build/ai-and-agents/,content/build/ai-and-agents.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/build/applications-and-publishing/,content/build/applications-and-publishing.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/build/editorial-publishing/,content/build/editorial-publishing.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/build/,generated directory: scripts/build_site.py and templates,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/build/knowledge-and-retrieval/,content/build/knowledge-and-retrieval.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/build/owned-agent-projects/,content/build/owned-agent-projects.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/build/publishing-house-operator/,content/build/publishing-house-operator.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/build/web-operations/,content/build/web-operations.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/build/workflows-and-approvals/,content/build/workflows-and-approvals.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/choose-a-path/,content/pages/choose-a-path.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/collections/agents/,content/collections/agents.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/collections/benchmarks/,content/collections/benchmarks.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/collections/,generated directory: scripts/build_site.py and templates,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/collections/skills/,content/collections/skills.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/collections/workflows/,content/collections/workflows.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/ecosystem/core-foundation/,content/ecosystem/core-foundation.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/ecosystem/,generated directory: scripts/build_site.py and templates,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/ecosystem/primitives/,content/ecosystem/primitives.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/ecosystem/providers/,content/ecosystem/providers.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/ecosystem/showcases/,content/ecosystem/showcases.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/ecosystem/tooling/,content/ecosystem/tooling.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/install/,content/pages/install.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/learn/ai-runtime/,content/learn/ai-runtime.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/learn/capabilities/,content/learn/capabilities.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/learn/editor-support/,content/learn/editor-support.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/learn/,generated directory: scripts/build_site.py and templates,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/learn/language-basics/,content/learn/language-basics.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/learn/packages/,content/learn/packages.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/learn/runtime/,content/learn/runtime.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/quickstart/,content/pages/quickstart.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/reference/,content/pages/reference.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/release-boundaries/,content/pages/release-boundaries.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/review/browser-architecture-and-privacy/,content/review/browser-architecture-and-privacy.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/review/context-and-task-contracts/,content/review/context-and-task-contracts.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/review/evidence-and-run-history/,content/review/evidence-and-run-history.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/review/,generated directory: scripts/build_site.py and templates,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/review/quality-and-release-gates/,content/review/quality-and-release-gates.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/review/tests-and-evaluation/,content/review/tests-and-evaluation.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/security/,content/pages/security.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/showcases/ai-chat/,content/showcases/ai-chat.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/showcases/cinch/,content/showcases/cinch.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/showcases/cms/,content/showcases/cms.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/showcases/crud-api/,content/showcases/crud-api.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/showcases/,generated directory: scripts/build_site.py and templates,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/showcases/intake/,content/showcases/intake.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/showcases/ssg/,content/showcases/ssg.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/showcases/totalrecall/,content/showcases/totalrecall.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/start-here/,content/pages/start-here.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/support/,content/pages/support.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/ability/,content/tools/ability.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/agents-sdk/,content/tools/agents-sdk.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/ai-sdk/,content/tools/ai-sdk.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/assetworks/,content/tools/assetworks.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/bluepencil/,content/tools/bluepencil.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/casefile/,content/tools/casefile.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/changebucket/,content/tools/changebucket.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/commerce/,content/tools/commerce.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/concord/,content/tools/concord.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/contentgraph/,content/tools/contentgraph.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/dispatch/,content/tools/dispatch.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/dossier/,content/tools/dossier.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/eval/,content/tools/eval.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/fence/,content/tools/fence.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/galleypack/,content/tools/galleypack.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/howl/,content/tools/howl.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/,generated directory: scripts/build_site.py and templates,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/kennel/,content/tools/kennel.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/kujo/,content/tools/kujo.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/leash/,content/tools/leash.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/lens/,content/tools/lens.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/mcp/,content/tools/mcp.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/muzzle/,content/tools/muzzle.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/packwrite/,content/tools/packwrite.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/paperclip/,content/tools/paperclip.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/patchbrief/,content/tools/patchbrief.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/presswire/,content/tools/presswire.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/rag/,content/tools/rag.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/readersignal/,content/tools/readersignal.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/redact/,content/tools/redact.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/relay/,content/tools/relay.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/runledger/,content/tools/runledger.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/scent/,content/tools/scent.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/scout/,content/tools/scout.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/searchbridge/,content/tools/searchbridge.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/shipcheck/,content/tools/shipcheck.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/site-kit/,content/tools/site-kit.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/siteprobe/,content/tools/siteprobe.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/source/,content/tools/source.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/spec/,content/tools/spec.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/storydesk/,content/tools/storydesk.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/tribunal/,content/tools/tribunal.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/versionseal/,content/tools/versionseal.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/ward/,content/tools/ward.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/watchdog/,content/tools/watchdog.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.
+https://docs.kujolang.ai/tools/workcell/,content/tools/workcell.md,Mapping from preserved route conventions and repository content; supplements the immutable generic baseline source labels.

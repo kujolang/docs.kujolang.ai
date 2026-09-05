@@ -1,0 +1,237 @@
+phase,source_url,destination_url,anchor_text,link_context,http_status,final_url,chain_length,verification,rel,recommended_action
+baseline,https://docs.kujolang.ai/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/agent-credentials/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/agent-operations/,https://agents.kujolang.ai/,Agents showcase,article,200,https://agents.kujolang.ai/,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/agent-operations/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/agent-profiles/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/ai-and-agents/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/applications-and-publishing/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/editorial-publishing/,https://github.com/kujolang/kujo-workflows/releases/tag/v0.4.0,kujo-workflows 0.4.0 release,article,200,https://github.com/kujolang/kujo-workflows/releases/tag/v0.4.0,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/editorial-publishing/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/knowledge-and-retrieval/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/owned-agent-projects/,https://agents.kujolang.ai/,Explore agent examples and starter sets,article,200,https://agents.kujolang.ai/,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/owned-agent-projects/,https://github.com/kujolang/kujo/tree/main/examples/owned-agent-project,self-hosted example,article,200,https://github.com/kujolang/kujo/tree/main/examples/owned-agent-project,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/owned-agent-projects/,https://github.com/kujolang/kujo-workflows/tree/main/owned-agent-project,lifecycle workflow,article,200,https://github.com/kujolang/kujo-workflows/tree/main/owned-agent-project,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/owned-agent-projects/,https://github.com/kujolang/kujo/blob/main/docs/BUILD_AN_AGENT.md,implementation guide,article,200,https://github.com/kujolang/kujo/blob/main/docs/BUILD_AN_AGENT.md,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/owned-agent-projects/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/publishing-house-operator/,https://github.com/kujolang/kujo-workflows/releases/tag/v0.4.0,kujo-workflows 0.4.0,article,200,https://github.com/kujolang/kujo-workflows/releases/tag/v0.4.0,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/publishing-house-operator/,https://github.com/kujolang/kujo-workflows/tree/v0.4.0/publishing-house-operator,Publishing House Operator 0.4.0 source,article,200,https://github.com/kujolang/kujo-workflows/tree/v0.4.0/publishing-house-operator,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/publishing-house-operator/,https://github.com/kujolang/kujo-workflows/releases/tag/v0.4.0,official release,article,200,https://github.com/kujolang/kujo-workflows/releases/tag/v0.4.0,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/publishing-house-operator/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/web-operations/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/build/workflows-and-approvals/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/choose-a-path/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/collections/agents/,https://github.com/kujolang/kujo-agents,Kujo Agents repository,article,200,https://github.com/kujolang/kujo-agents,0,public GET,,none
+baseline,https://docs.kujolang.ai/collections/agents/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/collections/benchmarks/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/collections/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/collections/skills/,https://kujolang.ai/ecosystem/skills/kujo-way-development/,kujo-way-development,article,200,https://kujolang.ai/ecosystem/skills/kujo-way-development/,0,public GET,,none
+baseline,https://docs.kujolang.ai/collections/skills/,https://github.com/kujolang/kujo-skills/blob/main/skills/kujo-way-development/SKILL.md,Read the complete skill source,article,200,https://github.com/kujolang/kujo-skills/blob/main/skills/kujo-way-development/SKILL.md,0,public GET,,none
+baseline,https://docs.kujolang.ai/collections/skills/,https://github.com/kujolang/kujo-skills/blob/main/SKILLS_INDEX.md,Browse the released skills index,article,200,https://github.com/kujolang/kujo-skills/blob/main/SKILLS_INDEX.md,0,public GET,,none
+baseline,https://docs.kujolang.ai/collections/skills/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/collections/workflows/,https://github.com/kujolang/kujo-workflows/releases/tag/v0.4.0,0.4.0 release,article,200,https://github.com/kujolang/kujo-workflows/releases/tag/v0.4.0,0,public GET,,none
+baseline,https://docs.kujolang.ai/collections/workflows/,https://github.com/kujolang/kujo-workflows/tree/v0.4.0/owned-agent-project,Owned Agent Project workflow,article,200,https://github.com/kujolang/kujo-workflows/tree/v0.4.0/owned-agent-project,0,public GET,,none
+baseline,https://docs.kujolang.ai/collections/workflows/,https://github.com/kujolang/kujo-workflows,Kujo Workflows repository,article,200,https://github.com/kujolang/kujo-workflows,0,public GET,,none
+baseline,https://docs.kujolang.ai/collections/workflows/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/core-foundation/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/primitives/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/ollama,Kujo repository,article,200,https://github.com/kujolang/ollama,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://docs.ollama.com/api,Ollama API docs,article,308,https://docs.ollama.com/api,0,public GET,,review access outcome
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/anthropic,Kujo repository,article,200,https://github.com/kujolang/anthropic,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://docs.anthropic.com/en/api/messages,Messages API docs,article,200,https://platform.claude.com/docs/en/api/messages,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/gemini,Kujo repository,article,200,https://github.com/kujolang/gemini,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://ai.google.dev/gemini-api/docs,Gemini API docs,article,200,https://ai.google.dev/gemini-api/docs,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/openai,Kujo repository,article,200,https://github.com/kujolang/openai,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://platform.openai.com/docs/api-reference/responses,Responses API docs,article,403,https://platform.openai.com/docs/api-reference/responses,0,indeterminate access,,review access outcome
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/openrouter,Kujo repository,article,200,https://github.com/kujolang/openrouter,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://openrouter.ai/docs/api-reference/overview,OpenRouter API docs,article,308,https://openrouter.ai/docs/api-reference/overview,0,public GET,,review access outcome
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/xai,Kujo repository,article,200,https://github.com/kujolang/xai,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://docs.x.ai/docs/api-reference,xAI API docs,article,308,https://docs.x.ai/docs/api-reference,0,public GET,,review access outcome
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/groq,Kujo repository,article,200,https://github.com/kujolang/groq,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://console.groq.com/docs/api-reference,Groq API docs,article,403,https://console.groq.com/docs/api-reference,0,indeterminate access,,review access outcome
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/together,Kujo repository,article,200,https://github.com/kujolang/together,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://docs.together.ai/reference/chat-completions,Together API docs,article,200,https://docs.together.ai/reference/chat-completions,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/fireworks,Kujo repository,article,200,https://github.com/kujolang/fireworks,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://docs.fireworks.ai/api-reference/post-chatcompletions,Fireworks API docs,article,200,https://docs.fireworks.ai/api-reference/post-chatcompletions,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/mistral,Kujo repository,article,200,https://github.com/kujolang/mistral,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://docs.mistral.ai/api/,Mistral API docs,article,308,https://docs.mistral.ai/api/,0,public GET,,review access outcome
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/cerebras,Kujo repository,article,200,https://github.com/kujolang/cerebras,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://inference-docs.cerebras.ai/api-reference/chat-completions,Cerebras API docs,article,200,https://inference-docs.cerebras.ai/api-reference/chat-completions,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/deepinfra,Kujo repository,article,200,https://github.com/kujolang/deepinfra,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://deepinfra.com/docs/openai_api,DeepInfra API docs,article,308,https://deepinfra.com/docs/openai_api,0,public GET,,review access outcome
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/deepseek,Kujo repository,article,200,https://github.com/kujolang/deepseek,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://api-docs.deepseek.com,DeepSeek API docs,article,200,https://api-docs.deepseek.com,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/cloudflare-ai,Kujo repository,article,200,https://github.com/kujolang/cloudflare-ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://developers.cloudflare.com/workers-ai/,Workers AI docs,article,200,https://developers.cloudflare.com/workers-ai/,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/huggingface,Kujo repository,article,200,https://github.com/kujolang/huggingface,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://huggingface.co/docs/inference-providers,Inference Providers docs,article,200,https://huggingface.co/docs/inference-providers/index,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/replicate,Kujo repository,article,200,https://github.com/kujolang/replicate,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://replicate.com/docs/reference/http,Replicate HTTP API docs,article,200,https://replicate.com/docs/reference/http,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/cohere,Kujo repository,article,200,https://github.com/kujolang/cohere,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://docs.cohere.com/reference/chat,Cohere API docs,article,200,https://docs.cohere.com/reference/chat,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/bedrock,Kujo repository,article,200,https://github.com/kujolang/bedrock,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html,Bedrock API reference,article,200,https://docs.aws.amazon.com/bedrock/latest/APIReference/Welcome.html,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/azure-ai,Kujo repository,article,200,https://github.com/kujolang/azure-ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://learn.microsoft.com/en-us/azure/ai-services/openai/reference,Azure OpenAI REST reference,article,200,https://learn.microsoft.com/en-us/azure/foundry/openai/reference,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/vertex-ai,Kujo repository,article,200,https://github.com/kujolang/vertex-ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/inference,Vertex AI model reference,article,200,https://docs.cloud.google.com/gemini-enterprise-agent-platform/reference/models/inference,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/nvidia-nim,Kujo repository,article,200,https://github.com/kujolang/nvidia-nim,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://docs.nvidia.com/nim/,NVIDIA NIM docs,article,200,https://docs.nvidia.com/nim/,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/perplexity,Kujo repository,article,200,https://github.com/kujolang/perplexity,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://docs.perplexity.ai/docs/getting-started/overview,Perplexity API docs,article,200,https://docs.perplexity.ai/docs/getting-started/overview,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/zai,Kujo repository,article,200,https://github.com/kujolang/zai,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://docs.z.ai/api-reference,Z.ai API reference,article,200,https://docs.z.ai/api-reference/introduction,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/fal,Kujo repository,article,200,https://github.com/kujolang/fal,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://docs.fal.ai/model-apis,fal.ai model APIs,article,308,https://docs.fal.ai/model-apis,0,public GET,,review access outcome
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://github.com/kujolang/baseten,Kujo repository,article,200,https://github.com/kujolang/baseten,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://docs.baseten.co/api-reference/openai,Baseten API reference,article,308,https://docs.baseten.co/api-reference/openai,0,public GET,,review access outcome
+baseline,https://docs.kujolang.ai/ecosystem/providers/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/showcases/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/ecosystem/tooling/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/install/,https://github.com/kujolang/kujo/releases/tag/v1.1.0,Kujo v1.1.0 release,article,200,https://github.com/kujolang/kujo/releases/tag/v1.1.0,0,public GET,,none
+baseline,https://docs.kujolang.ai/install/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/learn/ai-runtime/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/learn/capabilities/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/learn/editor-support/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/learn/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/learn/language-basics/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/learn/packages/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/learn/runtime/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/quickstart/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/reference/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/release-boundaries/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/review/browser-architecture-and-privacy/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/review/context-and-task-contracts/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/review/evidence-and-run-history/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/review/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/review/quality-and-release-gates/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/review/tests-and-evaluation/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/security/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/ai-chat/,https://github.com/kujolang/ai-chat,AI Chat repository,article,200,https://github.com/kujolang/ai-chat,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/ai-chat/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/cinch/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/cms/,https://github.com/kujolang/cms-field-notes-theme,Field Notes theme,article,200,https://github.com/kujolang/cms-field-notes-theme,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/cms/,https://github.com/kujolang/cms-contact-form,contact form plugin,article,200,https://github.com/kujolang/cms-contact-form,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/cms/,https://github.com/kujolang/cms-example,CMS Example,article,200,https://github.com/kujolang/cms-example,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/cms/,https://github.com/kujolang/cms/releases/tag/v1.1.0,CMS 1.1.0 release,article,200,https://github.com/kujolang/cms/releases/tag/v1.1.0,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/cms/,https://github.com/kujolang/cms,CMS repository,article,200,https://github.com/kujolang/cms,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/cms/,https://github.com/kujolang/cms-example/releases/tag/v1.1.0,CMS Example 1.1.0 release,article,200,https://github.com/kujolang/cms-example/releases/tag/v1.1.0,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/cms/,https://github.com/kujolang/cms/blob/main/docs/framework-adapters.md,Framework adapter guidance,article,200,https://github.com/kujolang/cms/blob/main/docs/framework-adapters.md,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/cms/,https://github.com/kujolang/cms/blob/main/docs/extensions.md,Extension package contract,article,200,https://github.com/kujolang/cms/blob/main/docs/extensions.md,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/cms/,https://github.com/kujolang/cms/blob/main/docs/webmcp.md,WebMCP contract,article,200,https://github.com/kujolang/cms/blob/main/docs/webmcp.md,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/cms/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/crud-api/,https://github.com/kujolang/crud-api,CRUD API repository,article,200,https://github.com/kujolang/crud-api,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/crud-api/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/intake/,https://github.com/kujolang/intake,Intake repository,article,200,https://github.com/kujolang/intake,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/intake/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/ssg/,https://github.com/kujolang/ssg,SSG repository,article,200,https://github.com/kujolang/ssg,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/ssg/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/totalrecall/,https://github.com/robertdevore/totalrecall,TotalRecall repository,article,200,https://github.com/robertdevore/totalrecall,0,public GET,,none
+baseline,https://docs.kujolang.ai/showcases/totalrecall/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/start-here/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/support/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/ability/,https://github.com/kujolang/ability/blob/v1.1.0/examples/content_find.json,complete definition example,article,200,https://github.com/kujolang/ability/blob/v1.1.0/examples/content_find.json,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/ability/,https://github.com/kujolang/ability/blob/v1.1.0/docs/SDK.md,SDK compatibility notes,article,200,https://github.com/kujolang/ability/blob/v1.1.0/docs/SDK.md,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/ability/,https://github.com/kujolang/ability/releases/tag/v1.1.0,release,article,200,https://github.com/kujolang/ability/releases/tag/v1.1.0,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/ability/,https://github.com/kujolang/ability/blob/v1.1.0/docs/RUNTIME.md,runtime guide,article,200,https://github.com/kujolang/ability/blob/v1.1.0/docs/RUNTIME.md,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/ability/,https://github.com/kujolang/ability/blob/v1.1.0/docs/REGISTRY.md,pack trust model,article,200,https://github.com/kujolang/ability/blob/v1.1.0/docs/REGISTRY.md,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/ability/,https://github.com/kujolang/ability/blob/v1.1.0/docs/DEVKIT.md,development kit guide,article,200,https://github.com/kujolang/ability/blob/v1.1.0/docs/DEVKIT.md,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/ability/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/agents-sdk/,https://github.com/kujolang/agents-sdk,Agents SDK repository,article,200,https://github.com/kujolang/agents-sdk,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/agents-sdk/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/ai-sdk/,https://github.com/kujolang/ai-sdk,AI SDK repository,article,200,https://github.com/kujolang/ai-sdk,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/ai-sdk/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/assetworks/,https://github.com/kujolang/assetworks,AssetWorks repository,article,200,https://github.com/kujolang/assetworks,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/assetworks/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/bluepencil/,https://github.com/kujolang/bluepencil,BluePencil repository,article,200,https://github.com/kujolang/bluepencil,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/bluepencil/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/casefile/,https://github.com/kujolang/casefile,CaseFile repository,article,200,https://github.com/kujolang/casefile,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/casefile/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/changebucket/,https://github.com/kujolang/changebucket,ChangeBucket repository,article,200,https://github.com/kujolang/changebucket,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/changebucket/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/commerce/,https://github.com/kujolang/commerce,Commerce repository,article,200,https://github.com/kujolang/commerce,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/commerce/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/concord/,https://github.com/kujolang/concord,Concord repository,article,200,https://github.com/kujolang/concord,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/concord/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/contentgraph/,https://github.com/kujolang/contentgraph,ContentGraph repository,article,200,https://github.com/kujolang/contentgraph,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/contentgraph/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/dispatch/,https://github.com/kujolang/dispatch,Dispatch repository,article,200,https://github.com/kujolang/dispatch,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/dispatch/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/dossier/,https://github.com/kujolang/dossier,Dossier repository,article,200,https://github.com/kujolang/dossier,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/dossier/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/eval/,https://github.com/kujolang/eval,Eval repository,article,200,https://github.com/kujolang/eval,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/eval/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/fence/,https://github.com/kujolang/fence,Fence repository,article,200,https://github.com/kujolang/fence,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/fence/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/galleypack/,https://github.com/kujolang/galleypack,GalleyPack repository,article,200,https://github.com/kujolang/galleypack,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/galleypack/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/howl/,https://github.com/kujolang/howl,Howl repository,article,200,https://github.com/kujolang/howl,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/howl/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/kennel/,https://github.com/kujolang/kennel,Kennel repository,article,200,https://github.com/kujolang/kennel,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/kennel/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/kujo/,https://github.com/kujolang/kujo,Kujo repository,article,200,https://github.com/kujolang/kujo,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/kujo/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/leash/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/lens/,https://github.com/kujolang/lens,Lens repository,article,200,https://github.com/kujolang/lens,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/lens/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/mcp/,https://github.com/kujolang/mcp,MCP repository,article,200,https://github.com/kujolang/mcp,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/mcp/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/muzzle/,https://github.com/kujolang/muzzle,Muzzle repository,article,200,https://github.com/kujolang/muzzle,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/muzzle/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/packwrite/,https://github.com/kujolang/packwrite,PackWrite repository,article,200,https://github.com/kujolang/packwrite,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/packwrite/,https://github.com/kujolang/packwrite/releases/tag/v1.1.0,v1.1.0 release,article,200,https://github.com/kujolang/packwrite/releases/tag/v1.1.0,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/packwrite/,https://github.com/kujolang/packwrite/blob/v1.1.0/docs/CONFIGURATION.md,configuration reference,article,200,https://github.com/kujolang/packwrite/blob/v1.1.0/docs/CONFIGURATION.md,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/packwrite/,https://github.com/kujolang/packwrite/blob/v1.1.0/docs/HOWTO.md,end-to-end guide,article,200,https://github.com/kujolang/packwrite/blob/v1.1.0/docs/HOWTO.md,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/packwrite/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/paperclip/,https://github.com/paperclipai/paperclip/pull/12745,paperclipai/paperclip#12745,article,200,https://github.com/paperclipai/paperclip/pull/12745,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/paperclip/,https://github.com/kujolang/paperclip,Kujo for Paperclip repository,article,200,https://github.com/kujolang/paperclip,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/paperclip/,https://github.com/kujolang/paperclip/blob/v0.1.7/docs/USAGE.md,complete usage guide,article,200,https://github.com/kujolang/paperclip/blob/v0.1.7/docs/USAGE.md,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/paperclip/,https://github.com/kujolang/paperclip/blob/v0.1.7/docs/COMPATIBILITY.md,compatibility contract,article,200,https://github.com/kujolang/paperclip/blob/v0.1.7/docs/COMPATIBILITY.md,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/paperclip/,https://github.com/kujolang/paperclip/releases/tag/v0.1.7,v0.1.7 release,article,200,https://github.com/kujolang/paperclip/releases/tag/v0.1.7,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/paperclip/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/patchbrief/,https://github.com/kujolang/patchbrief,PatchBrief repository,article,200,https://github.com/kujolang/patchbrief,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/patchbrief/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/presswire/,https://github.com/kujolang/presswire,PressWire repository,article,200,https://github.com/kujolang/presswire,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/presswire/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/rag/,https://github.com/kujolang/rag,RAG repository,article,200,https://github.com/kujolang/rag,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/rag/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/readersignal/,https://github.com/kujolang/readersignal,ReaderSignal repository,article,200,https://github.com/kujolang/readersignal,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/readersignal/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/redact/,https://github.com/kujolang/redact,Redact repository,article,200,https://github.com/kujolang/redact,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/redact/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/relay/,https://github.com/kujolang/relay,Relay repository,article,200,https://github.com/kujolang/relay,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/relay/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/runledger/,https://github.com/kujolang/runledger,RunLedger repository,article,200,https://github.com/kujolang/runledger,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/runledger/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/scent/,https://github.com/kujolang/scent,Scent repository,article,200,https://github.com/kujolang/scent,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/scent/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/scout/,https://github.com/kujolang/scout,Scout repository,article,200,https://github.com/kujolang/scout,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/scout/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/searchbridge/,https://github.com/kujolang/searchbridge/releases/tag/v1.0.0,SearchBridge v1.0.0 release,article,200,https://github.com/kujolang/searchbridge/releases/tag/v1.0.0,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/searchbridge/,https://github.com/kujolang/searchbridge,repository,article,200,https://github.com/kujolang/searchbridge,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/searchbridge/,https://github.com/kujolang/searchbridge/blob/v1.0.0/docs/support-matrix.md,support matrix,article,200,https://github.com/kujolang/searchbridge/blob/v1.0.0/docs/support-matrix.md,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/searchbridge/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/shipcheck/,https://github.com/kujolang/shipcheck,ShipCheck repository,article,200,https://github.com/kujolang/shipcheck,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/shipcheck/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/site-kit/,https://github.com/kujolang/site-kit,SiteKit repository,article,200,https://github.com/kujolang/site-kit,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/site-kit/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/siteprobe/,https://github.com/kujolang/siteprobe,SiteProbe repository,article,200,https://github.com/kujolang/siteprobe,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/siteprobe/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/source/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/spec/,https://github.com/kujolang/spec,Spec repository,article,200,https://github.com/kujolang/spec,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/spec/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/storydesk/,https://github.com/kujolang/storydesk,StoryDesk repository,article,200,https://github.com/kujolang/storydesk,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/storydesk/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/tribunal/,https://github.com/kujolang/tribunal,Tribunal repository,article,200,https://github.com/kujolang/tribunal,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/tribunal/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/versionseal/,https://github.com/kujolang/versionseal,VersionSeal repository,article,200,https://github.com/kujolang/versionseal,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/versionseal/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/ward/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/watchdog/,https://github.com/kujolang/watchdog,Watchdog repository,article,200,https://github.com/kujolang/watchdog,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/watchdog/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/workcell/,https://github.com/kujolang/workcell,Workcell repository,article,200,https://github.com/kujolang/workcell,0,public GET,,none
+baseline,https://docs.kujolang.ai/tools/workcell/,https://kujolang.ai,Kujo,footer,200,https://kujolang.ai,0,public GET,,none

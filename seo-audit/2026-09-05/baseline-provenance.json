@@ -1,0 +1,7 @@
+{
+  "sourceRevision": "bbfb28de5598a1f4b77604d59bb763d79b3ace39",
+  "sourceStatus": "?? .baseline-gh-pages.tar\n",
+  "host": "docs.kujolang.ai",
+  "deployedRevision": "dc77cc09c51c50d781ff10a30475bb0a262782dc",
+  "basis": "Immutable deployed gh-pages tree; source repository unchanged before content update. Fresh source rebuild will be separately validated after edits."
+}

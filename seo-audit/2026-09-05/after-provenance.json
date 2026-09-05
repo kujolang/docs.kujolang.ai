@@ -1,0 +1,19 @@
+{
+  "sourceRevision": "7c10a2b58bacbdb7f043fb1779017d4616c6fcb8",
+  "runtimeVersion": "kujo 1.2.2",
+  "runtimeArchiveSha256": "4aab1033235af3179c12e6b311370a952589eb0432c8675dc0e58f1e9466921a",
+  "runtimeBinarySha256": "bee718fcabdda0de929eab330e8fa30051ce04bb4cfb47ea66e4554f9dbe4c8a",
+  "runtimeSourceTag": "v1.2.2",
+  "runtimeSourceRevision": "22582e7f0111a1005002579b44f5d03cd2ed1c9c",
+  "runtimeReceipt": "Publisher .sha256 verified before extracting executable; local override only",
+  "buildExit": 0,
+  "validationExit": 0,
+  "buildLog": "raw/after-build.log",
+  "validationLog": "raw/after-validation.log",
+  "generatedAt": "2026-09-05T15:05:58.710312+00:00",
+  "command": "KUJO_BIN=<verified Kujo v1.2.2 binary> python3 scripts/build_site.py --site-url https://docs.kujolang.ai",
+  "finalization": "After the completed source build, reran the updated idempotent finalize_html across output to remove placeholder authors; full output validation passed.",
+  "ssgRevision": "e165dbc1b596ea759a2b9c2ff0b9ca988c333eea",
+  "deploymentRevision": "27c0e18046e245c28a6589f8086a593a12246902",
+  "deploymentRun": 33974295285
+}
