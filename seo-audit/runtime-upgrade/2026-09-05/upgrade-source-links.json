@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://github.com/kujolang/kujo/blob/main/docs/RUNTIME_UPGRADE.md",
+    "status": 200,
+    "final_url": "https://github.com/kujolang/kujo/blob/main/docs/RUNTIME_UPGRADE.md"
+  },
+  {
+    "url": "https://github.com/kujolang/kujo/blob/main/docs/CLI_MACHINE_READABLE_CONTRACTS.md",
+    "status": 200,
+    "final_url": "https://github.com/kujolang/kujo/blob/main/docs/CLI_MACHINE_READABLE_CONTRACTS.md"
+  },
+  {
+    "url": "https://github.com/kujolang/kujo/releases/tag/v1.2.3",
+    "status": 200,
+    "final_url": "https://github.com/kujolang/kujo/releases/tag/v1.2.3"
+  },
+  {
+    "url": "https://github.com/kujolang/kujo/releases",
+    "status": 200,
+    "final_url": "https://github.com/kujolang/kujo/releases"
+  }
+]

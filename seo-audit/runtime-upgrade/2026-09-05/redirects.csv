@@ -1,0 +1,2 @@
+phase,source_url,source_variant,http_status,target_url,chain_length,final_status,canonical_target,query_preserved,verification,issues
+after,http://docs.kujolang.ai/,HTTP origin,redirect followed,https://docs.kujolang.ai/,not recorded,200,https://docs.kujolang.ai/,not tested,public HTTP request,

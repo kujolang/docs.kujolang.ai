@@ -1,0 +1,14 @@
+{
+  "source_revision": "a5537511a82d8e3e5f734fea3d5f9539ff9121f0",
+  "deployment_revision": "11f28ababb58e74e0ee1443f31a435ccd85bb08a",
+  "deployment_run": 33988340109,
+  "runtime_version": "1.2.2",
+  "runtime_target": "macos-x64",
+  "runtime_sha256": "bee718fcabdda0de929eab330e8fa30051ce04bb4cfb47ea66e4554f9dbe4c8a",
+  "runtime_archive_sha256": "4aab1033235af3179c12e6b311370a952589eb0432c8675dc0e58f1e9466921a",
+  "runtime_verification": "Official release per-asset SHA-256 verified before execution; isolated temporary binary",
+  "ssg_revision": "e165dbc1b596ea759a2b9c2ff0b9ca988c333eea",
+  "build_exit": 0,
+  "validation_exit": 0,
+  "notes": "Full docs build followed by core-page rebuild after moving shell comments outside code fences; existing finalizers merge core catalog entries, regenerate search and auxiliaries. New heading content check and full generated crawl pass."
+}

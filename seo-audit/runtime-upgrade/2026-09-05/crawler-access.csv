@@ -1,0 +1,5 @@
+crawler,purpose,robots_access,live_status,waf_or_cdn_result,recommended_action,action_taken,evidence
+Googlebot,search,policy unchanged; see raw robots,200,synthetic probe; not authenticated bot proof,preserve owner policy,none,after-live-probes.json
+OAI-SearchBot,search,policy unchanged; see raw robots,200,synthetic probe; not authenticated bot proof,preserve owner policy,none,after-live-probes.json
+ChatGPT-User,user-triggered,policy unchanged; see raw robots,200,synthetic probe; not authenticated bot proof,preserve owner policy,none,after-live-probes.json
+GPTBot,training,policy unchanged; see raw robots,200,synthetic probe; not authenticated bot proof,preserve owner policy,none,after-live-probes.json

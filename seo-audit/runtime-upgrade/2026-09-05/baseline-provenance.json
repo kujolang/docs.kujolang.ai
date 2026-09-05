@@ -1,0 +1,9 @@
+{
+  "source_revision": "989a77b7d739a11e7db4ebbc3d7d0a2ba34cbea0",
+  "basis": "Deployed gh-pages tree 27c0e18046e245c28a6589f8086a593a12246902",
+  "origin": "https://docs.kujolang.ai",
+  "files": 143,
+  "snapshot": "raw/baseline-build",
+  "date": "2026-09-05",
+  "baseline_build": "Existing successful production build; new default-runtime local attempts were not valid baselines."
+}
