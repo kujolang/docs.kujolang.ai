@@ -10,7 +10,7 @@ audience: all
 difficulty: beginner
 status: stable
 version: current
-last_updated: 2026-08-30
+last_updated: 2026-09-05
 next: /install/
 tags: [orientation, onboarding]
 ---

@@ -31,14 +31,16 @@ Releases that predate the command cannot run it. First use your [existing instal
 
 ## Check or install an update
 
-Once your runtime includes the command:
+Once your runtime includes the command, inspect the latest stable release without writing files:
 
 ```bash
-# Inspect the latest stable release without writing files.
 kujo upgrade --check
 kujo upgrade --check --json
+```
 
-# Install the latest stable release.
+Install the latest stable release:
+
+```bash
 kujo upgrade
 ```
 
