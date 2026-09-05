@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "version": "1.3.0",
+  "checks": [
+    "released availability",
+    "older-runtime bootstrap",
+    "CLI options",
+    "recovery boundary",
+    "single H1",
+    "sitemap and search discovery"
+  ]
+}

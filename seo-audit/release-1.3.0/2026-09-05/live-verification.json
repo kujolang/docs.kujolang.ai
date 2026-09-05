@@ -1,0 +1,60 @@
+{
+  "verified_at": "2026-09-05T21:50:16.880461+00:00",
+  "source_commit": "c3af3d8807b2c4feb9d516ba0fd005f642be902f",
+  "checks": [
+    {
+      "url": "https://docs.kujolang.ai/",
+      "status": 200,
+      "h1_count": 1,
+      "canonical": "https://docs.kujolang.ai/",
+      "json_ld_valid": true
+    },
+    {
+      "url": "https://docs.kujolang.ai/upgrade/",
+      "status": 200,
+      "h1_count": 1,
+      "canonical": "https://docs.kujolang.ai/upgrade/",
+      "json_ld_valid": true,
+      "released_upgrade_guidance": true
+    },
+    {
+      "url": "https://docs.kujolang.ai/install/",
+      "status": 200,
+      "h1_count": 1,
+      "canonical": "https://docs.kujolang.ai/install/",
+      "json_ld_valid": true
+    },
+    {
+      "url": "https://docs.kujolang.ai/reference/",
+      "status": 200,
+      "h1_count": 1,
+      "canonical": "https://docs.kujolang.ai/reference/",
+      "json_ld_valid": true
+    },
+    {
+      "url": "https://docs.kujolang.ai/start-here/",
+      "status": 200,
+      "h1_count": 1,
+      "canonical": "https://docs.kujolang.ai/start-here/",
+      "json_ld_valid": true
+    },
+    {
+      "url": "https://docs.kujolang.ai/release-boundaries/",
+      "status": 200,
+      "h1_count": 1,
+      "canonical": "https://docs.kujolang.ai/release-boundaries/",
+      "json_ld_valid": true
+    },
+    {
+      "url": "https://docs.kujolang.ai/tools/kujo/",
+      "status": 200,
+      "h1_count": 1,
+      "canonical": "https://docs.kujolang.ai/tools/kujo/",
+      "json_ld_valid": true
+    }
+  ],
+  "upgrade_search_and_sitemap": true,
+  "gh_pages_commit": "1ce3236039dcca33003b16ed6dfa0a480c1e2fb5",
+  "pages_run": 33994154153,
+  "pages_conclusion": "success"
+}
