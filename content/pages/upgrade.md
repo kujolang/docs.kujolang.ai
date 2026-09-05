@@ -1,6 +1,6 @@
 ---
 title: Upgrade the Kujo runtime
-description: Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery. The command is implemented but unreleased.
+description: Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery.
 custom_url: upgrade
 template: docs
 section: Start here
@@ -8,8 +8,8 @@ nav_title: Upgrade Kujo
 order: 25
 audience: developer
 difficulty: intermediate
-status: implemented — unreleased
-version: source main
+status: stable
+version: 1.3.0
 last_updated: 2026-09-05
 scope: standalone runtime executable only
 source_repo: kujo
@@ -25,13 +25,13 @@ tags: [upgrade, runtime, cli, installation]
 
 ## Availability and first upgrade
 
-**As of September 5, 2026, the command is implemented on the Kujo repository's main branch but is not in the latest published runtime, [v1.2.3](https://github.com/kujolang/kujo/releases/tag/v1.2.3).** This guide documents that unreleased implementation. It does not announce a new runtime release.
+`kujo upgrade` is available in Kujo v1.3.0 and later. It installs official stable runtime binaries for supported standalone installations.
 
-Releases that predate the command cannot run it. First use your [existing installer](/install/) or original package manager to install a release containing `kujo upgrade`, once one is published. Check `kujo --version` and `kujo upgrade --help`. A local `kujo-upgrade` helper is a separate custom tool; this native command does not invoke or replace it.
+If you use v1.2.3 or an older release, first install a current release through the [existing installer](/install/) or your original package manager. Older binaries do not contain the command and cannot upgrade themselves with it. Check `kujo --version` and `kujo upgrade --help` after installation. A local `kujo-upgrade` helper is a separate custom tool; this native command does not invoke or replace it.
 
 ## Check or install an update
 
-Once your runtime includes the command, inspect the latest stable release without writing files:
+Inspect the latest stable release without writing files:
 
 ```bash
 kujo upgrade --check
@@ -56,11 +56,11 @@ Running the install command authorizes replacement without an interactive confir
 
 `VERSION` must be an exact `MAJOR.MINOR.PATCH`. Ranges, prereleases, and build metadata are rejected. Same-version requests succeed without replacement. Missing releases, archives, or checksums fail without building from source.
 
-These exact-version examples illustrate syntax; **v1.2.4 is not a published-release claim**:
+Select an exact published stable version:
 
 ```bash
-kujo upgrade 1.2.4 --check
-kujo upgrade v1.2.4
+kujo upgrade 1.3.0 --check
+kujo upgrade v1.3.0
 ```
 
 An intentional downgrade requires an explicit older target:

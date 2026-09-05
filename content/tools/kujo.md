@@ -7,8 +7,8 @@ nav_title: Kujo
 order: 10
 audience: developer
 difficulty: beginner
-status: stable v1.2.3
-version: 1.2.3
+status: stable v1.3.0
+version: 1.3.0
 last_updated: 2026-09-05
 scope: local-first
 source_repo: kujo
@@ -56,11 +56,11 @@ Start here, then add [Kennel](/tools/kennel/) when the project needs dependencie
 
 ## Boundaries
 
-Kujo `v1.2.3` is the current published stable release. The CLI now coordinates repository-owned Agent Projects, but their provider, runtime, retrieval, evaluation, observability, and package capabilities remain explicit ecosystem dependencies rather than hidden core services.
+Kujo `v1.3.0` is the current published stable release. The CLI now coordinates repository-owned Agent Projects, but their provider, runtime, retrieval, evaluation, observability, and package capabilities remain explicit ecosystem dependencies rather than hidden core services.
 
-## Native runtime upgrades (unreleased)
+## Runtime maintenance
 
-[`kujo upgrade`](/upgrade/) is implemented on main but is not in v1.2.3. It will let supported standalone installations check or install official stable runtime binaries, with exact-version selection, JSON output, and retained backups. Package-manager installations use their original manager. Read the guide for bootstrap and recovery boundaries.
+Use [`kujo upgrade`](/upgrade/) to update a supported standalone runtime from official stable binaries. `kujo upgrade --check --json` reports availability without changing files. Exact-version selection, downgrade policy, managed-install guidance, and recovery are documented in the guide. The command updates only the runtime; package-manager installations use their original manager.
 
 ## Reference
 

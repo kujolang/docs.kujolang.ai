@@ -114,4 +114,4 @@ The HTTP request should redirect to HTTPS, and the HTTPS request should return `
 
 ## Native runtime upgrade documentation
 
-The [upgrade guide](https://docs.kujolang.ai/upgrade/) documents the source implementation, its runtime-only scope, bootstrap requirements, CLI/JSON behavior, installation ownership, and recovery. As of September 5, 2026, the latest runtime v1.2.3 does not contain the command. Keep availability wording aligned across install, reference, release boundaries, and the Kujo tool page when the first supporting runtime is released.
+The [upgrade guide](https://docs.kujolang.ai/upgrade/) documents the runtime command, its runtime-only scope, bootstrap requirements, CLI/JSON behavior, installation ownership, and recovery. The command is available in v1.3.0 and later; older runtimes must bootstrap through the existing installer or original package manager. Keep command behavior aligned across install, reference, release boundaries, and the Kujo tool page.

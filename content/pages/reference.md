@@ -20,7 +20,7 @@ Reference material is deliberately secondary to the first-time path. Use it when
 
 ## Core surfaces
 
-- **Runtime upgrade (unreleased):** [`kujo upgrade` syntax, checks, JSON, and recovery](/upgrade/). Not included in v1.2.3.
+- **Runtime upgrade:** [`kujo upgrade` syntax, checks, JSON, and recovery](/upgrade/). Available in v1.3.0 and later.
 - **CLI reference:** `kujo --help`, `kujo doctor --json`, and command-specific help.
 - **Language specification:** source-backed syntax, values, functions, modules, and errors.
 - **Standard library:** the stable library and builtin reference generated from source.

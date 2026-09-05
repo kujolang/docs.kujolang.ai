@@ -27,6 +27,6 @@ The docs use maturity labels beside recommendations so a reader can make an info
 
 Always check the page's **Status** and **Scope** fields plus the linked repository's release notes. A version number or passing local build is not a blanket enterprise-readiness claim.
 
-## Native runtime upgrade availability
+## Runtime upgrade compatibility
 
-As of September 5, 2026, v1.2.3 is the latest published Kujo runtime. [`kujo upgrade`](/upgrade/) is implemented on main but remains unreleased. Source documentation and passing CI do not make it available in older release binaries. Install the first release containing the command through the existing installer or package manager before using it. Docs-site version numbers are independent of runtime releases.
+[`kujo upgrade`](/upgrade/) is available in v1.3.0 and later. Users of earlier runtimes must install a current version through the existing installer or original package manager before using the command. Native upgrades cover only the standalone runtime executable; ecosystem sources and package pins retain their own update workflows. Docs-site version numbers are independent of runtime releases.
