@@ -13,7 +13,7 @@
 		})();
 	</script>
 	<title>Upgrade the Kujo runtime | Kujo Docs</title>
-	<meta name="description" content="Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery. The command is implemented but unreleased.">
+	<meta name="description" content="Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery.">
 	<meta name="keywords" content="SSG, Static Site Generator">
 	<meta name="author" content="Kujo">
 	<link rel="canonical" href="https://docs.kujolang.ai/upgrade/">
@@ -30,7 +30,7 @@
 	<meta name="msapplication-config" content="/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<meta property="og:title" content="Upgrade the Kujo runtime">
-	<meta property="og:description" content="Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery. The command is implemented but unreleased.">
+	<meta property="og:description" content="Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery.">
 	<meta property="og:url" content="https://docs.kujolang.ai/upgrade/">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="Kujo Docs">
@@ -40,13 +40,13 @@
 	<meta property="og:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Upgrade the Kujo runtime">
-	<meta name="twitter:description" content="Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery. The command is implemented but unreleased.">
+	<meta name="twitter:description" content="Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery.">
 	<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
 	<meta name="twitter:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
 	<link href="../assets/css/fonts.css" rel="stylesheet">
 	<link href="../assets/sitekit/sitekit.css" rel="stylesheet">
 	<link href="../assets/css/style.css" rel="stylesheet">
-	<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","headline":"Upgrade the Kujo runtime","name":"Upgrade the Kujo runtime","description":"Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery. The command is implemented but unreleased.","url":"https://docs.kujolang.ai/upgrade/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","headline":"Upgrade the Kujo runtime","name":"Upgrade the Kujo runtime","description":"Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery.","url":"https://docs.kujolang.ai/upgrade/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -102,14 +102,14 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="upgrade-the-kujo-runtime">Upgrade the Kujo runtime</h1><p class="docs-description">Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery. The command is implemented but unreleased.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>implemented — unreleased</span><span class="docs-badge docs-badge-version"><span>Version</span>source main</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-05</span></div>
+		<h1 id="upgrade-the-kujo-runtime">Upgrade the Kujo runtime</h1><p class="docs-description">Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>1.3.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-05</span></div>
 		<section class="docs-prerequisites" aria-label="Prerequisites"><h2 id="prerequisites">Prerequisites</h2><ul class="docs-prerequisites-list"><li>A Kujo release containing the native upgrade command</li><li>A supported standalone installation with a writable destination</li></ul></section>
 		<div class="docs-body"><p><code>kujo upgrade</code> updates the running standalone Kujo executable from official GitHub release binaries. It does not update ecosystem tools, source snapshots, install profiles, package pins, or project dependencies.</p>
 <h2 id="availability-and-first-upgrade">Availability and first upgrade</h2>
-<p><strong>As of September 5, 2026, the command is implemented on the Kujo repository&apos;s main branch but is not in the latest published runtime, <a href="https://github.com/kujolang/kujo/releases/tag/v1.2.3">v1.2.3</a>.</strong> This guide documents that unreleased implementation. It does not announce a new runtime release.</p>
-<p>Releases that predate the command cannot run it. First use your <a href="/install/">existing installer</a> or original package manager to install a release containing <code>kujo upgrade</code>, once one is published. Check <code>kujo --version</code> and <code>kujo upgrade --help</code>. A local <code>kujo-upgrade</code> helper is a separate custom tool; this native command does not invoke or replace it.</p>
+<p><code>kujo upgrade</code> is available in Kujo v1.3.0 and later. It installs official stable runtime binaries for supported standalone installations.</p>
+<p>If you use v1.2.3 or an older release, first install a current release through the <a href="/install/">existing installer</a> or your original package manager. Older binaries do not contain the command and cannot upgrade themselves with it. Check <code>kujo --version</code> and <code>kujo upgrade --help</code> after installation. A local <code>kujo-upgrade</code> helper is a separate custom tool; this native command does not invoke or replace it.</p>
 <h2 id="check-or-install-an-update">Check or install an update</h2>
-<p>Once your runtime includes the command, inspect the latest stable release without writing files:</p>
+<p>Inspect the latest stable release without writing files:</p>
 <pre><code class="language-bash">kujo upgrade --check
 kujo upgrade --check --json</code></pre>
 <p>Install the latest stable release:</p>
@@ -141,9 +141,9 @@ kujo upgrade --check --json</code></pre>
 </tr>
 </tbody></table>
 <p><code>VERSION</code> must be an exact <code>MAJOR.MINOR.PATCH</code>. Ranges, prereleases, and build metadata are rejected. Same-version requests succeed without replacement. Missing releases, archives, or checksums fail without building from source.</p>
-<p>These exact-version examples illustrate syntax; <strong>v1.2.4 is not a published-release claim</strong>:</p>
-<pre><code class="language-bash">kujo upgrade 1.2.4 --check
-kujo upgrade v1.2.4</code></pre>
+<p>Select an exact published stable version:</p>
+<pre><code class="language-bash">kujo upgrade 1.3.0 --check
+kujo upgrade v1.3.0</code></pre>
 <p>An intentional downgrade requires an explicit older target:</p>
 <pre><code class="language-bash">kujo upgrade 1.2.3 --allow-downgrade</code></pre>
 <p>Downgrading to a release without this command removes the ability to upgrade natively until you bootstrap again. <code>--check</code> can inspect an older target without downgrade permission. Latest never downgrades, even with <code>--allow-downgrade</code>.</p>

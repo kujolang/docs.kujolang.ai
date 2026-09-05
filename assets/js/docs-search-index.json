@@ -501,14 +501,14 @@
     },
     {
       "title": "Install Kujo",
-      "description": "Install Kujo v1.2.3 and the tool group you need, or build the CLI from source.",
+      "description": "Install Kujo v1.3.0 and the tool group you need, or build the CLI from source.",
       "url": "https://docs.kujolang.ai/install/",
       "route": "install/",
       "section": "Start here",
       "audience": "developer",
       "difficulty": "beginner",
       "status": "stable",
-      "version": "1.2.3",
+      "version": "1.3.0",
       "tags": [
         "[install, cli, stable]"
       ],
@@ -519,7 +519,7 @@
         "Verify",
         "Troubleshooting"
       ],
-      "text": "Kujo v1.2.3 is the current stable release. The public installer selects the correct archive for your platform, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory. Install Kujo Use a focused group when you want Kujo and the tools for one job. For the Agent Development Platform: Run curl -fsSL https://kujo"
+      "text": "Kujo v1.3.0 is the current stable release. The public installer selects the correct archive for your platform, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory. Install Kujo Use a focused group when you want Kujo and the tools for one job. For the Agent Development Platform: Run curl -fsSL https://kujo"
     },
     {
       "title": "Quickstart",
@@ -559,7 +559,7 @@
         "Core surfaces",
         "Generate source reference"
       ],
-      "text": "Reference material is deliberately secondary to the first-time path. Use it when you know the concept or symbol you need to look up. Core surfaces - Runtime upgrade unreleased : kujo upgrade syntax, checks, JSON, and recovery /upgrade/ . Not included in v1.2.3. - CLI reference: kujo --help, kujo doctor --json, and command-specific help. - Language specificat"
+      "text": "Reference material is deliberately secondary to the first-time path. Use it when you know the concept or symbol you need to look up. Core surfaces - Runtime upgrade: kujo upgrade syntax, checks, JSON, and recovery /upgrade/ . Available in v1.3.0 and later. - CLI reference: kujo --help, kujo doctor --json, and command-specific help. - Language specification: "
     },
     {
       "title": "Release boundaries",
@@ -575,7 +575,7 @@
         "[release, maturity, scope]"
       ],
       "headings": [
-        "Native runtime upgrade availability"
+        "Runtime upgrade compatibility"
       ],
       "text": "The docs use maturity labels beside recommendations so a reader can make an informed choice. | Label | Means | | --- | --- | | Launch scope | The smallest local workflow has a current source-backed proof. | | Preview / dogfood | Useful for evaluation and local teams; broader proof or wording is still in progress. | | Showcase | Demonstrates a pattern or appl"
     },
@@ -615,7 +615,7 @@
         "Pick a direction",
         "What happens next"
       ],
-      "text": "Kujo is a programming language and local-first ecosystem for building, checking, and operating AI-native software. The docs keep the first path short, then introduce tools when a developer naturally needs them. Pick a direction - I already use Kujo \u2192 read runtime upgrade and bootstrap guidance /upgrade/ . The native command is implemented but unreleased. - I"
+      "text": "Kujo is a programming language and local-first ecosystem for building, checking, and operating AI-native software. The docs keep the first path short, then introduce tools when a developer naturally needs them. Pick a direction - I already use Kujo \u2192 read runtime upgrade and bootstrap guidance /upgrade/ . - I want to write Kujo \u2192 Install Kujo /install/ , the"
     },
     {
       "title": "Support",
@@ -638,14 +638,14 @@
     },
     {
       "title": "Upgrade the Kujo runtime",
-      "description": "Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery. The command is implemented but unreleased.",
+      "description": "Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery.",
       "url": "https://docs.kujolang.ai/upgrade/",
       "route": "upgrade/",
       "section": "Start here",
       "audience": "developer",
       "difficulty": "intermediate",
-      "status": "implemented \u2014 unreleased",
-      "version": "source main",
+      "status": "stable",
+      "version": "1.3.0",
       "tags": [
         "[upgrade, runtime, cli, installation]"
       ],
@@ -656,7 +656,7 @@
         "JSON output and exit codes",
         "Verification and recovery"
       ],
-      "text": "kujo upgrade updates the running standalone Kujo executable from official GitHub release binaries. It does not update ecosystem tools, source snapshots, install profiles, package pins, or project dependencies. Availability and first upgrade As of September 5, 2026, the command is implemented on the Kujo repository's main branch but is not in the latest publi"
+      "text": "kujo upgrade updates the running standalone Kujo executable from official GitHub release binaries. It does not update ecosystem tools, source snapshots, install profiles, package pins, or project dependencies. Availability and first upgrade kujo upgrade is available in Kujo v1.3.0 and later. It installs official stable runtime binaries for supported standalo"
     },
     {
       "title": "Browser, architecture, and privacy checks",
@@ -1321,8 +1321,8 @@
       "section": "Tools",
       "audience": "developer",
       "difficulty": "beginner",
-      "status": "stable v1.2.3",
-      "version": "1.2.3",
+      "status": "stable v1.3.0",
+      "version": "1.3.0",
       "tags": [
         "[tool, foundation, language]"
       ],
@@ -1334,7 +1334,7 @@
         "What you get",
         "How it fits",
         "Boundaries",
-        "Native runtime upgrades (unreleased)",
+        "Runtime maintenance",
         "Reference"
       ],
       "text": "Use it when\u2026 You want to write a small program, check it, and run it with the same VM-first CLI path used by the rest of the ecosystem. Interface overview | Surface | What is available | | --- | --- | | Run and inspect | kujo run <file , kujo check <file , kujo doctor | | Test and document | kujo test, kujo test-run <file , kujo docgen <path | | Projects and"
