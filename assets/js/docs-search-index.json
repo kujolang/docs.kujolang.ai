@@ -501,14 +501,14 @@
     },
     {
       "title": "Install Kujo",
-      "description": "Install Kujo v1.3.0 and the tool group you need, or build the CLI from source.",
+      "description": "Install Kujo v1.3.1 and the tool group you need, or build the CLI from source.",
       "url": "https://docs.kujolang.ai/install/",
       "route": "install/",
       "section": "Start here",
       "audience": "developer",
       "difficulty": "beginner",
       "status": "stable",
-      "version": "1.3.0",
+      "version": "1.3.1",
       "tags": [
         "[install, cli, stable]"
       ],
@@ -519,7 +519,7 @@
         "Verify",
         "Troubleshooting"
       ],
-      "text": "Kujo v1.3.0 is the current stable release. The public installer selects the correct archive for your platform, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory. Install Kujo Use a focused group when you want Kujo and the tools for one job. For the Agent Development Platform: Run curl -fsSL https://kujo"
+      "text": "Kujo v1.3.1 is the current stable release. The public installer selects the correct archive for your platform, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory. Install Kujo Use a focused group when you want Kujo and the tools for one job. For the Agent Development Platform: Run curl -fsSL https://kujo"
     },
     {
       "title": "Quickstart",
@@ -645,7 +645,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "stable",
-      "version": "1.3.0",
+      "version": "1.3.1",
       "tags": [
         "[upgrade, runtime, cli, installation]"
       ],
@@ -1321,8 +1321,8 @@
       "section": "Tools",
       "audience": "developer",
       "difficulty": "beginner",
-      "status": "stable v1.3.0",
-      "version": "1.3.0",
+      "status": "stable v1.3.1",
+      "version": "1.3.1",
       "tags": [
         "[tool, foundation, language]"
       ],
