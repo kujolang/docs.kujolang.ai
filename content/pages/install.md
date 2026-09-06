@@ -1,6 +1,6 @@
 ---
 title: Install Kujo
-description: Install Kujo v1.3.0 and the tool group you need, or build the CLI from source.
+description: Install Kujo v1.3.1 and the tool group you need, or build the CLI from source.
 custom_url: install
 template: docs
 section: Start here
@@ -9,8 +9,8 @@ order: 20
 audience: developer
 difficulty: beginner
 status: stable
-version: 1.3.0
-last_updated: 2026-09-05
+version: 1.3.1
+last_updated: 2026-09-06
 previous: /start-here/
 next: /quickstart/
 prerequisites:
@@ -20,7 +20,7 @@ tags: [install, cli, stable]
 ---
 
 
-Kujo `v1.3.0` is the current stable release. The public installer selects the correct archive for your platform, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory.
+Kujo `v1.3.1` is the current stable release. The public installer selects the correct archive for your platform, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory.
 
 ## Install Kujo
 
@@ -35,7 +35,7 @@ Use a focused group when you want Kujo and the tools for one job. For the Agent 
 curl -fsSL https://kujolang.ai/install.sh | bash -s -- --group agent
 ```
 
-Run `curl -fsSL https://kujolang.ai/install.sh | bash -s -- --help` to review available groups and installer options before making changes. Direct archives and checksums remain available from the [Kujo v1.3.0 release](https://github.com/kujolang/kujo/releases/tag/v1.3.0).
+Run `curl -fsSL https://kujolang.ai/install.sh | bash -s -- --help` to review available groups and installer options before making changes. Direct archives and checksums remain available from the [Kujo v1.3.1 release](https://github.com/kujolang/kujo/releases/tag/v1.3.1).
 
 ## Upgrade an existing runtime
 

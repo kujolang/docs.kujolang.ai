@@ -9,8 +9,8 @@ order: 25
 audience: developer
 difficulty: intermediate
 status: stable
-version: 1.3.0
-last_updated: 2026-09-05
+version: 1.3.1
+last_updated: 2026-09-06
 scope: standalone runtime executable only
 source_repo: kujo
 previous: /install/
@@ -59,8 +59,8 @@ Running the install command authorizes replacement without an interactive confir
 Select an exact published stable version:
 
 ```bash
-kujo upgrade 1.3.0 --check
-kujo upgrade v1.3.0
+kujo upgrade 1.3.1 --check
+kujo upgrade v1.3.1
 ```
 
 An intentional downgrade requires an explicit older target:
@@ -99,7 +99,7 @@ Malformed arguments exit `2`; resolution, ownership, transport, verification, pe
 
 HTTPS requests, downloads, extraction, and staged version checks have time and size limits. The published checksum is verified before extraction or execution. This provides integrity through the official release channel, not independent artifact signing.
 
-The replacement is staged beside the destination, and its `--version` must match the selected release. An OS lock prevents overlapping cooperating upgrades; the destination's identity and ownership are rechecked before replacement. The `.kujo-upgrade.lock` file remains after exit, but the OS releases its lock.
+The replacement is staged beside the destination, and its `--version` must match the selected release. On Linux, Kujo v1.3.1 and later retry transient `Text file busy` errors within the staged version-check deadline; a persistent writer still causes the upgrade to fail before replacement. An OS lock prevents overlapping cooperating upgrades; the destination's identity and ownership are rechecked before replacement. The `.kujo-upgrade.lock` file remains after exit, but the OS releases its lock.
 
 A successful upgrade retains a `kujo-backup-UUID` file beside the destination (`.exe` on Windows) and reports its path. Keep it until the new runtime is confirmed usable. To recover, stop Kujo processes and move the reported backup to the reported destination, preserving executable permissions on Unix.
 
