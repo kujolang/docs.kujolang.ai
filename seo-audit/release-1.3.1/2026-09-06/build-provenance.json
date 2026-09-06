@@ -1,0 +1,20 @@
+{
+  "tag": "v1.2.2",
+  "archive_sha256": "4aab1033235af3179c12e6b311370a952589eb0432c8675dc0e58f1e9466921a",
+  "reason": "Existing documented SSG renderer compatibility pin; temporary build tool only",
+  "source_before": "a0ee4ef6ef0a0ce835d18abc176ae2c4ea721dd0",
+  "changed_pages": {
+    "install/index.html": {
+      "before_sha256": "fa058f9e0592ae13107d8cb213b339690266f4e9b09660ac4cefad8e4137b9ec",
+      "after_sha256": "0c2f32acda3434c9a27df3ff31e812626ccc91436c7aae63c597567b28d0b5ad"
+    },
+    "upgrade/index.html": {
+      "before_sha256": "e65ef0f0a5424cf57610da9f48d88af8b0494359cede4fd77917cbf9405e1a83",
+      "after_sha256": "88d9bb4767f7c3040b1519c2bfe63386c8071f127d953b47166527c33283e12a"
+    },
+    "tools/kujo/index.html": {
+      "before_sha256": "9a807a6102e900d833edc667066f4ecb18de9c72ac033fa78a0bf696194a8f5c",
+      "after_sha256": "64fad5d996e468014ff2dc2c8bfb660fb3977d18fbf7df59728e6ac5468edc71"
+    }
+  }
+}

@@ -1,0 +1,1005 @@
+[
+  {
+    "url": "https://docs.kujolang.ai/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/",
+    "sha256": "09de9b10e7a3c2ecb7677573cbf355c7aa2d8e7bc58424eca5d64212fd21644a",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/build/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/build/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/build/",
+    "sha256": "d87b2577d1be70a438f411acecbc6973de1687b91f0633909232257978d1f149",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/build/agent-credentials/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/build/agent-credentials/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/build/agent-credentials/",
+    "sha256": "865b6c3cf21112e8ca7facaba9810cfec0cd5972e6a284c505a4349a74cfd182",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/build/agent-operations/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/build/agent-operations/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/build/agent-operations/",
+    "sha256": "87c4921b841d339a65848f567565d3b69a709e9d6a1fadd85732b500c2a6d451",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/build/agent-profiles/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/build/agent-profiles/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/build/agent-profiles/",
+    "sha256": "53f3e47e848eb0e71fe8a24de721769d6939c1ead12fb538ef8e0057c0cf5281",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/build/ai-and-agents/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/build/ai-and-agents/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/build/ai-and-agents/",
+    "sha256": "85565716e11cb3d125fc20d788c78fd8df84bb91a2f01e9427a70b52cbb5040c",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/build/applications-and-publishing/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/build/applications-and-publishing/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/build/applications-and-publishing/",
+    "sha256": "66fc90672e01bb4a56e4ddab8ccaa45a3932a3d53818d70b9d0df4bdf6b02e8c",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/build/editorial-publishing/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/build/editorial-publishing/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/build/editorial-publishing/",
+    "sha256": "7fd5409ad7c6fda3aec96d44f01b0ef7838056ab737387fc903848924e57c2c0",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/build/knowledge-and-retrieval/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/build/knowledge-and-retrieval/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/build/knowledge-and-retrieval/",
+    "sha256": "2f6175bf3160f63a35bb312e58ba3350df5d3fa62d95f2ca57603f4d063e891c",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/build/owned-agent-projects/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/build/owned-agent-projects/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/build/owned-agent-projects/",
+    "sha256": "c811a655a7aa48fbbb57f98f77c0fb4ff83c3c65cbcd0877384f4410fbb4b6ce",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/build/publishing-house-operator/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/build/publishing-house-operator/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/build/publishing-house-operator/",
+    "sha256": "dc85e542ce95915fbef3235960438eaeff1b2a14b6e81e1796f51ddb906f649d",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/build/web-operations/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/build/web-operations/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/build/web-operations/",
+    "sha256": "d48328e144549a8ce678a490920f4268558a3090867e45d20d1f7e5b20969f9e",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/build/workflows-and-approvals/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/build/workflows-and-approvals/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/build/workflows-and-approvals/",
+    "sha256": "d47b6110ad4dd1a026afa3e958936fd153bc7fcc66f885ad79e4f1cc01db068d",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/choose-a-path/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/choose-a-path/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/choose-a-path/",
+    "sha256": "4161dfc17ec267e3a87f1d382725d9bf04bed6bc1b35afffa93bcbcf4eb22384",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/collections/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/collections/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/collections/",
+    "sha256": "92b4aced68e964565c2a3d73e5d8a8c897654593d44b09c41b2957d7598dac7f",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/collections/agents/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/collections/agents/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/collections/agents/",
+    "sha256": "b463e72696f6d849814ed3aab8d469b3f3a5e012ee559344da749dc937cbbb16",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/collections/benchmarks/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/collections/benchmarks/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/collections/benchmarks/",
+    "sha256": "2a7a63b482824eb396be3d8c7dbd102c66eefa128b879b62248026115715657d",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/collections/skills/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/collections/skills/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/collections/skills/",
+    "sha256": "f1514a5d7bba253a694c0875bb0a0341873a1d241b4553b076c1b6d97c2aa46c",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/collections/workflows/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/collections/workflows/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/collections/workflows/",
+    "sha256": "8de372c1d8c470b7b67ad6528447f42016ba0797def10d8b2bc7932a94585be9",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/ecosystem/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/ecosystem/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/ecosystem/",
+    "sha256": "c552d03b30ebb30873887af643ff66bc3cc386b9b61784aeeb8a8340b3794a72",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/ecosystem/core-foundation/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/ecosystem/core-foundation/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/ecosystem/core-foundation/",
+    "sha256": "1448ab8bc24beb7e13caf0521c96fc227193574971f68ddc9715025c3fb672e9",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/ecosystem/primitives/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/ecosystem/primitives/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/ecosystem/primitives/",
+    "sha256": "2c7614ef12bf507751c839c9085331a2149e0e3a452b54a93ee1a8bff587fb98",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/ecosystem/providers/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/ecosystem/providers/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/ecosystem/providers/",
+    "sha256": "6924c2b0a2d1286b0e23bae5c7de0925321d98b4cab5f5ab022f5073318cd1be",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/ecosystem/showcases/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/ecosystem/showcases/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/ecosystem/showcases/",
+    "sha256": "9175ca1da8734e4a28168121a60a0e42430d76167196f9af3ca71c0aea11f76f",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/ecosystem/tooling/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/ecosystem/tooling/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/ecosystem/tooling/",
+    "sha256": "fda82a9b8d31d94fae0c2a2d90bc7e82da811e53dfce9f602679e7b917054720",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/install/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/install/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/install/",
+    "sha256": "0c2f32acda3434c9a27df3ff31e812626ccc91436c7aae63c597567b28d0b5ad",
+    "schema_valid": true,
+    "current_content": "pass"
+  },
+  {
+    "url": "https://docs.kujolang.ai/learn/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/learn/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/learn/",
+    "sha256": "47c2acb57facc7e1b115e5adefaac085ea4598e12ff81d35f4149d5af375b487",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/learn/ai-runtime/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/learn/ai-runtime/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/learn/ai-runtime/",
+    "sha256": "997a1e9e1b449703bcc0fb3889091ab8107fed069ed5ffe65c33abb3427d7692",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/learn/capabilities/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/learn/capabilities/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/learn/capabilities/",
+    "sha256": "a584d7c11fec985ca14a5b2ed0d07e9cbaf65f2ec40faab09e584328d061f81f",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/learn/editor-support/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/learn/editor-support/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/learn/editor-support/",
+    "sha256": "4a97323b0ffe89e85a4d19d88d6b17ddaba3da5b3ccd0add988cc5b927606835",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/learn/language-basics/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/learn/language-basics/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/learn/language-basics/",
+    "sha256": "e46c4630abe0558bab9dc02d61786d3d38c2457f24ed27816f610f6f35727044",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/learn/packages/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/learn/packages/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/learn/packages/",
+    "sha256": "ee91b645414ab7a3b61c9504ce99c1ac253b9dfe4b9091f56555e92300844fcd",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/learn/runtime/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/learn/runtime/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/learn/runtime/",
+    "sha256": "9bfc41cc18069508161773075d9d2a7692a284939d2d7251ccba9d4e442c2f1c",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/quickstart/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/quickstart/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/quickstart/",
+    "sha256": "5e46d114931bc0b8ab293c799091ef93b649903de984108f79224612cdb35083",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/reference/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/reference/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/reference/",
+    "sha256": "45c6a1ac42e019954d8a68af9483b8cfd9afb4d0acc17fd0b96801066ca4fcde",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/release-boundaries/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/release-boundaries/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/release-boundaries/",
+    "sha256": "64048f885b8390d8ebf8366713faefd85001ca34d72ad08f6afaa3bf7aa3a097",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/review/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/review/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/review/",
+    "sha256": "1d5d5c54031556af2dcfa1e00db7cdb53513f30b2fbb0feb58b80941155b1cd1",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/review/browser-architecture-and-privacy/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/review/browser-architecture-and-privacy/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/review/browser-architecture-and-privacy/",
+    "sha256": "927e8e9a2af42cde7790a2bf5066ac41d7ab5dcbf2e7e6fb577c5d634d6af130",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/review/context-and-task-contracts/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/review/context-and-task-contracts/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/review/context-and-task-contracts/",
+    "sha256": "3e1a5b4a2e22ccfc435cb03afb5be2ba5854a54cbc7f1d9c0f47b1642cff44be",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/review/evidence-and-run-history/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/review/evidence-and-run-history/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/review/evidence-and-run-history/",
+    "sha256": "9bd86fdbe814e911d2fb092c7030de29952caf5716073e172eb83f3e6725c93e",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/review/quality-and-release-gates/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/review/quality-and-release-gates/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/review/quality-and-release-gates/",
+    "sha256": "bbfcf342c4a62b41b8386be9678a8b6c216f252db8082717d23486ff9ae2c01c",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/review/tests-and-evaluation/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/review/tests-and-evaluation/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/review/tests-and-evaluation/",
+    "sha256": "90776576fa9a308552008726f829a456547fba457e50620a86b1bc099218c5da",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/security/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/security/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/security/",
+    "sha256": "d9a4a88d01993946a7e0f088cb530e800cf92f97769504443484d60feeb6a509",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/showcases/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/showcases/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/showcases/",
+    "sha256": "40e8537f8143ae2cc8fc6ed51ba10532e656247ccfc4e40588cb9545a5448956",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/showcases/ai-chat/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/showcases/ai-chat/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/showcases/ai-chat/",
+    "sha256": "7da2b4974b152ed0876d32e1aba0c1609409eb6993b05853ce0170270aaca2a0",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/showcases/cinch/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/showcases/cinch/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/showcases/cinch/",
+    "sha256": "1e49e64de934c181c5380904a488dcce4a2f6838eec324d3917d633b520383bd",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/showcases/cms/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/showcases/cms/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/showcases/cms/",
+    "sha256": "db66196bffb71fffef4511e43bd43b3735c15f7186ece53d195bdeb67c5ecdd3",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/showcases/crud-api/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/showcases/crud-api/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/showcases/crud-api/",
+    "sha256": "a95b41a1484b1ead9001938b2727d5868e42092df28dc5fb242b97af11e088ca",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/showcases/intake/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/showcases/intake/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/showcases/intake/",
+    "sha256": "5c2bca46fd8268c6671e858e6874d5f6b2fe39067298012fb942414cb5c4fe8d",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/showcases/ssg/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/showcases/ssg/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/showcases/ssg/",
+    "sha256": "d1b1374fccbc35c9ad4b76a38dbe6d251d965be5152f7e9400f2a28a66a1a3ee",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/showcases/totalrecall/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/showcases/totalrecall/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/showcases/totalrecall/",
+    "sha256": "77b5e39f83b9e2b958c2960e2a4c55f424be5be203de605b57ac377a292d8ec8",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/start-here/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/start-here/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/start-here/",
+    "sha256": "db82a134a827de464b00177cf19c54e6535c89b33d8b0517055157d7f8d7cef4",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/support/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/support/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/support/",
+    "sha256": "5f99c4e69fce3f5b259a100ad7380a7ba7c820812c94d299c0057b4716b63aea",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/",
+    "sha256": "e846cab2e034bf6159afd084041e9ed25256a6770d58a600cf6db53399118795",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/ability/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/ability/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/ability/",
+    "sha256": "1ce28e8b8bf9d626dcc9024366c0db0fc74de18bf4d2959ec80c967da1b585a2",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/agents-sdk/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/agents-sdk/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/agents-sdk/",
+    "sha256": "c5f38e4049f4ea82c0aeadec39f05fcad52cb7642d7912c8dbb274d993da84ad",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/ai-sdk/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/ai-sdk/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/ai-sdk/",
+    "sha256": "025a06d8bf9f9ede035cff52e65295b2ff0b5031fabcfbc0f9b26b7cc65161f9",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/assetworks/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/assetworks/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/assetworks/",
+    "sha256": "4975cdeda67f348ff6387b3bb0ec935a863f65ec68abb5d889ee14c89f117e7c",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/bluepencil/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/bluepencil/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/bluepencil/",
+    "sha256": "ffefdd97e2bec461dc71d0e6e10f39decc4e939eed9b0d15046f2145d8312670",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/casefile/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/casefile/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/casefile/",
+    "sha256": "f8f105a4463e1e0143d2cc4915467158a84fab2e6ab5337e3d1e876bbd303334",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/changebucket/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/changebucket/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/changebucket/",
+    "sha256": "fc407152198b17f83bebb54d4ab024a2e07523d7c91d025bb2caaed7b0b7113c",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/commerce/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/commerce/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/commerce/",
+    "sha256": "933cf7b98b72d2996003fc9a3e71d953fe8c3b0e9ce56760cfab01ae914da5f1",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/concord/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/concord/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/concord/",
+    "sha256": "687a2a057d9bd4587d75ae6add606a139348714442ec2b87c25ded0f4f9d6296",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/contentgraph/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/contentgraph/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/contentgraph/",
+    "sha256": "108715371ae5d456aed76a2c963839d5fe47d0dfe75138a51933fe1407ebb598",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/dispatch/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/dispatch/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/dispatch/",
+    "sha256": "7ac7cf5d99b8b318010fa081373db34743b985946b7a1fe12be930c7a6cffebc",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/dossier/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/dossier/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/dossier/",
+    "sha256": "a8c751b9a8f3d79713b79b023de028ad458b266ecb7a40189a8fa7a8ef40a94e",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/eval/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/eval/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/eval/",
+    "sha256": "02a684a2ba942750c7bf676e71b23d843692a0302208a72c53fe900c77d0da97",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/fence/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/fence/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/fence/",
+    "sha256": "025fbccd1fa6fe2031853ff96cf96b7b2beea18e71f3fb6aa534207843917162",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/galleypack/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/galleypack/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/galleypack/",
+    "sha256": "cbb88eb31369f5b843c284a1a49f69666640ec5022484cb83bbf873e2bc1143d",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/howl/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/howl/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/howl/",
+    "sha256": "834f73bb53ab7fd577eac293e70ddd6156ecc661764c6de7f824d51c032bca5c",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/kennel/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/kennel/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/kennel/",
+    "sha256": "50410c088d7d47ac9f98ad6461be6dd96c43a58e619cce6564a2d321865d301b",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/kujo/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/kujo/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/kujo/",
+    "sha256": "64fad5d996e468014ff2dc2c8bfb660fb3977d18fbf7df59728e6ac5468edc71",
+    "schema_valid": true,
+    "current_content": "pass"
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/leash/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/leash/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/leash/",
+    "sha256": "ad1229c6cbf02036b1f4e0bfaf0f0c24ab63d212a8a49e271ff88dc56ce0b7e9",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/lens/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/lens/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/lens/",
+    "sha256": "7e2b59af9d488329b66a5e96d2b99996502a6838f9a232df0ce791e168fb765c",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/mcp/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/mcp/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/mcp/",
+    "sha256": "805f573cb8ce212723a930a7847a992d9f3dfe68352df69efdbac37d99b96847",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/muzzle/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/muzzle/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/muzzle/",
+    "sha256": "fb0799164b1d5f5eb32a0baa979e6217a26b65ae9f380e08a55ce853adac3af2",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/packwrite/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/packwrite/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/packwrite/",
+    "sha256": "0f631696c055777087f6404321371b06acfdf823cf892d9177b934f876e7c6b7",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/paperclip/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/paperclip/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/paperclip/",
+    "sha256": "1ecff396483f8b0dfaf54d4ff20c0b352860993e370aa3722431513ad41f293c",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/patchbrief/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/patchbrief/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/patchbrief/",
+    "sha256": "c39d4c3aeb01aaac2636fcbfa6f8e70d677a83840033f4ee9e736776b590781c",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/presswire/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/presswire/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/presswire/",
+    "sha256": "15e66d436dc84fd97a10d301199ca96394932886c0fd32fd146b317d0c1801cb",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/rag/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/rag/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/rag/",
+    "sha256": "8f4ca4896b91f2611c376638fa149470847d5cb0de2bb877bce6744977f8bfb4",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/readersignal/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/readersignal/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/readersignal/",
+    "sha256": "88906ec6bed5b26acce552a10ce3c06d6e9bfb650b2293c5fa95e50f36505280",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/redact/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/redact/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/redact/",
+    "sha256": "67ff81489260fdc860a2a643eda3c1b463f6412234f0d45548259eb4da9aa7aa",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/relay/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/relay/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/relay/",
+    "sha256": "2d02b60856c9193187629c16dbc8a55179117f22a1b6f143b94af353b8c55d9f",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/runledger/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/runledger/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/runledger/",
+    "sha256": "0a231e826760af5267601b341d0be509f38ba69c36e4d13499fd1766b329a55e",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/scent/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/scent/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/scent/",
+    "sha256": "d5ab6cfbf94c544c3f3e2aa253ce60de4ff11519603adb80b5e104e97232b2f2",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/scout/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/scout/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/scout/",
+    "sha256": "c89d5974c60f724d4d03971385820c90fbdd500132b8238c65e6fcd7023133a8",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/searchbridge/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/searchbridge/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/searchbridge/",
+    "sha256": "3103a3d0d164a84b1a38d40843305bfae405bd20ba35b9cfdd86a91f371ead42",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/shipcheck/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/shipcheck/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/shipcheck/",
+    "sha256": "1e101760580f4f3f4351e69848765849c714f364ff477760ca38d70817c31670",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/site-kit/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/site-kit/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/site-kit/",
+    "sha256": "35a52b57bf9c7a142c88ab79a05ea9214dba9a8723327dbc22b0b71affdca28c",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/siteprobe/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/siteprobe/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/siteprobe/",
+    "sha256": "f1f150b2b3d959fba0b8de4cbb106f8972e193396af889177e9d7b74164a6b1c",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/source/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/source/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/source/",
+    "sha256": "8123cb9574916b4554862df81f36f949026e4f6d44ad6ed9a95c0561e1612441",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/spec/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/spec/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/spec/",
+    "sha256": "af8fa7c08d09bc59a54b0a12145b5d5ee3a9758514a9a57c95272e78283a2847",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/storydesk/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/storydesk/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/storydesk/",
+    "sha256": "36ab14fe203b34a3060cde9c57d57bd32632c662afb61446c5d0a0d4886f5dfe",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/tribunal/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/tribunal/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/tribunal/",
+    "sha256": "2a5d1a9214c965cec88b93a5c833ae9fe2512f65d94d4fc4aa4cb8878bf32c0f",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/versionseal/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/versionseal/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/versionseal/",
+    "sha256": "574beb046b3d408e3ee6c4b0d795beae9e56caadac66453348b7fea95517a856",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/ward/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/ward/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/ward/",
+    "sha256": "a5edf6620221ac2cd7f550f80ded8c2d7cf101fc63749048e0cc863d3abc94a7",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/watchdog/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/watchdog/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/watchdog/",
+    "sha256": "a4a61d5c8e167b8f3acaf6d9c5534119ff5c8207a039ca9d27a9058715354abb",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/workcell/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/workcell/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/tools/workcell/",
+    "sha256": "0a49db22526cec006afa658d364695b715b78d2907542dafa41b93266d651963",
+    "schema_valid": true
+  },
+  {
+    "url": "https://docs.kujolang.ai/upgrade/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/upgrade/",
+    "curl_exit": 0,
+    "h1_count": 1,
+    "canonical": "https://docs.kujolang.ai/upgrade/",
+    "sha256": "88d9bb4767f7c3040b1519c2bfe63386c8071f127d953b47166527c33283e12a",
+    "schema_valid": true,
+    "current_content": "pass"
+  }
+]

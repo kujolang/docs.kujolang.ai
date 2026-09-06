@@ -1,0 +1,16 @@
+{
+  "before_pages": 100,
+  "after_pages": 100,
+  "issues": {},
+  "content_assertions": {
+    "install": "pass",
+    "tools/kujo": "pass",
+    "upgrade": "pass"
+  },
+  "build_runtime": "Checksum-verified disposable v1.2.2, existing SSG compatibility pin",
+  "validation": "SSG output and agent platform documentation contracts passed",
+  "production": "pass: 100 live pages return 200 with correct canonical, one H1 and valid JSON-LD; current version, bootstrap boundary and discovery documents verified",
+  "source_commit": "657b0b4f6b7aebc3fe65b753b2ab0e73bf0e7f3c",
+  "deployment_commit": "8492353149915a062a5d95a713b2042f6acf8b93",
+  "pages_run": 34046539901
+}
