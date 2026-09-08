@@ -19,7 +19,7 @@ tags: [tool, web, crawl, evidence]
 
 A website needs a bounded, same-origin inventory of URLs, status, canonicals, metadata, structured data, links, sitemaps, and change evidence.
 
-[SiteProbe 0.3.0](https://github.com/kujolang/siteprobe/releases/tag/v0.3.0) is written in native Kujo. Product commands do not start Python or another process. Python 3.10+ is needed only for repository tests and fixture benchmarks.
+[SiteProbe 0.3.0](https://github.com/kujolang/siteprobe/releases/tag/v0.3.0) is written in native Kujo.
 
 ## Install the qualified runtime
 
