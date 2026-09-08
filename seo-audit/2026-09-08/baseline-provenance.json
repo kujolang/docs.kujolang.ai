@@ -1,0 +1,9 @@
+{
+  "source_commit": "563051301c8e2e814d0ab053b3f4eac80a85963e",
+  "workflow_run": 34220314179,
+  "artifact_id": 10053762070,
+  "runtime_ref": "5dcbfcda2e48c2fe56dd2a4ecdb2d5947e18ff59",
+  "ssg_ref": "e165dbc1b596ea759a2b9c2ff0b9ca988c333eea",
+  "build": "successful pinned GitHub Actions build of untouched HEAD",
+  "archive_sha256": "bf7e5320f79269eb19f442d9352580b7bf72221073e118b77d1e882967db6fe8"
+}

@@ -1,0 +1,15 @@
+{
+  "source_commit": "f44a76b1b2bee6293f9822dd02b4f0bd86e7207f",
+  "workflow_run": 34277437943,
+  "workflow_url": "https://github.com/kujolang/docs.kujolang.ai/actions/runs/34277437943",
+  "artifact_id": 10076584358,
+  "artifact_sha256": "da693368f914fecdf28aabad3ee099f01522545dd212dc7f88199c9ada963170",
+  "build_exit": 0,
+  "contract_exit": 0,
+  "basis": "Successful repository-pinned CI build; exact artifact independently crawled and deployed",
+  "runtime_ref": "5dcbfcda2e48c2fe56dd2a4ecdb2d5947e18ff59",
+  "ssg_ref": "e165dbc1b596ea759a2b9c2ff0b9ca988c333eea",
+  "deployment_commit": "1489d318bd1750cf0f8870f1961108cf0e63f73b",
+  "deployment_run": 34278398749,
+  "deployment_conclusion": "success"
+}

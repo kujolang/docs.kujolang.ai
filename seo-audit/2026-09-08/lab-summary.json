@@ -1,0 +1,65 @@
+{
+  "scope": "Lighthouse mobile lab observations on shared host; not field CWV or causal/rank proof",
+  "runs": [
+    {
+      "source": "raw/lighthouse-after-home.json",
+      "url": "https://docs.kujolang.ai/",
+      "date": "2026-09-08T21:17:15.108Z",
+      "scores": {
+        "performance": 0.97,
+        "accessibility": 1,
+        "seo": 1
+      },
+      "metrics": {
+        "largest-contentful-paint": 1648.4205,
+        "total-blocking-time": 74.5,
+        "cumulative-layout-shift": 0.0008292862640198929
+      }
+    },
+    {
+      "source": "raw/lighthouse-after-skills.json",
+      "url": "https://docs.kujolang.ai/collections/skills/",
+      "date": "2026-09-08T21:05:35.296Z",
+      "scores": {
+        "performance": 0.98,
+        "accessibility": 1,
+        "seo": 1
+      },
+      "metrics": {
+        "largest-contentful-paint": 1956.3649999999998,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0
+      }
+    },
+    {
+      "source": "raw/lighthouse-after-video-guide.json",
+      "url": "https://docs.kujolang.ai/collections/video-skills/",
+      "date": "2026-09-08T21:04:25.613Z",
+      "scores": {
+        "performance": 0.91,
+        "accessibility": 1,
+        "seo": 1
+      },
+      "metrics": {
+        "largest-contentful-paint": 1947.843,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0
+      }
+    },
+    {
+      "source": "raw/lighthouse-baseline-skills.json",
+      "url": "https://docs.kujolang.ai/collections/skills/",
+      "date": "2026-09-08T20:33:05.477Z",
+      "scores": {
+        "performance": 0.91,
+        "accessibility": 1,
+        "seo": 1
+      },
+      "metrics": {
+        "largest-contentful-paint": 2067.967,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0
+      }
+    }
+  ]
+}

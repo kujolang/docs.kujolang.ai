@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-08",
+  "route": "/collections/video-skills/",
+  "desktop": "Heading, metadata, install instructions, navigation reviewed in CUA screenshot and AX tree",
+  "mobile": {
+    "viewport_width": 390,
+    "after_scroll_width": 379,
+    "after_table_width": 317,
+    "fix": "Scrollable block tables; page no longer overflows",
+    "initial_implementation_scroll_width": 508
+  },
+  "basis": "Rechecked at live HTTPS after deployment 1489d31; same 390px viewport and 379px scroll width",
+  "webmcp": {
+    "tool": "search_site",
+    "query": "video skills",
+    "result": "collections:video-skills",
+    "returned_count": 1
+  }
+}

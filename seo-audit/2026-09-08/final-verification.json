@@ -1,0 +1,16 @@
+{
+  "verified_at": "2026-09-08T21:30:00.287321+00:00",
+  "canonical_count": 101,
+  "added_urls": [
+    "https://docs.kujolang.ai/collections/video-skills/"
+  ],
+  "removed_urls": [],
+  "canonical_live_failures": {},
+  "technical_error_counts": {},
+  "scope": "Full generated and live canonical URL sets; no field/rank inference",
+  "production_diagnostics": {
+    "redirect_issues": 0,
+    "crawler_issues": 0,
+    "external_404_or_410": 0
+  }
+}

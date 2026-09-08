@@ -1,0 +1,18 @@
+{
+  "baseline": {
+    "observed_urls": 101,
+    "canonical_content_200": 100,
+    "non200": {
+      "https://docs.kujolang.ai/cdn-cgi/l/email-protection": 404
+    },
+    "receipt": "raw/live/baseline-full-crawl.json"
+  },
+  "after": {
+    "observed_urls": 102,
+    "canonical_content_200": 101,
+    "non200": {
+      "https://docs.kujolang.ai/cdn-cgi/l/email-protection": 404
+    },
+    "receipt": "raw/live/after-full-crawl.json"
+  }
+}
