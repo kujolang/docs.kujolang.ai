@@ -1,0 +1,45 @@
+name: Verify documentation site
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: docs
+      - uses: actions/checkout@v4
+        with:
+          repository: kujolang/kujo
+          ref: 5dcbfcda2e48c2fe56dd2a4ecdb2d5947e18ff59
+          path: kujo
+      - uses: actions/checkout@v4
+        with:
+          repository: kujolang/ssg
+          ref: e165dbc1b596ea759a2b9c2ff0b9ca988c333eea
+          path: ssg
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: kujo
+      - name: Build pinned runtime
+        run: cargo build --release --locked --manifest-path kujo/Cargo.toml
+      - name: Build and validate complete documentation
+        working-directory: docs
+        env:
+          KUJO_BIN: ${{ github.workspace }}/kujo/target/release/kujo
+        run: bash tests/site-contract.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: docs-site
+          path: docs/output/
+          include-hidden-files: true
+          if-no-files-found: error
