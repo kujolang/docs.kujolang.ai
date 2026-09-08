@@ -128,3 +128,10 @@ while IFS= read -r generated_page; do
 done < <(find "$output_dir" -type f -name '*.html' | sort)
 
 printf 'Agent platform documentation contract passed.\n'
+
+# The released video guide must be discoverable and retain both entry points.
+require_file "collections/video-skills/index.html"
+require_text "collections/video-skills/index.html" "kinetic-release-drop"
+require_text "collections/video-skills/index.html" "kujo-release-video"
+require_text "collections/video-skills/index.html" "ElevenLabs"
+require_text "collections/skills/index.html" "/collections/video-skills/"

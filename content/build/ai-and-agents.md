@@ -37,3 +37,7 @@ For a cross-cutting Kujo project, begin with the [`kujo-way-development`](/colle
 - [Watchdog](/tools/watchdog/) for local request, cost, latency, error, and audit visibility.
 
 Choose a package from the [provider index](/ecosystem/providers/) when a live model is part of the question. Begin with fixture mode when it is not. Add live credentials only at the boundary where they are needed.
+
+## Make videos with an agent
+
+For product demos, feature reveals, explainers, launches, or release announcements, use the [Kujo video skills guide](/collections/video-skills/). It covers HyperFrames setup, ten styles, and ElevenLabs voice selection.

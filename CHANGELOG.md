@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased — Video skills
+
+- Document Kujo Skills v0.7.0 and the 135-skill catalog.
+- Add a video guide with ten styles, invocation examples, HyperFrames setup, ElevenLabs voice overrides, and VideoOps runtime boundaries.
+- Link the guide from Skills, Workflows, and AI and Agents; retain full SEO and AI-search regression evidence.
+
 ## Unreleased
 
 - Verify complete documentation builds in GitHub Actions with pinned Kujo/SSG revisions and retain a deployable artifact; document the existing manual Pages publication path.

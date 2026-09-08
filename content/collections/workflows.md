@@ -12,7 +12,7 @@ version: current
 last_updated: 2026-09-02
 scope: local-first
 source_repo: kujo-workflows
-previous: /collections/skills/
+previous: /collections/video-skills/
 next: /collections/agents/
 tags: [collection, workflows, receipts]
 ---
