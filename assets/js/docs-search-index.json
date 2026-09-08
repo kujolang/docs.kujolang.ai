@@ -76,7 +76,9 @@
       "tags": [
         "[ai, agents, build]"
       ],
-      "headings": [],
+      "headings": [
+        "Make videos with an agent"
+      ],
       "text": "Start with the ownership boundary that matches the job. For an agent that should live in Git, use Kujo's Agent Development Platform: The basic profile is offline and deterministic. Continue through Agent Projects /build/owned-agent-projects/ , then select a profile /build/agent-profiles/ , add credentials /build/agent-credentials/ only if a live provider is "
     },
     {
@@ -239,22 +241,46 @@
     },
     {
       "title": "Skills",
-      "description": "Install, select, and validate Kujo-specific Agent Skills.",
+      "description": "Install and use the 135 Kujo Skills in v0.7.0, including development, WebOps, VideoOps, and ten HyperFrames video styles.",
       "url": "https://docs.kujolang.ai/collections/skills/",
       "route": "collections/skills/",
       "section": "Collections",
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "current",
+      "version": "0.7.0",
       "tags": [
         "[collection, skills, agents]"
       ],
       "headings": [
+        "Make videos with your agent",
         "Start with the Kujo Way",
         "Browse the catalog"
       ],
-      "text": "Use the skill catalog to select a focused operating contract for a task. Read the skill instructions, follow their required evidence, and keep the selected skill's scope visible in the handoff. Start with the Kujo Way Use kujo-way-development https://kujolang.ai/ecosystem/skills/kujo-way-development/ when building or substantially reviewing a Kujo project th"
+      "text": "Use the skill catalog to select a focused operating contract for a task. Read the skill instructions, follow their required evidence, and keep the selected skill's scope visible in the handoff. Kujo Skills v0.7.0 https://github.com/kujolang/kujo-skills/releases/tag/v0.7.0 contains 135 skills for development, WebOps, publishing, and video production. Browse t"
+    },
+    {
+      "title": "Make videos with Kujo Skills",
+      "description": "Install Kujo's HyperFrames video skills, choose from ten styles, and set an ElevenLabs narrator for demos, launches, explainers, or releases.",
+      "url": "https://docs.kujolang.ai/collections/video-skills/",
+      "route": "collections/video-skills/",
+      "section": "Collections",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "released guidance",
+      "version": "0.7.0",
+      "tags": [
+        "[collection, skills, video, hyperframes]"
+      ],
+      "headings": [
+        "Choose the entry point",
+        "Install in Codex",
+        "Ten styles and example prompts",
+        "Choose the narrator and presentation",
+        "Automate and review",
+        "Source and related guides"
+      ],
+      "text": "Kujo's video skills help a coding agent turn source material into an editable HyperFrames composition and a rendered video. They cover demos, launches, explainers, feature reveals, integrations, and release announcements. ElevenLabs supplies narration when requested; the agent can also make an unnarrated video. The two video skills ship in Kujo Skills v0.7.0"
     },
     {
       "title": "Workflows",

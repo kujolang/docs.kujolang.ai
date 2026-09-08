@@ -19,7 +19,8 @@ A local-first path through the Kujo language and ecosystem.
 - [Collections](https://docs.kujolang.ai/collections/) — Kujo collections documentation.
 - [Agents](https://docs.kujolang.ai/collections/agents/) — Reusable role contracts, chain of command, and evidence expectations.
 - [Benchmarks](https://docs.kujolang.ai/collections/benchmarks/) — Benchmark methodology, fixtures, scorecards, and reproducibility limits.
-- [Skills](https://docs.kujolang.ai/collections/skills/) — Install, select, and validate Kujo-specific Agent Skills.
+- [Skills](https://docs.kujolang.ai/collections/skills/) — Install and use the 135 Kujo Skills in v0.7.0, including development, WebOps, VideoOps, and ten HyperFrames video styles.
+- [Make videos with Kujo Skills](https://docs.kujolang.ai/collections/video-skills/) — Install Kujo's HyperFrames video skills, choose from ten styles, and set an ElevenLabs narrator for demos, launches, explainers, or releases.
 - [Workflows](https://docs.kujolang.ai/collections/workflows/) — Browse runnable workflow packs and the artifact each workflow leaves behind.
 - [Ecosystem](https://docs.kujolang.ai/ecosystem/) — Kujo ecosystem documentation.
 - [Core / Foundation](https://docs.kujolang.ai/ecosystem/core-foundation/) — The Kujo runtime, package, execution, and collaboration foundation.

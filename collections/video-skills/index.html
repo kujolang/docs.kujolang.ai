@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="kujo-light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		(function() {
+			try {
+				if (window.localStorage.getItem('sk-theme') === 'kujo-dark') {
+					document.documentElement.dataset.theme = 'kujo-dark';
+				}
+			} catch (error) {}
+		})();
+	</script>
+	<title>Make videos with Kujo Skills | Kujo Docs</title>
+	<meta name="description" content="Install Kujo&apos;s HyperFrames video skills, choose from ten styles, and set an ElevenLabs narrator for demos, launches, explainers, or releases.">
+	<meta name="keywords" content="SSG, Static Site Generator">
+	<meta name="author" content="Kujo">
+	<link rel="canonical" href="https://docs.kujolang.ai/collections/video-skills/">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/assets/img/kujo-logomark-black.svg" color="#000000">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="application-name" content="Kujo Docs">
+	<meta name="apple-mobile-web-app-title" content="Kujo Docs">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Make videos with Kujo Skills">
+	<meta property="og:description" content="Install Kujo&apos;s HyperFrames video skills, choose from ten styles, and set an ElevenLabs narrator for demos, launches, explainers, or releases.">
+	<meta property="og:url" content="https://docs.kujolang.ai/collections/video-skills/">
+	<meta property="og:type" content="article">
+	<meta property="og:site_name" content="Kujo Docs">
+	<meta property="og:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Make videos with Kujo Skills">
+	<meta name="twitter:description" content="Install Kujo&apos;s HyperFrames video skills, choose from ten styles, and set an ElevenLabs narrator for demos, launches, explainers, or releases.">
+	<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta name="twitter:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<link href="../../assets/css/fonts.css" rel="stylesheet">
+	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Make videos with Kujo Skills","name":"Make videos with Kujo Skills","description":"Install Kujo's HyperFrames video skills, choose from ten styles, and set an ElevenLabs narrator for demos, launches, explainers, or releases.","url":"https://docs.kujolang.ai/collections/video-skills/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="docs-topbar" id="navigation">
+	<div class="docs-topbar-row">
+		<a class="docs-brand" href="../../index.html"><img class="docs-brand-mark" src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"> <span>Docs</span></a>
+		<label class="docs-search-shell">
+			<span class="sr-only">Search documentation</span>
+			<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
+		</label>
+		<div class="docs-header-actions">
+			<button class="docs-theme-button docs-icon-button" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-docs-theme>
+				<svg class="docs-moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c.132 0 .263 .003 .393 .008a7.5 7.5 0 0 0 7.599 9.6A9 9 0 1 1 12 3"/></svg>
+				<svg class="docs-sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-4 0a4 4 0 1 0 8 0 4 4 0 1 0-8 0M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+			</button>
+			<button class="docs-menu-button docs-icon-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu>
+				<svg class="docs-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+				<svg class="docs-close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+			</button>
+		</div>
+	</div>
+	<nav id="primary-navigation" class="docs-primary-nav" aria-label="Primary navigation">
+		<a href="/start-here/">Start here</a>
+		<a href="/learn/">Learn Kujo</a>
+		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
+		<a href="/tools/">Tools</a>
+		<a href="/showcases/">Showcases</a>
+	</nav>
+</header>
+<div id="docs-search-results" class="docs-search-results" aria-live="polite"></div>
+<main class="docs-shell" id="main-content">
+	<aside class="docs-sidebar" aria-label="Documentation sections">
+		<p class="docs-sidebar-label">Browse</p>
+		<ul>
+			<li><a href="/start-here/">Start here</a></li>
+			<li><a href="/install/">Install Kujo</a></li>
+			<li><a href="/upgrade/">Upgrade Kujo</a></li>
+			<li><a href="/quickstart/">Quickstart</a></li>
+			<li><a href="/choose-a-path/">Choose a path</a></li>
+			<li><a href="/learn/">Learn Kujo</a></li>
+			<li><a href="/build/">Build with Kujo</a></li>
+			<li><a href="/review/">Reviewable work</a></li>
+			<li><a href="/tools/">Tools</a></li>
+			<li><a href="/showcases/">Showcases</a></li>
+			<li><a href="/collections/">Collections</a></li>
+			<li><a href="/ecosystem/">Ecosystem</a></li>
+			<li><a href="/reference/">Reference</a></li>
+			<li><a href="/security/">Security model</a></li>
+			<li><a href="/release-boundaries/">Release boundaries</a></li>
+			<li><a href="/support/">Support</a></li>
+		</ul>
+	</aside>
+	<article class="docs-article">
+		<h1 id="make-videos-with-kujo-skills">Make videos with Kujo Skills</h1><p class="docs-description">Install Kujo&apos;s HyperFrames video skills, choose from ten styles, and set an ElevenLabs narrator for demos, launches, explainers, or releases.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>released guidance</span><span class="docs-badge docs-badge-version"><span>Version</span>0.7.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-08</span></div>
+		<div class="docs-body"><p>Kujo&apos;s video skills help a coding agent turn source material into an editable HyperFrames composition and a rendered video. They cover demos, launches, explainers, feature reveals, integrations, and release announcements. ElevenLabs supplies narration when requested; the agent can also make an unnarrated video.</p>
+<p>The two video skills ship in <a href="https://github.com/kujolang/kujo-skills/releases/tag/v0.7.0">Kujo Skills v0.7.0</a>, alongside the VideoOps production skills. Their source now lives in <code>kujo-skills</code>, rather than <code>kujo-hyperframes</code>.</p>
+<h2 id="choose-the-entry-point">Choose the entry point</h2>
+<table><thead><tr>
+<th>Skill</th>
+<th>Use it for</th>
+</tr></thead><tbody>
+<tr>
+<td><code>kujo-video-styles</code></td>
+<td>Ten reusable styles with different durations and story structures. Choose a style explicitly or ask the agent to choose.</td>
+</tr>
+<tr>
+<td><code>kujo-release-video</code></td>
+<td>A fixed 15-second, 1920×1080, 24 fps monochrome release announcement with narration, original ambient music, and sound effects.</td>
+</tr>
+<tr>
+<td><code>kujo-videoops-workflows</code></td>
+<td>A full production team covering the brief, media, composition, review, and delivery.</td>
+</tr>
+</tbody></table>
+<p>The ten styles guide the story and motion. HyperFrames owns the native composition, preview, and render workflow. These skills are instructions and scripts, not a hosted video service or a substitute for the agent host&apos;s permissions.</p>
+<h2 id="install-in-codex">Install in Codex</h2>
+<p>From a new working directory, install the released skill folders:</p>
+<pre><code class="language-bash">git clone --branch v0.7.0 --depth 1 https://github.com/kujolang/kujo-skills.git
+mkdir -p ~/.codex/skills
+cp -R kujo-skills/skills/kujo-video-styles ~/.codex/skills/
+cp -R kujo-skills/skills/kujo-release-video ~/.codex/skills/</code></pre>
+<p>For custom styles, also install the <a href="https://github.com/heygen-com/hyperframes#skills">native HyperFrames skills</a>:</p>
+<pre><code class="language-bash">npx hyperframes skills update</code></pre>
+<p>Use the destination supported by your agent host if it does not read <code>~/.codex/skills</code>. Copy each complete skill directory, including its scripts, references, and assets. The fixed release preset is bundled; custom video styles also rely on native HyperFrames skills. Install the tools required by the selected workflow before rendering.</p>
+<h2 id="ten-styles-and-example-prompts">Ten styles and example prompts</h2>
+<p>These prompts are starting points. Replace the bracketed source with a local file, inspected URL, changelog, product brief, or pull request. Durations are the style defaults, not a promise that any script will fit without editing.</p>
+<table><thead><tr>
+<th>Style ID</th>
+<th>Best fit</th>
+<th>Default duration</th>
+<th>Default voice</th>
+</tr></thead><tbody>
+<tr>
+<td><code>cinematic-hero-launch</code></td>
+<td>A major launch with intrigue, proof, and a thesis</td>
+<td>50 seconds</td>
+<td>Brian</td>
+</tr>
+<tr>
+<td><code>apple-style-micro-launch</code></td>
+<td>One polished product interaction, often muted</td>
+<td>12 seconds</td>
+<td>Sarah</td>
+</tr>
+<tr>
+<td><code>release-notes-changelog</code></td>
+<td>One release headline and supporting changes</td>
+<td>45 seconds</td>
+<td>Daniel</td>
+</tr>
+<tr>
+<td><code>real-product-proof-reel</code></td>
+<td>A sequence showing real product capabilities</td>
+<td>40 seconds</td>
+<td>Chris</td>
+</tr>
+<tr>
+<td><code>editorial-thesis-launch</code></td>
+<td>A source-backed argument about a product or idea</td>
+<td>45 seconds</td>
+<td>George</td>
+</tr>
+<tr>
+<td><code>feature-reveal</code></td>
+<td>Friction, changed behavior, and the payoff</td>
+<td>25 seconds</td>
+<td>Jessica</td>
+</tr>
+<tr>
+<td><code>integration-partnership-launch</code></td>
+<td>A real workflow crossing two systems</td>
+<td>25 seconds</td>
+<td>Eric</td>
+</tr>
+<tr>
+<td><code>engineering-pr-to-video</code></td>
+<td>A problem, code change, mechanism, and evidence</td>
+<td>60 seconds</td>
+<td>Alice</td>
+</tr>
+<tr>
+<td><code>short-product-launch</code></td>
+<td>A compact product introduction led by footage</td>
+<td>20 seconds</td>
+<td>Matilda</td>
+</tr>
+<tr>
+<td><code>kinetic-release-drop</code></td>
+<td>One line, a visual mechanism, and a reveal</td>
+<td>8 seconds</td>
+<td>Liam</td>
+</tr>
+</tbody></table>
+<pre><code class="language-text">Use $kujo-video-styles to make a cinematic-hero-launch for [product] from [source].
+Use $kujo-video-styles to make a muted apple-style-micro-launch showing [interaction].
+Use $kujo-video-styles to make a release-notes-changelog for [version] from [changelog].
+Use $kujo-video-styles to make a real-product-proof-reel using [real captures].
+Use $kujo-video-styles to make an editorial-thesis-launch explaining [argument] from [evidence].
+Use $kujo-video-styles to make a feature-reveal showing [before and after].
+Use $kujo-video-styles to make an integration-partnership-launch for [workflow and sources].
+Use $kujo-video-styles to make an engineering-pr-to-video from [pull request].
+Use $kujo-video-styles to make a short-product-launch for [tool] from [source].
+Use $kujo-video-styles to make a kinetic-release-drop announcing [one source-backed change].</code></pre>
+<p>For the fixed release preset:</p>
+<pre><code class="language-text">Use $kujo-release-video to make a release film for [tool/version] from
+[release information], in a new folder. Generate the ElevenLabs narration
+and use the original ambient music and sound effects workflow.</code></pre>
+<h2 id="choose-the-narrator-and-presentation">Choose the narrator and presentation</h2>
+<p>The fixed preset defaults to Brian. The ten styles use the voices in the table, and explicit voice choices take precedence. Voice names do not guarantee an accent; ask the agent to verify the provider&apos;s current voice metadata. For example:</p>
+<pre><code class="language-text">Use $kujo-video-styles to make a 40-second release-notes-changelog from
+[source]. Use Eric&apos;s American voice from ElevenLabs. Verify the voice
+before generation. Do not add captions. Use Departure Mono for the
+closing headline.</code></pre>
+<p>You can supply an ElevenLabs voice ID instead of a name, or ask for a silent video. Store credentials in the configured environment or credential store, never in the brief, script, or repository. Generating provider media requires account access, an available allowance, and authorization; installing a skill does not supply them. Check the <a href="https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform">provider&apos;s usage rights</a> for the generation-time plan.</p>
+<h2 id="automate-and-review">Automate and review</h2>
+<p>The style CLI exposes <code>list</code>, <code>route</code>, <code>init</code>, <code>validate</code>, and <code>prepare</code>:</p>
+<pre><code class="language-bash">python3 ~/.codex/skills/kujo-video-styles/scripts/video_styles.py list
+python3 ~/.codex/skills/kujo-video-styles/scripts/video_styles.py route --brief brief.json</code></pre>
+<p>Read the <a href="https://github.com/kujolang/kujo-skills/blob/v0.7.0/skills/kujo-video-styles/references/pipeline.md">versioned pipeline contract</a> before authoring a JSON brief. <code>prepare</code> creates an editable starter; it does not invent claims, generate narration, or certify the finished video. The agent still needs to inspect sources, author the composition, check frame boundaries and text, review audio, and render through HyperFrames.</p>
+<p>VideoOps team productions use the shared media provider workflow in <a href="https://github.com/kujolang/kujo-agents/tree/main/videoops/tools"><code>kujo-agents/videoops/tools</code></a>. Keep original media and receipts, reuse existing takes when rebuilding, and distinguish technical checks from a complete visual and listening review.</p>
+<h2 id="source-and-related-guides">Source and related guides</h2>
+<ul>
+<li><a href="https://github.com/kujolang/kujo-skills/blob/v0.7.0/skills/kujo-video-styles/SKILL.md">Kujo Video Styles source at v0.7.0</a></li>
+<li><a href="https://github.com/kujolang/kujo-skills/blob/v0.7.0/skills/kujo-release-video/SKILL.md">Kujo Release Video source at v0.7.0</a></li>
+<li><a href="https://github.com/kujolang/kujo-skills/blob/v0.7.0/skills/kujo-video-styles/references/voices.md">Released voice defaults and overrides</a></li>
+<li><a href="https://kujolang.ai/ecosystem/skills/">Browse all Kujo Skills</a></li>
+<li><a href="/build/ai-and-agents/">Build with AI and agents</a></li>
+</ul></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/collections/skills/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/collections/workflows/" rel="next"><span>Next</span></a></nav>
+	</article>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#choose-the-entry-point">Choose the entry point</a></li><li class="toc-level-2"><a href="#install-in-codex">Install in Codex</a></li><li class="toc-level-2"><a href="#ten-styles-and-example-prompts">Ten styles and example prompts</a></li><li class="toc-level-2"><a href="#choose-the-narrator-and-presentation">Choose the narrator and presentation</a></li><li class="toc-level-2"><a href="#automate-and-review">Automate and review</a></li><li class="toc-level-2"><a href="#source-and-related-guides">Source and related guides</a></li></ol></nav>
+</main>
+
+<footer class="docs-footer" id="footer">
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.3.4</span></div>
+	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
+</footer>
+<script src="../../assets/sitekit/sitekit.js"></script>
+<script src="../../assets/js/docs.js"></script>
+<script src="../../assets/js/kujo-webmcp.js" data-kujo-webmcp data-kujo-site-index="../../.well-known/kujo-site-index.json" defer></script></body>
+</html>
