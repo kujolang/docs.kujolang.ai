@@ -1780,25 +1780,26 @@
     },
     {
       "title": "SiteProbe",
-      "description": "Crawl a bounded website surface and preserve deterministic intelligence evidence.",
+      "description": "Crawl websites in native Kujo with bounded same-origin requests, immutable artifacts, manifest verification, and deterministic comparisons.",
       "url": "https://docs.kujolang.ai/tools/siteprobe/",
       "route": "tools/siteprobe/",
       "section": "Tools",
       "audience": "developer",
       "difficulty": "intermediate",
-      "status": "local scope verified",
-      "version": "current",
+      "status": "released 0.3.0",
+      "version": "0.3.0",
       "tags": [
         "[tool, web, crawl, evidence]"
       ],
       "headings": [
         "Use it when\u2026",
-        "Five-minute example",
-        "What you get",
+        "Install the qualified runtime",
+        "Crawl and verify",
+        "What changed in 0.3.0",
         "Boundaries",
         "Reference"
       ],
-      "text": "Use it when\u2026 A website needs a bounded, same-origin inventory of URLs, status, canonicals, metadata, schema, links, sitemaps, content, and change evidence. Five-minute example What you get An immutable run that can be validated, digest-verified, compared with a baseline, reported, or signed with HMAC-SHA-256. Boundaries SiteProbe is read-only. It blocks priv"
+      "text": "Use it when\u2026 A website needs a bounded, same-origin inventory of URLs, status, canonicals, metadata, structured data, links, sitemaps, and change evidence. SiteProbe 0.3.0 https://github.com/kujolang/siteprobe/releases/tag/v0.3.0 is written in native Kujo. Product commands do not start Python or another process. Python 3.10+ is needed only for repository tes"
     },
     {
       "title": "Source",

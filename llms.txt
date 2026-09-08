@@ -92,7 +92,7 @@ A local-first path through the Kujo language and ecosystem.
 - [SearchBridge](https://docs.kujolang.ai/tools/searchbridge/) — Fetch normalized search, analytics, page-performance, backlink, keyword, and indexing evidence through bounded provider contracts.
 - [ShipCheck](https://docs.kujolang.ai/tools/shipcheck/) — Scan release readiness and produce a gate report.
 - [SiteKit](https://docs.kujolang.ai/tools/site-kit/) — Vendor an accessible, semantic, token-driven design system for static sites.
-- [SiteProbe](https://docs.kujolang.ai/tools/siteprobe/) — Crawl a bounded website surface and preserve deterministic intelligence evidence.
+- [SiteProbe](https://docs.kujolang.ai/tools/siteprobe/) — Crawl websites in native Kujo with bounded same-origin requests, immutable artifacts, manifest verification, and deterministic comparisons.
 - [Source](https://docs.kujolang.ai/tools/source/) — Coordinate agent-first software work, evidence, decisions, and canonical Git state.
 - [Spec](https://docs.kujolang.ai/tools/spec/) — Turn a request into a structured, checkable task contract.
 - [StoryDesk](https://docs.kujolang.ai/tools/storydesk/) — Plan editorial work with immutable ideas, commissions, assignments, handoffs, and queues.
