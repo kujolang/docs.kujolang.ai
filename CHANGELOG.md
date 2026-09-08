@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Verify complete documentation builds in GitHub Actions with pinned Kujo/SSG revisions and retain a deployable artifact; document the existing manual Pages publication path.
+
+- Update SiteProbe for the native Kujo 0.3.0 release, exact runtime installation, qualified source packages, verification evidence, and current discovery metadata.
+
 - Document native runtime upgrades available from v1.3.0, with bootstrap guidance for older runtimes, recovery instructions, and discovery links.
 
 - Document Ability 1.1.0 installation, SDK preview limits, digest compatibility, offline pack trust, fixture tooling, and application-owned execution.

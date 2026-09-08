@@ -48,6 +48,8 @@ The release contract runs the same build and checks from one entrypoint:
 bash tests/site-contract.sh
 ```
 
+The `Verify documentation site` GitHub Actions workflow runs this contract on pushes to `main`, pull requests, and manual dispatch. It builds the runtime and sibling SSG from the immutable revisions in `.github/workflows/verify.yml`, then retains the complete generated site as the `docs-site` artifact. Set `KUJO_BIN` to an explicit executable for the equivalent local build. The workflow verifies output; publishing still uses the `gh-pages` branch described below.
+
 Before release, also verify the generated sitemap routes, the themed 404 response, desktop and mobile layouts, same-origin links, keyboard interactions, and automated accessibility checks.
 
 ## Project structure
@@ -100,7 +102,7 @@ Production uses GitHub Pages behind Cloudflare:
 | Cloudflare DNS | Proxied CNAME `docs` to `kujolang.github.io` |
 | HTTPS | Cloudflare Universal SSL with **Always Use HTTPS** enabled |
 
-Build from `main`, replace the contents of the `gh-pages` branch with the generated `output/` directory, and push that branch. The generated `.nojekyll` file disables Jekyll processing, while `404.html` provides the themed catchall response.
+Use the `docs-site` artifact from a successful verification run for the intended `main` commit, or build and validate that commit locally. Replace the contents of the `gh-pages` branch with the verified generated site, and push that branch. The generated `.nojekyll` file disables Jekyll processing, while `404.html` provides the themed catchall response.
 
 After deployment, verify the public edge rather than relying on a local DNS cache:
 
