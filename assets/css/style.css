@@ -149,7 +149,7 @@ a:hover { color: var(--docs-accent); }
 .docs-body h2 { font-size: var(--sk-type-size-2xl); }
 .docs-body h3 { font-size: var(--sk-type-size-lg); }
 .docs-body p, .docs-body li { max-inline-size: 72ch; }
-.docs-body table { margin-block: var(--sk-space-5); border: var(--sk-border-1) solid var(--docs-line); }
+.docs-body table { display: block; max-width: 100%; overflow-x: auto; margin-block: var(--sk-space-5); border: var(--sk-border-1) solid var(--docs-line); }
 .docs-body th, .docs-body td { padding: var(--sk-space-2) var(--sk-space-3); border-block-end: var(--sk-border-1) solid var(--docs-line); text-align: start; vertical-align: top; }
 .docs-body th { color: var(--docs-ink); font-family: var(--sk-font-mono); font-size: var(--sk-type-size-sm); }
 .docs-body thead { background: var(--docs-accent-soft); }
