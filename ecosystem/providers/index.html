@@ -101,7 +101,7 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="providers">Providers</h1><p class="docs-description">Choose and install a Kujo provider package, then move from a first request to native features.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>source-backed inventory</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-30</span></div>
+		<h1 id="providers">Providers</h1><p class="docs-description">Choose and install a Kujo provider package, then move from a first request to native features.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>source-backed inventory</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-09</span></div>
 		<div class="docs-body"><p>Kujo provider packages keep each provider&apos;s wire format visible while offering a normalized AI SDK driver when the package supports one. Choose a package here, install its immutable tag with Kennel, and use the provider&apos;s native API first when you need provider-specific fields.</p>
 <h2 id="choose-a-provider">Choose a provider</h2>
 <p>The inventory below is checked against the official Kujo provider repositories on <strong>2026-08-30</strong>. <code>AI SDK</code> means the package exports a public provider factory and depends on AI SDK <code>v1.1.0</code>; <code>Native only</code> means no normalized driver is advertised in that package release.</p>
@@ -474,7 +474,7 @@ print(request[&quot;data&quot;][&quot;request_id&quot;])</code></pre>
 result := chat(create_client({&quot;api_key&quot;: env(&quot;BASETEN_API_KEY&quot;), &quot;model&quot;: &quot;my-deployment&quot;}), {&quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Say hello.&quot;}]})
 print(result[&quot;data&quot;])</code></pre>
 <h2 id="contracts-and-related-guides">Contracts and related guides</h2>
-<p>The current baseline is Kujo <code>v1.1.0</code>, Kennel <code>v1.0.0</code>, AI SDK <code>v1.1.0</code>, AI SDK normalized response contract <code>1.0.0</code>, AI SDK provider-driver contract <code>1.0.0</code>, and Kujo Provider Package Contract <code>1.0.1</code>. Provider package versions are independent of these contracts.</p>
+<p>The documented provider compatibility baseline from 2026-08-30 is Kujo <code>v1.1.0</code>, Kennel <code>v1.0.0</code>, AI SDK <code>v1.1.0</code>, AI SDK normalized response contract <code>1.0.0</code>, AI SDK provider-driver contract <code>1.0.0</code>, and Kujo Provider Package Contract <code>1.0.1</code>. Provider package versions are independent of these contracts. See <a href="/install/">Install Kujo</a> for the current stable runtime; this historical provider baseline is not its release number.</p>
 <ul>
 <li><a href="/tools/ai-sdk/">AI SDK</a> — normalized chat and embedding behavior, retries, fixtures, and redaction.</li>
 <li><a href="/learn/ai-runtime/">AI runtime basics</a> — credentials, budgets, replay, and egress boundaries.</li>

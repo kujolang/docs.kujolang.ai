@@ -101,12 +101,12 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="repository-owned-agent-projects">Repository-owned Agent Projects</h1><p class="docs-description">Install Kujo&apos;s agent platform, create a repository-owned agent, and prove its local lifecycle.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-30</span></div>
+		<h1 id="repository-owned-agent-projects">Repository-owned Agent Projects</h1><p class="docs-description">Install Kujo&apos;s agent platform, create a repository-owned agent, and prove its local lifecycle.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>1.4.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-09</span></div>
 		<div class="docs-body"><p>An Agent Project keeps the agent in your repository. Its instructions, model preference, skills, tools, knowledge, policies, workflows, evaluation, exact dependency pins, and runtime boundaries remain reviewable files instead of hidden hosted state.</p>
 <h2 id="install-the-focused-agent-toolchain">Install the focused agent toolchain</h2>
 <pre><code class="language-bash">curl -fsSL https://kujolang.ai/install.sh | bash -s -- --group agent
 export PATH=&quot;$HOME/.local/bin:$PATH&quot;</code></pre>
-<p>The public installer downloads published Kujo <code>v1.1.0</code> release assets, verifies their checksums, and installs the focused Agent Project dependencies.</p>
+<p>The public installer downloads the current stable Kujo release assets, verifies their checksums, and installs the focused Agent Project dependencies.</p>
 <h2 id="create-and-run-an-agent">Create and run an agent</h2>
 <pre><code class="language-bash">kujo agent new my-agent --profile basic --install
 cd my-agent

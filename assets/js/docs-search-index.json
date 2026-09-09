@@ -138,7 +138,7 @@
       "audience": "developer",
       "difficulty": "beginner",
       "status": "stable",
-      "version": "1.1.0",
+      "version": "1.4.0",
       "tags": [
         "[ai, agents, projects, build]"
       ],
@@ -148,7 +148,7 @@
         "Prove the complete local lifecycle",
         "Continue building"
       ],
-      "text": "An Agent Project keeps the agent in your repository. Its instructions, model preference, skills, tools, knowledge, policies, workflows, evaluation, exact dependency pins, and runtime boundaries remain reviewable files instead of hidden hosted state. Install the focused agent toolchain The public installer downloads published Kujo v1.1.0 release assets, verif"
+      "text": "An Agent Project keeps the agent in your repository. Its instructions, model preference, skills, tools, knowledge, policies, workflows, evaluation, exact dependency pins, and runtime boundaries remain reviewable files instead of hidden hosted state. Install the focused agent toolchain The public installer downloads the current stable Kujo release assets, ver"
     },
     {
       "title": "Publishing House operator",
@@ -495,7 +495,7 @@
     },
     {
       "title": "How the runtime works",
-      "description": "Understand the VM-first execution path, interpreter fallback, and the role of the CLI.",
+      "description": "Understand Kujo VM execution, interpreter fallback, isolated imports, native scripting APIs, and platform requirements.",
       "url": "https://docs.kujolang.ai/learn/runtime/",
       "route": "learn/runtime/",
       "section": "Learn Kujo",
@@ -506,7 +506,9 @@
       "tags": [
         "[runtime, vm, interpreter]"
       ],
-      "headings": [],
+      "headings": [
+        "Native scripting and installed tools"
+      ],
       "text": "The normal path is the VM. It keeps the command developers use in production-like checks aligned with the command they use while learning. Use the interpreter when a compatibility or debugging workflow calls for it: The CLI also owns project initialization, checks, formatting, linting, packages, DocGen, and serving static output. That common surface is why t"
     },
     {
@@ -527,25 +529,26 @@
     },
     {
       "title": "Install Kujo",
-      "description": "Install Kujo v1.3.1 and the tool group you need, or build the CLI from source.",
+      "description": "Install Kujo v1.4.0 and the tool group you need, or build the CLI from source.",
       "url": "https://docs.kujolang.ai/install/",
       "route": "install/",
       "section": "Start here",
       "audience": "developer",
       "difficulty": "beginner",
       "status": "stable",
-      "version": "1.3.1",
+      "version": "1.4.0",
       "tags": [
         "[install, cli, stable]"
       ],
       "headings": [
         "Install Kujo",
         "Upgrade an existing runtime",
+        "Runtime requirements",
         "Source install",
         "Verify",
         "Troubleshooting"
       ],
-      "text": "Kujo v1.3.1 is the current stable release. The public installer selects the correct archive for your platform, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory. Install Kujo Use a focused group when you want Kujo and the tools for one job. For the Agent Development Platform: Run curl -fsSL https://kujo"
+      "text": "Kujo v1.4.0 is the current stable release. The public installer selects the correct archive for your platform, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory. Install Kujo Use a focused group when you want Kujo and the tools for one job. For the Agent Development Platform: Run curl -fsSL https://kujo"
     },
     {
       "title": "Quickstart",
@@ -671,7 +674,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "stable",
-      "version": "1.3.1",
+      "version": "1.4.0",
       "tags": [
         "[upgrade, runtime, cli, installation]"
       ],
@@ -1347,8 +1350,8 @@
       "section": "Tools",
       "audience": "developer",
       "difficulty": "beginner",
-      "status": "stable v1.3.1",
-      "version": "1.3.1",
+      "status": "stable v1.4.0",
+      "version": "1.4.0",
       "tags": [
         "[tool, foundation, language]"
       ],
@@ -1361,6 +1364,7 @@
         "How it fits",
         "Boundaries",
         "Runtime maintenance",
+        "Native scripting",
         "Reference"
       ],
       "text": "Use it when\u2026 You want to write a small program, check it, and run it with the same VM-first CLI path used by the rest of the ecosystem. Interface overview | Surface | What is available | | --- | --- | | Run and inspect | kujo run <file , kujo check <file , kujo doctor | | Test and document | kujo test, kujo test-run <file , kujo docgen <path | | Projects and"

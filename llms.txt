@@ -28,14 +28,14 @@ A local-first path through the Kujo language and ecosystem.
 - [Providers](https://docs.kujolang.ai/ecosystem/providers/) — Choose and install a Kujo provider package, then move from a first request to native features.
 - [Showcase Directory](https://docs.kujolang.ai/ecosystem/showcases/) — Proof applications demonstrating complete local workflows and product surfaces.
 - [Tooling](https://docs.kujolang.ai/ecosystem/tooling/) — Supporting tools for execution, evidence, web operations, editorial production, review, and release gates.
-- [Install Kujo](https://docs.kujolang.ai/install/) — Install Kujo v1.3.1 and the tool group you need, or build the CLI from source.
+- [Install Kujo](https://docs.kujolang.ai/install/) — Install Kujo v1.4.0 and the tool group you need, or build the CLI from source.
 - [Learn](https://docs.kujolang.ai/learn/) — Kujo learn documentation.
 - [AI runtime basics](https://docs.kujolang.ai/learn/ai-runtime/) — See the shared controls for provider calls, replay, budgets, secrets, and egress.
 - [Capabilities and safe execution](https://docs.kujolang.ai/learn/capabilities/) — Grant only the filesystem, clock, network, or process access a local task actually needs.
 - [Editor and CLI support](https://docs.kujolang.ai/learn/editor-support/) — Use the CLI, LSP, and editor adapters to keep feedback close to the file you are editing.
 - [Language basics](https://docs.kujolang.ai/learn/language-basics/) — Learn the small set of Kujo syntax and program shapes needed to read a real file.
 - [Packages with Kennel](https://docs.kujolang.ai/learn/packages/) — Keep manifests, lockfiles, source policy, and trust decisions deterministic.
-- [How the runtime works](https://docs.kujolang.ai/learn/runtime/) — Understand the VM-first execution path, interpreter fallback, and the role of the CLI.
+- [How the runtime works](https://docs.kujolang.ai/learn/runtime/) — Understand Kujo VM execution, interpreter fallback, isolated imports, native scripting APIs, and platform requirements.
 - [Quickstart](https://docs.kujolang.ai/quickstart/) — Create one Kujo file, run it with the VM-first runtime, and check the source.
 - [Reference](https://docs.kujolang.ai/reference/) — Find CLI, language, standard-library, configuration, and generated source reference surfaces.
 - [Release boundaries](https://docs.kujolang.ai/release-boundaries/) — Read the difference between release-ready within scope, preview, dogfood, and technical showcase.

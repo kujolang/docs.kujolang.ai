@@ -102,7 +102,7 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="upgrade-the-kujo-runtime">Upgrade the Kujo runtime</h1><p class="docs-description">Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>1.3.1</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-06</span></div>
+		<h1 id="upgrade-the-kujo-runtime">Upgrade the Kujo runtime</h1><p class="docs-description">Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>1.4.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-09</span></div>
 		<section class="docs-prerequisites" aria-label="Prerequisites"><h2 id="prerequisites">Prerequisites</h2><ul class="docs-prerequisites-list"><li>A Kujo release containing the native upgrade command</li><li>A supported standalone installation with a writable destination</li></ul></section>
 		<div class="docs-body"><p><code>kujo upgrade</code> updates the running standalone Kujo executable from official GitHub release binaries. It does not update ecosystem tools, source snapshots, install profiles, package pins, or project dependencies.</p>
 <h2 id="availability-and-first-upgrade">Availability and first upgrade</h2>
@@ -142,8 +142,8 @@ kujo upgrade --check --json</code></pre>
 </tbody></table>
 <p><code>VERSION</code> must be an exact <code>MAJOR.MINOR.PATCH</code>. Ranges, prereleases, and build metadata are rejected. Same-version requests succeed without replacement. Missing releases, archives, or checksums fail without building from source.</p>
 <p>Select an exact published stable version:</p>
-<pre><code class="language-bash">kujo upgrade 1.3.1 --check
-kujo upgrade v1.3.1</code></pre>
+<pre><code class="language-bash">kujo upgrade 1.4.0 --check
+kujo upgrade v1.4.0</code></pre>
 <p>An intentional downgrade requires an explicit older target:</p>
 <pre><code class="language-bash">kujo upgrade 1.2.3 --allow-downgrade</code></pre>
 <p>Downgrading to a release without this command removes the ability to upgrade natively until you bootstrap again. <code>--check</code> can inspect an older target without downgrade permission. Latest never downgrades, even with <code>--allow-downgrade</code>.</p>

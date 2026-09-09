@@ -13,7 +13,7 @@
 		})();
 	</script>
 	<title>How the runtime works | Kujo Docs</title>
-	<meta name="description" content="Understand the VM-first execution path, interpreter fallback, and the role of the CLI.">
+	<meta name="description" content="Understand Kujo VM execution, interpreter fallback, isolated imports, native scripting APIs, and platform requirements.">
 	<meta name="keywords" content="SSG, Static Site Generator">
 	<meta name="author" content="Kujo">
 	<link rel="canonical" href="https://docs.kujolang.ai/learn/runtime/">
@@ -30,7 +30,7 @@
 	<meta name="msapplication-config" content="/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<meta property="og:title" content="How the runtime works">
-	<meta property="og:description" content="Understand the VM-first execution path, interpreter fallback, and the role of the CLI.">
+	<meta property="og:description" content="Understand Kujo VM execution, interpreter fallback, isolated imports, native scripting APIs, and platform requirements.">
 	<meta property="og:url" content="https://docs.kujolang.ai/learn/runtime/">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="Kujo Docs">
@@ -40,13 +40,13 @@
 	<meta property="og:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="How the runtime works">
-	<meta name="twitter:description" content="Understand the VM-first execution path, interpreter fallback, and the role of the CLI.">
+	<meta name="twitter:description" content="Understand Kujo VM execution, interpreter fallback, isolated imports, native scripting APIs, and platform requirements.">
 	<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
 	<meta name="twitter:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
 	<link href="../../assets/css/fonts.css" rel="stylesheet">
 	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
 	<link href="../../assets/css/style.css" rel="stylesheet">
-	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How the runtime works","name":"How the runtime works","description":"Understand the VM-first execution path, interpreter fallback, and the role of the CLI.","url":"https://docs.kujolang.ai/learn/runtime/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How the runtime works","name":"How the runtime works","description":"Understand Kujo VM execution, interpreter fallback, isolated imports, native scripting APIs, and platform requirements.","url":"https://docs.kujolang.ai/learn/runtime/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -101,14 +101,21 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="how-the-runtime-works">How the runtime works</h1><p class="docs-description">Understand the VM-first execution path, interpreter fallback, and the role of the CLI.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
+		<h1 id="how-the-runtime-works">How the runtime works</h1><p class="docs-description">Understand Kujo VM execution, interpreter fallback, isolated imports, native scripting APIs, and platform requirements.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-09</span></div>
 		<div class="docs-body"><p>The normal path is the VM. It keeps the command developers use in production-like checks aligned with the command they use while learning.</p>
 <pre><code class="language-bash">kujo run app.kujo</code></pre>
 <p>Use the interpreter when a compatibility or debugging workflow calls for it:</p>
 <pre><code class="language-bash">kujo run --interpreter app.kujo</code></pre>
-<p>The CLI also owns project initialization, checks, formatting, linting, packages, DocGen, and serving static output. That common surface is why the first-time path introduces the language before the larger ecosystem.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/learn/language-basics/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/learn/capabilities/" rel="next"><span>Next</span></a></nav>
+<p>The CLI also owns project initialization, checks, formatting, linting, packages, DocGen, and serving static output. That common surface is why the first-time path introduces the language before the larger ecosystem.</p>
+<h2 id="native-scripting-and-installed-tools">Native scripting and installed tools</h2>
+<p>Kujo v1.4.0 adds the runtime operations needed for package installers and command launchers written in Kujo. On Linux and macOS, <code>file_lock</code> and <code>file_unlock</code> coordinate cooperating processes, <code>path_owned</code> checks ownership, <code>symlink_atomic</code> publishes a command link, and <code>exec_process</code> replaces the launcher with an exact argument vector. These POSIX operations require their documented host capabilities; they are not Windows installer support or a sandbox.</p>
+<p>Installed tools can opt into imports that do not search the caller&apos;s working directory or lockfile:</p>
+<pre><code class="language-bash">kujo run --isolated-imports /path/to/tool/main.kujo -- argument</code></pre>
+<p><code>KUJO_ISOLATED_IMPORTS=1</code> enables the same mode for inherited launches. Entry and configured roots still apply; ordinary <code>kujo run</code> keeps its existing import behavior. Arguments, including empty strings, reach the program unchanged.</p>
+<p>The runtime also provides bounded HTTP downloads, HTML and XML processing, JSON/JSONL artifacts, digests, and confined file publication. Callback and lexical-scope corrections keep VM and interpreter workflows consistent. See the <a href="https://github.com/kujolang/kujo/blob/v1.4.0/CHANGELOG.md">v1.4.0 changelog</a> and <a href="https://github.com/kujolang/kujo/blob/v1.4.0/docs/STANDARD_LIBRARY.md">standard library contracts</a> for exact signatures, limits, capabilities, and platform boundaries.</p>
+<p>These runtime features support the upcoming native Kennel client. Installing or upgrading Kujo does not install or release Kennel; follow the separate <a href="/tools/kennel/">Kennel guide</a> for its current package workflow.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/learn/language-basics/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/learn/capabilities/" rel="next"><span>Next</span></a></nav>
 	</article>
-
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#native-scripting-and-installed-tools">Native scripting and installed tools</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
