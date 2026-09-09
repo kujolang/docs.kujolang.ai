@@ -1,0 +1,17 @@
+{
+  "source_commit": "0ce24cbc32939d378d6ead6ab064d55381c592c5",
+  "workflow_run": 34358820191,
+  "artifact_id": 10107288440,
+  "archive_sha256": "40202bcd61029a535e15cc5307e8430fae7424e80171dbf65fe0073c2edbfae2",
+  "runtime_ref": "5dcbfcda2e48c2fe56dd2a4ecdb2d5947e18ff59",
+  "ssg_ref": "e165dbc1b596ea759a2b9c2ff0b9ca988c333eea",
+  "build": "Repository-pinned CI build and complete site contract passed",
+  "local_probe": "Older v1.2.2 disposable build stopped after successful pinned CI; not used for deployment",
+  "production": {
+    "source_branch": "main",
+    "deployment_branch": "gh-pages",
+    "deployment_commit": "c210e39",
+    "workflow_run": 34364044927,
+    "conclusion": "success"
+  }
+}

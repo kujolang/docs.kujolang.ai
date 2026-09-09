@@ -1,0 +1,33 @@
+{
+  "rendered_content": {
+    "install/index.html": {
+      "v1.4.0": true,
+      "does not require Python": true
+    },
+    "learn/runtime/index.html": {
+      "isolated imports": true,
+      "native scripting APIs": true,
+      "file_lock": true,
+      "exec_process": true
+    },
+    "upgrade/index.html": {
+      "kujo upgrade 1.4.0 --check": true,
+      "v1.3.1 and later retry": true
+    },
+    "tools/kujo/index.html": {
+      "v1.4.0": true,
+      "separate installation": true
+    },
+    "build/owned-agent-projects/index.html": {
+      "current stable Kujo release assets": true
+    },
+    "ecosystem/core-foundation/index.html": {
+      "v1.4.0": true
+    },
+    "ecosystem/providers/index.html": {
+      "documented provider compatibility baseline from 2026-08-30": true,
+      "historical provider baseline": true
+    }
+  },
+  "feature_search_description": "Understand Kujo VM execution, interpreter fallback, isolated imports, native scripting APIs, and platform requirements."
+}

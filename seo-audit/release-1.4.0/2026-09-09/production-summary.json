@@ -1,0 +1,18 @@
+{
+  "baseline": {
+    "canonical_pages": 101,
+    "http_200": 101,
+    "non200": {},
+    "edge_helpers": {
+      "https://docs.kujolang.ai/cdn-cgi/l/email-protection": 404
+    }
+  },
+  "after": {
+    "canonical_pages": 101,
+    "http_200": 101,
+    "non200": {},
+    "edge_helpers": {
+      "https://docs.kujolang.ai/cdn-cgi/l/email-protection": 404
+    }
+  }
+}

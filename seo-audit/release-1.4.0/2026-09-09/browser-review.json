@@ -1,0 +1,27 @@
+{
+  "preview_source": "0ce24cb",
+  "route": "/learn/runtime/",
+  "desktop": {
+    "viewport_width": 1280,
+    "scroll_width": 1269,
+    "screenshot_reviewed": true
+  },
+  "search": {
+    "query": "isolated imports",
+    "result": "https://docs.kujolang.ai/learn/runtime/",
+    "verified_through_CUA": true
+  },
+  "earlier_content_preview_mobile": {
+    "source": "c923a41",
+    "viewport_width": 390,
+    "scroll_width": 379,
+    "code_overflow": "contained in pre elements"
+  },
+  "production_verification": {
+    "url": "https://docs.kujolang.ai/learn/runtime/",
+    "visible_native_content": "passed",
+    "webmcp_query": "isolated imports",
+    "webmcp_result": "learn:runtime",
+    "webmcp_description_includes_native_scripting": true
+  }
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://docs.kujolang.ai/install/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/install/",
+    "main_content_matches_verified_artifact": true,
+    "main_content_sha256": "113166288bd57b414f5cbb1812a3873cfa1526e3125ca28b6b65c47532d5db45"
+  },
+  {
+    "url": "https://docs.kujolang.ai/learn/runtime/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/learn/runtime/",
+    "main_content_matches_verified_artifact": true,
+    "main_content_sha256": "8fe45ab958e2890508cebdb7f93568a861f01d9ab07cc5cfd7aff92f55bba1af"
+  },
+  {
+    "url": "https://docs.kujolang.ai/upgrade/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/upgrade/",
+    "main_content_matches_verified_artifact": true,
+    "main_content_sha256": "99874f5d921c44b03d669e0a4550368b8c8077b660379bc21311df752f18937c"
+  },
+  {
+    "url": "https://docs.kujolang.ai/tools/kujo/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/tools/kujo/",
+    "main_content_matches_verified_artifact": true,
+    "main_content_sha256": "a276b5e6f1552f9a594c87262a2b7aee8a177baee8b0047acac6e58775e8da01"
+  },
+  {
+    "url": "https://docs.kujolang.ai/build/owned-agent-projects/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/build/owned-agent-projects/",
+    "main_content_matches_verified_artifact": true,
+    "main_content_sha256": "25b3b1c4c5a4482976d59390db2f4135b56e4334e1baa8041dc34bf101bebd9a"
+  },
+  {
+    "url": "https://docs.kujolang.ai/ecosystem/core-foundation/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/ecosystem/core-foundation/",
+    "main_content_matches_verified_artifact": true,
+    "main_content_sha256": "ee46a879e8ef40b5e94222cf52c07db3d321b4c4230ca7d394a58e06a0ad546e"
+  },
+  {
+    "url": "https://docs.kujolang.ai/ecosystem/providers/",
+    "status": 200,
+    "final_url": "https://docs.kujolang.ai/ecosystem/providers/",
+    "main_content_matches_verified_artifact": true,
+    "main_content_sha256": "d4e44f189b6003eb442115b26b25675bb7764e207530788a5b25317e774e24fe"
+  },
+  {
+    "url": "https://docs.kujolang.ai/.well-known/kujo-site-index.json",
+    "status": 200,
+    "json_parse": "passed"
+  }
+]
