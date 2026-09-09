@@ -1,6 +1,6 @@
 ---
 title: How the runtime works
-description: Understand the VM-first execution path, interpreter fallback, and the role of the CLI.
+description: Understand Kujo VM execution, interpreter fallback, isolated imports, native scripting APIs, and platform requirements.
 custom_url: runtime
 template: docs
 section: Learn Kujo
