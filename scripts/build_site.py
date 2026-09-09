@@ -4,7 +4,8 @@
 from __future__ import annotations
 
 import argparse
-from html import unescape
+from datetime import date
+from html import escape, unescape
 import json
 import os
 import re
@@ -195,6 +196,16 @@ def remove_placeholder_authors(document: str) -> str:
 
 def finalize_html(output: Path) -> None:
     """Apply docs-specific cleanup that is not part of the generic SSG templates."""
+    version = (ROOT / "VERSION").read_text().strip()
+    if not re.fullmatch(r"[0-9]+\.[0-9]+\.[0-9]+", version):
+        raise ValueError("VERSION must contain the docs semantic version")
+    release = json.loads((ROOT / "release.json").read_text())
+    released = date.fromisoformat(release["date"])
+    markers = {
+        "@@DOCS_VERSION@@": version,
+        "@@DOCS_RELEASE_DATE@@": f"{released.strftime('%B')} {released.day}, {released.year}",
+        "@@DOCS_RELEASE_SUMMARY@@": release["summary"],
+    }
     empty_prerequisites = re.compile(
         r'\s*<section class="docs-prerequisites"[^>]*>'
         r'\s*<h2[^>]*>Prerequisites</h2>\s*</section>'
@@ -232,6 +243,8 @@ def finalize_html(output: Path) -> None:
 
     for path in output.rglob("*.html"):
         html = path.read_text(encoding="utf-8")
+        for marker, value in markers.items():
+            html = html.replace(marker, escape(value))
         relative = path.relative_to(output)
         if len(relative.parts) == 2 and relative.name == "index.html" and relative.parts[0] in SECTION_DESCRIPTIONS:
             section_description = SECTION_DESCRIPTIONS[relative.parts[0]]

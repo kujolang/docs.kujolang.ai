@@ -1,12 +1,18 @@
 # Changelog
 
-## Unreleased — Video skills
+## [1.4.0] - 2026-09-09
+
+- Refresh the ecosystem release inventory, current tool guidance, and released versus source-only boundaries.
+- Correct Kennel manifest guidance, Commerce installation, AI Chat requirements, and the 44-workflow collection.
+- Generate homepage/footer version and date from one release definition and verify them in the site contract.
+
+### Video skills
 
 - Document Kujo Skills v0.7.0 and the 135-skill catalog.
 - Add a video guide with ten styles, invocation examples, HyperFrames setup, ElevenLabs voice overrides, and VideoOps runtime boundaries.
 - Link the guide from Skills, Workflows, and AI and Agents; retain full SEO and AI-search regression evidence.
 
-## Unreleased
+### Earlier additions included in this docs release
 
 - Verify complete documentation builds in GitHub Actions with pinned Kujo/SSG revisions and retain a deployable artifact; document the existing manual Pages publication path.
 
@@ -18,7 +24,7 @@
 - Link the guide from Primitives, Agents SDK, and MCP.
 
 
-## Unreleased
+### Earlier additions included in this docs release
 
 ### Changed
 

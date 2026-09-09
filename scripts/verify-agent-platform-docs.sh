@@ -98,7 +98,7 @@ require_text "build/publishing-house-operator/index.html" "PUBLISHING_HOUSE_PHAS
 require_text "build/publishing-house-operator/index.html" "--json resume ITEM_ID"
 require_text "build/publishing-house-operator/index.html" "kujo-workflows 0.4.0"
 require_text "build/editorial-publishing/index.html" "kujo-workflows 0.4.0"
-require_text "collections/workflows/index.html" "38 workflow kits"
+require_text "collections/workflows/index.html" "44 local workflows"
 require_text "collections/workflows/index.html" "Owned Agent Project workflow"
 reject_text "build/publishing-house-operator/index.html" "fixture-operational"
 require_text "assets/js/docs.js" "updateScrollableCodeBlocks"
@@ -135,3 +135,24 @@ require_text "collections/video-skills/index.html" "kinetic-release-drop"
 require_text "collections/video-skills/index.html" "kujo-release-video"
 require_text "collections/video-skills/index.html" "ElevenLabs"
 require_text "collections/skills/index.html" "/collections/video-skills/"
+
+# Release markers must come from the same definition on every rendered page.
+python3 - "$output_dir" <<'PY'
+import json
+import sys
+from datetime import date
+from pathlib import Path
+version = Path('VERSION').read_text().strip()
+release = json.loads(Path('release.json').read_text())
+d = date.fromisoformat(release['date'])
+output = Path(sys.argv[1])
+for page in output.rglob('*.html'):
+    text = page.read_text()
+    assert '@@DOCS_' not in text, f'unresolved release marker: {page}'
+    assert f'Docs v{version}' in text, f'stale or missing footer: {page}'
+home = (output / 'index.html').read_text()
+assert f'Kujo Docs v{version}' in home
+assert f'{d.strftime("%B")} {d.day}, {d.year}' in home
+assert (output / 'ecosystem/releases/index.html').is_file()
+print('docs release markers: all pages passed')
+PY
