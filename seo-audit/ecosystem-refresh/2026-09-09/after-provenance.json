@@ -1,12 +1,12 @@
 {
-  "source_commit": "3424b6135587552f510802a6b6c1e283e5d9fa9f",
-  "workflow_run": 34373116444,
-  "artifact_id": 10113126733,
-  "github_artifact_digest": "sha256:fed9a42bcdc9865b7818edd8635af293d74cbe10854fcec9ee42fdf9bdf9957a",
+  "source_commit": "a9db863891d86278be2f739ed26c5682afcd0214",
+  "workflow_run": 34376113111,
+  "artifact_id": 10114293445,
+  "github_artifact_digest": "sha256:7d2acce1d10bf0366e7d97fe852be99e5c5ee8b90136de3d30f4dd981310d0ad",
   "runtime_ref": "5dcbfcda2e48c2fe56dd2a4ecdb2d5947e18ff59",
   "ssg_ref": "e165dbc1b596ea759a2b9c2ff0b9ca988c333eea",
-  "deployment_commit": "bdf416f33278f08f7fe5f7a05a2f2d6709a63299",
+  "deployment_commit": "95d39592cc47aa4b7db61877629c2cb83541fa09",
   "deployment_branch": "gh-pages",
   "status": "built",
-  "verification": "Full pinned CI and local published 1.4.0 build contracts passed; exact CI artifact deployed; 102 canonical live pages HTTP 200."
+  "verification": "Final pinned CI passed, including guide dates. Exact artifact deployed; all 102 canonical live pages returned HTTP 200. Earlier full local 1.4.0 build also passed."
 }
