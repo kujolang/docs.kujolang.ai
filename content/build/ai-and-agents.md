@@ -9,8 +9,8 @@ order: 10
 audience: developer
 difficulty: intermediate
 status: stable agent path
-version: 1.1.0
-last_updated: 2026-08-30
+version: 1.4.0
+last_updated: 2026-09-09
 next: /build/owned-agent-projects/
 tags: [ai, agents, build]
 ---

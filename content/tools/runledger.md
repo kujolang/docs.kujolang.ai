@@ -9,7 +9,7 @@ audience: developer
 difficulty: beginner
 status: local scope verified
 version: current
-last_updated: 2026-08-27
+last_updated: 2026-09-09
 scope: local-first
 source_repo: runledger
 previous: /tools/muzzle/
@@ -61,3 +61,9 @@ RunLedger records declared run information; it is not automatic billing capture 
 ## Reference
 
 See the [RunLedger repository](https://github.com/kujolang/runledger).
+
+## Published release and current development
+
+The latest published GitHub Release checked on September 9 is [v1.1.0](https://github.com/kujolang/runledger/releases/tag/v1.1.0). Recent default-branch work adds cross-system telemetry correlation links. These link evidence across systems without transferring execution or authorization authority.
+
+These newer changes are [source work at 92cb06344386](https://github.com/kujolang/runledger/tree/92cb06344386fc0a78d92b1db92f417edb22b285); they are not retroactively included in the older release archive.

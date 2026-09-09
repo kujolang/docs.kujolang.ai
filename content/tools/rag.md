@@ -9,7 +9,7 @@ audience: developer
 difficulty: intermediate
 status: local scope verified
 version: current
-last_updated: 2026-08-23
+last_updated: 2026-09-09
 scope: local-first
 source_repo: rag
 previous: /tools/mcp/
@@ -60,3 +60,9 @@ RAG is not a hosted retrieval service; parser, embedding, and deployment proof s
 ## Reference
 
 See the [RAG repository](https://github.com/kujolang/rag).
+
+## Published release and current development
+
+The latest published GitHub Release checked on September 9 is [v1.0.0](https://github.com/kujolang/rag/releases/tag/v1.0.0). Recent default-branch work adds MIME-aware HTTP documentation ingestion, opt-in programming-language example selection, and measurements of response size and model context across retrieval hosts. The local published-Kujo-docs snapshot and service workflow is an operator-owned dogfood setup, not a new public hosted retrieval endpoint.
+
+These newer changes are [source work at 85743f88c152](https://github.com/kujolang/rag/tree/85743f88c152d7c65f59d4697111faf85e36d8eb); they are not retroactively included in the older release archive.

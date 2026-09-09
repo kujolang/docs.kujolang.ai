@@ -64,3 +64,9 @@ See the [MCP repository](https://github.com/kujolang/mcp).
 ## Portable operation contracts
 
 Use [Ability](/tools/ability/) to preserve an operation’s identity, schemas, effects, and retry semantics across application and agent surfaces. Its SDK previews and fixture development kit help check contracts; the application retains execution authority.
+
+## Public catalog and application gateways
+
+The public endpoint at [mcp.kujolang.ai/mcp](https://mcp.kujolang.ai/mcp) is a separate read-only catalog of Kujo projects, skills, workflows, installation guidance, and release boundaries. Its catalog revision identifies the deployed snapshot; its service version is not the programming-language version. Use `get_catalog_item` with `slug: "kujo"` for the runtime release, and `get_installation` for the `core`, `agent`, `ai`, `quality`, `showcases`, or `operating` profile.
+
+The latest published MCP framework release is [1.1.1](https://github.com/kujolang/mcp/releases/tag/v1.1.1). Its application Ability gateways, host certification receipts, and operator controls remain separate from public catalog discovery. Certification applies to the exact tested source revisions and host tiers; newer Agents SDK or Kujo Pi source changes are not automatically certified by older receipts.

@@ -34,3 +34,5 @@ kujo docgen . --out-dir .docgen/output
 ```
 
 DocGen emits the stable `docgen-summary/v1` result alongside the selected output formats. This site does not currently publish a generated API-reference subtree, so use the repository source references and generate exact-version output locally when symbol-level detail matters.
+
+See the [dated ecosystem release inventory](/ecosystem/releases/) for current package versions and source-only changes.

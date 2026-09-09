@@ -9,8 +9,8 @@ order: 9
 audience: developer
 difficulty: beginner
 status: stable
-version: 1.1.0
-last_updated: 2026-08-30
+version: 1.4.0
+last_updated: 2026-09-09
 previous: /build/owned-agent-projects/
 next: /build/agent-credentials/
 tags: [ai, agents, profiles, integrations]

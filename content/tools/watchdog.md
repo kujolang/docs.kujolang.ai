@@ -9,7 +9,7 @@ audience: developer
 difficulty: intermediate
 status: local scope verified
 version: current
-last_updated: 2026-08-27
+last_updated: 2026-09-09
 scope: local-first
 source_repo: watchdog
 previous: /tools/fence/
@@ -41,7 +41,7 @@ You need a local proxy or dashboard to understand AI request volume, cost, laten
 ## Five-minute example
 
 ```bash
-kujo run --interpreter dashboard_server.kujo
+WDG_HOST=127.0.0.1 kujo run --interpreter dashboard_server.kujo
 curl http://127.0.0.1:7700/api/proxy-config
 ```
 
@@ -60,3 +60,9 @@ Watchdog is not a managed observability service; credentials and deployment rema
 ## Reference
 
 See the [Watchdog repository](https://github.com/kujolang/watchdog).
+
+## Published release and current development
+
+The latest published GitHub Release checked on September 9 is [v1.0.1](https://github.com/kujolang/watchdog/releases/tag/v1.0.1). Recent default-branch work adds canonical v2 telemetry intake and cross-system correlation, rejects partial invalid batches before privacy filtering, and reuses validated canonical bytes and hashes. The v2 contract is distinct from the 1.0.1 product release. SDK and workflow integrations must use compatible pinned revisions; operator authentication, retention, exporter credentials, and deployment policy remain required.
+
+These newer changes are [source work at 314698b0502c](https://github.com/kujolang/watchdog/tree/314698b0502c5d2139df46b7523482c6d089b6ff); they are not retroactively included in the older release archive.

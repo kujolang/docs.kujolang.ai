@@ -9,7 +9,7 @@ audience: developer
 difficulty: intermediate
 status: local scope verified
 version: current
-last_updated: 2026-08-27
+last_updated: 2026-09-09
 scope: local-first
 source_repo: agents-sdk
 previous: /tools/ai-sdk/
@@ -42,7 +42,7 @@ An AI call needs tools, approval boundaries, handoffs, tracing, session state, o
 
 ```bash
 kujo run examples/examples_smoke_runner.kujo --interpreter
-kujo test
+bash scripts/ci_no_network_enforcement.sh
 ```
 
 ## What you get
@@ -64,3 +64,9 @@ See the [Agents SDK repository](https://github.com/kujolang/agents-sdk).
 ## Portable operation contracts
 
 Use [Ability](/tools/ability/) to preserve an operation’s identity, schemas, effects, and retry semantics across application and agent surfaces. Its SDK previews and fixture development kit help check contracts; the application retains execution authority.
+
+## Published release and current development
+
+The latest published GitHub Release checked on September 9 is [v1.0.0](https://github.com/kujolang/agents-sdk/releases/tag/v1.0.0). Recent default-branch work adds bounded run, retrieval, tool, and handoff observations, preserves observed identities, and demonstrates real MCP tool lifecycles. Programming-language retrieval preferences are optional; provider execution and telemetry policy remain explicit integration boundaries.
+
+These newer changes are [source work at bb2202d8b54f](https://github.com/kujolang/agents-sdk/tree/bb2202d8b54f44717b1b1f0157a6774f2027cea1); they are not retroactively included in the older release archive.

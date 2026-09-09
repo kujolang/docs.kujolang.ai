@@ -7,9 +7,9 @@ nav_title: Commerce
 order: 265
 audience: developer
 difficulty: intermediate
-status: preview 0.2.0
-version: current
-last_updated: 2026-08-23
+status: preview 0.4.0
+version: 0.4.0
+last_updated: 2026-09-09
 scope: static-site integration
 source_repo: commerce
 tags: [tool, commerce, ssg, web]
@@ -22,19 +22,20 @@ A static site needs validated product metadata, catalog assets, a browser cart, 
 ## Five-minute example
 
 ```bash
-npm install github:kujolang/commerce#v0.2.0
+npm install @kujolang/commerce@0.4.0
 git clone --depth 1 --branch v1.0.0 https://github.com/kujolang/ssg vendor/ssg
+npx kujo-commerce init --site .
 npx kujo-commerce validate --site .
 npx kujo-commerce build --site . --ssg vendor/ssg/build.kujo
 ```
 
 ## What you get
 
-Validated commerce metadata plus generated catalog and browser assets for an SSG output.
+Commerce 0.4.0 provides catalog validation, zero-runtime hosted purchase links, optional dynamic checkout and customer portals, and verified webhook normalization. `init` defaults to static mode; hybrid deployments explicitly add a runtime.
 
 ## Boundaries
 
-The browser submits only SKU and quantity; the runtime checkout must resolve canonical pricing and product data. Payment-provider credentials and production checkout deployment remain integrator-owned.
+The package remains pre-1.0 while provider sandbox evidence is completed; its v1 catalog, cart, and event wire formats have a compatibility policy. Providers remain authoritative for payments, inventory, tax, and fulfillment. For dynamic checkout, the browser submits only SKU and quantity; the runtime checkout must resolve canonical pricing and product data. Payment-provider credentials and production checkout deployment remain integrator-owned.
 
 ## Reference
 

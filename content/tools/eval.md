@@ -9,7 +9,7 @@ audience: developer
 difficulty: intermediate
 status: local scope verified
 version: current
-last_updated: 2026-08-27
+last_updated: 2026-09-09
 scope: local-first
 source_repo: eval
 previous: /tools/spec/
@@ -61,3 +61,9 @@ Eval is an acceptance-check runner, not a general sandbox.
 ## Reference
 
 See the [Eval repository](https://github.com/kujolang/eval).
+
+## Published release and current development
+
+The latest published GitHub Release checked on September 9 is [v1.0.0](https://github.com/kujolang/eval/releases/tag/v1.0.0). Recent default-branch work correlates evaluation scores with Watchdog traces and corrects command-policy false positives. Evaluation receipts and live-provider qualification remain separate.
+
+These newer changes are [source work at 7ad5caef1b71](https://github.com/kujolang/eval/tree/7ad5caef1b718ab8a6ccdd02ef1b645af93ac133); they are not retroactively included in the older release archive.

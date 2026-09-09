@@ -10,14 +10,34 @@ audience: developer
 difficulty: intermediate
 status: stable
 version: current
-last_updated: 2026-08-23
+last_updated: 2026-09-09
 previous: /learn/capabilities/
 next: /learn/editor-support/
 tags: [packages, kennel, lockfiles]
 ---
 
 
-`kujo.toml` describes a project and `kujo.lock` records the resolved dependency graph. Kennel keeps package indexes, file dependencies, trust policy, and source policy visible.
+Kujo's built-in package commands and the separate Kennel client have different manifests. Choose one deliberately; their lockfiles are not interchangeable.
+
+| Tool | Manifest | Lockfile | Purpose |
+| --- | --- | --- | --- |
+| Kujo built-in package commands | `kujo.toml` | `kujo.lock` | Project metadata and the runtime's dependency snapshot |
+| Kennel | `kennel.toml` | `kennel.lock` | Dependency resolution, installation, source policy, and trust verification |
+
+## Kennel project dependencies
+
+From a Kennel checkout, use its entrypoint with an explicit path:
+
+```bash
+kujo run /path/to/kennel/kennel.kujo --interpreter -- init --name my-project
+kujo run /path/to/kennel/kennel.kujo --interpreter -- add file:../some-local-package --alias some-local-package
+kujo run /path/to/kennel/kennel.kujo --interpreter -- install
+kujo run /path/to/kennel/kennel.kujo --interpreter -- validate
+```
+
+Commit the manifest and lockfile. Follow the pinned client's frozen-install and trust policy when reproducing a build.
+
+## Built-in runtime commands
 
 ```bash
 kujo package-add <package>
@@ -25,4 +45,12 @@ kujo package-install
 kujo package-install --frozen
 ```
 
-Use the frozen path in verification when the lockfile is part of the contract. Start with [Kennel](/tools/kennel/) for dependency behavior, or browse the [provider index](/ecosystem/providers/) for immutable provider installs.
+These commands manage the runtime's `kujo.toml` / `kujo.lock` contract. They do not install or update the separate Kennel client.
+
+## Official registry and release status
+
+[The official Kennel registry](https://kennel.kujolang.ai/) distributes immutable first-party package releases. GitHub remains the development and release source. Public package reads need no account.
+
+As checked on September 9, the latest published Kennel client is **1.0.1**. The merged **1.1.0 candidate** contains the new native bootstrap and global tool-command work and awaits its own release. Kujo 1.4.0 supplies the compatible runtime primitives; upgrading Kujo does not release or install that Kennel candidate. Consult [Kennel's release notes](https://github.com/kujolang/kennel/releases) before relying on candidate commands.
+
+Read [Kennel](/tools/kennel/) for local/source workflows and the [provider index](/ecosystem/providers/) for pinned provider packages. Third-party accounts, scoped publishing, and private-package services remain future work.

@@ -9,7 +9,7 @@ audience: developer
 difficulty: intermediate
 status: local scope verified
 version: current
-last_updated: 2026-08-23
+last_updated: 2026-09-09
 scope: local-first
 source_repo: kennel
 previous: /tools/kujo/
@@ -36,7 +36,7 @@ Your project needs a dependency manifest, resolved lockfile, source policy, or t
 - Initialize a package manifest and add local or indexed dependencies deliberately.
 - Resolve dependencies into a reproducible lockfile, then use frozen mode in CI.
 - Validate source and trust policy before accepting artifacts from a mirror or index.
-- Keep registry publication separate: current publish behavior is metadata preview, not public transport.
+- Keep Git development separate from release distribution; official release automation builds immutable registry artifacts.
 
 ## Five-minute example
 
@@ -57,7 +57,7 @@ Read [Packages with Kennel](/learn/packages/) before choosing registry or file d
 
 ## Boundaries
 
-This is local/source workflow scope, not a managed package registry promise.
+The official static registry is available at [kennel.kujolang.ai](https://kennel.kujolang.ai/). The latest published client remains 1.0.1; merged native bootstrap and global tool commands belong to the unreleased 1.1.0 candidate. Use `kennel.toml` and `kennel.lock` for this client. Kujo 1.4.0 does not automatically upgrade Kennel. Accounts and third-party publishing are not available.
 
 ## Reference
 

@@ -9,8 +9,8 @@ order: 10
 audience: developer
 difficulty: intermediate
 status: stable
-version: 1.1.0
-last_updated: 2026-08-30
+version: 1.4.0
+last_updated: 2026-09-09
 previous: /build/agent-profiles/
 next: /build/agent-operations/
 tags: [ai, agents, credentials, connectors, security]

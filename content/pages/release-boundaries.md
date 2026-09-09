@@ -10,7 +10,7 @@ audience: all
 difficulty: beginner
 status: stable
 version: current
-last_updated: 2026-09-05
+last_updated: 2026-09-09
 tags: [release, maturity, scope]
 ---
 
@@ -30,3 +30,7 @@ Always check the page's **Status** and **Scope** fields plus the linked reposito
 ## Runtime upgrade compatibility
 
 [`kujo upgrade`](/upgrade/) is available in v1.3.0 and later. Users of earlier runtimes must install a current version through the existing installer or original package manager before using the command. Native upgrades cover only the standalone runtime executable; ecosystem sources and package pins retain their own update workflows. Docs-site version numbers are independent of runtime releases.
+
+## Current ecosystem versions
+
+Use the [dated ecosystem release overview](/ecosystem/releases/) to distinguish published GitHub Releases, tagged provider packages, and newer default-branch development. A repository badge or version file alone does not prove a release was published.
