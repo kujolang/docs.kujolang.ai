@@ -9,8 +9,8 @@ order: 8
 audience: developer
 difficulty: beginner
 status: stable
-version: 1.1.0
-last_updated: 2026-08-30
+version: 1.4.0
+last_updated: 2026-09-09
 next: /build/agent-profiles/
 tags: [ai, agents, projects, build]
 ---
@@ -24,7 +24,7 @@ curl -fsSL https://kujolang.ai/install.sh | bash -s -- --group agent
 export PATH="$HOME/.local/bin:$PATH"
 ```
 
-The public installer downloads published Kujo `v1.1.0` release assets, verifies their checksums, and installs the focused Agent Project dependencies.
+The public installer downloads the current stable Kujo release assets, verifies their checksums, and installs the focused Agent Project dependencies.
 
 ## Create and run an agent
 

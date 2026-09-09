@@ -9,7 +9,7 @@ audience: developer
 difficulty: beginner
 status: source-backed inventory
 version: current
-last_updated: 2026-08-30
+last_updated: 2026-09-09
 previous: /learn/packages/
 next: /tools/ai-sdk/
 tags: [ecosystem, providers, ai, packages]
@@ -394,7 +394,7 @@ print(result["data"])
 
 ## Contracts and related guides
 
-The current baseline is Kujo `v1.1.0`, Kennel `v1.0.0`, AI SDK `v1.1.0`, AI SDK normalized response contract `1.0.0`, AI SDK provider-driver contract `1.0.0`, and Kujo Provider Package Contract `1.0.1`. Provider package versions are independent of these contracts.
+The documented provider compatibility baseline from 2026-08-30 is Kujo `v1.1.0`, Kennel `v1.0.0`, AI SDK `v1.1.0`, AI SDK normalized response contract `1.0.0`, AI SDK provider-driver contract `1.0.0`, and Kujo Provider Package Contract `1.0.1`. Provider package versions are independent of these contracts. See [Install Kujo](/install/) for the current stable runtime; this historical provider baseline is not its release number.
 
 - [AI SDK](/tools/ai-sdk/) — normalized chat and embedding behavior, retries, fixtures, and redaction.
 - [AI runtime basics](/learn/ai-runtime/) — credentials, budgets, replay, and egress boundaries.
