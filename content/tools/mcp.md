@@ -9,7 +9,7 @@ audience: developer
 difficulty: advanced
 status: local scope verified
 version: current
-last_updated: 2026-08-23
+last_updated: 2026-09-09
 scope: local-first
 source_repo: mcp
 previous: /tools/dispatch/
