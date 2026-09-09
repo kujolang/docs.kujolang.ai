@@ -10,7 +10,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "stable",
-      "version": "1.1.0",
+      "version": "1.4.0",
       "tags": [
         "[ai, agents, credentials, connectors, security]"
       ],
@@ -31,7 +31,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "stable",
-      "version": "1.1.0",
+      "version": "1.4.0",
       "tags": [
         "[ai, agents, operations, evaluation, security]"
       ],
@@ -52,7 +52,7 @@
       "audience": "developer",
       "difficulty": "beginner",
       "status": "stable",
-      "version": "1.1.0",
+      "version": "1.4.0",
       "tags": [
         "[ai, agents, profiles, integrations]"
       ],
@@ -72,7 +72,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "stable agent path",
-      "version": "1.1.0",
+      "version": "1.4.0",
       "tags": [
         "[ai, agents, build]"
       ],
@@ -216,12 +216,14 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "current",
+      "version": "1.4.0",
       "tags": [
         "[collection, agents, roles]"
       ],
-      "headings": [],
-      "text": "Agent roles should carry a clear objective, boundary, handoff format, and evidence expectation. Use them with Spec /tools/spec/ and Scent /tools/scent/ rather than treating a role prompt as a complete workflow. See the Kujo Agents repository https://github.com/kujolang/kujo-agents ."
+      "headings": [
+        "Current distribution"
+      ],
+      "text": "Agent roles should carry a clear objective, boundary, handoff format, and evidence expectation. Use them with Spec /tools/spec/ and Scent /tools/scent/ rather than treating a role prompt as a complete workflow. See the Kujo Agents repository https://github.com/kujolang/kujo-agents . Current distribution Kujo Agents 1.4.0 https://github.com/kujolang/kujo-agen"
     },
     {
       "title": "Benchmarks",
@@ -291,12 +293,14 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "current",
+      "version": "0.6.0",
       "tags": [
         "[collection, workflows, receipts]"
       ],
-      "headings": [],
-      "text": "Workflows connect a task contract to execution and evidence. Each pack should say what it consumes, what it runs, and where the receipt lives. The collection is the locally verified 0.4.0 release https://github.com/kujolang/kujo-workflows/releases/tag/v0.4.0 , with 38 workflow kits. Kits have individual Ready, Limited, or Experimental labels; hosted runners "
+      "headings": [
+        "VideoOps production workflows"
+      ],
+      "text": "Workflows connect a task contract to execution and evidence. Each pack should say what it consumes, what it runs, and where the receipt lives. The collection is the 0.6.0 release https://github.com/kujolang/kujo-workflows/releases/tag/v0.6.0 , with 44 local workflows. Kits have individual Ready, Limited, or Experimental labels; hosted runners and blanket pro"
     },
     {
       "title": "Core / Foundation",
@@ -375,6 +379,28 @@
         "Contracts and related guides"
       ],
       "text": "Kujo provider packages keep each provider's wire format visible while offering a normalized AI SDK driver when the package supports one. Choose a package here, install its immutable tag with Kennel, and use the provider's native API first when you need provider-specific fields. Choose a provider The inventory below is checked against the official Kujo provid"
+    },
+    {
+      "title": "Ecosystem releases",
+      "description": "Current published Kujo ecosystem versions, recent source changes, and explicit installation boundaries.",
+      "url": "https://docs.kujolang.ai/ecosystem/releases/",
+      "route": "ecosystem/releases/",
+      "section": "Ecosystem",
+      "audience": "all",
+      "difficulty": "beginner",
+      "status": "dated release inventory",
+      "version": "1.4.0",
+      "tags": [
+        "[ecosystem, releases, versions, installation]"
+      ],
+      "headings": [
+        "Start here",
+        "Published package releases",
+        "Recent changes worth checking",
+        "Tags and source-only packages",
+        "Agent discovery"
+      ],
+      "text": "This inventory was checked against all 86 public kujolang repositories on September 9, 2026 . Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease GitHub Release found for each package; it does not claim that every current default-branch feature exists in that rel"
     },
     {
       "title": "Showcase Directory",
@@ -490,8 +516,12 @@
       "tags": [
         "[packages, kennel, lockfiles]"
       ],
-      "headings": [],
-      "text": "kujo.toml describes a project and kujo.lock records the resolved dependency graph. Kennel keeps package indexes, file dependencies, trust policy, and source policy visible. Use the frozen path in verification when the lockfile is part of the contract. Start with Kennel /tools/kennel/ for dependency behavior, or browse the provider index /ecosystem/providers/"
+      "headings": [
+        "Kennel project dependencies",
+        "Built-in runtime commands",
+        "Official registry and release status"
+      ],
+      "text": "Kujo's built-in package commands and the separate Kennel client have different manifests. Choose one deliberately; their lockfiles are not interchangeable. | Tool | Manifest | Lockfile | Purpose | | --- | --- | --- | --- | | Kujo built-in package commands | kujo.toml | kujo.lock | Project metadata and the runtime's dependency snapshot | | Kennel | kennel.tom"
     },
     {
       "title": "How the runtime works",
@@ -604,7 +634,8 @@
         "[release, maturity, scope]"
       ],
       "headings": [
-        "Runtime upgrade compatibility"
+        "Runtime upgrade compatibility",
+        "Current ecosystem versions"
       ],
       "text": "The docs use maturity labels beside recommendations so a reader can make an informed choice. | Label | Means | | --- | --- | | Launch scope | The smallest local workflow has a current source-backed proof. | | Preview / dogfood | Useful for evaluation and local teams; broader proof or wording is still in progress. | | Showcase | Demonstrates a pattern or appl"
     },
@@ -776,7 +807,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "current",
+      "version": "1.2.0",
       "tags": [
         "[showcase, ai, chat]"
       ],
@@ -788,7 +819,8 @@
         "What you get",
         "How it fits",
         "Boundaries",
-        "Reference"
+        "Reference",
+        "Current release and upgrade"
       ],
       "text": "Use it when\u2026 You want a concrete local application surface for provider profiles, streaming, transcription, and offline fixtures. Interface overview | Surface | What is available | | --- | --- | | App | Local multi-pane chat UI, provider/model profiles, and saved pane layouts | | API | Health, providers, state, automations, chat, SSE streaming, and transcrip"
     },
@@ -981,7 +1013,8 @@
         "How it fits",
         "Boundaries",
         "Reference",
-        "Portable operation contracts"
+        "Portable operation contracts",
+        "Published release and current development"
       ],
       "text": "Use it when\u2026 An AI call needs tools, approval boundaries, handoffs, tracing, session state, or explicit budgets. Interface overview | Surface | What is available | | --- | --- | | Runtime | Agent configuration, runners, lifecycle events, cancellation, and bounded retries | | Tools and safety | Typed tool registry, permissions, approvals, guardrails, and reda"
     },
@@ -1112,8 +1145,8 @@
       "section": "Tools",
       "audience": "developer",
       "difficulty": "intermediate",
-      "status": "preview 0.2.0",
-      "version": "current",
+      "status": "preview 0.4.0",
+      "version": "0.4.0",
       "tags": [
         "[tool, commerce, ssg, web]"
       ],
@@ -1124,7 +1157,7 @@
         "Boundaries",
         "Reference"
       ],
-      "text": "Use it when\u2026 A static site needs validated product metadata, catalog assets, a browser cart, and a checkout boundary that resolves trusted product data on the server. Five-minute example What you get Validated commerce metadata plus generated catalog and browser assets for an SSG output. Boundaries The browser submits only SKU and quantity; the runtime check"
+      "text": "Use it when\u2026 A static site needs validated product metadata, catalog assets, a browser cart, and a checkout boundary that resolves trusted product data on the server. Five-minute example What you get Commerce 0.4.0 provides catalog validation, zero-runtime hosted purchase links, optional dynamic checkout and customer portals, and verified webhook normalizati"
     },
     {
       "title": "Concord",
@@ -1194,7 +1227,8 @@
         "What you get",
         "How it fits",
         "Boundaries",
-        "Reference"
+        "Reference",
+        "Published release and current development"
       ],
       "text": "Use it when\u2026 A task is a sequence of steps that can pause, resume, require approval, and leave a run receipt. Interface overview | Surface | What is available | | --- | --- | | Execute | demo, workflow templates, workflow files, JSON inputs, and tool allow/deny lists | | Continue | resume and decision-file resume paths | | Inspect | runs, show, inspect, JSON"
     },
@@ -1241,7 +1275,8 @@
         "What you get",
         "How it fits",
         "Boundaries",
-        "Reference"
+        "Reference",
+        "Published release and current development"
       ],
       "text": "Use it when\u2026 You need explicit, deterministic checks around JSON, HTTP, files, commands, or a policy decision. Interface overview | Surface | What is available | | --- | --- | | Suites | JSON suite files with JSON, HTTP, file, command, and policy checks | | Execution | run, parallel workers, summary-only output, and output directories | | Review | report, co"
     },
@@ -1441,7 +1476,8 @@
         "How it fits",
         "Boundaries",
         "Reference",
-        "Portable operation contracts"
+        "Portable operation contracts",
+        "Public catalog and application gateways"
       ],
       "text": "Use it when\u2026 An agent needs a deliberate server boundary for tools or resources with roots, limits, auth, and a visible safety tier. Interface overview | Surface | What is available | | --- | --- | | Generator | make <repo with output and artifact-directory controls | | Profiles | Repo-specific discovery plus profile-only or artifacts-only generation | | Con"
     },
@@ -1593,7 +1629,8 @@
         "What you get",
         "How it fits",
         "Boundaries",
-        "Reference"
+        "Reference",
+        "Published release and current development"
       ],
       "text": "Use it when\u2026 You need to ingest local knowledge, isolate namespaces, retrieve relevant chunks, and return citations. Interface overview | Surface | What is available | | --- | --- | | CLI | ingest, query, serve, demo, and bootstrap | | Retrieval | Parser, chunking, embedding, namespace isolation, and citation metadata | | Server | Local ingest/query HTTP end"
     },
@@ -1684,7 +1721,8 @@
         "What you get",
         "How it fits",
         "Boundaries",
-        "Reference"
+        "Reference",
+        "Published release and current development"
       ],
       "text": "Use it when\u2026 You need a durable receipt for what ran, when it ran, what it used, and whether it passed. Interface overview | Surface | What is available | | --- | --- | | Lifecycle | start and finish with task, status, verdict, and git metadata | | Accounting | usage, cost, and notes attached to a run | | Review | list, show, compare, and Markdown report | |"
     },
@@ -1993,7 +2031,8 @@
         "What you get",
         "How it fits",
         "Boundaries",
-        "Reference"
+        "Reference",
+        "Published release and current development"
       ],
       "text": "Use it when\u2026 You need a local proxy or dashboard to understand AI request volume, cost, latency, errors, and audit records. Interface overview | Surface | What is available | | --- | --- | | Proxy | OpenAI-compatible requests under /proxy/v1 with passthrough or override auth | | APIs | /api/requests, /api/proxy-config, health, readiness, and structured expor"
     },

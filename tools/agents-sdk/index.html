@@ -101,7 +101,7 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="agents-sdk">Agents SDK</h1><p class="docs-description">Build agents with tools, approvals, handoffs, tracing, stores, and budgets.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-27</span></div>
+		<h1 id="agents-sdk">Agents SDK</h1><p class="docs-description">Build agents with tools, approvals, handoffs, tracing, stores, and budgets.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-09</span></div>
 		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>An AI call needs tools, approval boundaries, handoffs, tracing, session state, or explicit budgets.</p>
 <h2 id="interface-overview">Interface overview</h2>
@@ -135,7 +135,7 @@
 </ul>
 <h2 id="five-minute-example">Five-minute example</h2>
 <pre><code class="language-bash">kujo run examples/examples_smoke_runner.kujo --interpreter
-kujo test</code></pre>
+bash scripts/ci_no_network_enforcement.sh</code></pre>
 <h2 id="what-you-get">What you get</h2>
 <p>Agent runner primitives, tool contracts, approval events, handoff receipts, and local stores.</p>
 <h2 id="how-it-fits">How it fits</h2>
@@ -145,13 +145,16 @@ kujo test</code></pre>
 <h2 id="reference">Reference</h2>
 <p>See the <a href="https://github.com/kujolang/agents-sdk">Agents SDK repository</a>.</p>
 <h2 id="portable-operation-contracts">Portable operation contracts</h2>
-<p>Use <a href="/tools/ability/">Ability</a> to preserve an operation’s identity, schemas, effects, and retry semantics across application and agent surfaces. Its SDK previews and fixture development kit help check contracts; the application retains execution authority.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/ai-sdk/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/scent/" rel="next"><span>Next</span></a></nav>
+<p>Use <a href="/tools/ability/">Ability</a> to preserve an operation’s identity, schemas, effects, and retry semantics across application and agent surfaces. Its SDK previews and fixture development kit help check contracts; the application retains execution authority.</p>
+<h2 id="published-release-and-current-development">Published release and current development</h2>
+<p>The latest published GitHub Release checked on September 9 is <a href="https://github.com/kujolang/agents-sdk/releases/tag/v1.0.0">v1.0.0</a>. Recent default-branch work adds bounded run, retrieval, tool, and handoff observations, preserves observed identities, and demonstrates real MCP tool lifecycles. Programming-language retrieval preferences are optional; provider execution and telemetry policy remain explicit integration boundaries.</p>
+<p>These newer changes are <a href="https://github.com/kujolang/agents-sdk/tree/bb2202d8b54f44717b1b1f0157a6774f2027cea1">source work at bb2202d8b54f</a>; they are not retroactively included in the older release archive.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/ai-sdk/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/scent/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li><li class="toc-level-2"><a href="#portable-operation-contracts">Portable operation contracts</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li><li class="toc-level-2"><a href="#portable-operation-contracts">Portable operation contracts</a></li><li class="toc-level-2"><a href="#published-release-and-current-development">Published release and current development</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.3.4</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.4.0</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../../assets/sitekit/sitekit.js"></script>

@@ -101,7 +101,7 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="kennel">Kennel</h1><p class="docs-description">Manage deterministic manifests, dependencies, lockfiles, and trust policy.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
+		<h1 id="kennel">Kennel</h1><p class="docs-description">Manage deterministic manifests, dependencies, lockfiles, and trust policy.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-09</span></div>
 		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>Your project needs a dependency manifest, resolved lockfile, source policy, or trust decision that should be reviewable.</p>
 <h2 id="interface-overview">Interface overview</h2>
@@ -131,7 +131,7 @@
 <li>Initialize a package manifest and add local or indexed dependencies deliberately.</li>
 <li>Resolve dependencies into a reproducible lockfile, then use frozen mode in CI.</li>
 <li>Validate source and trust policy before accepting artifacts from a mirror or index.</li>
-<li>Keep registry publication separate: current publish behavior is metadata preview, not public transport.</li>
+<li>Keep Git development separate from release distribution; official release automation builds immutable registry artifacts.</li>
 </ul>
 <h2 id="five-minute-example">Five-minute example</h2>
 <pre><code class="language-bash">kujo run kennel.kujo --interpreter -- init --name kennel-demo
@@ -143,7 +143,7 @@ kujo run kennel.kujo --interpreter -- validate</code></pre>
 <h2 id="how-it-fits">How it fits</h2>
 <p>Read <a href="/learn/packages/">Packages with Kennel</a> before choosing registry or file dependency behavior.</p>
 <h2 id="boundaries">Boundaries</h2>
-<p>This is local/source workflow scope, not a managed package registry promise.</p>
+<p>The official static registry is available at <a href="https://kennel.kujolang.ai/">kennel.kujolang.ai</a>. The latest published client remains 1.0.1; merged native bootstrap and global tool commands belong to the unreleased 1.1.0 candidate. Use <code>kennel.toml</code> and <code>kennel.lock</code> for this client. Kujo 1.4.0 does not automatically upgrade Kennel. Accounts and third-party publishing are not available.</p>
 <h2 id="reference">Reference</h2>
 <p>See the <a href="https://github.com/kujolang/kennel">Kennel repository</a> for manifest and trust policy details.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/kujo/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/spec/" rel="next"><span>Next</span></a></nav>
 	</article>
@@ -151,7 +151,7 @@ kujo run kennel.kujo --interpreter -- validate</code></pre>
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.3.4</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.4.0</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../../assets/sitekit/sitekit.js"></script>

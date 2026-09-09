@@ -101,7 +101,7 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="watchdog">Watchdog</h1><p class="docs-description">Observe AI requests, tools, costs, latency, errors, and audit events.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-27</span></div>
+		<h1 id="watchdog">Watchdog</h1><p class="docs-description">Observe AI requests, tools, costs, latency, errors, and audit events.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-09</span></div>
 		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>You need a local proxy or dashboard to understand AI request volume, cost, latency, errors, and audit records.</p>
 <h2 id="interface-overview">Interface overview</h2>
@@ -134,7 +134,7 @@
 <li>Treat displayed cost as a versioned direct-provider estimate, not an invoice.</li>
 </ul>
 <h2 id="five-minute-example">Five-minute example</h2>
-<pre><code class="language-bash">kujo run --interpreter dashboard_server.kujo
+<pre><code class="language-bash">WDG_HOST=127.0.0.1 kujo run --interpreter dashboard_server.kujo
 curl http://127.0.0.1:7700/api/proxy-config</code></pre>
 <h2 id="what-you-get">What you get</h2>
 <p>Local telemetry, redacted request records, dashboard views, and proxy configuration.</p>
@@ -143,13 +143,16 @@ curl http://127.0.0.1:7700/api/proxy-config</code></pre>
 <h2 id="boundaries">Boundaries</h2>
 <p>Watchdog is not a managed observability service; credentials and deployment remain integrator-owned.</p>
 <h2 id="reference">Reference</h2>
-<p>See the <a href="https://github.com/kujolang/watchdog">Watchdog repository</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/fence/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/leash/" rel="next"><span>Next</span></a></nav>
+<p>See the <a href="https://github.com/kujolang/watchdog">Watchdog repository</a>.</p>
+<h2 id="published-release-and-current-development">Published release and current development</h2>
+<p>The latest published GitHub Release checked on September 9 is <a href="https://github.com/kujolang/watchdog/releases/tag/v1.0.1">v1.0.1</a>. Recent default-branch work adds canonical v2 telemetry intake and cross-system correlation, rejects partial invalid batches before privacy filtering, and reuses validated canonical bytes and hashes. The v2 contract is distinct from the 1.0.1 product release. SDK and workflow integrations must use compatible pinned revisions; operator authentication, retention, exporter credentials, and deployment policy remain required.</p>
+<p>These newer changes are <a href="https://github.com/kujolang/watchdog/tree/314698b0502c5d2139df46b7523482c6d089b6ff">source work at 314698b0502c</a>; they are not retroactively included in the older release archive.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/fence/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/leash/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li><li class="toc-level-2"><a href="#published-release-and-current-development">Published release and current development</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.3.4</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.4.0</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../../assets/sitekit/sitekit.js"></script>

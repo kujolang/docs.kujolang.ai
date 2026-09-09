@@ -101,7 +101,7 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="ai-chat">AI Chat</h1><p class="docs-description">A local multi-provider chat application with encrypted profiles, streaming, transcription, and fixture mode.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
+		<h1 id="ai-chat">AI Chat</h1><p class="docs-description">A local multi-provider chat application with encrypted profiles, streaming, transcription, and fixture mode.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>1.2.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-09</span></div>
 		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>You want a concrete local application surface for provider profiles, streaming, transcription, and offline fixtures.</p>
 <h2 id="interface-overview">Interface overview</h2>
@@ -134,7 +134,7 @@
 <li>Back up and maintain SQLite state with the supplied npm scripts before operational changes.</li>
 </ul>
 <h2 id="five-minute-example">Five-minute example</h2>
-<pre><code class="language-bash">npm install
+<pre><code class="language-bash">npm ci
 npm run dev
 npm run smoke</code></pre>
 <h2 id="what-you-get">What you get</h2>
@@ -144,13 +144,17 @@ npm run smoke</code></pre>
 <h2 id="boundaries">Boundaries</h2>
 <p>This is a local multi-provider showcase, not a managed chat service. Credentials and deployment are integrator-owned.</p>
 <h2 id="reference">Reference</h2>
-<p>See the <a href="https://github.com/kujolang/ai-chat">AI Chat repository</a> for API, provider, and deployment configuration.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/showcases/crud-api/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/showcases/ssg/" rel="next"><span>Next</span></a></nav>
+<p>See the <a href="https://github.com/kujolang/ai-chat">AI Chat repository</a> for API, provider, and deployment configuration.</p>
+<h2 id="current-release-and-upgrade">Current release and upgrade</h2>
+<p><a href="https://github.com/kujolang/ai-chat/releases/tag/v1.2.0">AI Chat 1.2.0</a> adds encrypted execution journals, durable action receipts, interrupted-turn recovery, bounded stream replay, provider-context budgeting, and configured RAG documentation lookup with source links and code-example language preferences. Deferred tools remain subject to request-scoped authorization.</p>
+<p>Use <strong>Node 22.17.0</strong> and <code>npm ci</code>. Back up the database together with its matching encryption configuration before upgrading, then restart the application. Browser execution additionally needs Playwright Chromium and macOS Seatbelt or Linux Bubblewrap with permitted namespaces; unavailable containment fails closed. Follow the <a href="https://github.com/kujolang/ai-chat/blob/v1.2.0/SETUP_AND_INSTALL.md#upgrading-to-120">versioned upgrade procedure</a>.</p>
+<p>The release reports 387 local tests passed and one Linux-only skip. Its full eight-hour reliability soak is incomplete; the partial run is not a production-readiness certification.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/showcases/crud-api/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/showcases/ssg/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li><li class="toc-level-2"><a href="#current-release-and-upgrade">Current release and upgrade</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.3.4</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.4.0</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../../assets/sitekit/sitekit.js"></script>
