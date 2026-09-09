@@ -7,9 +7,9 @@ nav_title: Kujo
 order: 10
 audience: developer
 difficulty: beginner
-status: stable v1.3.1
-version: 1.3.1
-last_updated: 2026-09-06
+status: stable v1.4.0
+version: 1.4.0
+last_updated: 2026-09-09
 scope: local-first
 source_repo: kujo
 next: /tools/kennel/
@@ -56,11 +56,15 @@ Start here, then add [Kennel](/tools/kennel/) when the project needs dependencie
 
 ## Boundaries
 
-Kujo `v1.3.1` is the current published stable release. The CLI now coordinates repository-owned Agent Projects, but their provider, runtime, retrieval, evaluation, observability, and package capabilities remain explicit ecosystem dependencies rather than hidden core services.
+Kujo `v1.4.0` is the current published stable release. The CLI now coordinates repository-owned Agent Projects, but their provider, runtime, retrieval, evaluation, observability, and package capabilities remain explicit ecosystem dependencies rather than hidden core services.
 
 ## Runtime maintenance
 
 Use [`kujo upgrade`](/upgrade/) to update a supported standalone runtime from official stable binaries. `kujo upgrade --check --json` reports availability without changing files. Exact-version selection, downgrade policy, managed-install guidance, and recovery are documented in the guide. The command updates only the runtime; package-manager installations use their original manager.
+
+## Native scripting
+
+Kujo v1.4.0 supports isolated imports and native package-installer primitives, alongside bounded web-data processing and confined file publication. Read [How the runtime works](/learn/runtime/) for usage and Linux/macOS boundaries. Kennel remains a separate installation and release.
 
 ## Reference
 

@@ -1,6 +1,6 @@
 ---
 title: Install Kujo
-description: Install Kujo v1.3.1 and the tool group you need, or build the CLI from source.
+description: Install Kujo v1.4.0 and the tool group you need, or build the CLI from source.
 custom_url: install
 template: docs
 section: Start here
@@ -9,8 +9,8 @@ order: 20
 audience: developer
 difficulty: beginner
 status: stable
-version: 1.3.1
-last_updated: 2026-09-06
+version: 1.4.0
+last_updated: 2026-09-09
 previous: /start-here/
 next: /quickstart/
 prerequisites:
@@ -20,7 +20,7 @@ tags: [install, cli, stable]
 ---
 
 
-Kujo `v1.3.1` is the current stable release. The public installer selects the correct archive for your platform, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory.
+Kujo `v1.4.0` is the current stable release. The public installer selects the correct archive for your platform, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory.
 
 ## Install Kujo
 
@@ -35,13 +35,17 @@ Use a focused group when you want Kujo and the tools for one job. For the Agent 
 curl -fsSL https://kujolang.ai/install.sh | bash -s -- --group agent
 ```
 
-Run `curl -fsSL https://kujolang.ai/install.sh | bash -s -- --help` to review available groups and installer options before making changes. Direct archives and checksums remain available from the [Kujo v1.3.1 release](https://github.com/kujolang/kujo/releases/tag/v1.3.1).
+Run `curl -fsSL https://kujolang.ai/install.sh | bash -s -- --help` to review available groups and installer options before making changes. Direct archives and checksums remain available from the [Kujo v1.4.0 release](https://github.com/kujolang/kujo/releases/tag/v1.4.0).
 
 ## Upgrade an existing runtime
 
 Use [`kujo upgrade`](/upgrade/) to update a standalone runtime, or `kujo upgrade --check --json` to inspect availability without changing files. The command is available in v1.3.0 and later. Users of v1.2.3 or older must first install a current release through the installer or original package manager.
 
 Native upgrades replace only the runtime executable. Ecosystem tools and package pins keep their own update workflows. Read the guide for exact-version selection, managed installations, and backup recovery.
+
+## Runtime requirements
+
+The prebuilt Kujo CLI does not require Python, Node.js, or Rust to run ordinary Kujo programs. Source builds require Rust; npm installation requires Node.js. Individual tools may have additional requirements. Kujo v1.4.0 supplies the Linux/macOS runtime primitives for the upcoming native Kennel installer; that client has a separate release and installation step.
 
 ## Source install
 

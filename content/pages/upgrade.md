@@ -9,8 +9,8 @@ order: 25
 audience: developer
 difficulty: intermediate
 status: stable
-version: 1.3.1
-last_updated: 2026-09-06
+version: 1.4.0
+last_updated: 2026-09-09
 scope: standalone runtime executable only
 source_repo: kujo
 previous: /install/
@@ -59,8 +59,8 @@ Running the install command authorizes replacement without an interactive confir
 Select an exact published stable version:
 
 ```bash
-kujo upgrade 1.3.1 --check
-kujo upgrade v1.3.1
+kujo upgrade 1.4.0 --check
+kujo upgrade v1.4.0
 ```
 
 An intentional downgrade requires an explicit older target:
