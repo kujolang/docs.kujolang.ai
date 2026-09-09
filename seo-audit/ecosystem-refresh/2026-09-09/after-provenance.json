@@ -1,0 +1,12 @@
+{
+  "source_commit": "3424b6135587552f510802a6b6c1e283e5d9fa9f",
+  "workflow_run": 34373116444,
+  "artifact_id": 10113126733,
+  "github_artifact_digest": "sha256:fed9a42bcdc9865b7818edd8635af293d74cbe10854fcec9ee42fdf9bdf9957a",
+  "runtime_ref": "5dcbfcda2e48c2fe56dd2a4ecdb2d5947e18ff59",
+  "ssg_ref": "e165dbc1b596ea759a2b9c2ff0b9ca988c333eea",
+  "deployment_commit": "bdf416f33278f08f7fe5f7a05a2f2d6709a63299",
+  "deployment_branch": "gh-pages",
+  "status": "built",
+  "verification": "Full pinned CI and local published 1.4.0 build contracts passed; exact CI artifact deployed; 102 canonical live pages HTTP 200."
+}

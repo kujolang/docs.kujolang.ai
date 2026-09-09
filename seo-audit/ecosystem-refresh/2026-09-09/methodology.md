@@ -1,0 +1,5 @@
+# Methodology
+
+Sealed prior successful CI output before editing; verify every baseline file hash at completion. Crawl all canonical HTML before and after with identical metadata/link/schema/media checks. Independently crawl production sitemap and same-origin links. Use repository build contracts, normal-TLS external/host/crawler probes and responsive browser review. Preserve initial failed probes before bounded retries; 403/429/timeouts remain indeterminate. Exact source, build and deployment provenance is retained. Fact-check 86 public organization repositories against actual GitHub Releases, README blobs and recent commits; reconcile 135 skills, 44 workflow kits plus the separate operator, and 25 existing provider tags. Releases and newer default-branch capabilities are explicitly distinguished.
+
+Existing runtime build pins, hosting, DNS, robots and training policies are preserved. Lighthouse uses the same representative URLs and mobile configuration but shared host load varies; no causal performance claim. Independent search/AI visibility and field CWV are unavailable. Internal heuristic scores are not computed because measurement coverage is incomplete.

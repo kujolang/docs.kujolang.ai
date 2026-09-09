@@ -1,0 +1,252 @@
+[
+  {
+    "repository": "ollama",
+    "tag": "v0.1.11",
+    "object": {
+      "sha": "70343d7d870ee49cf9bd9e89787526c2992620cf",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/ollama/git/tags/70343d7d870ee49cf9bd9e89787526c2992620cf"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "anthropic",
+    "tag": "v0.1.3",
+    "object": {
+      "sha": "11b1adcc71663b6f9cd70df6ef318e0022954c71",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/anthropic/git/tags/11b1adcc71663b6f9cd70df6ef318e0022954c71"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "gemini",
+    "tag": "v0.1.3",
+    "object": {
+      "sha": "4eb150be5a536155466bf4dcd823c09ab3d9e0b7",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/gemini/git/tags/4eb150be5a536155466bf4dcd823c09ab3d9e0b7"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "openai",
+    "tag": "v0.1.2",
+    "object": {
+      "sha": "b5b71adf99926f1ce620b714af4385488a01973a",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/openai/git/tags/b5b71adf99926f1ce620b714af4385488a01973a"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "xai",
+    "tag": "v0.1.2",
+    "object": {
+      "sha": "3e28da90ab717d786927068e70d23d7c7a5d7d1c",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/xai/git/tags/3e28da90ab717d786927068e70d23d7c7a5d7d1c"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "openrouter",
+    "tag": "v0.1.2",
+    "object": {
+      "sha": "80cea78f67bf6287d583e2aad950a0068042b35d",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/openrouter/git/tags/80cea78f67bf6287d583e2aad950a0068042b35d"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "groq",
+    "tag": "v0.1.1",
+    "object": {
+      "sha": "a1848b24c9ac57cbd520be44b018b42986131e45",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/groq/git/tags/a1848b24c9ac57cbd520be44b018b42986131e45"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "fireworks",
+    "tag": "v0.1.1",
+    "object": {
+      "sha": "6dd95d646699e037165f88c7b9d8314e6a1925c9",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/fireworks/git/tags/6dd95d646699e037165f88c7b9d8314e6a1925c9"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "together",
+    "tag": "v0.1.1",
+    "object": {
+      "sha": "f6fb8fed16bb9f4d58311f4f12b49c2ab211b46e",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/together/git/tags/f6fb8fed16bb9f4d58311f4f12b49c2ab211b46e"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "mistral",
+    "tag": "v0.1.1",
+    "object": {
+      "sha": "6ebe248df0a1fbef36872bb77a85fe19a2dc5b03",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/mistral/git/tags/6ebe248df0a1fbef36872bb77a85fe19a2dc5b03"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "cerebras",
+    "tag": "v0.1.1",
+    "object": {
+      "sha": "14e9fd8689fd5a1100cc45b7697fa9c5823edb6d",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/cerebras/git/tags/14e9fd8689fd5a1100cc45b7697fa9c5823edb6d"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "deepinfra",
+    "tag": "v0.1.1",
+    "object": {
+      "sha": "0f557da4b0232aecd484713f68ffbf0661c874c2",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/deepinfra/git/tags/0f557da4b0232aecd484713f68ffbf0661c874c2"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "deepseek",
+    "tag": "v0.1.1",
+    "object": {
+      "sha": "01f3a348eb55120552ba9ab2295677151ae42049",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/deepseek/git/tags/01f3a348eb55120552ba9ab2295677151ae42049"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "huggingface",
+    "tag": "v0.1.2",
+    "object": {
+      "sha": "489415b7e9aabb475f505860f76bc37521a8e672",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/huggingface/git/tags/489415b7e9aabb475f505860f76bc37521a8e672"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "cloudflare-ai",
+    "tag": "v0.1.1",
+    "object": {
+      "sha": "c00e55afcd7dae4c15f62ee3143f7f75729c6d73",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/cloudflare-ai/git/tags/c00e55afcd7dae4c15f62ee3143f7f75729c6d73"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "replicate",
+    "tag": "v0.1.0",
+    "object": {
+      "sha": "be05a33003b86525f6493331af3b80bbfdae8ba4",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/replicate/git/tags/be05a33003b86525f6493331af3b80bbfdae8ba4"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "azure-ai",
+    "tag": "v0.1.1",
+    "object": {
+      "sha": "3134db4982a13993974766c687313dd96806dc11",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/azure-ai/git/tags/3134db4982a13993974766c687313dd96806dc11"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "cohere",
+    "tag": "v0.1.1",
+    "object": {
+      "sha": "79ec6b0be25d45e52d7640362dcd2dbee1b9ee4e",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/cohere/git/tags/79ec6b0be25d45e52d7640362dcd2dbee1b9ee4e"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "bedrock",
+    "tag": "v0.1.1",
+    "object": {
+      "sha": "1ccecc8c4b085f7c0300929e8944b1229f560a07",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/bedrock/git/tags/1ccecc8c4b085f7c0300929e8944b1229f560a07"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "nvidia-nim",
+    "tag": "v0.1.1",
+    "object": {
+      "sha": "46480ca9aeb48f85f288919f4d77e5baef5731d7",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/nvidia-nim/git/tags/46480ca9aeb48f85f288919f4d77e5baef5731d7"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "vertex-ai",
+    "tag": "v0.1.1",
+    "object": {
+      "sha": "5030074da5bd097d4fad6c7f5b3f319b94080d77",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/vertex-ai/git/tags/5030074da5bd097d4fad6c7f5b3f319b94080d77"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "perplexity",
+    "tag": "v0.1.1",
+    "object": {
+      "sha": "8adabd97a5f72bd15821aab602be2b233a114bf2",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/perplexity/git/tags/8adabd97a5f72bd15821aab602be2b233a114bf2"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "fal",
+    "tag": "v0.1.1",
+    "object": {
+      "sha": "02e02fc1c15a2432005de11663091ba1223afd1e",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/fal/git/tags/02e02fc1c15a2432005de11663091ba1223afd1e"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "baseten",
+    "tag": "v0.1.1",
+    "object": {
+      "sha": "83ff0afec9a92c4b7aeae08ae81156c29afdc7c3",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/baseten/git/tags/83ff0afec9a92c4b7aeae08ae81156c29afdc7c3"
+    },
+    "status": "verified"
+  },
+  {
+    "repository": "zai",
+    "tag": "v0.1.1",
+    "object": {
+      "sha": "a4835d5f551eeddb6675f9e85bfc0c2aeaaf5447",
+      "type": "tag",
+      "url": "https://api.github.com/repos/kujolang/zai/git/tags/a4835d5f551eeddb6675f9e85bfc0c2aeaaf5447"
+    },
+    "status": "verified"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-09",
+  "production": true,
+  "checks": [
+    {
+      "url": "https://docs.kujolang.ai/",
+      "viewport_width": 1280,
+      "overflow": false,
+      "broken_images": [],
+      "footer": "Docs v1.4.0",
+      "visual_review": "passed"
+    },
+    {
+      "url": "https://docs.kujolang.ai/ecosystem/releases/",
+      "viewport_width": 390,
+      "overflow": false,
+      "broken_images": [],
+      "menu_expanded": true,
+      "footer": "Docs v1.4.0"
+    }
+  ],
+  "viewport_restored": true
+}
