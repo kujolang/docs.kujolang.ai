@@ -20,7 +20,7 @@ tags: [install, cli, stable]
 ---
 
 
-Kujo `v1.4.0` is the current stable release. The public installer selects the correct archive for your platform, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory.
+Kujo `v1.4.0` is the current stable release. On Linux and macOS, the public ecosystem installer selects the correct archive, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory. On Windows, use the Windows archive from the release or the npm installation path described in the runtime repository.
 
 ## Install Kujo
 
