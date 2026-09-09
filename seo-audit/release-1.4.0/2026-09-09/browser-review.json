@@ -22,6 +22,8 @@
     "visible_native_content": "passed",
     "webmcp_query": "isolated imports",
     "webmcp_result": "learn:runtime",
-    "webmcp_description_includes_native_scripting": true
+    "webmcp_description_includes_native_scripting": true,
+    "final_install_url": "https://docs.kujolang.ai/install/",
+    "platform_wording": "Linux/macOS ecosystem installer and Windows archive/npm confirmed through CUA"
   }
 }

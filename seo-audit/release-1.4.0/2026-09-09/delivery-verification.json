@@ -1,0 +1,10 @@
+{
+  "redirect_variants": 10,
+  "redirect_issues": 0,
+  "crawler_profiles": 10,
+  "crawler_issues": 0,
+  "external_link_occurrences": 264,
+  "confirmed_external_404_or_410": 0,
+  "network_retry_policy": "Original failed receipts preserved; only indeterminate requests retried with normal TLS verification",
+  "field_metrics": "NOT AVAILABLE \u2014 DATA ACCESS REQUIRED"
+}

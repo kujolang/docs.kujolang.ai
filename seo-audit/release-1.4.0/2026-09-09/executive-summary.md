@@ -2,7 +2,7 @@
 
 PASS WITH RECOMMENDATIONS.
 
-Updated seven guides covering installation, upgrade, runtime, the Kujo tool, owned-agent setup and ecosystem foundations; retained the explicitly dated provider baseline. Documented isolated imports, POSIX package operations, capability boundaries, runtime dependencies and the separate Kennel release.
+Updated seven guides covering installation, upgrade, runtime, the Kujo tool, owned-agent setup and ecosystem foundations; retained the dated provider baseline. Clarified Linux/macOS ecosystem bootstrap versus Windows release/npm installation. Documented isolated imports, POSIX package operations, capability boundaries, runtime dependencies and the separate Kennel release.
 
 All 101 canonical pages passed generated metadata, heading, canonical, internal-link, image and JSON-LD checks and returned HTTP 200 in production. Matching inventories, immutable baseline verification and deployment evidence are retained. New content is sourced to released runtime contracts; no Kennel release is implied.
 

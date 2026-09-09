@@ -2,7 +2,10 @@
   "rendered_content": {
     "install/index.html": {
       "v1.4.0": true,
-      "does not require Python": true
+      "does not require Python": true,
+      "On Linux and macOS": true,
+      "On Windows": true,
+      "public ecosystem installer": true
     },
     "learn/runtime/index.html": {
       "isolated imports": true,
@@ -29,5 +32,6 @@
       "historical provider baseline": true
     }
   },
-  "feature_search_description": "Understand Kujo VM execution, interpreter fallback, isolated imports, native scripting APIs, and platform requirements."
+  "feature_search_description": "Understand Kujo VM execution, interpreter fallback, isolated imports, native scripting APIs, and platform requirements.",
+  "source_commit": "268c76483164ff648fd7242287ed2721b2227f13"
 }

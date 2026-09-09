@@ -20,5 +20,6 @@
 | schema_coverage_pages | 101 | 101 |
 | pages_deeper_than_three_clicks | 0 | 0 |
 | missing_responsive_candidates | 0 | 0 |
+| Production canonical HTTP 200 | 101 | 101 |
 
-P0/P1 release-content blockers: 0 before / 0 after. The baseline was accurate for its release date; this update follows the new runtime release. External links and redirect/crawler probes are measured separately in their CSV datasets; unavailable baseline external delivery is not inferred as zero. No canonical pages added or removed. No synthetic SEO or AI-readiness score is calculated.
+P0/P1 release-content blockers: 1 before / 0 after. Production review found a stale installer default (v1.1.0) despite newer published runtime documentation. Both canonical and website installer copies now default to v1.4.0; the version regression and isolated real installation passed. This issue is recorded as resolved in issues.csv. External links and redirect/crawler probes are measured separately in their CSV datasets; unavailable baseline external delivery is not inferred as zero. No canonical pages added or removed. No synthetic SEO or AI-readiness score is calculated.

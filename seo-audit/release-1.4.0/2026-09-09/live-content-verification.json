@@ -4,7 +4,7 @@
     "status": 200,
     "final_url": "https://docs.kujolang.ai/install/",
     "main_content_matches_verified_artifact": true,
-    "main_content_sha256": "113166288bd57b414f5cbb1812a3873cfa1526e3125ca28b6b65c47532d5db45"
+    "main_content_sha256": "8be2fd2177d94f961c227b5352d7ac00dc2a5297296f414348fab9a6cce5f6a1"
   },
   {
     "url": "https://docs.kujolang.ai/learn/runtime/",
