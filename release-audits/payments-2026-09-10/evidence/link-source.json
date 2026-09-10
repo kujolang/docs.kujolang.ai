@@ -1,0 +1,36 @@
+{
+  "repository": "https://github.com/stripe/link-cli",
+  "revision": "fed0ac21379c869c83436a65ece13923238fb3a8",
+  "retrieved_at": "2026-09-10",
+  "cli_version": "0.19.0",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "eeb7b017730bc2b2dc1c920409fcc02ad74ce2520ccdde4aea8bbc24b2c37b5a"
+    },
+    {
+      "path": "packages/cli/package.json",
+      "sha256": "a8a4d51fe918751e6ad58341ae7a6b7966ec8d6a8dae3f4680d2c6d232f22ff2"
+    },
+    {
+      "path": "packages/sdk/src/resources/spend-request.ts",
+      "sha256": "eb106147ca832d494ca8c565fef2d20b6bb2815a34e4160c366d45286084868e"
+    },
+    {
+      "path": "packages/sdk/src/resources/transactions.ts",
+      "sha256": "493dd4888cba04309110d37a65def047d27a87b69e618e94a2f2ecd8f3b6d9d9"
+    },
+    {
+      "path": "packages/sdk/src/types/index.ts",
+      "sha256": "ac440a7cb14d3b6668ed13620774dc453e684028ba55d65aea9a83bf455f6323"
+    },
+    {
+      "path": "packages/cli/src/commands/mpp/pay.tsx",
+      "sha256": "42c738fa8d25618bb8fe8c22a5a13312546fb54a94bd88c234c16fdc96b020ab"
+    },
+    {
+      "path": "packages/cli/src/auth/storage.ts",
+      "sha256": "ab873aa6d8865239ba53a8598043f49e95e87b62ec3fca458d33fd8b01eb2d48"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "action": "request",
+    "purchase": {
+      "purchase_ref": "purchase_1",
+      "payee_ref": "merchant_1",
+      "amount": {
+        "mode": "maximum",
+        "minor": 5500,
+        "currency": "USD"
+      },
+      "purpose": "Purchase approved service",
+      "payment_profile": "default",
+      "expires_in_ms": 600000
+    }
+  },
+  {
+    "action": "status",
+    "execution_id": "exec_1"
+  }
+]

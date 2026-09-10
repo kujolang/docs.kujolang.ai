@@ -1,0 +1,811 @@
+{
+  "date": "2026-09-10",
+  "local_git_checkouts_total": 139,
+  "ecosystem_checkouts": [
+    {
+      "repo": "ability",
+      "head": "e5a74803c822de79e934d2bea82d615d8be3bbee",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/ability.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "ability-gateway",
+      "head": "d7934e267826aba2525c042e56cc6e74a460e547",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/ability-gateway.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "agent-city",
+      "head": "c991b38f33783865aba91b2b37bd80e887760577",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/agent-city.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "agents-sdk",
+      "head": "bb2202d8b54f44717b1b1f0157a6774f2027cea1",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/agents-sdk.git",
+      "dirty_at_review": true
+    },
+    {
+      "repo": "agents.kujolang.ai",
+      "head": "a0a121268fc701a850cb869db9487c9deabbb4a4",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/agents.kujolang.ai.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "ai-chat",
+      "head": "18e8667505d79f72a96f0589c4e9160af6f7b944",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/ai-chat.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "ai-chat-tool-repair",
+      "head": "157da3c3757f1414804deac376133fdc39be4d51",
+      "branch": "",
+      "remote": "https://github.com/kujolang/ai-chat.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "ai-sdk",
+      "head": "71bad1468fbc97eab830a27c185c032f07fd76cf",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/ai-sdk.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "anthropic",
+      "head": "84ad0efeedbb08675adc7e4cfed11ea4fdf88531",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/anthropic.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "assetworks",
+      "head": "32ce0b2542100092dc22fea6fc1affd97dd861dc",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/assetworks.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "azure-ai",
+      "head": "a11891ccc287b1d4b23f528c3f0501406e1b2da3",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/azure-ai.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "baseten",
+      "head": "5c6fc17afc6f18ad55526b770718a9228cbc1d35",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/baseten.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "bedrock",
+      "head": "ea2106405a75a352c9a5ccd081e779d92798dedf",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/bedrock.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "bluepencil",
+      "head": "87a9c38e30cf5a629441291a320bd6de40405ca1",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/bluepencil.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "casefile",
+      "head": "f26df300df0e9db570f7730341077084f5594f0d",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/casefile.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "cerebras",
+      "head": "9c3f463e63adc2ccd5d3e9d2b4fdeb2108783935",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/cerebras.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "changebucket",
+      "head": "16491d2badd11a9d641c7c748f853b476a4d1134",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/changebucket.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "cinch",
+      "head": "35b4384dc56a8c2b17a78db19b5d3843976ca8f3",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/cinch.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "cloudflare-ai",
+      "head": "3a02c3ed018469879ea23f4bd9baacacb6984a5f",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/cloudflare-ai.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "cms",
+      "head": "b16d22ead14e86484d99ead07fc13a5ad3be49e8",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/cms.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "cms-contact-form",
+      "head": "8f7e2aca428d4e45f92250acc8822869f3364e33",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/cms-contact-form.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "cms-example",
+      "head": "be778ae970a625fdb21e37b91a2e6244ef5521ae",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/cms-example.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "cms-experience",
+      "head": "662bd77ea1296cb15c705f274aa850b82c298ad7",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/cms-experience.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "cms-field-notes-theme",
+      "head": "68bc3155c994e5794ebc27b255dff95612ea4a0c",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/cms-field-notes-theme.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "cohere",
+      "head": "97f6e9008c532bb3d2c98866a589ebe3bd49f3c9",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/cohere.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "commerce",
+      "head": "ac5e3b5644062886acb3781aabb4ec6bf8ee920e",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/commerce.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "concord",
+      "head": "4ca511291b2c3cae2b3a2b838b2bbf03ac0b0503",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/concord.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "contentgraph",
+      "head": "5360f5f50f0f01a1e40648b9ad8863f00564cd1b",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/contentgraph.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "crud-api",
+      "head": "7ae446671b27128468ea0cc14c68f4e2ca11a989",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/crud-api.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "deepinfra",
+      "head": "ff0032e18865ce5c57d94a23983ab028112903cb",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/deepinfra.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "deepseek",
+      "head": "792a39e2371042887110cba0932ab8fe1e5506c9",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/deepseek.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "dispatch",
+      "head": "dcffd8f8c3fb9bac1e66bc5a0ad6a5d078c88019",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/dispatch.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "docs.kujolang.ai",
+      "head": "ac4ed7987d6c0818cda373f5cb5720a2a07fe463",
+      "branch": "codex/ecosystem-docs-refresh",
+      "remote": "https://github.com/kujolang/docs.kujolang.ai",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "dossier",
+      "head": "1d8ccee740820e25332ae8f25e422ca522a3ac0b",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/dossier.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "email",
+      "head": "d4dbe2724d0e6c9eb594c7f4fad2763a0c0dc6ca",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/email.git",
+      "dirty_at_review": true
+    },
+    {
+      "repo": "eval",
+      "head": "7ad5caef1b718ab8a6ccdd02ef1b645af93ac133",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/eval.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "fal",
+      "head": "94033188fb48aa806976a1fca65489ea63b473cb",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/fal.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "fence",
+      "head": "fda049ed9aa55ba50c150b84bb9ca1bdf49af0dc",
+      "branch": "fix/confined-output-runtime",
+      "remote": "https://github.com/kujolang/fence.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "fireworks",
+      "head": "199184b9a0dfbbb497ae04dbaac4ce5c2bce6e3a",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/fireworks.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "galleypack",
+      "head": "5a9ec247f943460aa759f1552ae14e48c7423d3e",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/galleypack.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "gemini",
+      "head": "c0c46486d98fd8bc716bedb538a438ebc7734503",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/gemini.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "groq",
+      "head": "e1bdc981c2167feedab5d879b97fa77327c008bb",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/groq.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "howl",
+      "head": "2a489084b8ebe5e1192eb7fdbaa3b3e19a52600e",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/howl.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "huggingface",
+      "head": "cf6f72fd09bcc999c3c00c8c95761e1855c09dbb",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/huggingface.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "intake",
+      "head": "e2140681bfef3ed02f1d09812c13c6ecd908d2df",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/intake.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kennel",
+      "head": "546dd4205b90825f3e326336941c3068b1add0f0",
+      "branch": "codex/native-installer-tools",
+      "remote": "https://github.com/kujolang/kennel.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kennel-registry",
+      "head": "091798e54c63b937bbe6a60c2a885a482b8e25d5",
+      "branch": "codex/native-installer-delivery",
+      "remote": "https://github.com/kujolang/kennel-registry.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujo",
+      "head": "1b694de764e4a50ed4ce5ecc7e82d98e54015297",
+      "branch": "codex/kennel-tool-import-isolation",
+      "remote": "https://github.com/kujolang/kujo.git",
+      "dirty_at_review": true
+    },
+    {
+      "repo": "kujo-agents",
+      "head": "65f23b8ee8fc535e3d929860742020976b121d43",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/kujo-agents.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujo-docs",
+      "head": "1f833d70dd5721c07eaf3e0d4dc066f60f13f288",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/docs.kujolang.ai.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujo-fence-f12",
+      "head": "3cab46ee043b0e452950d7de358487b4c4a3bde8",
+      "branch": "fix/fence-confined-output",
+      "remote": "https://github.com/kujolang/kujo.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujo-hyperframes",
+      "head": "1981df219519ce7227a4431e01e007ac145bff0f",
+      "branch": "codex/kujo-trust-at-speed",
+      "remote": "https://github.com/kujolang/kujo-hyperframes.git",
+      "dirty_at_review": true
+    },
+    {
+      "repo": "kujo-hyperframes-migration",
+      "head": "1981df219519ce7227a4431e01e007ac145bff0f",
+      "branch": "codex/migrate-video-skills",
+      "remote": "https://github.com/kujolang/kujo-hyperframes.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujo-hyperframes-sitekit-video",
+      "head": "58a847d107caaae686b0e15ff7016cd0fefd6706",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/kujo-hyperframes.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujo-hyperframes-skills-release",
+      "head": "496f7434bcf32ef9d226fa822da24915f3c4bf12",
+      "branch": "codex/skills-v070-release-film",
+      "remote": "https://github.com/kujolang/kujo-hyperframes.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujo-hyperframes-v1.3.0-video",
+      "head": "73a5872269f77343b41f42d983101231509581c9",
+      "branch": "codex/kujo-v1.3.0-release-video",
+      "remote": "https://github.com/kujolang/kujo-hyperframes.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujo-hyperframes-v1.4.0-video",
+      "head": "7b52e61a0fd11c293d44ec51e800b2aaec1ee01c",
+      "branch": "codex/kujo-v1.4.0-release",
+      "remote": "https://github.com/kujolang/kujo-hyperframes.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujo-hyperframes-video-types-worktree",
+      "head": "44b8a67370b4cb8e9112e3f5cc4198197a31ff89",
+      "branch": "codex/kujo-record-replay-video",
+      "remote": "https://github.com/kujolang/kujo-hyperframes.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujo-native-package-primitives",
+      "head": "378185aa8a3ff1a6184dcd6a5f0fc41370f49568",
+      "branch": "codex/native-package-primitives",
+      "remote": "https://github.com/kujolang/kujo.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujo-pi",
+      "head": "9d977bdda760830e3cb00c1e0e756ab2d9acfe1e",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/kujo-pi.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujo-pinned-web",
+      "head": "15e8d8f96eb6e20301a5b75aa92c1d20da1fc056",
+      "branch": "codex/markdown-doc-cleanup-pinned-web",
+      "remote": "https://github.com/kujolang/kujo.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujo-release-v1.3.0",
+      "head": "016039e98a76a45b02ba404a1515910ad3075cd6",
+      "branch": "codex/release-v1.3.0",
+      "remote": "https://github.com/kujolang/kujo.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujo-release-v1.3.1",
+      "head": "dc4803598d0421b31ecfd3f1027732589f1e8df1",
+      "branch": "codex/release-v1.3.1",
+      "remote": "https://github.com/kujolang/kujo.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujo-release-v1.4.0",
+      "head": "1a7b6ef0eacd4918912ef58cfb5ec8533bff9e91",
+      "branch": "codex/release-v1.4.0",
+      "remote": "https://github.com/kujolang/kujo.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujo-skills",
+      "head": "eb7128b88b904e7fa2a2eb7f093a89db955e1bac",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/kujo-skills.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujo-upgrade-linux-race",
+      "head": "303828de5ba39343688dc309fcc35826fb880194",
+      "branch": "codex/upgrade-linux-race",
+      "remote": "https://github.com/kujolang/kujo.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujo-videoops",
+      "head": "fe74ae8ff4eb3765179f7cf573113bd9ebd7ba4a",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/kujo-videoops.git",
+      "dirty_at_review": true
+    },
+    {
+      "repo": "kujo-workflows",
+      "head": "5df0458d4918215128e62597796a1d5eef98bb1e",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/kujo-workflows.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujolang-mcp",
+      "head": "2729394b3160a4850ccd546c7f31bfc1b6c0e6bc",
+      "branch": "codex/ecosystem-catalog-refresh",
+      "remote": "https://github.com/kujolang/kujolang-mcp.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujolang.ai-source",
+      "head": "HEAD",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/kujolang.ai.git",
+      "dirty_at_review": true
+    },
+    {
+      "repo": "kujolang.ai-work",
+      "head": "01274501bc40ac8be922f3dcdef47a2f8be98e36",
+      "branch": "codex/ecosystem-catalog-refresh",
+      "remote": "https://github.com/kujolang/kujolang.ai.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujolang.ai.incomplete",
+      "head": "HEAD",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/kujolang.ai.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "kujolang.ai.sparse",
+      "head": "HEAD",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/kujolang.ai.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "leash",
+      "head": "3e90f14b7abc6c23a89157fbd7cc98c6d4dbfcf8",
+      "branch": "main",
+      "remote": "https://github.com/robertdevore/leash.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "lens",
+      "head": "fd388efd4f55f3f844cf7de4fc541abfd07a6785",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/lens.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "mcp",
+      "head": "07845898ee9f2662d0e0e364973d77cdaac04762",
+      "branch": "codex/public-catalog-profile-metadata",
+      "remote": "https://github.com/kujolang/mcp.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "mistral",
+      "head": "d2126351f86cb4196ea5cc122f822fa66708148d",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/mistral.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "muzzle",
+      "head": "ac40faf465486848509275cdd5f3af8096bbdeea",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/muzzle.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "nvidia-nim",
+      "head": "d706ea6c38ec28eaa52b952804d012da0041ca52",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/nvidia-nim.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "ollama",
+      "head": "3e1f86f9ca8533c4d18e1c005e28ad80d22539c5",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/ollama.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "openai",
+      "head": "52620c3cce595ee6af5e2c303cc8c986955cfb0d",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/openai.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "openrouter",
+      "head": "7afd7c2a75214d63c06a841337df32bbb44fd2b9",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/openrouter.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "packwrite",
+      "head": "3f0cbf4b5052677d22040cdf486adf2817b40a20",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/packwrite.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "paperclip",
+      "head": "7002e94aeddba3ed60fa18f3a6df41e8adf1cf9d",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/paperclip.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "patchbrief",
+      "head": "321d961c19c4ee09713cf1f737ba5e112b0caa5b",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/patchbrief.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "perplexity",
+      "head": "459184fa4ba918b41b92fc75ce08aef3800ac68d",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/perplexity.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "presswire",
+      "head": "566469012efbf10e86d48f61fdd64cdd050dddd6",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/presswire.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "rag",
+      "head": "85743f88c152d7c65f59d4697111faf85e36d8eb",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/rag.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "readersignal",
+      "head": "389ef125f1a274289b6b3f69810abc8fccf75641",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/readersignal.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "redact",
+      "head": "e1f3e1863c468433e1a4f426ad991c0fb7f33dac",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/redact.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "relay",
+      "head": "01c44da192e0fa7f1135d3c047b16dd23421058d",
+      "branch": "refactor/repository-simplification-audit",
+      "remote": "https://github.com/kujolang/relay.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "replicate",
+      "head": "1598bc7d24c99039b3c050ef54da2811138334c2",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/replicate.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "runledger",
+      "head": "92cb06344386fc0a78d92b1db92f417edb22b285",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/runledger.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "scent",
+      "head": "969f0fdc853c88cd051248a6ebcd9ce0434d9f43",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/scent.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "scout",
+      "head": "70454d44b3c719bec08f9707b39c231da49b7886",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/scout.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "searchbridge",
+      "head": "88aad1c0eacf2588dac305beb18eb0a3adbb53e2",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/searchbridge.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "shipcheck",
+      "head": "111bfc83c832050877cb9d4fd82908aaf6d14749",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/shipcheck.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "site-kit",
+      "head": "9629c4cb2a42f62f80be6159c9d63a141ccbb696",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/site-kit.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "sitekit-docs-template",
+      "head": "e8f0cf3fd5a1aed6d7e4c0df46e9863f4976a5fb",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/sitekit-docs-template.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "sitekit.kujolang.ai",
+      "head": "2e09ee3d7d2dacdf8acda5b7c573293a5be392a6",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/sitekit.kujolang.ai.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "siteprobe",
+      "head": "0c5599c8bce3255bd3e45f556ebbb4711a7c982e",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/siteprobe.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "source",
+      "head": "006c6e7db612ef794775ebe372a6ff8e4a17cb53",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/source.git",
+      "dirty_at_review": true
+    },
+    {
+      "repo": "spec",
+      "head": "1211f37a09314be7150734bf15a55e9b2ea6504d",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/spec.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "ssg",
+      "head": "e165dbc1b596ea759a2b9c2ff0b9ca988c333eea",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/ssg.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "storydesk",
+      "head": "e3707994b564c5b746493393c697424cc8503209",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/storydesk.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "together",
+      "head": "81e77e2a424f9b9483386ffa5d1a9224f626bfa4",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/together.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "tribunal",
+      "head": "936c5e99b689e1675845fe23ef25ba8d6b9f6efc",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/tribunal.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "versionseal",
+      "head": "4c84f2607f60011c5800790347d7479ec07554e9",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/versionseal.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "vertex-ai",
+      "head": "677eb9bfffa141e8e96e4350352e3e001bd32068",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/vertex-ai.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "watchdog",
+      "head": "314698b0502c5d2139df46b7523482c6d089b6ff",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/watchdog.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "watchdog-date-filters",
+      "head": "9b751b0946f7b79a7bf51c70b006d1405857e319",
+      "branch": "codex/dashboard-date-filters",
+      "remote": "https://github.com/kujolang/watchdog.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "workcell",
+      "head": "3999f1100e4ef978a19a742a6e91bdb36c0c74f0",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/workcell.git",
+      "dirty_at_review": true
+    },
+    {
+      "repo": "workcell-studio",
+      "head": "e5f82f23eebaded5254ef586b37243559042106d",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/workcell-studio.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "xai",
+      "head": "d816a25d271d8221ee31461c877f354b2999d636",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/xai.git",
+      "dirty_at_review": false
+    },
+    {
+      "repo": "zai",
+      "head": "798a5eaae177af1d267114657c8a1eb82d6bdc96",
+      "branch": "main",
+      "remote": "https://github.com/kujolang/zai.git",
+      "dirty_at_review": false
+    }
+  ]
+}

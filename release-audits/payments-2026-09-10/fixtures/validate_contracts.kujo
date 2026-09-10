@@ -1,0 +1,16 @@
+// Offline schema validation only. Does not implement payments.
+root := env("PAYMENT_REVIEW_ROOT")
+ability_root := env("PAYMENT_ABILITY_ROOT")
+ability_schema := parse_json(read_file(ability_root + "/schema/ability.schema.json"))
+for name in ["agent-ability.json", "executor-ability.json"] {
+    value := parse_json(read_file(root + "/fixtures/" + name))
+    assert(json_schema_validate(value, ability_schema)["valid"], "Ability schema rejected proposed definition")
+}
+facade := parse_json(read_file(root + "/fixtures/agent-ability.json"))
+for request in parse_json(read_file(root + "/fixtures/valid-requests.json")) {
+    assert(json_schema_validate(request, facade["input_schema"])["valid"], "Valid request rejected")
+}
+for request in [{"action": "execute", "execution_id": "exec_1"}, {"action": "status", "execution_id": "exec_1", "token": "SENTINEL_SPT"}, {"action": "status"}, {"action": "request", "execution_id": "exec_1"}] {
+    assert(json_schema_validate(request, facade["input_schema"])["valid"] == false, "Forbidden request accepted")
+}
+print("Proposed Ability definitions and request branches: all assertions passed")

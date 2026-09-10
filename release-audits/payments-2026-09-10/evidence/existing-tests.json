@@ -1,0 +1,100 @@
+[
+  {
+    "name": "agents-ability",
+    "repository": "agents-sdk",
+    "command": [
+      "kujo",
+      "test-run",
+      "tests/ability_contract_tests.kujo"
+    ],
+    "exit_code": 0,
+    "seconds": 0.914,
+    "log": "agents-ability.log"
+  },
+  {
+    "name": "agents-approval",
+    "repository": "agents-sdk",
+    "command": [
+      "kujo",
+      "test-run",
+      "tests/security_approval_policy_tests.kujo"
+    ],
+    "exit_code": 0,
+    "seconds": 0.494,
+    "log": "agents-approval.log"
+  },
+  {
+    "name": "dispatch-sqlite",
+    "repository": "dispatch",
+    "command": [
+      "kujo",
+      "test-run",
+      "tests/state_store_sqlite_tests.kujo"
+    ],
+    "exit_code": 1,
+    "seconds": 0.64,
+    "log": "dispatch-sqlite.log",
+    "corrected_run": {
+      "command": "DISPATCH_STATE_BACKEND=sqlite kujo test-run tests/state_store_sqlite_tests.kujo -v",
+      "exit_code": 0,
+      "log": "dispatch-sqlite-configured.log"
+    }
+  },
+  {
+    "name": "dispatch-policy",
+    "repository": "dispatch",
+    "command": [
+      "kujo",
+      "test-run",
+      "tests/policy_precedence_tests.kujo"
+    ],
+    "exit_code": 0,
+    "seconds": 38.613,
+    "log": "dispatch-policy.log"
+  },
+  {
+    "name": "workcell-policy",
+    "repository": "workcell",
+    "command": [
+      "bash",
+      "tests/podman_security_contract.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 0.711,
+    "log": "workcell-policy.log"
+  },
+  {
+    "name": "mcp-gateway",
+    "repository": "mcp",
+    "command": [
+      "kujo",
+      "test-run",
+      "tests/test_09_ability_gateway.kujo"
+    ],
+    "exit_code": 4,
+    "seconds": 0.021,
+    "log": "mcp-gateway.log",
+    "corrected_run": {
+      "command": "kujo run tests/test_09_ability_gateway.kujo --interpreter",
+      "exit_code": 0,
+      "log": "mcp-gateway-corrected.log"
+    }
+  },
+  {
+    "name": "ai-chat-journal",
+    "repository": "ai-chat",
+    "command": [
+      "node",
+      "--test",
+      "tests/execution-journal.test.js"
+    ],
+    "exit_code": 1,
+    "seconds": 0.705,
+    "log": "ai-chat-journal.log",
+    "corrected_run": {
+      "command": "Node 22.17.0 node --test tests/execution-journal.test.js",
+      "exit_code": 0,
+      "log": "ai-chat-journal-node22.log"
+    }
+  }
+]

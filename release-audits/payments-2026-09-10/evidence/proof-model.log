@@ -1,0 +1,14 @@
+test_all_consequential_fields_change_binding (__main__.ReviewProof) ... ok
+test_consumed_approval_rolls_back_claim (__main__.ReviewProof) ... ok
+test_crash_points_cannot_resubmit (__main__.ReviewProof) ... ok
+test_exact_money_and_cap (__main__.ReviewProof) ... ok
+test_expiry_boundary (__main__.ReviewProof) ... ok
+test_no_uncertain_or_terminal_path_returns_to_ready (__main__.ReviewProof) ... ok
+test_parallel_claims_have_one_winner (__main__.ReviewProof) ... ok
+test_projection_drops_nested_sentinel_fields (__main__.ReviewProof) ... ok
+test_tombstone_blocks_reuse_after_payload_retention (__main__.ReviewProof) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.996s
+
+OK

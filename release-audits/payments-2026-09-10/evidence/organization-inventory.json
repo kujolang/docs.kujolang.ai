@@ -1,0 +1,432 @@
+[
+  {
+    "name": "kujo",
+    "url": "https://github.com/kujolang/kujo",
+    "description": "Kujo is the programming language for AI-native software"
+  },
+  {
+    "name": "concord",
+    "url": "https://github.com/kujolang/concord",
+    "description": "Local developer tool that checks whether the important artifacts in a repo agree with each other"
+  },
+  {
+    "name": "howl",
+    "url": "https://github.com/kujolang/howl",
+    "description": "Turn example files into a multi-format showcase gallery"
+  },
+  {
+    "name": "scout",
+    "url": "https://github.com/kujolang/scout",
+    "description": "Scout is a codebase intelligence tool written in Kujo"
+  },
+  {
+    "name": "ssg",
+    "url": "https://github.com/kujolang/ssg",
+    "description": "A Kujo-native static site generator project."
+  },
+  {
+    "name": "ai-chat",
+    "url": "https://github.com/kujolang/ai-chat",
+    "description": "AI Chat is a production-ready, multi-provider AI chat workspace written in Kujo"
+  },
+  {
+    "name": "crud-api",
+    "url": "https://github.com/kujolang/crud-api",
+    "description": "A production-oriented CRUD API example built with Kujo and SQLite."
+  },
+  {
+    "name": "cms",
+    "url": "https://github.com/kujolang/cms",
+    "description": "Kujo-native content management system"
+  },
+  {
+    "name": "casefile",
+    "url": "https://github.com/kujolang/casefile",
+    "description": "Turn failures into reproducible, reviewable investigation packets."
+  },
+  {
+    "name": "muzzle",
+    "url": "https://github.com/kujolang/muzzle",
+    "description": "Muzzle is a workflow compression layer that keeps noisy, repeated command output out of AI agent context"
+  },
+  {
+    "name": "scent",
+    "url": "https://github.com/kujolang/scent",
+    "description": "Deterministic, token-budgeted context packs for AI coding agents."
+  },
+  {
+    "name": "mcp",
+    "url": "https://github.com/kujolang/mcp",
+    "description": "Kujo-native MCP server framework."
+  },
+  {
+    "name": "lens",
+    "url": "https://github.com/kujolang/lens",
+    "description": "Deterministic browser/visual QA for AI-native software"
+  },
+  {
+    "name": "packwrite",
+    "url": "https://github.com/kujolang/packwrite",
+    "description": "AI-assisted, local-first planning compiler that turns project intent into validated agent execution packs"
+  },
+  {
+    "name": "shipcheck",
+    "url": "https://github.com/kujolang/shipcheck",
+    "description": "ShipCheck is a release-readiness scanner for Kujo ecosystem projects."
+  },
+  {
+    "name": "patchbrief",
+    "url": "https://github.com/kujolang/patchbrief",
+    "description": "Local dev tool that inspects git diffs and generates structured implementation briefs"
+  },
+  {
+    "name": "changebucket",
+    "url": "https://github.com/kujolang/changebucket",
+    "description": "Measure the size, shape, and risk footprint of a code change"
+  },
+  {
+    "name": "runledger",
+    "url": "https://github.com/kujolang/runledger",
+    "description": "RunLedger is a structured receipt system for agent work."
+  },
+  {
+    "name": "watchdog",
+    "url": "https://github.com/kujolang/watchdog",
+    "description": "Watchdog is an observability dashboard for AI applications written in Kujo."
+  },
+  {
+    "name": "fence",
+    "url": "https://github.com/kujolang/fence",
+    "description": "Fence prevents agents and developers from crossing architecture boundaries."
+  },
+  {
+    "name": "agents-sdk",
+    "url": "https://github.com/kujolang/agents-sdk",
+    "description": "Library-first agent workflow primitives for Agents SDK, built on top of the AI SDK from Kujo"
+  },
+  {
+    "name": "ai-sdk",
+    "url": "https://github.com/kujolang/ai-sdk",
+    "description": "Provider-agnostic SDK primitives for building OpenAI-compatible chat integrations in Kujo."
+  },
+  {
+    "name": "rag",
+    "url": "https://github.com/kujolang/rag",
+    "description": "Kujo-native RAG system for AI applications"
+  },
+  {
+    "name": "dispatch",
+    "url": "https://github.com/kujolang/dispatch",
+    "description": "Dispatch is an agent workflow engine for building reliable AI workflows written in Kujo."
+  },
+  {
+    "name": "eval",
+    "url": "https://github.com/kujolang/eval",
+    "description": "Evaluation framework for AI-native software written in Kujo"
+  },
+  {
+    "name": "spec",
+    "url": "https://github.com/kujolang/spec",
+    "description": "Structured task definition format for AI-native development"
+  },
+  {
+    "name": "kennel",
+    "url": "https://github.com/kujolang/kennel",
+    "description": "Kennel is the official package manager for Kujo"
+  },
+  {
+    "name": "kujo-skills",
+    "url": "https://github.com/kujolang/kujo-skills",
+    "description": "Agent Skills for working on and with the Kujo programming language"
+  },
+  {
+    "name": "kujo-workflows",
+    "url": "https://github.com/kujolang/kujo-workflows",
+    "description": "Workflow prototypes for the KUJO agency and AI tooling stack"
+  },
+  {
+    "name": "intake",
+    "url": "https://github.com/kujolang/intake",
+    "description": "Turn inbound business noise into agent-readable work. A local-first intake layer for email, webhooks, local file drops, and manual operator input"
+  },
+  {
+    "name": "site-kit",
+    "url": "https://github.com/kujolang/site-kit",
+    "description": "AI-readable, human-verifiable design system and component library for building accessible, semantic, token-driven websites and web interfaces."
+  },
+  {
+    "name": "kujo-agents",
+    "url": "https://github.com/kujolang/kujo-agents",
+    "description": "Reusable role contracts for the KUJO agent chain of command."
+  },
+  {
+    "name": "redact",
+    "url": "https://github.com/kujolang/redact",
+    "description": "Local-first anonymization and redaction tool for turning sensitive text and Markdown into AI-safe context"
+  },
+  {
+    "name": "tribunal",
+    "url": "https://github.com/kujolang/tribunal",
+    "description": "Local-first structured adversarial decision review for the KUJO ecosystem"
+  },
+  {
+    "name": "workcell",
+    "url": "https://github.com/kujolang/workcell",
+    "description": "Local Docker-backed execution sandbox for AI agents and Kujo workflows"
+  },
+  {
+    "name": "relay",
+    "url": "https://github.com/kujolang/relay",
+    "description": "Local-first composition and execution layer for bounded agent missions"
+  },
+  {
+    "name": "kujolang.ai",
+    "url": "https://github.com/kujolang/kujolang.ai",
+    "description": "files for kujolang.ai website"
+  },
+  {
+    "name": "docs.kujolang.ai",
+    "url": "https://github.com/kujolang/docs.kujolang.ai",
+    "description": "The official docs website for the Kujo programming language"
+  },
+  {
+    "name": "sitekit-docs-template",
+    "url": "https://github.com/kujolang/sitekit-docs-template",
+    "description": "Plug-and-play documentation template for Kujo SSG and SiteKit"
+  },
+  {
+    "name": "agents.kujolang.ai",
+    "url": "https://github.com/kujolang/agents.kujolang.ai",
+    "description": "The official agents website for the Kujo programming language"
+  },
+  {
+    "name": "commerce",
+    "url": "https://github.com/kujolang/commerce",
+    "description": "Provider-agnostic commerce for static Kujo sites"
+  },
+  {
+    "name": "siteprobe",
+    "url": "https://github.com/kujolang/siteprobe",
+    "description": "SiteProbe is the deterministic website-intelligence crawler for Kujo WebOps."
+  },
+  {
+    "name": "searchbridge",
+    "url": "https://github.com/kujolang/searchbridge",
+    "description": "SearchBridge is the normalized external-data layer for Kujo WebOps. "
+  },
+  {
+    "name": "contentgraph",
+    "url": "https://github.com/kujolang/contentgraph",
+    "description": null
+  },
+  {
+    "name": "storydesk",
+    "url": "https://github.com/kujolang/storydesk",
+    "description": "Kujo-native editorial control desk for planning, assignments, handoffs, and review queues"
+  },
+  {
+    "name": "dossier",
+    "url": "https://github.com/kujolang/dossier",
+    "description": "Kujo-native evidence, claims, sources, consent, freshness, and rights ledger"
+  },
+  {
+    "name": "galleypack",
+    "url": "https://github.com/kujolang/galleypack",
+    "description": "Kujo-native versioned editorial packages, checksums, freeze, and drift verification"
+  },
+  {
+    "name": "bluepencil",
+    "url": "https://github.com/kujolang/bluepencil",
+    "description": "Kujo-native editorial review, blockers, verdicts, disagreement, and quality calibration"
+  },
+  {
+    "name": "assetworks",
+    "url": "https://github.com/kujolang/assetworks",
+    "description": "Kujo-native controlled media jobs, manifests, provenance, captions, and accessibility records"
+  },
+  {
+    "name": "versionseal",
+    "url": "https://github.com/kujolang/versionseal",
+    "description": "Kujo-native exact-version human approval and checksum verification"
+  },
+  {
+    "name": "presswire",
+    "url": "https://github.com/kujolang/presswire",
+    "description": "Kujo-native bounded publication gateway with approval checks, idempotency, and receipts"
+  },
+  {
+    "name": "readersignal",
+    "url": "https://github.com/kujolang/readersignal",
+    "description": "Kujo-native audience measurement, feedback, attribution boundaries, and editorial learning"
+  },
+  {
+    "name": "kujolang-mcp",
+    "url": "https://github.com/kujolang/kujolang-mcp",
+    "description": "Read-only Kujolang.ai MCP server for ecosystem discovery, skills, workflows, and install guidance"
+  },
+  {
+    "name": "workcell-studio",
+    "url": "https://github.com/kujolang/workcell-studio",
+    "description": "A WebMCP-native workspace for bounded, verifiable human-agent software development with Kujo Workcell"
+  },
+  {
+    "name": "ollama",
+    "url": "https://github.com/kujolang/ollama",
+    "description": "Native Ollama API client for Kujo with an AI SDK provider driver"
+  },
+  {
+    "name": "anthropic",
+    "url": "https://github.com/kujolang/anthropic",
+    "description": "Native Anthropic Messages API client for Kujo with an AI SDK provider driver"
+  },
+  {
+    "name": "gemini",
+    "url": "https://github.com/kujolang/gemini",
+    "description": "Gemini provider package for Kujo"
+  },
+  {
+    "name": "openai",
+    "url": "https://github.com/kujolang/openai",
+    "description": "OpenAI provider package for Kujo"
+  },
+  {
+    "name": "openrouter",
+    "url": "https://github.com/kujolang/openrouter",
+    "description": "OpenRouter provider package for Kujo"
+  },
+  {
+    "name": "xai",
+    "url": "https://github.com/kujolang/xai",
+    "description": "xAI provider package for Kujo"
+  },
+  {
+    "name": "groq",
+    "url": "https://github.com/kujolang/groq",
+    "description": "Groq provider package for Kujo"
+  },
+  {
+    "name": "together",
+    "url": "https://github.com/kujolang/together",
+    "description": "Together AI provider package for Kujo"
+  },
+  {
+    "name": "fireworks",
+    "url": "https://github.com/kujolang/fireworks",
+    "description": "Fireworks AI provider package for Kujo"
+  },
+  {
+    "name": "mistral",
+    "url": "https://github.com/kujolang/mistral",
+    "description": "Mistral provider package for Kujo"
+  },
+  {
+    "name": "cerebras",
+    "url": "https://github.com/kujolang/cerebras",
+    "description": "Cerebras provider package for Kujo"
+  },
+  {
+    "name": "deepinfra",
+    "url": "https://github.com/kujolang/deepinfra",
+    "description": "DeepInfra provider package for Kujo"
+  },
+  {
+    "name": "deepseek",
+    "url": "https://github.com/kujolang/deepseek",
+    "description": "DeepSeek provider package for Kujo"
+  },
+  {
+    "name": "cloudflare-ai",
+    "url": "https://github.com/kujolang/cloudflare-ai",
+    "description": "Cloudflare Workers AI provider package for Kujo"
+  },
+  {
+    "name": "huggingface",
+    "url": "https://github.com/kujolang/huggingface",
+    "description": "Native Hugging Face Inference Providers client for Kujo"
+  },
+  {
+    "name": "replicate",
+    "url": "https://github.com/kujolang/replicate",
+    "description": "Native Replicate prediction lifecycle client for Kujo"
+  },
+  {
+    "name": "cohere",
+    "url": "https://github.com/kujolang/cohere",
+    "description": "Native Cohere provider for Kujo"
+  },
+  {
+    "name": "bedrock",
+    "url": "https://github.com/kujolang/bedrock",
+    "description": "Native AWS Bedrock provider for Kujo"
+  },
+  {
+    "name": "azure-ai",
+    "url": "https://github.com/kujolang/azure-ai",
+    "description": "Native Azure AI provider for Kujo"
+  },
+  {
+    "name": "vertex-ai",
+    "url": "https://github.com/kujolang/vertex-ai",
+    "description": "Native Google Vertex AI provider for Kujo"
+  },
+  {
+    "name": "nvidia-nim",
+    "url": "https://github.com/kujolang/nvidia-nim",
+    "description": "Native NVIDIA NIM provider for Kujo"
+  },
+  {
+    "name": "perplexity",
+    "url": "https://github.com/kujolang/perplexity",
+    "description": "Native Perplexity provider for Kujo"
+  },
+  {
+    "name": "zai",
+    "url": "https://github.com/kujolang/zai",
+    "description": "Native Z.ai GLM provider for Kujo"
+  },
+  {
+    "name": "fal",
+    "url": "https://github.com/kujolang/fal",
+    "description": "Native fal.ai queue provider for Kujo"
+  },
+  {
+    "name": "baseten",
+    "url": "https://github.com/kujolang/baseten",
+    "description": "Native Baseten provider for Kujo"
+  },
+  {
+    "name": "kujo-pi",
+    "url": "https://github.com/kujolang/kujo-pi",
+    "description": "Opt-in Pi package for Kujo skills, repository intelligence, and review artifacts."
+  },
+  {
+    "name": "cms-contact-form",
+    "url": "https://github.com/kujolang/cms-contact-form",
+    "description": "Portable contact form plugin showcase for Kujo CMS"
+  },
+  {
+    "name": "cms-example",
+    "url": "https://github.com/kujolang/cms-example",
+    "description": "Field Notes portable theme and administration showcase for Kujo CMS"
+  },
+  {
+    "name": "cms-field-notes-theme",
+    "url": "https://github.com/kujolang/cms-field-notes-theme",
+    "description": "Portable Field Notes editorial theme for Kujo CMS"
+  },
+  {
+    "name": "ability",
+    "url": "https://github.com/kujolang/ability",
+    "description": "Portable semantic operation contracts for the Kujo ecosystem"
+  },
+  {
+    "name": "paperclip",
+    "url": "https://github.com/kujolang/paperclip",
+    "description": "Kujo plugin for Paperclip: scoped context, change review, and reproducible failure evidence."
+  },
+  {
+    "name": "kennel-registry",
+    "url": "https://github.com/kujolang/kennel-registry",
+    "description": "Official immutable Kujo package releases for kennel.kujolang.ai"
+  }
+]

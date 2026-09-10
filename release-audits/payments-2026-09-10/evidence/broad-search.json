@@ -1,0 +1,1208 @@
+[
+  {
+    "repo": "ability",
+    "files_searched": 36,
+    "payment_files": 3,
+    "sample": [
+      "ability/docs/PRODUCTION_READINESS.md",
+      "ability/tests/runtime_contract_tests.kujo",
+      "ability/docs/RUNTIME.md"
+    ]
+  },
+  {
+    "repo": "ability-gateway",
+    "files_searched": 37,
+    "payment_files": 1,
+    "sample": [
+      "ability-gateway/docs/OPERATIONS.md"
+    ]
+  },
+  {
+    "repo": "agent-city",
+    "files_searched": 345,
+    "payment_files": 11,
+    "sample": [
+      "agent-city/TRY-AGENT-CITY.md",
+      "agent-city/WORKING-EXPERIENCE.md",
+      "agent-city/evidence/live-convergence/README.md",
+      "agent-city/evidence/missions/context-order-review.md",
+      "agent-city/research/phase-1.md",
+      "agent-city/research/protocol.md",
+      "agent-city/research/evidence.md",
+      "agent-city/scripts/bundle-runtime.ts",
+      "agent-city/research/session-handoff.md",
+      "agent-city/research/report-source.md",
+      "agent-city/scripts/startup-checks.ts"
+    ]
+  },
+  {
+    "repo": "agents-sdk",
+    "files_searched": 115,
+    "payment_files": 2,
+    "sample": [
+      "agents-sdk/docs/audits/RETRIEVAL_PREFERENCES_ROLLOUT.md",
+      "agents-sdk/docs/audits/PROGRAMMING_LANGUAGE_NEGOTIATION_AUDIT.md"
+    ]
+  },
+  {
+    "repo": "agents.kujolang.ai",
+    "files_searched": 250,
+    "payment_files": 10,
+    "sample": [
+      "agents.kujolang.ai/README.md",
+      "agents.kujolang.ai/seo-audit/2026-08-10/raw/after/external-responses.json",
+      "agents.kujolang.ai/seo-audit/2026-08-10/raw/baseline/external-responses.json",
+      "agents.kujolang.ai/seo-audit/2026-08-14/data-availability.md",
+      "agents.kujolang.ai/seo-audit/2026-08-11/raw/after/external-responses.json",
+      "agents.kujolang.ai/seo-audit/2026-08-14/raw/after/external-responses.json",
+      "agents.kujolang.ai/seo-audit/2026-08-11/raw/baseline/external-responses.json",
+      "agents.kujolang.ai/seo-audit/2026-08-14/raw/baseline/external-responses.json",
+      "agents.kujolang.ai/seo-audit/publishing-house-refresh/2026-08-14/raw/baseline/external-responses.json",
+      "agents.kujolang.ai/seo-audit/publishing-house-refresh/2026-08-14/raw/after/external-responses.json"
+    ]
+  },
+  {
+    "repo": "ai-chat",
+    "files_searched": 101,
+    "payment_files": 12,
+    "sample": [
+      "ai-chat/CHANGELOG.md",
+      "ai-chat/docs/BENCHMARK_SEGMENT_ANALYSIS_RND005_2026_07_18.md",
+      "ai-chat/README.md",
+      "ai-chat/SETUP_AND_INSTALL.md",
+      "ai-chat/docs/API_CONTRACT.md",
+      "ai-chat/docs/RELIABILITY_ROADMAP_IMPLEMENTATION.md",
+      "ai-chat/lib/browser-runtime.js",
+      "ai-chat/lib/execution-journal.js",
+      "ai-chat/docs/MODEL_EVALUATION_RND002.md",
+      "ai-chat/tests/execution-journal.test.js",
+      "ai-chat/tests/browser-runtime.test.js",
+      "ai-chat/tests/server-routes.test.js"
+    ]
+  },
+  {
+    "repo": "ai-chat-tool-repair",
+    "files_searched": 60,
+    "payment_files": 6,
+    "sample": [
+      "ai-chat-tool-repair/docs/BENCHMARK_SEGMENT_ANALYSIS_RND005_2026_07_18.md",
+      "ai-chat-tool-repair/SETUP_AND_INSTALL.md",
+      "ai-chat-tool-repair/README.md",
+      "ai-chat-tool-repair/lib/browser-runtime.js",
+      "ai-chat-tool-repair/tests/browser-runtime.test.js",
+      "ai-chat-tool-repair/docs/MODEL_EVALUATION_RND002.md"
+    ]
+  },
+  {
+    "repo": "ai-sdk",
+    "files_searched": 52,
+    "payment_files": 5,
+    "sample": [
+      "ai-sdk/AI_SDK_PROVIDER_DRIVER_IMPLEMENTATION_REPORT.md",
+      "ai-sdk/AI_SDK_PROVIDER_DRIVER_FACT_FINDING.md",
+      "ai-sdk/docs/KUJO_PROVIDER_PACKAGE_CONTRACT_V1.md",
+      "ai-sdk/README.md",
+      "ai-sdk/docs/audits/repository-hardening.md"
+    ]
+  },
+  {
+    "repo": "anthropic",
+    "files_searched": 21,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "assetworks",
+    "files_searched": 26,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "azure-ai",
+    "files_searched": 14,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "baseten",
+    "files_searched": 17,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "bedrock",
+    "files_searched": 14,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "bluepencil",
+    "files_searched": 26,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "casefile",
+    "files_searched": 21,
+    "payment_files": 3,
+    "sample": [
+      "casefile/HOWTO.md",
+      "casefile/CONTRIBUTING.md",
+      "casefile/docs/audits/repository-hardening.md"
+    ]
+  },
+  {
+    "repo": "cerebras",
+    "files_searched": 21,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "changebucket",
+    "files_searched": 18,
+    "payment_files": 2,
+    "sample": [
+      "changebucket/AGENTS.md",
+      "changebucket/docs/audits/repository-hardening.md"
+    ]
+  },
+  {
+    "repo": "cinch",
+    "files_searched": 126,
+    "payment_files": 3,
+    "sample": [
+      "cinch/scripts/smoke-native-webdriver.mjs",
+      "cinch/src-tauri/src/commands/workspace.rs",
+      "cinch/src-tauri/src/commands/git.rs"
+    ]
+  },
+  {
+    "repo": "cloudflare-ai",
+    "files_searched": 21,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "cms",
+    "files_searched": 103,
+    "payment_files": 1,
+    "sample": [
+      "cms/benchmarks/hardening/README.md"
+    ]
+  },
+  {
+    "repo": "cms-contact-form",
+    "files_searched": 9,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "cms-example",
+    "files_searched": 30,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "cms-experience",
+    "files_searched": 36,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "cms-field-notes-theme",
+    "files_searched": 11,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "cohere",
+    "files_searched": 17,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "commerce",
+    "files_searched": 70,
+    "payment_files": 43,
+    "sample": [
+      "commerce/browser/commerce.js",
+      "commerce/docs/compatibility.md",
+      "commerce/docs/deployment.md",
+      "commerce/bin/kujo-commerce.mjs",
+      "commerce/docs/architecture.md",
+      "commerce/docs/products.md",
+      "commerce/docs/providers.md",
+      "commerce/SECURITY.md",
+      "commerce/docs/runtime.md",
+      "commerce/README.md",
+      "commerce/docs/production-checklist.md",
+      "commerce/docs/security.md"
+    ]
+  },
+  {
+    "repo": "concord",
+    "files_searched": 19,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "contentgraph",
+    "files_searched": 80,
+    "payment_files": 3,
+    "sample": [
+      "contentgraph/docs/release-qualification-0.2.1.md",
+      "contentgraph/CHANGELOG.md",
+      "contentgraph/scripts/prepare-field-corpora.kujo"
+    ]
+  },
+  {
+    "repo": "crud-api",
+    "files_searched": 27,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "deepinfra",
+    "files_searched": 21,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "deepseek",
+    "files_searched": 21,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "dispatch",
+    "files_searched": 71,
+    "payment_files": 2,
+    "sample": [
+      "dispatch/docs/release-checklist.md",
+      "dispatch/docs/audits/repository-hardening.md"
+    ]
+  },
+  {
+    "repo": "docs.kujolang.ai",
+    "files_searched": 312,
+    "payment_files": 22,
+    "sample": [
+      "docs.kujolang.ai/content/build/owned-agent-projects.md",
+      "docs.kujolang.ai/content/build/applications-and-publishing.md",
+      "docs.kujolang.ai/content/build/editorial-publishing.md",
+      "docs.kujolang.ai/README.md",
+      "docs.kujolang.ai/CHANGELOG.md",
+      "docs.kujolang.ai/content/learn/packages.md",
+      "docs.kujolang.ai/content/ecosystem/releases.md",
+      "docs.kujolang.ai/content/tools/ability.md",
+      "docs.kujolang.ai/content/showcases/totalrecall.md",
+      "docs.kujolang.ai/content/showcases/cinch.md",
+      "docs.kujolang.ai/content/tools/presswire.md",
+      "docs.kujolang.ai/content/tools/commerce.md"
+    ]
+  },
+  {
+    "repo": "dossier",
+    "files_searched": 33,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "email",
+    "files_searched": 386,
+    "payment_files": 23,
+    "sample": [
+      "email/README.md",
+      "email/AGENTS.md",
+      "email/agent/HANDOFF.md",
+      "email/agent/DECISIONS.md",
+      "email/docs/DEPENDENCIES_LICENSES.md",
+      "email/docs/DATA_MODEL.md",
+      "email/agent/PRODUCTION_CERTIFICATION_HANDOFF.md",
+      "email/docs/ARCHITECTURE.md",
+      "email/docs/MIGRATIONS.md",
+      "email/docs/IMPLEMENTATION_REPORT.md",
+      "email/docs/OPERATIONS.md",
+      "email/docs/TRACEABILITY.md"
+    ]
+  },
+  {
+    "repo": "eval",
+    "files_searched": 51,
+    "payment_files": 3,
+    "sample": [
+      "eval/README.md",
+      "eval/CHANGELOG.md",
+      "eval/docs/clean-checkout-qualification-2026-05-25.md"
+    ]
+  },
+  {
+    "repo": "fal",
+    "files_searched": 14,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "fence",
+    "files_searched": 102,
+    "payment_files": 5,
+    "sample": [
+      "fence/CHANGELOG.md",
+      "fence/docs/audits/confined-output-implementation.md",
+      "fence/docs/audits/repository-hardening.md",
+      "fence/docs/ci.md",
+      "fence/src/git.kujo"
+    ]
+  },
+  {
+    "repo": "fireworks",
+    "files_searched": 17,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "galleypack",
+    "files_searched": 26,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "gemini",
+    "files_searched": 19,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "groq",
+    "files_searched": 17,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "howl",
+    "files_searched": 28,
+    "payment_files": 1,
+    "sample": [
+      "howl/docs/audits/repository-hardening.md"
+    ]
+  },
+  {
+    "repo": "huggingface",
+    "files_searched": 17,
+    "payment_files": 1,
+    "sample": [
+      "huggingface/tests/installed_consumer_smoke.kujo"
+    ]
+  },
+  {
+    "repo": "intake",
+    "files_searched": 87,
+    "payment_files": 6,
+    "sample": [
+      "intake/docs/developer-onboarding-howto.md",
+      "intake/src/evals.js",
+      "intake/src/safety.js",
+      "intake/tests/smoke.mjs",
+      "intake/tests/core.test.js",
+      "intake/tests/issues.test.js"
+    ]
+  },
+  {
+    "repo": "kennel",
+    "files_searched": 129,
+    "payment_files": 12,
+    "sample": [
+      "kennel/CHANGELOG.md",
+      "kennel/README.md",
+      "kennel/docs/audits/repository-hardening.md",
+      "kennel/docs/global-tools.md",
+      "kennel/docs/production-hardening-backlog.md",
+      "kennel/docs/registry/acceptance-status.md",
+      "kennel/docs/registry/release-candidate.md",
+      "kennel/docs/registry/publishing.md",
+      "kennel/docs/enterprise-adoption-guide.md",
+      "kennel/scripts/registry/sync_releases.kujo",
+      "kennel/src/bootstrap.kujo",
+      "kennel/src/installer.kujo"
+    ]
+  },
+  {
+    "repo": "kennel-registry",
+    "files_searched": 197,
+    "payment_files": 3,
+    "sample": [
+      "kennel-registry/ENROLLMENT.md",
+      "kennel-registry/README.md",
+      "kennel-registry/registry/install.kujo"
+    ]
+  },
+  {
+    "repo": "kujo",
+    "files_searched": 974,
+    "payment_files": 17,
+    "sample": [
+      "kujo/docs/AGENT_CLEAN_ROOM_VERIFICATION_PROMPT.md",
+      "kujo/docs/AGENT_PROJECT_IMPLEMENTATION_REPORT.md",
+      "kujo/docs/CLI_PARSER_PACKAGE.md",
+      "kujo/ROADMAP.md",
+      "kujo/docs/MARKDOWN_DOC_STATUS_AUDIT_2026-07-25.md",
+      "kujo/docs/KUJO_ABILITY_ARCHITECTURE_RESEARCH.md",
+      "kujo/docs/KUJO_PACKAGE_IMPORT_RELEASE_READINESS_REPORT.md",
+      "kujo/docs/research/token-efficiency/01-current-architecture.md",
+      "kujo/docs/research/token-efficiency/16-implementation-and-validation.md",
+      "kujo/examples/collections_advanced.kujo",
+      "kujo/notes/2026-09-01_21-20_v1-2-2-release-readiness.md",
+      "kujo/notes/2026-09-05_16-43_v1-3-0-release-readiness.md"
+    ]
+  },
+  {
+    "repo": "kujo-agents",
+    "files_searched": 545,
+    "payment_files": 12,
+    "sample": [
+      "kujo-agents/chain-of-command/00-tool-agent-map.md",
+      "kujo-agents/chain-of-command/00-ecosystem-inventory.md",
+      "kujo-agents/docs/videoops-toolchain-contract.json",
+      "kujo-agents/docs/deferred-agent-opportunities.md",
+      "kujo-agents/docs/launch-checklist.md",
+      "kujo-agents/videoops/README.md",
+      "kujo-agents/scripts/generate_videoops.kujo",
+      "kujo-agents/videoops/00-media-toolchain.md",
+      "kujo-agents/videoops/tools/README.md",
+      "kujo-agents/videoops/media-generator/AGENT.md",
+      "kujo-agents/videoops/tools/docs/media-providers.md",
+      "kujo-agents/videoops/videoops-catalog.json"
+    ]
+  },
+  {
+    "repo": "kujo-docs",
+    "files_searched": 65,
+    "payment_files": 1,
+    "sample": [
+      "kujo-docs/content/showcases/totalrecall.md"
+    ]
+  },
+  {
+    "repo": "kujo-fence-f12",
+    "files_searched": 973,
+    "payment_files": 17,
+    "sample": [
+      "kujo-fence-f12/docs/AGENT_CLEAN_ROOM_VERIFICATION_PROMPT.md",
+      "kujo-fence-f12/docs/AGENT_PROJECT_IMPLEMENTATION_REPORT.md",
+      "kujo-fence-f12/docs/CLI_PARSER_PACKAGE.md",
+      "kujo-fence-f12/docs/KUJO_ABILITY_ARCHITECTURE_RESEARCH.md",
+      "kujo-fence-f12/ROADMAP.md",
+      "kujo-fence-f12/docs/KUJO_PACKAGE_IMPORT_RELEASE_READINESS_REPORT.md",
+      "kujo-fence-f12/docs/MARKDOWN_DOC_STATUS_AUDIT_2026-07-25.md",
+      "kujo-fence-f12/docs/research/token-efficiency/01-current-architecture.md",
+      "kujo-fence-f12/docs/research/token-efficiency/16-implementation-and-validation.md",
+      "kujo-fence-f12/examples/collections_advanced.kujo",
+      "kujo-fence-f12/npm/platforms/README.md",
+      "kujo-fence-f12/notes/2026-09-01_21-20_v1-2-2-release-readiness.md"
+    ]
+  },
+  {
+    "repo": "kujo-hyperframes",
+    "files_searched": 130,
+    "payment_files": 2,
+    "sample": [
+      "kujo-hyperframes/README.md",
+      "kujo-hyperframes/trust-at-speed/README.md"
+    ]
+  },
+  {
+    "repo": "kujo-hyperframes-migration",
+    "files_searched": 1,
+    "payment_files": 1,
+    "sample": [
+      "kujo-hyperframes-migration/README.md"
+    ]
+  },
+  {
+    "repo": "kujo-hyperframes-sitekit-video",
+    "files_searched": 188,
+    "payment_files": 5,
+    "sample": [
+      "kujo-hyperframes-sitekit-video/skills/kujo-release-video/SKILL.md",
+      "kujo-hyperframes-sitekit-video/skills/kujo-release-video/references/validation.json",
+      "kujo-hyperframes-sitekit-video/skills/kujo-release-video/references/pipeline.md",
+      "kujo-hyperframes-sitekit-video/trust-at-speed/README.md",
+      "kujo-hyperframes-sitekit-video/video-sitekit/WORK-STATE.md"
+    ]
+  },
+  {
+    "repo": "kujo-hyperframes-skills-release",
+    "files_searched": 90,
+    "payment_files": 1,
+    "sample": [
+      "kujo-hyperframes-skills-release/README.md"
+    ]
+  },
+  {
+    "repo": "kujo-hyperframes-v1.3.0-video",
+    "files_searched": 153,
+    "payment_files": 5,
+    "sample": [
+      "kujo-hyperframes-v1.3.0-video/kujo-v1.3.0/REVIEW.md",
+      "kujo-hyperframes-v1.3.0-video/skills/kujo-release-video/SKILL.md",
+      "kujo-hyperframes-v1.3.0-video/skills/kujo-release-video/references/pipeline.md",
+      "kujo-hyperframes-v1.3.0-video/skills/kujo-release-video/references/validation.json",
+      "kujo-hyperframes-v1.3.0-video/trust-at-speed/README.md"
+    ]
+  },
+  {
+    "repo": "kujo-hyperframes-v1.4.0-video",
+    "files_searched": 209,
+    "payment_files": 5,
+    "sample": [
+      "kujo-hyperframes-v1.4.0-video/kujo-v1.3.0/REVIEW.md",
+      "kujo-hyperframes-v1.4.0-video/skills/kujo-release-video/references/validation.json",
+      "kujo-hyperframes-v1.4.0-video/skills/kujo-release-video/SKILL.md",
+      "kujo-hyperframes-v1.4.0-video/skills/kujo-release-video/references/pipeline.md",
+      "kujo-hyperframes-v1.4.0-video/trust-at-speed/README.md"
+    ]
+  },
+  {
+    "repo": "kujo-hyperframes-video-types-worktree",
+    "files_searched": 220,
+    "payment_files": 7,
+    "sample": [
+      "kujo-hyperframes-video-types-worktree/skills/kujo-release-video/SKILL.md",
+      "kujo-hyperframes-video-types-worktree/skills/kujo-release-video/references/pipeline.md",
+      "kujo-hyperframes-video-types-worktree/skills/kujo-release-video/references/validation.json",
+      "kujo-hyperframes-video-types-worktree/skills/kujo-video-styles/references/pipeline.md",
+      "kujo-hyperframes-video-types-worktree/skills/kujo-video-styles/references/02-apple-style-micro-launch.md",
+      "kujo-hyperframes-video-types-worktree/trust-at-speed/README.md",
+      "kujo-hyperframes-video-types-worktree/videos/kujo-record-replay/AUDIO.md"
+    ]
+  },
+  {
+    "repo": "kujo-native-package-primitives",
+    "files_searched": 976,
+    "payment_files": 17,
+    "sample": [
+      "kujo-native-package-primitives/docs/AGENT_CLEAN_ROOM_VERIFICATION_PROMPT.md",
+      "kujo-native-package-primitives/docs/AGENT_PROJECT_IMPLEMENTATION_REPORT.md",
+      "kujo-native-package-primitives/docs/CLI_PARSER_PACKAGE.md",
+      "kujo-native-package-primitives/ROADMAP.md",
+      "kujo-native-package-primitives/docs/KUJO_ABILITY_ARCHITECTURE_RESEARCH.md",
+      "kujo-native-package-primitives/docs/MARKDOWN_DOC_STATUS_AUDIT_2026-07-25.md",
+      "kujo-native-package-primitives/docs/KUJO_PACKAGE_IMPORT_RELEASE_READINESS_REPORT.md",
+      "kujo-native-package-primitives/docs/research/token-efficiency/01-current-architecture.md",
+      "kujo-native-package-primitives/docs/research/token-efficiency/16-implementation-and-validation.md",
+      "kujo-native-package-primitives/examples/collections_advanced.kujo",
+      "kujo-native-package-primitives/notes/2026-09-01_21-20_v1-2-2-release-readiness.md",
+      "kujo-native-package-primitives/npm/platforms/README.md"
+    ]
+  },
+  {
+    "repo": "kujo-pi",
+    "files_searched": 65,
+    "payment_files": 6,
+    "sample": [
+      "kujo-pi/README.md",
+      "kujo-pi/docs/integration-registry.md",
+      "kujo-pi/docs/pi-onboarding.md",
+      "kujo-pi/docs/watchdog-pi-proxy.md",
+      "kujo-pi/tests/fresh-profile-contract.mjs",
+      "kujo-pi/src/extension.ts"
+    ]
+  },
+  {
+    "repo": "kujo-pinned-web",
+    "files_searched": 661,
+    "payment_files": 4,
+    "sample": [
+      "kujo-pinned-web/docs/MARKDOWN_DOC_STATUS_AUDIT_2026-07-25.md",
+      "kujo-pinned-web/ROADMAP.md",
+      "kujo-pinned-web/docs/CLI_PARSER_PACKAGE.md",
+      "kujo-pinned-web/examples/collections_advanced.kujo"
+    ]
+  },
+  {
+    "repo": "kujo-release-v1.3.0",
+    "files_searched": 966,
+    "payment_files": 16,
+    "sample": [
+      "kujo-release-v1.3.0/docs/AGENT_CLEAN_ROOM_VERIFICATION_PROMPT.md",
+      "kujo-release-v1.3.0/docs/AGENT_PROJECT_IMPLEMENTATION_REPORT.md",
+      "kujo-release-v1.3.0/docs/CLI_PARSER_PACKAGE.md",
+      "kujo-release-v1.3.0/ROADMAP.md",
+      "kujo-release-v1.3.0/docs/KUJO_ABILITY_ARCHITECTURE_RESEARCH.md",
+      "kujo-release-v1.3.0/docs/MARKDOWN_DOC_STATUS_AUDIT_2026-07-25.md",
+      "kujo-release-v1.3.0/docs/KUJO_PACKAGE_IMPORT_RELEASE_READINESS_REPORT.md",
+      "kujo-release-v1.3.0/docs/research/token-efficiency/01-current-architecture.md",
+      "kujo-release-v1.3.0/examples/collections_advanced.kujo",
+      "kujo-release-v1.3.0/notes/2026-09-01_21-20_v1-2-2-release-readiness.md",
+      "kujo-release-v1.3.0/npm/platforms/README.md",
+      "kujo-release-v1.3.0/notes/2026-09-05_16-43_v1-3-0-release-readiness.md"
+    ]
+  },
+  {
+    "repo": "kujo-release-v1.3.1",
+    "files_searched": 966,
+    "payment_files": 16,
+    "sample": [
+      "kujo-release-v1.3.1/docs/AGENT_CLEAN_ROOM_VERIFICATION_PROMPT.md",
+      "kujo-release-v1.3.1/docs/AGENT_PROJECT_IMPLEMENTATION_REPORT.md",
+      "kujo-release-v1.3.1/docs/CLI_PARSER_PACKAGE.md",
+      "kujo-release-v1.3.1/ROADMAP.md",
+      "kujo-release-v1.3.1/docs/MARKDOWN_DOC_STATUS_AUDIT_2026-07-25.md",
+      "kujo-release-v1.3.1/docs/KUJO_ABILITY_ARCHITECTURE_RESEARCH.md",
+      "kujo-release-v1.3.1/docs/KUJO_PACKAGE_IMPORT_RELEASE_READINESS_REPORT.md",
+      "kujo-release-v1.3.1/docs/research/token-efficiency/01-current-architecture.md",
+      "kujo-release-v1.3.1/examples/collections_advanced.kujo",
+      "kujo-release-v1.3.1/npm/platforms/README.md",
+      "kujo-release-v1.3.1/notes/2026-09-05_16-43_v1-3-0-release-readiness.md",
+      "kujo-release-v1.3.1/notes/2026-09-01_21-20_v1-2-2-release-readiness.md"
+    ]
+  },
+  {
+    "repo": "kujo-release-v1.4.0",
+    "files_searched": 978,
+    "payment_files": 19,
+    "sample": [
+      "kujo-release-v1.4.0/docs/AGENT_CLEAN_ROOM_VERIFICATION_PROMPT.md",
+      "kujo-release-v1.4.0/docs/AGENT_PROJECT_IMPLEMENTATION_REPORT.md",
+      "kujo-release-v1.4.0/docs/CLI_PARSER_PACKAGE.md",
+      "kujo-release-v1.4.0/ROADMAP.md",
+      "kujo-release-v1.4.0/docs/KUJO_ABILITY_ARCHITECTURE_RESEARCH.md",
+      "kujo-release-v1.4.0/docs/MARKDOWN_DOC_STATUS_AUDIT_2026-07-25.md",
+      "kujo-release-v1.4.0/docs/KUJO_PACKAGE_IMPORT_RELEASE_READINESS_REPORT.md",
+      "kujo-release-v1.4.0/docs/research/token-efficiency/01-current-architecture.md",
+      "kujo-release-v1.4.0/docs/research/token-efficiency/16-implementation-and-validation.md",
+      "kujo-release-v1.4.0/examples/collections_advanced.kujo",
+      "kujo-release-v1.4.0/notes/2026-09-01_21-20_v1-2-2-release-readiness.md",
+      "kujo-release-v1.4.0/notes/2026-09-09_09-15_v1-4-0-release-readiness.md"
+    ]
+  },
+  {
+    "repo": "kujo-skills",
+    "files_searched": 217,
+    "payment_files": 42,
+    "sample": [
+      "kujo-skills/CONTRIBUTING.md",
+      "kujo-skills/CHANGELOG.md",
+      "kujo-skills/AGENTS.md",
+      "kujo-skills/docs/launch-evidence-0.1.0.md",
+      "kujo-skills/docs/video-skills-workcell.json",
+      "kujo-skills/docs/video-skills-migration-validation.json",
+      "kujo-skills/docs/launch-checklist.md",
+      "kujo-skills/examples/README.md",
+      "kujo-skills/docs/video-skills-migration.md",
+      "kujo-skills/evals/trigger-queries.json",
+      "kujo-skills/skills/kujo-cms-workflows/SKILL.md",
+      "kujo-skills/skills/kujo-ai-chat-workflows/SKILL.md"
+    ]
+  },
+  {
+    "repo": "kujo-upgrade-linux-race",
+    "files_searched": 968,
+    "payment_files": 16,
+    "sample": [
+      "kujo-upgrade-linux-race/docs/AGENT_CLEAN_ROOM_VERIFICATION_PROMPT.md",
+      "kujo-upgrade-linux-race/docs/AGENT_PROJECT_IMPLEMENTATION_REPORT.md",
+      "kujo-upgrade-linux-race/docs/CLI_PARSER_PACKAGE.md",
+      "kujo-upgrade-linux-race/ROADMAP.md",
+      "kujo-upgrade-linux-race/docs/KUJO_ABILITY_ARCHITECTURE_RESEARCH.md",
+      "kujo-upgrade-linux-race/docs/MARKDOWN_DOC_STATUS_AUDIT_2026-07-25.md",
+      "kujo-upgrade-linux-race/docs/KUJO_PACKAGE_IMPORT_RELEASE_READINESS_REPORT.md",
+      "kujo-upgrade-linux-race/docs/research/token-efficiency/01-current-architecture.md",
+      "kujo-upgrade-linux-race/examples/collections_advanced.kujo",
+      "kujo-upgrade-linux-race/npm/platforms/README.md",
+      "kujo-upgrade-linux-race/notes/2026-08-08_05-25_v1-0-0-launch-evidence.md",
+      "kujo-upgrade-linux-race/notes/2026-09-01_21-20_v1-2-2-release-readiness.md"
+    ]
+  },
+  {
+    "repo": "kujo-videoops",
+    "files_searched": 288,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "kujo-workflows",
+    "files_searched": 356,
+    "payment_files": 32,
+    "sample": [
+      "kujo-workflows/CONTRIBUTING.md",
+      "kujo-workflows/README.md",
+      "kujo-workflows/CHANGELOG.md",
+      "kujo-workflows/agency-runner/docs/RECIPES.md",
+      "kujo-workflows/agency-verified-fix-loop/README.md",
+      "kujo-workflows/docs/audit/WEEKLY_AUDIT_2026_08_22.md",
+      "kujo-workflows/docs/audit/WEEKLY_AUDIT_2026_09_05.md",
+      "kujo-workflows/docs/audit/markdown-cleanup-summary-2026-07-28.md",
+      "kujo-workflows/docs/audit/README.md",
+      "kujo-workflows/docs/DAILY_ECOSYSTEM_ACTIVITY_AUTOMATION.md",
+      "kujo-workflows/docs/audit/WEEKLY_AUDIT_2026_08_01.md",
+      "kujo-workflows/docs/audit/WEEKLY_AUDIT_2026_08_15.md"
+    ]
+  },
+  {
+    "repo": "kujolang-mcp",
+    "files_searched": 36,
+    "payment_files": 9,
+    "sample": [
+      "kujolang-mcp/docs/NEXT_SESSION_REVIEW.md",
+      "kujolang-mcp/docs/WEEKLY_REFRESH.md",
+      "kujolang-mcp/mcp.manifest.json",
+      "kujolang-mcp/src/catalog_source.kujo",
+      "kujolang-mcp/SECURITY.md",
+      "kujolang-mcp/README.md",
+      "kujolang-mcp/data/catalog.json",
+      "kujolang-mcp/evidence/ecosystem-refresh-2026-09-09/source-inventory.json",
+      "kujolang-mcp/dist/worker.js"
+    ]
+  },
+  {
+    "repo": "kujolang.ai-source",
+    "files_searched": 0,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "kujolang.ai-work",
+    "files_searched": 582,
+    "payment_files": 148,
+    "sample": [
+      "kujolang.ai-work/content/ecosystem/34-packwrite.md",
+      "kujolang.ai-work/content/skills/003-kujo-ai-sdk-workflows.md",
+      "kujolang.ai-work/content/ecosystem/36-redact.md",
+      "kujolang.ai-work/content/ecosystem/56-commerce.md",
+      "kujolang.ai-work/content/skills/005-kujo-backlog-normalizer.md",
+      "kujolang.ai-work/content/skills/015-kujo-cross-repo-dogfood-runner.md",
+      "kujolang.ai-work/content/skills/006-kujo-benchmarks-capsule-workflows.md",
+      "kujolang.ai-work/content/skills/007-kujo-bluepencil-workflows.md",
+      "kujolang.ai-work/content/skills/001-kujo-agents-sdk-workflows.md",
+      "kujolang.ai-work/content/skills/012-kujo-concord-workflows.md",
+      "kujolang.ai-work/content/skills/010-kujo-cli-contracts.md",
+      "kujolang.ai-work/content/skills/009-kujo-changebucket-workflows.md"
+    ]
+  },
+  {
+    "repo": "kujolang.ai.incomplete",
+    "files_searched": 0,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "kujolang.ai.sparse",
+    "files_searched": 0,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "leash",
+    "files_searched": 67,
+    "payment_files": 2,
+    "sample": [
+      "leash/HOWTO.md",
+      "leash/docs/codex-follow-up-checklist.md"
+    ]
+  },
+  {
+    "repo": "lens",
+    "files_searched": 97,
+    "payment_files": 8,
+    "sample": [
+      "lens/benchmarks/runtime-upgrade/README.md",
+      "lens/CHANGELOG.md",
+      "lens/docs/enterprise-readiness-next-session.md",
+      "lens/docs/enhancements.md",
+      "lens/docs/reference.md",
+      "lens/docs/evaluations/lens-hardening-before-after.md",
+      "lens/docs/flow-authoring.md",
+      "lens/src/flow.kujo"
+    ]
+  },
+  {
+    "repo": "mcp",
+    "files_searched": 108,
+    "payment_files": 2,
+    "sample": [
+      "mcp/docs/ability-platform-verification-2026-09-02.md",
+      "mcp/integrations/kujo-ability/README.md"
+    ]
+  },
+  {
+    "repo": "mistral",
+    "files_searched": 21,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "muzzle",
+    "files_searched": 35,
+    "payment_files": 1,
+    "sample": [
+      "muzzle/docs/audits/repository-hardening.md"
+    ]
+  },
+  {
+    "repo": "nvidia-nim",
+    "files_searched": 17,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "ollama",
+    "files_searched": 22,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "openai",
+    "files_searched": 17,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "openrouter",
+    "files_searched": 17,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "packwrite",
+    "files_searched": 75,
+    "payment_files": 6,
+    "sample": [
+      "packwrite/CHANGELOG.md",
+      "packwrite/benchmarks/hardening/reports/public-case-study.md",
+      "packwrite/benchmarks/hardening/reports/technical-evaluation.md",
+      "packwrite/benchmarks/hardening/results/evaluation-results.json",
+      "packwrite/docs/audits/repository-hardening.md",
+      "packwrite/docs/ARCHITECTURE.md"
+    ]
+  },
+  {
+    "repo": "paperclip",
+    "files_searched": 90,
+    "payment_files": 1,
+    "sample": [
+      "paperclip/scripts/sync-components.mjs"
+    ]
+  },
+  {
+    "repo": "patchbrief",
+    "files_searched": 44,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "perplexity",
+    "files_searched": 17,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "presswire",
+    "files_searched": 24,
+    "payment_files": 3,
+    "sample": [
+      "presswire/docs/contracts.md",
+      "presswire/docs/NEXT_SESSION.md",
+      "presswire/README.md"
+    ]
+  },
+  {
+    "repo": "rag",
+    "files_searched": 274,
+    "payment_files": 8,
+    "sample": [
+      "rag/config/release_eval_golden_queries.json",
+      "rag/config/canary_replay_samples.json",
+      "rag/docs/LOCAL_KUJO_DOCS.md",
+      "rag/docs/security-hardening/tm05-tm07/proposals/qdrant-recoverable-commit.md",
+      "rag/docs/security-hardening/tm05-tm07/implementation/qdrant-staged-alias.md",
+      "rag/examples/chunking_preset_eval_corpus/ops_records.json",
+      "rag/tests/test_structured_ingestion_retrieval.kujo",
+      "rag/tests/test_unit.kujo"
+    ]
+  },
+  {
+    "repo": "readersignal",
+    "files_searched": 26,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "redact",
+    "files_searched": 37,
+    "payment_files": 4,
+    "sample": [
+      "redact/docs/domain-signoff/limitations.md",
+      "redact/docs/domain-signoff/expected-detections.md",
+      "redact/README.md",
+      "redact/src/verify.kujo"
+    ]
+  },
+  {
+    "repo": "relay",
+    "files_searched": 82,
+    "payment_files": 13,
+    "sample": [
+      "relay/docs/architecture.md",
+      "relay/docs/command-reference.md",
+      "relay/docs/architecture-decisions.md",
+      "relay/docs/naming-recommendation.md",
+      "relay/CHANGELOG.md",
+      "relay/README.md",
+      "relay/docs/ecosystem-discovery.md",
+      "relay/docs/live-provider-verification.md",
+      "relay/docs/integration-matrix.md",
+      "relay/src/agent_bridge.kujo",
+      "relay/src/watchdog.kujo",
+      "relay/src/doctor.kujo"
+    ]
+  },
+  {
+    "repo": "replicate",
+    "files_searched": 14,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "runledger",
+    "files_searched": 17,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "scent",
+    "files_searched": 14,
+    "payment_files": 2,
+    "sample": [
+      "scent/tests/README.md",
+      "scent/docs/audits/repository-hardening.md"
+    ]
+  },
+  {
+    "repo": "scout",
+    "files_searched": 19,
+    "payment_files": 2,
+    "sample": [
+      "scout/README.md",
+      "scout/docs/audits/repository-hardening.md"
+    ]
+  },
+  {
+    "repo": "searchbridge",
+    "files_searched": 164,
+    "payment_files": 13,
+    "sample": [
+      "searchbridge/README.md",
+      "searchbridge/CHANGELOG.md",
+      "searchbridge/SEARCHBRIDGE_PROVIDER_EXPANSION/01-current-architecture.md",
+      "searchbridge/SEARCHBRIDGE_PROVIDER_EXPANSION/ACCEPTANCE_CRITERIA.md",
+      "searchbridge/SEARCHBRIDGE_PROVIDER_EXPANSION/IMPLEMENTATION_PLAN.md",
+      "searchbridge/docs/next-session-review-0.3.md",
+      "searchbridge/docs/next-session-review-0.4.md",
+      "searchbridge/docs/release-qualification-1.0.0.md",
+      "searchbridge/docs/pre-live-production-roadmap.md",
+      "searchbridge/docs/v1.0-no-cost-execution-plan.md",
+      "searchbridge/docs/release-qualification-0.3.0.md",
+      "searchbridge/docs/v1.0-readiness-checklist.md"
+    ]
+  },
+  {
+    "repo": "shipcheck",
+    "files_searched": 18,
+    "payment_files": 2,
+    "sample": [
+      "shipcheck/docs/operations.md",
+      "shipcheck/src/report.kujo"
+    ]
+  },
+  {
+    "repo": "site-kit",
+    "files_searched": 465,
+    "payment_files": 42,
+    "sample": [
+      "site-kit/DESIGN.md",
+      "site-kit/README.md",
+      "site-kit/components/checkout-summary/checkout-summary.md",
+      "site-kit/components/checkout-summary/checkout-summary.schema.json",
+      "site-kit/components/checkout-summary/examples.json",
+      "site-kit/docs/launch-checklist.md",
+      "site-kit/docs/components.md",
+      "site-kit/docs/sitekit-gap-closure/SHOWCASE-READINESS.md",
+      "site-kit/docs/sitekit-gap-closure/API-AND-MIGRATION.md",
+      "site-kit/docs/sitekit-gap-closure/evidence/ci-results.json",
+      "site-kit/docs/sitekit-showcase-handoff/07-DOCUMENTATION-GAPS.md",
+      "site-kit/docs/sitekit-gap-closure/evidence/browser-results.json"
+    ]
+  },
+  {
+    "repo": "sitekit-docs-template",
+    "files_searched": 17,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "sitekit.kujolang.ai",
+    "files_searched": 308,
+    "payment_files": 29,
+    "sample": [
+      "sitekit.kujolang.ai/README.md",
+      "sitekit.kujolang.ai/UPSTREAM.md",
+      "sitekit.kujolang.ai/evidence/ACCEPTANCE.md",
+      "sitekit.kujolang.ai/evidence/browser-full-before-seo.json",
+      "sitekit.kujolang.ai/seo-audit/2026-09-06/baseline-hashes.json",
+      "sitekit.kujolang.ai/seo-audit/2026-09-06/baseline-site/api/components/checkout-summary.json",
+      "sitekit.kujolang.ai/seo-audit/2026-09-06/baseline-site/api/components/table.json",
+      "sitekit.kujolang.ai/seo-audit/2026-09-06/baseline-site/api/routes.json",
+      "sitekit.kujolang.ai/seo-audit/2026-09-06/external-receipts.json",
+      "sitekit.kujolang.ai/seo-audit/2026-09-06/baseline-site/api/components.json",
+      "sitekit.kujolang.ai/seo-audit/2026-09-06/baseline-site/api/search.json",
+      "sitekit.kujolang.ai/seo-audit/2026-09-07/baseline-hashes.json"
+    ]
+  },
+  {
+    "repo": "siteprobe",
+    "files_searched": 83,
+    "payment_files": 4,
+    "sample": [
+      "siteprobe/docs/audits/artifacts/html-buffers-benchmark.json",
+      "siteprobe/docs/audits/2026-09-07-python-hardening.md",
+      "siteprobe/docs/audits/artifacts/kujo-maintenance-2026-09-08/ci-receipt.json",
+      "siteprobe/docs/audits/repository-hardening.md"
+    ]
+  },
+  {
+    "repo": "source",
+    "files_searched": 116,
+    "payment_files": 7,
+    "sample": [
+      "source/docs/SITEKIT.md",
+      "source/docs/source/23-tls-deployment.md",
+      "source/README.md",
+      "source/docs/source/27-kujo-release-gate.md",
+      "source/src/postgres-store.js",
+      "source/tests/action-runner.test.js",
+      "source/tests/github-actions.test.js"
+    ]
+  },
+  {
+    "repo": "spec",
+    "files_searched": 29,
+    "payment_files": 1,
+    "sample": [
+      "spec/docs/ENTERPRISE_USAGE_GUIDE.md"
+    ]
+  },
+  {
+    "repo": "ssg",
+    "files_searched": 68,
+    "payment_files": 4,
+    "sample": [
+      "ssg/README.md",
+      "ssg/docs/research/webmcp/WEBMCP_TOOL_SURFACE.md",
+      "ssg/docs/research/webmcp/WEBMCP_SECURITY.md",
+      "ssg/starters/docs-site/content/pages/start-here.md"
+    ]
+  },
+  {
+    "repo": "storydesk",
+    "files_searched": 36,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "together",
+    "files_searched": 17,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "tribunal",
+    "files_searched": 168,
+    "payment_files": 11,
+    "sample": [
+      "tribunal/README.md",
+      "tribunal/docs/INTEGRATION_MATRIX.md",
+      "tribunal/CHANGELOG.md",
+      "tribunal/docs/audits/repository-hardening.md",
+      "tribunal/docs/audits/index-coordination.md",
+      "tribunal/docs/audits/index-coordination-receipt.json",
+      "tribunal/docs/INSTALLATION.md",
+      "tribunal/src/locking.kujo",
+      "tribunal/src/cli.kujo",
+      "tribunal/src/governance.kujo",
+      "tribunal/tests/enterprise_tests.kujo"
+    ]
+  },
+  {
+    "repo": "versionseal",
+    "files_searched": 26,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "vertex-ai",
+    "files_searched": 14,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "watchdog",
+    "files_searched": 191,
+    "payment_files": 6,
+    "sample": [
+      "watchdog/docs/native-producers.md",
+      "watchdog/README.md",
+      "watchdog/docs/plans/telemetry-interoperability/07-target-architecture.md",
+      "watchdog/docs/plans/telemetry-interoperability/IMPLEMENTATION_PLAN.md",
+      "watchdog/docs/plans/telemetry-interoperability/ACCEPTANCE_CRITERIA.md",
+      "watchdog/docs/plans/telemetry-interoperability/RISK_REGISTER.md"
+    ]
+  },
+  {
+    "repo": "watchdog-date-filters",
+    "files_searched": 61,
+    "payment_files": 1,
+    "sample": [
+      "watchdog-date-filters/README.md"
+    ]
+  },
+  {
+    "repo": "workcell",
+    "files_searched": 141,
+    "payment_files": 21,
+    "sample": [
+      "workcell/README.md",
+      "workcell/MEGA_PROMPT.md",
+      "workcell/docs/development.md",
+      "workcell/docs/official-adapter-distribution.md",
+      "workcell/docs/live-provider-certification.md",
+      "workcell/docs/backend-adapters.md",
+      "workcell/docs/plans/backend-matrix/06-target-architecture.md",
+      "workcell/docs/plans/backend-matrix/IMPLEMENTATION_PROMPT.md",
+      "workcell/docs/plans/backend-matrix/10-testing-conformance.md",
+      "workcell/docs/plans/backend-matrix/09-receipt-evidence-design.md",
+      "workcell/docs/plans/backend-matrix/03-backend-taxonomy.md",
+      "workcell/docs/plans/backend-matrix/01-current-architecture.md"
+    ]
+  },
+  {
+    "repo": "workcell-studio",
+    "files_searched": 39,
+    "payment_files": 1,
+    "sample": [
+      "workcell-studio/docs/DEPLOYMENT_RUNBOOK.md"
+    ]
+  },
+  {
+    "repo": "xai",
+    "files_searched": 17,
+    "payment_files": 0,
+    "sample": []
+  },
+  {
+    "repo": "zai",
+    "files_searched": 17,
+    "payment_files": 0,
+    "sample": []
+  }
+]

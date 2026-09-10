@@ -1,0 +1,157 @@
+✖ durable receipt survives database reopen and suppresses repeated call execution (15.819154ms)
+✖ an interrupted in-flight action requires reconciliation and cannot auto-replay (2.0906ms)
+✖ operator reconciliation resolves an uncertain outcome without discarding evidence (1.859882ms)
+✖ live database ownership prevents a second runtime from recovering active work (2.388985ms)
+✖ retention removes terminal payloads but preserves identity and uncertain/recoverable work (2.256329ms)
+✖ retention zero disables cleanup and cleanup batches stay bounded (1.845476ms)
+✖ explicit resume cannot create a new execution identity (1.783767ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 0
+ℹ fail 7
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 194.413127
+
+✖ failing tests:
+
+test at tests/execution-journal.test.js:9:1
+✖ durable receipt survives database reopen and suppresses repeated call execution (15.819154ms)
+  Error: The module '/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/better-sqlite3/build/Release/better_sqlite3.node'
+  was compiled against a different Node.js version using
+  NODE_MODULE_VERSION 127. This version of Node.js requires
+  NODE_MODULE_VERSION 137. Please try re-compiling or re-installing
+  the module (for instance, using `npm rebuild` or `npm install`).
+      at Object..node (node:internal/modules/cjs/loader:2087:18)
+      at Module.load (node:internal/modules/cjs/loader:1651:32)
+      at Module._load (node:internal/modules/cjs/loader:1443:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+      at Module.require (node:internal/modules/cjs/loader:1674:12)
+      at require (node:internal/modules/helpers:157:16)
+      at bindings (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/bindings/bindings.js:112:48)
+      at new Database (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/better-sqlite3/lib/database.js:48:64)
+      at TestContext.<anonymous> (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/tests/execution-journal.test.js:12:11)
+      at Test.runInAsyncScope (node:async_hooks:227:14) {
+    code: 'ERR_DLOPEN_FAILED'
+  }
+
+test at tests/execution-journal.test.js:35:1
+✖ an interrupted in-flight action requires reconciliation and cannot auto-replay (2.0906ms)
+  Error: The module '/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/better-sqlite3/build/Release/better_sqlite3.node'
+  was compiled against a different Node.js version using
+  NODE_MODULE_VERSION 127. This version of Node.js requires
+  NODE_MODULE_VERSION 137. Please try re-compiling or re-installing
+  the module (for instance, using `npm rebuild` or `npm install`).
+      at Object..node (node:internal/modules/cjs/loader:2087:18)
+      at Module.load (node:internal/modules/cjs/loader:1651:32)
+      at Module._load (node:internal/modules/cjs/loader:1443:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+      at Module.require (node:internal/modules/cjs/loader:1674:12)
+      at require (node:internal/modules/helpers:157:16)
+      at bindings (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/bindings/bindings.js:112:48)
+      at new Database (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/better-sqlite3/lib/database.js:48:64)
+      at TestContext.<anonymous> (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/tests/execution-journal.test.js:36:13)
+      at Test.runInAsyncScope (node:async_hooks:227:14) {
+    code: 'ERR_DLOPEN_FAILED'
+  }
+
+test at tests/execution-journal.test.js:47:1
+✖ operator reconciliation resolves an uncertain outcome without discarding evidence (1.859882ms)
+  Error: The module '/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/better-sqlite3/build/Release/better_sqlite3.node'
+  was compiled against a different Node.js version using
+  NODE_MODULE_VERSION 127. This version of Node.js requires
+  NODE_MODULE_VERSION 137. Please try re-compiling or re-installing
+  the module (for instance, using `npm rebuild` or `npm install`).
+      at Object..node (node:internal/modules/cjs/loader:2087:18)
+      at Module.load (node:internal/modules/cjs/loader:1651:32)
+      at Module._load (node:internal/modules/cjs/loader:1443:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+      at Module.require (node:internal/modules/cjs/loader:1674:12)
+      at require (node:internal/modules/helpers:157:16)
+      at bindings (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/bindings/bindings.js:112:48)
+      at new Database (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/better-sqlite3/lib/database.js:48:64)
+      at TestContext.<anonymous> (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/tests/execution-journal.test.js:48:13)
+      at Test.runInAsyncScope (node:async_hooks:227:14) {
+    code: 'ERR_DLOPEN_FAILED'
+  }
+
+test at tests/execution-journal.test.js:61:1
+✖ live database ownership prevents a second runtime from recovering active work (2.388985ms)
+  Error: The module '/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/better-sqlite3/build/Release/better_sqlite3.node'
+  was compiled against a different Node.js version using
+  NODE_MODULE_VERSION 127. This version of Node.js requires
+  NODE_MODULE_VERSION 137. Please try re-compiling or re-installing
+  the module (for instance, using `npm rebuild` or `npm install`).
+      at Object..node (node:internal/modules/cjs/loader:2087:18)
+      at Module.load (node:internal/modules/cjs/loader:1651:32)
+      at Module._load (node:internal/modules/cjs/loader:1443:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+      at Module.require (node:internal/modules/cjs/loader:1674:12)
+      at require (node:internal/modules/helpers:157:16)
+      at bindings (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/bindings/bindings.js:112:48)
+      at new Database (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/better-sqlite3/lib/database.js:48:64)
+      at TestContext.<anonymous> (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/tests/execution-journal.test.js:62:13)
+      at Test.runInAsyncScope (node:async_hooks:227:14) {
+    code: 'ERR_DLOPEN_FAILED'
+  }
+
+test at tests/execution-journal.test.js:75:1
+✖ retention removes terminal payloads but preserves identity and uncertain/recoverable work (2.256329ms)
+  Error: The module '/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/better-sqlite3/build/Release/better_sqlite3.node'
+  was compiled against a different Node.js version using
+  NODE_MODULE_VERSION 127. This version of Node.js requires
+  NODE_MODULE_VERSION 137. Please try re-compiling or re-installing
+  the module (for instance, using `npm rebuild` or `npm install`).
+      at Object..node (node:internal/modules/cjs/loader:2087:18)
+      at Module.load (node:internal/modules/cjs/loader:1651:32)
+      at Module._load (node:internal/modules/cjs/loader:1443:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+      at Module.require (node:internal/modules/cjs/loader:1674:12)
+      at require (node:internal/modules/helpers:157:16)
+      at bindings (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/bindings/bindings.js:112:48)
+      at new Database (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/better-sqlite3/lib/database.js:48:64)
+      at TestContext.<anonymous> (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/tests/execution-journal.test.js:76:11)
+      at Test.runInAsyncScope (node:async_hooks:227:14) {
+    code: 'ERR_DLOPEN_FAILED'
+  }
+
+test at tests/execution-journal.test.js:102:1
+✖ retention zero disables cleanup and cleanup batches stay bounded (1.845476ms)
+  Error: The module '/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/better-sqlite3/build/Release/better_sqlite3.node'
+  was compiled against a different Node.js version using
+  NODE_MODULE_VERSION 127. This version of Node.js requires
+  NODE_MODULE_VERSION 137. Please try re-compiling or re-installing
+  the module (for instance, using `npm rebuild` or `npm install`).
+      at Object..node (node:internal/modules/cjs/loader:2087:18)
+      at Module.load (node:internal/modules/cjs/loader:1651:32)
+      at Module._load (node:internal/modules/cjs/loader:1443:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+      at Module.require (node:internal/modules/cjs/loader:1674:12)
+      at require (node:internal/modules/helpers:157:16)
+      at bindings (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/bindings/bindings.js:112:48)
+      at new Database (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/better-sqlite3/lib/database.js:48:64)
+      at TestContext.<anonymous> (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/tests/execution-journal.test.js:103:11)
+      at Test.runInAsyncScope (node:async_hooks:227:14) {
+    code: 'ERR_DLOPEN_FAILED'
+  }
+
+test at tests/execution-journal.test.js:113:1
+✖ explicit resume cannot create a new execution identity (1.783767ms)
+  Error: The module '/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/better-sqlite3/build/Release/better_sqlite3.node'
+  was compiled against a different Node.js version using
+  NODE_MODULE_VERSION 127. This version of Node.js requires
+  NODE_MODULE_VERSION 137. Please try re-compiling or re-installing
+  the module (for instance, using `npm rebuild` or `npm install`).
+      at Object..node (node:internal/modules/cjs/loader:2087:18)
+      at Module.load (node:internal/modules/cjs/loader:1651:32)
+      at Module._load (node:internal/modules/cjs/loader:1443:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+      at Module.require (node:internal/modules/cjs/loader:1674:12)
+      at require (node:internal/modules/helpers:157:16)
+      at bindings (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/bindings/bindings.js:112:48)
+      at new Database (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/node_modules/better-sqlite3/lib/database.js:48:64)
+      at TestContext.<anonymous> (/Users/robertdevore/2026/Kujolang/kujo-repos/ai-chat/tests/execution-journal.test.js:114:11)
+      at Test.runInAsyncScope (node:async_hooks:227:14) {
+    code: 'ERR_DLOPEN_FAILED'
+  }

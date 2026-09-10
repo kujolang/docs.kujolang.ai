@@ -1,0 +1,12 @@
+
+============================================================
+Test Results
+============================================================
+  ✗ sqlite state store persists revisions and remains authoritative (833ms)
+    Error: Assertion failed: expected false, got true
+
+Tests: 1 total, 0 passed, 1 failed
+Time:  844ms
+============================================================
+
+1 test(s) failed

@@ -1,0 +1,7 @@
+{
+  "tool_count": 1,
+  "compact_tool_utf8_bytes": 1366,
+  "compact_two_internal_ability_definitions_bytes": 3056,
+  "summary_utf8_bytes": 114,
+  "measurement": "UTF-8 compact JSON byte count; no tokenizer or live latency claim"
+}

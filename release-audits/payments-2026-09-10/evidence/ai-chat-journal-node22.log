@@ -1,0 +1,52 @@
+TAP version 13
+# Subtest: durable receipt survives database reopen and suppresses repeated call execution
+ok 1 - durable receipt survives database reopen and suppresses repeated call execution
+  ---
+  duration_ms: 168.977956
+  type: 'test'
+  ...
+# Subtest: an interrupted in-flight action requires reconciliation and cannot auto-replay
+ok 2 - an interrupted in-flight action requires reconciliation and cannot auto-replay
+  ---
+  duration_ms: 56.592793
+  type: 'test'
+  ...
+# Subtest: operator reconciliation resolves an uncertain outcome without discarding evidence
+ok 3 - operator reconciliation resolves an uncertain outcome without discarding evidence
+  ---
+  duration_ms: 55.543924
+  type: 'test'
+  ...
+# Subtest: live database ownership prevents a second runtime from recovering active work
+ok 4 - live database ownership prevents a second runtime from recovering active work
+  ---
+  duration_ms: 158.964203
+  type: 'test'
+  ...
+# Subtest: retention removes terminal payloads but preserves identity and uncertain/recoverable work
+ok 5 - retention removes terminal payloads but preserves identity and uncertain/recoverable work
+  ---
+  duration_ms: 118.195959
+  type: 'test'
+  ...
+# Subtest: retention zero disables cleanup and cleanup batches stay bounded
+ok 6 - retention zero disables cleanup and cleanup batches stay bounded
+  ---
+  duration_ms: 163.7891
+  type: 'test'
+  ...
+# Subtest: explicit resume cannot create a new execution identity
+ok 7 - explicit resume cannot create a new execution identity
+  ---
+  duration_ms: 58.593143
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 972.739016
