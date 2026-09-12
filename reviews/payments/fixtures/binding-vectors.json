@@ -1,0 +1,52 @@
+[
+  {
+    "parts": [
+      "kujo.payment-snapshot-binding/v1",
+      "merchant_1",
+      "5500",
+      "USD"
+    ],
+    "encoded": "32:kujo.payment-snapshot-binding/v110:merchant_14:55003:USD",
+    "sha256": "e5920cab9c809025330aceba61c50f1f5d71862ecd39b26079bb09bb0c062188"
+  },
+  {
+    "parts": [
+      "a:b",
+      "c"
+    ],
+    "encoded": "3:a:b1:c",
+    "sha256": "1c2de18a3ef3c0cdcce3495f7903aff96f0fa91c6a862095865919b9be96554b"
+  },
+  {
+    "parts": [
+      "a",
+      "b:c"
+    ],
+    "encoded": "1:a3:b:c",
+    "sha256": "804536b63b049b4dcd2bcfedd2982e9b28736d83fdfeda47d3f05ddfad7b3532"
+  },
+  {
+    "parts": [
+      "\u00e9",
+      ""
+    ],
+    "encoded": "2:\u00e90:",
+    "sha256": "f48aa107ce279182a70c763fad46fd34c1678a6f48ab90aba1b4d4a95abc0f87"
+  },
+  {
+    "parts": [
+      "e\u0301",
+      ""
+    ],
+    "encoded": "3:e\u03010:",
+    "sha256": "b314a6ef4681bcb1d96cbd9d5732ba2702a490e5b270ee0d9624a31dd14be5d8"
+  },
+  {
+    "parts": [
+      "0",
+      ""
+    ],
+    "encoded": "1:00:",
+    "sha256": "78acf49c3584b6872cfad258b34b02b1a21257d378cc0efe3940582bff6c5beb"
+  }
+]

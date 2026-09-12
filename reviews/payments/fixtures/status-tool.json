@@ -1,0 +1,21 @@
+{
+  "type": "function",
+  "function": {
+    "name": "purchase_status",
+    "description": "Read the current status of a purchase execution without moving money.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "execution_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        }
+      },
+      "required": [
+        "execution_id"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

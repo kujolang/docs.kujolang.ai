@@ -1,0 +1,36 @@
+// Review fixture: schema and binding conformance only; no payment implementation.
+root := env("PAYMENT_REVIEW_ROOT")
+ability_root := env("PAYMENT_ABILITY_ROOT")
+ability_schema := parse_json(read_file(ability_root + "/schema/ability.schema.json"))
+for name in ["agent-ability.json", "status-ability.json", "cancel-ability.json", "reconcile-ability.json", "executor-ability.json"] {
+    value := parse_json(read_file(root + "/fixtures/" + name))
+    assert(json_schema_validate(value, ability_schema)["valid"], "Ability schema rejected proposed definition")
+}
+request_ability := parse_json(read_file(root + "/fixtures/agent-ability.json"))
+status_ability := parse_json(read_file(root + "/fixtures/status-ability.json"))
+assert(request_ability["idempotency"]["mode"] == "keyed", "Intake must be keyed")
+assert(status_ability["idempotency"]["mode"] == "intrinsic", "Status must not replay cached pending output")
+for request in parse_json(read_file(root + "/fixtures/valid-requests.json")) {
+    assert(json_schema_validate(request, request_ability["input_schema"])["valid"], "Valid purchase rejected")
+}
+for request in parse_json(read_file(root + "/fixtures/valid-status-requests.json")) {
+    assert(json_schema_validate(request, status_ability["input_schema"])["valid"], "Valid status lookup rejected")
+}
+for request in [{"execution_id": "exec_1", "token": "SENTINEL_SPT"}, {}, {"execution_id": "exec_1", "principal": "other"}] {
+    assert(json_schema_validate(request, status_ability["input_schema"])["valid"] == false, "Forbidden status input accepted")
+}
+examples := parse_json(read_file(root + "/fixtures/domain/examples.json"))
+for name in ["intent", "execution", "authorization", "receipt", "observation", "capabilities", "snapshot"] {
+    schema := parse_json(read_file(root + "/fixtures/domain/" + name + ".schema.json"))
+    assert(json_schema_validate(examples[name], schema)["valid"], "Valid domain example rejected: " + name)
+    mut malicious := examples[name]
+    malicious["provider_secret"] := "SENTINEL_PROVIDER_SECRET"
+    assert(json_schema_validate(malicious, schema)["valid"] == false, "Unknown field accepted: " + name)
+}
+for vector in parse_json(read_file(root + "/fixtures/binding-vectors.json")) {
+    mut encoded := ""
+    for part in vector["parts"] { encoded = encoded + to_string(byte_length(part)) + ":" + part }
+    assert(encoded == vector["encoded"], "UTF-8 field framing mismatch")
+    assert(sha256(encoded) == vector["sha256"], "Cross-language field-vector digest mismatch")
+}
+print("Five Ability definitions, seven domain schemas, closed inputs and six Python/Kujo binding vectors passed")
