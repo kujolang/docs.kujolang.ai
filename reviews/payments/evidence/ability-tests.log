@@ -1,0 +1,12 @@
+Type checking warnings:
+  [KUJORUN001] [runtime] Undefined Function: Undefined function 'json_schema_validate'
+  --> 0:0
+   = note: Function must be defined before it is called
+
+
+ability contract tests: all assertions passed
+ability runtime contract tests: all assertions passed
+Kujo/TypeScript/Python Ability SDK conformance passed
+Ability registry signature, revocation, compatibility, and isolation checks passed
+Ability fixture devkit validation, approval, idempotency, and receipt checks passed
+check passed: ability.kujo

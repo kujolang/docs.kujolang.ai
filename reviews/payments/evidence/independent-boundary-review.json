@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-12",
+  "method": "Fresh-context read-only independent agent; architecture mapping, not exhaustive vulnerability audit",
+  "repositories": [
+    "ability",
+    "agents-sdk",
+    "dispatch",
+    "workcell",
+    "commerce"
+  ],
+  "conclusion": "Ownership split confirmed; no upstream changes required by proposed design",
+  "incorporated_constraints": [
+    "Stable server-minted invocation identity across Ability keyed replay to satisfy SDK receipt identity validation",
+    "Dispatch SQLite mode still writes sanitized filesystem exports",
+    "Direct local Ability projection and trusted callback services are not privilege boundaries",
+    "Workcell declared secrets are accessible to its workload",
+    "Generic timeout, audit and idempotency commit failures are not financial no-effect evidence"
+  ],
+  "limitations": [
+    "No Payments implementation",
+    "No live payment or credentials",
+    "No deployment breakout test"
+  ]
+}

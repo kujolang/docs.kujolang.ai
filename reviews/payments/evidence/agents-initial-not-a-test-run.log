@@ -1,0 +1,32 @@
+Type checking warnings:
+  [KUJORUN001] [runtime] Undefined Function: Undefined function 'read_definition'
+  --> 0:0
+   = note: Function must be defined before it is called
+
+  [KUJORUN001] [runtime] Undefined Function: Undefined function 'json_schema_validate'
+  --> 0:0
+   = note: Function must be defined before it is called
+
+  [KUJORUN001] [runtime] Undefined Function: Undefined function 'read_definition'
+  --> 0:0
+   = note: Function must be defined before it is called
+
+  [KUJORUN001] [runtime] Undefined Function: Undefined function 'read_definition'
+  --> 0:0
+   = note: Function must be defined before it is called
+
+  [KUJORUN001] [runtime] Undefined Function: Undefined function 'read_definition'
+  --> 0:0
+   = note: Function must be defined before it is called
+
+  [KUJORUN001] [runtime] Undefined Function: Undefined function 'read_definition'
+  --> 0:0
+   = note: Function must be defined before it is called
+
+  [KUJORUN001] [runtime] Undefined Function: Undefined function 'read_definition'
+  --> 0:0
+   = note: Function must be defined before it is called
+
+  [KUJORUN001] [runtime] Undefined Function: Undefined function 'read_definition'
+  --> 0:0
+   = note: Function must be defined before it is called

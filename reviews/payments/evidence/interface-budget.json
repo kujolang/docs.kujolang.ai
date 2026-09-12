@@ -1,0 +1,18 @@
+{
+  "tool_count": 2,
+  "compact_tools_utf8_bytes": 1361,
+  "per_tool_utf8_bytes": {
+    "purchase_request": 1049,
+    "purchase_status": 309
+  },
+  "summary_utf8_bytes": 114,
+  "summary": {
+    "execution_id": "exec_1",
+    "status": "awaiting_authorization",
+    "next_action": "await_authorization",
+    "receipt_ref": null
+  },
+  "measurement": "UTF-8 compact JSON bytes, not tokenizer counts",
+  "schema_budget_bytes": 4096,
+  "summary_budget_bytes": 512
+}

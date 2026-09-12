@@ -1,0 +1,145 @@
+{
+  "review_date": "2026-09-12",
+  "runtime": {
+    "path": "/Users/robertdevore/2026/Kujolang/kujo-repos/kujo/target/debug/kujo",
+    "sha256": "fc5578e09b54ee3bb2843171e5de882001b9749e3b3493380f1985269edcaf54",
+    "version": "kujo 1.4.0"
+  },
+  "node_version": "v24.20.0",
+  "python_version": "Python 3.10.5",
+  "runs": [
+    {
+      "name": "ability",
+      "repository": "ability",
+      "command": [
+        "bash",
+        "tests/run_tests.sh"
+      ],
+      "exit_code": 0,
+      "scope": "Contract/runtime, cross-language SDK, registry/devkit assertions; all passed",
+      "log": "ability-tests.log",
+      "sha256": "f514a91b1ee056f2d88fbe206b05ff5f4ec64d2a095c90fbc34717a15fe3173f"
+    },
+    {
+      "name": "commerce",
+      "repository": "commerce",
+      "command": [
+        "npm",
+        "run",
+        "validate"
+      ],
+      "exit_code": 0,
+      "scope": "52 tests plus syntax/security checks",
+      "log": "commerce-tests.log",
+      "sha256": "dd0c6c6a797faeb1059791ed2c4ceca192b54f989cfe261b5bba4e1bb25f81a6"
+    },
+    {
+      "name": "lens",
+      "repository": "lens/bridge",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exit_code": 0,
+      "scope": "51 tests; fixture/browser bridge tests, not payment containment",
+      "log": "lens-tests.log",
+      "sha256": "769975da21a22d0163d2434f578791dc2e64c2228857e042a1066eb91967fc43"
+    },
+    {
+      "name": "agents",
+      "repository": "agents-sdk",
+      "command": [
+        "../kujo/target/debug/kujo",
+        "test-run",
+        "tests/ability_contract_tests.kujo"
+      ],
+      "exit_code": 0,
+      "scope": "7 tests; corrected from run which does not execute test blocks",
+      "log": "agents-tests.log",
+      "sha256": "8abd777c7493774b2b7f4f527398d4ba38e850e8fb52050f1791d8ff358c4fe1"
+    },
+    {
+      "name": "mcp",
+      "repository": "mcp",
+      "command": [
+        "../kujo/target/debug/kujo",
+        "run",
+        "tests/test_09_ability_gateway.kujo",
+        "--interpreter"
+      ],
+      "exit_code": 0,
+      "scope": "Entrypoint assertion script passed",
+      "log": "mcp-tests.log",
+      "sha256": "9e38b5ef08dcdc8e3ce3e010a3afb4c1cb2dc28d25f228ed17ba29b42388596c"
+    },
+    {
+      "name": "workcell",
+      "repository": "workcell",
+      "command": [
+        "bash",
+        "tests/schema_contract.sh"
+      ],
+      "exit_code": 0,
+      "scope": "Schema contract; no physical containment claim",
+      "log": "workcell-tests.log",
+      "sha256": "f73dfaa888246d5589e282c8af513634cd61eabfc445b0c8bbbde15b7ff9a851"
+    },
+    {
+      "name": "dispatch-lock",
+      "repository": "dispatch",
+      "command": [
+        "bash",
+        "tests/run_lock_concurrency_tests.sh"
+      ],
+      "exit_code": 0,
+      "scope": "One winner, three timeouts; KUJO_BIN=../kujo/target/debug/kujo",
+      "log": "dispatch-lock-tests.log",
+      "sha256": "724650d5a7275c1c14f263a79e59453abe34b67450ca37b07301013dfbc2db56"
+    },
+    {
+      "name": "dispatch-state",
+      "repository": "dispatch",
+      "command": [
+        "../kujo/target/debug/kujo",
+        "test-run",
+        "tests/state_store_sqlite_tests.kujo"
+      ],
+      "exit_code": 0,
+      "scope": "1 test; DISPATCH_STATE_BACKEND=sqlite; corrected from run",
+      "log": "dispatch-state-tests.log",
+      "sha256": "abb19883b2bb29a231d03e222b08b616c766f2a3ecb670844f6302b63aa75cb9"
+    },
+    {
+      "name": "contracts",
+      "repository": "review",
+      "command": [
+        "kujo",
+        "run",
+        "fixtures/validate_contracts.kujo"
+      ],
+      "exit_code": 0,
+      "scope": "Five Ability and seven domain schemas; six cross-language binding vectors",
+      "log": "contracts-tests.log",
+      "sha256": "c1872d38ff60095bd3af2428dd7188e5047ec2a72b5dc259bf5e545e9157be6c"
+    },
+    {
+      "name": "proof",
+      "repository": "review",
+      "command": [
+        "python3",
+        "fixtures/proof_model.py"
+      ],
+      "exit_code": 0,
+      "scope": "12 model tests; no real payment execution",
+      "log": "proof-tests.log",
+      "sha256": "a8262c777b284f75b8620a63f7d42ec965312a33d629ef67f7ea42c29605cd4c"
+    }
+  ],
+  "omissions": [
+    "No Link/real-money call",
+    "No deployed credential breakout",
+    "No complete ecosystem security audit",
+    "No live throughput/latency measurement",
+    "Initial run invocations for test-block files were non-tests; corrected and counted separately"
+  ]
+}

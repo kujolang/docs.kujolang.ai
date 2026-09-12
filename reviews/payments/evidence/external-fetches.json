@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://docs.stripe.com/agentic-commerce/link-cli/use-link-wallet-pay-online.md",
+    "status": 200,
+    "sha256": "56613b62b127a802a4a1dcd42a56d0170270ec821b66e6f58f2891819aedea98",
+    "bytes": 18000,
+    "local": "/tmp/payments-primary-0.txt"
+  },
+  {
+    "url": "https://docs.stripe.com/agentic-commerce/link-cli/machine-payments.md",
+    "status": 200,
+    "sha256": "c51c44259675316fcd2df6f94bd5375c4f5de43274150c2d3d7ef0e392802365",
+    "bytes": 2319,
+    "local": "/tmp/payments-primary-1.txt"
+  },
+  {
+    "url": "https://docs.stripe.com/agentic-commerce/concepts/shared-payment-tokens.md?agent-seller=agent",
+    "status": 200,
+    "sha256": "65eadef0ee4896bbd553090a85617dedd664935e57772cff075944c9d9e393c8",
+    "bytes": 16893,
+    "local": "/tmp/payments-primary-2.txt"
+  },
+  {
+    "url": "https://docs.stripe.com/agentic-commerce/concepts/shared-payment-tokens.md?agent-seller=seller",
+    "status": 200,
+    "sha256": "a663e6dd4890aa65ecebf231d0584af3a03c4148fbd230e1b14ba3495b12dd00",
+    "bytes": 5621,
+    "local": "/tmp/payments-primary-3.txt"
+  },
+  {
+    "url": "https://docs.stripe.com/agentic-commerce/link-cli/oauth.md",
+    "status": 200,
+    "sha256": "67ce9604a457e1575e10eca57c9e90d517ca93575eac5f543b175e7c540e9914",
+    "bytes": 7953,
+    "local": "/tmp/payments-primary-4.txt"
+  },
+  {
+    "url": "https://mpp.dev/protocol/credentials",
+    "status": 200,
+    "sha256": "3e4fefc6f0f1a85661102fdc710e44c8c8577948fa479f00ddb2a8be159ccc56",
+    "bytes": 4092,
+    "local": "/tmp/payments-primary-5.txt"
+  },
+  {
+    "url": "https://mpp.dev/protocol/receipts",
+    "status": 200,
+    "sha256": "c1ae23e296aa4d9762263af0eeb1320b706b87cc8bee992fd48050c1f00a70c2",
+    "bytes": 2016,
+    "local": "/tmp/payments-primary-6.txt"
+  },
+  {
+    "url": "https://mpp.dev/payment-methods/stripe/charge",
+    "status": 200,
+    "sha256": "ea36e4a30de93155eb9e269f664da2e88335c2c33b400181c885c67ea787636d",
+    "bytes": 17008,
+    "local": "/tmp/payments-primary-7.txt"
+  },
+  {
+    "url": "https://mpp.dev/protocol/transports/mcp",
+    "status": 200,
+    "sha256": "6bf798c2568a0a3cf3ef504f923adcec77dcd29c7b0083a0cd90131bc55a5d5b",
+    "bytes": 4630,
+    "local": "/tmp/payments-primary-8.txt"
+  }
+]

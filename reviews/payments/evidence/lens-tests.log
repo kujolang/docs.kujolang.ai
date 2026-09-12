@@ -1,0 +1,65 @@
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> lens-browser-bridge@1.1.0 test
+> node --test
+
+✔ browser-bridge resolveViewport: presets (2.731563ms)
+✔ browser-bridge resolveViewport: custom WxH (0.848551ms)
+✔ browser-bridge resolveViewport: unknown falls back to desktop size, keeps name (0.816248ms)
+✔ browser-bridge parseArgs: defaults and flags (1.483526ms)
+✔ browser-bridge parseArgs: invalid browser falls back to chromium (0.712807ms)
+✔ browser-bridge THROTTLE_PROFILES are well formed (0.704752ms)
+✔ browser-bridge mapWithConcurrency preserves input order (41.601012ms)
+✔ browser bridges bound evidence arrays without silent growth (0.455092ms)
+✔ flow-bridge resolveViewport: preset + custom (0.508264ms)
+✔ flow-bridge parseArgs reads program/screenshot/video dirs (0.459022ms)
+✔ flow-bridge screenshot names cannot escape the screenshot directory (0.912229ms)
+✔ flow-bridge applies the flow timeout to steps without overrides (0.630619ms)
+✔ flow-bridge detects oversized recordings before artifact publication (0.669964ms)
+✔ inspect-bridge parseArgs: url/timeout/max-elements (0.485566ms)
+✔ inspect-bridge parseArgs: defaults (0.238494ms)
+✔ inspect-bridge suggests the test attribute that actually exists (1416.388949ms)
+✔ browser-bridge excludes display-none links from captured link evidence (496.857626ms)
+✔ browser-bridge caps captured links while preserving DOM order (549.107526ms)
+✔ timings record failures using numeric fields without error content (2.457933ms)
+✔ context is closed when page creation fails (587.403045ms)
+✔ structured launch failure is authoritative (4.208049ms)
+✔ readiness cap and dispose remove event listeners (61.433627ms)
+✔ failed typing never echoes Playwright call logs (1.204702ms)
+▶ real browser runtime evidence, flows, and isolation
+  ✔ readiness / (2015.082538ms)
+  ✔ readiness /late-dom (1117.406789ms)
+  ✔ readiness /late-console (1075.161248ms)
+  ✔ readiness /xhr-page (1079.561927ms)
+  ✔ readiness /spa (1066.954582ms)
+  ✔ readiness /never-idle (2161.716684ms)
+  ✔ readiness /polling (2171.543223ms)
+  ✔ readiness /never-settles (2156.70417ms)
+  ✔ explicit readiness selector (195.058092ms)
+  ✔ isolated context state and ordered viewports (2172.322788ms)
+  ✔ partial viewport failure preserves successful evidence (1099.019302ms)
+  ✔ unrecorded clicks/type/scroll never call recording waits (777.971624ms)
+  ✔ assertions wait for expected asynchronous click state (469.481356ms)
+  ✔ native recording, stable path, typed secrets, step ordering (2631.230566ms)
+  ✔ inspect excludes prefilled form values from text and selectors (145.768979ms)
+  ✔ crashed browser replaced for next job without replay (1978.817754ms)
+✔ real browser runtime evidence, flows, and isolation (22372.439785ms)
+✔ typed secret is scrubbed from nested runtime evidence (0.522014ms)
+✔ private session IPC, busy rejection, idle shutdown, stale path recovery (2694.609125ms)
+✔ readiness deadline survives an unresponsive page evaluation (51.895257ms)
+✔ malformed private flow input never appears in fatal diagnostics (131.885856ms)
+✔ unavailable owned session returns authoritative structured failure (109.579791ms)
+✔ disconnected client retires its active browser job (264.026979ms)
+✔ closing a host during launch closes the late browser (1.367ms)
+✔ context creation and close operations have deadlines (62.529277ms)
+✔ cleanup deadline preserves evidence and retires the browser (2304.937927ms)
+✔ recording teardown failure preserves steps and removes incomplete video (3.099475ms)
+✔ readiness observes its minimum horizon without premature browser round trips (501.881322ms)
+ℹ tests 51
+ℹ suites 0
+ℹ pass 51
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 29396.22071

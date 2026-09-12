@@ -1,0 +1,48 @@
+{
+  "url": "https://github.com/stripe/link-cli",
+  "commit": "4aa62ba34eaeb884d00041681f5c7801521c0bf8",
+  "cli_version": "0.19.1",
+  "retrieved": "2026-09-12",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "cd5063ac15c9d5bcc1291cdde92e42fb7c0f2e66e41719f815a7e12700061629"
+    },
+    {
+      "path": "packages/cli/package.json",
+      "sha256": "5fa670d68d2701275791c3cbd96c44649cf3f79494fc282b91cbaa784b509e62"
+    },
+    {
+      "path": "packages/sdk/src/resources/interfaces.ts",
+      "sha256": "adaff3d03e41868812c8b3539693f647303b689c94eabdb4e31b55b7c542553a"
+    },
+    {
+      "path": "packages/sdk/src/resources/spend-request.ts",
+      "sha256": "eb106147ca832d494ca8c565fef2d20b6bb2815a34e4160c366d45286084868e"
+    },
+    {
+      "path": "packages/sdk/src/resources/transactions.ts",
+      "sha256": "493dd4888cba04309110d37a65def047d27a87b69e618e94a2f2ecd8f3b6d9d9"
+    },
+    {
+      "path": "packages/sdk/src/resources/base.ts",
+      "sha256": "907f578a6c7c7af7e9bbc2c32dcbfd64274a2939ae59ce0be2c661aa227d6201"
+    },
+    {
+      "path": "packages/sdk/src/types/index.ts",
+      "sha256": "ac440a7cb14d3b6668ed13620774dc453e684028ba55d65aea9a83bf455f6323"
+    },
+    {
+      "path": "packages/cli/src/auth/storage.ts",
+      "sha256": "ab873aa6d8865239ba53a8598043f49e95e87b62ec3fca458d33fd8b01eb2d48"
+    },
+    {
+      "path": "packages/cli/src/commands/mpp/pay.tsx",
+      "sha256": "34141b6330bcb658d73e2301e8ccc66b43653f6e7f840b028af50a3419b36f27"
+    },
+    {
+      "path": "packages/cli/src/commands/spend-request/retrieve.tsx",
+      "sha256": "fcc90ac44388b6c50ace297aa35b15776db73b4c2405b2ea7acbb31d19385fd5"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> @kujolang/commerce@0.4.0 validate
+> node --check bin/kujo-commerce.mjs && node --check runtime/index.mjs && node --check browser/commerce.js && npm run security:patterns && npm test
+
+npm warn Unknown env config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> @kujolang/commerce@0.4.0 security:patterns
+> node scripts/security-patterns.mjs
+
+Security pattern checks passed
+npm warn Unknown env config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> @kujolang/commerce@0.4.0 test
+> node --test test/*.test.mjs
+
+✔ structured money supports zero and three decimal currencies (7.078345ms)
+✔ variants become stable purchasable catalog entries (30.245103ms)
+✔ canonical config loader supports yaml, yml, and json consistently (11.123343ms)
+✔ configuration rejects generated output traversal (0.964284ms)
+✔ additional providers create current hosted checkout request shapes (79.85976ms)
+✔ malformed and unknown-version storage reset safely (6.123832ms)
+✔ storage drops malformed items and authoritative browser prices (2.263098ms)
+✔ add, increment, max, remove, and count are deterministic (1.160026ms)
+✔ quantity clamps to bounds and values below one remove (13.032303ms)
+✔ init defaults to zero-runtime static Link mode (647.602992ms)
+✔ init hybrid explicitly creates the Mock runtime example (253.086504ms)
+✔ provider capabilities are explicit (22.681124ms)
+✔ loads and validates normal content (45.301904ms)
+✔ duplicate sku has source context (21.284073ms)
+✔ malformed Commerce metadata fails with source context (7.577051ms)
+✔ catalog exposes only safe active-provider identifiers (4.776225ms)
+✔ missing or disabled Commerce config delegates unchanged to SSG (36.711866ms)
+✔ checkout ignores browser price and resolves trusted item (64.054849ms)
+✔ unknown sku and bad quantity fail (4.050458ms)
+✔ request safety rejects methods, content type, origins, and duplicate SKUs (9.420896ms)
+✔ Stripe checkout request includes hosted features and idempotency (5.206779ms)
+✔ Polar checkout enforces one item and constructs current session request (2.407327ms)
+✔ Link checkout rejects cart semantics and unsafe URLs (0.460419ms)
+✔ every customer portal capability works through its supported flow (2.844571ms)
+✔ authenticated portal handler never accepts a browser-authored customer ID (3.402757ms)
+✔ PayPal return capture completes an approved order with an idempotency key (2.217907ms)
+✔ runtime limiter rejects excess checkout and resets at the next window (1.586753ms)
+✔ normalizes known and unknown events (3.936277ms)
+✔ stripe signature verification (14.441177ms)
+✔ webhook rejects invalid signatures and normalizes verified Mock events (1.43734ms)
+✔ webhook fails closed without a secret and deduplicates fulfillment (1.088448ms)
+✔ provider contract: mock (2.233677ms)
+✔ provider contract: link (0.400255ms)
+✔ provider contract: stripe (80.515908ms)
+✔ provider contract: polar (0.269405ms)
+✔ provider contract: paypal (0.598569ms)
+✔ provider contract: square (0.22916ms)
+✔ provider contract: paddle (0.264929ms)
+✔ provider contract: lemon-squeezy (0.447276ms)
+✔ conformance suite rejects incomplete adapters (1.048653ms)
+✔ Cloudflare adapters pass request, environment, and authenticated portal context (127.031974ms)
+✔ Netlify adapter preserves standards Request and Response (1.056719ms)
+✔ Vercel adapter converts Node requests and responses without losing status or headers (2.419399ms)
+✔ all JSON schemas compile (47.016351ms)
+✔ schemas reject malformed cart and event payloads (1.127574ms)
+✔ generated catalog satisfies the catalog contract (23.307623ms)
+✔ copyable Static Mode example contains no runtime code or unsafe checkout URL (134.896736ms)
+✔ Static Mode documentation names its capability boundary (3.88029ms)
+✔ Mock verification stays offline (4.883994ms)
+✔ Stripe verification is read-only and detects suspicious price drift (112.643526ms)
+✔ Polar verification detects archived products (0.885108ms)
+✔ Link verification uses HEAD and accepts redirects (0.619368ms)
+ℹ tests 52
+ℹ suites 0
+ℹ pass 52
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1509.276347

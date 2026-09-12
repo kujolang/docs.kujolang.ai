@@ -1,0 +1,17 @@
+test_all_consequential_fields_change_binding (__main__.ReviewProof) ... ok
+test_cancellation_and_claim_serialize (__main__.ReviewProof) ... ok
+test_consumed_approval_rolls_back_claim (__main__.ReviewProof) ... ok
+test_crash_points_cannot_resubmit (__main__.ReviewProof) ... ok
+test_distinct_processes_have_one_dispatch (__main__.ReviewProof) ... ok
+test_exact_money_and_cap (__main__.ReviewProof) ... ok
+test_no_uncertain_or_terminal_path_returns_to_ready (__main__.ReviewProof) ... ok
+test_observed_claim_is_not_a_dispatch_permit (__main__.ReviewProof) ... ok
+test_parallel_claims_have_one_winner (__main__.ReviewProof) ... ok
+test_processor_does_not_hide_repeated_submissions (__main__.ReviewProof) ... ok
+test_projection_drops_nested_sentinel_fields (__main__.ReviewProof) ... ok
+test_tombstone_blocks_reuse_after_payload_retention (__main__.ReviewProof) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.681s
+
+OK
