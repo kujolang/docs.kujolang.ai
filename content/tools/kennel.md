@@ -7,10 +7,10 @@ nav_title: Kennel
 order: 20
 audience: developer
 difficulty: intermediate
-status: local scope verified
-version: current
-last_updated: 2026-09-09
-scope: local-first
+status: stable
+version: 1.1.0
+last_updated: 2026-09-13
+scope: official registry and local development
 source_repo: kennel
 previous: /tools/kujo/
 next: /tools/spec/
@@ -28,7 +28,9 @@ Your project needs a dependency manifest, resolved lockfile, source policy, or t
 | --- | --- |
 | Project setup | `new`, `init`, and manifest generation |
 | Dependencies | `add`, `install`, and frozen lockfile validation |
-| Sources | Local file dependencies, static indexes, mirrors, and semver resolution |
+| Sources | Official HTTPS registry, local file dependencies, custom static indexes, and SemVer resolution |
+| Global tools | `tool install`, `update`, `list`, `run`, and `remove` |
+| Client updates | `self update` |
 | Policy | Source allowlists, trust rules, checksums, and lockfile integrity |
 
 ## Main workflows
@@ -40,12 +42,21 @@ Your project needs a dependency manifest, resolved lockfile, source policy, or t
 
 ## Five-minute example
 
-```bash
-kujo run kennel.kujo --interpreter -- init --name kennel-demo
-kujo run kennel.kujo --interpreter -- add file:../some-local-package --alias some-local-package
-kujo run kennel.kujo --interpreter -- install
-kujo run kennel.kujo --interpreter -- validate
+Install [Kujo 1.4.0 or newer](/install/) first. On macOS or Linux:
+
+```sh
+curl -fsSL https://kennel.kujolang.ai/install.sh -o /tmp/kennel-install.sh
+sh /tmp/kennel-install.sh
+. "$HOME/.kennel/env"
+kennel --version
+kennel init --name kennel-demo
+kennel add changebucket
+kennel install
+kennel tool install shipcheck
+shipcheck --help
 ```
+
+The installer adds a managed PATH entry to your shell profiles. No Git or Python is required for official package installation. Use `kennel self update` for the client and `kennel tool update` for installed unpinned tools.
 
 ## What you get
 
@@ -57,7 +68,7 @@ Read [Packages with Kennel](/learn/packages/) before choosing registry or file d
 
 ## Boundaries
 
-The official static registry is available at [kennel.kujolang.ai](https://kennel.kujolang.ai/). The latest published client remains 1.0.1; merged native bootstrap and global tool commands belong to the unreleased 1.1.0 candidate. Use `kennel.toml` and `kennel.lock` for this client. Kujo 1.4.0 does not automatically upgrade Kennel. Accounts and third-party publishing are not available.
+The official static registry is available at [kennel.kujolang.ai](https://kennel.kujolang.ai/). Kennel 1.1.0 provides the native bootstrap and global tool commands, using Kujo 1.4.0 or newer. Native Windows bootstrap is not supported. Use `kennel.toml` and `kennel.lock` for this client. Kujo 1.4.0 does not automatically upgrade Kennel. Accounts and third-party publishing are not available.
 
 ## Reference
 

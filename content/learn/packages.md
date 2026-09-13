@@ -10,7 +10,7 @@ audience: developer
 difficulty: intermediate
 status: stable
 version: current
-last_updated: 2026-09-09
+last_updated: 2026-09-13
 previous: /learn/capabilities/
 next: /learn/editor-support/
 tags: [packages, kennel, lockfiles]
@@ -26,13 +26,13 @@ Kujo's built-in package commands and the separate Kennel client have different m
 
 ## Kennel project dependencies
 
-From a Kennel checkout, use its entrypoint with an explicit path:
+Install the separate [Kennel client](/tools/kennel/), then run:
 
 ```bash
-kujo run /path/to/kennel/kennel.kujo --interpreter -- init --name my-project
-kujo run /path/to/kennel/kennel.kujo --interpreter -- add file:../some-local-package --alias some-local-package
-kujo run /path/to/kennel/kennel.kujo --interpreter -- install
-kujo run /path/to/kennel/kennel.kujo --interpreter -- validate
+kennel init --name my-project
+kennel add changebucket
+kennel install
+kennel validate
 ```
 
 Commit the manifest and lockfile. Follow the pinned client's frozen-install and trust policy when reproducing a build.
@@ -51,6 +51,6 @@ These commands manage the runtime's `kujo.toml` / `kujo.lock` contract. They do 
 
 [The official Kennel registry](https://kennel.kujolang.ai/) distributes immutable first-party package releases. GitHub remains the development and release source. Public package reads need no account.
 
-As checked on September 9, the latest published Kennel client is **1.0.1**. The merged **1.1.0 candidate** contains the new native bootstrap and global tool-command work and awaits its own release. Kujo 1.4.0 supplies the compatible runtime primitives; upgrading Kujo does not release or install that Kennel candidate. Consult [Kennel's release notes](https://github.com/kujolang/kennel/releases) before relying on candidate commands.
+Kennel **1.1.0** is the native registry client and requires **Kujo 1.4.0 or newer**. Install Kujo, install Kennel, then use package names such as `kennel add changebucket` or exact versions such as `kennel add changebucket@1.0.0`. The resulting lockfile records the exact version and verified artifact. Local development still supports `kennel add file:../some-local-package --alias some-local-package`.
 
 Read [Kennel](/tools/kennel/) for local/source workflows and the [provider index](/ecosystem/providers/) for pinned provider packages. Third-party accounts, scoped publishing, and private-package services remain future work.

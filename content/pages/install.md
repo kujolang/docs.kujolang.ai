@@ -10,7 +10,7 @@ audience: developer
 difficulty: beginner
 status: stable
 version: 1.4.0
-last_updated: 2026-09-09
+last_updated: 2026-09-13
 previous: /start-here/
 next: /quickstart/
 prerequisites:
@@ -45,7 +45,7 @@ Native upgrades replace only the runtime executable. Ecosystem tools and package
 
 ## Runtime requirements
 
-The prebuilt Kujo CLI does not require Python, Node.js, or Rust to run ordinary Kujo programs. Source builds require Rust; npm installation requires Node.js. Individual tools may have additional requirements. Kujo v1.4.0 supplies the Linux/macOS runtime primitives for the upcoming native Kennel installer; that client has a separate release and installation step.
+The prebuilt Kujo CLI does not require Python, Node.js, or Rust to run ordinary Kujo programs. Source builds require Rust; npm installation requires Node.js. Individual tools may have additional requirements. Kujo v1.4.0 supplies the Linux/macOS runtime primitives for the native Kennel 1.1.0 installer; that client has a separate release and installation step.
 
 ## Source install
 
