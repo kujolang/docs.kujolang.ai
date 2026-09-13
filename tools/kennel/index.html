@@ -101,7 +101,7 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="kennel">Kennel</h1><p class="docs-description">Manage deterministic manifests, dependencies, lockfiles, and trust policy.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-09</span></div>
+		<h1 id="kennel">Kennel</h1><p class="docs-description">Manage deterministic manifests, dependencies, lockfiles, and trust policy.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-13</span></div>
 		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>Your project needs a dependency manifest, resolved lockfile, source policy, or trust decision that should be reviewable.</p>
 <h2 id="interface-overview">Interface overview</h2>
@@ -119,7 +119,15 @@
 </tr>
 <tr>
 <td>Sources</td>
-<td>Local file dependencies, static indexes, mirrors, and semver resolution</td>
+<td>Official HTTPS registry, local file dependencies, custom static indexes, and SemVer resolution</td>
+</tr>
+<tr>
+<td>Global tools</td>
+<td><code>tool install</code>, <code>update</code>, <code>list</code>, <code>run</code>, and <code>remove</code></td>
+</tr>
+<tr>
+<td>Client updates</td>
+<td><code>self update</code></td>
 </tr>
 <tr>
 <td>Policy</td>
@@ -134,16 +142,23 @@
 <li>Keep Git development separate from release distribution; official release automation builds immutable registry artifacts.</li>
 </ul>
 <h2 id="five-minute-example">Five-minute example</h2>
-<pre><code class="language-bash">kujo run kennel.kujo --interpreter -- init --name kennel-demo
-kujo run kennel.kujo --interpreter -- add file:../some-local-package --alias some-local-package
-kujo run kennel.kujo --interpreter -- install
-kujo run kennel.kujo --interpreter -- validate</code></pre>
+<p>Install <a href="/install/">Kujo 1.4.0 or newer</a> first. On macOS or Linux:</p>
+<pre><code class="language-sh">curl -fsSL https://kennel.kujolang.ai/install.sh -o /tmp/kennel-install.sh
+sh /tmp/kennel-install.sh
+. &quot;$HOME/.kennel/env&quot;
+kennel --version
+kennel init --name kennel-demo
+kennel add changebucket
+kennel install
+kennel tool install shipcheck
+shipcheck --help</code></pre>
+<p>The installer adds a managed PATH entry to your shell profiles. No Git or Python is required for official package installation. Use <code>kennel self update</code> for the client and <code>kennel tool update</code> for installed unpinned tools.</p>
 <h2 id="what-you-get">What you get</h2>
 <p>An explicit manifest and lockfile-backed resolution result.</p>
 <h2 id="how-it-fits">How it fits</h2>
 <p>Read <a href="/learn/packages/">Packages with Kennel</a> before choosing registry or file dependency behavior.</p>
 <h2 id="boundaries">Boundaries</h2>
-<p>The official static registry is available at <a href="https://kennel.kujolang.ai/">kennel.kujolang.ai</a>. The latest published client remains 1.0.1; merged native bootstrap and global tool commands belong to the unreleased 1.1.0 candidate. Use <code>kennel.toml</code> and <code>kennel.lock</code> for this client. Kujo 1.4.0 does not automatically upgrade Kennel. Accounts and third-party publishing are not available.</p>
+<p>The official static registry is available at <a href="https://kennel.kujolang.ai/">kennel.kujolang.ai</a>. Kennel 1.1.0 provides the native bootstrap and global tool commands, using Kujo 1.4.0 or newer. Native Windows bootstrap is not supported. Use <code>kennel.toml</code> and <code>kennel.lock</code> for this client. Kujo 1.4.0 does not automatically upgrade Kennel. Accounts and third-party publishing are not available.</p>
 <h2 id="reference">Reference</h2>
 <p>See the <a href="https://github.com/kujolang/kennel">Kennel repository</a> for manifest and trust policy details.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/kujo/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/spec/" rel="next"><span>Next</span></a></nav>
 	</article>

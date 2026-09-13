@@ -102,7 +102,7 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="install-kujo">Install Kujo</h1><p class="docs-description">Install Kujo v1.4.0 and the tool group you need, or build the CLI from source.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>1.4.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-09</span></div>
+		<h1 id="install-kujo">Install Kujo</h1><p class="docs-description">Install Kujo v1.4.0 and the tool group you need, or build the CLI from source.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>1.4.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-13</span></div>
 		<section class="docs-prerequisites" aria-label="Prerequisites"><h2 id="prerequisites">Prerequisites</h2><ul class="docs-prerequisites-list"><li>A supported macOS, Linux, or Windows workstation</li><li>A writable terminal workspace</li></ul></section>
 		<div class="docs-body"><p>Kujo <code>v1.4.0</code> is the current stable release. On Linux and macOS, the public ecosystem installer selects the correct archive, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory. On Windows, use the Windows archive from the release or the npm installation path described in the runtime repository.</p>
 <h2 id="install-kujo-2">Install Kujo</h2>
@@ -115,7 +115,7 @@ export PATH=&quot;$HOME/.local/bin:$PATH&quot;</code></pre>
 <p>Use <a href="/upgrade/"><code>kujo upgrade</code></a> to update a standalone runtime, or <code>kujo upgrade --check --json</code> to inspect availability without changing files. The command is available in v1.3.0 and later. Users of v1.2.3 or older must first install a current release through the installer or original package manager.</p>
 <p>Native upgrades replace only the runtime executable. Ecosystem tools and package pins keep their own update workflows. Read the guide for exact-version selection, managed installations, and backup recovery.</p>
 <h2 id="runtime-requirements">Runtime requirements</h2>
-<p>The prebuilt Kujo CLI does not require Python, Node.js, or Rust to run ordinary Kujo programs. Source builds require Rust; npm installation requires Node.js. Individual tools may have additional requirements. Kujo v1.4.0 supplies the Linux/macOS runtime primitives for the upcoming native Kennel installer; that client has a separate release and installation step.</p>
+<p>The prebuilt Kujo CLI does not require Python, Node.js, or Rust to run ordinary Kujo programs. Source builds require Rust; npm installation requires Node.js. Individual tools may have additional requirements. Kujo v1.4.0 supplies the Linux/macOS runtime primitives for the native Kennel 1.1.0 installer; that client has a separate release and installation step.</p>
 <h2 id="source-install">Source install</h2>
 <pre><code class="language-bash">git clone https://github.com/kujolang/kujo.git
 cd kujo
