@@ -1,4 +1,4 @@
 {
-  "date": "2026-09-09",
-  "summary": "Runtime 1.4.0, current ecosystem releases, and a source-backed distinction between released packages and ongoing development."
+  "date": "2026-09-13",
+  "summary": "Runtime 1.4.0 and released Kennel 1.1.0, including native bootstrap, global tools, and official registry installation."
 }

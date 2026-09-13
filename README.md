@@ -2,7 +2,7 @@
 
 The official documentation site for the Kujo language and ecosystem, published at [docs.kujolang.ai](https://docs.kujolang.ai).
 
-Version **1.4.0**, dated **September 9, 2026**, refreshes runtime and ecosystem guidance, released workflow discovery, and package-manager boundaries. Homepage and footer markers are generated from `VERSION` and `release.json` and verified during the build. The site follows the Kujo documentation information architecture: a short first-run path, task-oriented learning, intent-based tool guidance, reviewable-work workflows, showcases, collections, and reference material.
+Version **1.4.0**, updated **September 13, 2026**, refreshes runtime and ecosystem guidance, released workflow discovery, and package-manager boundaries. Homepage and footer markers are generated from `VERSION` and `release.json` and verified during the build. The site follows the Kujo documentation information architecture: a short first-run path, task-oriented learning, intent-based tool guidance, reviewable-work workflows, showcases, collections, and reference material.
 
 ## Build
 
