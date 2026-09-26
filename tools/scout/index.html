@@ -101,7 +101,7 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="scout">Scout</h1><p class="docs-description">Build a structured map of an unfamiliar repository.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-27</span></div>
+		<h1 id="scout">Scout</h1><p class="docs-description">Build a structured map of an unfamiliar repository.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-26</span></div>
 		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>You need to understand a repository&apos;s files, entry points, contracts, dependencies, and risk before changing it.</p>
 <h2 id="interface-overview">Interface overview</h2>
@@ -122,6 +122,10 @@
 <td>Baseline suppression plus SARIF and JSONL exports</td>
 </tr>
 <tr>
+<td>Boundaries</td>
+<td>Rooted bounded reads, aggregate resource ceilings, strict partial-scan exits, and stable <code>SCOUT-LIMIT-*</code> identifiers</td>
+</tr>
+<tr>
 <td>Artifacts</td>
 <td><code>FILE_TREE.md</code>, <code>llms.txt</code>, <code>AGENTS.md</code>, <code>CHECKLIST.md</code>, <code>intelligence.json</code>, and <code>scan_manifest.json</code></td>
 </tr>
@@ -132,18 +136,28 @@
 <li>Generate durable repository context files for humans and downstream agents.</li>
 <li>Export security findings into machine-readable formats for existing review systems.</li>
 <li>Compare findings with a reviewed baseline while keeping suppressed items visible on demand.</li>
+<li>Use the versioned performance and labeled-corpus receipts as regression evidence in CI.</li>
 </ul>
 <h2 id="five-minute-example">Five-minute example</h2>
-<pre><code class="language-bash">kujo run scout.kujo -- . --quick
+<pre><code class="language-bash">git clone --depth 1 --branch v1.1.0 https://github.com/kujolang/scout.git
+cd scout
+kujo run scout.kujo -- . --quick
 kujo run scout.kujo -- ./src -o ./reports -d 3</code></pre>
+<p>Scout 1.1.0 requires Kujo 1.5.0 or newer.</p>
 <h2 id="what-you-get">What you get</h2>
-<p>A structured context map, file tree, intelligence summary, and optional security or dependency exports.</p>
+<p>A structured context map, file tree, intelligence summary, scan manifest, and optional</p>
+<p>SARIF, JSONL, Kennel, security, or dependency outputs. The 1.1.0 release also publishes</p>
+<p>deterministic performance ceilings and exact-match evidence for 18 route families,</p>
+<p>10 dependency-manifest families, and the security fixture corpus.</p>
 <h2 id="how-it-fits">How it fits</h2>
 <p>Pass only the useful parts to <a href="/tools/scent/">Scent</a> before execution.</p>
 <h2 id="boundaries">Boundaries</h2>
-<p>Scout is repository intelligence, not an automatic implementation plan or security certification.</p>
+<p>Scout is repository intelligence, not an automatic implementation plan, complete static</p>
+<p>analyzer, or security certification. Its quality metrics are corpus-scoped, and findings</p>
+<p>and partial-scan diagnostics still require review.</p>
 <h2 id="reference">Reference</h2>
-<p>See the <a href="https://github.com/kujolang/scout">Scout repository</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/eval/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/dispatch/" rel="next"><span>Next</span></a></nav>
+<p>See the <a href="https://github.com/kujolang/scout/releases/tag/v1.1.0">Scout 1.1.0 release</a></p>
+<p>and <a href="https://github.com/kujolang/scout">repository</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/eval/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/dispatch/" rel="next"><span>Next</span></a></nav>
 	</article>
 	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
