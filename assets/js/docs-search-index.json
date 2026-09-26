@@ -2056,7 +2056,7 @@
         "How it fits",
         "Boundaries",
         "Reference",
-        "Published release and current development"
+        "Published release"
       ],
       "text": "Use it when\u2026 You need a local proxy or dashboard to understand AI request volume, cost, latency, errors, and audit records. Interface overview | Surface | What is available | | --- | --- | | Proxy | OpenAI-compatible requests under /proxy/v1 with passthrough or override auth | | APIs | /api/requests, /api/proxy-config, health, readiness, and structured expor"
     },
