@@ -42,4 +42,4 @@ Web and publishing tools include:
 - [AssetWorks](/tools/assetworks/) — media plans, provenance, accessibility artifacts, and checksums.
 - [VersionSeal](/tools/versionseal/) — checksum-bound human approvals, authority, and revocation.
 - [PressWire](/tools/presswire/) — approval-gated publication effects and receipts.
-- [ReaderSignal](/tools/readersignal/) — privacy-bounded measurement and evidence-linked learning.
+- [ReaderSignal](/tools/readersignal/) — privacy-bounded measurement, crash recovery, bounded query pages, and exact-evidence checkpoints (0.3.0).

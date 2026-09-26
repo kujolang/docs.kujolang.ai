@@ -14,7 +14,7 @@ last_updated: 2026-09-26
 tags: [ecosystem, releases, versions, installation]
 ---
 
-This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout refreshed from its September 26 release. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
+This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
 
 ## Start here
 
@@ -64,7 +64,7 @@ Install [Kujo 1.4.0](/install/) for the current runtime. A standalone binary run
 | [patchbrief](https://github.com/kujolang/patchbrief) | [v1.0.1](https://github.com/kujolang/patchbrief/releases/tag/v1.0.1) | 2026-08-30 |
 | [presswire](https://github.com/kujolang/presswire) | [v0.2.0](https://github.com/kujolang/presswire/releases/tag/v0.2.0) | 2026-08-14 |
 | [rag](https://github.com/kujolang/rag) | [v1.0.0](https://github.com/kujolang/rag/releases/tag/v1.0.0) | 2026-08-08 |
-| [readersignal](https://github.com/kujolang/readersignal) | [v0.2.0](https://github.com/kujolang/readersignal/releases/tag/v0.2.0) | 2026-08-14 |
+| [readersignal](https://github.com/kujolang/readersignal) | [v0.3.0](https://github.com/kujolang/readersignal/releases/tag/v0.3.0) | 2026-09-26 |
 | [redact](https://github.com/kujolang/redact) | [v1.0.0](https://github.com/kujolang/redact/releases/tag/v1.0.0) | 2026-08-09 |
 | [relay](https://github.com/kujolang/relay) | [v1.1.0](https://github.com/kujolang/relay/releases/tag/v1.1.0) | 2026-08-27 |
 | [runledger](https://github.com/kujolang/runledger) | [v1.1.0](https://github.com/kujolang/runledger/releases/tag/v1.1.0) | 2026-08-31 |
