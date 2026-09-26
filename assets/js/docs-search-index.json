@@ -400,7 +400,7 @@
         "Tags and source-only packages",
         "Agent discovery"
       ],
-      "text": "This inventory was checked against all 86 public kujolang repositories on September 9, 2026 , with Scout refreshed from its September 26 release. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease GitHub Release found for each package; it does not claim that eve"
+      "text": "This inventory was checked against all 86 public kujolang repositories on September 9, 2026 , with Scout and ReaderSignal refreshed from their September 26 releases. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease GitHub Release found for each package; it doe"
     },
     {
       "title": "Showcase Directory",
@@ -1665,18 +1665,20 @@
       "audience": "all",
       "difficulty": "advanced",
       "status": "production-oriented local scope",
-      "version": "current",
+      "version": "0.3.0",
       "tags": [
         "[tool, analytics, privacy, learning]"
       ],
       "headings": [
         "Use it when\u2026",
+        "Install 0.3.0",
         "Five-minute example",
         "What you get",
+        "Recovery and checkpoints",
         "Boundaries",
         "Reference"
       ],
-      "text": "Use it when\u2026 Audience learning needs immutable measurement snapshots, feedback, privacy policy, deletion receipts, uncertainty-aware comparisons, and evidence links. Five-minute example What you get Bounded snapshots, feedback and comparison records, audit history, privacy-policy evidence, optional PressWire verification, and portable exports. Boundaries Rea"
+      "text": "Use it when\u2026 Audience learning needs immutable measurement snapshots, feedback, compatible comparisons, and evidence links. Statistical sampling, retention decisions, and adapter privacy checks are Kujo module APIs; the CLI operates on stored records. Install 0.3.0 Requires POSIX Kujo 1.5.0 at revision d501c2c46c51718ee10c4434f6cf9750bbd81453 or a compatible"
     },
     {
       "title": "Redact",

@@ -101,22 +101,53 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="readersignal">ReaderSignal</h1><p class="docs-description">Record privacy-bounded audience measurements, feedback, comparisons, and learning.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>all</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>production-oriented local scope</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
+		<h1 id="readersignal">ReaderSignal</h1><p class="docs-description">Record privacy-bounded audience measurements, feedback, comparisons, and learning.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>all</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>production-oriented local scope</span><span class="docs-badge docs-badge-version"><span>Version</span>0.3.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-26</span></div>
 		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
-<p>Audience learning needs immutable measurement snapshots, feedback, privacy policy, deletion receipts, uncertainty-aware comparisons, and evidence links.</p>
+<p>Audience learning needs immutable measurement snapshots, feedback, compatible comparisons, and evidence links. Statistical sampling, retention decisions, and adapter privacy checks are Kujo module APIs; the CLI operates on stored records.</p>
+<h2 id="install-0-3-0">Install 0.3.0</h2>
+<pre><code class="language-bash">git clone --branch v0.3.0 https://github.com/kujolang/readersignal.git
+cd readersignal
+export KUJO_BIN=/absolute/path/to/kujo
+export PATH=&quot;$PWD/bin:$PATH&quot;
+readersignal --version --json</code></pre>
+<p>Requires POSIX Kujo 1.5.0 at revision</p>
+<p><code>d501c2c46c51718ee10c4434f6cf9750bbd81453</code> or a compatible newer build. The</p>
+<p>version number alone does not guarantee the preview locking, paging, bounded</p>
+<p>read, confined write, and directory-sync APIs. The validation script probes the</p>
+<p>required capabilities. Existing 0.1.0 and 0.2.0 records remain readable under</p>
+<p>contract 1.0.0; new records identify tool version 0.3.0. Stop older writers and</p>
+<p>run <code>init</code> before using an existing state directory.</p>
 <h2 id="five-minute-example">Five-minute example</h2>
 <pre><code class="language-bash">readersignal init --state .readersignal --json
 readersignal snapshot --input fixtures/core.json --actor analyst --json
 readersignal validate --json
 readersignal export --output readersignal-export.json --json</code></pre>
 <h2 id="what-you-get">What you get</h2>
-<p>Bounded snapshots, feedback and comparison records, audit history, privacy-policy evidence, optional PressWire verification, and portable exports.</p>
+<p>Bounded snapshots, feedback and comparison records, validated audit history, optional PressWire verification, portable exports, resumable query pages, journal-backed crash recovery, and trusted checkpoint backup/restore.</p>
+<h2 id="recovery-and-checkpoints">Recovery and checkpoints</h2>
+<pre><code class="language-bash">readersignal recovery-status --state .readersignal --id snapshot-example --json
+readersignal recover --state .readersignal --id snapshot-example --actor operator --dry-run --json
+readersignal recover --state .readersignal --id snapshot-example --actor operator --json
+readersignal backup --state .readersignal --id snapshot-example --output /trusted-backups/snapshot-example.json --json
+readersignal restore --state .readersignal-restored --id snapshot-example --input /trusted-backups/snapshot-example.json --actor operator --dry-run --json
+readersignal restore --state .readersignal-restored --id snapshot-example --input /trusted-backups/snapshot-example.json --actor operator --json
+readersignal validate --state .readersignal-restored --id snapshot-example --json</code></pre>
+<p>Use an actual record ID from <code>snapshot</code> or <code>report</code>; the example ID is a placeholder.</p>
+<p>The external backup parent must already exist. A checkpoint preserves one original</p>
+<p>record and its creation event, not all history, metadata, or attachments. Restore</p>
+<p>refuses existing destination evidence and never invents missing history; provenance</p>
+<p>must be trusted independently of checksums. Both checkpoint commands support</p>
+<p><code>--dry-run</code>. Resume an interrupted restore with <code>recover</code>.</p>
+<p>Directory sync barriers order intent, record, history, and cleanup publication.</p>
+<p>An uncertain durability error may follow a successful namespace change: inspect</p>
+<p>and recover instead of blindly retrying a create. The guarantee assumes the OS,</p>
+<p>filesystem, and hardware honor sync. The state root and its parents remain trusted.</p>
 <h2 id="boundaries">Boundaries</h2>
 <p>ReaderSignal does not claim causal attribution, hosted identity, or distributed multi-host coordination. External measurement providers remain optional adapters.</p>
 <h2 id="reference">Reference</h2>
-<p>See the <a href="https://github.com/kujolang/readersignal">ReaderSignal repository</a>.</p></div>
+<p>See the <a href="https://github.com/kujolang/readersignal/releases/tag/v0.3.0">0.3.0 release</a>, <a href="https://github.com/kujolang/readersignal/blob/v0.3.0/docs/contracts.md">contracts</a>, and <a href="https://github.com/kujolang/readersignal/blob/v0.3.0/docs/audits/durability-and-backups.md">durability and backup guide</a>.</p></div>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#install-0-3-0">Install 0.3.0</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#recovery-and-checkpoints">Recovery and checkpoints</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
