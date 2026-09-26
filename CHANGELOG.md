@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Document the Scout 1.1.0 release, Kujo 1.5.0 runtime floor, bounded scanning
+  contracts, machine-readable limit diagnostics, corpus-scoped quality evidence,
+  and native Windows verification.
+
 ## [1.4.0] - 2026-09-09
 
 - Refresh the ecosystem release inventory, current tool guidance, and released versus source-only boundaries.

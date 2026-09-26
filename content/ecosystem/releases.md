@@ -14,7 +14,7 @@ last_updated: 2026-09-26
 tags: [ecosystem, releases, versions, installation]
 ---
 
-This inventory was checked against all **86 public kujolang repositories on September 9, 2026**. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
+This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout refreshed from its September 26 release. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
 
 ## Start here
 
@@ -69,7 +69,7 @@ Install [Kujo 1.4.0](/install/) for the current runtime. A standalone binary run
 | [relay](https://github.com/kujolang/relay) | [v1.1.0](https://github.com/kujolang/relay/releases/tag/v1.1.0) | 2026-08-27 |
 | [runledger](https://github.com/kujolang/runledger) | [v1.1.0](https://github.com/kujolang/runledger/releases/tag/v1.1.0) | 2026-08-31 |
 | [scent](https://github.com/kujolang/scent) | [v1.0.0](https://github.com/kujolang/scent/releases/tag/v1.0.0) | 2026-08-08 |
-| [scout](https://github.com/kujolang/scout) | [v1.0.0](https://github.com/kujolang/scout/releases/tag/v1.0.0) | 2026-08-08 |
+| [scout](https://github.com/kujolang/scout) | [v1.1.0](https://github.com/kujolang/scout/releases/tag/v1.1.0) | 2026-09-26 |
 | [searchbridge](https://github.com/kujolang/searchbridge) | [v1.0.0](https://github.com/kujolang/searchbridge/releases/tag/v1.0.0) | 2026-09-04 |
 | [shipcheck](https://github.com/kujolang/shipcheck) | [v1.0.0](https://github.com/kujolang/shipcheck/releases/tag/v1.0.0) | 2026-08-08 |
 | [site-kit](https://github.com/kujolang/site-kit) | [v1.0.0](https://github.com/kujolang/site-kit/releases/tag/v1.0.0) | 2026-08-09 |
@@ -93,8 +93,9 @@ The Kujo Pi row was refreshed on September 26, 2026. Other entries retain their 
 - **SiteProbe 0.3.0:** native Kujo product commands and platform-qualified source archives; its test tooling can still require Python. Read [SiteProbe](/tools/siteprobe/).
 - **Skills 0.7.0, Workflows 0.6.0, Agents 1.4.0:** 135 skills, 44 local workflows, and canonical VideoOps tools and schemas. Live media permission and provider limits remain explicit. Read [skills](/collections/skills/) and [workflows](/collections/workflows/).
 - **Commerce 0.4.0:** static hosted links by default, optional dynamic checkout, customer portals, and webhook normalization. Provider sandbox qualification remains bounded. Read [Commerce](/tools/commerce/).
+- **Scout 1.1.0:** bounded rooted reads, aggregate limits, security exports, deterministic performance and labeled-corpus gates, stable CI diagnostics, and native Windows contract coverage. It requires Kujo 1.5.0 or newer. Read [Scout](/tools/scout/).
 - **Agents SDK, Dispatch, RAG, Watchdog, RunLedger, and Eval:** newer default-branch work connects retrieval preferences and bounded lifecycle telemetry. Their guides identify source revisions separately from the older published release archives.
-- **CaseFile, Fence, Scent, Scout, ShipCheck, Howl, Redact, AI SDK, and Dossier:** recent source hardening has its own verification evidence. Pin the reviewed source when adopting those fixes; an unchanged release archive does not acquire later commits.
+- **CaseFile, Fence, Scent, ShipCheck, Howl, Redact, AI SDK, and Dossier:** recent source hardening has its own verification evidence. Pin the reviewed source when adopting those fixes; an unchanged release archive does not acquire later commits.
 
 ## Tags and source-only packages
 
