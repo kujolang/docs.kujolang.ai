@@ -75,6 +75,7 @@ A local-first path through the Kujo language and ecosystem.
 - [GalleyPack](https://docs.kujolang.ai/tools/galleypack/) — Bind editorial artifacts into versioned, checksum-backed production packages.
 - [Howl](https://docs.kujolang.ai/tools/howl/) — Render verified examples into Markdown, HTML, SVG, gallery, and caption assets.
 - [Kennel](https://docs.kujolang.ai/tools/kennel/) — Manage deterministic manifests, dependencies, lockfiles, and trust policy.
+- [Kujo Pi](https://docs.kujolang.ai/tools/kujo-pi/) — Install the opt-in Kujo integration for Pi, with Ability tools, Watchdog metadata, and bounded operation receipts.
 - [Kujo](https://docs.kujolang.ai/tools/kujo/) — Write and run local-first Kujo programs.
 - [Leash](https://docs.kujolang.ai/tools/leash/) — Supervise local AI agents through policy-gated approvals and a mobile control plane.
 - [Lens](https://docs.kujolang.ai/tools/lens/) — Review browser behavior with screenshots, accessibility, links, and flows.

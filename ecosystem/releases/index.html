@@ -101,7 +101,7 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="ecosystem-releases">Ecosystem releases</h1><p class="docs-description">Current published Kujo ecosystem versions, recent source changes, and explicit installation boundaries.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>all</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>dated release inventory</span><span class="docs-badge docs-badge-version"><span>Version</span>1.4.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-09</span></div>
+		<h1 id="ecosystem-releases">Ecosystem releases</h1><p class="docs-description">Current published Kujo ecosystem versions, recent source changes, and explicit installation boundaries.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>all</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>dated release inventory</span><span class="docs-badge docs-badge-version"><span>Version</span>1.4.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-26</span></div>
 		<div class="docs-body"><p>This inventory was checked against all <strong>86 public kujolang repositories on September 9, 2026</strong>. Product releases, protocol versions, repository tags, and the docs site&apos;s version are separate. The table lists the latest non-draft, non-prerelease <strong>GitHub Release</strong> found for each package; it does not claim that every current default-branch feature exists in that release.</p>
 <h2 id="start-here">Start here</h2>
 <p>Install <a href="/install/">Kujo 1.4.0</a> for the current runtime. A standalone binary runs ordinary Kujo programs without Python, Node.js, or Rust. Individual applications and tools retain their own dependencies, supported platforms, runtime pins, and update procedures.</p>
@@ -244,8 +244,8 @@
 </tr>
 <tr>
 <td><a href="https://github.com/kujolang/kujo-pi">kujo-pi</a></td>
-<td><a href="https://github.com/kujolang/kujo-pi/releases/tag/v1.0.0">v1.0.0</a></td>
-<td>2026-08-30</td>
+<td><a href="https://github.com/kujolang/kujo-pi/releases/tag/v1.1.0">v1.1.0</a></td>
+<td>2026-09-26</td>
 </tr>
 <tr>
 <td><a href="https://github.com/kujolang/kujo-skills">kujo-skills</a></td>
@@ -388,7 +388,11 @@
 <td>2026-09-04</td>
 </tr>
 </tbody></table>
+<p>The Kujo Pi row was refreshed on September 26, 2026. Other entries retain their individually documented inventory dates.</p>
 <h2 id="recent-changes-worth-checking">Recent changes worth checking</h2>
+<ul>
+<li><strong>Kujo Pi 1.1.0:</strong> approval-gated Ability tools, opt-in Watchdog v2 metadata, bounded telemetry and artifact inspection, and receipt-failure recovery. Read <a href="/tools/kujo-pi/">Kujo Pi</a>.</li>
+</ul>
 <ul>
 <li><strong>AI Chat 1.2.0:</strong> durable recovery, bounded streams and context, and RAG documentation lookup. Follow its Node and storage upgrade requirements; the eight-hour soak remains incomplete. Read <a href="/showcases/ai-chat/">AI Chat</a>.</li>
 <li><strong>Workcell 1.1.0:</strong> stable Docker/Podman execution, with portable contracts and remote adapters still alpha. Keep the package&apos;s qualified runtime pin. Read <a href="/tools/workcell/">Workcell</a>.</li>
@@ -400,7 +404,7 @@
 </ul>
 <h2 id="tags-and-source-only-packages">Tags and source-only packages</h2>
 <p>The <a href="/ecosystem/providers/">25-provider index</a> records pinned source tags and driver compatibility. Many provider tags have no corresponding GitHub Release. Their tag-based installation instructions remain valid; do not substitute an older GitHub Release solely because it has a release page. AI SDK&apos;s documented 1.1.0 provider baseline is likewise distinct from its latest GitHub Release.</p>
-<p>Kujo Pi&apos;s latest published GitHub Release is 1.0.0; a 1.1.0 version file on the default branch is release preparation. Repositories without a GitHub Release, including infrastructure and some application sources, are not assigned invented release versions here. Private projects retain their documented access boundaries.</p>
+<p>Kujo Pi 1.1.0 is published on GitHub and npm; install <code>npm:@kujolang/kujo-pi@1.1.0</code> through Pi. See <a href="/tools/kujo-pi/">Kujo Pi</a> for its separate host and runtime requirements. Repositories without a GitHub Release, including infrastructure and some application sources, are not assigned invented release versions here. Private projects retain their documented access boundaries.</p>
 <h2 id="agent-discovery">Agent discovery</h2>
 <p>The public <a href="https://mcp.kujolang.ai/mcp">Kujo MCP catalog</a> exposes read-only project, skill, workflow, and installer guidance. It is separate from the MCP framework and from private application gateways. Refreshes publish a reviewed static snapshot; they do not execute installer commands or grant application permissions.</p></div>
 	</article>

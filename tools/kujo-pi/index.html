@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="kujo-light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		(function() {
+			try {
+				if (window.localStorage.getItem('sk-theme') === 'kujo-dark') {
+					document.documentElement.dataset.theme = 'kujo-dark';
+				}
+			} catch (error) {}
+		})();
+	</script>
+	<title>Kujo Pi | Kujo Docs</title>
+	<meta name="description" content="Install the opt-in Kujo integration for Pi, with Ability tools, Watchdog metadata, and bounded operation receipts.">
+	<meta name="keywords" content="SSG, Static Site Generator">
+	<meta name="author" content="Kujo">
+	<link rel="canonical" href="https://docs.kujolang.ai/tools/kujo-pi/">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/assets/img/kujo-logomark-black.svg" color="#000000">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="application-name" content="Kujo Docs">
+	<meta name="apple-mobile-web-app-title" content="Kujo Docs">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Kujo Pi">
+	<meta property="og:description" content="Install the opt-in Kujo integration for Pi, with Ability tools, Watchdog metadata, and bounded operation receipts.">
+	<meta property="og:url" content="https://docs.kujolang.ai/tools/kujo-pi/">
+	<meta property="og:type" content="article">
+	<meta property="og:site_name" content="Kujo Docs">
+	<meta property="og:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Kujo Pi">
+	<meta name="twitter:description" content="Install the opt-in Kujo integration for Pi, with Ability tools, Watchdog metadata, and bounded operation receipts.">
+	<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta name="twitter:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<link href="../../assets/css/fonts.css" rel="stylesheet">
+	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Kujo Pi","name":"Kujo Pi","description":"Install the opt-in Kujo integration for Pi, with Ability tools, Watchdog metadata, and bounded operation receipts.","url":"https://docs.kujolang.ai/tools/kujo-pi/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="docs-topbar" id="navigation">
+	<div class="docs-topbar-row">
+		<a class="docs-brand" href="../../index.html"><img class="docs-brand-mark" src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"> <span>Docs</span></a>
+		<label class="docs-search-shell">
+			<span class="sr-only">Search documentation</span>
+			<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
+		</label>
+		<div class="docs-header-actions">
+			<button class="docs-theme-button docs-icon-button" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-docs-theme>
+				<svg class="docs-moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c.132 0 .263 .003 .393 .008a7.5 7.5 0 0 0 7.599 9.6A9 9 0 1 1 12 3"/></svg>
+				<svg class="docs-sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-4 0a4 4 0 1 0 8 0 4 4 0 1 0-8 0M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+			</button>
+			<button class="docs-menu-button docs-icon-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu>
+				<svg class="docs-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+				<svg class="docs-close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+			</button>
+		</div>
+	</div>
+	<nav id="primary-navigation" class="docs-primary-nav" aria-label="Primary navigation">
+		<a href="/start-here/">Start here</a>
+		<a href="/learn/">Learn Kujo</a>
+		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
+		<a href="/tools/">Tools</a>
+		<a href="/showcases/">Showcases</a>
+	</nav>
+</header>
+<div id="docs-search-results" class="docs-search-results" aria-live="polite"></div>
+<main class="docs-shell" id="main-content">
+	<aside class="docs-sidebar" aria-label="Documentation sections">
+		<p class="docs-sidebar-label">Browse</p>
+		<ul>
+			<li><a href="/start-here/">Start here</a></li>
+			<li><a href="/install/">Install Kujo</a></li>
+			<li><a href="/upgrade/">Upgrade Kujo</a></li>
+			<li><a href="/quickstart/">Quickstart</a></li>
+			<li><a href="/choose-a-path/">Choose a path</a></li>
+			<li><a href="/learn/">Learn Kujo</a></li>
+			<li><a href="/build/">Build with Kujo</a></li>
+			<li><a href="/review/">Reviewable work</a></li>
+			<li><a href="/tools/">Tools</a></li>
+			<li><a href="/showcases/">Showcases</a></li>
+			<li><a href="/collections/">Collections</a></li>
+			<li><a href="/ecosystem/">Ecosystem</a></li>
+			<li><a href="/reference/">Reference</a></li>
+			<li><a href="/security/">Security model</a></li>
+			<li><a href="/release-boundaries/">Release boundaries</a></li>
+			<li><a href="/support/">Support</a></li>
+		</ul>
+	</aside>
+	<article class="docs-article">
+		<h1 id="kujo-pi">Kujo Pi</h1><p class="docs-description">Install the opt-in Kujo integration for Pi, with Ability tools, Watchdog metadata, and bounded operation receipts.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>released</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-26</span></div>
+		<div class="docs-body"><h2 id="install-and-start">Install and start</h2>
+<p>Kujo Pi 1.1.0 is a separate npm package for the Pi host. It requires Node.js 22.19.0 or newer, npm 10 or newer, and Pi 0.84.3 or newer within the 0.x line. Install the <a href="/install/">Kujo runtime</a> separately for Kujo-backed operations.</p>
+<pre><code class="language-bash">pi install npm:@kujolang/kujo-pi@1.1.0</code></pre>
+<p>Start Pi in a trusted repository, configure <code>KUJO_BIN</code> or put Kujo on PATH, then run:</p>
+<pre><code class="language-text">/kujo setup
+/kujo enable understand</code></pre>
+<p>Use <code>kujo_doctor</code> to inspect available integrations and configuration. Installation alone does not install Kujo, start service daemons, activate optional tools, or send lifecycle telemetry. Enable only the task packs you need.</p>
+<h2 id="ability-tools">Ability tools</h2>
+<p>Configure <code>KUJO_ABILITY_GATEWAY_URL</code> and a least-privilege <code>KUJO_ABILITY_GATEWAY_TOKEN</code> through your host environment. Remote gateways require HTTPS. Then enable:</p>
+<pre><code class="language-text">/kujo enable kujo_ability_list kujo_ability_call</code></pre>
+<p>Discovery returns principal-visible Abilities. Execution requires Pi project trust and Pi approval; the application gateway still owns authorization, request-bound approval, idempotency and audit policy. Enabling a tool does not grant application permission. See <a href="/tools/ability/">Ability</a>.</p>
+<h2 id="watchdog-lifecycle-metadata">Watchdog lifecycle metadata</h2>
+<p>For a configured Watchdog service supporting the <code>watchdog.telemetry.v2</code> intake contract:</p>
+<pre><code class="language-bash">export KUJO_WATCHDOG_URL=http://127.0.0.1:7700
+export KUJO_WATCHDOG_TELEMETRY=metadata</code></pre>
+<p>Only trusted projects activate the bridge. It records allowlisted lifecycle metadata, not prompts, responses, tool arguments, shell text or file contents. Provider correlation headers go only to the configured Watchdog proxy provider. Watchdog&apos;s own service release and configuration remain separate from the Pi package version.</p>
+<p>The local spool defaults to 2,000 committed bundles and 5 MiB. The same limits independently bound each process&apos;s pending queue. New batches are rejected when that queue is full; Doctor exposes cumulative loss and write-failure counters. This is best-effort telemetry, not a lossless audit sink.</p>
+<p>At initialization, owned temporary files can be recovered when their local process no longer exists. Live writers, uncertain owners and symlinks are preserved. Busy or inaccessible orphans produce deferred-cleanup diagnostics. Legacy, unowned and foreign-scope temporary files require manual removal after all relevant writers stop. Use a local spool, not a shared network filesystem.</p>
+<h2 id="receipts-and-compatibility">Receipts and compatibility</h2>
+<p>Optional receipts (<code>KUJO_PI_RECEIPTS=1</code>) keep v1 result and receipt contracts. A successful operation remains successful if receipt storage fails; inspect the warning rather than rerunning a side effect solely to repair its receipt.</p>
+<p>Artifact snapshots cover at most 128 files, 10,000,000 content bytes and 4,096 enumerated entries by default. Wide or changing trees can produce a digest warning. These are bounded diagnostics, not complete integrity proofs. Existing tool inputs and CLI flags remain compatible; Doctor diagnostics and Ability tools are additive.</p>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://github.com/kujolang/kujo-pi/releases/tag/v1.1.0">Kujo Pi 1.1.0 release</a></li>
+<li><a href="https://github.com/kujolang/kujo-pi/blob/v1.1.0/docs/pi-onboarding.md">Pinned onboarding guide</a></li>
+<li><a href="https://github.com/kujolang/kujo-pi/blob/v1.1.0/docs/watchdog-telemetry-bridge.md">Telemetry configuration and recovery</a></li>
+<li><a href="https://github.com/kujolang/kujo-pi/blob/v1.1.0/docs/contracts.md">Operation and receipt contracts</a></li>
+</ul></div>
+	</article>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#install-and-start">Install and start</a></li><li class="toc-level-2"><a href="#ability-tools">Ability tools</a></li><li class="toc-level-2"><a href="#watchdog-lifecycle-metadata">Watchdog lifecycle metadata</a></li><li class="toc-level-2"><a href="#receipts-and-compatibility">Receipts and compatibility</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+</main>
+
+<footer class="docs-footer" id="footer">
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.4.0</span></div>
+	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
+</footer>
+<script src="../../assets/sitekit/sitekit.js"></script>
+<script src="../../assets/js/docs.js"></script>
+<script src="../../assets/js/kujo-webmcp.js" data-kujo-webmcp data-kujo-site-index="../../.well-known/kujo-site-index.json" defer></script></body>
+</html>
