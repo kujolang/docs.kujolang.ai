@@ -10,7 +10,7 @@ audience: all
 difficulty: beginner
 status: dated release inventory
 version: 1.4.0
-last_updated: 2026-09-09
+last_updated: 2026-09-26
 tags: [ecosystem, releases, versions, installation]
 ---
 
@@ -52,7 +52,7 @@ Install [Kujo 1.4.0](/install/) for the current runtime. A standalone binary run
 | [kennel](https://github.com/kujolang/kennel) | [v1.0.1](https://github.com/kujolang/kennel/releases/tag/v1.0.1) | 2026-08-31 |
 | [kujo](https://github.com/kujolang/kujo) | [v1.4.0](https://github.com/kujolang/kujo/releases/tag/v1.4.0) | 2026-09-09 |
 | [kujo-agents](https://github.com/kujolang/kujo-agents) | [v1.4.0](https://github.com/kujolang/kujo-agents/releases/tag/v1.4.0) | 2026-09-07 |
-| [kujo-pi](https://github.com/kujolang/kujo-pi) | [v1.0.0](https://github.com/kujolang/kujo-pi/releases/tag/v1.0.0) | 2026-08-30 |
+| [kujo-pi](https://github.com/kujolang/kujo-pi) | [v1.1.0](https://github.com/kujolang/kujo-pi/releases/tag/v1.1.0) | 2026-09-26 |
 | [kujo-skills](https://github.com/kujolang/kujo-skills) | [v0.7.0](https://github.com/kujolang/kujo-skills/releases/tag/v0.7.0) | 2026-09-08 |
 | [kujo-workflows](https://github.com/kujolang/kujo-workflows) | [v0.6.0](https://github.com/kujolang/kujo-workflows/releases/tag/v0.6.0) | 2026-09-07 |
 | [lens](https://github.com/kujolang/lens) | [v1.1.0](https://github.com/kujolang/lens/releases/tag/v1.1.0) | 2026-09-07 |
@@ -82,7 +82,11 @@ Install [Kujo 1.4.0](/install/) for the current runtime. A standalone binary run
 | [watchdog](https://github.com/kujolang/watchdog) | [v1.0.1](https://github.com/kujolang/watchdog/releases/tag/v1.0.1) | 2026-08-11 |
 | [workcell](https://github.com/kujolang/workcell) | [v1.1.0](https://github.com/kujolang/workcell/releases/tag/v1.1.0) | 2026-09-04 |
 
+The Kujo Pi row was refreshed on September 26, 2026. Other entries retain their individually documented inventory dates.
+
 ## Recent changes worth checking
+
+- **Kujo Pi 1.1.0:** approval-gated Ability tools, opt-in Watchdog v2 metadata, bounded telemetry and artifact inspection, and receipt-failure recovery. Read [Kujo Pi](/tools/kujo-pi/).
 
 - **AI Chat 1.2.0:** durable recovery, bounded streams and context, and RAG documentation lookup. Follow its Node and storage upgrade requirements; the eight-hour soak remains incomplete. Read [AI Chat](/showcases/ai-chat/).
 - **Workcell 1.1.0:** stable Docker/Podman execution, with portable contracts and remote adapters still alpha. Keep the package's qualified runtime pin. Read [Workcell](/tools/workcell/).
@@ -96,7 +100,7 @@ Install [Kujo 1.4.0](/install/) for the current runtime. A standalone binary run
 
 The [25-provider index](/ecosystem/providers/) records pinned source tags and driver compatibility. Many provider tags have no corresponding GitHub Release. Their tag-based installation instructions remain valid; do not substitute an older GitHub Release solely because it has a release page. AI SDK's documented 1.1.0 provider baseline is likewise distinct from its latest GitHub Release.
 
-Kujo Pi's latest published GitHub Release is 1.0.0; a 1.1.0 version file on the default branch is release preparation. Repositories without a GitHub Release, including infrastructure and some application sources, are not assigned invented release versions here. Private projects retain their documented access boundaries.
+Kujo Pi 1.1.0 is published on GitHub and npm; install `npm:@kujolang/kujo-pi@1.1.0` through Pi. See [Kujo Pi](/tools/kujo-pi/) for its separate host and runtime requirements. Repositories without a GitHub Release, including infrastructure and some application sources, are not assigned invented release versions here. Private projects retain their documented access boundaries.
 
 ## Agent discovery
 
