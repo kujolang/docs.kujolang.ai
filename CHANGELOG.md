@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Document Watchdog 1.1.0 canonical telemetry, Connected Sources management,
+  named proxy-profile hot reload behavior, and the current release inventory.
+
 - Document the Scout 1.1.0 release, Kujo 1.5.0 runtime floor, bounded scanning
   contracts, machine-readable limit diagnostics, corpus-scoped quality evidence,
   and native Windows verification.

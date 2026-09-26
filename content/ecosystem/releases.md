@@ -79,7 +79,7 @@ Install [Kujo 1.4.0](/install/) for the current runtime. A standalone binary run
 | [storydesk](https://github.com/kujolang/storydesk) | [v0.2.0](https://github.com/kujolang/storydesk/releases/tag/v0.2.0) | 2026-08-14 |
 | [tribunal](https://github.com/kujolang/tribunal) | [v1.0.1](https://github.com/kujolang/tribunal/releases/tag/v1.0.1) | 2026-09-05 |
 | [versionseal](https://github.com/kujolang/versionseal) | [v0.2.0](https://github.com/kujolang/versionseal/releases/tag/v0.2.0) | 2026-08-14 |
-| [watchdog](https://github.com/kujolang/watchdog) | [v1.0.1](https://github.com/kujolang/watchdog/releases/tag/v1.0.1) | 2026-08-11 |
+| [watchdog](https://github.com/kujolang/watchdog) | [v1.1.0](https://github.com/kujolang/watchdog/releases/tag/v1.1.0) | 2026-09-26 |
 | [workcell](https://github.com/kujolang/workcell) | [v1.1.0](https://github.com/kujolang/workcell/releases/tag/v1.1.0) | 2026-09-04 |
 
 The Kujo Pi row was refreshed on September 26, 2026. Other entries retain their individually documented inventory dates.
@@ -94,7 +94,8 @@ The Kujo Pi row was refreshed on September 26, 2026. Other entries retain their 
 - **Skills 0.7.0, Workflows 0.6.0, Agents 1.4.0:** 135 skills, 44 local workflows, and canonical VideoOps tools and schemas. Live media permission and provider limits remain explicit. Read [skills](/collections/skills/) and [workflows](/collections/workflows/).
 - **Commerce 0.4.0:** static hosted links by default, optional dynamic checkout, customer portals, and webhook normalization. Provider sandbox qualification remains bounded. Read [Commerce](/tools/commerce/).
 - **Scout 1.1.0:** bounded rooted reads, aggregate limits, security exports, deterministic performance and labeled-corpus gates, stable CI diagnostics, and native Windows contract coverage. It requires Kujo 1.5.0 or newer. Read [Scout](/tools/scout/).
-- **Agents SDK, Dispatch, RAG, Watchdog, RunLedger, and Eval:** newer default-branch work connects retrieval preferences and bounded lifecycle telemetry. Their guides identify source revisions separately from the older published release archives.
+- **Watchdog 1.1.0:** canonical v2 telemetry, JSONL/OTLP projections, Connected Sources management, and named proxy-profile changes that apply to new requests without restart. Read [Watchdog](/tools/watchdog/).
+- **Agents SDK, Dispatch, RAG, RunLedger, and Eval:** newer default-branch work connects retrieval preferences and bounded lifecycle telemetry. Their guides identify source revisions separately from the older published release archives.
 - **CaseFile, Fence, Scent, ShipCheck, Howl, Redact, AI SDK, and Dossier:** recent source hardening has its own verification evidence. Pin the reviewed source when adopting those fixes; an unchanged release archive does not acquire later commits.
 
 ## Tags and source-only packages
