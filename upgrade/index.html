@@ -102,7 +102,7 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="upgrade-the-kujo-runtime">Upgrade the Kujo runtime</h1><p class="docs-description">Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>1.4.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-09</span></div>
+		<h1 id="upgrade-the-kujo-runtime">Upgrade the Kujo runtime</h1><p class="docs-description">Learn kujo upgrade syntax, read-only checks, JSON output, package-manager boundaries, and backup recovery.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>1.6.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-28</span></div>
 		<section class="docs-prerequisites" aria-label="Prerequisites"><h2 id="prerequisites">Prerequisites</h2><ul class="docs-prerequisites-list"><li>A Kujo release containing the native upgrade command</li><li>A supported standalone installation with a writable destination</li></ul></section>
 		<div class="docs-body"><p><code>kujo upgrade</code> updates the running standalone Kujo executable from official GitHub release binaries. It does not update ecosystem tools, source snapshots, install profiles, package pins, or project dependencies.</p>
 <h2 id="availability-and-first-upgrade">Availability and first upgrade</h2>
@@ -142,15 +142,15 @@ kujo upgrade --check --json</code></pre>
 </tbody></table>
 <p><code>VERSION</code> must be an exact <code>MAJOR.MINOR.PATCH</code>. Ranges, prereleases, and build metadata are rejected. Same-version requests succeed without replacement. Missing releases, archives, or checksums fail without building from source.</p>
 <p>Select an exact published stable version:</p>
-<pre><code class="language-bash">kujo upgrade 1.4.0 --check
-kujo upgrade v1.4.0</code></pre>
+<pre><code class="language-bash">kujo upgrade 1.6.0 --check
+kujo upgrade v1.6.0</code></pre>
 <p>An intentional downgrade requires an explicit older target:</p>
 <pre><code class="language-bash">kujo upgrade 1.2.3 --allow-downgrade</code></pre>
 <p>Downgrading to a release without this command removes the ability to upgrade natively until you bootstrap again. <code>--check</code> can inspect an older target without downgrade permission. Latest never downgrades, even with <code>--allow-downgrade</code>.</p>
 <h2 id="package-managers-and-executable-paths">Package managers and executable paths</h2>
 <p>Use the original package manager for npm, Cargo, or other managed installations. Native installation refuses recognized managed paths and development <code>target</code> binaries, while <code>--check</code> can still report availability and installation kind. Examples below use <code>VERSION</code> as a placeholder for a published package version:</p>
-<pre><code class="language-bash">npm install --global @kujolang/kujo-runtime@VERSION
-cargo install kujolang --version VERSION --locked --force</code></pre>
+<pre><code class="language-bash">npm install --global @kujolang/kujo-runtime@VERSION</code></pre>
+<p>Kujo 1.6.0 is published through GitHub archives and npm; no 1.6.0 crate publication is claimed. For a source installation, rebuild the selected release tag using the <a href="/install/">source install guide</a>.</p>
 <p>For project-local npm dependencies, use the project&apos;s package manager and scope. Recognized Homebrew, Nix, Scoop, Chocolatey, Snap, WinGet, WindowsApps, and system binary locations also receive a refusal instead of replacement.</p>
 <p>The destination is the resolved path of the executable actually running. Invoking through a symlink preserves that link and updates its target. Legacy standalone binaries, including <code>~/.local/bin/kujo</code>, are recognized by executable name and the absence of known manager metadata. That heuristic is not proof of ownership; relocated package binaries or custom managers may evade recognition. Keep using their original manager.</p>
 <h2 id="json-output-and-exit-codes">JSON output and exit codes</h2>
@@ -173,7 +173,7 @@ cargo install kujolang --version VERSION --locked --force</code></pre>
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.4.0</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.4.1</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../assets/sitekit/sitekit.js"></script>

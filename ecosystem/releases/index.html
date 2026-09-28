@@ -101,11 +101,19 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="ecosystem-releases">Ecosystem releases</h1><p class="docs-description">Current published Kujo ecosystem versions, recent source changes, and explicit installation boundaries.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>all</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>dated release inventory</span><span class="docs-badge docs-badge-version"><span>Version</span>1.4.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-26</span></div>
-		<div class="docs-body"><p>This inventory was checked against all <strong>86 public kujolang repositories on September 9, 2026</strong>, with Scout and ReaderSignal refreshed from their September 26 releases. Product releases, protocol versions, repository tags, and the docs site&apos;s version are separate. The table lists the latest non-draft, non-prerelease <strong>GitHub Release</strong> found for each package; it does not claim that every current default-branch feature exists in that release.</p>
+		<h1 id="ecosystem-releases">Ecosystem releases</h1><p class="docs-description">Current published Kujo ecosystem versions, recent source changes, and explicit installation boundaries.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>all</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>dated release inventory</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-28</span></div>
+		<div class="docs-body"><p>This inventory was checked against all <strong>86 public kujolang repositories on September 9, 2026</strong>, with Scout and ReaderSignal refreshed from their September 26 releases and Kujo from its September 28 release. Product releases, protocol versions, repository tags, and the docs site&apos;s version are separate. The table lists the latest non-draft, non-prerelease <strong>GitHub Release</strong> found for each package; it does not claim that every current default-branch feature exists in that release.</p>
 <h2 id="start-here">Start here</h2>
-<p>Install <a href="/install/">Kujo 1.4.0</a> for the current runtime. A standalone binary runs ordinary Kujo programs without Python, Node.js, or Rust. Individual applications and tools retain their own dependencies, supported platforms, runtime pins, and update procedures.</p>
-<p><a href="https://kennel.kujolang.ai/">Kennel&apos;s official registry</a> distributes first-party package artifacts. The published Kennel client remains 1.0.1; the merged native 1.1.0 candidate awaits its own release. See <a href="/learn/packages/">package workflows</a> before assuming that upgrading Kujo also updates Kennel or other tools.</p>
+<p>Install <a href="/install/">Kujo 1.6.0</a> for the current runtime. A standalone binary runs ordinary Kujo programs without Python, Node.js, or Rust. Individual applications and tools retain their own dependencies, supported platforms, runtime pins, and update procedures.</p>
+<p><a href="https://kennel.kujolang.ai/">Kennel&apos;s official registry</a> distributes first-party package artifacts. Kennel 1.1.0 is published separately; Kujo 1.6.0 does not change its version or historical package artifacts. See <a href="/learn/packages/">package workflows</a> before assuming that upgrading Kujo also updates Kennel or other tools.</p>
+<h2 id="what-changed-in-1-6">What changed in 1.6</h2>
+<p>Kujo 1.6.0 hardens closures and captured variables, generator/task/async behavior, and VM/interpreter parity. It fixes conditional early returns from loops in optimized VM bytecode, including nested control flow. Runtime measurement provides an observability foundation.</p>
+<p>Durable review, checkpoints, restart/resume and external-effect replay control are implemented with companion tools such as Dispatch. Watchdog and RunLedger observe and correlate evidence; they do not become workflow authority.</p>
+<h3 id="experimental-companion-contracts">Experimental companion contracts</h3>
+<p>Wave C effect assurance remains <strong>experimental beta, opt-in, required/deny within a bounded single-effect domain</strong>, with alpha compatibility retained. SQLite, Workcell Git CAS and Ability application profiles supply effect-specific predicates; Dispatch owns replay admission.</p>
+<p>Wave D generic interoperability and participant SDK APIs remain <strong>experimental alpha</strong> under a <strong>trusted-local-host model</strong>. Six participant forms, including independent TypeScript and Python implementations, have been exercised. Participant SDK packages remain <strong>private/unpublished</strong>. A correlation match is not permission to replay.</p>
+<p>This release does not promise exactly-once execution, universal rollback, general machine-loss recovery, remote authenticated participant trust, multi-effect assurance or stable participant SDK APIs. Source-blind agent adopter rehearsal passed; human adopter usability remains post-release validation.</p>
+<p>See the <a href="https://github.com/kujolang/kujo/releases/tag/v1.6.0">1.6.0 release and checksums</a> and <a href="https://github.com/kujolang/kujo/blob/main/docs/KUJO_1_6_RELEASE.md">publication evidence</a>.</p>
 <h2 id="published-package-releases">Published package releases</h2>
 <table><thead><tr>
 <th>Package</th>
@@ -229,13 +237,13 @@
 </tr>
 <tr>
 <td><a href="https://github.com/kujolang/kennel">kennel</a></td>
-<td><a href="https://github.com/kujolang/kennel/releases/tag/v1.0.1">v1.0.1</a></td>
-<td>2026-08-31</td>
+<td><a href="https://github.com/kujolang/kennel/releases/tag/v1.1.0">v1.1.0</a></td>
+<td>2026-09-13</td>
 </tr>
 <tr>
 <td><a href="https://github.com/kujolang/kujo">kujo</a></td>
-<td><a href="https://github.com/kujolang/kujo/releases/tag/v1.4.0">v1.4.0</a></td>
-<td>2026-09-09</td>
+<td><a href="https://github.com/kujolang/kujo/releases/tag/v1.6.0">v1.6.0</a></td>
+<td>2026-09-28</td>
 </tr>
 <tr>
 <td><a href="https://github.com/kujolang/kujo-agents">kujo-agents</a></td>
@@ -410,11 +418,11 @@
 <h2 id="agent-discovery">Agent discovery</h2>
 <p>The public <a href="https://mcp.kujolang.ai/mcp">Kujo MCP catalog</a> exposes read-only project, skill, workflow, and installer guidance. It is separate from the MCP framework and from private application gateways. Refreshes publish a reviewed static snapshot; they do not execute installer commands or grant application permissions.</p></div>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#start-here">Start here</a></li><li class="toc-level-2"><a href="#published-package-releases">Published package releases</a></li><li class="toc-level-2"><a href="#recent-changes-worth-checking">Recent changes worth checking</a></li><li class="toc-level-2"><a href="#tags-and-source-only-packages">Tags and source-only packages</a></li><li class="toc-level-2"><a href="#agent-discovery">Agent discovery</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#start-here">Start here</a></li><li class="toc-level-2"><a href="#what-changed-in-1-6">What changed in 1.6</a></li><li class="toc-level-2"><a href="#published-package-releases">Published package releases</a></li><li class="toc-level-2"><a href="#recent-changes-worth-checking">Recent changes worth checking</a></li><li class="toc-level-2"><a href="#tags-and-source-only-packages">Tags and source-only packages</a></li><li class="toc-level-2"><a href="#agent-discovery">Agent discovery</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.4.0</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.4.1</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../../assets/sitekit/sitekit.js"></script>
