@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.1 — 2026-09-28
+
+- Document published Kujo 1.6.0 across all five native targets and npm.
+- Refresh runtime correctness, installation, upgrade and release guidance; preserve component minimums and historical versions.
+- Keep Wave C beta and Wave D alpha experimental; participant SDKs remain unpublished.
+
 ## Unreleased
 
 - Document Watchdog 1.1.0 canonical telemetry, Connected Sources management,

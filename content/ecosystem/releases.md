@@ -9,18 +9,34 @@ order: 15
 audience: all
 difficulty: beginner
 status: dated release inventory
-version: 1.4.0
-last_updated: 2026-09-26
+version: current
+last_updated: 2026-09-28
 tags: [ecosystem, releases, versions, installation]
 ---
 
-This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
+This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases and Kujo from its September 28 release. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
 
 ## Start here
 
-Install [Kujo 1.4.0](/install/) for the current runtime. A standalone binary runs ordinary Kujo programs without Python, Node.js, or Rust. Individual applications and tools retain their own dependencies, supported platforms, runtime pins, and update procedures.
+Install [Kujo 1.6.0](/install/) for the current runtime. A standalone binary runs ordinary Kujo programs without Python, Node.js, or Rust. Individual applications and tools retain their own dependencies, supported platforms, runtime pins, and update procedures.
 
-[Kennel's official registry](https://kennel.kujolang.ai/) distributes first-party package artifacts. The published Kennel client remains 1.0.1; the merged native 1.1.0 candidate awaits its own release. See [package workflows](/learn/packages/) before assuming that upgrading Kujo also updates Kennel or other tools.
+[Kennel's official registry](https://kennel.kujolang.ai/) distributes first-party package artifacts. Kennel 1.1.0 is published separately; Kujo 1.6.0 does not change its version or historical package artifacts. See [package workflows](/learn/packages/) before assuming that upgrading Kujo also updates Kennel or other tools.
+
+## What changed in 1.6
+
+Kujo 1.6.0 hardens closures and captured variables, generator/task/async behavior, and VM/interpreter parity. It fixes conditional early returns from loops in optimized VM bytecode, including nested control flow. Runtime measurement provides an observability foundation.
+
+Durable review, checkpoints, restart/resume and external-effect replay control are implemented with companion tools such as Dispatch. Watchdog and RunLedger observe and correlate evidence; they do not become workflow authority.
+
+### Experimental companion contracts
+
+Wave C effect assurance remains **experimental beta, opt-in, required/deny within a bounded single-effect domain**, with alpha compatibility retained. SQLite, Workcell Git CAS and Ability application profiles supply effect-specific predicates; Dispatch owns replay admission.
+
+Wave D generic interoperability and participant SDK APIs remain **experimental alpha** under a **trusted-local-host model**. Six participant forms, including independent TypeScript and Python implementations, have been exercised. Participant SDK packages remain **private/unpublished**. A correlation match is not permission to replay.
+
+This release does not promise exactly-once execution, universal rollback, general machine-loss recovery, remote authenticated participant trust, multi-effect assurance or stable participant SDK APIs. Source-blind agent adopter rehearsal passed; human adopter usability remains post-release validation.
+
+See the [1.6.0 release and checksums](https://github.com/kujolang/kujo/releases/tag/v1.6.0) and [publication evidence](https://github.com/kujolang/kujo/blob/main/docs/KUJO_1_6_RELEASE.md).
 
 ## Published package releases
 
@@ -49,8 +65,8 @@ Install [Kujo 1.4.0](/install/) for the current runtime. A standalone binary run
 | [fence](https://github.com/kujolang/fence) | [v1.0.0](https://github.com/kujolang/fence/releases/tag/v1.0.0) | 2026-08-08 |
 | [galleypack](https://github.com/kujolang/galleypack) | [v0.2.0](https://github.com/kujolang/galleypack/releases/tag/v0.2.0) | 2026-08-14 |
 | [howl](https://github.com/kujolang/howl) | [v1.1.0](https://github.com/kujolang/howl/releases/tag/v1.1.0) | 2026-08-11 |
-| [kennel](https://github.com/kujolang/kennel) | [v1.0.1](https://github.com/kujolang/kennel/releases/tag/v1.0.1) | 2026-08-31 |
-| [kujo](https://github.com/kujolang/kujo) | [v1.4.0](https://github.com/kujolang/kujo/releases/tag/v1.4.0) | 2026-09-09 |
+| [kennel](https://github.com/kujolang/kennel) | [v1.1.0](https://github.com/kujolang/kennel/releases/tag/v1.1.0) | 2026-09-13 |
+| [kujo](https://github.com/kujolang/kujo) | [v1.6.0](https://github.com/kujolang/kujo/releases/tag/v1.6.0) | 2026-09-28 |
 | [kujo-agents](https://github.com/kujolang/kujo-agents) | [v1.4.0](https://github.com/kujolang/kujo-agents/releases/tag/v1.4.0) | 2026-09-07 |
 | [kujo-pi](https://github.com/kujolang/kujo-pi) | [v1.1.0](https://github.com/kujolang/kujo-pi/releases/tag/v1.1.0) | 2026-09-26 |
 | [kujo-skills](https://github.com/kujolang/kujo-skills) | [v0.7.0](https://github.com/kujolang/kujo-skills/releases/tag/v0.7.0) | 2026-09-08 |

@@ -10,7 +10,7 @@ audience: developer
 difficulty: beginner
 status: stable
 version: current
-last_updated: 2026-09-13
+last_updated: 2026-09-28
 previous: /learn/language-basics/
 next: /learn/capabilities/
 tags: [runtime, vm, interpreter]
@@ -34,7 +34,7 @@ The CLI also owns project initialization, checks, formatting, linting, packages,
 
 ## Native scripting and installed tools
 
-Kujo v1.4.0 adds the runtime operations needed for package installers and command launchers written in Kujo. On Linux and macOS, `file_lock` and `file_unlock` coordinate cooperating processes, `path_owned` checks ownership, `symlink_atomic` publishes a command link, and `exec_process` replaces the launcher with an exact argument vector. These POSIX operations require their documented host capabilities; they are not Windows installer support or a sandbox.
+Introduced in Kujo v1.4.0, the runtime provides the runtime operations needed for package installers and command launchers written in Kujo. On Linux and macOS, `file_lock` and `file_unlock` coordinate cooperating processes, `path_owned` checks ownership, `symlink_atomic` publishes a command link, and `exec_process` replaces the launcher with an exact argument vector. These POSIX operations require their documented host capabilities; they are not Windows installer support or a sandbox.
 
 Installed tools can opt into imports that do not search the caller's working directory or lockfile:
 
@@ -44,6 +44,10 @@ kujo run --isolated-imports /path/to/tool/main.kujo -- argument
 
 `KUJO_ISOLATED_IMPORTS=1` enables the same mode for inherited launches. Entry and configured roots still apply; ordinary `kujo run` keeps its existing import behavior. Arguments, including empty strings, reach the program unchanged.
 
-The runtime also provides bounded HTTP downloads, HTML and XML processing, JSON/JSONL artifacts, digests, and confined file publication. Callback and lexical-scope corrections keep VM and interpreter workflows consistent. See the [v1.4.0 changelog](https://github.com/kujolang/kujo/blob/v1.4.0/CHANGELOG.md) and [standard library contracts](https://github.com/kujolang/kujo/blob/v1.4.0/docs/STANDARD_LIBRARY.md) for exact signatures, limits, capabilities, and platform boundaries.
+The runtime also provides bounded HTTP downloads, HTML and XML processing, JSON/JSONL artifacts, digests, and confined file publication. Callback and lexical-scope corrections keep VM and interpreter workflows consistent. See the [v1.6.0 changelog](https://github.com/kujolang/kujo/blob/v1.6.0/CHANGELOG.md) and [standard library contracts](https://github.com/kujolang/kujo/blob/v1.6.0/docs/STANDARD_LIBRARY.md) for exact signatures, limits, capabilities, and platform boundaries.
 
 These runtime features support the native Kennel 1.1.0 client. Installing or upgrading Kujo does not install or release Kennel; follow the separate [Kennel guide](/tools/kennel/) for its current package workflow.
+
+## Kujo 1.6 correctness
+
+Version 1.6 strengthens closures/upvalues, generators and async/tasks, and fixes optimized VM loop/conditional early returns. The release passed archive regressions on all five supported platforms. Use `kujo test --runtime vm`, `--runtime interpreter`, or `--runtime dual` to exercise the documented execution modes; this does not claim every possible program has universal parity. See [Kujo 1.6 and experimental ecosystem boundaries](/tools/kujo/).

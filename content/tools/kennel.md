@@ -68,7 +68,7 @@ Read [Packages with Kennel](/learn/packages/) before choosing registry or file d
 
 ## Boundaries
 
-The official static registry is available at [kennel.kujolang.ai](https://kennel.kujolang.ai/). Kennel 1.1.0 provides the native bootstrap and global tool commands, using Kujo 1.4.0 or newer. Native Windows bootstrap is not supported. Use `kennel.toml` and `kennel.lock` for this client. Kujo 1.4.0 does not automatically upgrade Kennel. Accounts and third-party publishing are not available.
+The official static registry is available at [kennel.kujolang.ai](https://kennel.kujolang.ai/). Kennel 1.1.0 provides the native bootstrap and global tool commands, using Kujo 1.4.0 or newer. Native Windows bootstrap is not supported. Use `kennel.toml` and `kennel.lock` for this client. Upgrading Kujo, including to 1.6.0, does not automatically upgrade Kennel. Accounts and third-party publishing are not available.
 
 ## Reference
 

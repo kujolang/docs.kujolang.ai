@@ -16,12 +16,12 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: kujolang/kujo
-          ref: 5dcbfcda2e48c2fe56dd2a4ecdb2d5947e18ff59
+          ref: 44af277848173664f72ca85f2a1b3b98d634ecdd
           path: kujo
       - uses: actions/checkout@v4
         with:
           repository: kujolang/ssg
-          ref: e165dbc1b596ea759a2b9c2ff0b9ca988c333eea
+          ref: 7d3439c32aecf58a845ff5335380d2af93a3cdb0
           path: ssg
       - uses: dtolnay/rust-toolchain@stable
       - uses: actions/setup-python@v5

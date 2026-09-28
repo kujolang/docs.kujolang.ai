@@ -9,8 +9,8 @@ order: 25
 audience: developer
 difficulty: intermediate
 status: stable
-version: 1.4.0
-last_updated: 2026-09-09
+version: 1.6.0
+last_updated: 2026-09-28
 scope: standalone runtime executable only
 source_repo: kujo
 previous: /install/
@@ -59,8 +59,8 @@ Running the install command authorizes replacement without an interactive confir
 Select an exact published stable version:
 
 ```bash
-kujo upgrade 1.4.0 --check
-kujo upgrade v1.4.0
+kujo upgrade 1.6.0 --check
+kujo upgrade v1.6.0
 ```
 
 An intentional downgrade requires an explicit older target:
@@ -77,8 +77,9 @@ Use the original package manager for npm, Cargo, or other managed installations.
 
 ```bash
 npm install --global @kujolang/kujo-runtime@VERSION
-cargo install kujolang --version VERSION --locked --force
 ```
+
+Kujo 1.6.0 is published through GitHub archives and npm; no 1.6.0 crate publication is claimed. For a source installation, rebuild the selected release tag using the [source install guide](/install/).
 
 For project-local npm dependencies, use the project's package manager and scope. Recognized Homebrew, Nix, Scoop, Chocolatey, Snap, WinGet, WindowsApps, and system binary locations also receive a refusal instead of replacement.
 

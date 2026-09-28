@@ -1,4 +1,4 @@
 {
-  "date": "2026-09-13",
-  "summary": "Runtime 1.4.0 and released Kennel 1.1.0, including native bootstrap, global tools, and official registry installation."
+  "date": "2026-09-28",
+  "summary": "Kujo runtime 1.6.0 across five native platforms and npm; runtime correctness, installation and experimental companion-contract boundaries."
 }
