@@ -104,7 +104,7 @@
 	<article class="docs-article">
 		<h1 id="install-kujo">Install Kujo</h1><p class="docs-description">Install Kujo v1.6.0 and the tool group you need, or build the CLI from source.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>1.6.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-28</span></div>
 		<section class="docs-prerequisites" aria-label="Prerequisites"><h2 id="prerequisites">Prerequisites</h2><ul class="docs-prerequisites-list"><li>A supported macOS, Linux, or Windows workstation</li><li>A writable terminal workspace</li></ul></section>
-		<div class="docs-body"><p>Kujo <code>v1.6.0</code> is the current stable release. On Linux and macOS, the public ecosystem installer selects the correct archive, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory. On Windows, use the Windows archive from the release or the npm installation path described in the runtime repository.</p>
+		<div class="docs-body"><!--email_off--><p>Kujo <code>v1.6.0</code> is the current stable release. On Linux and macOS, the public ecosystem installer selects the correct archive, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory. On Windows, use the Windows archive from the release or the npm installation path described in the runtime repository.</p>
 <h2 id="install-kujo-2">Install Kujo</h2>
 <pre><code class="language-bash">curl -fsSL https://kujolang.ai/install.sh | bash
 export PATH=&quot;$HOME/.local/bin:$PATH&quot;</code></pre>
@@ -114,8 +114,8 @@ export PATH=&quot;$HOME/.local/bin:$PATH&quot;</code></pre>
 <h2 id="npm-and-supported-platforms">npm and supported platforms</h2>
 <p>Kujo 1.6.0 ships native archives and npm runtime packages for <strong>Linux x64/arm64, macOS x64/arm64, and Windows x64</strong>. The npm resolver selects the matching exact-version native package; Node.js is needed for this installation channel.</p>
 <pre><code class="language-bash">npm install --global @kujolang/kujo-runtime@1.6.0
-kujo --version
-<h1 id="kujo-1-6-0">kujo 1.6.0</h1></code></pre>
+kujo --version</code></pre>
+<p>Expected version output: <code>kujo 1.6.0</code>.</p>
 <p>Checksums and the publication provenance manifest are attached to the <a href="https://github.com/kujolang/kujo/releases/tag/v1.6.0">1.6.0 release</a>. These runtime packages are separate from the experimental, unpublished participant SDKs.</p>
 <h2 id="upgrade-an-existing-runtime">Upgrade an existing runtime</h2>
 <p>Use <a href="/upgrade/"><code>kujo upgrade</code></a> to update a standalone runtime, or <code>kujo upgrade --check --json</code> to inspect availability without changing files. The command is available in v1.3.0 and later. Users of v1.2.3 or older must first install a current release through the installer or original package manager.</p>
@@ -137,7 +137,7 @@ kujo doctor --json</code></pre>
 <li><strong><code>kujo</code> is not found:</strong> add <code>$HOME/.local/bin</code> or Cargo&apos;s bin directory to PATH and open a new shell.</li>
 <li><strong>The wrong binary runs:</strong> use <code>command -v kujo</code> and compare it with the path printed by <code>cargo install</code>.</li>
 <li><strong>Platform notes:</strong> use the published release matrix for supported archives; build from source for other targets.</li>
-</ul></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/start-here/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/quickstart/" rel="next"><span>Next</span></a></nav>
+</ul><!--/email_off--></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/start-here/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/quickstart/" rel="next"><span>Next</span></a></nav>
 	</article>
 	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#install-kujo">Install Kujo</a></li><li class="toc-level-2"><a href="#npm-and-supported-platforms">npm and supported platforms</a></li><li class="toc-level-2"><a href="#upgrade-an-existing-runtime">Upgrade an existing runtime</a></li><li class="toc-level-2"><a href="#runtime-requirements">Runtime requirements</a></li><li class="toc-level-2"><a href="#source-install">Source install</a></li><li class="toc-level-2"><a href="#verify">Verify</a></li><li class="toc-level-2"><a href="#troubleshooting">Troubleshooting</a></li></ol></nav>
 </main>
