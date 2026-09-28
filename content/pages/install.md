@@ -44,8 +44,9 @@ Kujo 1.6.0 ships native archives and npm runtime packages for **Linux x64/arm64,
 ```bash
 npm install --global @kujolang/kujo-runtime@1.6.0
 kujo --version
-# kujo 1.6.0
 ```
+
+Expected version output: `kujo 1.6.0`.
 
 Checksums and the publication provenance manifest are attached to the [1.6.0 release](https://github.com/kujolang/kujo/releases/tag/v1.6.0). These runtime packages are separate from the experimental, unpublished participant SDKs.
 

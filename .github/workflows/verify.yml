@@ -15,27 +15,21 @@ jobs:
           path: docs
       - uses: actions/checkout@v4
         with:
-          repository: kujolang/kujo
-          ref: 44af277848173664f72ca85f2a1b3b98d634ecdd
-          path: kujo
-      - uses: actions/checkout@v4
-        with:
           repository: kujolang/ssg
           ref: 7d3439c32aecf58a845ff5335380d2af93a3cdb0
           path: ssg
-      - uses: dtolnay/rust-toolchain@stable
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - uses: Swatinem/rust-cache@v2
+      - name: Install reviewed Kujo release
+        id: kujo
+        uses: kujolang/kujo/.github/actions/setup-kujo@fc53093f35e4236682bbbf5ab1ccc8d2b4df990c
         with:
-          workspaces: kujo
-      - name: Build pinned runtime
-        run: cargo build --release --locked --manifest-path kujo/Cargo.toml
+          version: v1.6.0
       - name: Build and validate complete documentation
         working-directory: docs
         env:
-          KUJO_BIN: ${{ github.workspace }}/kujo/target/release/kujo
+          KUJO_BIN: ${{ steps.kujo.outputs.kujo-path }}
         run: bash tests/site-contract.sh
       - uses: actions/upload-artifact@v4
         with:

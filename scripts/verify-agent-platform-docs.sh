@@ -164,3 +164,7 @@ require_text "tools/kujo/index.html" "human adopter usability remains post-relea
 require_text "install/index.html" "@kujolang/kujo-runtime@1.6.0"
 require_text "install/index.html" "Windows x64"
 reject_text "install/index.html" "v1.4.0</code> is the current stable release"
+
+require_text "install/index.html" "<!--email_off-->"
+reject_text "install/index.html" "&lt;!--email_off--&gt;"
+reject_text "install/index.html" '<h1 id="kujo-1-6-0">'

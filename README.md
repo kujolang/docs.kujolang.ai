@@ -48,7 +48,7 @@ The release contract runs the same build and checks from one entrypoint:
 bash tests/site-contract.sh
 ```
 
-The `Verify documentation site` GitHub Actions workflow runs this contract on pushes to `main`, pull requests, and manual dispatch. It builds the runtime and sibling SSG from the immutable revisions in `.github/workflows/verify.yml`, then retains the complete generated site as the `docs-site` artifact. Set `KUJO_BIN` to an explicit executable for the equivalent local build. The workflow verifies output; publishing still uses the `gh-pages` branch described below.
+The `Verify documentation site` GitHub Actions workflow runs this contract on pushes to `main`, pull requests, and manual dispatch. It installs the checksum-verified Kujo 1.6.0 release through an immutable setup action and checks out the pinned sibling SSG revision in `.github/workflows/verify.yml`, then retains the complete generated site as the `docs-site` artifact. Set `KUJO_BIN` to an explicit executable for the equivalent local build. The workflow verifies output; publishing still uses the `gh-pages` branch described below.
 
 Before release, also verify the generated sitemap routes, the themed 404 response, desktop and mobile layouts, same-origin links, keyboard interactions, and automated accessibility checks.
 
