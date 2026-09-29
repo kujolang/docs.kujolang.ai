@@ -403,7 +403,7 @@
         "Agent discovery",
         "Kujo 1.6 companion delivery"
       ],
-      "text": "This inventory was checked against all 86 public kujolang repositories on September 9, 2026 , with Scout and ReaderSignal refreshed from their September 26 releases, Kujo and the first companion batch from September 28, and Workcell/Ability/MCP and SSG from September 29. Product releases, protocol versions, repository tags, and the docs site's version are se"
+      "text": "This inventory was checked against all 86 public kujolang repositories on September 9, 2026 , with Scout and ReaderSignal refreshed from their September 26 releases, Kujo and the first companion batch from September 28, and Workcell/Ability/MCP, Dispatch and SSG from September 29. Product releases, protocol versions, repository tags, and the docs site's vers"
     },
     {
       "title": "Showcase Directory",
@@ -1223,7 +1223,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "current",
+      "version": "1.3.0",
       "tags": [
         "[tool, workflows, orchestration]"
       ],
@@ -1236,7 +1236,8 @@
         "How it fits",
         "Boundaries",
         "Reference",
-        "Published release and current development"
+        "Dispatch 1.3.0",
+        "Experimental companion contracts"
       ],
       "text": "Use it when\u2026 A task is a sequence of steps that can pause, resume, require approval, and leave a run receipt. Interface overview | Surface | What is available | | --- | --- | | Execute | demo, workflow templates, workflow files, JSON inputs, and tool allow/deny lists | | Continue | resume and decision-file resume paths | | Inspect | runs, show, inspect, JSON"
     },
