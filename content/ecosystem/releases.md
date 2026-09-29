@@ -14,7 +14,7 @@ last_updated: 2026-09-29
 tags: [ecosystem, releases, versions, installation]
 ---
 
-This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases Kujo from its September 28 release, and SSG from its September 29 release. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
+This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases, Kujo and the first companion batch from September 28, and Workcell/Ability/MCP and SSG from September 29. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
 
 ## Start here
 
@@ -42,10 +42,10 @@ See the [1.6.0 release and checksums](https://github.com/kujolang/kujo/releases/
 
 | Package | Latest published release | Published (UTC) |
 | --- | --- | --- |
-| [ability](https://github.com/kujolang/ability) | [v1.1.0](https://github.com/kujolang/ability/releases/tag/v1.1.0) | 2026-09-04 |
-| [agents-sdk](https://github.com/kujolang/agents-sdk) | [v1.0.0](https://github.com/kujolang/agents-sdk/releases/tag/v1.0.0) | 2026-08-08 |
+| [ability](https://github.com/kujolang/ability) | [v1.2.0](https://github.com/kujolang/ability/releases/tag/v1.2.0) | 2026-09-29 |
+| [agents-sdk](https://github.com/kujolang/agents-sdk) | [v1.1.2](https://github.com/kujolang/agents-sdk/releases/tag/v1.1.2) | 2026-09-28 |
 | [ai-chat](https://github.com/kujolang/ai-chat) | [v1.2.0](https://github.com/kujolang/ai-chat/releases/tag/v1.2.0) | 2026-09-07 |
-| [ai-sdk](https://github.com/kujolang/ai-sdk) | [v1.0.0](https://github.com/kujolang/ai-sdk/releases/tag/v1.0.0) | 2026-08-08 |
+| [ai-sdk](https://github.com/kujolang/ai-sdk) | [v1.1.1](https://github.com/kujolang/ai-sdk/releases/tag/v1.1.1) | 2026-09-28 |
 | [anthropic](https://github.com/kujolang/anthropic) | [v0.1.2](https://github.com/kujolang/anthropic/releases/tag/v0.1.2) | 2026-08-27 |
 | [assetworks](https://github.com/kujolang/assetworks) | [v0.2.0](https://github.com/kujolang/assetworks/releases/tag/v0.2.0) | 2026-08-14 |
 | [bluepencil](https://github.com/kujolang/bluepencil) | [v0.2.0](https://github.com/kujolang/bluepencil/releases/tag/v0.2.0) | 2026-08-14 |
@@ -72,7 +72,7 @@ See the [1.6.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [kujo-skills](https://github.com/kujolang/kujo-skills) | [v0.7.0](https://github.com/kujolang/kujo-skills/releases/tag/v0.7.0) | 2026-09-08 |
 | [kujo-workflows](https://github.com/kujolang/kujo-workflows) | [v0.6.0](https://github.com/kujolang/kujo-workflows/releases/tag/v0.6.0) | 2026-09-07 |
 | [lens](https://github.com/kujolang/lens) | [v1.1.0](https://github.com/kujolang/lens/releases/tag/v1.1.0) | 2026-09-07 |
-| [mcp](https://github.com/kujolang/mcp) | [v1.1.1](https://github.com/kujolang/mcp/releases/tag/v1.1.1) | 2026-09-04 |
+| [mcp](https://github.com/kujolang/mcp) | [v1.2.0](https://github.com/kujolang/mcp/releases/tag/v1.2.0) | 2026-09-29 |
 | [muzzle](https://github.com/kujolang/muzzle) | [v1.1.0](https://github.com/kujolang/muzzle/releases/tag/v1.1.0) | 2026-08-30 |
 | [ollama](https://github.com/kujolang/ollama) | [v0.1.10](https://github.com/kujolang/ollama/releases/tag/v0.1.10) | 2026-08-27 |
 | [packwrite](https://github.com/kujolang/packwrite) | [v1.1.0](https://github.com/kujolang/packwrite/releases/tag/v1.1.0) | 2026-08-30 |
@@ -83,7 +83,7 @@ See the [1.6.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [readersignal](https://github.com/kujolang/readersignal) | [v0.3.0](https://github.com/kujolang/readersignal/releases/tag/v0.3.0) | 2026-09-26 |
 | [redact](https://github.com/kujolang/redact) | [v1.0.0](https://github.com/kujolang/redact/releases/tag/v1.0.0) | 2026-08-09 |
 | [relay](https://github.com/kujolang/relay) | [v1.1.0](https://github.com/kujolang/relay/releases/tag/v1.1.0) | 2026-08-27 |
-| [runledger](https://github.com/kujolang/runledger) | [v1.1.0](https://github.com/kujolang/runledger/releases/tag/v1.1.0) | 2026-08-31 |
+| [runledger](https://github.com/kujolang/runledger) | [v1.2.0](https://github.com/kujolang/runledger/releases/tag/v1.2.0) | 2026-09-28 |
 | [scent](https://github.com/kujolang/scent) | [v1.0.0](https://github.com/kujolang/scent/releases/tag/v1.0.0) | 2026-08-08 |
 | [scout](https://github.com/kujolang/scout) | [v1.1.0](https://github.com/kujolang/scout/releases/tag/v1.1.0) | 2026-09-26 |
 | [searchbridge](https://github.com/kujolang/searchbridge) | [v1.0.0](https://github.com/kujolang/searchbridge/releases/tag/v1.0.0) | 2026-09-04 |
@@ -96,7 +96,7 @@ See the [1.6.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [tribunal](https://github.com/kujolang/tribunal) | [v1.0.1](https://github.com/kujolang/tribunal/releases/tag/v1.0.1) | 2026-09-05 |
 | [versionseal](https://github.com/kujolang/versionseal) | [v0.2.0](https://github.com/kujolang/versionseal/releases/tag/v0.2.0) | 2026-08-14 |
 | [watchdog](https://github.com/kujolang/watchdog) | [v1.1.0](https://github.com/kujolang/watchdog/releases/tag/v1.1.0) | 2026-09-26 |
-| [workcell](https://github.com/kujolang/workcell) | [v1.1.0](https://github.com/kujolang/workcell/releases/tag/v1.1.0) | 2026-09-04 |
+| [workcell](https://github.com/kujolang/workcell) | [v1.2.0](https://github.com/kujolang/workcell/releases/tag/v1.2.0) | 2026-09-29 |
 
 The Kujo Pi row was refreshed on September 26, 2026. Other entries retain their individually documented inventory dates.
 
@@ -111,7 +111,7 @@ The Kujo Pi row was refreshed on September 26, 2026. Other entries retain their 
 - **Commerce 0.4.0:** static hosted links by default, optional dynamic checkout, customer portals, and webhook normalization. Provider sandbox qualification remains bounded. Read [Commerce](/tools/commerce/).
 - **Scout 1.1.0:** bounded rooted reads, aggregate limits, security exports, deterministic performance and labeled-corpus gates, stable CI diagnostics, and native Windows contract coverage. It requires Kujo 1.5.0 or newer. Read [Scout](/tools/scout/).
 - **Watchdog 1.1.0:** canonical v2 telemetry, JSONL/OTLP projections, Connected Sources management, and named proxy-profile changes that apply to new requests without restart. Read [Watchdog](/tools/watchdog/).
-- **Agents SDK, Dispatch, RAG, RunLedger, and Eval:** newer default-branch work connects retrieval preferences and bounded lifecycle telemetry. Their guides identify source revisions separately from the older published release archives.
+- **Agents SDK 1.1.2 and RunLedger 1.2.0:** released lifecycle telemetry and evidence-correlation work accompanies Kujo 1.6. Dispatch, RAG and Eval retain separately documented source work beyond their published releases.
 - **CaseFile, Fence, Scent, ShipCheck, Howl, Redact, AI SDK, and Dossier:** recent source hardening has its own verification evidence. Pin the reviewed source when adopting those fixes; an unchanged release archive does not acquire later commits.
 
 ## Tags and source-only packages
@@ -123,3 +123,7 @@ Kujo Pi 1.1.0 is published on GitHub and npm; install `npm:@kujolang/kujo-pi@1.1
 ## Agent discovery
 
 The public [Kujo MCP catalog](https://mcp.kujolang.ai/mcp) exposes read-only project, skill, workflow, and installer guidance. It is separate from the MCP framework and from private application gateways. Refreshes publish a reviewed static snapshot; they do not execute installer commands or grant application permissions.
+
+## Kujo 1.6 companion delivery
+
+RunLedger 1.2.0, AI SDK 1.1.1 and Agents SDK 1.1.2 are published. AI SDK live-provider smoke was explicitly deferred for that release. Workcell, Ability and MCP 1.2.0 distribute the next controlled-execution cohort while retaining experimental assurance/interoperability boundaries. Dispatch remains a separate pending release; these releases do not imply it has been published.
