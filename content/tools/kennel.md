@@ -8,8 +8,8 @@ order: 20
 audience: developer
 difficulty: intermediate
 status: stable
-version: 1.1.0
-last_updated: 2026-09-13
+version: 1.1.1
+last_updated: 2026-09-29
 scope: official registry and local development
 source_repo: kennel
 previous: /tools/kujo/
@@ -73,3 +73,9 @@ The official static registry is available at [kennel.kujolang.ai](https://kennel
 ## Reference
 
 See the [Kennel repository](https://github.com/kujolang/kennel) for manifest and trust policy details.
+
+## Release 1.1.1
+
+[Kennel 1.1.1](https://github.com/kujolang/kennel/releases/tag/v1.1.1) fixes binary-safe public bootstrap downloads, preserves module boundaries in the standalone installer, and retains reviewed Git dependency identities and legitimate source modules in registry packages. Previously published archives remain immutable. The release is verified with Kujo 1.6.0; the minimum compatible runtime remains 1.4.0.
+
+Use `kennel self update` to select the latest stable client, or `kennel self update --version 1.1.1` for an explicit version. Package checksums and provenance remain mandatory; package names alone are not trust anchors.

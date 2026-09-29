@@ -65,7 +65,7 @@ See the [1.6.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [fence](https://github.com/kujolang/fence) | [v1.0.0](https://github.com/kujolang/fence/releases/tag/v1.0.0) | 2026-08-08 |
 | [galleypack](https://github.com/kujolang/galleypack) | [v0.2.0](https://github.com/kujolang/galleypack/releases/tag/v0.2.0) | 2026-08-14 |
 | [howl](https://github.com/kujolang/howl) | [v1.1.0](https://github.com/kujolang/howl/releases/tag/v1.1.0) | 2026-08-11 |
-| [kennel](https://github.com/kujolang/kennel) | [v1.1.0](https://github.com/kujolang/kennel/releases/tag/v1.1.0) | 2026-09-13 |
+| [kennel](https://github.com/kujolang/kennel) | [v1.1.1](https://github.com/kujolang/kennel/releases/tag/v1.1.1) | 2026-09-29 |
 | [kujo](https://github.com/kujolang/kujo) | [v1.6.0](https://github.com/kujolang/kujo/releases/tag/v1.6.0) | 2026-09-28 |
 | [kujo-agents](https://github.com/kujolang/kujo-agents) | [v1.4.0](https://github.com/kujolang/kujo-agents/releases/tag/v1.4.0) | 2026-09-07 |
 | [kujo-pi](https://github.com/kujolang/kujo-pi) | [v1.1.0](https://github.com/kujolang/kujo-pi/releases/tag/v1.1.0) | 2026-09-26 |
@@ -95,7 +95,7 @@ See the [1.6.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [storydesk](https://github.com/kujolang/storydesk) | [v0.2.0](https://github.com/kujolang/storydesk/releases/tag/v0.2.0) | 2026-08-14 |
 | [tribunal](https://github.com/kujolang/tribunal) | [v1.0.1](https://github.com/kujolang/tribunal/releases/tag/v1.0.1) | 2026-09-05 |
 | [versionseal](https://github.com/kujolang/versionseal) | [v0.2.0](https://github.com/kujolang/versionseal/releases/tag/v0.2.0) | 2026-08-14 |
-| [watchdog](https://github.com/kujolang/watchdog) | [v1.1.0](https://github.com/kujolang/watchdog/releases/tag/v1.1.0) | 2026-09-26 |
+| [watchdog](https://github.com/kujolang/watchdog) | [v1.2.0](https://github.com/kujolang/watchdog/releases/tag/v1.2.0) | 2026-09-29 |
 | [workcell](https://github.com/kujolang/workcell) | [v1.2.0](https://github.com/kujolang/workcell/releases/tag/v1.2.0) | 2026-09-29 |
 
 The Kujo Pi row was refreshed on September 26, 2026. Other entries retain their individually documented inventory dates.

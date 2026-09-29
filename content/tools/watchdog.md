@@ -8,8 +8,8 @@ order: 130
 audience: developer
 difficulty: intermediate
 status: local scope verified
-version: current
-last_updated: 2026-09-26
+version: 1.2.0
+last_updated: 2026-09-29
 scope: local-first
 source_repo: watchdog
 previous: /tools/fence/
@@ -65,6 +65,10 @@ Watchdog is not a managed observability service; credentials and deployment rema
 See the [Watchdog repository](https://github.com/kujolang/watchdog).
 
 ## Published release
+
+[Watchdog v1.2.0](https://github.com/kujolang/watchdog/releases/tag/v1.2.0) adds verified Kujo 1.6 runtime-measurement summaries, exact content-addressed references and RunLedger correlation. The adapter preserves caller timing and numeric measurements through HTTP intake and restart without copying private payloads. Use Kujo 1.6.0 for this release. These observations do not authorize execution or replay and do not prove business-effect state. Pricing catalogs have also been refreshed; displayed costs remain estimates.
+
+### Retained 1.1 behavior
 
 [Watchdog v1.1.0](https://github.com/kujolang/watchdog/releases/tag/v1.1.0), published September 26, adds canonical v2 telemetry intake and correlation, lossless JSONL/OTLP projections, and the authenticated Connected Sources panel. Source status remains derived only from configuration or accepted local telemetry. Inbound producers stay separate from outbound exporter destinations, source registration metadata remains secret-free, and deleting a registration never deletes historical telemetry.
 
