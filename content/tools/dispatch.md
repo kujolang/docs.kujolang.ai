@@ -84,7 +84,9 @@ domain; alpha compatibility remains. SQLite, Workcell Git CAS and Ability supply
 live effect verification. Wave D alpha handoffs correlate participant and result
 references without granting replay permission. Participant SDKs remain alpha and
 unpublished under the trusted-local-host model. Effect-set diagnostics are
-read-only; they do not permit multi-effect replay.
+read-only. A separate experimental operator API admits one explicitly selected,
+verified not-started SQLite effect. It does not replay the parent action or
+automatically execute the remaining effects.
 
 No exactly-once effect guarantee, universal rollback, general machine-loss
 recovery, remote participant authentication or stable participant SDK is claimed.
