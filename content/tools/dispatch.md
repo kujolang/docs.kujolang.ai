@@ -8,8 +8,8 @@ order: 60
 audience: developer
 difficulty: intermediate
 status: local scope verified
-version: current
-last_updated: 2026-09-09
+version: 1.3.0
+last_updated: 2026-09-29
 scope: local-first
 source_repo: dispatch
 previous: /tools/scout/
@@ -63,8 +63,31 @@ Live integrations need separate proof; local workflow orchestration is the docum
 
 See the [Dispatch repository](https://github.com/kujolang/dispatch).
 
-## Published release and current development
+## Dispatch 1.3.0
 
-The latest published GitHub Release checked on September 9 is [v1.2.0](https://github.com/kujolang/dispatch/releases/tag/v1.2.0). Recent default-branch work persists task retrieval preferences, adds a RAG documentation plugin and a real Agents SDK/RAG handler example, and exposes bounded task/retry observations with source attempt identity. These additions do not turn fixture coverage into proof for every live provider.
+[Dispatch 1.3.0](https://github.com/kujolang/dispatch/releases/tag/v1.3.0)
+requires Kujo 1.6.0 and uses released AI SDK and Agents SDK dependencies. It adds
+process-owned run locks, durable review checkpoints, failure-control decisions,
+restart-safe continuation, retrieval preferences and bounded evidence inspection.
+Stop older workers before upgrading and retain a backup; do not mix locking or
+protected-state formats across versions. Follow the repository's
+[upgrade guidance](https://github.com/kujolang/dispatch/blob/v1.3.0/docs/UPGRADING_TO_1_3.md).
 
-These newer changes are [source work at dcffd8f8c3fb](https://github.com/kujolang/dispatch/tree/dcffd8f8c3fb9bac1e66bc5a0ad6a5d078c88019); they are not retroactively included in the older release archive.
+`resume-decision` preserves configured tool authorization. An approval applies to
+its reviewed step, not every later gate; concurrent delivery cannot create another
+permission. Dispatch remains the sole replay/admission authority.
+
+### Experimental companion contracts
+
+Wave C beta assurance remains opt-in in the bounded single-effect required/deny
+domain; alpha compatibility remains. SQLite, Workcell Git CAS and Ability supply
+live effect verification. Wave D alpha handoffs correlate participant and result
+references without granting replay permission. Participant SDKs remain alpha and
+unpublished under the trusted-local-host model. Effect-set diagnostics are
+read-only; they do not permit multi-effect replay.
+
+No exactly-once effect guarantee, universal rollback, general machine-loss
+recovery, remote participant authentication or stable participant SDK is claimed.
+Source-blind agent adoption is technical evidence; human usability validation
+remains separate. See the
+[release notes](https://github.com/kujolang/dispatch/blob/v1.3.0/docs/RELEASE_1_3_0.md).
