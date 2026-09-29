@@ -14,7 +14,7 @@ last_updated: 2026-09-29
 tags: [ecosystem, releases, versions, installation]
 ---
 
-This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases, Kujo and the first companion batch from September 28, and Workcell/Ability/MCP and SSG from September 29. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
+This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases, Kujo and the first companion batch from September 28, and Workcell/Ability/MCP, Dispatch and SSG from September 29. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
 
 ## Start here
 
@@ -59,7 +59,7 @@ See the [1.6.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [concord](https://github.com/kujolang/concord) | [v1.0.0](https://github.com/kujolang/concord/releases/tag/v1.0.0) | 2026-08-08 |
 | [contentgraph](https://github.com/kujolang/contentgraph) | [v0.3.0](https://github.com/kujolang/contentgraph/releases/tag/v0.3.0) | 2026-08-13 |
 | [crud-api](https://github.com/kujolang/crud-api) | [v1.0.0](https://github.com/kujolang/crud-api/releases/tag/v1.0.0) | 2026-06-11 |
-| [dispatch](https://github.com/kujolang/dispatch) | [v1.2.0](https://github.com/kujolang/dispatch/releases/tag/v1.2.0) | 2026-08-27 |
+| [dispatch](https://github.com/kujolang/dispatch) | [v1.3.0](https://github.com/kujolang/dispatch/releases/tag/v1.3.0) | 2026-09-29 |
 | [dossier](https://github.com/kujolang/dossier) | [v0.2.0](https://github.com/kujolang/dossier/releases/tag/v0.2.0) | 2026-08-14 |
 | [eval](https://github.com/kujolang/eval) | [v1.0.0](https://github.com/kujolang/eval/releases/tag/v1.0.0) | 2026-08-08 |
 | [fence](https://github.com/kujolang/fence) | [v1.0.0](https://github.com/kujolang/fence/releases/tag/v1.0.0) | 2026-08-08 |
@@ -105,14 +105,15 @@ The Kujo Pi row was refreshed on September 26, 2026. Other entries retain their 
 - **Kujo Pi 1.1.0:** approval-gated Ability tools, opt-in Watchdog v2 metadata, bounded telemetry and artifact inspection, and receipt-failure recovery. Read [Kujo Pi](/tools/kujo-pi/).
 
 - **AI Chat 1.2.0:** durable recovery, bounded streams and context, and RAG documentation lookup. Follow its Node and storage upgrade requirements; the eight-hour soak remains incomplete. Read [AI Chat](/showcases/ai-chat/).
-- **Workcell 1.1.0:** stable Docker/Podman execution, with portable contracts and remote adapters still alpha. Keep the package's qualified runtime pin. Read [Workcell](/tools/workcell/).
+- **Workcell 1.2.0:** Docker/Podman execution and failure preservation, with Git assurance/process correlation experimental and remote adapters still alpha. Use the package's qualified Kujo 1.6.0 runtime. Read [Workcell](/tools/workcell/).
 - **SiteProbe 0.3.0:** native Kujo product commands and platform-qualified source archives; its test tooling can still require Python. Read [SiteProbe](/tools/siteprobe/).
 - **Skills 0.7.0, Workflows 0.6.0, Agents 1.4.0:** 135 skills, 44 local workflows, and canonical VideoOps tools and schemas. Live media permission and provider limits remain explicit. Read [skills](/collections/skills/) and [workflows](/collections/workflows/).
 - **Commerce 0.4.0:** static hosted links by default, optional dynamic checkout, customer portals, and webhook normalization. Provider sandbox qualification remains bounded. Read [Commerce](/tools/commerce/).
 - **Scout 1.1.0:** bounded rooted reads, aggregate limits, security exports, deterministic performance and labeled-corpus gates, stable CI diagnostics, and native Windows contract coverage. It requires Kujo 1.5.0 or newer. Read [Scout](/tools/scout/).
 - **Watchdog 1.1.0:** canonical v2 telemetry, JSONL/OTLP projections, Connected Sources management, and named proxy-profile changes that apply to new requests without restart. Read [Watchdog](/tools/watchdog/).
-- **Agents SDK 1.1.2 and RunLedger 1.2.0:** released lifecycle telemetry and evidence-correlation work accompanies Kujo 1.6. Dispatch, RAG and Eval retain separately documented source work beyond their published releases.
-- **CaseFile, Fence, Scent, ShipCheck, Howl, Redact, AI SDK, and Dossier:** recent source hardening has its own verification evidence. Pin the reviewed source when adopting those fixes; an unchanged release archive does not acquire later commits.
+- **Agents SDK 1.1.2 and RunLedger 1.2.0:** released lifecycle telemetry and evidence-correlation work accompanies Kujo 1.6. RAG and Eval retain separately documented source work beyond their published releases.
+- **Dispatch 1.3.0:** durable review, policy-preserving resume and restart-safe control with Kujo 1.6.0. Wave C beta and Wave D alpha remain experimental; a separate selected-effect operator API does not authorize parent replay. Read [Dispatch](/tools/dispatch/).
+- **CaseFile, Fence, Scent, ShipCheck, Howl, Redact, and Dossier:** recent source hardening has its own verification evidence. Pin the reviewed source when adopting those fixes; an unchanged release archive does not acquire later commits.
 
 ## Tags and source-only packages
 
@@ -126,4 +127,4 @@ The public [Kujo MCP catalog](https://mcp.kujolang.ai/mcp) exposes read-only pro
 
 ## Kujo 1.6 companion delivery
 
-RunLedger 1.2.0, AI SDK 1.1.1 and Agents SDK 1.1.2 are published. AI SDK live-provider smoke was explicitly deferred for that release. Workcell, Ability and MCP 1.2.0 distribute the next controlled-execution cohort while retaining experimental assurance/interoperability boundaries. Dispatch remains a separate pending release; these releases do not imply it has been published.
+RunLedger 1.2.0, AI SDK 1.1.1 and Agents SDK 1.1.2 are published. AI SDK live-provider smoke was explicitly deferred for that release. Workcell, Ability and MCP 1.2.0 distribute the next controlled-execution cohort while retaining experimental assurance/interoperability boundaries. Dispatch 1.3.0 completes this controller release cohort with the same experimental boundaries. Stop older workers and follow its backup/upgrade instructions before changing persisted-state versions.
