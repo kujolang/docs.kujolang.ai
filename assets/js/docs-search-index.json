@@ -403,7 +403,7 @@
         "Agent discovery",
         "Kujo 1.6 companion delivery"
       ],
-      "text": "This inventory was checked against all 86 public kujolang repositories on September 9, 2026 , with Scout and ReaderSignal refreshed from their September 26 releases, Kujo and the first companion batch from September 28, and Workcell/Ability/MCP from September 29. Product releases, protocol versions, repository tags, and the docs site's version are separate. "
+      "text": "This inventory was checked against all 86 public kujolang repositories on September 9, 2026 , with Scout and ReaderSignal refreshed from their September 26 releases, Kujo and the first companion batch from September 28, and Workcell/Ability/MCP and SSG from September 29. Product releases, protocol versions, repository tags, and the docs site's version are se"
     },
     {
       "title": "Showcase Directory",
@@ -934,7 +934,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "current",
+      "version": "1.1.0",
       "tags": [
         "[showcase, static, publishing]"
       ],
@@ -944,11 +944,12 @@
         "Main workflows",
         "Five-minute example",
         "What you get",
+        "Browser agents and local execution",
         "How it fits",
         "Boundaries",
         "Reference"
       ],
-      "text": "Use it when\u2026 You need a transparent, deterministic static publishing pipeline whose content, templates, assets, and generated outputs stay visible. Interface overview | Surface | What is available | | --- | --- | | Inputs | Markdown content, YAML/JSON config, templates, assets, and custom collections | | Build | Output/content/template overrides, draft previ"
+      "text": "Use it when\u2026 You need a transparent, deterministic static publishing pipeline whose content, templates, assets, and generated outputs stay visible. Release 1.1.0 https://github.com/kujolang/ssg/releases/tag/v1.1.0 , published September 29, 2026, adds default-on experimental WebMCP, ten executable local Ability workflows, safer cleanup and metadata handling, "
     },
     {
       "title": "TotalRecall",
