@@ -101,7 +101,7 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="workcell">Workcell</h1><p class="docs-description">Run bounded Kujo and agent workflows in disposable Docker or Podman workspaces.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>stable within local and CI scope</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-04</span></div>
+		<h1 id="workcell">Workcell</h1><p class="docs-description">Run bounded Kujo and agent workflows in disposable Docker or Podman workspaces.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>stable within local and CI scope</span><span class="docs-badge docs-badge-version"><span>Version</span>1.2.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-29</span></div>
 		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>A workflow needs a disposable Git worktree, bounded container resources, explicit network and filesystem policy, declared artifact export, and an integrity-verifiable receipt.</p>
 <h2 id="interface-overview">Interface overview</h2>
@@ -120,9 +120,12 @@
 <h2 id="boundaries">Boundaries</h2>
 <p>Workcell does not protect against a compromised daemon or host kernel, provide microVM or hosted multi-tenant isolation, or certify deployment-specific egress and image policy. Run <code>workcell doctor</code> on each target host.</p>
 <h2 id="reference">Reference</h2>
-<p>See the <a href="https://github.com/kujolang/workcell">Workcell repository</a> for installation, examples, contract references, provider operations, and current releases.</p></div>
+<p>See the <a href="https://github.com/kujolang/workcell">Workcell repository</a> for installation, examples, contract references, provider operations, and current releases.</p>
+<h2 id="version-1-2-0-and-kujo-1-6">Version 1.2.0 and Kujo 1.6</h2>
+<p>Workcell 1.2.0 requires Kujo 1.6.0 and adds bounded preservation, portable execution results, conservative re-execution descriptors and expiry-gated owned cleanup. The Git CAS assurance profile and controlled process participant are experimental; Dispatch decides replay. Stable Docker/Podman scope and remote-adapter alpha boundaries remain unchanged.</p>
+<p>See the <a href="https://github.com/kujolang/workcell/releases/tag/v1.2.0">1.2.0 release</a> for the exact source and release evidence. Assurance beta remains opt-in, required/deny and single-effect; controlled handoffs remain alpha. These package releases do not stabilize remote trust or participant SDKs.</p></div>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#portable-backends">Portable backends</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#evidence-and-recovery">Evidence and recovery</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#portable-backends">Portable backends</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#evidence-and-recovery">Evidence and recovery</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li><li class="toc-level-2"><a href="#version-1-2-0-and-kujo-1-6">Version 1.2.0 and Kujo 1.6</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">

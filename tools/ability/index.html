@@ -101,14 +101,14 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="ability">Ability</h1><p class="docs-description">Define portable operation contracts, validate cross-language digests, verify signed packs offline, and test approvals with a local fixture kit.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>stable runtime; SDK previews</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-04</span></div>
+		<h1 id="ability">Ability</h1><p class="docs-description">Define portable operation contracts, validate cross-language digests, verify signed packs offline, and test approvals with a local fixture kit.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>stable runtime; SDK previews</span><span class="docs-badge docs-badge-version"><span>Version</span>1.2.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-29</span></div>
 		<div class="docs-body"><p>Kujo Ability gives an operation a stable identity, input and output schemas, declared effects, and retry semantics. Applications bind that definition to handlers and retain control of identity, permissions, credentials, approvals, storage, and transport.</p>
 <h2 id="install">Install</h2>
-<p>Ability 1.1.0 requires Kujo 1.2.0 or newer. Install the tagged release with <a href="/tools/kennel/">Kennel</a> and commit the generated lockfile:</p>
-<pre><code class="language-bash">kujo run /path/to/kennel/kennel.kujo --interpreter -- add github:kujolang/ability@v1.1.0 --alias ability
+<p>Ability 1.2.0 requires Kujo 1.6.0 or newer. Install the tagged release with <a href="/tools/kennel/">Kennel</a> and commit the generated lockfile:</p>
+<pre><code class="language-bash">kujo run /path/to/kennel/kennel.kujo --interpreter -- add github:kujolang/ability@v1.2.0 --alias ability
 kujo run /path/to/kennel/kennel.kujo --interpreter -- install</code></pre>
 <pre><code class="language-kujo">from ability import validate_ability_definition, ability_definition_digest</code></pre>
-<p>Use the <a href="https://github.com/kujolang/ability/blob/v1.1.0/examples/content_find.json">complete definition example</a> to start. It is a documentation fixture, not a built-in content service.</p>
+<p>Use the <a href="https://github.com/kujolang/ability/blob/v1.2.0/examples/content_find.json">complete definition example</a> to start. It is a documentation fixture, not a built-in content service.</p>
 <h2 id="what-the-release-includes">What the release includes</h2>
 <table><thead><tr>
 <th>Surface</th>
@@ -137,7 +137,7 @@ kujo run /path/to/kennel/kennel.kujo --interpreter -- install</code></pre>
 </tbody></table>
 <h2 id="digest-compatibility">Digest compatibility</h2>
 <p>The explicit <code>sha256-canonical-json-v2</code> digest agrees across Kujo, TypeScript, and Python. It accepts JSON strings, booleans, null, arrays, objects, and integers within JavaScript&apos;s safe range. It rejects decimals and larger integers rather than changing their values.</p>
-<p>The existing Kujo runtime and stored receipts keep their original digest. Use the explicit v2 digest for new offline pack trust tooling; do not silently replace live invocation or receipt identity. See the <a href="https://github.com/kujolang/ability/blob/v1.1.0/docs/SDK.md">SDK compatibility notes</a>.</p>
+<p>The existing Kujo runtime and stored receipts keep their original digest. Use the explicit v2 digest for new offline pack trust tooling; do not silently replace live invocation or receipt identity. See the <a href="https://github.com/kujolang/ability/blob/v1.2.0/docs/SDK.md">SDK compatibility notes</a>.</p>
 <h2 id="try-the-development-kit">Try the development kit</h2>
 <p>Run these commands from an Ability checkout:</p>
 <pre><code class="language-bash">node devkit/cli.mjs validate examples/content_find.json
@@ -150,9 +150,12 @@ KUJO_ABILITY_DEV_TOKEN=&apos;replace-with-a-local-secret&apos; node devkit/cli.m
 <h2 id="verify-and-learn-more">Verify and learn more</h2>
 <pre><code class="language-bash">bash tests/run_tests.sh
 bash scripts/verify-release.sh</code></pre>
-<p>The release gate includes cross-language conformance, offline trust checks, fixture execution, available consumer conformance, and Fence architecture checks. See the <a href="https://github.com/kujolang/ability/releases/tag/v1.1.0">release</a>, <a href="https://github.com/kujolang/ability/blob/v1.1.0/docs/RUNTIME.md">runtime guide</a>, <a href="https://github.com/kujolang/ability/blob/v1.1.0/docs/REGISTRY.md">pack trust model</a>, and <a href="https://github.com/kujolang/ability/blob/v1.1.0/docs/DEVKIT.md">development kit guide</a>.</p></div>
+<p>The release gate includes cross-language conformance, offline trust checks, fixture execution, available consumer conformance, and Fence architecture checks. See the <a href="https://github.com/kujolang/ability/releases/tag/v1.2.0">release</a>, <a href="https://github.com/kujolang/ability/blob/v1.2.0/docs/RUNTIME.md">runtime guide</a>, <a href="https://github.com/kujolang/ability/blob/v1.2.0/docs/REGISTRY.md">pack trust model</a>, and <a href="https://github.com/kujolang/ability/blob/v1.2.0/docs/DEVKIT.md">development kit guide</a>.</p>
+<h2 id="version-1-2-0-and-kujo-1-6">Version 1.2.0 and Kujo 1.6</h2>
+<p>Ability 1.2.0 requires Kujo 1.6.0 and exports the portable v2 definition digest through the public API. It includes the experimental application-assurance profile and local HTTP/OpenAPI controlled integration. Applications own authentication and business transactions; Dispatch owns replay. Stable Ability and receipt identities remain unchanged.</p>
+<p>See the <a href="https://github.com/kujolang/ability/releases/tag/v1.2.0">1.2.0 release</a> for the exact source and release evidence. Assurance beta remains opt-in, required/deny and single-effect; controlled handoffs remain alpha. These package releases do not stabilize remote trust or participant SDKs.</p></div>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#install">Install</a></li><li class="toc-level-2"><a href="#what-the-release-includes">What the release includes</a></li><li class="toc-level-2"><a href="#digest-compatibility">Digest compatibility</a></li><li class="toc-level-2"><a href="#try-the-development-kit">Try the development kit</a></li><li class="toc-level-2"><a href="#connect-applications-and-agents">Connect applications and agents</a></li><li class="toc-level-2"><a href="#verify-and-learn-more">Verify and learn more</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#install">Install</a></li><li class="toc-level-2"><a href="#what-the-release-includes">What the release includes</a></li><li class="toc-level-2"><a href="#digest-compatibility">Digest compatibility</a></li><li class="toc-level-2"><a href="#try-the-development-kit">Try the development kit</a></li><li class="toc-level-2"><a href="#connect-applications-and-agents">Connect applications and agents</a></li><li class="toc-level-2"><a href="#verify-and-learn-more">Verify and learn more</a></li><li class="toc-level-2"><a href="#version-1-2-0-and-kujo-1-6">Version 1.2.0 and Kujo 1.6</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">

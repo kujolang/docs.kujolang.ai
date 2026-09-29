@@ -400,9 +400,10 @@
         "Published package releases",
         "Recent changes worth checking",
         "Tags and source-only packages",
-        "Agent discovery"
+        "Agent discovery",
+        "Kujo 1.6 companion delivery"
       ],
-      "text": "This inventory was checked against all 86 public kujolang repositories on September 9, 2026 , with Scout and ReaderSignal refreshed from their September 26 releases and Kujo from its September 28 release. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease GitHub"
+      "text": "This inventory was checked against all 86 public kujolang repositories on September 9, 2026 , with Scout and ReaderSignal refreshed from their September 26 releases, Kujo and the first companion batch from September 28, and Workcell/Ability/MCP from September 29. Product releases, protocol versions, repository tags, and the docs site's version are separate. "
     },
     {
       "title": "Showcase Directory",
@@ -982,7 +983,7 @@
       "audience": "developer",
       "difficulty": "advanced",
       "status": "stable runtime; SDK previews",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "tags": [
         "[tool, contracts, agents, mcp]"
       ],
@@ -992,9 +993,10 @@
         "Digest compatibility",
         "Try the development kit",
         "Connect applications and agents",
-        "Verify and learn more"
+        "Verify and learn more",
+        "Version 1.2.0 and Kujo 1.6"
       ],
-      "text": "Kujo Ability gives an operation a stable identity, input and output schemas, declared effects, and retry semantics. Applications bind that definition to handlers and retain control of identity, permissions, credentials, approvals, storage, and transport. Install Ability 1.1.0 requires Kujo 1.2.0 or newer. Install the tagged release with Kennel /tools/kennel/"
+      "text": "Kujo Ability gives an operation a stable identity, input and output schemas, declared effects, and retry semantics. Applications bind that definition to handlers and retain control of identity, permissions, credentials, approvals, storage, and transport. Install Ability 1.2.0 requires Kujo 1.6.0 or newer. Install the tagged release with Kennel /tools/kennel/"
     },
     {
       "title": "Agents SDK",
@@ -1492,7 +1494,7 @@
       "audience": "developer",
       "difficulty": "advanced",
       "status": "local scope verified",
-      "version": "current",
+      "version": "1.2.0",
       "tags": [
         "[tool, mcp, integrations]"
       ],
@@ -1506,7 +1508,8 @@
         "Boundaries",
         "Reference",
         "Portable operation contracts",
-        "Public catalog and application gateways"
+        "Public catalog and application gateways",
+        "Version 1.2.0 and Kujo 1.6"
       ],
       "text": "Use it when\u2026 An agent needs a deliberate server boundary for tools or resources with roots, limits, auth, and a visible safety tier. Interface overview | Surface | What is available | | --- | --- | | Generator | make <repo with output and artifact-directory controls | | Profiles | Repo-specific discovery plus profile-only or artifacts-only generation | | Con"
     },
@@ -2076,7 +2079,7 @@
       "audience": "developer",
       "difficulty": "advanced",
       "status": "stable within local and CI scope",
-      "version": "current",
+      "version": "1.2.0",
       "tags": [
         "[tool, execution, containers, security]"
       ],
@@ -2087,7 +2090,8 @@
         "Five-minute example",
         "Evidence and recovery",
         "Boundaries",
-        "Reference"
+        "Reference",
+        "Version 1.2.0 and Kujo 1.6"
       ],
       "text": "Use it when\u2026 A workflow needs a disposable Git worktree, bounded container resources, explicit network and filesystem policy, declared artifact export, and an integrity-verifiable receipt. Interface overview Workcell validates an execution definition, prepares a disposable Git workspace, runs the workload through Docker or Podman, exports declared artifacts,"
     }
