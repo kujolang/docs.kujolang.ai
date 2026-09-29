@@ -10,11 +10,11 @@ audience: all
 difficulty: beginner
 status: dated release inventory
 version: current
-last_updated: 2026-09-28
+last_updated: 2026-09-29
 tags: [ecosystem, releases, versions, installation]
 ---
 
-This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases and Kujo from its September 28 release. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
+This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases Kujo from its September 28 release, and SSG from its September 29 release. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
 
 ## Start here
 
@@ -91,7 +91,7 @@ See the [1.6.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [site-kit](https://github.com/kujolang/site-kit) | [v1.0.0](https://github.com/kujolang/site-kit/releases/tag/v1.0.0) | 2026-08-09 |
 | [siteprobe](https://github.com/kujolang/siteprobe) | [v0.3.0](https://github.com/kujolang/siteprobe/releases/tag/v0.3.0) | 2026-09-07 |
 | [spec](https://github.com/kujolang/spec) | [v1.0.1](https://github.com/kujolang/spec/releases/tag/v1.0.1) | 2026-08-30 |
-| [ssg](https://github.com/kujolang/ssg) | [v1.0.0](https://github.com/kujolang/ssg/releases/tag/v1.0.0) | 2026-08-08 |
+| [ssg](https://github.com/kujolang/ssg) | [v1.1.0](https://github.com/kujolang/ssg/releases/tag/v1.1.0) | 2026-09-29 |
 | [storydesk](https://github.com/kujolang/storydesk) | [v0.2.0](https://github.com/kujolang/storydesk/releases/tag/v0.2.0) | 2026-08-14 |
 | [tribunal](https://github.com/kujolang/tribunal) | [v1.0.1](https://github.com/kujolang/tribunal/releases/tag/v1.0.1) | 2026-09-05 |
 | [versionseal](https://github.com/kujolang/versionseal) | [v0.2.0](https://github.com/kujolang/versionseal/releases/tag/v0.2.0) | 2026-08-14 |

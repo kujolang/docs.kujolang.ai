@@ -8,6 +8,8 @@
 
 ## Unreleased
 
+- Document SSG 1.1.0, default-on experimental WebMCP, ten local Ability workflows, independent pack versions, and release boundaries.
+
 - Document Watchdog 1.1.0 canonical telemetry, Connected Sources management,
   named proxy-profile hot reload behavior, and the current release inventory.
 
