@@ -8,8 +8,8 @@ order: 69
 audience: developer
 difficulty: advanced
 status: stable runtime; SDK previews
-version: 1.1.0
-last_updated: 2026-09-04
+version: 1.2.0
+last_updated: 2026-09-29
 scope: local-first
 source_repo: ability
 tags: [tool, contracts, agents, mcp]
@@ -19,10 +19,10 @@ Kujo Ability gives an operation a stable identity, input and output schemas, dec
 
 ## Install
 
-Ability 1.1.0 requires Kujo 1.2.0 or newer. Install the tagged release with [Kennel](/tools/kennel/) and commit the generated lockfile:
+Ability 1.2.0 requires Kujo 1.6.0 or newer. Install the tagged release with [Kennel](/tools/kennel/) and commit the generated lockfile:
 
 ```bash
-kujo run /path/to/kennel/kennel.kujo --interpreter -- add github:kujolang/ability@v1.1.0 --alias ability
+kujo run /path/to/kennel/kennel.kujo --interpreter -- add github:kujolang/ability@v1.2.0 --alias ability
 kujo run /path/to/kennel/kennel.kujo --interpreter -- install
 ```
 
@@ -30,7 +30,7 @@ kujo run /path/to/kennel/kennel.kujo --interpreter -- install
 from ability import validate_ability_definition, ability_definition_digest
 ```
 
-Use the [complete definition example](https://github.com/kujolang/ability/blob/v1.1.0/examples/content_find.json) to start. It is a documentation fixture, not a built-in content service.
+Use the [complete definition example](https://github.com/kujolang/ability/blob/v1.2.0/examples/content_find.json) to start. It is a documentation fixture, not a built-in content service.
 
 ## What the release includes
 
@@ -46,7 +46,7 @@ Use the [complete definition example](https://github.com/kujolang/ability/blob/v
 
 The explicit `sha256-canonical-json-v2` digest agrees across Kujo, TypeScript, and Python. It accepts JSON strings, booleans, null, arrays, objects, and integers within JavaScript's safe range. It rejects decimals and larger integers rather than changing their values.
 
-The existing Kujo runtime and stored receipts keep their original digest. Use the explicit v2 digest for new offline pack trust tooling; do not silently replace live invocation or receipt identity. See the [SDK compatibility notes](https://github.com/kujolang/ability/blob/v1.1.0/docs/SDK.md).
+The existing Kujo runtime and stored receipts keep their original digest. Use the explicit v2 digest for new offline pack trust tooling; do not silently replace live invocation or receipt identity. See the [SDK compatibility notes](https://github.com/kujolang/ability/blob/v1.2.0/docs/SDK.md).
 
 ## Try the development kit
 
@@ -73,4 +73,10 @@ bash tests/run_tests.sh
 bash scripts/verify-release.sh
 ```
 
-The release gate includes cross-language conformance, offline trust checks, fixture execution, available consumer conformance, and Fence architecture checks. See the [release](https://github.com/kujolang/ability/releases/tag/v1.1.0), [runtime guide](https://github.com/kujolang/ability/blob/v1.1.0/docs/RUNTIME.md), [pack trust model](https://github.com/kujolang/ability/blob/v1.1.0/docs/REGISTRY.md), and [development kit guide](https://github.com/kujolang/ability/blob/v1.1.0/docs/DEVKIT.md).
+The release gate includes cross-language conformance, offline trust checks, fixture execution, available consumer conformance, and Fence architecture checks. See the [release](https://github.com/kujolang/ability/releases/tag/v1.2.0), [runtime guide](https://github.com/kujolang/ability/blob/v1.2.0/docs/RUNTIME.md), [pack trust model](https://github.com/kujolang/ability/blob/v1.2.0/docs/REGISTRY.md), and [development kit guide](https://github.com/kujolang/ability/blob/v1.2.0/docs/DEVKIT.md).
+
+## Version 1.2.0 and Kujo 1.6
+
+Ability 1.2.0 requires Kujo 1.6.0 and exports the portable v2 definition digest through the public API. It includes the experimental application-assurance profile and local HTTP/OpenAPI controlled integration. Applications own authentication and business transactions; Dispatch owns replay. Stable Ability and receipt identities remain unchanged.
+
+See the [1.2.0 release](https://github.com/kujolang/ability/releases/tag/v1.2.0) for the exact source and release evidence. Assurance beta remains opt-in, required/deny and single-effect; controlled handoffs remain alpha. These package releases do not stabilize remote trust or participant SDKs.
