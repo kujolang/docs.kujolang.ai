@@ -926,6 +926,31 @@
       "text": "What it demonstrates Intake normalizes manual, file, webhook, Slack, GitHub, Jira, Linear, ClickUp, and email inputs into durable items, applies deterministic rules and safety checks, proposes actions, requires policy-defined approval, and exports reviewed learning. Five-minute example What you get Local state under .intake/, a token-authenticated localhost "
     },
     {
+      "title": "Presentations",
+      "description": "Browser-native slide decks with static routes, reading and print editions, presenter tools, and optional motion.",
+      "url": "https://docs.kujolang.ai/showcases/presentations/",
+      "route": "showcases/presentations/",
+      "section": "Showcases",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "preview",
+      "version": "0.3.0",
+      "tags": [
+        "[showcase, presentations, slides, publishing, sitekit]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Interface overview",
+        "Main workflows",
+        "Five-minute example",
+        "What you get",
+        "How it fits",
+        "Boundaries",
+        "Reference"
+      ],
+      "text": "Kujo Presentations turns structured deck source into a browser-native static site. Each deck gets numbered slide URLs, an overview, a reading edition, print and PDF output, and an optional presenter console. The source stays in normal files instead of a proprietary presentation format. Use it when\u2026 You need a deck that can be reviewed in Git, hosted as stati"
+    },
+    {
       "title": "SSG",
       "description": "Deterministic Markdown-to-site publishing with templates, feeds, sitemap, and llms.txt.",
       "url": "https://docs.kujolang.ai/showcases/ssg/",

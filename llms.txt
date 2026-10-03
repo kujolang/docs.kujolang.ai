@@ -53,6 +53,7 @@ A local-first path through the Kujo language and ecosystem.
 - [CMS](https://docs.kujolang.ai/showcases/cms/) — A framework-neutral content backend with first-class administration, extensions, SEO, identity, AI abilities, MCP, and WebMCP.
 - [CRUD API Showcase](https://docs.kujolang.ai/showcases/crud-api/) — A SQLite API and frontend playground showing auth strategies, recovery patterns, and contracts.
 - [Intake](https://docs.kujolang.ai/showcases/intake/) — Normalize inbound work, route it through policy, and require approval before external effects.
+- [Presentations](https://docs.kujolang.ai/showcases/presentations/) — Browser-native slide decks with static routes, reading and print editions, presenter tools, and optional motion.
 - [SSG](https://docs.kujolang.ai/showcases/ssg/) — Deterministic Markdown-to-site publishing with templates, feeds, sitemap, and llms.txt.
 - [TotalRecall](https://docs.kujolang.ai/showcases/totalrecall/) — A local-first ingestion showcase for meetings, chat exports, Slack threads, and GitHub activity.
 - [Start here](https://docs.kujolang.ai/start-here/) — Choose the shortest path from discovering Kujo to running a program or repository-owned agent.
