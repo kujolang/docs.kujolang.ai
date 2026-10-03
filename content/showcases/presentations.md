@@ -72,6 +72,7 @@ Generated decks are static files. Presentations does not provide accounts, tenan
 
 ## Reference
 
+- [Kujolang.ai Presentations showcase](https://kujolang.ai/ecosystem/presentations/)
 - [Presentations repository](https://github.com/kujolang/presentations)
 - [Presentations 0.3.0 release](https://github.com/kujolang/presentations/releases/tag/v0.3.0)
 - [Getting started](https://github.com/kujolang/presentations/blob/v0.3.0/docs/getting-started.md)

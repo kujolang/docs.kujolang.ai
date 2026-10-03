@@ -119,6 +119,7 @@ require_text "ecosystem/showcases/index.html" 'href="/showcases/presentations/"'
 require_text "showcases/presentations/index.html" '<title>Presentations | Kujo Docs</title>'
 require_text "showcases/presentations/index.html" 'Kujo Presentations turns structured deck source into a browser-native static site.'
 require_text "showcases/presentations/index.html" 'https://presentations.kujolang.ai/'
+require_text "showcases/presentations/index.html" 'https://kujolang.ai/ecosystem/presentations/'
 require_text "tools/index.html" 'Use Kujo tools for agents, orchestration, evidence, quality, publishing, and operations.'
 require_text "index.html" 'width="32" height="32"'
 require_file "assets/img/social/kujo-docs.jpg"
