@@ -21,6 +21,7 @@ tags: [applications, publishing, showcases]
 - [CRUD API](/showcases/crud-api/) demonstrates SQLite APIs, auth strategies, and a frontend playground.
 - [CMS](/showcases/cms/) provides a framework-neutral content backend with a complete administration example, portable themes and plugins, SEO and social workflows, and first-class agent access through abilities, MCP descriptors, and WebMCP.
 - [SSG](/showcases/ssg/) demonstrates deterministic static publishing and documentation sites.
+- [Presentations](/showcases/presentations/) builds browser-native slide decks as static sites with reviewable source, reading and print editions, and presenter tools.
 - [TotalRecall](/showcases/totalrecall/) demonstrates local provider-to-artifact knowledge ingestion.
 - [Intake](/showcases/intake/) demonstrates policy-gated inbound work and learning export.
 - [Cinch](/showcases/cinch/) demonstrates a local desktop prompt-to-PR development surface.

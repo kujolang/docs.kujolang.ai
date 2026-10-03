@@ -19,6 +19,7 @@ The showcase set includes:
 - [CRUD API Showcase](/showcases/crud-api/) — SQLite CRUD contracts, auth strategies, concurrency, and a frontend playground.
 - [AI Chat](/showcases/ai-chat/) — local multi-provider chat, streaming, transcription, and durable conversations.
 - [SSG](/showcases/ssg/) — deterministic Markdown publishing, templates, feeds, sitemap, and `llms.txt`.
+- [Presentations](/showcases/presentations/) — browser-native slide decks with static routes, reading and print editions, presenter tools, and optional motion.
 - [TotalRecall](/showcases/totalrecall/) — local-first ingestion into Strata and filesystem destinations.
 - [Intake](/showcases/intake/) — local-first inbound work normalization, policy, approval, and learning export.
 - [Cinch](/showcases/cinch/) — a macOS-first development harness for files, Git, commands, AI context, and proof.

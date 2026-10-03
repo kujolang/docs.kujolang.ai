@@ -8,6 +8,8 @@
 
 ## Unreleased
 
+- Add a Presentations showcase guide covering browser-native slide output, authoring, review, presenter tools, deployment boundaries, and the published 0.3.0 preview.
+
 - Document SSG 1.1.0, default-on experimental WebMCP, ten local Ability workflows, independent pack versions, and release boundaries.
 
 - Document Watchdog 1.1.0 canonical telemetry, Connected Sources management,

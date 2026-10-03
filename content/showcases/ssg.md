@@ -13,7 +13,7 @@ last_updated: 2026-09-29
 scope: local-first
 source_repo: ssg
 previous: /showcases/ai-chat/
-next: /showcases/totalrecall/
+next: /showcases/presentations/
 tags: [showcase, static, publishing]
 ---
 

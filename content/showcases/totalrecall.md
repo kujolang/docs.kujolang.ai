@@ -12,7 +12,7 @@ version: current
 last_updated: 2026-08-23
 scope: showcase
 source_repo: totalrecall
-previous: /showcases/ssg/
+previous: /showcases/presentations/
 next: /collections/
 tags: [showcase, ingestion, knowledge]
 ---

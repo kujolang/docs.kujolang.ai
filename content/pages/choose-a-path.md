@@ -25,7 +25,7 @@ tags: [orientation, ecosystem]
 | Turn requests into bounded work | [Spec](/tools/spec/), [Scent](/tools/scent/), [PackWrite](/tools/packwrite/), and [Dispatch](/tools/dispatch/) |
 | Check changes before they ship | [Eval](/tools/eval/), [Concord](/tools/concord/), [ShipCheck](/tools/shipcheck/), and [Lens](/tools/lens/) |
 | Capture proof and handoffs | [CaseFile](/tools/casefile/), [RunLedger](/tools/runledger/), [PatchBrief](/tools/patchbrief/), and [ChangeBucket](/tools/changebucket/) |
-| Build an application | [CMS](/showcases/cms/), [CRUD API Showcase](/showcases/crud-api/), [AI Chat](/showcases/ai-chat/), [SSG](/showcases/ssg/), or [TotalRecall](/showcases/totalrecall/) |
+| Build an application or site | [CMS](/showcases/cms/), [CRUD API Showcase](/showcases/crud-api/), [AI Chat](/showcases/ai-chat/), [SSG](/showcases/ssg/), [Presentations](/showcases/presentations/), or [TotalRecall](/showcases/totalrecall/) |
 | Build a guarded integration | [MCP](/tools/mcp/), [RAG](/tools/rag/), [Watchdog](/tools/watchdog/), or [Leash](/tools/leash/) |
 | Run code in a bounded environment | [Workcell](/tools/workcell/), [Relay](/tools/relay/), and [Redact](/tools/redact/) |
 | Operate a website | [SiteProbe](/tools/siteprobe/), [SearchBridge](/tools/searchbridge/), [ContentGraph](/tools/contentgraph/), and [Lens](/tools/lens/) |
