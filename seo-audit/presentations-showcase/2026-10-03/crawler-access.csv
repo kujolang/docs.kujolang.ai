@@ -1,0 +1,5 @@
+crawler,purpose,robots_access,live_status,waf_or_cdn_result,recommended_action,action_taken,evidence
+Googlebot,search indexing,allowed,200,production home reachable,none,policy preserved,robots.txt and baseline production crawl 2026-10-03
+Bingbot,search and Bing AI discovery,allowed,200,production home reachable,none,policy preserved,robots.txt and baseline production crawl 2026-10-03
+OAI-SearchBot,ChatGPT search discovery,allowed,200,production home reachable,none,policy preserved,live user-agent probe 2026-10-03
+GPTBot,model training,allowed by shared wildcard,not separately probed,owner policy unchanged,review only if owner changes training policy,none,robots.txt 2026-10-03

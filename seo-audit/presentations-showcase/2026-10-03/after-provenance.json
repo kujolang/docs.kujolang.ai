@@ -1,0 +1,7 @@
+{
+  "runtime": "Kujo 1.7.0 local release binary",
+  "build": "successful local production build after implementation",
+  "canonical_pages": 104,
+  "repository_contracts": "passed",
+  "production_new_route": "404 before deployment; post-deployment verification required"
+}
