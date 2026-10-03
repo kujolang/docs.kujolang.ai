@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="kujo-light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		(function() {
+			try {
+				if (window.localStorage.getItem('sk-theme') === 'kujo-dark') {
+					document.documentElement.dataset.theme = 'kujo-dark';
+				}
+			} catch (error) {}
+		})();
+	</script>
+	<title>Install Kujo | Kujo Docs</title>
+	<meta name="description" content="Install Kujo v1.6.0 and the tool group you need, or build the CLI from source.">
+	<meta name="keywords" content="SSG, Static Site Generator">
+	<meta name="author" content="Kujo">
+	<link rel="canonical" href="https://docs.kujolang.ai/install/">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/assets/img/kujo-logomark-black.svg" color="#000000">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="application-name" content="Kujo Docs">
+	<meta name="apple-mobile-web-app-title" content="Kujo Docs">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Install Kujo">
+	<meta property="og:description" content="Install Kujo v1.6.0 and the tool group you need, or build the CLI from source.">
+	<meta property="og:url" content="https://docs.kujolang.ai/install/">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Kujo Docs">
+	<meta property="og:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Install Kujo">
+	<meta name="twitter:description" content="Install Kujo v1.6.0 and the tool group you need, or build the CLI from source.">
+	<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta name="twitter:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<link href="../assets/css/fonts.css" rel="stylesheet">
+	<link href="../assets/sitekit/sitekit.css" rel="stylesheet">
+	<link href="../assets/css/style.css" rel="stylesheet">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","headline":"Install Kujo","name":"Install Kujo","description":"Install Kujo v1.6.0 and the tool group you need, or build the CLI from source.","url":"https://docs.kujolang.ai/install/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="docs-topbar" id="navigation">
+	<div class="docs-topbar-row">
+		<a class="docs-brand" href="../index.html"><img class="docs-brand-mark" src="../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"> <span>Docs</span></a>
+		<label class="docs-search-shell">
+			<span class="sr-only">Search documentation</span>
+			<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
+		</label>
+		<div class="docs-header-actions">
+			<button class="docs-theme-button docs-icon-button" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-docs-theme>
+				<svg class="docs-moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c.132 0 .263 .003 .393 .008a7.5 7.5 0 0 0 7.599 9.6A9 9 0 1 1 12 3"/></svg>
+				<svg class="docs-sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-4 0a4 4 0 1 0 8 0 4 4 0 1 0-8 0M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+			</button>
+			<button class="docs-menu-button docs-icon-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu>
+				<svg class="docs-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+				<svg class="docs-close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+			</button>
+		</div>
+	</div>
+	<nav id="primary-navigation" class="docs-primary-nav" aria-label="Primary navigation">
+		<a href="/start-here/">Start here</a>
+		<a href="/learn/">Learn Kujo</a>
+		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
+		<a href="/tools/">Tools</a>
+		<a href="/showcases/">Showcases</a>
+	</nav>
+</header>
+<div id="docs-search-results" class="docs-search-results" aria-live="polite"></div>
+<main class="docs-shell" id="main-content">
+	<aside class="docs-sidebar" aria-label="Documentation sections">
+		<p class="docs-sidebar-label">Browse</p>
+		<ul>
+			<li><a href="/start-here/">Start here</a></li>
+			<li><a href="/install/">Install Kujo</a></li>
+			<li><a href="/upgrade/">Upgrade Kujo</a></li>
+			<li><a href="/quickstart/">Quickstart</a></li>
+			<li><a href="/choose-a-path/">Choose a path</a></li>
+			<li><a href="/learn/">Learn Kujo</a></li>
+			<li><a href="/build/">Build with Kujo</a></li>
+			<li><a href="/ecosystem/providers/">Provider packages</a></li>
+			<li><a href="/review/">Reviewable work</a></li>
+			<li><a href="/tools/">Tools</a></li>
+			<li><a href="/showcases/">Showcases</a></li>
+			<li><a href="/collections/">Collections</a></li>
+			<li><a href="/ecosystem/">Ecosystem</a></li>
+			<li><a href="/reference/">Reference</a></li>
+			<li><a href="/security/">Security model</a></li>
+			<li><a href="/release-boundaries/">Release boundaries</a></li>
+			<li><a href="/support/">Support</a></li>
+		</ul>
+	</aside>
+	<article class="docs-article">
+		<h1 id="install-kujo">Install Kujo</h1><p class="docs-description">Install Kujo v1.6.0 and the tool group you need, or build the CLI from source.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>1.6.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-28</span></div>
+		<section class="docs-prerequisites" aria-label="Prerequisites"><h2 id="prerequisites">Prerequisites</h2><ul class="docs-prerequisites-list"><li>A supported macOS, Linux, or Windows workstation</li><li>A writable terminal workspace</li></ul></section>
+		<div class="docs-body"><!--email_off--><p>Kujo <code>v1.6.0</code> is the current stable release. On Linux and macOS, the public ecosystem installer selects the correct archive, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory. On Windows, use the Windows archive from the release or the npm installation path described in the runtime repository.</p>
+<h2 id="install-kujo-2">Install Kujo</h2>
+<pre><code class="language-bash">curl -fsSL https://kujolang.ai/install.sh | bash
+export PATH=&quot;$HOME/.local/bin:$PATH&quot;</code></pre>
+<p>Use a focused group when you want Kujo and the tools for one job. For the Agent Development Platform:</p>
+<pre><code class="language-bash">curl -fsSL https://kujolang.ai/install.sh | bash -s -- --group agent</code></pre>
+<p>Run <code>curl -fsSL https://kujolang.ai/install.sh | bash -s -- --help</code> to review available groups and installer options before making changes. Direct archives and checksums remain available from the <a href="https://github.com/kujolang/kujo/releases/tag/v1.6.0">Kujo v1.6.0 release</a>.</p>
+<h2 id="npm-and-supported-platforms">npm and supported platforms</h2>
+<p>Kujo 1.6.0 ships native archives and npm runtime packages for <strong>Linux x64/arm64, macOS x64/arm64, and Windows x64</strong>. The npm resolver selects the matching exact-version native package; Node.js is needed for this installation channel.</p>
+<pre><code class="language-bash">npm install --global @kujolang/kujo-runtime@1.6.0
+kujo --version</code></pre>
+<p>Expected version output: <code>kujo 1.6.0</code>.</p>
+<p>Checksums and the publication provenance manifest are attached to the <a href="https://github.com/kujolang/kujo/releases/tag/v1.6.0">1.6.0 release</a>. These runtime packages are separate from the experimental, unpublished participant SDKs.</p>
+<h2 id="upgrade-an-existing-runtime">Upgrade an existing runtime</h2>
+<p>Use <a href="/upgrade/"><code>kujo upgrade</code></a> to update a standalone runtime, or <code>kujo upgrade --check --json</code> to inspect availability without changing files. The command is available in v1.3.0 and later. Users of v1.2.3 or older must first install a current release through the installer or original package manager.</p>
+<p>Native upgrades replace only the runtime executable. Ecosystem tools and package pins keep their own update workflows. Read the guide for exact-version selection, managed installations, and backup recovery.</p>
+<h2 id="runtime-requirements">Runtime requirements</h2>
+<p>The prebuilt Kujo CLI does not require Python, Node.js, or Rust to run ordinary Kujo programs. Source builds require Rust; npm installation requires Node.js. Individual tools may have additional requirements. Kujo v1.6.0 supplies the Linux/macOS runtime primitives for the native Kennel 1.1.0 installer; that client has a separate release and installation step.</p>
+<h2 id="source-install">Source install</h2>
+<pre><code class="language-bash">git clone --branch v1.6.0 https://github.com/kujolang/kujo.git
+cd kujo
+cargo build --release --locked
+cargo install --path . --locked</code></pre>
+<h2 id="verify">Verify</h2>
+<pre><code class="language-bash">kujo --version
+kujo doctor --json</code></pre>
+<p>An agent-focused install can be verified with <code>kujo doctor agent</code>. Continue to <a href="/build/owned-agent-projects/">Repository-owned Agent Projects</a> to create and run one locally.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<ul>
+<li><strong>Rust is missing during a source build:</strong> install the stable Rust toolchain, then rerun <code>cargo build --release</code>.</li>
+<li><strong><code>kujo</code> is not found:</strong> add <code>$HOME/.local/bin</code> or Cargo&apos;s bin directory to PATH and open a new shell.</li>
+<li><strong>The wrong binary runs:</strong> use <code>command -v kujo</code> and compare it with the path printed by <code>cargo install</code>.</li>
+<li><strong>Platform notes:</strong> use the published release matrix for supported archives; build from source for other targets.</li>
+</ul><!--/email_off--></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/start-here/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/quickstart/" rel="next"><span>Next</span></a></nav>
+	</article>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#install-kujo">Install Kujo</a></li><li class="toc-level-2"><a href="#npm-and-supported-platforms">npm and supported platforms</a></li><li class="toc-level-2"><a href="#upgrade-an-existing-runtime">Upgrade an existing runtime</a></li><li class="toc-level-2"><a href="#runtime-requirements">Runtime requirements</a></li><li class="toc-level-2"><a href="#source-install">Source install</a></li><li class="toc-level-2"><a href="#verify">Verify</a></li><li class="toc-level-2"><a href="#troubleshooting">Troubleshooting</a></li></ol></nav>
+</main>
+
+<footer class="docs-footer" id="footer">
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.4.1</span></div>
+	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
+</footer>
+<script src="../assets/sitekit/sitekit.js"></script>
+<script src="../assets/js/docs.js"></script>
+<script src="../assets/js/kujo-webmcp.js" data-kujo-webmcp data-kujo-site-index="../.well-known/kujo-site-index.json" defer></script></body>
+</html>

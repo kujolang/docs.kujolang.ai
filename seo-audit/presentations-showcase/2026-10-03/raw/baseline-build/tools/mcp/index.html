@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="kujo-light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		(function() {
+			try {
+				if (window.localStorage.getItem('sk-theme') === 'kujo-dark') {
+					document.documentElement.dataset.theme = 'kujo-dark';
+				}
+			} catch (error) {}
+		})();
+	</script>
+	<title>MCP | Kujo Docs</title>
+	<meta name="description" content="Generate guarded MCP servers with roots, limits, auth, and safety tiers.">
+	<meta name="keywords" content="SSG, Static Site Generator">
+	<meta name="author" content="Kujo">
+	<link rel="canonical" href="https://docs.kujolang.ai/tools/mcp/">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/assets/img/kujo-logomark-black.svg" color="#000000">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="application-name" content="Kujo Docs">
+	<meta name="apple-mobile-web-app-title" content="Kujo Docs">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="MCP">
+	<meta property="og:description" content="Generate guarded MCP servers with roots, limits, auth, and safety tiers.">
+	<meta property="og:url" content="https://docs.kujolang.ai/tools/mcp/">
+	<meta property="og:type" content="article">
+	<meta property="og:site_name" content="Kujo Docs">
+	<meta property="og:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="MCP">
+	<meta name="twitter:description" content="Generate guarded MCP servers with roots, limits, auth, and safety tiers.">
+	<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta name="twitter:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<link href="../../assets/css/fonts.css" rel="stylesheet">
+	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"MCP","name":"MCP","description":"Generate guarded MCP servers with roots, limits, auth, and safety tiers.","url":"https://docs.kujolang.ai/tools/mcp/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="docs-topbar" id="navigation">
+	<div class="docs-topbar-row">
+		<a class="docs-brand" href="../../index.html"><img class="docs-brand-mark" src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"> <span>Docs</span></a>
+		<label class="docs-search-shell">
+			<span class="sr-only">Search documentation</span>
+			<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
+		</label>
+		<div class="docs-header-actions">
+			<button class="docs-theme-button docs-icon-button" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-docs-theme>
+				<svg class="docs-moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c.132 0 .263 .003 .393 .008a7.5 7.5 0 0 0 7.599 9.6A9 9 0 1 1 12 3"/></svg>
+				<svg class="docs-sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-4 0a4 4 0 1 0 8 0 4 4 0 1 0-8 0M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+			</button>
+			<button class="docs-menu-button docs-icon-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu>
+				<svg class="docs-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+				<svg class="docs-close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+			</button>
+		</div>
+	</div>
+	<nav id="primary-navigation" class="docs-primary-nav" aria-label="Primary navigation">
+		<a href="/start-here/">Start here</a>
+		<a href="/learn/">Learn Kujo</a>
+		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
+		<a href="/tools/">Tools</a>
+		<a href="/showcases/">Showcases</a>
+	</nav>
+</header>
+<div id="docs-search-results" class="docs-search-results" aria-live="polite"></div>
+<main class="docs-shell" id="main-content">
+	<aside class="docs-sidebar" aria-label="Documentation sections">
+		<p class="docs-sidebar-label">Browse</p>
+		<ul>
+			<li><a href="/start-here/">Start here</a></li>
+			<li><a href="/install/">Install Kujo</a></li>
+			<li><a href="/upgrade/">Upgrade Kujo</a></li>
+			<li><a href="/quickstart/">Quickstart</a></li>
+			<li><a href="/choose-a-path/">Choose a path</a></li>
+			<li><a href="/learn/">Learn Kujo</a></li>
+			<li><a href="/build/">Build with Kujo</a></li>
+			<li><a href="/review/">Reviewable work</a></li>
+			<li><a href="/tools/">Tools</a></li>
+			<li><a href="/showcases/">Showcases</a></li>
+			<li><a href="/collections/">Collections</a></li>
+			<li><a href="/ecosystem/">Ecosystem</a></li>
+			<li><a href="/reference/">Reference</a></li>
+			<li><a href="/security/">Security model</a></li>
+			<li><a href="/release-boundaries/">Release boundaries</a></li>
+			<li><a href="/support/">Support</a></li>
+		</ul>
+	</aside>
+	<article class="docs-article">
+		<h1 id="mcp">MCP</h1><p class="docs-description">Generate guarded MCP servers with roots, limits, auth, and safety tiers.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>1.2.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-29</span></div>
+		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
+<p>An agent needs a deliberate server boundary for tools or resources with roots, limits, auth, and a visible safety tier.</p>
+<h2 id="interface-overview">Interface overview</h2>
+<table><thead><tr>
+<th>Surface</th>
+<th>What is available</th>
+</tr></thead><tbody>
+<tr>
+<td>Generator</td>
+<td><code>make &lt;repo&gt;</code> with output and artifact-directory controls</td>
+</tr>
+<tr>
+<td>Profiles</td>
+<td>Repo-specific discovery plus profile-only or artifacts-only generation</td>
+</tr>
+<tr>
+<td>Contracts</td>
+<td><code>mcp-server.json</code>, tool/resource registries, and <code>mcp.manifest.json</code></td>
+</tr>
+<tr>
+<td>Safety</td>
+<td>Roots, auth metadata, safety tiers, validation, dry-run, and no-AI mode</td>
+</tr>
+</tbody></table>
+<h2 id="main-workflows">Main workflows</h2>
+<ul>
+<li>Inspect a repository and generate an MCP server scaffold matched to its visible capabilities.</li>
+<li>Review tool and resource registrations before exposing them to an agent client.</li>
+<li>Use dry-run and validation modes to check the generated profile without mutating the target.</li>
+<li>Keep high-risk operations behind explicit authentication, roots, and safety-tier policy.</li>
+</ul>
+<h2 id="five-minute-example">Five-minute example</h2>
+<pre><code class="language-bash">kujo run mcp.kujo --interpreter make ./repo-folder --dry-run
+kujo run mcp.kujo --interpreter make ./repo-folder --validate</code></pre>
+<h2 id="what-you-get">What you get</h2>
+<p>A repo-specific MCP scaffold, manifest, tool/resource registry, and safety metadata.</p>
+<h2 id="how-it-fits">How it fits</h2>
+<p>Pair MCP with <a href="/tools/agents-sdk/">Agents SDK</a> and <a href="/tools/scent/">Scent</a> before exposing context.</p>
+<h2 id="boundaries">Boundaries</h2>
+<p>This is a guarded local/server scaffold, not managed enterprise infrastructure.</p>
+<h2 id="reference">Reference</h2>
+<p>See the <a href="https://github.com/kujolang/mcp">MCP repository</a>.</p>
+<h2 id="portable-operation-contracts">Portable operation contracts</h2>
+<p>Use <a href="/tools/ability/">Ability</a> to preserve an operation’s identity, schemas, effects, and retry semantics across application and agent surfaces. Its SDK previews and fixture development kit help check contracts; the application retains execution authority.</p>
+<h2 id="public-catalog-and-application-gateways">Public catalog and application gateways</h2>
+<p>The public endpoint at <a href="https://mcp.kujolang.ai/mcp">mcp.kujolang.ai/mcp</a> is a separate read-only catalog of Kujo projects, skills, workflows, installation guidance, and release boundaries. Its catalog revision identifies the deployed snapshot; its service version is not the programming-language version. Use <code>get_catalog_item</code> with <code>slug: &quot;kujo&quot;</code> for the runtime release, and <code>get_installation</code> for the <code>core</code>, <code>agent</code>, <code>ai</code>, <code>quality</code>, <code>showcases</code>, or <code>operating</code> profile.</p>
+<p>The latest published MCP framework release is <a href="https://github.com/kujolang/mcp/releases/tag/v1.2.0">1.2.0</a>. Its application Ability gateways, host certification receipts, and operator controls remain separate from public catalog discovery. Certification applies to the exact tested source revisions and host tiers; newer Agents SDK or Kujo Pi source changes are not automatically certified by older receipts.</p>
+<h2 id="version-1-2-0-and-kujo-1-6">Version 1.2.0 and Kujo 1.6</h2>
+<p>MCP 1.2.0 requires Kujo 1.6.0 and includes experimental controlled local STDIO Ability handoffs, one-use host admission and bounded evidence references. Lost completion remains uncertain until the effect owner verifies it; Dispatch alone decides replay. Standalone MCP behavior remains available.</p>
+<p>See the <a href="https://github.com/kujolang/mcp/releases/tag/v1.2.0">1.2.0 release</a> for the exact source and release evidence. Assurance beta remains opt-in, required/deny and single-effect; controlled handoffs remain alpha. These package releases do not stabilize remote trust or participant SDKs.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/dispatch/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/rag/" rel="next"><span>Next</span></a></nav>
+	</article>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li><li class="toc-level-2"><a href="#portable-operation-contracts">Portable operation contracts</a></li><li class="toc-level-2"><a href="#public-catalog-and-application-gateways">Public catalog and application gateways</a></li><li class="toc-level-2"><a href="#version-1-2-0-and-kujo-1-6">Version 1.2.0 and Kujo 1.6</a></li></ol></nav>
+</main>
+
+<footer class="docs-footer" id="footer">
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.4.1</span></div>
+	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
+</footer>
+<script src="../../assets/sitekit/sitekit.js"></script>
+<script src="../../assets/js/docs.js"></script>
+<script src="../../assets/js/kujo-webmcp.js" data-kujo-webmcp data-kujo-site-index="../../.well-known/kujo-site-index.json" defer></script></body>
+</html>

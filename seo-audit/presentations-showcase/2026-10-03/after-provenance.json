@@ -3,5 +3,6 @@
   "build": "successful local production build after implementation",
   "canonical_pages": 104,
   "repository_contracts": "passed",
-  "production_new_route": "404 before deployment; post-deployment verification required"
+  "production_new_route": "HTTP 200 after deployment; canonical metadata, content, cross-site links, and sitemap entry verified 2026-10-03",
+  "production_deployment": "gh-pages commit faffaba; Pages deployment 37154762663 completed successfully"
 }

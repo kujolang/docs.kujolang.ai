@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="kujo-light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		(function() {
+			try {
+				if (window.localStorage.getItem('sk-theme') === 'kujo-dark') {
+					document.documentElement.dataset.theme = 'kujo-dark';
+				}
+			} catch (error) {}
+		})();
+	</script>
+	<title>Agents SDK | Kujo Docs</title>
+	<meta name="description" content="Build agents with tools, approvals, handoffs, tracing, stores, and budgets.">
+	<meta name="keywords" content="SSG, Static Site Generator">
+	<meta name="author" content="Kujo">
+	<link rel="canonical" href="https://docs.kujolang.ai/tools/agents-sdk/">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/assets/img/kujo-logomark-black.svg" color="#000000">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="application-name" content="Kujo Docs">
+	<meta name="apple-mobile-web-app-title" content="Kujo Docs">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Agents SDK">
+	<meta property="og:description" content="Build agents with tools, approvals, handoffs, tracing, stores, and budgets.">
+	<meta property="og:url" content="https://docs.kujolang.ai/tools/agents-sdk/">
+	<meta property="og:type" content="article">
+	<meta property="og:site_name" content="Kujo Docs">
+	<meta property="og:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Agents SDK">
+	<meta name="twitter:description" content="Build agents with tools, approvals, handoffs, tracing, stores, and budgets.">
+	<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta name="twitter:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<link href="../../assets/css/fonts.css" rel="stylesheet">
+	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Agents SDK","name":"Agents SDK","description":"Build agents with tools, approvals, handoffs, tracing, stores, and budgets.","url":"https://docs.kujolang.ai/tools/agents-sdk/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="docs-topbar" id="navigation">
+	<div class="docs-topbar-row">
+		<a class="docs-brand" href="../../index.html"><img class="docs-brand-mark" src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"> <span>Docs</span></a>
+		<label class="docs-search-shell">
+			<span class="sr-only">Search documentation</span>
+			<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
+		</label>
+		<div class="docs-header-actions">
+			<button class="docs-theme-button docs-icon-button" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-docs-theme>
+				<svg class="docs-moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c.132 0 .263 .003 .393 .008a7.5 7.5 0 0 0 7.599 9.6A9 9 0 1 1 12 3"/></svg>
+				<svg class="docs-sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-4 0a4 4 0 1 0 8 0 4 4 0 1 0-8 0M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+			</button>
+			<button class="docs-menu-button docs-icon-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu>
+				<svg class="docs-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+				<svg class="docs-close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+			</button>
+		</div>
+	</div>
+	<nav id="primary-navigation" class="docs-primary-nav" aria-label="Primary navigation">
+		<a href="/start-here/">Start here</a>
+		<a href="/learn/">Learn Kujo</a>
+		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
+		<a href="/tools/">Tools</a>
+		<a href="/showcases/">Showcases</a>
+	</nav>
+</header>
+<div id="docs-search-results" class="docs-search-results" aria-live="polite"></div>
+<main class="docs-shell" id="main-content">
+	<aside class="docs-sidebar" aria-label="Documentation sections">
+		<p class="docs-sidebar-label">Browse</p>
+		<ul>
+			<li><a href="/start-here/">Start here</a></li>
+			<li><a href="/install/">Install Kujo</a></li>
+			<li><a href="/upgrade/">Upgrade Kujo</a></li>
+			<li><a href="/quickstart/">Quickstart</a></li>
+			<li><a href="/choose-a-path/">Choose a path</a></li>
+			<li><a href="/learn/">Learn Kujo</a></li>
+			<li><a href="/build/">Build with Kujo</a></li>
+			<li><a href="/review/">Reviewable work</a></li>
+			<li><a href="/tools/">Tools</a></li>
+			<li><a href="/showcases/">Showcases</a></li>
+			<li><a href="/collections/">Collections</a></li>
+			<li><a href="/ecosystem/">Ecosystem</a></li>
+			<li><a href="/reference/">Reference</a></li>
+			<li><a href="/security/">Security model</a></li>
+			<li><a href="/release-boundaries/">Release boundaries</a></li>
+			<li><a href="/support/">Support</a></li>
+		</ul>
+	</aside>
+	<article class="docs-article">
+		<h1 id="agents-sdk">Agents SDK</h1><p class="docs-description">Build agents with tools, approvals, handoffs, tracing, stores, and budgets.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-09</span></div>
+		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
+<p>An AI call needs tools, approval boundaries, handoffs, tracing, session state, or explicit budgets.</p>
+<h2 id="interface-overview">Interface overview</h2>
+<table><thead><tr>
+<th>Surface</th>
+<th>What is available</th>
+</tr></thead><tbody>
+<tr>
+<td>Runtime</td>
+<td>Agent configuration, runners, lifecycle events, cancellation, and bounded retries</td>
+</tr>
+<tr>
+<td>Tools and safety</td>
+<td>Typed tool registry, permissions, approvals, guardrails, and redaction hooks</td>
+</tr>
+<tr>
+<td>State</td>
+<td>Session, memory, artifact, and retrieval store contracts with in-memory fixtures</td>
+</tr>
+<tr>
+<td>Coordination</td>
+<td>Handoffs, tracing, budgets, MCP helpers, and integration adapters</td>
+</tr>
+</tbody></table>
+<h2 id="main-workflows">Main workflows</h2>
+<ul>
+<li>Import the modules under <code>src/agents/</code>; there is no separate end-user CLI.</li>
+<li>Build an agent around injected AI SDK callbacks so provider concerns stay outside the runtime.</li>
+<li>Register tools with schemas and risk metadata, then enforce approval before invocation.</li>
+<li>Persist sessions, memory, artifacts, traces, and handoff receipts through replaceable store interfaces.</li>
+</ul>
+<h2 id="five-minute-example">Five-minute example</h2>
+<pre><code class="language-bash">kujo run examples/examples_smoke_runner.kujo --interpreter
+bash scripts/ci_no_network_enforcement.sh</code></pre>
+<h2 id="what-you-get">What you get</h2>
+<p>Agent runner primitives, tool contracts, approval events, handoff receipts, and local stores.</p>
+<h2 id="how-it-fits">How it fits</h2>
+<p>Pair it with <a href="/tools/spec/">Spec</a> for a bounded task and <a href="/tools/dispatch/">Dispatch</a> for resumable orchestration.</p>
+<h2 id="boundaries">Boundaries</h2>
+<p>Hosted adapters remain integrator-owned. Use fixture mode when proving the workflow shape.</p>
+<h2 id="reference">Reference</h2>
+<p>See the <a href="https://github.com/kujolang/agents-sdk">Agents SDK repository</a>.</p>
+<h2 id="portable-operation-contracts">Portable operation contracts</h2>
+<p>Use <a href="/tools/ability/">Ability</a> to preserve an operation’s identity, schemas, effects, and retry semantics across application and agent surfaces. Its SDK previews and fixture development kit help check contracts; the application retains execution authority.</p>
+<h2 id="published-release-and-current-development">Published release and current development</h2>
+<p>The latest published GitHub Release checked on September 9 is <a href="https://github.com/kujolang/agents-sdk/releases/tag/v1.0.0">v1.0.0</a>. Recent default-branch work adds bounded run, retrieval, tool, and handoff observations, preserves observed identities, and demonstrates real MCP tool lifecycles. Programming-language retrieval preferences are optional; provider execution and telemetry policy remain explicit integration boundaries.</p>
+<p>These newer changes are <a href="https://github.com/kujolang/agents-sdk/tree/bb2202d8b54f44717b1b1f0157a6774f2027cea1">source work at bb2202d8b54f</a>; they are not retroactively included in the older release archive.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/ai-sdk/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/scent/" rel="next"><span>Next</span></a></nav>
+	</article>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li><li class="toc-level-2"><a href="#portable-operation-contracts">Portable operation contracts</a></li><li class="toc-level-2"><a href="#published-release-and-current-development">Published release and current development</a></li></ol></nav>
+</main>
+
+<footer class="docs-footer" id="footer">
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.4.1</span></div>
+	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
+</footer>
+<script src="../../assets/sitekit/sitekit.js"></script>
+<script src="../../assets/js/docs.js"></script>
+<script src="../../assets/js/kujo-webmcp.js" data-kujo-webmcp data-kujo-site-index="../../.well-known/kujo-site-index.json" defer></script></body>
+</html>

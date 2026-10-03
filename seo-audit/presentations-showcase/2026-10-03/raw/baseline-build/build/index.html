@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="kujo-light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		(function() {
+			try {
+				if (window.localStorage.getItem('sk-theme') === 'kujo-dark') {
+					document.documentElement.dataset.theme = 'kujo-dark';
+				}
+			} catch (error) {}
+		})();
+	</script>
+	<title>Build | Kujo Docs</title>
+	<meta name="description" content="Build applications, agents, retrieval systems, workflows, and publishing systems with Kujo.">
+	<meta name="keywords" content="SSG, Static Site Generator">
+	<meta name="author" content="Kujo">
+	<link rel="canonical" href="https://docs.kujolang.ai/build/">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/assets/img/kujo-logomark-black.svg" color="#000000">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="application-name" content="Kujo Docs">
+	<meta name="apple-mobile-web-app-title" content="Kujo Docs">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Build">
+	<meta property="og:description" content="Build applications, agents, retrieval systems, workflows, and publishing systems with Kujo.">
+	<meta property="og:url" content="https://docs.kujolang.ai/build/">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Kujo Docs">
+	<meta property="og:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Build">
+	<meta name="twitter:description" content="Build applications, agents, retrieval systems, workflows, and publishing systems with Kujo.">
+	<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta name="twitter:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<link href="../assets/css/fonts.css" rel="stylesheet">
+	<link href="../assets/sitekit/sitekit.css" rel="stylesheet">
+	<link href="../assets/css/style.css" rel="stylesheet">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","headline":"Build","name":"Build","description":"Build applications, agents, retrieval systems, workflows, and publishing systems with Kujo.","url":"https://docs.kujolang.ai/build/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="docs-topbar" id="navigation">
+	<div class="docs-topbar-row">
+		<a class="docs-brand" href="../index.html"><img class="docs-brand-mark" src="../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"> <span>Docs</span></a>
+		<label class="docs-search-shell">
+			<span class="sr-only">Search documentation</span>
+			<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
+		</label>
+		<div class="docs-header-actions">
+			<button class="docs-theme-button docs-icon-button" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-docs-theme>
+				<svg class="docs-moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c.132 0 .263 .003 .393 .008a7.5 7.5 0 0 0 7.599 9.6A9 9 0 1 1 12 3"/></svg>
+				<svg class="docs-sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-4 0a4 4 0 1 0 8 0 4 4 0 1 0-8 0M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+			</button>
+			<button class="docs-menu-button docs-icon-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu>
+				<svg class="docs-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+				<svg class="docs-close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+			</button>
+		</div>
+	</div>
+	<nav id="primary-navigation" class="docs-primary-nav" aria-label="Primary navigation">
+		<a href="/start-here/">Start here</a>
+		<a href="/learn/">Learn Kujo</a>
+		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
+		<a href="/tools/">Tools</a>
+		<a href="/showcases/">Showcases</a>
+	</nav>
+</header>
+<div id="docs-search-results" class="docs-search-results" aria-live="polite"></div>
+<main class="docs-listing" id="main-content">
+	<div class="docs-listing-header"><p class="docs-eyebrow">Build with Kujo</p><h1 id="build-with-kujo">Build with Kujo</h1><p>Move from direct model calls to bounded agents, resumable workflows, local retrieval, complete applications, website operations, and editorial publishing.</p></div>
+	<ul class="docs-card-grid">
+		<li class="listing-card"><div class="listing-card-body"><h2 id="repository-owned-agent-projects" class="listing-card-title"><a href="/build/owned-agent-projects/">Repository-owned Agent Projects</a></h2><p class="listing-card-excerpt">Keep agent intelligence in Git, then diagnose, inspect, run, evaluate, and harden it.</p><a class="listing-card-button" href="/build/owned-agent-projects/">Build an agent</a></div></li>
+		<li class="listing-card"><div class="listing-card-body"><h2 id="agent-profiles" class="listing-card-title"><a href="/build/agent-profiles/">Agent profiles</a></h2><p class="listing-card-excerpt">Choose the smallest profile for tools, knowledge, workflows, isolation, or observability.</p><a class="listing-card-button" href="/build/agent-profiles/">Compare profiles</a></div></li>
+		<li class="listing-card"><div class="listing-card-body"><h2 id="agent-credentials" class="listing-card-title"><a href="/build/agent-credentials/">Agent credentials</a></h2><p class="listing-card-excerpt">Reuse provider and connector keys without putting secrets in commands or Git.</p><a class="listing-card-button" href="/build/agent-credentials/">Manage credentials</a></div></li>
+		<li class="listing-card"><div class="listing-card-body"><h2 id="agent-operations" class="listing-card-title"><a href="/build/agent-operations/">Agent operations</a></h2><p class="listing-card-excerpt">Diagnose, inspect, run, evaluate, automate, and isolate an owned agent.</p><a class="listing-card-button" href="/build/agent-operations/">Operate an agent</a></div></li>
+		<li class="listing-card"><div class="listing-card-body"><h2 id="ai-and-agents" class="listing-card-title"><a href="/build/ai-and-agents/">AI and agents</a></h2><p class="listing-card-excerpt">Choose between direct provider calls and agent runtime primitives.</p><a class="listing-card-button" href="/build/ai-and-agents/">View AI path</a></div></li>
+		<li class="listing-card"><div class="listing-card-body"><h2 id="workflows-and-approvals" class="listing-card-title"><a href="/build/workflows-and-approvals/">Workflows and approvals</a></h2><p class="listing-card-excerpt">Coordinate steps, pauses, approvals, handoffs, and receipts.</p><a class="listing-card-button" href="/build/workflows-and-approvals/">View workflows</a></div></li>
+		<li class="listing-card"><div class="listing-card-body"><h2 id="knowledge-and-retrieval" class="listing-card-title"><a href="/build/knowledge-and-retrieval/">Knowledge and retrieval</a></h2><p class="listing-card-excerpt">Build local ingest, indexing, retrieval, namespace, and citation flows.</p><a class="listing-card-button" href="/build/knowledge-and-retrieval/">View retrieval</a></div></li>
+		<li class="listing-card"><div class="listing-card-body"><h2 id="applications-and-publishing" class="listing-card-title"><a href="/build/applications-and-publishing/">Applications and publishing</a></h2><p class="listing-card-excerpt">Turn the primitives into APIs, applications, and static publishing workflows.</p><a class="listing-card-button" href="/build/applications-and-publishing/">View applications</a></div></li>
+		<li class="listing-card"><div class="listing-card-body"><h2 id="web-operations" class="listing-card-title"><a href="/build/web-operations/">Web operations</a></h2><p class="listing-card-excerpt">Connect crawl, search, content-graph, browser, and release evidence without blurring action boundaries.</p><a class="listing-card-button" href="/build/web-operations/">View WebOps</a></div></li>
+		<li class="listing-card"><div class="listing-card-body"><h2 id="editorial-publishing" class="listing-card-title"><a href="/build/editorial-publishing/">Editorial publishing</a></h2><p class="listing-card-excerpt">Carry commissioned work through evidence, review, versioning, approval, publication, and learning.</p><a class="listing-card-button" href="/build/editorial-publishing/">View publishing</a></div></li>
+	</ul>
+</main>
+
+<footer class="docs-footer" id="footer">
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.4.1</span></div>
+	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
+</footer>
+<script src="../assets/sitekit/sitekit.js"></script>
+<script src="../assets/js/docs.js"></script>
+<script src="../assets/js/kujo-webmcp.js" data-kujo-webmcp data-kujo-site-index="../.well-known/kujo-site-index.json" defer></script></body>
+</html>

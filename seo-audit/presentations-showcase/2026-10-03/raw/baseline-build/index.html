@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="kujo-light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		(function() {
+			try {
+				if (window.localStorage.getItem('sk-theme') === 'kujo-dark') {
+					document.documentElement.dataset.theme = 'kujo-dark';
+				}
+			} catch (error) {}
+		})();
+	</script>
+	<title>Kujo Docs</title>
+	<meta name="description" content="The shortest path from language basics to reviewable, local-first software.">
+	<meta name="keywords" content="SSG, Static Site Generator">
+	<meta name="author" content="Kujo">
+	<link rel="canonical" href="https://docs.kujolang.ai/">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/assets/img/kujo-logomark-black.svg" color="#000000">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="application-name" content="Kujo Docs">
+	<meta name="apple-mobile-web-app-title" content="Kujo Docs">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Kujo Docs">
+	<meta property="og:description" content="The shortest path from language basics to reviewable, local-first software.">
+	<meta property="og:url" content="https://docs.kujolang.ai/">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Kujo Docs">
+	<meta property="og:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Kujo Docs">
+	<meta name="twitter:description" content="The shortest path from language basics to reviewable, local-first software.">
+	<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta name="twitter:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<link href="assets/css/fonts.css" rel="stylesheet">
+	<link href="assets/sitekit/sitekit.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","headline":"Kujo Docs","name":"Kujo Docs","description":"The shortest path from language basics to reviewable, local-first software.","url":"https://docs.kujolang.ai/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="docs-topbar" id="navigation">
+	<div class="docs-topbar-row">
+		<a class="docs-brand" href="index.html"><img class="docs-brand-mark" src="assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"> <span>Docs</span></a>
+		<label class="docs-search-shell">
+			<span class="sr-only">Search documentation</span>
+			<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
+		</label>
+		<div class="docs-header-actions">
+			<button class="docs-theme-button docs-icon-button" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-docs-theme>
+				<svg class="docs-moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c.132 0 .263 .003 .393 .008a7.5 7.5 0 0 0 7.599 9.6A9 9 0 1 1 12 3"/></svg>
+				<svg class="docs-sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-4 0a4 4 0 1 0 8 0 4 4 0 1 0-8 0M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+			</button>
+			<button class="docs-menu-button docs-icon-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu>
+				<svg class="docs-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+				<svg class="docs-close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+			</button>
+		</div>
+	</div>
+	<nav id="primary-navigation" class="docs-primary-nav" aria-label="Primary navigation">
+		<a href="/start-here/">Start here</a>
+		<a href="/learn/">Learn Kujo</a>
+		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
+		<a href="/tools/">Tools</a>
+		<a href="/showcases/">Showcases</a>
+	</nav>
+</header>
+<div id="docs-search-results" class="docs-search-results" aria-live="polite"></div>
+<main class="docs-home" id="main-content">
+	<section class="sk-hero docs-home-hero" aria-labelledby="home-title">
+		<div class="docs-home-hero-copy">
+			<p class="docs-eyebrow">Local-first language + ecosystem</p>
+			<h1 id="home-title">Kujo Docs</h1>
+			<p class="docs-lede">The shortest path from language basics to reviewable, local-first software.</p>
+			<div class="docs-home-actions"><a class="sk-button" href="/start-here/">Start here</a><a class="sk-button sk-button--secondary" href="/quickstart/">Quickstart</a></div>
+		</div>
+		<figure class="sk-code-block docs-home-terminal"><figcaption><span>hello.kujo</span><button type="button" aria-label="Copy code" title="Copy code" data-copy-code><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8m0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><path d="M13 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h3"/></svg></button></figcaption><pre><code class="language-kujo">print("hello, kujo")
+
+kujo check hello.kujo
+kujo run hello.kujo</code></pre></figure>
+	</section>
+	<section class="docs-home-paths" aria-labelledby="paths-title">
+		<div class="docs-section-heading"><p class="docs-eyebrow">Choose a direction</p><h2 id="paths-title">A path, not a warehouse.</h2><p>Start with the smallest useful next step. Every page tells you what it does, how to try it, and where its boundary is.</p></div>
+		<div class="docs-card-grid">
+			<a class="sk-card" href="/install/"><span class="docs-card-index">01</span><h3 id="get-the-toolchain">Get the toolchain</h3><p>Install or build the CLI, add it to PATH, and verify your local environment.</p><span class="docs-card-link">Install Kujo →</span></a>
+			<a class="sk-card" href="/quickstart/"><span class="docs-card-index">02</span><h3 id="run-one-program">Run one program</h3><p>Create a tiny file, run it with the VM-first runtime, and check the source.</p><span class="docs-card-link">Quickstart →</span></a>
+			<a class="sk-card" href="/build/owned-agent-projects/"><span class="docs-card-index">03</span><h3 id="create-an-agent">Create an agent</h3><p>Install one focused tool group, scaffold an owned Agent Project, and talk to it locally.</p><span class="docs-card-link">Build an agent →</span></a>
+			<a class="sk-card" href="/review/"><span class="docs-card-index">04</span><h3 id="keep-work-reviewable">Keep work reviewable</h3><p>Define work, focus context, check results, capture proof, and gate releases.</p><span class="docs-card-link">Reviewable work →</span></a>
+		</div>
+	</section>
+	<aside class="sk-alert docs-home-note" data-variant="neutral"><div><strong>Kujo Docs v1.4.1</strong><p>Updated September 28, 2026. Kujo runtime 1.6.0 across five native platforms and npm; runtime correctness, installation and experimental companion-contract boundaries. Read the <a href="/ecosystem/releases/">ecosystem release overview</a> for versions, recent changes, and installation boundaries.</p></div></aside>
+	<section class="docs-home-footer-grid" aria-label="More documentation">
+		<div><p class="docs-eyebrow">Learn</p><a href="/learn/">Learn Kujo</a><a href="/learn/runtime/">Runtime and capabilities</a><a href="/learn/packages/">Packages with Kennel</a></div>
+		<div><p class="docs-eyebrow">Explore</p><a href="/build/owned-agent-projects/">Agent Projects</a><a href="/ecosystem/providers/">Provider packages</a><a href="/tools/">Tool directory</a><a href="/showcases/">Showcases</a><a href="/collections/">Operating collections</a></div>
+		<div><p class="docs-eyebrow">Reference</p><a href="/reference/">CLI and generated reference</a><a href="/upgrade/">Runtime upgrade</a><a href="/security/">Security model</a><a href="/support/">Support</a></div>
+	</section>
+</main>
+
+<footer class="docs-footer" id="footer">
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.4.1</span></div>
+	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
+</footer>
+<script src="assets/sitekit/sitekit.js"></script>
+<script src="assets/js/docs.js"></script>
+<script src="assets/js/kujo-webmcp.js" data-kujo-webmcp data-kujo-site-index=".well-known/kujo-site-index.json" defer></script></body>
+</html>
