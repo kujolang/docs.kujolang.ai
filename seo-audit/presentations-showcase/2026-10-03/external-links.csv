@@ -265,6 +265,7 @@ after,https://docs.kujolang.ai/showcases/,https://kujolang.ai,Kujo,footer,,https
 after,https://docs.kujolang.ai/showcases/intake/,https://github.com/kujolang/intake,Intake repository,article,,https://github.com/kujolang/intake,0,not probed in crawl,,none
 after,https://docs.kujolang.ai/showcases/intake/,https://kujolang.ai,Kujo,footer,,https://kujolang.ai,0,not probed in crawl,,none
 after,https://docs.kujolang.ai/showcases/presentations/,https://presentations.kujolang.ai/,live presentation examples,article,,https://presentations.kujolang.ai/,0,not probed in crawl,,none
+after,https://docs.kujolang.ai/showcases/presentations/,https://kujolang.ai/ecosystem/presentations/,Kujolang.ai Presentations showcase,article,,https://kujolang.ai/ecosystem/presentations/,0,not probed in crawl,,none
 after,https://docs.kujolang.ai/showcases/presentations/,https://github.com/kujolang/presentations,Presentations repository,article,,https://github.com/kujolang/presentations,0,not probed in crawl,,none
 after,https://docs.kujolang.ai/showcases/presentations/,https://github.com/kujolang/presentations/releases/tag/v0.3.0,Presentations 0.3.0 release,article,,https://github.com/kujolang/presentations/releases/tag/v0.3.0,0,not probed in crawl,,none
 after,https://docs.kujolang.ai/showcases/presentations/,https://github.com/kujolang/presentations/blob/v0.3.0/docs/getting-started.md,Getting started,article,,https://github.com/kujolang/presentations/blob/v0.3.0/docs/getting-started.md,0,not probed in crawl,,none
