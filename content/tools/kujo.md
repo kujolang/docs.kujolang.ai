@@ -7,9 +7,9 @@ nav_title: Kujo
 order: 10
 audience: developer
 difficulty: beginner
-status: stable v1.6.0
-version: 1.6.0
-last_updated: 2026-09-28
+status: stable v1.8.0
+version: 1.8.0
+last_updated: 2026-10-04
 scope: local-first
 source_repo: kujo
 next: /tools/kennel/
@@ -56,11 +56,13 @@ Start here, then add [Kennel](/tools/kennel/) when the project needs dependencie
 
 ## Boundaries
 
-Kujo `v1.6.0` is the current published stable release. The CLI now coordinates repository-owned Agent Projects, but their provider, runtime, retrieval, evaluation, observability, and package capabilities remain explicit ecosystem dependencies rather than hidden core services.
+Kujo `v1.8.0` is the current published stable release. The CLI coordinates repository-owned Agent Projects, but their provider, runtime, retrieval, evaluation, observability, and package capabilities remain explicit ecosystem dependencies rather than hidden core services.
 
-## What changed in 1.6
+## What changed in 1.8
 
-Kujo 1.6.0 hardens closures and captured variables, generator/task/async behavior, and VM/interpreter parity. It fixes conditional early returns from loops in optimized VM bytecode, including nested control flow. Runtime measurement provides an observability foundation.
+Kujo 1.8.0 makes optional analysis more useful without making the language less dynamic. Nested destructuring, known module exports, struct fields, async completion values and callable aliases now feed one immutable analysis model shared by CLI checking and the LSP. Diagnostics, hover and completion reuse that model, including safe invalidation for edited imports.
+
+Structs can declare generator methods with `func*` in both engines. Generator resume no longer clones the continuation's already-owned bytecode chunk; the retained change improved the paired nested-generator alias median by 6.7%. Control-flow optimizer changes that did not clear measurement and safety thresholds were not retained.
 
 Durable review, checkpoints, restart/resume and external-effect replay control are implemented with companion tools such as Dispatch. Watchdog and RunLedger observe and correlate evidence; they do not become workflow authority.
 
@@ -72,7 +74,7 @@ Wave D generic interoperability and participant SDK APIs remain **experimental a
 
 This release does not promise exactly-once execution, universal rollback, general machine-loss recovery, remote authenticated participant trust, multi-effect assurance or stable participant SDK APIs. Source-blind agent adopter rehearsal passed; human adopter usability remains post-release validation.
 
-See the [1.6.0 release and checksums](https://github.com/kujolang/kujo/releases/tag/v1.6.0) and [publication evidence](https://github.com/kujolang/kujo/blob/main/docs/KUJO_1_6_RELEASE.md).
+See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/tag/v1.8.0), [release-readiness evidence](https://github.com/kujolang/kujo/blob/v1.8.0/docs/KUJO_1_8_RELEASE_READINESS.md), and [publication record](https://github.com/kujolang/kujo/blob/main/release/kujo-1.8.0-publication.json).
 
 ## Runtime maintenance
 
@@ -80,7 +82,7 @@ Use [`kujo upgrade`](/upgrade/) to update a supported standalone runtime from of
 
 ## Native scripting
 
-Kujo v1.6.0 supports isolated imports and native package-installer primitives, alongside bounded web-data processing and confined file publication. Read [How the runtime works](/learn/runtime/) for usage and Linux/macOS boundaries. Kennel remains a separate installation and release.
+Kujo v1.8.0 supports isolated imports and native package-installer primitives, alongside bounded web-data processing and confined file publication. Read [How the runtime works](/learn/runtime/) for usage and Linux/macOS boundaries. Kennel remains a separate installation and release.
 
 ## Reference
 

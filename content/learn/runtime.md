@@ -10,7 +10,7 @@ audience: developer
 difficulty: beginner
 status: stable
 version: current
-last_updated: 2026-09-28
+last_updated: 2026-10-04
 previous: /learn/language-basics/
 next: /learn/capabilities/
 tags: [runtime, vm, interpreter]
@@ -44,10 +44,10 @@ kujo run --isolated-imports /path/to/tool/main.kujo -- argument
 
 `KUJO_ISOLATED_IMPORTS=1` enables the same mode for inherited launches. Entry and configured roots still apply; ordinary `kujo run` keeps its existing import behavior. Arguments, including empty strings, reach the program unchanged.
 
-The runtime also provides bounded HTTP downloads, HTML and XML processing, JSON/JSONL artifacts, digests, and confined file publication. Callback and lexical-scope corrections keep VM and interpreter workflows consistent. See the [v1.6.0 changelog](https://github.com/kujolang/kujo/blob/v1.6.0/CHANGELOG.md) and [standard library contracts](https://github.com/kujolang/kujo/blob/v1.6.0/docs/STANDARD_LIBRARY.md) for exact signatures, limits, capabilities, and platform boundaries.
+The runtime also provides bounded HTTP downloads, HTML and XML processing, JSON/JSONL artifacts, digests, and confined file publication. Callback and lexical-scope corrections keep VM and interpreter workflows consistent. See the [v1.8.0 changelog](https://github.com/kujolang/kujo/blob/v1.8.0/CHANGELOG.md) and [standard library contracts](https://github.com/kujolang/kujo/blob/v1.8.0/docs/STANDARD_LIBRARY.md) for exact signatures, limits, capabilities, and platform boundaries.
 
 These runtime features support the native Kennel 1.1.0 client. Installing or upgrading Kujo does not install or release Kennel; follow the separate [Kennel guide](/tools/kennel/) for its current package workflow.
 
-## Kujo 1.6 correctness
+## Kujo 1.8 analysis and correctness
 
-Version 1.6 strengthens closures/upvalues, generators and async/tasks, and fixes optimized VM loop/conditional early returns. The release passed archive regressions on all five supported platforms. Use `kujo test --runtime vm`, `--runtime interpreter`, or `--runtime dual` to exercise the documented execution modes; this does not claim every possible program has universal parity. See [Kujo 1.6 and experimental ecosystem boundaries](/tools/kujo/).
+Version 1.8 shares optional program analysis between `kujo check` and the LSP, improves inference for destructuring, imports, structs, promises and callable aliases, and adds generator methods to structs. The VM and interpreter retain dynamic execution semantics, while parity and optimizer-safety regressions cover nested control flow, closures, generators and errors. The release passed native and npm clean-install checks on all five supported platforms. Use `kujo test --runtime vm`, `--runtime interpreter`, or `--runtime dual` to exercise the documented execution modes; this does not claim every possible program has universal parity. See [Kujo 1.8 and experimental ecosystem boundaries](/tools/kujo/).
