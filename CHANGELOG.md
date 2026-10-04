@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.4.2 — 2026-10-04
+
+- Promote Kujo 1.8.0 as the stable runtime across install, upgrade, runtime,
+  release-boundary and ecosystem guidance.
+- Document shared optional analysis, editor reuse, struct generator methods and
+  the measured generator-resume improvement without changing v1 semantics.
+- Pin documentation verification to the immutable Kujo 1.8.0 setup action and
+  assert the published npm/runtime contract in generated output.
+
 ## 1.4.1 — 2026-09-28
 
 - Document published Kujo 1.6.0 across all five native targets and npm.

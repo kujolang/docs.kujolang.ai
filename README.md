@@ -2,7 +2,7 @@
 
 The official documentation site for the Kujo language and ecosystem, published at [docs.kujolang.ai](https://docs.kujolang.ai).
 
-Version **1.4.0**, updated **September 13, 2026**, documents Kujo runtime 1.6.0, five-platform/native npm installation, experimental contract boundaries, and ecosystem guidance, released workflow discovery, and package-manager boundaries. Homepage and footer markers are generated from `VERSION` and `release.json` and verified during the build. The site follows the Kujo documentation information architecture: a short first-run path, task-oriented learning, intent-based tool guidance, reviewable-work workflows, showcases, collections, and reference material.
+Version **1.4.2**, updated **October 4, 2026**, documents Kujo runtime 1.8.0, five-platform/native npm installation, optional inference and shared analysis, measured generator performance, struct generator methods, experimental contract boundaries, ecosystem guidance, and package-manager boundaries. Homepage and footer markers are generated from `VERSION` and `release.json` and verified during the build. The site follows the Kujo documentation information architecture: a short first-run path, task-oriented learning, intent-based tool guidance, reviewable-work workflows, showcases, collections, and reference material.
 
 ## Build
 
@@ -48,7 +48,7 @@ The release contract runs the same build and checks from one entrypoint:
 bash tests/site-contract.sh
 ```
 
-The `Verify documentation site` GitHub Actions workflow runs this contract on pushes to `main`, pull requests, and manual dispatch. It installs the checksum-verified Kujo 1.6.0 release through an immutable setup action and checks out the pinned sibling SSG revision in `.github/workflows/verify.yml`, then retains the complete generated site as the `docs-site` artifact. Set `KUJO_BIN` to an explicit executable for the equivalent local build. The workflow verifies output; publishing still uses the `gh-pages` branch described below.
+The `Verify documentation site` GitHub Actions workflow runs this contract on pushes to `main`, pull requests, and manual dispatch. It installs the checksum-verified Kujo 1.8.0 release through an immutable setup action and checks out the pinned sibling SSG revision in `.github/workflows/verify.yml`, then retains the complete generated site as the `docs-site` artifact. Set `KUJO_BIN` to an explicit executable for the equivalent local build. The workflow verifies output; publishing still uses the `gh-pages` branch described below.
 
 Before release, also verify the generated sitemap routes, the themed 404 response, desktop and mobile layouts, same-origin links, keyboard interactions, and automated accessibility checks.
 

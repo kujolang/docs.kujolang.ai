@@ -10,21 +10,21 @@ audience: all
 difficulty: beginner
 status: dated release inventory
 version: current
-last_updated: 2026-09-29
+last_updated: 2026-10-04
 tags: [ecosystem, releases, versions, installation]
 ---
 
-This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases, Kujo and the first companion batch from September 28, and Workcell/Ability/MCP, Dispatch and SSG from September 29. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
+This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP, Dispatch and SSG from September 29, and Kujo from October 4. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
 
 ## Start here
 
-Install [Kujo 1.6.0](/install/) for the current runtime. A standalone binary runs ordinary Kujo programs without Python, Node.js, or Rust. Individual applications and tools retain their own dependencies, supported platforms, runtime pins, and update procedures.
+Install [Kujo 1.8.0](/install/) for the current runtime. A standalone binary runs ordinary Kujo programs without Python, Node.js, or Rust. Individual applications and tools retain their own dependencies, supported platforms, runtime pins, and update procedures.
 
-[Kennel's official registry](https://kennel.kujolang.ai/) distributes first-party package artifacts. Kennel 1.1.0 is published separately; Kujo 1.6.0 does not change its version or historical package artifacts. See [package workflows](/learn/packages/) before assuming that upgrading Kujo also updates Kennel or other tools.
+[Kennel's official registry](https://kennel.kujolang.ai/) distributes first-party package artifacts. Kennel 1.1.0 is published separately; Kujo 1.8.0 does not change its version or historical package artifacts. See [package workflows](/learn/packages/) before assuming that upgrading Kujo also updates Kennel or other tools.
 
-## What changed in 1.6
+## What changed in 1.8
 
-Kujo 1.6.0 hardens closures and captured variables, generator/task/async behavior, and VM/interpreter parity. It fixes conditional early returns from loops in optimized VM bytecode, including nested control flow. Runtime measurement provides an observability foundation.
+Kujo 1.8.0 shares optional program analysis between CLI checking and the LSP, improves gradual inference and editor information, adds struct generator methods, and retains one measured generator-resume optimization. It strengthens VM/interpreter and optimizer-safety evidence without changing the v1 language contract.
 
 Durable review, checkpoints, restart/resume and external-effect replay control are implemented with companion tools such as Dispatch. Watchdog and RunLedger observe and correlate evidence; they do not become workflow authority.
 
@@ -36,7 +36,7 @@ Wave D generic interoperability and participant SDK APIs remain **experimental a
 
 This release does not promise exactly-once execution, universal rollback, general machine-loss recovery, remote authenticated participant trust, multi-effect assurance or stable participant SDK APIs. Source-blind agent adopter rehearsal passed; human adopter usability remains post-release validation.
 
-See the [1.6.0 release and checksums](https://github.com/kujolang/kujo/releases/tag/v1.6.0) and [publication evidence](https://github.com/kujolang/kujo/blob/main/docs/KUJO_1_6_RELEASE.md).
+See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/tag/v1.8.0), [release-readiness evidence](https://github.com/kujolang/kujo/blob/v1.8.0/docs/KUJO_1_8_RELEASE_READINESS.md), and [publication record](https://github.com/kujolang/kujo/blob/main/release/kujo-1.8.0-publication.json).
 
 ## Published package releases
 
@@ -66,7 +66,7 @@ See the [1.6.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [galleypack](https://github.com/kujolang/galleypack) | [v0.2.0](https://github.com/kujolang/galleypack/releases/tag/v0.2.0) | 2026-08-14 |
 | [howl](https://github.com/kujolang/howl) | [v1.1.0](https://github.com/kujolang/howl/releases/tag/v1.1.0) | 2026-08-11 |
 | [kennel](https://github.com/kujolang/kennel) | [v1.1.1](https://github.com/kujolang/kennel/releases/tag/v1.1.1) | 2026-09-29 |
-| [kujo](https://github.com/kujolang/kujo) | [v1.6.0](https://github.com/kujolang/kujo/releases/tag/v1.6.0) | 2026-09-28 |
+| [kujo](https://github.com/kujolang/kujo) | [v1.8.0](https://github.com/kujolang/kujo/releases/tag/v1.8.0) | 2026-10-04 |
 | [kujo-agents](https://github.com/kujolang/kujo-agents) | [v1.4.0](https://github.com/kujolang/kujo-agents/releases/tag/v1.4.0) | 2026-09-07 |
 | [kujo-pi](https://github.com/kujolang/kujo-pi) | [v1.1.0](https://github.com/kujolang/kujo-pi/releases/tag/v1.1.0) | 2026-09-26 |
 | [kujo-skills](https://github.com/kujolang/kujo-skills) | [v0.7.0](https://github.com/kujolang/kujo-skills/releases/tag/v0.7.0) | 2026-09-08 |
@@ -125,6 +125,6 @@ Kujo Pi 1.1.0 is published on GitHub and npm; install `npm:@kujolang/kujo-pi@1.1
 
 The public [Kujo MCP catalog](https://mcp.kujolang.ai/mcp) exposes read-only project, skill, workflow, and installer guidance. It is separate from the MCP framework and from private application gateways. Refreshes publish a reviewed static snapshot; they do not execute installer commands or grant application permissions.
 
-## Kujo 1.6 companion delivery
+## Kujo 1.8 runtime and companion delivery
 
-RunLedger 1.2.0, AI SDK 1.1.1 and Agents SDK 1.1.2 are published. AI SDK live-provider smoke was explicitly deferred for that release. Workcell, Ability and MCP 1.2.0 distribute the next controlled-execution cohort while retaining experimental assurance/interoperability boundaries. Dispatch 1.3.0 completes this controller release cohort with the same experimental boundaries. Stop older workers and follow its backup/upgrade instructions before changing persisted-state versions.
+Kujo 1.8 does not republish or silently upgrade companion tools. RunLedger 1.2.0, AI SDK 1.1.1 and Agents SDK 1.1.2 remain published. AI SDK live-provider smoke was explicitly deferred for that release. Workcell, Ability and MCP 1.2.0 distribute the controlled-execution cohort while retaining experimental assurance/interoperability boundaries. Dispatch 1.3.0 completes this controller release cohort with the same experimental boundaries. Stop older workers and follow its backup/upgrade instructions before changing persisted-state versions.

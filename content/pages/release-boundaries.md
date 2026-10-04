@@ -10,7 +10,7 @@ audience: all
 difficulty: beginner
 status: stable
 version: current
-last_updated: 2026-09-09
+last_updated: 2026-10-04
 tags: [release, maturity, scope]
 ---
 
@@ -35,9 +35,9 @@ Always check the page's **Status** and **Scope** fields plus the linked reposito
 
 Use the [dated ecosystem release overview](/ecosystem/releases/) to distinguish published GitHub Releases, tagged provider packages, and newer default-branch development. A repository badge or version file alone does not prove a release was published.
 
-## Kujo 1.6 runtime versus experimental contracts
+## Kujo 1.8 runtime versus experimental contracts
 
-The Kujo **1.6.0 runtime is released** for Linux x64/arm64, macOS x64/arm64 and Windows x64 through native archives and npm. That runtime release does not stabilize companion protocols.
+The Kujo **1.8.0 runtime is released** for Linux x64/arm64, macOS x64/arm64 and Windows x64 through native archives and npm. That runtime release does not stabilize companion protocols.
 
 - **Wave C:** experimental beta, explicit opt-in, required/deny in a bounded single-effect domain; alpha compatibility is retained.
 - **Wave D:** experimental alpha generic handoffs and participant SDK APIs, using trusted local hosts. Participant SDK packages remain private/unpublished.

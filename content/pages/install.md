@@ -1,6 +1,6 @@
 ---
 title: Install Kujo
-description: Install Kujo v1.6.0 and the tool group you need, or build the CLI from source.
+description: Install Kujo v1.8.0 and the tool group you need, or build the CLI from source.
 custom_url: install
 template: docs
 section: Start here
@@ -9,8 +9,8 @@ order: 20
 audience: developer
 difficulty: beginner
 status: stable
-version: 1.6.0
-last_updated: 2026-09-28
+version: 1.8.0
+last_updated: 2026-10-04
 previous: /start-here/
 next: /quickstart/
 prerequisites:
@@ -20,7 +20,7 @@ tags: [install, cli, stable]
 ---
 
 
-Kujo `v1.6.0` is the current stable release. On Linux and macOS, the public ecosystem installer selects the correct archive, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory. On Windows, use the Windows archive from the release or the npm installation path described in the runtime repository.
+Kujo `v1.8.0` is the current stable release. On Linux and macOS, the public ecosystem installer selects the correct archive, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory. On Windows, use the Windows archive from the release or the npm installation path described in the runtime repository.
 
 ## Install Kujo
 
@@ -35,20 +35,20 @@ Use a focused group when you want Kujo and the tools for one job. For the Agent 
 curl -fsSL https://kujolang.ai/install.sh | bash -s -- --group agent
 ```
 
-Run `curl -fsSL https://kujolang.ai/install.sh | bash -s -- --help` to review available groups and installer options before making changes. Direct archives and checksums remain available from the [Kujo v1.6.0 release](https://github.com/kujolang/kujo/releases/tag/v1.6.0).
+Run `curl -fsSL https://kujolang.ai/install.sh | bash -s -- --help` to review available groups and installer options before making changes. Direct archives and checksums remain available from the [Kujo v1.8.0 release](https://github.com/kujolang/kujo/releases/tag/v1.8.0).
 
 ## npm and supported platforms
 
-Kujo 1.6.0 ships native archives and npm runtime packages for **Linux x64/arm64, macOS x64/arm64, and Windows x64**. The npm resolver selects the matching exact-version native package; Node.js is needed for this installation channel.
+Kujo 1.8.0 ships native archives and npm runtime packages for **Linux x64/arm64, macOS x64/arm64, and Windows x64**. The npm resolver selects the matching exact-version native package; Node.js is needed for this installation channel.
 
 ```bash
-npm install --global @kujolang/kujo-runtime@1.6.0
+npm install --global @kujolang/kujo-runtime@1.8.0
 kujo --version
 ```
 
-Expected version output: `kujo 1.6.0`.
+Expected version output: `kujo 1.8.0`.
 
-Checksums and the publication provenance manifest are attached to the [1.6.0 release](https://github.com/kujolang/kujo/releases/tag/v1.6.0). These runtime packages are separate from the experimental, unpublished participant SDKs.
+Checksums and the deterministic source archive are attached to the [1.8.0 release](https://github.com/kujolang/kujo/releases/tag/v1.8.0). The signed release and all six npm packages were clean-install verified across the supported platform matrix. These runtime packages are separate from the experimental, unpublished participant SDKs.
 
 ## Upgrade an existing runtime
 
@@ -58,12 +58,12 @@ Native upgrades replace only the runtime executable. Ecosystem tools and package
 
 ## Runtime requirements
 
-The prebuilt Kujo CLI does not require Python, Node.js, or Rust to run ordinary Kujo programs. Source builds require Rust; npm installation requires Node.js. Individual tools may have additional requirements. Kujo v1.6.0 supplies the Linux/macOS runtime primitives for the native Kennel 1.1.0 installer; that client has a separate release and installation step.
+The prebuilt Kujo CLI does not require Python, Node.js, or Rust to run ordinary Kujo programs. Source builds require Rust; npm installation requires Node.js. Individual tools may have additional requirements. Kujo v1.8.0 supplies the Linux/macOS runtime primitives for the native Kennel 1.1.0 installer; that client has a separate release and installation step.
 
 ## Source install
 
 ```bash
-git clone --branch v1.6.0 https://github.com/kujolang/kujo.git
+git clone --branch v1.8.0 https://github.com/kujolang/kujo.git
 cd kujo
 cargo build --release --locked
 cargo install --path . --locked
