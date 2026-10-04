@@ -395,15 +395,15 @@
       ],
       "headings": [
         "Start here",
-        "What changed in 1.6",
+        "What changed in 1.8",
         "Experimental companion contracts",
         "Published package releases",
         "Recent changes worth checking",
         "Tags and source-only packages",
         "Agent discovery",
-        "Kujo 1.6 companion delivery"
+        "Kujo 1.8 runtime and companion delivery"
       ],
-      "text": "This inventory was checked against all 86 public kujolang repositories on September 9, 2026 , with Scout and ReaderSignal refreshed from their September 26 releases, Kujo and the first companion batch from September 28, and Workcell/Ability/MCP, Dispatch and SSG from September 29. Product releases, protocol versions, repository tags, and the docs site's vers"
+      "text": "This inventory was checked against all 86 public kujolang repositories on September 9, 2026 , with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP, Dispatch and SSG from September 29, and Kujo from October 4. Product releases, protocol versions, repository tags, and the docs"
     },
     {
       "title": "Showcase Directory",
@@ -479,13 +479,13 @@
       "section": "Learn Kujo",
       "audience": "developer",
       "difficulty": "beginner",
-      "status": "launch scope",
+      "status": "stable",
       "version": "current",
       "tags": [
         "[editor, lsp, cli]"
       ],
       "headings": [],
-      "text": "The CLI is the compatibility baseline. LSP and editor adapters add completion, definition, references, hover, diagnostics, rename, and code actions where the adapter is available. Keep the command loop close to the file: When an editor integration behaves differently from the CLI, reproduce the issue with the CLI first and capture the exact version and comma"
+      "text": "The CLI is the compatibility baseline. LSP and editor adapters add completion, definition, references, hover, diagnostics, rename, and code actions where the adapter is available. Kujo 1.8 shares one immutable analyzed-program model between kujo check and the LSP. Hover and completion can expose inferred variables, callable signatures, struct fields, methods"
     },
     {
       "title": "Language basics",
@@ -541,7 +541,7 @@
       ],
       "headings": [
         "Native scripting and installed tools",
-        "Kujo 1.6 correctness"
+        "Kujo 1.8 analysis and correctness"
       ],
       "text": "The normal path is the VM. It keeps the command developers use in production-like checks aligned with the command they use while learning. Use the interpreter when a compatibility or debugging workflow calls for it: The CLI also owns project initialization, checks, formatting, linting, packages, DocGen, and serving static output. That common surface is why t"
     },
@@ -563,14 +563,14 @@
     },
     {
       "title": "Install Kujo",
-      "description": "Install Kujo v1.6.0 and the tool group you need, or build the CLI from source.",
+      "description": "Install Kujo v1.8.0 and the tool group you need, or build the CLI from source.",
       "url": "https://docs.kujolang.ai/install/",
       "route": "install/",
       "section": "Start here",
       "audience": "developer",
       "difficulty": "beginner",
       "status": "stable",
-      "version": "1.6.0",
+      "version": "1.8.0",
       "tags": [
         "[install, cli, stable]"
       ],
@@ -583,7 +583,7 @@
         "Verify",
         "Troubleshooting"
       ],
-      "text": "Kujo v1.6.0 is the current stable release. On Linux and macOS, the public ecosystem installer selects the correct archive, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory. On Windows, use the Windows archive from the release or the npm installation path described in the runtime repository. Install Kuj"
+      "text": "Kujo v1.8.0 is the current stable release. On Linux and macOS, the public ecosystem installer selects the correct archive, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory. On Windows, use the Windows archive from the release or the npm installation path described in the runtime repository. Install Kuj"
     },
     {
       "title": "Quickstart",
@@ -641,7 +641,7 @@
       "headings": [
         "Runtime upgrade compatibility",
         "Current ecosystem versions",
-        "Kujo 1.6 runtime versus experimental contracts"
+        "Kujo 1.8 runtime versus experimental contracts"
       ],
       "text": "The docs use maturity labels beside recommendations so a reader can make an informed choice. | Label | Means | | --- | --- | | Launch scope | The smallest local workflow has a current source-backed proof. | | Preview / dogfood | Useful for evaluation and local teams; broader proof or wording is still in progress. | | Showcase | Demonstrates a pattern or appl"
     },
@@ -711,7 +711,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "stable",
-      "version": "1.6.0",
+      "version": "1.8.0",
       "tags": [
         "[upgrade, runtime, cli, installation]"
       ],
@@ -1442,8 +1442,8 @@
       "section": "Tools",
       "audience": "developer",
       "difficulty": "beginner",
-      "status": "stable v1.6.0",
-      "version": "1.6.0",
+      "status": "stable v1.8.0",
+      "version": "1.8.0",
       "tags": [
         "[tool, foundation, language]"
       ],
@@ -1455,7 +1455,7 @@
         "What you get",
         "How it fits",
         "Boundaries",
-        "What changed in 1.6",
+        "What changed in 1.8",
         "Experimental companion contracts",
         "Runtime maintenance",
         "Native scripting",
