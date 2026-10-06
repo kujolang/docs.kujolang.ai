@@ -1,4 +1,4 @@
 {
-  "date": "2026-10-04",
-  "summary": "Kujo runtime 1.8.0 across five native platforms and npm; smarter analysis, measured runtime performance and stronger parity evidence."
+  "date": "2026-10-06",
+  "summary": "Kujo CMD 0.2.0 integration guidance plus current runtime, ecosystem, showcase, and workflow documentation."
 }

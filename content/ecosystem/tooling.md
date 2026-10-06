@@ -9,7 +9,7 @@ audience: developer
 difficulty: intermediate
 status: local scope verified
 version: current
-last_updated: 2026-08-23
+last_updated: 2026-10-06
 tags: [ecosystem, tooling]
 ---
 
@@ -24,6 +24,7 @@ Core engineering tools include:
 - [PackWrite](/tools/packwrite/) — repeatable agent execution packs.
 - [CaseFile](/tools/casefile/) — reproducible failure evidence bundles.
 - [Lens](/tools/lens/) — browser, accessibility, link, flow, and visual checks.
+- [Kujo CMD](/tools/kujo-cmd/) — install Kujo Abilities, scoped agents, approvals, receipts, and browser QA in Command Code.
 - [Ward](/tools/ward/) — local Dependabot monitoring and remediation planning.
 - [Howl](/tools/howl/) — deterministic example and launch-proof artifacts.
 - [Kujo for Paperclip](/tools/paperclip/) — focused context, change review, and failure evidence inside Paperclip tasks.

@@ -2,7 +2,7 @@
 
 The official documentation site for the Kujo language and ecosystem, published at [docs.kujolang.ai](https://docs.kujolang.ai).
 
-Version **1.4.2**, updated **October 4, 2026**, documents Kujo runtime 1.8.0, five-platform/native npm installation, optional inference and shared analysis, measured generator performance, struct generator methods, experimental contract boundaries, ecosystem guidance, and package-manager boundaries. Homepage and footer markers are generated from `VERSION` and `release.json` and verified during the build. The site follows the Kujo documentation information architecture: a short first-run path, task-oriented learning, intent-based tool guidance, reviewable-work workflows, showcases, collections, and reference material.
+Version **1.4.3**, updated **October 6, 2026**, adds the complete Kujo CMD 0.2.0 integration guide alongside current runtime, ecosystem, showcase, and workflow guidance. Homepage and footer markers are generated from `VERSION` and `release.json` and verified during the build. The site follows the Kujo documentation information architecture: a short first-run path, task-oriented learning, intent-based tool guidance, reviewable-work workflows, showcases, collections, and reference material.
 
 ## Build
 

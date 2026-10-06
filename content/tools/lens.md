@@ -13,7 +13,7 @@ last_updated: 2026-08-23
 scope: local-first
 source_repo: lens
 previous: /tools/casefile/
-next: /tools/ward/
+next: /tools/kujo-cmd/
 tags: [tool, browser, visual-qa]
 ---
 

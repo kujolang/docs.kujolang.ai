@@ -12,7 +12,7 @@ version: current
 last_updated: 2026-08-23
 scope: local-first security operations
 source_repo: ward
-previous: /tools/lens/
+previous: /tools/kujo-cmd/
 next: /tools/howl/
 tags: [tool, dependabot, security]
 ---

@@ -1,5 +1,15 @@
 # Changelog
 
+## Unreleased
+
+## 1.4.3 — 2026-10-06
+
+- Add a complete Kujo CMD 0.2.0 guide for installing 25 Kujo sources and 38
+  Abilities in Command Code, selecting exposure profiles, using scoped agents,
+  handling approvals and receipts, and enabling optional Lens browser checks.
+- Publish the accumulated Presentations, SSG, Watchdog, and Scout guidance that
+  followed the 1.4.2 runtime documentation release.
+
 ## 1.4.2 — 2026-10-04
 
 - Promote Kujo 1.8.0 as the stable runtime across install, upgrade, runtime,
@@ -14,8 +24,6 @@
 - Document published Kujo 1.6.0 across all five native targets and npm.
 - Refresh runtime correctness, installation, upgrade and release guidance; preserve component minimums and historical versions.
 - Keep Wave C beta and Wave D alpha experimental; participant SDKs remain unpublished.
-
-## Unreleased
 
 - Add a Presentations showcase guide covering browser-native slide output, authoring, review, presenter tools, deployment boundaries, and the published 0.3.0 preview.
 
