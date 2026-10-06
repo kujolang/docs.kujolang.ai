@@ -1434,7 +1434,7 @@
         "Optional browser checks",
         "Operate and upgrade"
       ],
-      "text": "Use it when\u2026 You want Command Code to discover and run a broad set of Kujo tools through one local MCP server while preserving Kujo approvals, receipts, identities, and project boundaries. Install The first setup downloads 25 pinned Kujo source projects and the Kujo runtime. Normal execution is local and works offline. No Kujo account or hosted Kujo service "
+      "text": "Use it when\u2026 You want Command Code to discover and run a broad set of Kujo tools through one local MCP server while preserving Kujo approvals, receipts, identities, and project boundaries. Install The GitHub release is live. npm publication is temporarily pending restoration of the package's trusted-publisher or NPM TOKEN authorization, so the command above "
     },
     {
       "title": "Kujo Pi",

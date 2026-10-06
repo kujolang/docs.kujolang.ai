@@ -108,8 +108,12 @@
 <p>and project boundaries.</p>
 <h2 id="install">Install</h2>
 <pre><code class="language-bash">cd /path/to/your/project
-npx @kujolang/kujo-cmd@0.2.0 setup
+npx github:kujolang/kujo-cmd#v0.2.0 setup
 command-code</code></pre>
+<p>The GitHub release is live. npm publication is temporarily pending restoration</p>
+<p>of the package&apos;s trusted-publisher or <code>NPM_TOKEN</code> authorization, so the command</p>
+<p>above runs the same tagged package directly from GitHub. Use</p>
+<p><code>npx @kujolang/kujo-cmd@0.2.0 setup</code> after the registry release appears.</p>
 <p>The first setup downloads 25 pinned Kujo source projects and the Kujo runtime.</p>
 <p>Normal execution is local and works offline. No Kujo account or hosted Kujo</p>
 <p>service is required.</p>
