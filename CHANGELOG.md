@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Document the temporary tagged-GitHub install path while Kujo CMD 0.2.0 npm
+  publication awaits restored registry authorization.
+
 ## 1.4.3 — 2026-10-06
 
 - Add a complete Kujo CMD 0.2.0 guide for installing 25 Kujo sources and 38
