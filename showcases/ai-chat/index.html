@@ -13,7 +13,7 @@
 		})();
 	</script>
 	<title>AI Chat | Kujo Docs</title>
-	<meta name="description" content="A local multi-provider chat application with encrypted profiles, streaming, transcription, and fixture mode.">
+	<meta name="description" content="A local multi-provider agent workspace with live code review, durable supervision, isolated worktrees, scoped tools, and persistent chat tabs.">
 	<meta name="keywords" content="SSG, Static Site Generator">
 	<meta name="author" content="Kujo">
 	<link rel="canonical" href="https://docs.kujolang.ai/showcases/ai-chat/">
@@ -30,7 +30,7 @@
 	<meta name="msapplication-config" content="/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<meta property="og:title" content="AI Chat">
-	<meta property="og:description" content="A local multi-provider chat application with encrypted profiles, streaming, transcription, and fixture mode.">
+	<meta property="og:description" content="A local multi-provider agent workspace with live code review, durable supervision, isolated worktrees, scoped tools, and persistent chat tabs.">
 	<meta property="og:url" content="https://docs.kujolang.ai/showcases/ai-chat/">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="Kujo Docs">
@@ -40,13 +40,13 @@
 	<meta property="og:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="AI Chat">
-	<meta name="twitter:description" content="A local multi-provider chat application with encrypted profiles, streaming, transcription, and fixture mode.">
+	<meta name="twitter:description" content="A local multi-provider agent workspace with live code review, durable supervision, isolated worktrees, scoped tools, and persistent chat tabs.">
 	<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
 	<meta name="twitter:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
 	<link href="../../assets/css/fonts.css" rel="stylesheet">
 	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
 	<link href="../../assets/css/style.css" rel="stylesheet">
-	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"AI Chat","name":"AI Chat","description":"A local multi-provider chat application with encrypted profiles, streaming, transcription, and fixture mode.","url":"https://docs.kujolang.ai/showcases/ai-chat/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"AI Chat","name":"AI Chat","description":"A local multi-provider agent workspace with live code review, durable supervision, isolated worktrees, scoped tools, and persistent chat tabs.","url":"https://docs.kujolang.ai/showcases/ai-chat/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -101,9 +101,9 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="ai-chat">AI Chat</h1><p class="docs-description">A local multi-provider chat application with encrypted profiles, streaming, transcription, and fixture mode.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>1.2.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-09</span></div>
+		<h1 id="ai-chat">AI Chat</h1><p class="docs-description">A local multi-provider agent workspace with live code review, durable supervision, isolated worktrees, scoped tools, and persistent chat tabs.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>1.3.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-06</span></div>
 		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
-<p>You want a concrete local application surface for provider profiles, streaming, transcription, and offline fixtures.</p>
+<p>You want to run coding, review, content, or operations agents side by side while keeping their permissions, code changes, tool evidence, and recovery controls visible.</p>
 <h2 id="interface-overview">Interface overview</h2>
 <table><thead><tr>
 <th>Surface</th>
@@ -111,24 +111,27 @@
 </tr></thead><tbody>
 <tr>
 <td>App</td>
-<td>Local multi-pane chat UI, provider/model profiles, and saved pane layouts</td>
+<td>Local multi-pane chat UI, persistent workspace tabs, live diffs, review comments, plans, steering, checkpoints, and a command palette</td>
 </tr>
 <tr>
 <td>API</td>
-<td>Health, providers, state, automations, chat, SSE streaming, and transcription routes</td>
+<td>Health, providers, state, automations, chat, SSE streaming, transcription, MCP management, attention, artifacts, worktrees, and review routes</td>
 </tr>
 <tr>
 <td>State</td>
-<td>SQLite conversations, incremental state changes, encrypted keys, backups, and vacuum</td>
+<td>SQLite conversations, incremental state changes, encrypted keys and checkpoints, backups, attention events, and execution receipts</td>
 </tr>
 <tr>
 <td>Integrations</td>
-<td>OpenAI-compatible providers, Watchdog, local tools, browser sessions, and fixture mode</td>
+<td>OpenAI-compatible providers, native Codex, local ChatGPT plan access, Watchdog, Hermes / Nous, xAI OAuth, local tools, browser sessions, scoped MCP, and fixture mode</td>
 </tr>
 </tbody></table>
 <h2 id="main-workflows">Main workflows</h2>
 <ul>
 <li>Configure provider profiles and models in Settings, then compare one prompt across multiple panes.</li>
+<li>Review each agent&apos;s live file changes in unified or split diffs, comment on files or hunks, and use conflict-aware checkpoint restore or rewind when necessary.</li>
+<li>Isolate coding chats in managed Git worktrees, attach bounded files and images, and inspect command, test, browser, source, and error artifacts.</li>
+<li>Grant each chat only the MCP tools and resources it needs; use the attention inbox and command palette to move between pending approvals and active chats.</li>
 <li>Use <code>/api/chat/stream</code> for <code>token</code>, <code>thinking</code>, <code>done</code>, and <code>error</code> SSE events.</li>
 <li>Run the smoke suite without provider credentials to verify the fixture-backed application contract.</li>
 <li>Back up and maintain SQLite state with the supplied npm scripts before operational changes.</li>
@@ -138,17 +141,17 @@
 npm run dev
 npm run smoke</code></pre>
 <h2 id="what-you-get">What you get</h2>
-<p>A local chat UI, encrypted provider profiles, SSE streaming, transcription paths, and fixture mode.</p>
+<p>A local agent workspace with encrypted provider profiles, SSE streaming, multi-chat tabs, actionable code review, durable supervision, scoped extensions, transcription paths, and fixture mode.</p>
 <h2 id="how-it-fits">How it fits</h2>
 <p>Start with <a href="/tools/ai-sdk/">AI SDK</a> for the provider contract and <a href="/tools/watchdog/">Watchdog</a> for local telemetry.</p>
 <h2 id="boundaries">Boundaries</h2>
-<p>This is a local multi-provider showcase, not a managed chat service. Credentials and deployment are integrator-owned.</p>
+<p>This is a local multi-provider showcase, not a managed chat service or deployed production certification. Credentials, permissions, proxy topology, backups, managed worktrees, and deployment remain integrator-owned. Local writes, shell execution, MCP connections, desktop notifications, browser execution, and ChatGPT plan access are explicit opt-ins.</p>
 <h2 id="reference">Reference</h2>
 <p>See the <a href="https://github.com/kujolang/ai-chat">AI Chat repository</a> for API, provider, and deployment configuration.</p>
 <h2 id="current-release-and-upgrade">Current release and upgrade</h2>
-<p><a href="https://github.com/kujolang/ai-chat/releases/tag/v1.2.0">AI Chat 1.2.0</a> adds encrypted execution journals, durable action receipts, interrupted-turn recovery, bounded stream replay, provider-context budgeting, and configured RAG documentation lookup with source links and code-example language preferences. Deferred tools remain subject to request-scoped authorization.</p>
-<p>Use <strong>Node 22.17.0</strong> and <code>npm ci</code>. Back up the database together with its matching encryption configuration before upgrading, then restart the application. Browser execution additionally needs Playwright Chromium and macOS Seatbelt or Linux Bubblewrap with permitted namespaces; unavailable containment fails closed. Follow the <a href="https://github.com/kujolang/ai-chat/blob/v1.2.0/SETUP_AND_INSTALL.md#upgrading-to-120">versioned upgrade procedure</a>.</p>
-<p>The release reports 387 local tests passed and one Linux-only skip. Its full eight-hour reliability soak is incomplete; the partial run is not a production-readiness certification.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/showcases/crud-api/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/showcases/ssg/" rel="next"><span>Next</span></a></nav>
+<p><a href="https://github.com/kujolang/ai-chat/releases/tag/v1.3.0">AI Chat 1.3.0</a> ships harness roadmap items HR-01 through HR-10: live per-pane code diffs, review comments, encrypted checkpoints and rewind, plans and steering, managed Git worktrees, typed attachments, execution artifacts, scoped MCP connections, an attention inbox, a command palette, and persistent multi-chat tabs. Deferred tools and external MCP capabilities remain subject to request-scoped authorization and interactive approvals.</p>
+<p>Use <strong>Node 22.17.0</strong> and <code>npm ci</code>. Back up the database with its matching encryption secret, configuration, action manifests, and uncommitted managed worktrees before upgrading. Browser execution additionally needs Playwright Chromium and macOS Seatbelt or Linux Bubblewrap with permitted namespaces; unavailable containment fails closed. Follow the <a href="https://github.com/kujolang/ai-chat/blob/v1.3.0/SETUP_AND_INSTALL.md#upgrading-to-130">versioned upgrade procedure</a>.</p>
+<p>The release passed 758 local tests with 756 passes and two platform skips, authenticated fixture smoke, a zero-vulnerability production dependency audit, ShipCheck&apos;s error-level gate, and GitHub CI. Its historical eight-hour reliability soak remains incomplete; the partial run is not a production-readiness certification.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/showcases/crud-api/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/showcases/ssg/" rel="next"><span>Next</span></a></nav>
 	</article>
 	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li><li class="toc-level-2"><a href="#current-release-and-upgrade">Current release and upgrade</a></li></ol></nav>
 </main>
