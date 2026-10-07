@@ -10,11 +10,11 @@ audience: all
 difficulty: beginner
 status: dated release inventory
 version: current
-last_updated: 2026-10-04
+last_updated: 2026-10-07
 tags: [ecosystem, releases, versions, installation]
 ---
 
-This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP, Dispatch and SSG from September 29, and Kujo from October 4. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
+This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP, Dispatch and SSG from September 29, Kujo from October 4, and Tribunal from October 7. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
 
 ## Start here
 
@@ -93,7 +93,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [spec](https://github.com/kujolang/spec) | [v1.0.1](https://github.com/kujolang/spec/releases/tag/v1.0.1) | 2026-08-30 |
 | [ssg](https://github.com/kujolang/ssg) | [v1.1.0](https://github.com/kujolang/ssg/releases/tag/v1.1.0) | 2026-09-29 |
 | [storydesk](https://github.com/kujolang/storydesk) | [v0.2.0](https://github.com/kujolang/storydesk/releases/tag/v0.2.0) | 2026-08-14 |
-| [tribunal](https://github.com/kujolang/tribunal) | [v1.0.1](https://github.com/kujolang/tribunal/releases/tag/v1.0.1) | 2026-09-05 |
+| [tribunal](https://github.com/kujolang/tribunal) | [v1.0.2](https://github.com/kujolang/tribunal/releases/tag/v1.0.2) | 2026-10-07 |
 | [versionseal](https://github.com/kujolang/versionseal) | [v0.2.0](https://github.com/kujolang/versionseal/releases/tag/v0.2.0) | 2026-08-14 |
 | [watchdog](https://github.com/kujolang/watchdog) | [v1.2.0](https://github.com/kujolang/watchdog/releases/tag/v1.2.0) | 2026-09-29 |
 | [workcell](https://github.com/kujolang/workcell) | [v1.2.0](https://github.com/kujolang/workcell/releases/tag/v1.2.0) | 2026-09-29 |

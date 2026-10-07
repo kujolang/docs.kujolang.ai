@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Refresh Tribunal 1.0.2 release guidance, hardening details, runtime reproduction boundaries and the dated ecosystem release inventory.
+
 - Document AI Chat 1.3.0 live diff review, durable supervision, managed worktrees, scoped MCP connections, multi-chat navigation, security fixes, upgrade requirements, and release verification.
 - Document the temporary tagged-GitHub install path while Kujo CMD 0.2.0 npm
   publication awaits restored registry authorization.

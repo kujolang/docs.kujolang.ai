@@ -7,9 +7,9 @@ nav_title: Tribunal
 order: 125
 audience: all
 difficulty: advanced
-status: stable 1.0.1 operator-controlled scope
+status: stable 1.0.2 operator-controlled scope
 version: current
-last_updated: 2026-09-05
+last_updated: 2026-10-07
 scope: local and operator-controlled
 source_repo: tribunal
 tags: [tool, decisions, review, evidence]
@@ -19,11 +19,11 @@ tags: [tool, decisions, review, evidence]
 
 A consequential proposal needs independent specialist testimony, cross-examination, a fatal-flaw pass, a ruling, and an execution-ready decision packet.
 
-## Current release: 1.0.1
+## Current release: 1.0.2
 
-[Tribunal 1.0.1](https://github.com/kujolang/tribunal/releases/tag/v1.0.1) is a patch release for local and operator-controlled review. It strengthens credential redaction, bridge failure handling, bundle integrity, and concurrent index coordination, and reduces repeated prompt and memory work. The v1 library API and evidence formats are unchanged.
+[Tribunal 1.0.2](https://github.com/kujolang/tribunal/releases/tag/v1.0.2) is a patch release for local and operator-controlled review. It hardens conditional store publication, governance history, event validation, encrypted inventories, and concurrent index locking. Archives contain only clean, committed inputs, and existing-directory handling avoids redundant parent traversal. The v1 library API and evidence formats are unchanged.
 
-Download the release archive and its receipt, then follow [release verification](https://github.com/kujolang/tribunal/blob/v1.0.1/docs/RELEASE_VERIFICATION.md) before running it. Use the pinned Kujo runtime and integrations in the [integration matrix](https://github.com/kujolang/tribunal/blob/v1.0.1/docs/INTEGRATION_MATRIX.md) to reproduce release checks.
+Kujo 1.8.0 is the current runtime. The original 1.0.2 release reproduction matrix retains its Kujo 1.5.0 pin; consult the release notes for additional runtime verification. Download the release archive and its receipt, then follow [release verification](https://github.com/kujolang/tribunal/blob/v1.0.2/docs/RELEASE_VERIFICATION.md) before running it. Use the pinned Kujo runtime and integrations in the [integration matrix](https://github.com/kujolang/tribunal/blob/v1.0.2/docs/INTEGRATION_MATRIX.md) to reproduce release checks.
 
 ## Five-minute example
 
@@ -46,7 +46,7 @@ Tribunal does not certify hosted, regulated, shared-filesystem, identity, signin
 
 ## Recover an interrupted index update
 
-An interrupted index mutation can leave a lock or dirty marker. Follow the [index recovery procedure](https://github.com/kujolang/tribunal/blob/v1.0.1/docs/OPERATIONS.md) before rebuilding; confirm that no writer is active. Do not run older Tribunal versions against the same storage concurrently because they bypass the new index coordination. Preserve sealed run evidence during recovery.
+An interrupted index mutation can leave a lock or dirty marker. Follow the [index recovery procedure](https://github.com/kujolang/tribunal/blob/v1.0.2/docs/OPERATIONS.md) before rebuilding; confirm that no writer is active. Do not run older Tribunal versions against the same storage concurrently because they bypass the new index coordination. Preserve sealed run evidence during recovery.
 
 ## Reference
 
