@@ -403,7 +403,7 @@
         "Agent discovery",
         "Kujo 1.8 runtime and companion delivery"
       ],
-      "text": "This inventory was checked against all 86 public kujolang repositories on September 9, 2026 , with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP, Dispatch and SSG from September 29, and Kujo from October 4. Product releases, protocol versions, repository tags, and the docs"
+      "text": "This inventory was checked against all 86 public kujolang repositories on September 9, 2026 , with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP, Dispatch and SSG from September 29, Kujo from October 4, and Tribunal from October 7. Product releases, protocol versions, repo"
     },
     {
       "title": "Showcase Directory",
@@ -2033,21 +2033,21 @@
       "section": "Tools",
       "audience": "all",
       "difficulty": "advanced",
-      "status": "stable 1.0.1 operator-controlled scope",
+      "status": "stable 1.0.2 operator-controlled scope",
       "version": "current",
       "tags": [
         "[tool, decisions, review, evidence]"
       ],
       "headings": [
         "Use it when\u2026",
-        "Current release: 1.0.1",
+        "Current release: 1.0.2",
         "Five-minute example",
         "What you get",
         "Boundaries",
         "Recover an interrupted index update",
         "Reference"
       ],
-      "text": "Use it when\u2026 A consequential proposal needs independent specialist testimony, cross-examination, a fatal-flaw pass, a ruling, and an execution-ready decision packet. Current release: 1.0.1 Tribunal 1.0.1 https://github.com/kujolang/tribunal/releases/tag/v1.0.1 is a patch release for local and operator-controlled review. It strengthens credential redaction, b"
+      "text": "Use it when\u2026 A consequential proposal needs independent specialist testimony, cross-examination, a fatal-flaw pass, a ruling, and an execution-ready decision packet. Current release: 1.0.2 Tribunal 1.0.2 https://github.com/kujolang/tribunal/releases/tag/v1.0.2 is a patch release for local and operator-controlled review. It hardens conditional store publicati"
     },
     {
       "title": "VersionSeal",
