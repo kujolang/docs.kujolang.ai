@@ -44,7 +44,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | --- | --- | --- |
 | [ability](https://github.com/kujolang/ability) | [v1.2.0](https://github.com/kujolang/ability/releases/tag/v1.2.0) | 2026-09-29 |
 | [agents-sdk](https://github.com/kujolang/agents-sdk) | [v1.1.2](https://github.com/kujolang/agents-sdk/releases/tag/v1.1.2) | 2026-09-28 |
-| [ai-chat](https://github.com/kujolang/ai-chat) | [v1.2.0](https://github.com/kujolang/ai-chat/releases/tag/v1.2.0) | 2026-09-07 |
+| [ai-chat](https://github.com/kujolang/ai-chat) | [v1.3.0](https://github.com/kujolang/ai-chat/releases/tag/v1.3.0) | 2026-10-06 |
 | [ai-sdk](https://github.com/kujolang/ai-sdk) | [v1.1.1](https://github.com/kujolang/ai-sdk/releases/tag/v1.1.1) | 2026-09-28 |
 | [anthropic](https://github.com/kujolang/anthropic) | [v0.1.2](https://github.com/kujolang/anthropic/releases/tag/v0.1.2) | 2026-08-27 |
 | [assetworks](https://github.com/kujolang/assetworks) | [v0.2.0](https://github.com/kujolang/assetworks/releases/tag/v0.2.0) | 2026-08-14 |
@@ -104,7 +104,7 @@ The Kujo Pi row was refreshed on September 26, 2026. Other entries retain their 
 
 - **Kujo Pi 1.1.0:** approval-gated Ability tools, opt-in Watchdog v2 metadata, bounded telemetry and artifact inspection, and receipt-failure recovery. Read [Kujo Pi](/tools/kujo-pi/).
 
-- **AI Chat 1.2.0:** durable recovery, bounded streams and context, and RAG documentation lookup. Follow its Node and storage upgrade requirements; the eight-hour soak remains incomplete. Read [AI Chat](/showcases/ai-chat/).
+- **AI Chat 1.3.0:** live code review, durable supervision, isolated worktrees, scoped MCP connections, an attention inbox, a command palette, and persistent chat tabs. Follow its Node, storage, permission, and worktree upgrade requirements; the historical eight-hour soak remains incomplete. Read [AI Chat](/showcases/ai-chat/).
 - **Workcell 1.2.0:** Docker/Podman execution and failure preservation, with Git assurance/process correlation experimental and remote adapters still alpha. Use the package's qualified Kujo 1.6.0 runtime. Read [Workcell](/tools/workcell/).
 - **SiteProbe 0.3.0:** native Kujo product commands and platform-qualified source archives; its test tooling can still require Python. Read [SiteProbe](/tools/siteprobe/).
 - **Skills 0.7.0, Workflows 0.6.0, Agents 1.4.0:** 135 skills, 44 local workflows, and canonical VideoOps tools and schemas. Live media permission and provider limits remain explicit. Read [skills](/collections/skills/) and [workflows](/collections/workflows/).
