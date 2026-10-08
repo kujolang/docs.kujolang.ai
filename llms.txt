@@ -48,6 +48,7 @@ A local-first path through the Kujo language and ecosystem.
 - [Tests and evaluation](https://docs.kujolang.ai/review/tests-and-evaluation/) — Run deterministic acceptance checks locally or in CI and keep the expected result explicit.
 - [Security model](https://docs.kujolang.ai/security/) — Understand capability gates, local boundaries, secrets, network access, and safe execution wording.
 - [Showcases](https://docs.kujolang.ai/showcases/) — Kujo showcases documentation.
+- [Agent City](https://docs.kujolang.ai/showcases/agent-city/) — Run a local agent task, follow observed work through a pixel-art city, and review the result or replay its evidence.
 - [AI Chat](https://docs.kujolang.ai/showcases/ai-chat/) — A local multi-provider agent workspace with live code review, durable supervision, isolated worktrees, scoped tools, and persistent chat tabs.
 - [Cinch](https://docs.kujolang.ai/showcases/cinch/) — A local development harness for files, Git, commands, AI context, tools, and proof.
 - [CMS](https://docs.kujolang.ai/showcases/cms/) — A framework-neutral content backend with first-class administration, extensions, SEO, identity, AI abilities, MCP, and WebMCP.

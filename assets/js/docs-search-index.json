@@ -419,7 +419,7 @@
         "[ecosystem, showcases]"
       ],
       "headings": [],
-      "text": "The showcase set includes: - CMS /showcases/cms/ \u2014 framework-neutral content, administration, extensions, SEO, identity, abilities, MCP, WebMCP, and production operations. - CRUD API Showcase /showcases/crud-api/ \u2014 SQLite CRUD contracts, auth strategies, concurrency, and a frontend playground. - AI Chat /showcases/ai-chat/ \u2014 local multi-provider chat, stream"
+      "text": "The showcase set includes: - Agent City /showcases/agent-city/ \u2014 run local agent tasks, follow observed work through a pixel-art city, review outputs, and replay recorded runs. - CMS /showcases/cms/ \u2014 framework-neutral content, administration, extensions, SEO, identity, abilities, MCP, WebMCP, and production operations. - CRUD API Showcase /showcases/crud-ap"
     },
     {
       "title": "Tooling",
@@ -803,6 +803,31 @@
       ],
       "headings": [],
       "text": "Use repository tests for implementation behavior and Eval /tools/eval/ for deterministic acceptance checks around JSON, HTTP, files, or commands. An evaluation result is strongest when the fixture, check, expected output, and policy are all reviewable. Eval is not a general sandbox and should not be described as one."
+    },
+    {
+      "title": "Agent City",
+      "description": "Run a local agent task, follow observed work through a pixel-art city, and review the result or replay its evidence.",
+      "url": "https://docs.kujolang.ai/showcases/agent-city/",
+      "route": "showcases/agent-city/",
+      "section": "Showcases",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "0.2.0",
+      "tags": [
+        "[showcase, agents, tasks, review, replay]"
+      ],
+      "headings": [
+        "Use it when\u2026",
+        "Install and start",
+        "Connect a model",
+        "Run a task and review it",
+        "What the rooms mean",
+        "Replay and record",
+        "Permissions and limits",
+        "Related tools and guides"
+      ],
+      "text": "Agent City is a local workspace for running and reviewing AI-agent tasks in a pixel-art city. Connect a model, give an author a task, and ask a separate reviewer to assess the output. The city shows observed Kujo activity and links it to evidence. Use it when\u2026 You want to see which tools an agent used, inspect the work it produced, review failed and repaired"
     },
     {
       "title": "AI Chat",
@@ -1262,7 +1287,8 @@
         "Boundaries",
         "Reference",
         "Dispatch 1.3.0",
-        "Experimental companion contracts"
+        "Experimental companion contracts",
+        "Agent City"
       ],
       "text": "Use it when\u2026 A task is a sequence of steps that can pause, resume, require approval, and leave a run receipt. Interface overview | Surface | What is available | | --- | --- | | Execute | demo, workflow templates, workflow files, JSON inputs, and tool allow/deny lists | | Continue | resume and decision-file resume paths | | Inspect | runs, show, inspect, JSON"
     },
@@ -1408,7 +1434,8 @@
         "How it fits",
         "Boundaries",
         "Reference",
-        "Release 1.1.1"
+        "Release 1.1.1",
+        "Agent City"
       ],
       "text": "Use it when\u2026 Your project needs a dependency manifest, resolved lockfile, source policy, or trust decision that should be reviewable. Interface overview | Surface | What is available | | --- | --- | | Project setup | new, init, and manifest generation | | Dependencies | add, install, and frozen lockfile validation | | Sources | Official HTTPS registry, local"
     },
@@ -2119,7 +2146,8 @@
         "Boundaries",
         "Reference",
         "Published release",
-        "Retained 1.1 behavior"
+        "Retained 1.1 behavior",
+        "Agent City"
       ],
       "text": "Use it when\u2026 You need a local proxy or dashboard to understand AI request volume, cost, latency, errors, and audit records. Interface overview | Surface | What is available | | --- | --- | | Proxy | OpenAI-compatible requests under /proxy/v1 with passthrough or override auth | | APIs | /api/requests, /api/proxy-config, health, readiness, and structured expor"
     },
@@ -2144,7 +2172,8 @@
         "Evidence and recovery",
         "Boundaries",
         "Reference",
-        "Version 1.2.0 and Kujo 1.6"
+        "Version 1.2.0 and Kujo 1.6",
+        "Agent City"
       ],
       "text": "Use it when\u2026 A workflow needs a disposable Git worktree, bounded container resources, explicit network and filesystem policy, declared artifact export, and an integrity-verifiable receipt. Interface overview Workcell validates an execution definition, prepares a disposable Git workspace, runs the workload through Docker or Podman, exports declared artifacts,"
     }

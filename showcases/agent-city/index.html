@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="kujo-light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		(function() {
+			try {
+				if (window.localStorage.getItem('sk-theme') === 'kujo-dark') {
+					document.documentElement.dataset.theme = 'kujo-dark';
+				}
+			} catch (error) {}
+		})();
+	</script>
+	<title>Agent City | Kujo Docs</title>
+	<meta name="description" content="Run a local agent task, follow observed work through a pixel-art city, and review the result or replay its evidence.">
+	<meta name="keywords" content="SSG, Static Site Generator">
+	<meta name="author" content="Kujo">
+	<link rel="canonical" href="https://docs.kujolang.ai/showcases/agent-city/">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/assets/img/kujo-logomark-black.svg" color="#000000">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="application-name" content="Kujo Docs">
+	<meta name="apple-mobile-web-app-title" content="Kujo Docs">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Agent City">
+	<meta property="og:description" content="Run a local agent task, follow observed work through a pixel-art city, and review the result or replay its evidence.">
+	<meta property="og:url" content="https://docs.kujolang.ai/showcases/agent-city/">
+	<meta property="og:type" content="article">
+	<meta property="og:site_name" content="Kujo Docs">
+	<meta property="og:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Agent City">
+	<meta name="twitter:description" content="Run a local agent task, follow observed work through a pixel-art city, and review the result or replay its evidence.">
+	<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta name="twitter:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<link href="../../assets/css/fonts.css" rel="stylesheet">
+	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Agent City","name":"Agent City","description":"Run a local agent task, follow observed work through a pixel-art city, and review the result or replay its evidence.","url":"https://docs.kujolang.ai/showcases/agent-city/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="docs-topbar" id="navigation">
+	<div class="docs-topbar-row">
+		<a class="docs-brand" href="../../index.html"><img class="docs-brand-mark" src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"> <span>Docs</span></a>
+		<label class="docs-search-shell">
+			<span class="sr-only">Search documentation</span>
+			<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
+		</label>
+		<div class="docs-header-actions">
+			<button class="docs-theme-button docs-icon-button" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-docs-theme>
+				<svg class="docs-moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c.132 0 .263 .003 .393 .008a7.5 7.5 0 0 0 7.599 9.6A9 9 0 1 1 12 3"/></svg>
+				<svg class="docs-sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-4 0a4 4 0 1 0 8 0 4 4 0 1 0-8 0M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+			</button>
+			<button class="docs-menu-button docs-icon-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu>
+				<svg class="docs-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+				<svg class="docs-close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+			</button>
+		</div>
+	</div>
+	<nav id="primary-navigation" class="docs-primary-nav" aria-label="Primary navigation">
+		<a href="/start-here/">Start here</a>
+		<a href="/learn/">Learn Kujo</a>
+		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
+		<a href="/tools/">Tools</a>
+		<a href="/showcases/">Showcases</a>
+	</nav>
+</header>
+<div id="docs-search-results" class="docs-search-results" aria-live="polite"></div>
+<main class="docs-shell" id="main-content">
+	<aside class="docs-sidebar" aria-label="Documentation sections">
+		<p class="docs-sidebar-label">Browse</p>
+		<ul>
+			<li><a href="/start-here/">Start here</a></li>
+			<li><a href="/install/">Install Kujo</a></li>
+			<li><a href="/upgrade/">Upgrade Kujo</a></li>
+			<li><a href="/quickstart/">Quickstart</a></li>
+			<li><a href="/choose-a-path/">Choose a path</a></li>
+			<li><a href="/learn/">Learn Kujo</a></li>
+			<li><a href="/build/">Build with Kujo</a></li>
+			<li><a href="/review/">Reviewable work</a></li>
+			<li><a href="/tools/">Tools</a></li>
+			<li><a href="/showcases/">Showcases</a></li>
+			<li><a href="/collections/">Collections</a></li>
+			<li><a href="/ecosystem/">Ecosystem</a></li>
+			<li><a href="/reference/">Reference</a></li>
+			<li><a href="/security/">Security model</a></li>
+			<li><a href="/release-boundaries/">Release boundaries</a></li>
+			<li><a href="/support/">Support</a></li>
+		</ul>
+	</aside>
+	<article class="docs-article">
+		<h1 id="agent-city">Agent City</h1><p class="docs-description">Run a local agent task, follow observed work through a pixel-art city, and review the result or replay its evidence.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>0.2.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-08</span></div>
+		<div class="docs-body"><p>Agent City is a local workspace for running and reviewing AI-agent tasks in a pixel-art city. Connect a model, give an author a task, and ask a separate reviewer to assess the output. The city shows observed Kujo activity and links it to evidence.</p>
+<h2 id="use-it-when">Use it when…</h2>
+<p>You want to see which tools an agent used, inspect the work it produced, review failed and repaired attempts, or replay a recorded run without executing it again.</p>
+<h2 id="install-and-start">Install and start</h2>
+<p>Supported platforms are macOS Intel and Apple Silicon, and Linux x64 and ARM64.</p>
+<pre><code class="language-sh">curl --proto &apos;=https&apos; --tlsv1.2 -fsSL https://github.com/kujolang/agent-city/releases/download/v0.2.0/install.sh | sh</code></pre>
+<p>The installer supplies pinned application and Kujo dependencies, and a private Node runtime when needed. It starts the app at <code>http://127.0.0.1:5178</code>, or the address printed in the terminal. Keep the terminal open; Ctrl+C stops the app. Installation does not submit a task.</p>
+<p>To start an installed copy again:</p>
+<pre><code class="language-sh">&quot;$HOME/.local/share/agent-city/start.command&quot;</code></pre>
+<p>Agent City uses its own installer, not <code>kennel add</code>. See the <a href="https://github.com/kujolang/agent-city/blob/main/installer/README.md">installation guide</a> for updates, removal, separate instances, and container setup.</p>
+<h2 id="connect-a-model">Connect a model</h2>
+<p>No model credentials are bundled. Choose one connection:</p>
+<ul>
+<li><strong>Ollama:</strong> start Ollama with a model installed. Open <strong>Mission Command → Model connection</strong>, choose <strong>Detect local Ollama</strong>, select the model, then <strong>Check model listing</strong> and <strong>Save connection</strong>. A local endpoint that does not require authentication uses a blank API key.</li>
+<li><strong>Codex CLI:</strong> install and authenticate Codex CLI separately with <code>codex login</code>. Leave Agent City running and start the connector in another terminal:</li>
+</ul>
+<pre><code class="language-sh">&quot;$HOME/.local/share/agent-city/start.command&quot; provider:codex --check
+&quot;$HOME/.local/share/agent-city/start.command&quot; provider:codex</code></pre>
+<p>Keep the connector running and restart it after restarting City. If the app uses another address, set <code>CITY_APP_URL</code> to the launcher&apos;s printed URL. The connector uses your existing CLI login to provide model responses. It does not import Codex tools or projects; account access and usage limits still apply.</p>
+<h2 id="run-a-task-and-review-it">Run a task and review it</h2>
+<p>1. Open <strong>Mission Command</strong> and choose <strong>Writing + review</strong>.</p>
+<p>2. Enter a small request based on facts you supply, then choose <strong>Start mission</strong>.</p>
+<p>3. Select the author in the roster and choose <strong>Follow</strong>. The camera tracks that execution across scenes.</p>
+<p>4. Answer any actual question in <strong>Mission Conversation → Reply / continue</strong>.</p>
+<p>5. Open the mission in history to inspect the draft, separate reviewer response, and saved result. Use <strong>Continue / repair</strong> to request a revision.</p>
+<p>Built-in author and reviewer profiles need no import. Execution instances appear when work starts; the roster is not a team of continuously running decorative agents. A reviewer&apos;s grade is an opinion, separate from test or execution results.</p>
+<p>For a Kujo task, choose <strong>Kujo + senior review (real MCP)</strong>. Enable the sources, tools, and checks you need under <strong>Tools, files and checks</strong>. Try a script that reads a supplied change list and writes Markdown release notes. The <a href="https://github.com/kujolang/agent-city/blob/main/docs/try-a-reviewed-tool.md">reviewed-tool walkthrough</a> covers the inputs and explicit execution permissions.</p>
+<h2 id="what-the-rooms-mean">What the rooms mean</h2>
+<table><thead><tr>
+<th>Location</th>
+<th>Observed activity</th>
+</tr></thead><tbody>
+<tr>
+<td>Dispatch HQ</td>
+<td>Task intake and workflow state</td>
+</tr>
+<tr>
+<td>Workshop / Workcell</td>
+<td>Agent work, permitted execution, and artifacts</td>
+</tr>
+<tr>
+<td>Library / RAG</td>
+<td>Retrieval with source classification when metadata supports it</td>
+</tr>
+<tr>
+<td>MCP Terminal Center</td>
+<td>Tool invocation, server, attempt, and result metadata</td>
+</tr>
+<tr>
+<td>Meeting / Handoff</td>
+<td>Supported handoff and relationship evidence</td>
+</tr>
+<tr>
+<td>Evaluation Dojo</td>
+<td>Checks and their actual pass, fail, or skipped outcomes</td>
+</tr>
+<tr>
+<td>Archive / Incidents</td>
+<td>Recorded runs, evidence, replay, and source-health information</td>
+</tr>
+</tbody></table>
+<p>Runtime truth updates immediately. Visual visits may finish later and show <strong>RECENT</strong>. Missing or stale observations remain explicit. A room does not imply that its capability is connected, and ambient motion does not claim a tool call or conversation.</p>
+<h2 id="replay-and-record">Replay and record</h2>
+<p>Open <strong>Archive / Replay / Incidents</strong>, choose a run, and select <strong>Replay pinned run</strong>. Replay preserves event order while shortening long gaps. Pause or restart playback, then choose <strong>Return to live</strong> to submit new work. Replay never calls models or tools.</p>
+<p><strong>Record game video</strong> captures the canvas only. <strong>Stop / save video</strong> downloads WebM, or MP4 where supported. Keep the tab visible. Recordings exclude audio and conversation panels and stop at five minutes or 64 MiB.</p>
+<p><a href="https://github.com/kujolang/agent-city/blob/main/evidence/reviewed-release-tool/repaired/release-notes-live.mp4">Watch the real 53-second Kujo tool run</a> and <a href="https://github.com/kujolang/agent-city/tree/main/evidence/reviewed-release-tool">inspect its source evidence</a>.</p>
+<h2 id="permissions-and-limits">Permissions and limits</h2>
+<p>Agent City runs locally. Selected project context goes to the configured model. Provider credentials stay in private server configuration; task text, conversations, and artifacts remain in private runtime state. Normalized telemetry excludes raw prompts, retrieved content, and chat.</p>
+<p>Workcell needs a compatible container engine with seccomp and AppArmor. Execution requires explicit permission. Exporting an output does not apply it to your host project. Optional VideoOps rendering and external media services have separate setup and authorization requirements.</p>
+<p>Importing profiles does not install their tools or grant permissions. Hosted multi-user operation and an eight-hour reliability qualification are outside this release. Review work before applying or publishing it.</p>
+<h2 id="related-tools-and-guides">Related tools and guides</h2>
+<ul>
+<li><a href="https://kujolang.ai/ecosystem/agent-city/">Agent City showcase</a></li>
+<li><a href="https://github.com/kujolang/agent-city/releases/tag/v0.2.0">Agent City 0.2.0 release</a></li>
+<li><a href="https://github.com/kujolang/agent-city/blob/main/docs/workflow-support.md">Supported workflows</a></li>
+<li><a href="https://github.com/kujolang/agent-city/blob/main/TRY-AGENT-CITY.md">First-task guide</a></li>
+<li><a href="https://github.com/kujolang/agent-city/blob/main/docs/videoops.md">VideoOps setup</a></li>
+</ul></div>
+	</article>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#install-and-start">Install and start</a></li><li class="toc-level-2"><a href="#connect-a-model">Connect a model</a></li><li class="toc-level-2"><a href="#run-a-task-and-review-it">Run a task and review it</a></li><li class="toc-level-2"><a href="#what-the-rooms-mean">What the rooms mean</a></li><li class="toc-level-2"><a href="#replay-and-record">Replay and record</a></li><li class="toc-level-2"><a href="#permissions-and-limits">Permissions and limits</a></li><li class="toc-level-2"><a href="#related-tools-and-guides">Related tools and guides</a></li></ol></nav>
+</main>
+
+<footer class="docs-footer" id="footer">
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.4.3</span></div>
+	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
+</footer>
+<script src="../../assets/sitekit/sitekit.js"></script>
+<script src="../../assets/js/docs.js"></script>
+<script src="../../assets/js/kujo-webmcp.js" data-kujo-webmcp data-kujo-site-index="../../.well-known/kujo-site-index.json" defer></script></body>
+</html>
