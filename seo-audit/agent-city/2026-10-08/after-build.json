@@ -1,0 +1,6 @@
+{
+  "sha": "ea798b0edafac0f4389c8a7b0c4fe2b06e071b35",
+  "run": "https://github.com/kujolang/docs.kujolang.ai/actions/runs/37835305295",
+  "conclusion": "success",
+  "source": "CI docs-site artifact; pinned Kujo 1.8.0 and SSG a334898"
+}

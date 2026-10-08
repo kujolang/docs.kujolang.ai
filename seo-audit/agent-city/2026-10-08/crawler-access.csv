@@ -1,0 +1,6 @@
+url,userAgent,status,location,error,elapsedMs
+https://docs.kujolang.ai/showcases/agent-city/,Mozilla/5.0,200,,,67
+https://docs.kujolang.ai/showcases/agent-city/,Googlebot,200,,,68
+https://docs.kujolang.ai/showcases/agent-city/,bingbot,200,,,66
+https://docs.kujolang.ai/showcases/agent-city/,OAI-SearchBot,200,,,81
+https://docs.kujolang.ai/showcases/agent-city/,GPTBot,200,,,167

@@ -1,0 +1,8 @@
+{
+  "method": "verified CI artifact from exact untouched source commit",
+  "run": "https://github.com/kujolang/docs.kujolang.ai/actions/runs/37633193099",
+  "sha": "03d5ca3870908c95341e45a910d6f82f66c0a28f",
+  "artifactId": 11487318053,
+  "conclusion": "success",
+  "localBuild": "Stopped redundant local baseline build after verified artifact retrieval; no source changes preceded sealing."
+}

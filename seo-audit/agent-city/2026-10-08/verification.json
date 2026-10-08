@@ -1,0 +1,15 @@
+{
+  "sourceCommit": "ea798b0edafac0f4389c8a7b0c4fe2b06e071b35",
+  "publishedCommit": "0f870fc",
+  "ciRun": 37835305295,
+  "checks": {
+    "CI": "pass",
+    "generatedOutput": "107 HTML files passed",
+    "platformDocsAndReleaseMarkers": "pass",
+    "afterCrawl": "106 canonical pages; no issues",
+    "Howl": "shared card validated, rendered, and visually reviewed",
+    "browser": "1440 and 320; reduced motion; no overflow/errors",
+    "production": "live Agent City page and 106-page inventory; see production-after.json"
+  },
+  "schemaBoundary": "Existing docs generator emits BlogPosting for guide pages; valid JSON is not a rich-result eligibility claim."
+}

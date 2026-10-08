@@ -1,0 +1,269 @@
+{
+  "date": "2026-10-08T20:00:01.834Z",
+  "browser": "154.0.8037.98",
+  "conditions": "Headless Chromium; reduced motion; one navigation per viewport; busy shared host; lab timing only, not field CWV",
+  "results": [
+    {
+      "width": 1440,
+      "status": 200,
+      "metrics": {
+        "title": "Agent City | Kujo Docs",
+        "h1": [
+          "Agent City"
+        ],
+        "canonical": "https://docs.kujolang.ai/showcases/agent-city/",
+        "hasAgentCity": true,
+        "overflow": false,
+        "images": [
+          {
+            "src": "https://docs.kujolang.ai/assets/img/kujo-logomark-black.svg",
+            "alt": "",
+            "width": 149,
+            "height": 150,
+            "loaded": true
+          },
+          {
+            "src": "https://docs.kujolang.ai/assets/img/kujo-logomark-black.svg",
+            "alt": "",
+            "width": 149,
+            "height": 150,
+            "loaded": true
+          }
+        ],
+        "navigation": [
+          {
+            "duration": 1204.1000000238419,
+            "domContentLoaded": 1119.6000000238419,
+            "ttfb": 235,
+            "transferSize": 7572,
+            "decodedBodySize": 18429
+          }
+        ],
+        "lcpMs": null,
+        "resources": [
+          {
+            "name": "https://docs.kujolang.ai/assets/css/fonts.css",
+            "transferSize": 612,
+            "decodedBodySize": 521,
+            "duration": 301.5
+          },
+          {
+            "name": "https://docs.kujolang.ai/assets/sitekit/sitekit.css",
+            "transferSize": 14773,
+            "decodedBodySize": 122293,
+            "duration": 308.8000000715256
+          },
+          {
+            "name": "https://docs.kujolang.ai/assets/css/style.css",
+            "transferSize": 4617,
+            "decodedBodySize": 21727,
+            "duration": 295.3000000715256
+          },
+          {
+            "name": "https://docs.kujolang.ai/assets/img/kujo-logomark-black.svg",
+            "transferSize": 807,
+            "decodedBodySize": 867,
+            "duration": 642.2000000476837
+          },
+          {
+            "name": "https://docs.kujolang.ai/assets/sitekit/sitekit.js",
+            "transferSize": 2488,
+            "decodedBodySize": 9598,
+            "duration": 293.1999999284744
+          },
+          {
+            "name": "https://docs.kujolang.ai/assets/js/docs.js",
+            "transferSize": 4346,
+            "decodedBodySize": 12921,
+            "duration": 293.90000009536743
+          },
+          {
+            "name": "https://docs.kujolang.ai/assets/js/kujo-webmcp.js",
+            "transferSize": 2683,
+            "decodedBodySize": 5883,
+            "duration": 647.5
+          },
+          {
+            "name": "https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920",
+            "transferSize": 0,
+            "decodedBodySize": 0,
+            "duration": 716.6000000238419
+          },
+          {
+            "name": "https://docs.kujolang.ai/assets/js/docs-search-index.json",
+            "transferSize": 22323,
+            "decodedBodySize": 101632,
+            "duration": 363
+          },
+          {
+            "name": "https://docs.kujolang.ai/assets/sitekit/fonts/DepartureMono-Regular.woff2",
+            "transferSize": 22796,
+            "decodedBodySize": 22496,
+            "duration": 349.7000000476837
+          },
+          {
+            "name": "https://docs.kujolang.ai/cdn-cgi/zaraz/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyQWdlbnQlMjBDaXR5JTIwJTdDJTIwS3VqbyUyMERvY3MlMjIlMkMlMjJ4JTIyJTNBMC40MjUxNzY1ODM0NjEyMTc2NyUyQyUyMnclMjIlM0ExNDQwJTJDJTIyaCUyMiUzQTkwMCUyQyUyMmolMjIlM0E5MDAlMkMlMjJlJTIyJTNBMTQ0MCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRmRvY3Mua3Vqb2xhbmcuYWklMkZzaG93Y2FzZXMlMkZhZ2VudC1jaXR5JTJGJTIyJTJDJTIyciUyMiUzQSUyMiUyMiUyQyUyMmslMjIlM0EyNCUyQyUyMm4lMjIlM0ElMjJVVEYtOCUyMiUyQyUyMm8lMjIlM0EyNDAlMkMlMjJxJTIyJTNBJTVCJTVEJTdE",
+            "transferSize": 2811,
+            "decodedBodySize": 5831,
+            "duration": 81.79999995231628
+          },
+          {
+            "name": "https://docs.kujolang.ai/cdn-cgi/rum?",
+            "transferSize": 300,
+            "decodedBodySize": 0,
+            "duration": 63.39999997615814
+          },
+          {
+            "name": "https://docs.kujolang.ai/favicon.svg",
+            "transferSize": 856,
+            "decodedBodySize": 950,
+            "duration": 122.39999997615814
+          },
+          {
+            "name": "https://docs.kujolang.ai/favicon.ico",
+            "transferSize": 3010,
+            "decodedBodySize": 2723,
+            "duration": 211.5
+          }
+        ]
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "Skip to main content",
+        "outline": "solid"
+      },
+      "errors": []
+    },
+    {
+      "width": 320,
+      "status": 200,
+      "metrics": {
+        "title": "Agent City | Kujo Docs",
+        "h1": [
+          "Agent City"
+        ],
+        "canonical": "https://docs.kujolang.ai/showcases/agent-city/",
+        "hasAgentCity": true,
+        "overflow": false,
+        "images": [
+          {
+            "src": "https://docs.kujolang.ai/assets/img/kujo-logomark-black.svg",
+            "alt": "",
+            "width": 149,
+            "height": 150,
+            "loaded": true
+          },
+          {
+            "src": "https://docs.kujolang.ai/assets/img/kujo-logomark-black.svg",
+            "alt": "",
+            "width": 149,
+            "height": 150,
+            "loaded": true
+          }
+        ],
+        "navigation": [
+          {
+            "duration": 582.5,
+            "domContentLoaded": 497,
+            "ttfb": 130.29999995231628,
+            "transferSize": 7572,
+            "decodedBodySize": 18429
+          }
+        ],
+        "lcpMs": null,
+        "resources": [
+          {
+            "name": "https://docs.kujolang.ai/assets/css/fonts.css",
+            "transferSize": 612,
+            "decodedBodySize": 521,
+            "duration": 90.39999997615814
+          },
+          {
+            "name": "https://docs.kujolang.ai/assets/sitekit/sitekit.css",
+            "transferSize": 14773,
+            "decodedBodySize": 122293,
+            "duration": 90.10000002384186
+          },
+          {
+            "name": "https://docs.kujolang.ai/assets/css/style.css",
+            "transferSize": 4617,
+            "decodedBodySize": 21727,
+            "duration": 80.5
+          },
+          {
+            "name": "https://docs.kujolang.ai/assets/img/kujo-logomark-black.svg",
+            "transferSize": 807,
+            "decodedBodySize": 867,
+            "duration": 156.09999990463257
+          },
+          {
+            "name": "https://docs.kujolang.ai/assets/sitekit/sitekit.js",
+            "transferSize": 2488,
+            "decodedBodySize": 9598,
+            "duration": 84.89999997615814
+          },
+          {
+            "name": "https://docs.kujolang.ai/assets/js/docs.js",
+            "transferSize": 4346,
+            "decodedBodySize": 12921,
+            "duration": 86.39999997615814
+          },
+          {
+            "name": "https://docs.kujolang.ai/assets/js/kujo-webmcp.js",
+            "transferSize": 2683,
+            "decodedBodySize": 5883,
+            "duration": 157.90000009536743
+          },
+          {
+            "name": "https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920",
+            "transferSize": 0,
+            "decodedBodySize": 0,
+            "duration": 161.5
+          },
+          {
+            "name": "https://docs.kujolang.ai/assets/js/docs-search-index.json",
+            "transferSize": 22323,
+            "decodedBodySize": 101632,
+            "duration": 74.69999992847443
+          },
+          {
+            "name": "https://docs.kujolang.ai/assets/sitekit/fonts/DepartureMono-Regular.woff2",
+            "transferSize": 22796,
+            "decodedBodySize": 22496,
+            "duration": 124.60000002384186
+          },
+          {
+            "name": "https://docs.kujolang.ai/cdn-cgi/zaraz/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyQWdlbnQlMjBDaXR5JTIwJTdDJTIwS3VqbyUyMERvY3MlMjIlMkMlMjJ4JTIyJTNBMC4yNzkxNTU1Nzc5MDE1MDc5JTJDJTIydyUyMiUzQTMyMCUyQyUyMmglMjIlM0E5MDAlMkMlMjJqJTIyJTNBOTAwJTJDJTIyZSUyMiUzQTMyMCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRmRvY3Mua3Vqb2xhbmcuYWklMkZzaG93Y2FzZXMlMkZhZ2VudC1jaXR5JTJGJTIyJTJDJTIyciUyMiUzQSUyMiUyMiUyQyUyMmslMjIlM0EyNCUyQyUyMm4lMjIlM0ElMjJVVEYtOCUyMiUyQyUyMm8lMjIlM0EyNDAlMkMlMjJxJTIyJTNBJTVCJTVEJTdE",
+            "transferSize": 2811,
+            "decodedBodySize": 5831,
+            "duration": 82.60000002384186
+          },
+          {
+            "name": "https://docs.kujolang.ai/cdn-cgi/rum?",
+            "transferSize": 300,
+            "decodedBodySize": 0,
+            "duration": 54.59999990463257
+          },
+          {
+            "name": "https://docs.kujolang.ai/favicon.svg",
+            "transferSize": 856,
+            "decodedBodySize": 950,
+            "duration": 62.09999990463257
+          },
+          {
+            "name": "https://docs.kujolang.ai/favicon.ico",
+            "transferSize": 3010,
+            "decodedBodySize": 2723,
+            "duration": 58.199999928474426
+          }
+        ]
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "Skip to main content",
+        "outline": "solid"
+      },
+      "errors": []
+    }
+  ]
+}

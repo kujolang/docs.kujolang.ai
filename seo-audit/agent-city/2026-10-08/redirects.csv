@@ -1,0 +1,4 @@
+url,userAgent,status,location,error,elapsedMs
+http://docs.kujolang.ai/showcases/agent-city/,AgentCityReleaseAudit/1.0,301,https://docs.kujolang.ai/showcases/agent-city/,,124
+https://www.docs.kujolang.ai/showcases/agent-city/,AgentCityReleaseAudit/1.0,,,TypeError: fetch failed,
+https://docs.kujolang.ai/showcases/agent-city?source=audit,AgentCityReleaseAudit/1.0,301,https://docs.kujolang.ai/showcases/agent-city/?source=audit,,118
