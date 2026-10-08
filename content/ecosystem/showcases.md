@@ -9,11 +9,13 @@ audience: developer
 difficulty: intermediate
 status: local scope verified
 version: current
-last_updated: 2026-08-23
+last_updated: 2026-10-08
 tags: [ecosystem, showcases]
 ---
 
 The showcase set includes:
+
+- [Agent City](/showcases/agent-city/) — run local agent tasks, follow observed work through a pixel-art city, review outputs, and replay recorded runs.
 
 - [CMS](/showcases/cms/) — framework-neutral content, administration, extensions, SEO, identity, abilities, MCP, WebMCP, and production operations.
 - [CRUD API Showcase](/showcases/crud-api/) — SQLite CRUD contracts, auth strategies, concurrency, and a frontend playground.

@@ -93,3 +93,7 @@ recovery, remote participant authentication or stable participant SDK is claimed
 Source-blind agent adoption is technical evidence; human usability validation
 remains separate. See the
 [release notes](https://github.com/kujolang/dispatch/blob/v1.3.0/docs/RELEASE_1_3_0.md).
+
+## Agent City
+
+[Agent City](/showcases/agent-city/) shows supported Dispatch task and workflow state alongside the underlying evidence.

@@ -57,3 +57,7 @@ See the [Workcell repository](https://github.com/kujolang/workcell) for installa
 Workcell 1.2.0 requires Kujo 1.6.0 and adds bounded preservation, portable execution results, conservative re-execution descriptors and expiry-gated owned cleanup. The Git CAS assurance profile and controlled process participant are experimental; Dispatch decides replay. Stable Docker/Podman scope and remote-adapter alpha boundaries remain unchanged.
 
 See the [1.2.0 release](https://github.com/kujolang/workcell/releases/tag/v1.2.0) for the exact source and release evidence. Assurance beta remains opt-in, required/deny and single-effect; controlled handoffs remain alpha. These package releases do not stabilize remote trust or participant SDKs.
+
+## Agent City
+
+[Agent City](/showcases/agent-city/) can show permitted Workcell execution and returned artifacts. Its installer guide explains container requirements.

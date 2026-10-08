@@ -73,3 +73,7 @@ See the [Watchdog repository](https://github.com/kujolang/watchdog).
 [Watchdog v1.1.0](https://github.com/kujolang/watchdog/releases/tag/v1.1.0), published September 26, adds canonical v2 telemetry intake and correlation, lossless JSONL/OTLP projections, and the authenticated Connected Sources panel. Source status remains derived only from configuration or accepted local telemetry. Inbound producers stay separate from outbound exporter destinations, source registration metadata remains secret-free, and deleting a registration never deletes historical telemetry.
 
 Named proxy-profile creates, updates, disables, and deletes apply to new requests without a process restart; in-flight requests retain their starting snapshot. Disabled and deleted profiles fail closed before egress. SDK and workflow integrations still need compatible pinned revisions, and operator authentication, retention, exporter credentials, and deployment policy remain required.
+
+## Agent City
+
+[Agent City](/showcases/agent-city/) uses Watchdog telemetry to show observed agent work and source health in a pixel-art city.
