@@ -32,7 +32,7 @@ Core engineering tools include:
 Web and publishing tools include:
 
 - [SiteKit](/tools/site-kit/) — accessible, token-driven static-site components and themes.
-- [Commerce](/tools/commerce/) — provider-agnostic commerce contracts for static sites.
+- [Commerce](/tools/commerce/) — hosted checkout and verified events for static or dynamic sites, with optional durable Square payment workflows.
 - [SiteProbe](/tools/siteprobe/) — bounded, read-only website intelligence and evidence.
 - [SearchBridge](/tools/searchbridge/) — normalized search, analytics, performance, and submission adapters.
 - [ContentGraph](/tools/contentgraph/) — inspectable content relationships, clusters, gaps, and link opportunities.

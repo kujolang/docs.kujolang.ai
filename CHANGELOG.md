@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Update Commerce 0.5.0 installation, features, migration and deployment guidance, and the release inventory; use the GitHub tarball while npm publication is pending.
+
 - Add the Agent City 0.2.0 setup guide, showcase entry, and links from its related tools.
 
 - Refresh Tribunal 1.0.2 release guidance, hardening details, runtime reproduction boundaries and the dated ecosystem release inventory.

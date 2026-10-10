@@ -10,11 +10,11 @@ audience: all
 difficulty: beginner
 status: dated release inventory
 version: current
-last_updated: 2026-10-07
+last_updated: 2026-10-10
 tags: [ecosystem, releases, versions, installation]
 ---
 
-This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP, Dispatch and SSG from September 29, Kujo from October 4, and Tribunal from October 7. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
+This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP, Dispatch and SSG from September 29, Kujo from October 4, Tribunal from October 7, and Commerce from October 10. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
 
 ## Start here
 
@@ -55,7 +55,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [cms-contact-form](https://github.com/kujolang/cms-contact-form) | [v1.0.0](https://github.com/kujolang/cms-contact-form/releases/tag/v1.0.0) | 2026-08-29 |
 | [cms-example](https://github.com/kujolang/cms-example) | [v1.1.0](https://github.com/kujolang/cms-example/releases/tag/v1.1.0) | 2026-08-30 |
 | [cms-field-notes-theme](https://github.com/kujolang/cms-field-notes-theme) | [v1.0.2](https://github.com/kujolang/cms-field-notes-theme/releases/tag/v1.0.2) | 2026-08-29 |
-| [commerce](https://github.com/kujolang/commerce) | [v0.4.0](https://github.com/kujolang/commerce/releases/tag/v0.4.0) | 2026-08-30 |
+| [commerce](https://github.com/kujolang/commerce) | [v0.5.0](https://github.com/kujolang/commerce/releases/tag/v0.5.0) | 2026-10-10 |
 | [concord](https://github.com/kujolang/concord) | [v1.0.0](https://github.com/kujolang/concord/releases/tag/v1.0.0) | 2026-08-08 |
 | [contentgraph](https://github.com/kujolang/contentgraph) | [v0.3.0](https://github.com/kujolang/contentgraph/releases/tag/v0.3.0) | 2026-08-13 |
 | [crud-api](https://github.com/kujolang/crud-api) | [v1.0.0](https://github.com/kujolang/crud-api/releases/tag/v1.0.0) | 2026-06-11 |
@@ -108,7 +108,7 @@ The Kujo Pi row was refreshed on September 26, 2026. Other entries retain their 
 - **Workcell 1.2.0:** Docker/Podman execution and failure preservation, with Git assurance/process correlation experimental and remote adapters still alpha. Use the package's qualified Kujo 1.6.0 runtime. Read [Workcell](/tools/workcell/).
 - **SiteProbe 0.3.0:** native Kujo product commands and platform-qualified source archives; its test tooling can still require Python. Read [SiteProbe](/tools/siteprobe/).
 - **Skills 0.7.0, Workflows 0.6.0, Agents 1.4.0:** 135 skills, 44 local workflows, and canonical VideoOps tools and schemas. Live media permission and provider limits remain explicit. Read [skills](/collections/skills/) and [workflows](/collections/workflows/).
-- **Commerce 0.4.0:** static hosted links by default, optional dynamic checkout, customer portals, and webhook normalization. Provider sandbox qualification remains bounded. Read [Commerce](/tools/commerce/).
+- **Commerce 0.5.0:** adds optional PostgreSQL processing, Square payments/refunds, embedded checkout, billing workflows, OAuth connections, and recovery. Static hosted links remain lightweight. Install the GitHub tarball while npm publication is pending; advanced features retain their acceptance gates. Read [Commerce](/tools/commerce/).
 - **Scout 1.1.0:** bounded rooted reads, aggregate limits, security exports, deterministic performance and labeled-corpus gates, stable CI diagnostics, and native Windows contract coverage. It requires Kujo 1.5.0 or newer. Read [Scout](/tools/scout/).
 - **Watchdog 1.1.0:** canonical v2 telemetry, JSONL/OTLP projections, Connected Sources management, and named proxy-profile changes that apply to new requests without restart. Read [Watchdog](/tools/watchdog/).
 - **Agents SDK 1.1.2 and RunLedger 1.2.0:** released lifecycle telemetry and evidence-correlation work accompanies Kujo 1.6. RAG and Eval retain separately documented source work beyond their published releases.
