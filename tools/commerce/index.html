@@ -13,7 +13,7 @@
 		})();
 	</script>
 	<title>Commerce | Kujo Docs</title>
-	<meta name="description" content="Add provider-agnostic catalog and checkout contracts to Kujo static sites.">
+	<meta name="description" content="Add hosted checkout, verified payment events, and optional durable Square payment workflows to static or dynamic sites.">
 	<meta name="keywords" content="SSG, Static Site Generator">
 	<meta name="author" content="Kujo">
 	<link rel="canonical" href="https://docs.kujolang.ai/tools/commerce/">
@@ -30,7 +30,7 @@
 	<meta name="msapplication-config" content="/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<meta property="og:title" content="Commerce">
-	<meta property="og:description" content="Add provider-agnostic catalog and checkout contracts to Kujo static sites.">
+	<meta property="og:description" content="Add hosted checkout, verified payment events, and optional durable Square payment workflows to static or dynamic sites.">
 	<meta property="og:url" content="https://docs.kujolang.ai/tools/commerce/">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="Kujo Docs">
@@ -40,13 +40,13 @@
 	<meta property="og:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Commerce">
-	<meta name="twitter:description" content="Add provider-agnostic catalog and checkout contracts to Kujo static sites.">
+	<meta name="twitter:description" content="Add hosted checkout, verified payment events, and optional durable Square payment workflows to static or dynamic sites.">
 	<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
 	<meta name="twitter:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
 	<link href="../../assets/css/fonts.css" rel="stylesheet">
 	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
 	<link href="../../assets/css/style.css" rel="stylesheet">
-	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Commerce","name":"Commerce","description":"Add provider-agnostic catalog and checkout contracts to Kujo static sites.","url":"https://docs.kujolang.ai/tools/commerce/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Commerce","name":"Commerce","description":"Add hosted checkout, verified payment events, and optional durable Square payment workflows to static or dynamic sites.","url":"https://docs.kujolang.ai/tools/commerce/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -101,23 +101,76 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="commerce">Commerce</h1><p class="docs-description">Add provider-agnostic catalog and checkout contracts to Kujo static sites.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>preview 0.4.0</span><span class="docs-badge docs-badge-version"><span>Version</span>0.4.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-09</span></div>
+		<h1 id="commerce">Commerce</h1><p class="docs-description">Add hosted checkout, verified payment events, and optional durable Square payment workflows to static or dynamic sites.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>pre-1.0 release 0.5.0</span><span class="docs-badge docs-badge-version"><span>Version</span>0.5.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-10</span></div>
 		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
-<p>A static site needs validated product metadata, catalog assets, a browser cart, and a checkout boundary that resolves trusted product data on the server.</p>
-<h2 id="five-minute-example">Five-minute example</h2>
-<pre><code class="language-bash">npm install @kujolang/commerce@0.4.0
-git clone --depth 1 --branch v1.0.0 https://github.com/kujolang/ssg vendor/ssg
+<p>A site needs validated products, hosted purchase links, a cart, or checkout that resolves trusted product data on the server. Start with Static Mode; add a runtime and durable processing only when needed.</p>
+<h2 id="install-the-released-version">Install the released version</h2>
+<p>Requires Node.js 20 or later. Version 0.5.0 is published on GitHub with a package tarball, SBOM, and build provenance. npm registry publication is pending: the registry still serves 0.4.0 as checked on October 10, 2026. Install the exact release tarball:</p>
+<pre><code class="language-bash">npm install https://github.com/kujolang/commerce/releases/download/v0.5.0/kujolang-commerce-0.5.0.tgz
+git clone --depth 1 --branch v1.1.0 https://github.com/kujolang/ssg vendor/ssg
 npx kujo-commerce init --site .
 npx kujo-commerce validate --site .
-npx kujo-commerce build --site . --ssg vendor/ssg/build.kujo</code></pre>
-<h2 id="what-you-get">What you get</h2>
-<p>Commerce 0.4.0 provides catalog validation, zero-runtime hosted purchase links, optional dynamic checkout and customer portals, and verified webhook normalization. <code>init</code> defaults to static mode; hybrid deployments explicitly add a runtime.</p>
-<h2 id="boundaries">Boundaries</h2>
-<p>The package remains pre-1.0 while provider sandbox evidence is completed; its v1 catalog, cart, and event wire formats have a compatibility policy. Providers remain authoritative for payments, inventory, tax, and fulfillment. For dynamic checkout, the browser submits only SKU and quantity; the runtime checkout must resolve canonical pricing and product data. Payment-provider credentials and production checkout deployment remain integrator-owned.</p>
+npx kujo-commerce build --site . --ssg vendor/ssg/build.kujo
+npx kujo-commerce doctor --site .</code></pre>
+<p>Kujo SSG also needs the <a href="/install/">Kujo runtime</a>. Other generators can use Commerce&apos;s catalog/build functions and browser components; see <a href="https://github.com/kujolang/commerce/blob/v0.5.0/docs/generic-static.md">generic static integration</a>.</p>
+<p><code>init</code> defaults to Static Mode: pre-created HTTPS purchase links need no server or browser JavaScript. Use <code>init --mode hybrid</code> for a browser cart and dynamic checkout. The browser sends only SKU and quantity; the runtime resolves trusted prices and provider identifiers.</p>
+<h2 id="what-0-5-0-adds">What 0.5.0 adds</h2>
+<table><thead><tr>
+<th>Feature</th>
+<th>Released scope</th>
+</tr></thead><tbody>
+<tr>
+<td>Durable processing</td>
+<td>Optional PostgreSQL persistence, webhook receipts, worker leases, retries, dead letters, audited replay, and signed downstream events</td>
+</tr>
+<tr>
+<td>Square payments</td>
+<td>Scoped orders, direct payments, partial/full refunds, delayed capture/cancellation, and recovery for uncertain outcomes</td>
+</tr>
+<tr>
+<td>Embedded checkout</td>
+<td>Square SDK tokenization, server-controlled prices, transient tokens, duplicate-submit protection, and explicit restarts</td>
+</tr>
+<tr>
+<td>Saved cards and subscriptions</td>
+<td>Separate storage/recurring consent and supported static monthly plans with lifecycle actions</td>
+</tr>
+<tr>
+<td>Invoices</td>
+<td>Approved draft/publication/cancellation, deposits, and partial-payment observations; automatic saved-card charging remains disabled</td>
+</tr>
+<tr>
+<td>Merchant connections</td>
+<td>Encrypted Square OAuth tokens, one-use state, serialized refresh, location selection, and revocation</td>
+</tr>
+<tr>
+<td>Optional integrations</td>
+<td>Application fees, catalog/inventory tools, Terminal, and read-only dispute/payout reporting; off by default</td>
+</tr>
+</tbody></table>
+<p>Hosted checkout, customer portals, and verified webhook normalization remain available. Run <code>npx kujo-commerce providers --json</code> for each adapter&apos;s exact capabilities.</p>
+<h2 id="upgrade-from-0-4-0">Upgrade from 0.4.0</h2>
+<p>1. Replace the dependency with the 0.5.0 tarball and retain the updated application lockfile.</p>
+<p>2. Static and hosted-link users need no configuration changes. Existing v1 catalog, cart, checkout, and normalized-event contracts remain valid.</p>
+<p>3. Runtime and custom-provider users should follow the <a href="https://github.com/kujolang/commerce/blob/v0.5.0/docs/migration-0.5.md">migration guide</a>. Preserve existing operation keys and v1 tables. New durable modules use additive persistence; deploy their migrations before receivers and workers.</p>
+<p>4. If using Square subscriptions, review monthly cadence, trusted plan mapping, customer/card resolution, consent, and durable idempotency requirements. The Square protocol pins API version <code>2026-09-16</code>.</p>
+<p>5. Validate the store, verify intended provider products, and exercise the enabled checkout/webhook and recovery paths before deployment.</p>
+<h2 id="deployment-and-acceptance">Deployment and acceptance</h2>
+<p>The maintainer has confirmed working Square and Stripe integrations. This does not establish acceptance of every provider or optional feature. Multi-seller OAuth, stored-card/recurring/invoice flows, fees, and Terminal still require the checks listed in the <a href="https://github.com/kujolang/commerce/blob/v0.5.0/docs/square-implementation-status.md">acceptance status</a>.</p>
+<p>Dynamic deployments supply authentication, exact allowed origins, rate limits, secrets, durable storage, workers, backups, and monitoring. In-memory stores are test fixtures. Providers remain authoritative for payment outcomes; the application owns fulfillment policy. A successful browser redirect does not authorize fulfillment.</p>
+<p>Use the <a href="https://github.com/kujolang/commerce/blob/v0.5.0/examples/owned-payments/README.md">owned-payment example</a>, <a href="https://github.com/kujolang/commerce/blob/v0.5.0/examples/postgres-production/README.md">PostgreSQL topology</a>, <a href="https://github.com/kujolang/commerce/blob/v0.5.0/docs/production-checklist.md">production checklist</a>, and <a href="https://github.com/kujolang/commerce/blob/v0.5.0/docs/staging-runbook.md">staging runbook</a>.</p>
+<h2 id="installation-boundary">Installation boundary</h2>
+<p>Commerce is a JavaScript/npm package, not a native Kennel package. Install the released tarball with npm; <code>kennel add commerce</code> is not a supported installation route. The public Kujo MCP catalog provides read-only release and installation guidance, not payment execution.</p>
 <h2 id="reference">Reference</h2>
-<p>See the <a href="https://github.com/kujolang/commerce">Commerce repository</a>.</p></div>
+<ul>
+<li><a href="https://github.com/kujolang/commerce/releases/tag/v0.5.0">Commerce 0.5.0 release</a></li>
+<li><a href="https://github.com/kujolang/commerce/blob/v0.5.0/CHANGELOG.md">Changelog</a></li>
+<li><a href="https://github.com/kujolang/commerce/blob/v0.5.0/docs/compatibility.md">Compatibility policy</a></li>
+<li><a href="https://github.com/kujolang/commerce/blob/v0.5.0/docs/owned-payments.md">Owned payments</a></li>
+<li><a href="https://github.com/kujolang/commerce/blob/v0.5.0/docs/square-connections.md">Encrypted merchant connections</a></li>
+</ul></div>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#install-the-released-version">Install the released version</a></li><li class="toc-level-2"><a href="#what-0-5-0-adds">What 0.5.0 adds</a></li><li class="toc-level-2"><a href="#upgrade-from-0-4-0">Upgrade from 0.4.0</a></li><li class="toc-level-2"><a href="#deployment-and-acceptance">Deployment and acceptance</a></li><li class="toc-level-2"><a href="#installation-boundary">Installation boundary</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">

@@ -67,7 +67,7 @@ A local-first path through the Kujo language and ecosystem.
 - [BluePencil](https://docs.kujolang.ai/tools/bluepencil/) — Record structured editorial reviews, verdicts, disagreements, and calibration evidence.
 - [CaseFile](https://docs.kujolang.ai/tools/casefile/) — Capture a failure as a reproducible evidence bundle.
 - [ChangeBucket](https://docs.kujolang.ai/tools/changebucket/) — Measure change footprint, categories, and blast radius.
-- [Commerce](https://docs.kujolang.ai/tools/commerce/) — Add provider-agnostic catalog and checkout contracts to Kujo static sites.
+- [Commerce](https://docs.kujolang.ai/tools/commerce/) — Add hosted checkout, verified payment events, and optional durable Square payment workflows to static or dynamic sites.
 - [Concord](https://docs.kujolang.ai/tools/concord/) — Find drift across code, docs, examples, specs, and generated artifacts.
 - [ContentGraph](https://docs.kujolang.ai/tools/contentgraph/) — Build an inspectable graph of content relationships, clusters, gaps, and link opportunities.
 - [Dispatch](https://docs.kujolang.ai/tools/dispatch/) — Orchestrate resumable, approved, and auditable workflows.

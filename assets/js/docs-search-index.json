@@ -403,7 +403,7 @@
         "Agent discovery",
         "Kujo 1.8 runtime and companion delivery"
       ],
-      "text": "This inventory was checked against all 86 public kujolang repositories on September 9, 2026 , with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP, Dispatch and SSG from September 29, Kujo from October 4, and Tribunal from October 7. Product releases, protocol versions, repo"
+      "text": "This inventory was checked against all 86 public kujolang repositories on September 9, 2026 , with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP, Dispatch and SSG from September 29, Kujo from October 4, Tribunal from October 7, and Commerce from October 10. Product release"
     },
     {
       "title": "Showcase Directory",
@@ -1197,25 +1197,27 @@
     },
     {
       "title": "Commerce",
-      "description": "Add provider-agnostic catalog and checkout contracts to Kujo static sites.",
+      "description": "Add hosted checkout, verified payment events, and optional durable Square payment workflows to static or dynamic sites.",
       "url": "https://docs.kujolang.ai/tools/commerce/",
       "route": "tools/commerce/",
       "section": "Tools",
       "audience": "developer",
       "difficulty": "intermediate",
-      "status": "preview 0.4.0",
-      "version": "0.4.0",
+      "status": "pre-1.0 release 0.5.0",
+      "version": "0.5.0",
       "tags": [
-        "[tool, commerce, ssg, web]"
+        "[tool, commerce, ssg, web, square, stripe]"
       ],
       "headings": [
         "Use it when\u2026",
-        "Five-minute example",
-        "What you get",
-        "Boundaries",
+        "Install the released version",
+        "What 0.5.0 adds",
+        "Upgrade from 0.4.0",
+        "Deployment and acceptance",
+        "Installation boundary",
         "Reference"
       ],
-      "text": "Use it when\u2026 A static site needs validated product metadata, catalog assets, a browser cart, and a checkout boundary that resolves trusted product data on the server. Five-minute example What you get Commerce 0.4.0 provides catalog validation, zero-runtime hosted purchase links, optional dynamic checkout and customer portals, and verified webhook normalizati"
+      "text": "Use it when\u2026 A site needs validated products, hosted purchase links, a cart, or checkout that resolves trusted product data on the server. Start with Static Mode; add a runtime and durable processing only when needed. Install the released version Requires Node.js 20 or later. Version 0.5.0 is published on GitHub with a package tarball, SBOM, and build proven"
     },
     {
       "title": "Concord",
