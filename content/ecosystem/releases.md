@@ -53,7 +53,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [changebucket](https://github.com/kujolang/changebucket) | [v1.0.0](https://github.com/kujolang/changebucket/releases/tag/v1.0.0) | 2026-08-08 |
 | [cms](https://github.com/kujolang/cms) | [v1.2.0](https://github.com/kujolang/cms/releases/tag/v1.2.0) | 2026-10-12 |
 | [cms-contact-form](https://github.com/kujolang/cms-contact-form) | [v1.0.0](https://github.com/kujolang/cms-contact-form/releases/tag/v1.0.0) | 2026-08-29 |
-| [cms-example](https://github.com/kujolang/cms-example) | [v1.2.0](https://github.com/kujolang/cms-example/releases/tag/v1.2.0) | 2026-10-12 |
+| [cms-example](https://github.com/kujolang/cms-example) | [v1.1.0](https://github.com/kujolang/cms-example/releases/tag/v1.1.0) | 2026-08-30 |
 | [cms-field-notes-theme](https://github.com/kujolang/cms-field-notes-theme) | [v1.0.2](https://github.com/kujolang/cms-field-notes-theme/releases/tag/v1.0.2) | 2026-08-29 |
 | [commerce](https://github.com/kujolang/commerce) | [v0.5.0](https://github.com/kujolang/commerce/releases/tag/v0.5.0) | 2026-10-10 |
 | [concord](https://github.com/kujolang/concord) | [v1.0.0](https://github.com/kujolang/concord/releases/tag/v1.0.0) | 2026-08-08 |
