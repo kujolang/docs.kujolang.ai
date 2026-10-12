@@ -45,7 +45,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [ability](https://github.com/kujolang/ability) | [v1.2.0](https://github.com/kujolang/ability/releases/tag/v1.2.0) | 2026-09-29 |
 | [agents-sdk](https://github.com/kujolang/agents-sdk) | [v1.1.2](https://github.com/kujolang/agents-sdk/releases/tag/v1.1.2) | 2026-09-28 |
 | [ai-chat](https://github.com/kujolang/ai-chat) | [v1.3.0](https://github.com/kujolang/ai-chat/releases/tag/v1.3.0) | 2026-10-06 |
-| [ai-sdk](https://github.com/kujolang/ai-sdk) | [v1.1.2](https://github.com/kujolang/ai-sdk/releases/tag/v1.1.2) | 2026-09-28 |
+| [ai-sdk](https://github.com/kujolang/ai-sdk) | [v1.1.1](https://github.com/kujolang/ai-sdk/releases/tag/v1.1.1) | 2026-09-28 |
 | [anthropic](https://github.com/kujolang/anthropic) | [v0.1.2](https://github.com/kujolang/anthropic/releases/tag/v0.1.2) | 2026-08-27 |
 | [assetworks](https://github.com/kujolang/assetworks) | [v0.2.0](https://github.com/kujolang/assetworks/releases/tag/v0.2.0) | 2026-08-14 |
 | [bluepencil](https://github.com/kujolang/bluepencil) | [v0.2.0](https://github.com/kujolang/bluepencil/releases/tag/v0.2.0) | 2026-08-14 |
@@ -65,7 +65,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [fence](https://github.com/kujolang/fence) | [v1.0.0](https://github.com/kujolang/fence/releases/tag/v1.0.0) | 2026-08-08 |
 | [galleypack](https://github.com/kujolang/galleypack) | [v0.2.0](https://github.com/kujolang/galleypack/releases/tag/v0.2.0) | 2026-08-14 |
 | [howl](https://github.com/kujolang/howl) | [v1.1.0](https://github.com/kujolang/howl/releases/tag/v1.1.0) | 2026-08-11 |
-| [kennel](https://github.com/kujolang/kennel) | [v1.1.2](https://github.com/kujolang/kennel/releases/tag/v1.1.2) | 2026-09-29 |
+| [kennel](https://github.com/kujolang/kennel) | [v1.1.1](https://github.com/kujolang/kennel/releases/tag/v1.1.1) | 2026-09-29 |
 | [kujo](https://github.com/kujolang/kujo) | [v1.8.0](https://github.com/kujolang/kujo/releases/tag/v1.8.0) | 2026-10-04 |
 | [kujo-agents](https://github.com/kujolang/kujo-agents) | [v1.4.0](https://github.com/kujolang/kujo-agents/releases/tag/v1.4.0) | 2026-09-07 |
 | [kujo-pi](https://github.com/kujolang/kujo-pi) | [v1.1.0](https://github.com/kujolang/kujo-pi/releases/tag/v1.1.0) | 2026-09-26 |
@@ -127,4 +127,4 @@ The public [Kujo MCP catalog](https://mcp.kujolang.ai/mcp) exposes read-only pro
 
 ## Kujo 1.8 runtime and companion delivery
 
-Kujo 1.8 does not republish or silently upgrade companion tools. RunLedger 1.2.0, AI SDK 1.1.2 and Agents SDK 1.1.2 remain published. AI SDK live-provider smoke was explicitly deferred for that release. Workcell, Ability and MCP 1.2.0 distribute the controlled-execution cohort while retaining experimental assurance/interoperability boundaries. Dispatch 1.3.0 completes this controller release cohort with the same experimental boundaries. Stop older workers and follow its backup/upgrade instructions before changing persisted-state versions.
+Kujo 1.8 does not republish or silently upgrade companion tools. RunLedger 1.2.0, AI SDK 1.1.1 and Agents SDK 1.1.2 remain published. AI SDK live-provider smoke was explicitly deferred for that release. Workcell, Ability and MCP 1.2.0 distribute the controlled-execution cohort while retaining experimental assurance/interoperability boundaries. Dispatch 1.3.0 completes this controller release cohort with the same experimental boundaries. Stop older workers and follow its backup/upgrade instructions before changing persisted-state versions.
