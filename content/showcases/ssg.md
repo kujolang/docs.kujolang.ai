@@ -8,8 +8,8 @@ order: 40
 audience: developer
 difficulty: intermediate
 status: local scope verified
-version: 1.1.0
-last_updated: 2026-09-29
+version: 1.2.0
+last_updated: 2026-10-12
 scope: local-first
 source_repo: ssg
 previous: /showcases/ai-chat/
@@ -22,7 +22,7 @@ tags: [showcase, static, publishing]
 
 You need a transparent, deterministic static publishing pipeline whose content, templates, assets, and generated outputs stay visible.
 
-[Release 1.1.0](https://github.com/kujolang/ssg/releases/tag/v1.1.0), published September 29, 2026, adds default-on experimental WebMCP, ten executable local Ability workflows, safer cleanup and metadata handling, smaller featured images, and plain sitemap XML.
+[Release 1.2.0](https://github.com/kujolang/ssg/releases/tag/v1.2.0), published October 12, 2026, hardens network/filesystem and JSON-LD boundaries, bounds Ability inspection, replaces text minification with esbuild parsing, and makes DocGen configuration and CI evidence reliable. Default-on experimental WebMCP and the independent local Ability pack remain available.
 
 ## Interface overview
 
@@ -45,10 +45,19 @@ You need a transparent, deterministic static publishing pipeline whose content, 
 ## Five-minute example
 
 ```bash
+npm ci --ignore-scripts
 kujo run build.kujo -- --site-url https://example.com
 bash scripts/validate-generated-output.sh output
 kujo serve output --port 8080
 ```
+
+## Upgrade and integration notes
+
+Minified builds require esbuild 0.28.2. The repository and packaged docs starter include its npm lockfile; run `npm ci --ignore-scripts` before building. For standalone sites without a manifest, run `npm install --prefix . --save-dev --save-exact --ignore-scripts esbuild@0.28.2`. Alternatively, set `SSG_ESBUILD_BIN` to that version's native executable. `minify: false` requires no minifier. Parser errors fail the build instead of publishing corrupted assets.
+
+Remote image mirroring requires `--download-remote-images`; private destinations additionally require `--allow-private-remote-images` in a trusted local workflow. Symlink escapes and unsafe font input are rejected.
+
+The DocGen bridge follows the builder's resolved configuration and runs repository checks before the final requested build. `--repository-check-timeout <seconds>` gives repository CI a separate 1–86400 second budget, defaulting to 3600. Complete stdout/stderr remain under `<docgen-out>/ci-<unique-id>/`; include them in your artifact-retention policy. Individual build commands retain their five-minute deadline.
 
 ## What you get
 
@@ -64,9 +73,9 @@ kujo run build.kujo -- --site-url https://example.com --no-webmcp
 
 Or set `webmcp: false` in the site config. Drafts never enter the public index, including preview builds. `search_exclude: true` removes search visibility but does not restrict list or exact retrieval. `nav_hide` only affects navigation.
 
-The executable local Ability pack covers project/source inspection, validation, full and sharded builds with approved draft previews, output inspection, comparison, deployment readiness, and deterministic artifact export. Pack 1.0.0 and its pinned Ability 1.0.1 dependency are versioned independently of SSG 1.1.0. Writes require explicit approval and keyed idempotency. MCP hosts bind these operations in a trusted local process or authenticated gateway; generated pages cannot execute them. No publish or deploy Ability is included.
+The executable local Ability pack covers project/source inspection, validation, full and sharded builds with approved draft previews, output inspection, comparison, deployment readiness, and deterministic artifact export. Pack 1.0.0 and its pinned Ability 1.0.1 dependency are versioned independently of SSG 1.2.0. Writes require explicit approval and keyed idempotency. MCP hosts bind these operations in a trusted local process or authenticated gateway; generated pages cannot execute them. No publish or deploy Ability is included.
 
-See the [WebMCP guide](https://github.com/kujolang/ssg/blob/v1.1.0/docs/webmcp.md) and [Ability integration](https://github.com/kujolang/ssg/blob/v1.1.0/docs/ability-integration.md).
+See the [WebMCP guide](https://github.com/kujolang/ssg/blob/v1.2.0/docs/webmcp.md) and [Ability integration](https://github.com/kujolang/ssg/blob/v1.2.0/docs/ability-integration.md).
 
 ## How it fits
 

@@ -10,11 +10,11 @@ audience: all
 difficulty: beginner
 status: dated release inventory
 version: current
-last_updated: 2026-10-10
+last_updated: 2026-10-12
 tags: [ecosystem, releases, versions, installation]
 ---
 
-This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP, Dispatch and SSG from September 29, Kujo from October 4, Tribunal from October 7, and Commerce from October 10. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
+This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP and Dispatch from September 29, SSG from October 12, Kujo from October 4, Tribunal from October 7, and Commerce from October 10. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
 
 ## Start here
 
@@ -91,7 +91,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [site-kit](https://github.com/kujolang/site-kit) | [v1.0.0](https://github.com/kujolang/site-kit/releases/tag/v1.0.0) | 2026-08-09 |
 | [siteprobe](https://github.com/kujolang/siteprobe) | [v0.3.0](https://github.com/kujolang/siteprobe/releases/tag/v0.3.0) | 2026-09-07 |
 | [spec](https://github.com/kujolang/spec) | [v1.0.1](https://github.com/kujolang/spec/releases/tag/v1.0.1) | 2026-08-30 |
-| [ssg](https://github.com/kujolang/ssg) | [v1.1.0](https://github.com/kujolang/ssg/releases/tag/v1.1.0) | 2026-09-29 |
+| [ssg](https://github.com/kujolang/ssg) | [v1.2.0](https://github.com/kujolang/ssg/releases/tag/v1.2.0) | 2026-10-12 |
 | [storydesk](https://github.com/kujolang/storydesk) | [v0.2.0](https://github.com/kujolang/storydesk/releases/tag/v0.2.0) | 2026-08-14 |
 | [tribunal](https://github.com/kujolang/tribunal) | [v1.0.2](https://github.com/kujolang/tribunal/releases/tag/v1.0.2) | 2026-10-07 |
 | [versionseal](https://github.com/kujolang/versionseal) | [v0.2.0](https://github.com/kujolang/versionseal/releases/tag/v0.2.0) | 2026-08-14 |
@@ -128,3 +128,5 @@ The public [Kujo MCP catalog](https://mcp.kujolang.ai/mcp) exposes read-only pro
 ## Kujo 1.8 runtime and companion delivery
 
 Kujo 1.8 does not republish or silently upgrade companion tools. RunLedger 1.2.0, AI SDK 1.1.1 and Agents SDK 1.1.2 remain published. AI SDK live-provider smoke was explicitly deferred for that release. Workcell, Ability and MCP 1.2.0 distribute the controlled-execution cohort while retaining experimental assurance/interoperability boundaries. Dispatch 1.3.0 completes this controller release cohort with the same experimental boundaries. Stop older workers and follow its backup/upgrade instructions before changing persisted-state versions.
+
+SSG 1.2.0 requires pinned esbuild 0.28.2 for minified builds and adds explicit private-image opt-in and a separate DocGen repository-CI budget. See the [SSG upgrade notes](/showcases/ssg/#upgrade-and-integration-notes).
