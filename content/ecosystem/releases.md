@@ -95,7 +95,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [storydesk](https://github.com/kujolang/storydesk) | [v0.2.0](https://github.com/kujolang/storydesk/releases/tag/v0.2.0) | 2026-08-14 |
 | [tribunal](https://github.com/kujolang/tribunal) | [v1.0.2](https://github.com/kujolang/tribunal/releases/tag/v1.0.2) | 2026-10-07 |
 | [versionseal](https://github.com/kujolang/versionseal) | [v0.2.0](https://github.com/kujolang/versionseal/releases/tag/v0.2.0) | 2026-08-14 |
-| [watchdog](https://github.com/kujolang/watchdog) | [v1.2.0](https://github.com/kujolang/watchdog/releases/tag/v1.2.0) | 2026-09-29 |
+| [watchdog](https://github.com/kujolang/watchdog) | [v1.2.1](https://github.com/kujolang/watchdog/releases/tag/v1.2.1) | 2026-10-12 |
 | [workcell](https://github.com/kujolang/workcell) | [v1.2.0](https://github.com/kujolang/workcell/releases/tag/v1.2.0) | 2026-09-29 |
 
 The Kujo Pi row was refreshed on September 26, 2026. Other entries retain their individually documented inventory dates.

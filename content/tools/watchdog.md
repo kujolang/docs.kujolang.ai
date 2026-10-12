@@ -8,8 +8,8 @@ order: 130
 audience: developer
 difficulty: intermediate
 status: local scope verified
-version: 1.2.0
-last_updated: 2026-09-29
+version: 1.2.1
+last_updated: 2026-10-12
 scope: local-first
 source_repo: watchdog
 previous: /tools/fence/
@@ -66,7 +66,11 @@ See the [Watchdog repository](https://github.com/kujolang/watchdog).
 
 ## Published release
 
-[Watchdog v1.2.0](https://github.com/kujolang/watchdog/releases/tag/v1.2.0) adds verified Kujo 1.6 runtime-measurement summaries, exact content-addressed references and RunLedger correlation. The adapter preserves caller timing and numeric measurements through HTTP intake and restart without copying private payloads. Use Kujo 1.6.0 for this release. These observations do not authorize execution or replay and do not prove business-effect state. Pricing catalogs have also been refreshed; displayed costs remain estimates.
+[Watchdog v1.2.1](https://github.com/kujolang/watchdog/releases/tag/v1.2.1) fixes gateway credential forwarding, sensitive metadata handling, OTLP retries and delivery queue limits. It reduces canonical intake work, client cloning and backup memory use. Provider and OpenRouter pricing catalogs are refreshed; displayed costs remain estimates.
+
+Existing routes and schema versions remain compatible. Invalid typed telemetry now returns an error, and changed OTLP records with an existing identity return 409. Keep API, gateway and provider credentials separate. Copy `config/proxy.example.json` when creating a local proxy configuration.
+
+Use Kujo 1.6.0 or newer. Runtime measurement references and RunLedger correlation remain observational: they do not authorize execution or replay and do not prove business effects. Operators still own authentication, retention and deployment. Use an independent edge limiter when you need abuse protection; Watchdog's per-session buckets trust caller-supplied identity headers.
 
 ### Retained 1.1 behavior
 
