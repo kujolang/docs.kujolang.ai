@@ -1603,7 +1603,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "current",
+      "version": "1.1.2",
       "tags": [
         "[tool, workflows, logs]"
       ],
@@ -1611,6 +1611,8 @@
         "Use it when\u2026",
         "Interface overview",
         "Main workflows",
+        "Install or update",
+        "Update an existing unpinned installation:",
         "Five-minute example",
         "What you get",
         "How it fits",
