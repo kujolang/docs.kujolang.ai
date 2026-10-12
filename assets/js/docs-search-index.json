@@ -403,7 +403,7 @@
         "Agent discovery",
         "Kujo 1.8 runtime and companion delivery"
       ],
-      "text": "This inventory was checked against all 86 public kujolang repositories on September 9, 2026 , with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP, Dispatch and SSG from September 29, Kujo from October 4, Tribunal from October 7, and Commerce from October 10. Product release"
+      "text": "This inventory was checked against all 86 public kujolang repositories on September 9, 2026 , with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP and Dispatch from September 29, SSG from October 12, Kujo from October 4, Tribunal from October 7, and Commerce from October 10."
     },
     {
       "title": "Showcase Directory",
@@ -985,7 +985,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "tags": [
         "[showcase, static, publishing]"
       ],
@@ -994,13 +994,14 @@
         "Interface overview",
         "Main workflows",
         "Five-minute example",
+        "Upgrade and integration notes",
         "What you get",
         "Browser agents and local execution",
         "How it fits",
         "Boundaries",
         "Reference"
       ],
-      "text": "Use it when\u2026 You need a transparent, deterministic static publishing pipeline whose content, templates, assets, and generated outputs stay visible. Release 1.1.0 https://github.com/kujolang/ssg/releases/tag/v1.1.0 , published September 29, 2026, adds default-on experimental WebMCP, ten executable local Ability workflows, safer cleanup and metadata handling, "
+      "text": "Use it when\u2026 You need a transparent, deterministic static publishing pipeline whose content, templates, assets, and generated outputs stay visible. Release 1.2.0 https://github.com/kujolang/ssg/releases/tag/v1.2.0 , published October 12, 2026, hardens network/filesystem and JSON-LD boundaries, bounds Ability inspection, replaces text minification with esbuil"
     },
     {
       "title": "TotalRecall",

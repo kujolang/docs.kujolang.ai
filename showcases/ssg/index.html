@@ -101,10 +101,10 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="ssg">SSG</h1><p class="docs-description">Deterministic Markdown-to-site publishing with templates, feeds, sitemap, and llms.txt.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-29</span></div>
+		<h1 id="ssg">SSG</h1><p class="docs-description">Deterministic Markdown-to-site publishing with templates, feeds, sitemap, and llms.txt.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>1.2.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-12</span></div>
 		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>You need a transparent, deterministic static publishing pipeline whose content, templates, assets, and generated outputs stay visible.</p>
-<p><a href="https://github.com/kujolang/ssg/releases/tag/v1.1.0">Release 1.1.0</a>, published September 29, 2026, adds default-on experimental WebMCP, ten executable local Ability workflows, safer cleanup and metadata handling, smaller featured images, and plain sitemap XML.</p>
+<p><a href="https://github.com/kujolang/ssg/releases/tag/v1.2.0">Release 1.2.0</a>, published October 12, 2026, hardens network/filesystem and JSON-LD boundaries, bounds Ability inspection, replaces text minification with esbuild parsing, and makes DocGen configuration and CI evidence reliable. Default-on experimental WebMCP and the independent local Ability pack remain available.</p>
 <h2 id="interface-overview">Interface overview</h2>
 <table><thead><tr>
 <th>Surface</th>
@@ -143,17 +143,22 @@
 <li>Use the DocGen bridge or custom collections when source docs need first-class routes and navigation.</li>
 </ul>
 <h2 id="five-minute-example">Five-minute example</h2>
-<pre><code class="language-bash">kujo run build.kujo -- --site-url https://example.com
+<pre><code class="language-bash">npm ci --ignore-scripts
+kujo run build.kujo -- --site-url https://example.com
 bash scripts/validate-generated-output.sh output
 kujo serve output --port 8080</code></pre>
+<h2 id="upgrade-and-integration-notes">Upgrade and integration notes</h2>
+<p>Minified builds require esbuild 0.28.2. The repository and packaged docs starter include its npm lockfile; run <code>npm ci --ignore-scripts</code> before building. For standalone sites without a manifest, run <code>npm install --prefix . --save-dev --save-exact --ignore-scripts esbuild@0.28.2</code>. Alternatively, set <code>SSG_ESBUILD_BIN</code> to that version&apos;s native executable. <code>minify: false</code> requires no minifier. Parser errors fail the build instead of publishing corrupted assets.</p>
+<p>Remote image mirroring requires <code>--download-remote-images</code>; private destinations additionally require <code>--allow-private-remote-images</code> in a trusted local workflow. Symlink escapes and unsafe font input are rejected.</p>
+<p>The DocGen bridge follows the builder&apos;s resolved configuration and runs repository checks before the final requested build. <code>--repository-check-timeout &lt;seconds&gt;</code> gives repository CI a separate 1–86400 second budget, defaulting to 3600. Complete stdout/stderr remain under <code>&lt;docgen-out&gt;/ci-&lt;unique-id&gt;/</code>; include them in your artifact-retention policy. Individual build commands retain their five-minute deadline.</p>
 <h2 id="what-you-get">What you get</h2>
 <p>Markdown routes, custom collections, templates, local search, feeds, sitemap, robots, <code>llms.txt</code>, and validation scripts.</p>
 <h2 id="browser-agents-and-local-execution">Browser agents and local execution</h2>
 <p>WebMCP emits <code>.well-known/kujo-site-index.json</code> and a same-origin adapter exposing <code>get_site_info</code>, <code>search_site</code>, <code>list_content</code>, and <code>get_content</code>. It needs no server after deployment and leaves unsupported browsers unchanged. To omit both artifacts:</p>
 <pre><code class="language-bash">kujo run build.kujo -- --site-url https://example.com --no-webmcp</code></pre>
 <p>Or set <code>webmcp: false</code> in the site config. Drafts never enter the public index, including preview builds. <code>search_exclude: true</code> removes search visibility but does not restrict list or exact retrieval. <code>nav_hide</code> only affects navigation.</p>
-<p>The executable local Ability pack covers project/source inspection, validation, full and sharded builds with approved draft previews, output inspection, comparison, deployment readiness, and deterministic artifact export. Pack 1.0.0 and its pinned Ability 1.0.1 dependency are versioned independently of SSG 1.1.0. Writes require explicit approval and keyed idempotency. MCP hosts bind these operations in a trusted local process or authenticated gateway; generated pages cannot execute them. No publish or deploy Ability is included.</p>
-<p>See the <a href="https://github.com/kujolang/ssg/blob/v1.1.0/docs/webmcp.md">WebMCP guide</a> and <a href="https://github.com/kujolang/ssg/blob/v1.1.0/docs/ability-integration.md">Ability integration</a>.</p>
+<p>The executable local Ability pack covers project/source inspection, validation, full and sharded builds with approved draft previews, output inspection, comparison, deployment readiness, and deterministic artifact export. Pack 1.0.0 and its pinned Ability 1.0.1 dependency are versioned independently of SSG 1.2.0. Writes require explicit approval and keyed idempotency. MCP hosts bind these operations in a trusted local process or authenticated gateway; generated pages cannot execute them. No publish or deploy Ability is included.</p>
+<p>See the <a href="https://github.com/kujolang/ssg/blob/v1.2.0/docs/webmcp.md">WebMCP guide</a> and <a href="https://github.com/kujolang/ssg/blob/v1.2.0/docs/ability-integration.md">Ability integration</a>.</p>
 <h2 id="how-it-fits">How it fits</h2>
 <p>This docs site uses the reusable SSG docs starter and vendors the Kujo Site Kit assets directly.</p>
 <h2 id="boundaries">Boundaries</h2>
@@ -161,7 +166,7 @@ kujo serve output --port 8080</code></pre>
 <h2 id="reference">Reference</h2>
 <p>See the <a href="https://github.com/kujolang/ssg">SSG repository</a> for config fields, CLI flags, and starter structure.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/showcases/ai-chat/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/showcases/presentations/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#browser-agents-and-local-execution">Browser agents and local execution</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#upgrade-and-integration-notes">Upgrade and integration notes</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#browser-agents-and-local-execution">Browser agents and local execution</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
