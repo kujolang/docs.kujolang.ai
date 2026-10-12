@@ -8,8 +8,8 @@ order: 10
 audience: developer
 difficulty: intermediate
 status: released
-version: 1.1.0
-last_updated: 2026-08-30
+version: 1.2.0
+last_updated: 2026-10-12
 scope: framework-neutral backend
 source_repo: cms
 previous: /tools/
@@ -18,7 +18,7 @@ tags: [showcase, cms, content, agents, webmcp, extensions]
 ---
 
 
-Kujo CMS 1.1.0 is a server-first content backend for human administration, custom frontends, integrations, terminal workflows, and agents. The core owns portable content behavior; the separate CMS Example shows one complete Next.js-based administration and publication experience without making that framework part of the CMS contract.
+Kujo CMS 1.2.0 is a server-first content backend for human administration, custom frontends, integrations, terminal workflows, and agents. The core owns portable content behavior; the separate CMS Example shows one complete Vinext/React administration and publication experience without making that framework part of the CMS contract.
 
 ## Use it when…
 
@@ -33,7 +33,7 @@ You need structured publishing that can serve a custom website, application, CLI
 | Identity and access | Users, profiles, roles, registration policy, trusted identity exchange, revocable sessions, API tokens, and effective administration capabilities |
 | SEO and sharing | Filterable SEO inventory, issue signals, focused edits, bulk updates, network selection, and per-network account attribution |
 | Themes and plugins | Versioned manifests, validation, verified ZIP ingestion, installation receipts, activation, export, settings, branded artwork, and ordered administration links |
-| Agent access | Schema-described Abilities API, permission-scoped execution, confirmation-gated mutations, audit receipts, plugin abilities, connectors, MCP-ready descriptors, and built-in WebMCP |
+| Agent access | Schema-described Abilities API, permission-scoped execution, request-bound approval-gated mutations, audit receipts, plugin abilities, connectors, MCP-ready descriptors, and built-in WebMCP |
 | Clients | Dependency-free JavaScript and PHP clients plus documented adapter boundaries for other frameworks and languages |
 | Discovery and delivery | `/health`, `/v1`, `/v1/contract`, `/v1/openapi.json`, published content, feeds, sitemap, robots, `llms.txt`, and WebMCP discovery |
 | Operations | Rate limits, idempotency, jobs, webhooks, migrations, audit logs, backup, restore, dead-letter replay, and release gates |
@@ -53,8 +53,9 @@ ZIP installation verifies compressed and expanded size, file count, package stru
 ## Five-minute example
 
 ```bash
-git clone https://github.com/kujolang/cms.git
+git clone --branch v1.2.0 https://github.com/kujolang/cms.git
 cd cms
+kennel install
 cp .env.example .env
 kujo run --interpreter backend/runtime/main.kujo
 curl http://127.0.0.1:4200/v1/openapi.json
@@ -78,15 +79,23 @@ The core repository includes focused terminal helpers for SEO and social setting
 
 Use the CMS when content needs an ongoing editorial and administration backend. Compare it with [CRUD API](/showcases/crud-api/) for a smaller application API pattern and [SSG](/showcases/ssg/) for deterministic file-based publishing.
 
+## CMS 1.2.0 upgrade
+
+This release adds canonical Ability contracts and request-bound one-time approvals, tightens session expiry and request limits, protects extension cleanup and media reads, and fixes concurrent content composition and queue claims. Scheduler batches use one database transaction; workers wait for completion without a one-second polling delay per job.
+
+Back up the database and managed storage, install pinned dependencies, and let startup apply the migrations. Ability callers must obtain approval for the exact invocation; `confirmed: true` grants no authority. Keep the returned `updated_at` for later edits. Legacy extension directories without an ownership receipt are preserved. The CMS Ability pack and Ability dependency remain independently versioned at 1.0.1.
+
+Read the [upgrade notes](https://github.com/kujolang/cms/blob/v1.2.0/docs/releases/1.2.0.md) before deployment. CMS Example’s current source pairs its public frontend and Studio with this backend. The Field Notes theme and contact form plugin retain their own versions and compatible manifest contracts.
+
 ## Boundaries
 
-CMS 1.1.0 supplies production-oriented application contracts and release gates; it does not make every deployment enterprise-complete. Infrastructure, compliance, observability, storage, recovery targets, provider credentials, and governance still require environment-specific proof. The default WebMCP tools are intentionally read-only, and extension code is not executed during package installation.
+CMS 1.2.0 supplies production-oriented application contracts and release gates; it does not make every deployment enterprise-complete. Infrastructure, compliance, observability, storage, recovery targets, provider credentials, and governance still require environment-specific proof. The default WebMCP tools are intentionally read-only, and extension code is not executed during package installation.
 
 ## Reference
 
-- [CMS 1.1.0 release](https://github.com/kujolang/cms/releases/tag/v1.1.0)
+- [CMS 1.2.0 release](https://github.com/kujolang/cms/releases/tag/v1.2.0)
 - [CMS repository](https://github.com/kujolang/cms)
-- [CMS Example 1.1.0 release](https://github.com/kujolang/cms-example/releases/tag/v1.1.0)
+- [CMS Example frontend and Studio](https://github.com/kujolang/cms-example)
 - [Framework adapter guidance](https://github.com/kujolang/cms/blob/main/docs/framework-adapters.md)
 - [Extension package contract](https://github.com/kujolang/cms/blob/main/docs/extensions.md)
 - [WebMCP contract](https://github.com/kujolang/cms/blob/main/docs/webmcp.md)
