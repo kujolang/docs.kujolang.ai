@@ -2,7 +2,7 @@
 
 The official documentation site for the Kujo language and ecosystem, published at [docs.kujolang.ai](https://docs.kujolang.ai).
 
-Version **1.4.3**, updated **October 6, 2026**, adds the complete Kujo CMD 0.2.0 integration guide alongside current runtime, ecosystem, showcase, and workflow guidance. Homepage and footer markers are generated from `VERSION` and `release.json` and verified during the build. The site follows the Kujo documentation information architecture: a short first-run path, task-oriented learning, intent-based tool guidance, reviewable-work workflows, showcases, collections, and reference material.
+Version **1.4.4**, updated **October 12, 2026**, adds current SSG 1.2.0, CMS 1.2.0, Agent City, Commerce, Tribunal, AI Chat, and Kujo CMD guidance alongside current runtime, ecosystem, showcase, and workflow documentation. Homepage and footer markers are generated from `VERSION` and `release.json` and verified during the build. The site follows the Kujo documentation information architecture: a short first-run path, task-oriented learning, intent-based tool guidance, reviewable-work workflows, showcases, collections, and reference material.
 
 ## Build
 
