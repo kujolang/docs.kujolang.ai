@@ -101,50 +101,42 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="ai-sdk">AI SDK</h1><p class="docs-description">Use normalized chat and embedding contracts with fixtures, retries, and redaction.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
-		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
-<p>You need a provider-gated chat or embedding call with a normalized contract and a fixture path for local checks.</p>
-<h2 id="interface-overview">Interface overview</h2>
-<table><thead><tr>
-<th>Surface</th>
-<th>What is available</th>
-</tr></thead><tbody>
-<tr>
-<td>Library</td>
-<td><code>create_client</code>, <code>create_message</code>, chat completion, streaming, and embeddings</td>
-</tr>
-<tr>
-<td>Providers</td>
-<td>Provider packages with public AI SDK drivers, plus custom OpenAI-compatible endpoints</td>
-</tr>
-<tr>
-<td>Reliability</td>
-<td>Retries, backoff, timeouts, fallback providers, circuit breakers, and budgets</td>
-</tr>
-<tr>
-<td>Safety and proof</td>
-<td>Endpoint allowlists, protected headers, redaction, fixtures, schemas, and benchmarks</td>
-</tr>
-</tbody></table>
-<h2 id="main-workflows">Main workflows</h2>
+		<h1 id="ai-sdk">AI SDK</h1><p class="docs-description">Use normalized chat and embedding contracts with fixtures, retries, and redaction.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>release documented</span><span class="docs-badge docs-badge-version"><span>Version</span>1.2.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-13</span></div>
+		<div class="docs-body"><h2 id="use-it-when">Use it when</h2>
+<p>You need chat or embedding calls with a shared response contract, retries, redaction, usage accounting, and offline fixtures.</p>
+<h2 id="install">Install</h2>
+<p>AI SDK 1.2.0 requires Kujo 1.6.0 or newer and Kennel 1.1.0 or newer:</p>
+<pre><code class="language-bash">kennel add ai-sdk@1.2.0
+kennel install</code></pre>
+<p>Import <code>src/ai_sdk.kujo</code> and <code>src/providers.kujo</code>. AI SDK is a library; it has no separate CLI. In a checkout, run <code>kujo run examples/main.kujo</code> to try fixtures without a provider key.</p>
+<h2 id="what-1-2-0-changes">What 1.2.0 changes</h2>
 <ul>
-<li>Import <code>src/ai_sdk.kujo</code> and <code>src/providers.kujo</code>; this library does not add a separate user-facing CLI.</li>
-<li>Run the bundled example with no key to exercise deterministic fixture mode.</li>
-<li>Add a provider preset or custom endpoint while keeping the application response contract unchanged.</li>
-<li>Stream normalized <code>delta</code>, <code>done</code>, and <code>error</code> events, or request embeddings through the same client boundary.</li>
+<li>Client copies share persistent process-local counters. Inspect them with <code>client_state</code>; use the documented reset APIs for cleanup.</li>
+<li>Completed provider usage remains charged when a budget or structured-output check rejects a result. Structured-output retries recheck budgets.</li>
+<li>Optional <code>governance_mode: &quot;strict&quot;</code> holds backend ownership through a request and its accounting. <code>atomic_memory_backend()</code> supplies process-local ownership and quarantine after uncertain writes.</li>
+<li>Fallback entry options cannot bypass strict mode or atomic-backend validation.</li>
+<li>Native downloads enforce response limits while reading. Endpoint allowlists disable redirects.</li>
 </ul>
-<h2 id="five-minute-example">Five-minute example</h2>
-<pre><code class="language-bash">kujo run examples/main.kujo</code></pre>
-<h2 id="what-you-get">What you get</h2>
-<p>Normalized response and embedding shapes, retry/backoff behavior, redaction, and an offline fixture mode.</p>
-<h2 id="how-it-fits">How it fits</h2>
-<p>Move to <a href="/tools/agents-sdk/">Agents SDK</a> when calls need tools, approvals, handoffs, or stores.</p>
-<h2 id="boundaries">Boundaries</h2>
-<p>Provider-specific proof and credentials remain integrator-owned; this is not a hosted model gateway. See the <a href="/ecosystem/providers/">provider index</a> for package versions, native APIs, authentication variables, and driver availability.</p>
+<h2 id="streaming-and-compatibility">Streaming and compatibility</h2>
+<p>Existing provider dictionaries, native driver hooks, two-argument custom transports, and normalized <code>delta</code>, <code>done</code>, and <code>error</code> callbacks keep their contracts. Response, provider-driver, and model-catalog versions remain 1.0.0.</p>
+<p>The optional <code>on_transport_chunk</code> callback delivers transport text as it arrives. It requires a runtime with <code>http_stream_collect</code>; published Kujo 1.5.0 and 1.6.0 reject the option before I/O. Existing buffered streaming works on those releases. The release notes identify tested source backports; installing AI SDK does not replace your runtime.</p>
+<h2 id="accounting-boundaries">Accounting boundaries</h2>
+<p>Best-effort accounting remains the default. Strict mode rejects provider fallback and requires a shared backend with acquire/get/set/release hooks. The built-in backend is process-local. Distributed budgets require durable state and fenced ownership. Reconcile uncertain usage before clearing quarantine; do not reset it automatically on retries.</p>
+<p>A completed request may exceed its remaining budget and is charged before rejection. SDK accounting is not a provider-side hard spending cap.</p>
+<h2 id="verification">Verification</h2>
+<p>The full local release gate passes 185 Kujo tests on both published 1.5.0 and 1.6.0, plus wrapper, HTTP, schema, example, documentation, and benchmark checks. The declared minimum remains 1.6.0. The release notes record live-provider evidence separately; offline fixtures do not certify a deployment.</p>
+<h2 id="related-tools">Related tools</h2>
+<p>Use <a href="/tools/agents-sdk/">Agents SDK</a> when calls need tools, approvals, handoffs, or stores. See the <a href="/ecosystem/providers/">provider index</a> for native APIs, authentication variables, and driver availability.</p>
 <h2 id="reference">Reference</h2>
-<p>See the <a href="https://github.com/kujolang/ai-sdk">AI SDK repository</a> and the <a href="/learn/ai-runtime/">AI runtime basics</a> guide.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/rag/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/agents-sdk/" rel="next"><span>Next</span></a></nav>
+<ul>
+<li><a href="https://github.com/kujolang/ai-sdk/releases/tag/v1.2.0">AI SDK 1.2.0 release</a></li>
+<li><a href="https://github.com/kujolang/ai-sdk/blob/v1.2.0/docs/RELEASE_1_2_0.md">Release notes and runtime requirements</a></li>
+<li><a href="/learn/ai-runtime/">AI runtime basics</a></li>
+</ul>
+<h2 id="license">License</h2>
+<p>MIT</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/rag/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/agents-sdk/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when</a></li><li class="toc-level-2"><a href="#install">Install</a></li><li class="toc-level-2"><a href="#what-1-2-0-changes">What 1.2.0 changes</a></li><li class="toc-level-2"><a href="#streaming-and-compatibility">Streaming and compatibility</a></li><li class="toc-level-2"><a href="#accounting-boundaries">Accounting boundaries</a></li><li class="toc-level-2"><a href="#verification">Verification</a></li><li class="toc-level-2"><a href="#related-tools">Related tools</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li><li class="toc-level-2"><a href="#license">License</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
