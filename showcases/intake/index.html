@@ -101,11 +101,14 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="intake">Intake</h1><p class="docs-description">Normalize inbound work, route it through policy, and require approval before external effects.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local-first showcase; live mailbox smoke ready</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
+		<h1 id="intake">Intake</h1><p class="docs-description">Normalize inbound work, route it through policy, and require approval before external effects.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>GitHub source release for local operators</span><span class="docs-badge docs-badge-version"><span>Version</span>0.2.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-13</span></div>
 		<div class="docs-body"><h2 id="what-it-demonstrates">What it demonstrates</h2>
 <p>Intake normalizes manual, file, webhook, Slack, GitHub, Jira, Linear, ClickUp, and email inputs into durable items, applies deterministic rules and safety checks, proposes actions, requires policy-defined approval, and exports reviewed learning.</p>
-<h2 id="five-minute-example">Five-minute example</h2>
-<pre><code class="language-bash">npm install
+<h2 id="install-and-try-it">Install and try it</h2>
+<p>Requires Node.js 20.19 or newer.</p>
+<pre><code class="language-bash">git clone --branch v0.2.0 https://github.com/kujolang/intake.git
+cd intake
+npm ci
 npm link
 intake init
 intake item create --title &quot;Client asked about pricing&quot; --body &quot;Follow up with details&quot; --queue sales
@@ -114,11 +117,19 @@ intake doctor</code></pre>
 <h2 id="what-you-get">What you get</h2>
 <p>Local state under <code>.intake/</code>, a token-authenticated localhost dashboard, source health, actions, approvals, audit logs, backups, retention controls, and Strata or TotalRecall-compatible learning exports.</p>
 <h2 id="boundary">Boundary</h2>
-<p>Intake is ready for local-first live mailbox smoke and adapter development, not a fully packaged enterprise deployment. Direct sending is blocked by default; remote effects stay behind policy and human approval.</p>
+<p>Intake 0.2.0 is the first tagged GitHub source release. It is a JavaScript app, not a native Kujo package. The npm manifest remains private, and the app is not enrolled in Kennel.</p>
+<p>Use it for local operation and adapter development. Direct sending is blocked by default. Validate live providers, deployment access controls, and recovery requirements before relying on it in a shared environment.</p>
+<h2 id="recovery">Recovery</h2>
+<p>Receiver retries preserve classification and operator changes. Interrupted configuration imports and restores leave journals that block ordinary access until recovery. Stop writers, repair filesystem errors, and run <code>intake store recover --dir STORE</code>. Keep corrupt metadata for inspection; <code>--force</code> does not bypass schema or journal validation.</p>
+<p>Recovery never replays outbound actions. Reconcile any uncertain external effect before approving another attempt. See the <a href="https://github.com/kujolang/intake/blob/v0.2.0/docs/releases/0.2.0.md">upgrade notes</a>.</p>
 <h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://github.com/kujolang/intake/releases/tag/v0.2.0">Intake 0.2.0 release</a></li>
+<li><a href="https://kujolang.ai/ecosystem/intake/">Website overview</a></li>
+</ul>
 <p>See the <a href="https://github.com/kujolang/intake">Intake repository</a>.</p></div>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#what-it-demonstrates">What it demonstrates</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#boundary">Boundary</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#what-it-demonstrates">What it demonstrates</a></li><li class="toc-level-2"><a href="#install-and-try-it">Install and try it</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#boundary">Boundary</a></li><li class="toc-level-2"><a href="#recovery">Recovery</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">

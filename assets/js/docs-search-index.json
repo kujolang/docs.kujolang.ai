@@ -937,19 +937,20 @@
       "section": "Showcases",
       "audience": "developer",
       "difficulty": "intermediate",
-      "status": "local-first showcase; live mailbox smoke ready",
-      "version": "current",
+      "status": "GitHub source release for local operators",
+      "version": "0.2.0",
       "tags": [
         "[showcase, intake, approvals, automation]"
       ],
       "headings": [
         "What it demonstrates",
-        "Five-minute example",
+        "Install and try it",
         "What you get",
         "Boundary",
+        "Recovery",
         "Reference"
       ],
-      "text": "What it demonstrates Intake normalizes manual, file, webhook, Slack, GitHub, Jira, Linear, ClickUp, and email inputs into durable items, applies deterministic rules and safety checks, proposes actions, requires policy-defined approval, and exports reviewed learning. Five-minute example What you get Local state under .intake/, a token-authenticated localhost "
+      "text": "What it demonstrates Intake normalizes manual, file, webhook, Slack, GitHub, Jira, Linear, ClickUp, and email inputs into durable items, applies deterministic rules and safety checks, proposes actions, requires policy-defined approval, and exports reviewed learning. Install and try it Requires Node.js 20.19 or newer. What you get Local state under .intake/, "
     },
     {
       "title": "Presentations",
