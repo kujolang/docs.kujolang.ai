@@ -101,7 +101,7 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="packwrite">PackWrite</h1><p class="docs-description">Compile a repository mega prompt and bounded context into deterministic execution packs for implementation agents and reviewers.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>released</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-04</span></div>
+		<h1 id="packwrite">PackWrite</h1><p class="docs-description">Compile a repository mega prompt and bounded context into deterministic execution packs for implementation agents and reviewers.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>released</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.1</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-13</span></div>
 		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>You have a substantial project brief, feature plan, or repository migration that is too large to trust to one transient chat. PackWrite turns that intent into a versionable <code>agent/</code> operating manual with bounded phases, acceptance criteria, handoff state, decisions, and reviewer guidance.</p>
 <p>PackWrite is local-first and AI-assisted. It compiles the pack; it does not implement the project.</p>
@@ -161,11 +161,12 @@ packwrite prompt codex-review</code></pre>
 <p>The launcher preserves your current working directory, so configuration discovery and pack output belong to the repository where you run it.</p>
 <h2 id="install-and-run">Install and run</h2>
 <p>PackWrite is written in Kujo and requires the <code>kujo</code> interpreter. Clone the repository and run its launcher directly, or install the launcher symlink:</p>
-<pre><code class="language-bash">git clone https://github.com/kujolang/packwrite.git
+<pre><code class="language-bash">git clone --branch v1.1.1 --depth 1 https://github.com/kujolang/packwrite.git
 cd packwrite
 ./bin/packwrite --help
 make install
 packwrite version</code></pre>
+<p>The destination <code>PREFIX/bin</code> must exist and be writable. Use <code>make install PREFIX=&quot;$HOME/.local&quot;</code> for a different install root. A failed symlink creation returns nonzero.</p>
 <p>API keys are environment variables only. PackWrite checks <code>PACKWRITE_API_KEY</code> first and then provider-specific variables such as <code>DEEPSEEK_API_KEY</code> and <code>OPENAI_API_KEY</code>.</p>
 <h2 id="what-you-get">What you get</h2>
 <p>The default pack is:</p>
@@ -214,9 +215,19 @@ include_review_checklist = true</code></pre>
 <li>Generated file paths reject traversal, backslash ambiguity, home expansion, control characters, symlink ancestors, and secret-looking names.</li>
 <li>Model output must be a JSON object with a non-empty <code>files</code> array of string paths and content.</li>
 <li>Response size and diagnostics are bounded before writes.</li>
-<li><code>--overwrite</code> stages a clean replacement, validates it, promotes it atomically, prunes stale files, and rolls back a failed promotion.</li>
+<li><code>--overwrite</code> stages a clean replacement, validates it, moves the old pack to a backup, promotes the validated stage, and rolls back a failed promotion.</li>
 <li><code>--save-raw-response</code> is explicit, owner-only, and no-overwrite because model payloads can contain sensitive context.</li>
 </ul>
+<h2 id="changes-in-1-1-1">Changes in 1.1.1</h2>
+<ul>
+<li>Context collection uses the configured filters for README excerpts and stack detection, skips symlinks, and reports bounded listings.</li>
+<li>Validation checks every TODO phase reference and rejects unreadable Markdown, symlinks, and nested secret-looking paths.</li>
+<li>Invalid offline fixtures fail without a live provider request; malformed configuration and non-finite model values return errors.</li>
+<li>Directory read and creation failures return operational errors. Failed overwrite enumeration preserves the old pack and removes its stage.</li>
+<li>The offline suite verifies 248 unit and 116 CLI assertions; 24 permission assertions require a non-root user.</li>
+</ul>
+<p><code>--dry-run</code> still calls the model and can incur provider charges. An omitted context</p>
+<p>include list uses defaults; <code>include = []</code> includes every eligible top-level name.</p>
 <h2 id="offline-and-ci-use">Offline and CI use</h2>
 <p>Use a reviewed fake response to exercise the complete write and validation path without credentials or network access:</p>
 <pre><code class="language-bash">export PACKWRITE_FAKE_RESPONSE_FILE=/path/to/manifest.json
@@ -227,11 +238,11 @@ packwrite doctor --strict --json</code></pre>
 <h2 id="how-it-fits">How it fits</h2>
 <p>Use <a href="/tools/spec/">Spec</a> to define a precise task contract, <a href="/tools/scent/">Scent</a> to prepare focused context, PackWrite to compile the execution manual, <a href="/tools/muzzle/">Muzzle</a> for quiet repeatable runs, and the <a href="/collections/workflows/">workflow catalog</a> to evaluate and record bounded implementation work.</p>
 <h2 id="boundaries">Boundaries</h2>
-<p>PackWrite 1.1.0 is a released local/team workflow compiler, not a hosted agent platform. It does not supply SaaS authentication, organization policy, multi-user coordination, audit storage, signing, deployment controls, or a universal provider protocol. Generated packs still require review for scope, authority, model configuration, repository constraints, and real release gates.</p>
+<p>PackWrite 1.1.1 is a released local/team workflow compiler, not a hosted agent platform. It does not supply SaaS authentication, organization policy, multi-user coordination, audit storage, signing, deployment controls, or a universal provider protocol. Generated packs still require review for scope, authority, model configuration, repository constraints, and real release gates.</p>
 <h2 id="reference">Reference</h2>
-<p>See the <a href="https://github.com/kujolang/packwrite">PackWrite repository</a>, <a href="https://github.com/kujolang/packwrite/releases/tag/v1.1.0">v1.1.0 release</a>, <a href="https://github.com/kujolang/packwrite/blob/v1.1.0/docs/CONFIGURATION.md">configuration reference</a>, and <a href="https://github.com/kujolang/packwrite/blob/v1.1.0/docs/HOWTO.md">end-to-end guide</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/shipcheck/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/casefile/" rel="next"><span>Next</span></a></nav>
+<p>See the <a href="https://github.com/kujolang/packwrite">PackWrite repository</a>, <a href="https://github.com/kujolang/packwrite/releases/tag/v1.1.1">v1.1.1 release</a>, <a href="https://github.com/kujolang/packwrite/blob/v1.1.1/docs/CONFIGURATION.md">configuration reference</a>, and <a href="https://github.com/kujolang/packwrite/blob/v1.1.1/docs/HOWTO.md">end-to-end guide</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/shipcheck/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/casefile/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#install-and-run">Install and run</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#configure-packwrite">Configure PackWrite</a></li><li class="toc-level-2"><a href="#providers">Providers</a></li><li class="toc-level-2"><a href="#safe-generation-and-overwrite">Safe generation and overwrite</a></li><li class="toc-level-2"><a href="#offline-and-ci-use">Offline and CI use</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#install-and-run">Install and run</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#configure-packwrite">Configure PackWrite</a></li><li class="toc-level-2"><a href="#providers">Providers</a></li><li class="toc-level-2"><a href="#safe-generation-and-overwrite">Safe generation and overwrite</a></li><li class="toc-level-2"><a href="#changes-in-1-1-1">Changes in 1.1.1</a></li><li class="toc-level-2"><a href="#offline-and-ci-use">Offline and CI use</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">

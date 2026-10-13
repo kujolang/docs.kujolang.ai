@@ -1633,7 +1633,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "released",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "tags": [
         "[tool, agents, packs, planning, review]"
       ],
@@ -1647,6 +1647,7 @@
         "Configure PackWrite",
         "Providers",
         "Safe generation and overwrite",
+        "Changes in 1.1.1",
         "Offline and CI use",
         "How it fits",
         "Boundaries",
