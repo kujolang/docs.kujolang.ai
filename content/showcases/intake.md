@@ -7,9 +7,9 @@ nav_title: Intake
 order: 60
 audience: developer
 difficulty: intermediate
-status: local-first showcase; live mailbox smoke ready
-version: current
-last_updated: 2026-08-23
+status: GitHub source release for local operators
+version: 0.2.0
+last_updated: 2026-10-13
 scope: local-first reference application
 source_repo: intake
 tags: [showcase, intake, approvals, automation]
@@ -19,10 +19,14 @@ tags: [showcase, intake, approvals, automation]
 
 Intake normalizes manual, file, webhook, Slack, GitHub, Jira, Linear, ClickUp, and email inputs into durable items, applies deterministic rules and safety checks, proposes actions, requires policy-defined approval, and exports reviewed learning.
 
-## Five-minute example
+## Install and try it
+
+Requires Node.js 20.19 or newer.
 
 ```bash
-npm install
+git clone --branch v0.2.0 https://github.com/kujolang/intake.git
+cd intake
+npm ci
 npm link
 intake init
 intake item create --title "Client asked about pricing" --body "Follow up with details" --queue sales
@@ -36,8 +40,20 @@ Local state under `.intake/`, a token-authenticated localhost dashboard, source 
 
 ## Boundary
 
-Intake is ready for local-first live mailbox smoke and adapter development, not a fully packaged enterprise deployment. Direct sending is blocked by default; remote effects stay behind policy and human approval.
+Intake 0.2.0 is the first tagged GitHub source release. It is a JavaScript app, not a native Kujo package. The npm manifest remains private, and the app is not enrolled in Kennel.
+
+Use it for local operation and adapter development. Direct sending is blocked by default. Validate live providers, deployment access controls, and recovery requirements before relying on it in a shared environment.
+
+## Recovery
+
+Receiver retries preserve classification and operator changes. Interrupted configuration imports and restores leave journals that block ordinary access until recovery. Stop writers, repair filesystem errors, and run `intake store recover --dir STORE`. Keep corrupt metadata for inspection; `--force` does not bypass schema or journal validation.
+
+Recovery never replays outbound actions. Reconcile any uncertain external effect before approving another attempt. See the [upgrade notes](https://github.com/kujolang/intake/blob/v0.2.0/docs/releases/0.2.0.md).
 
 ## Reference
+
+- [Intake 0.2.0 release](https://github.com/kujolang/intake/releases/tag/v0.2.0)
+- [Website overview](https://kujolang.ai/ecosystem/intake/)
+
 
 See the [Intake repository](https://github.com/kujolang/intake).
