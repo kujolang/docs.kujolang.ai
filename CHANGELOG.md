@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Document PackWrite 1.1.1, including configuration and filesystem fixes, offline validation, and the current release links.
+
 ## 1.4.5 — 2026-10-12
 
 - Update the MCP guide from 1.2.0 to 1.3.1, including the first-class generator,
