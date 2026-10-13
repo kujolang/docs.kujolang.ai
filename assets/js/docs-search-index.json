@@ -1909,8 +1909,8 @@
       "section": "Tools",
       "audience": "developer",
       "difficulty": "advanced",
-      "status": "stable 1.0.0",
-      "version": "1.0.0",
+      "status": "stable 1.0.1",
+      "version": "1.0.1",
       "tags": [
         "[tool, search, analytics, web]"
       ],
@@ -1918,7 +1918,8 @@
         "Use it when\u2026",
         "Five-minute example",
         "What you get",
-        "Provider status in 1.0.0",
+        "Provider status in 1.0.1",
+        "Upgrade to 1.0.1",
         "Boundaries",
         "Reference"
       ],

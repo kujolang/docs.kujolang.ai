@@ -101,7 +101,7 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="searchbridge">SearchBridge</h1><p class="docs-description">Fetch normalized search, analytics, page-performance, backlink, keyword, and indexing evidence through bounded provider contracts.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>stable 1.0.0</span><span class="docs-badge docs-badge-version"><span>Version</span>1.0.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-04</span></div>
+		<h1 id="searchbridge">SearchBridge</h1><p class="docs-description">Fetch normalized search, analytics, page-performance, backlink, keyword, and indexing evidence through bounded provider contracts.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>stable 1.0.1</span><span class="docs-badge docs-badge-version"><span>Version</span>1.0.1</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-13</span></div>
 		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>A WebOps workflow needs one bounded contract for search performance, analytics, URL inspection, PageSpeed, CrUX, backlinks, keyword data, or explicit index submission.</p>
 <h2 id="five-minute-example">Five-minute example</h2>
@@ -111,7 +111,7 @@
 ./searchbridge batch --fixture --offline --commands pagespeed,crux</code></pre>
 <h2 id="what-you-get">What you get</h2>
 <p>Credential-redacted, bounded <code>searchbridge.result/v1</code> evidence that can use deterministic fixtures, caches, protected replay, or explicitly configured provider adapters. The supported release channel is a checksum-verified self-contained GitHub release bundle; TypeScript, Rust, and Go SDK archives ship with the release.</p>
-<h2 id="provider-status-in-1-0-0">Provider status in 1.0.0</h2>
+<h2 id="provider-status-in-1-0-1">Provider status in 1.0.1</h2>
 <table><thead><tr>
 <th>Tier</th>
 <th>Providers</th>
@@ -134,12 +134,18 @@
 </tr>
 </tbody></table>
 <p>The stable-live tier passed an owner-authorized 16-case live matrix before release. Cloudflare and IndexNow remain fixture-only until the separately documented v1.1 review; no live success or indexing outcome is claimed for either provider.</p>
+<h2 id="upgrade-to-1-0-1">Upgrade to 1.0.1</h2>
+<p>This patch fixes cache-key collisions, enforces live-call budgets, bounds replay</p>
+<p>and SDK diagnostics, and strengthens release verification. Recollect cached</p>
+<p>evidence after upgrading: new request hashes do not reuse older cache entries.</p>
+<p>Cache record formats and provider support tiers remain unchanged. Submissions</p>
+<p>never use cached receipts. <a href="https://github.com/kujolang/searchbridge/releases/tag/v1.0.1">Read the release notes</a>.</p>
 <h2 id="boundaries">Boundaries</h2>
 <p>SearchBridge fetches and normalizes provider evidence; it does not interpret SEO performance. Missing access degrades individual capabilities instead of disabling the entire tool. Live provider credentials, quotas, property access, paid-call authorization, and every submission remain explicit operator boundaries. Evidence commands are read-only; submission is separate and requires the exact capability plus <code>--act --yes</code> on every invocation. A submission receipt never claims indexing.</p>
 <h2 id="reference">Reference</h2>
-<p>See the <a href="https://github.com/kujolang/searchbridge/releases/tag/v1.0.0">SearchBridge v1.0.0 release</a>, <a href="https://github.com/kujolang/searchbridge">repository</a>, and <a href="https://github.com/kujolang/searchbridge/blob/v1.0.0/docs/support-matrix.md">support matrix</a>.</p></div>
+<p>See the <a href="https://github.com/kujolang/searchbridge/releases/tag/v1.0.1">SearchBridge v1.0.1 release</a>, <a href="https://github.com/kujolang/searchbridge">repository</a>, and <a href="https://github.com/kujolang/searchbridge/blob/v1.0.1/docs/support-matrix.md">support matrix</a>.</p></div>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#provider-status-in-1-0-0">Provider status in 1.0.0</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#provider-status-in-1-0-1">Provider status in 1.0.1</a></li><li class="toc-level-2"><a href="#upgrade-to-1-0-1">Upgrade to 1.0.1</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
