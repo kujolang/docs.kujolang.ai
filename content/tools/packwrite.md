@@ -8,8 +8,8 @@ order: 210
 audience: developer
 difficulty: intermediate
 status: released
-version: 1.1.0
-last_updated: 2026-09-04
+version: 1.1.1
+last_updated: 2026-10-13
 scope: local-first
 source_repo: packwrite
 previous: /tools/shipcheck/
@@ -65,12 +65,14 @@ The launcher preserves your current working directory, so configuration discover
 PackWrite is written in Kujo and requires the `kujo` interpreter. Clone the repository and run its launcher directly, or install the launcher symlink:
 
 ```bash
-git clone https://github.com/kujolang/packwrite.git
+git clone --branch v1.1.1 --depth 1 https://github.com/kujolang/packwrite.git
 cd packwrite
 ./bin/packwrite --help
 make install
 packwrite version
 ```
+
+The destination `PREFIX/bin` must exist and be writable. Use `make install PREFIX="$HOME/.local"` for a different install root. A failed symlink creation returns nonzero.
 
 API keys are environment variables only. PackWrite checks `PACKWRITE_API_KEY` first and then provider-specific variables such as `DEEPSEEK_API_KEY` and `OPENAI_API_KEY`.
 
@@ -144,8 +146,19 @@ Anthropic is not a native endpoint in 1.1 because its API uses a different proto
 - Generated file paths reject traversal, backslash ambiguity, home expansion, control characters, symlink ancestors, and secret-looking names.
 - Model output must be a JSON object with a non-empty `files` array of string paths and content.
 - Response size and diagnostics are bounded before writes.
-- `--overwrite` stages a clean replacement, validates it, promotes it atomically, prunes stale files, and rolls back a failed promotion.
+- `--overwrite` stages a clean replacement, validates it, moves the old pack to a backup, promotes the validated stage, and rolls back a failed promotion.
 - `--save-raw-response` is explicit, owner-only, and no-overwrite because model payloads can contain sensitive context.
+
+## Changes in 1.1.1
+
+- Context collection uses the configured filters for README excerpts and stack detection, skips symlinks, and reports bounded listings.
+- Validation checks every TODO phase reference and rejects unreadable Markdown, symlinks, and nested secret-looking paths.
+- Invalid offline fixtures fail without a live provider request; malformed configuration and non-finite model values return errors.
+- Directory read and creation failures return operational errors. Failed overwrite enumeration preserves the old pack and removes its stage.
+- The offline suite verifies 248 unit and 116 CLI assertions; 24 permission assertions require a non-root user.
+
+`--dry-run` still calls the model and can incur provider charges. An omitted context
+include list uses defaults; `include = []` includes every eligible top-level name.
 
 ## Offline and CI use
 
@@ -166,8 +179,8 @@ Use [Spec](/tools/spec/) to define a precise task contract, [Scent](/tools/scent
 
 ## Boundaries
 
-PackWrite 1.1.0 is a released local/team workflow compiler, not a hosted agent platform. It does not supply SaaS authentication, organization policy, multi-user coordination, audit storage, signing, deployment controls, or a universal provider protocol. Generated packs still require review for scope, authority, model configuration, repository constraints, and real release gates.
+PackWrite 1.1.1 is a released local/team workflow compiler, not a hosted agent platform. It does not supply SaaS authentication, organization policy, multi-user coordination, audit storage, signing, deployment controls, or a universal provider protocol. Generated packs still require review for scope, authority, model configuration, repository constraints, and real release gates.
 
 ## Reference
 
-See the [PackWrite repository](https://github.com/kujolang/packwrite), [v1.1.0 release](https://github.com/kujolang/packwrite/releases/tag/v1.1.0), [configuration reference](https://github.com/kujolang/packwrite/blob/v1.1.0/docs/CONFIGURATION.md), and [end-to-end guide](https://github.com/kujolang/packwrite/blob/v1.1.0/docs/HOWTO.md).
+See the [PackWrite repository](https://github.com/kujolang/packwrite), [v1.1.1 release](https://github.com/kujolang/packwrite/releases/tag/v1.1.1), [configuration reference](https://github.com/kujolang/packwrite/blob/v1.1.1/docs/CONFIGURATION.md), and [end-to-end guide](https://github.com/kujolang/packwrite/blob/v1.1.1/docs/HOWTO.md).
