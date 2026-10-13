@@ -14,7 +14,7 @@ last_updated: 2026-10-13
 tags: [ecosystem, releases, versions, installation]
 ---
 
-This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP and Dispatch from September 29, SSG from October 12, Kujo from October 4, Tribunal from October 7, Commerce from October 10, and AI SDK from October 13. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
+This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP and Dispatch from September 29, SSG from October 12, Kujo from October 4, Tribunal from October 7, Commerce from October 10, and AI SDK and Agents SDK from October 13. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
 
 ## Start here
 
@@ -43,7 +43,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | Package | Latest published release | Published (UTC) |
 | --- | --- | --- |
 | [ability](https://github.com/kujolang/ability) | [v1.2.0](https://github.com/kujolang/ability/releases/tag/v1.2.0) | 2026-09-29 |
-| [agents-sdk](https://github.com/kujolang/agents-sdk) | [v1.1.2](https://github.com/kujolang/agents-sdk/releases/tag/v1.1.2) | 2026-09-28 |
+| [agents-sdk](https://github.com/kujolang/agents-sdk) | [v1.1.3](https://github.com/kujolang/agents-sdk/releases/tag/v1.1.3) | 2026-10-13 |
 | [ai-chat](https://github.com/kujolang/ai-chat) | [v1.3.0](https://github.com/kujolang/ai-chat/releases/tag/v1.3.0) | 2026-10-06 |
 | [ai-sdk](https://github.com/kujolang/ai-sdk) | [v1.2.0](https://github.com/kujolang/ai-sdk/releases/tag/v1.2.0) | 2026-10-13 |
 | [anthropic](https://github.com/kujolang/anthropic) | [v0.1.2](https://github.com/kujolang/anthropic/releases/tag/v0.1.2) | 2026-08-27 |
@@ -130,3 +130,7 @@ The public [Kujo MCP catalog](https://mcp.kujolang.ai/mcp) exposes read-only pro
 Kujo 1.8 does not republish or silently upgrade companion tools. RunLedger 1.2.0, AI SDK 1.2.0 and Agents SDK 1.1.2 are published independently. AI SDK 1.2.0 adds state persistence, strict accounting, and transport controls; its release notes distinguish offline verification from live-provider evidence. Workcell, Ability and MCP 1.2.0 distribute the controlled-execution cohort while retaining experimental assurance/interoperability boundaries. Dispatch 1.3.0 completes this controller release cohort with the same experimental boundaries. Stop older workers and follow its backup/upgrade instructions before changing persisted-state versions.
 
 SSG 1.2.0 requires pinned esbuild 0.28.2 for minified builds and adds explicit private-image opt-in and a separate DocGen repository-CI budget. See the [SSG upgrade notes](/showcases/ssg/#upgrade-and-integration-notes).
+
+## Agents SDK 1.1.3
+
+The October 13 patch hardens approval, handoff, state, storage, retry, and token-accounting behavior while preserving public contracts. It supersedes 1.1.2 for new installations. See the [Agents SDK guide](/tools/agents-sdk/) for compatibility notes and the remaining cost-unit conversion limit.

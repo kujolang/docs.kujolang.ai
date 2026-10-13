@@ -1,5 +1,9 @@
 # Changelog
 
+## Content update — 2026-10-13
+
+- Document Agents SDK 1.1.3 installation, hardening changes, token accounting, upgrade behavior, and the cost-unit limit; update the dated release inventory.
+
 ## Unreleased
 
 - Document PackWrite 1.1.1, including configuration and filesystem fixes, offline validation, and the current release links.
