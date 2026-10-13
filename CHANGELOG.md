@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.5 — 2026-10-12
+
+- Update the MCP guide from 1.2.0 to 1.3.1, including the first-class generator,
+  hardened generated-server boundaries, portable host package, and exact
+  release evidence links.
+
 ## 1.4.4 — 2026-10-12
 
 ### SSG 1.2.0

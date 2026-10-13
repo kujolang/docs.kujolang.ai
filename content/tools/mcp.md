@@ -8,8 +8,8 @@ order: 70
 audience: developer
 difficulty: advanced
 status: local scope verified
-version: 1.2.0
-last_updated: 2026-09-29
+version: 1.3.1
+last_updated: 2026-10-12
 scope: local-first
 source_repo: mcp
 previous: /tools/dispatch/
@@ -69,10 +69,10 @@ Use [Ability](/tools/ability/) to preserve an operation’s identity, schemas, e
 
 The public endpoint at [mcp.kujolang.ai/mcp](https://mcp.kujolang.ai/mcp) is a separate read-only catalog of Kujo projects, skills, workflows, installation guidance, and release boundaries. Its catalog revision identifies the deployed snapshot; its service version is not the programming-language version. Use `get_catalog_item` with `slug: "kujo"` for the runtime release, and `get_installation` for the `core`, `agent`, `ai`, `quality`, `showcases`, or `operating` profile.
 
-The latest published MCP framework release is [1.2.0](https://github.com/kujolang/mcp/releases/tag/v1.2.0). Its application Ability gateways, host certification receipts, and operator controls remain separate from public catalog discovery. Certification applies to the exact tested source revisions and host tiers; newer Agents SDK or Kujo Pi source changes are not automatically certified by older receipts.
+The latest published MCP framework release is [1.3.1](https://github.com/kujolang/mcp/releases/tag/v1.3.1). Its application Ability gateways, host certification receipts, and operator controls remain separate from public catalog discovery. Certification applies to the exact tested source revisions and host tiers; newer Agents SDK or Kujo Pi source changes are not automatically certified by older receipts.
 
-## Version 1.2.0 and Kujo 1.6
+## Version 1.3.1 and Kujo 1.7
 
-MCP 1.2.0 requires Kujo 1.6.0 and includes experimental controlled local STDIO Ability handoffs, one-use host admission and bounded evidence references. Lost completion remains uncertain until the effect owner verifies it; Dispatch alone decides replay. Standalone MCP behavior remains available.
+MCP 1.3.1 targets Kujo 1.7.0 and adds the first-class `kujo mcp make` workflow, standard MCP JSON-RPC methods, fail-closed generated-server configuration, bounded repository scans and audit-safe operation metadata. The portable `kujo-ability` host package includes the executable bridge plus Codex, Copilot, Cursor, VS Code and generic MCP configuration. Experimental controlled local STDIO Ability handoffs retain one-use host admission and bounded evidence references. Lost completion remains uncertain until the effect owner verifies it; Dispatch alone decides replay.
 
-See the [1.2.0 release](https://github.com/kujolang/mcp/releases/tag/v1.2.0) for the exact source and release evidence. Assurance beta remains opt-in, required/deny and single-effect; controlled handoffs remain alpha. These package releases do not stabilize remote trust or participant SDKs.
+See the [1.3.1 release](https://github.com/kujolang/mcp/releases/tag/v1.3.1) for the exact source and release evidence. Assurance beta remains opt-in, required/deny and single-effect; controlled handoffs remain alpha. These package releases do not stabilize remote trust or participant SDKs.
