@@ -7,9 +7,9 @@ nav_title: AI SDK
 order: 90
 audience: developer
 difficulty: intermediate
-status: local scope verified
-version: current
-last_updated: 2026-08-23
+status: release documented
+version: 1.2.0
+last_updated: 2026-10-13
 scope: local-first
 source_repo: ai-sdk
 previous: /tools/rag/
@@ -18,44 +18,55 @@ tags: [tool, ai, providers]
 ---
 
 
-## Use it when…
+## Use it when
 
-You need a provider-gated chat or embedding call with a normalized contract and a fixture path for local checks.
+You need chat or embedding calls with a shared response contract, retries, redaction, usage accounting, and offline fixtures.
 
-## Interface overview
+## Install
 
-| Surface | What is available |
-| --- | --- |
-| Library | `create_client`, `create_message`, chat completion, streaming, and embeddings |
-| Providers | Provider packages with public AI SDK drivers, plus custom OpenAI-compatible endpoints |
-| Reliability | Retries, backoff, timeouts, fallback providers, circuit breakers, and budgets |
-| Safety and proof | Endpoint allowlists, protected headers, redaction, fixtures, schemas, and benchmarks |
-
-## Main workflows
-
-- Import `src/ai_sdk.kujo` and `src/providers.kujo`; this library does not add a separate user-facing CLI.
-- Run the bundled example with no key to exercise deterministic fixture mode.
-- Add a provider preset or custom endpoint while keeping the application response contract unchanged.
-- Stream normalized `delta`, `done`, and `error` events, or request embeddings through the same client boundary.
-
-## Five-minute example
+AI SDK 1.2.0 requires Kujo 1.6.0 or newer and Kennel 1.1.0 or newer:
 
 ```bash
-kujo run examples/main.kujo
+kennel add ai-sdk@1.2.0
+kennel install
 ```
 
-## What you get
+Import `src/ai_sdk.kujo` and `src/providers.kujo`. AI SDK is a library; it has no separate CLI. In a checkout, run `kujo run examples/main.kujo` to try fixtures without a provider key.
 
-Normalized response and embedding shapes, retry/backoff behavior, redaction, and an offline fixture mode.
+## What 1.2.0 changes
 
-## How it fits
+- Client copies share persistent process-local counters. Inspect them with `client_state`; use the documented reset APIs for cleanup.
+- Completed provider usage remains charged when a budget or structured-output check rejects a result. Structured-output retries recheck budgets.
+- Optional `governance_mode: "strict"` holds backend ownership through a request and its accounting. `atomic_memory_backend()` supplies process-local ownership and quarantine after uncertain writes.
+- Fallback entry options cannot bypass strict mode or atomic-backend validation.
+- Native downloads enforce response limits while reading. Endpoint allowlists disable redirects.
 
-Move to [Agents SDK](/tools/agents-sdk/) when calls need tools, approvals, handoffs, or stores.
+## Streaming and compatibility
 
-## Boundaries
+Existing provider dictionaries, native driver hooks, two-argument custom transports, and normalized `delta`, `done`, and `error` callbacks keep their contracts. Response, provider-driver, and model-catalog versions remain 1.0.0.
 
-Provider-specific proof and credentials remain integrator-owned; this is not a hosted model gateway. See the [provider index](/ecosystem/providers/) for package versions, native APIs, authentication variables, and driver availability.
+The optional `on_transport_chunk` callback delivers transport text as it arrives. It requires a runtime with `http_stream_collect`; published Kujo 1.5.0 and 1.6.0 reject the option before I/O. Existing buffered streaming works on those releases. The release notes identify tested source backports; installing AI SDK does not replace your runtime.
+
+## Accounting boundaries
+
+Best-effort accounting remains the default. Strict mode rejects provider fallback and requires a shared backend with acquire/get/set/release hooks. The built-in backend is process-local. Distributed budgets require durable state and fenced ownership. Reconcile uncertain usage before clearing quarantine; do not reset it automatically on retries.
+
+A completed request may exceed its remaining budget and is charged before rejection. SDK accounting is not a provider-side hard spending cap.
+
+## Verification
+
+The full local release gate passes 185 Kujo tests on both published 1.5.0 and 1.6.0, plus wrapper, HTTP, schema, example, documentation, and benchmark checks. The declared minimum remains 1.6.0. The release notes record live-provider evidence separately; offline fixtures do not certify a deployment.
+
+## Related tools
+
+Use [Agents SDK](/tools/agents-sdk/) when calls need tools, approvals, handoffs, or stores. See the [provider index](/ecosystem/providers/) for native APIs, authentication variables, and driver availability.
 
 ## Reference
 
-See the [AI SDK repository](https://github.com/kujolang/ai-sdk) and the [AI runtime basics](/learn/ai-runtime/) guide.
+- [AI SDK 1.2.0 release](https://github.com/kujolang/ai-sdk/releases/tag/v1.2.0)
+- [Release notes and runtime requirements](https://github.com/kujolang/ai-sdk/blob/v1.2.0/docs/RELEASE_1_2_0.md)
+- [AI runtime basics](/learn/ai-runtime/)
+
+## License
+
+MIT
