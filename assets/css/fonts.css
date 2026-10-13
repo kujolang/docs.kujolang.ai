@@ -1,0 +1,16 @@
+/* Kujo Docs typography: local Site Kit asset. */
+@font-face {
+  font-family: "Departure Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../sitekit/DepartureMono-Regular.woff2") format("woff2"),
+       url("../sitekit/DepartureMono-Regular.woff") format("woff");
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+button, input, textarea, select,
+code, pre, .title-font {
+  font-family: "Departure Mono", "SFMono-Regular", "Cascadia Code", "Roboto Mono", "Liberation Mono", Menlo, Consolas, monospace;
+}
