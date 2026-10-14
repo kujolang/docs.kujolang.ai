@@ -403,7 +403,8 @@
         "Tags and source-only packages",
         "Agent discovery",
         "Kujo 1.8 runtime and companion delivery",
-        "Agents SDK 1.1.3"
+        "Agents SDK 1.1.3",
+        "October 14 capability updates"
       ],
       "text": "This inventory was checked against all 86 public kujolang repositories on September 9, 2026 , with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP and Dispatch from September 29, SSG from October 12, Kujo from October 4, Tribunal from October 7, Commerce from October 10, and"
     },
@@ -565,14 +566,14 @@
     },
     {
       "title": "Install Kujo",
-      "description": "Install Kujo v1.8.0 and the tool group you need, or build the CLI from source.",
+      "description": "Install Kujo v1.8.1 and the tool group you need, or build the CLI from source.",
       "url": "https://docs.kujolang.ai/install/",
       "route": "install/",
       "section": "Start here",
       "audience": "developer",
       "difficulty": "beginner",
       "status": "stable",
-      "version": "1.8.0",
+      "version": "1.8.1",
       "tags": [
         "[install, cli, stable]"
       ],
@@ -585,7 +586,7 @@
         "Verify",
         "Troubleshooting"
       ],
-      "text": "Kujo v1.8.0 is the current stable release. On Linux and macOS, the public ecosystem installer selects the correct archive, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory. On Windows, use the Windows archive from the release or the npm installation path described in the runtime repository. Install Kuj"
+      "text": "Kujo v1.8.1 is the current stable release. On Linux and macOS, the public ecosystem installer selects the correct archive, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory. On Windows, use the Windows archive from the release or the npm installation path described in the runtime repository. Install Kuj"
     },
     {
       "title": "Quickstart",
@@ -713,7 +714,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "stable",
-      "version": "1.8.0",
+      "version": "1.8.1",
       "tags": [
         "[upgrade, runtime, cli, installation]"
       ],
@@ -1162,7 +1163,7 @@
       "audience": "developer",
       "difficulty": "beginner",
       "status": "local scope verified",
-      "version": "current",
+      "version": "1.0.1",
       "tags": [
         "[tool, evidence, failures]"
       ],
@@ -1174,7 +1175,8 @@
         "What you get",
         "How it fits",
         "Boundaries",
-        "Reference"
+        "Reference",
+        "October 14 release update"
       ],
       "text": "Use it when\u2026 A local failure needs to be handed to another person with enough context to reproduce it without leaking secrets. Interface overview | Surface | What is available | | --- | --- | | Capture | A failed command, --from-log, or --manual evidence | | Review | list, show latest, structured case JSON, Markdown, and reproduction notes | | Operations | d"
     },
@@ -1187,7 +1189,7 @@
       "audience": "developer",
       "difficulty": "beginner",
       "status": "local scope verified",
-      "version": "current",
+      "version": "1.1.0",
       "tags": [
         "[tool, review, blast-radius]"
       ],
@@ -1236,7 +1238,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "current",
+      "version": "1.1.1",
       "tags": [
         "[tool, drift, docs]"
       ],
@@ -1248,7 +1250,8 @@
         "What you get",
         "How it fits",
         "Boundaries",
-        "Reference"
+        "Reference",
+        "October 14 release update"
       ],
       "text": "Use it when\u2026 The same contract appears in code, docs, examples, specs, or generated files and you want to know whether the surfaces still agree. Interface overview | Surface | What is available | | --- | --- | | Scan | scan across the current or selected project directory | | Focused checks | check <rule for CLI/docs and other known agreement contracts | | O"
     },
@@ -1283,7 +1286,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "1.3.0",
+      "version": "1.4.0",
       "tags": [
         "[tool, workflows, orchestration]"
       ],
@@ -1296,9 +1299,10 @@
         "How it fits",
         "Boundaries",
         "Reference",
-        "Dispatch 1.3.0",
+        "Dispatch 1.4.0",
         "Experimental companion contracts",
-        "Agent City"
+        "Agent City",
+        "Upgrade to 1.4.0"
       ],
       "text": "Use it when\u2026 A task is a sequence of steps that can pause, resume, require approval, and leave a run receipt. Interface overview | Surface | What is available | | --- | --- | | Execute | demo, workflow templates, workflow files, JSON inputs, and tool allow/deny lists | | Continue | resume and decision-file resume paths | | Inspect | runs, show, inspect, JSON"
     },
@@ -1333,7 +1337,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "current",
+      "version": "1.1.0",
       "tags": [
         "[tool, evaluation, checks]"
       ],
@@ -1346,7 +1350,8 @@
         "How it fits",
         "Boundaries",
         "Reference",
-        "Published release and current development"
+        "Published release and current development",
+        "October 14 release update"
       ],
       "text": "Use it when\u2026 You need explicit, deterministic checks around JSON, HTTP, files, commands, or a policy decision. Interface overview | Surface | What is available | | --- | --- | | Suites | JSON suite files with JSON, HTTP, file, command, and policy checks | | Execution | run, parallel workers, summary-only output, and output directories | | Review | report, co"
     },
@@ -1359,7 +1364,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "current",
+      "version": "1.1.0",
       "tags": [
         "[tool, architecture, boundaries]"
       ],
@@ -1371,7 +1376,8 @@
         "What you get",
         "How it fits",
         "Boundaries",
-        "Reference"
+        "Reference",
+        "October 14 release update"
       ],
       "text": "Use it when\u2026 The repository has architectural boundaries, import rules, or a baseline that should fail loudly when changed. Interface overview | Surface | What is available | | --- | --- | | Setup | init and validate for fence.toml rules | | Checks | Full or --changed-only boundary analysis with optional baselines | | Explanation | explain <path for the rule"
     },
@@ -1431,7 +1437,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "stable",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "tags": [
         "[tool, packages, dependencies]"
       ],
@@ -1444,8 +1450,9 @@
         "How it fits",
         "Boundaries",
         "Reference",
-        "Release 1.1.1",
-        "Agent City"
+        "Release 1.2.0",
+        "Agent City",
+        "October 14 release update"
       ],
       "text": "Use it when\u2026 Your project needs a dependency manifest, resolved lockfile, source policy, or trust decision that should be reviewable. Interface overview | Surface | What is available | | --- | --- | | Project setup | new, init, and manifest generation | | Dependencies | add, install, and frozen lockfile validation | | Sources | Official HTTPS registry, local"
     },
@@ -1520,7 +1527,8 @@
         "Experimental companion contracts",
         "Runtime maintenance",
         "Native scripting",
-        "Reference"
+        "Reference",
+        "Runtime patch 1.8.1"
       ],
       "text": "Use it when\u2026 You want to write a small program, check it, and run it with the same VM-first CLI path used by the rest of the ecosystem. Interface overview | Surface | What is available | | --- | --- | | Run and inspect | kujo run <file , kujo check <file , kujo doctor | | Test and document | kujo test, kujo test-run <file , kujo docgen <path | | Projects and"
     },
@@ -1583,7 +1591,7 @@
       "audience": "developer",
       "difficulty": "advanced",
       "status": "local scope verified",
-      "version": "1.3.1",
+      "version": "1.3.2",
       "tags": [
         "[tool, mcp, integrations]"
       ],
@@ -1598,7 +1606,8 @@
         "Reference",
         "Portable operation contracts",
         "Public catalog and application gateways",
-        "Version 1.3.1 and Kujo 1.7"
+        "Version 1.3.2 and Kujo 1.7",
+        "October 14 release update"
       ],
       "text": "Use it when\u2026 An agent needs a deliberate server boundary for tools or resources with roots, limits, auth, and a visible safety tier. Interface overview | Surface | What is available | | --- | --- | | Generator | make <repo with output and artifact-directory controls | | Profiles | Repo-specific discovery plus profile-only or artifacts-only generation | | Con"
     },
@@ -1662,28 +1671,25 @@
     },
     {
       "title": "Kujo for Paperclip",
-      "description": "Add focused context, change review, and reproducible failure evidence to Paperclip tasks.",
+      "description": "Project knowledge, repository understanding, native quality checks and human-approved Kujo workflows in Paperclip.",
       "url": "https://docs.kujolang.ai/tools/paperclip/",
       "route": "tools/paperclip/",
       "section": "Tools",
       "audience": "developer",
       "difficulty": "beginner",
       "status": "released",
-      "version": "0.1.7",
+      "version": "0.2.0",
       "tags": [
         "[tool, agents, context, review, evidence]"
       ],
       "headings": [
-        "Use it when\u2026",
-        "Install",
-        "Interface overview",
-        "First use",
-        "Agent tools",
-        "Safety boundary",
-        "Current install note",
-        "Reference"
+        "What is new in 0.2.0",
+        "Install and upgrade",
+        "Boundaries",
+        "Agent access and install compatibility",
+        "Upgrading from 0.1.x"
       ],
-      "text": "Use it when\u2026 Paperclip agents need a small, visible set of repository context, a clear review of change scope, or a safe record of failed command output. Kujo works in Paperclip's current task view. You do not need the Classic Task Interface. Install You need Paperclip 2026.824.1 or later and Node.js 24.11.0 or later. Restart Paperclip if it is already runni"
+      "text": "What is new in 0.2.0 Kujo for Paperclip brings repository understanding, project knowledge, native quality checks and human-approved workflows into the project and issue views. - Understand a repository: Scout maps its structure; Scent selects bounded context; ChangeBucket and PatchBrief explain a change. - Ask your project: explicitly select local files, bu"
     },
     {
       "title": "PatchBrief",
@@ -1694,7 +1700,7 @@
       "audience": "developer",
       "difficulty": "beginner",
       "status": "local scope verified",
-      "version": "current",
+      "version": "1.0.2",
       "tags": [
         "[tool, review, diff]"
       ],
@@ -1706,7 +1712,8 @@
         "What you get",
         "How it fits",
         "Boundaries",
-        "Reference"
+        "Reference",
+        "October 14 release update"
       ],
       "text": "Use it when\u2026 The implementation is done and a reviewer needs the intent, changed files, risk, and test evidence in one compact brief. Interface overview | Surface | What is available | | --- | --- | | Summary | summarize for intent, changed files, risk, and diff statistics | | Tests | suggest-tests for evidence matched to the change | | Handoff | handoff for"
     },
@@ -1861,7 +1868,7 @@
       "audience": "developer",
       "difficulty": "beginner",
       "status": "local scope verified",
-      "version": "current",
+      "version": "1.1.0",
       "tags": [
         "[tool, context, redaction]"
       ],
@@ -1873,7 +1880,8 @@
         "What you get",
         "How it fits",
         "Boundaries",
-        "Reference"
+        "Reference",
+        "October 14 release update"
       ],
       "text": "Use it when\u2026 The repository is larger than the task and the next agent or reviewer needs a compact, scoped context pack. Interface overview | Surface | What is available | | --- | --- | | Selection | Task text, model target, token budget, changed/staged filters, and path selectors | | Preview | --dry-run, compact --json, estimates, warnings, and no artifact "
     },
@@ -1935,7 +1943,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "current",
+      "version": "1.0.1",
       "tags": [
         "[tool, release, gates]"
       ],
@@ -1947,7 +1955,8 @@
         "What you get",
         "How it fits",
         "Boundaries",
-        "Reference"
+        "Reference",
+        "October 14 release update"
       ],
       "text": "Use it when\u2026 You want a release checklist and gate report that makes missing proof visible. Interface overview | Surface | What is available | | --- | --- | | Discovery | scan a repository for release-readiness evidence | | Checklist | Generate the applicable release checks and missing items | | Enforcement | gate with process-friendly exit semantics | | Com"
     },

@@ -13,7 +13,7 @@
 		})();
 	</script>
 	<title>Kujo for Paperclip | Kujo Docs</title>
-	<meta name="description" content="Add focused context, change review, and reproducible failure evidence to Paperclip tasks.">
+	<meta name="description" content="Project knowledge, repository understanding, native quality checks and human-approved Kujo workflows in Paperclip.">
 	<meta name="keywords" content="SSG, Static Site Generator">
 	<meta name="author" content="Kujo">
 	<link rel="canonical" href="https://docs.kujolang.ai/tools/paperclip/">
@@ -30,7 +30,7 @@
 	<meta name="msapplication-config" content="/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<meta property="og:title" content="Kujo for Paperclip">
-	<meta property="og:description" content="Add focused context, change review, and reproducible failure evidence to Paperclip tasks.">
+	<meta property="og:description" content="Project knowledge, repository understanding, native quality checks and human-approved Kujo workflows in Paperclip.">
 	<meta property="og:url" content="https://docs.kujolang.ai/tools/paperclip/">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="Kujo Docs">
@@ -40,13 +40,13 @@
 	<meta property="og:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Kujo for Paperclip">
-	<meta name="twitter:description" content="Add focused context, change review, and reproducible failure evidence to Paperclip tasks.">
+	<meta name="twitter:description" content="Project knowledge, repository understanding, native quality checks and human-approved Kujo workflows in Paperclip.">
 	<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
 	<meta name="twitter:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
 	<link href="../../assets/css/fonts.css" rel="stylesheet">
 	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
 	<link href="../../assets/css/style.css" rel="stylesheet">
-	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Kujo for Paperclip","name":"Kujo for Paperclip","description":"Add focused context, change review, and reproducible failure evidence to Paperclip tasks.","url":"https://docs.kujolang.ai/tools/paperclip/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Kujo for Paperclip","name":"Kujo for Paperclip","description":"Project knowledge, repository understanding, native quality checks and human-approved Kujo workflows in Paperclip.","url":"https://docs.kujolang.ai/tools/paperclip/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -101,79 +101,32 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="kujo-for-paperclip">Kujo for Paperclip</h1><p class="docs-description">Add focused context, change review, and reproducible failure evidence to Paperclip tasks.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>released</span><span class="docs-badge docs-badge-version"><span>Version</span>0.1.7</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-04</span></div>
-		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
-<p>Paperclip agents need a small, visible set of repository context, a clear review of change scope, or a safe record of failed command output.</p>
-<p>Kujo works in Paperclip&apos;s current task view. You do not need the Classic Task Interface.</p>
-<h2 id="install">Install</h2>
-<p>You need Paperclip <code>2026.824.1</code> or later and Node.js <code>24.11.0</code> or later.</p>
+		<h1 id="kujo-for-paperclip">Kujo for Paperclip</h1><p class="docs-description">Project knowledge, repository understanding, native quality checks and human-approved Kujo workflows in Paperclip.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>released</span><span class="docs-badge docs-badge-version"><span>Version</span>0.2.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-14</span></div>
+		<div class="docs-body"><h2 id="what-is-new-in-0-2-0">What is new in 0.2.0</h2>
+<p>Kujo for Paperclip brings repository understanding, project knowledge, native quality checks and human-approved workflows into the project and issue views.</p>
+<ul>
+<li><strong>Understand a repository:</strong> Scout maps its structure; Scent selects bounded context; ChangeBucket and PatchBrief explain a change.</li>
+<li><strong>Ask your project:</strong> explicitly select local files, build a private offline index, ask questions with snapshot citations, inspect freshness and delete retained indexes. No provider key is required.</li>
+<li><strong>Check quality:</strong> inspect architecture boundaries, artifact drift, task contracts, release-readiness signals and package declarations using canonical Kujo tools.</li>
+<li><strong>Build with Kujo:</strong> preview script, AI-agent, SQLite API and MCP starters. Separately enabled project creation and source run/test actions require exact human approval.</li>
+<li><strong>Run approved work:</strong> opt-in Eval execution and shipped offline Dispatch examples use human approval, bounded execution, checkpoints and retained receipts.</li>
+<li><strong>Keep evidence:</strong> inspect, compare and export bounded redacted history; explicitly attach evidence to an issue.</li>
+</ul>
+<h2 id="install-and-upgrade">Install and upgrade</h2>
+<p>Use official Paperclip <strong>2026.1012.0</strong> or later and Node.js <strong>24.11.0</strong> or later. The release is qualified against official Paperclip 2026.1012.0. No custom host fork, separate Kujo installation, provider key or manual installation of bundled tools is needed.</p>
 <pre><code class="language-bash">npx paperclipai plugin install @kujolang/paperclip</code></pre>
-<p>Restart Paperclip if it is already running, then open an issue. The Kujo workspace appears in the task view. You can also open the <strong>Kujo</strong> tab on project, issue, and run pages.</p>
-<p>The npm package includes the right Kujo runtime for supported macOS, Linux, and Windows systems. You do not need a separate Kujo install or Kujo API key.</p>
-<h2 id="interface-overview">Interface overview</h2>
-<table><thead><tr>
-<th>Surface</th>
-<th>What it does</th>
-</tr></thead><tbody>
-<tr>
-<td>Context Pack</td>
-<td>Uses Scent to select a bounded, task-specific file set before broad reading</td>
-</tr>
-<tr>
-<td>Review Pack</td>
-<td>Uses ChangeBucket and PatchBrief to measure scope, show risk signals, and prepare a handoff</td>
-</tr>
-<tr>
-<td>Failure Evidence</td>
-<td>Uses CaseFile to save supplied command details and bounded logs with sensitive values redacted</td>
-</tr>
-<tr>
-<td>Agent tools</td>
-<td>Exposes four Paperclip tools for context selection, approved file reads, change review, and failure capture</td>
-</tr>
-</tbody></table>
-<h2 id="first-use">First use</h2>
-<p>1. Open the Paperclip issue you want to work on.</p>
-<p>2. Create a focused Context Pack.</p>
-<p>3. Make and test the change with the repository&apos;s normal tools.</p>
-<p>4. Create a Review Pack.</p>
-<p>5. Save Failure Evidence when a command fails.</p>
-<p>The plugin stores the latest result in Paperclip plugin state. It does not write reports into the repository.</p>
-<h2 id="agent-tools">Agent tools</h2>
-<table><thead><tr>
-<th>Tool</th>
-<th>Use</th>
-</tr></thead><tbody>
-<tr>
-<td><code>kujolang.paperclip:get-context</code></td>
-<td>Select files at minimal, focused, or broad depth</td>
-</tr>
-<tr>
-<td><code>kujolang.paperclip:get-context-content</code></td>
-<td>Read safe content only from files selected by that Context Pack</td>
-</tr>
-<tr>
-<td><code>kujolang.paperclip:review-changes</code></td>
-<td>Measure a working tree or Git range and create a review handoff</td>
-</tr>
-<tr>
-<td><code>kujolang.paperclip:capture-failure</code></td>
-<td>Save supplied command output as redacted evidence without running it</td>
-</tr>
-</tbody></table>
-<pre><code class="language-text">Use kujolang.paperclip:get-context with task &quot;trace the OAuth callback&quot; and depth &quot;focused&quot;.
-Read only the selected files needed for the change.
-Use kujolang.paperclip:review-changes after the edit.
-If a check fails, use kujolang.paperclip:capture-failure with the command, exit code, and bounded log.</code></pre>
-<h2 id="safety-boundary">Safety boundary</h2>
-<p>The worker starts child processes without a shell, uses a canonical Paperclip workspace, caps time and output, and passes a small environment. The content tool rejects files outside the matching Context Pack, traversal, symlink escapes, binary files, and oversized files. Failure Evidence never runs a command.</p>
-<p>Suggested checks remain suggestions until another system records that they ran.</p>
-<h2 id="current-install-note">Current install note</h2>
-<p>Use the unversioned package name in the install command for now. Current Paperclip releases mishandle an exact version suffix on scoped npm packages. The fix is under review in <a href="https://github.com/paperclipai/paperclip/pull/12745">paperclipai/paperclip#12745</a>. Normal installation and use are not blocked.</p>
-<h2 id="reference">Reference</h2>
-<p>Read the <a href="https://github.com/kujolang/paperclip">Kujo for Paperclip repository</a>, <a href="https://github.com/kujolang/paperclip/blob/v0.1.7/docs/USAGE.md">complete usage guide</a>, <a href="https://github.com/kujolang/paperclip/blob/v0.1.7/docs/COMPATIBILITY.md">compatibility contract</a>, and <a href="https://github.com/kujolang/paperclip/releases/tag/v0.1.7">v0.1.7 release</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/howl/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/site-kit/" rel="next"><span>Next</span></a></nav>
+<p>Back up your Paperclip data before upgrading, upgrade the host first, install the plugin and restart Paperclip. Open an issue, check runtime health, then select <strong>Try the Kujo example</strong>. Next try <strong>Understand this repository</strong> or index explicitly selected files with <strong>Ask your project</strong>. Execution features are separately enabled in company settings; requesting approval never starts execution automatically.</p>
+<h2 id="boundaries">Boundaries</h2>
+<p>Quality reports and suggested checks are not proof that tests ran. Approved Eval and source execution run trusted code and can affect the host or network; they are not an operating-system sandbox. Starter previews do not install dependencies or start services. Workflow support is limited to the shipped offline examples; live providers and general recovery of uncertain external effects are not included.</p>
+<p>The plugin ships pinned, checksummed component sources and Kujo 1.8.1. Its offline RAG subset has separate plugin qualification; the standalone RAG 1.1.0 candidate remains unpublished pending its required review evidence. This does not certify arbitrary hosted RAG deployments.</p>
+<p>See the <a href="https://github.com/kujolang/paperclip/releases/tag/v0.2.0">0.2.0 release</a>, <a href="https://github.com/kujolang/paperclip/blob/v0.2.0/docs/USAGE.md">usage guide</a>, <a href="https://github.com/kujolang/paperclip/blob/v0.2.0/docs/EXECUTION.md">execution boundaries</a> and <a href="https://github.com/kujolang/paperclip/blob/v0.2.0/docs/KNOWLEDGE.md">knowledge guide</a>.</p>
+<h2 id="agent-access-and-install-compatibility">Agent access and install compatibility</h2>
+<p>Agents can discover the available workflows with <code>kujolang.paperclip:list-capabilities</code>. Use <code>kujolang.paperclip:get-context</code> to select bounded context, then <code>kujolang.paperclip:get-context-content</code> to read only approved selected content. <code>kujolang.paperclip:review-changes</code> and <code>kujolang.paperclip:capture-failure</code> retain the original review and evidence workflows. New execution tools may request human approval but cannot approve their own requests.</p>
+<p>Use the unversioned scoped package name in the install command above. The official host&apos;s exact-version scoped-package parsing fix remains under review in <a href="https://github.com/paperclipai/paperclip/pull/12745">paperclipai/paperclip#12745</a>; the normal installation command avoids that issue.</p>
+<h3 id="upgrading-from-0-1-x">Upgrading from 0.1.x</h3>
+<p>Back up Paperclip data. As an instance administrator, uninstall the existing Kujo plugin with <strong>data retention enabled (do not purge)</strong>, then immediately use the install command above to install the new release, then restart Paperclip. Review the expanded permissions: scheduled jobs, private database storage, local workflow folders and issue interaction/document actions support the new features. The official 2026.1012.0 host&apos;s dedicated Upgrade action rejects added capabilities; use its administrator install flow for this release. Do not select permanent data removal. The upgrade rehearsal preserves the existing plugin identity and retained failure evidence across restart.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/howl/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/site-kit/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#install">Install</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#first-use">First use</a></li><li class="toc-level-2"><a href="#agent-tools">Agent tools</a></li><li class="toc-level-2"><a href="#safety-boundary">Safety boundary</a></li><li class="toc-level-2"><a href="#current-install-note">Current install note</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#what-is-new-in-0-2-0">What is new in 0.2.0</a></li><li class="toc-level-2"><a href="#install-and-upgrade">Install and upgrade</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#agent-access-and-install-compatibility">Agent access and install compatibility</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
