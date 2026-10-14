@@ -8,8 +8,8 @@ order: 170
 audience: developer
 difficulty: beginner
 status: local scope verified
-version: current
-last_updated: 2026-08-23
+version: 1.1.0
+last_updated: "2026-10-14"
 scope: local-first
 source_repo: changebucket
 previous: /tools/runledger/

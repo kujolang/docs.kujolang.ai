@@ -8,8 +8,8 @@ order: 20
 audience: developer
 difficulty: intermediate
 status: stable
-version: 1.1.1
-last_updated: 2026-09-29
+version: 1.2.0
+last_updated: "2026-10-14"
 scope: official registry and local development
 source_repo: kennel
 previous: /tools/kujo/
@@ -74,12 +74,16 @@ The official static registry is available at [kennel.kujolang.ai](https://kennel
 
 See the [Kennel repository](https://github.com/kujolang/kennel) for manifest and trust policy details.
 
-## Release 1.1.1
+## Release 1.2.0
 
-[Kennel 1.1.1](https://github.com/kujolang/kennel/releases/tag/v1.1.1) fixes binary-safe public bootstrap downloads, preserves module boundaries in the standalone installer, and retains reviewed Git dependency identities and legitimate source modules in registry packages. Previously published archives remain immutable. The release is verified with Kujo 1.6.0; the minimum compatible runtime remains 1.4.0.
+[Kennel 1.2.0](https://github.com/kujolang/kennel/releases/tag/v1.2.0) adds offline declaration inspection and canonical registry directory URLs, preserving optional manifest/lockfile defaults. Previously published archives remain immutable. Release checks used Kujo 1.8.1.
 
-Use `kennel self update` to select the latest stable client, or `kennel self update --version 1.1.1` for an explicit version. Package checksums and provenance remain mandatory; package names alone are not trust anchors.
+Use `kennel self update` to select the latest stable client, or `kennel self update --version 1.2.0` for an explicit version. Package checksums and provenance remain mandatory; package names alone are not trust anchors.
 
 ## Agent City
 
 [Agent City](/showcases/agent-city/) has a separate application installer. It is not installed with `kennel add` or `kennel tool install`.
+
+## October 14 release update
+
+Offline declaration-only manifest inspection, preserved optional manifest/lockfile defaults and canonical registry directory URLs improve package workflows. Existing install validation remains enabled. Release verification used published Kujo 1.8.1.

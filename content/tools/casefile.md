@@ -8,8 +8,8 @@ order: 220
 audience: developer
 difficulty: beginner
 status: local scope verified
-version: current
-last_updated: 2026-08-23
+version: 1.0.1
+last_updated: "2026-10-14"
 scope: local-first
 source_repo: casefile
 previous: /tools/packwrite/
@@ -61,3 +61,7 @@ Capture only scoped, reviewable evidence; never store credentials or unrelated p
 ## Reference
 
 See the [CaseFile repository](https://github.com/kujolang/casefile).
+
+## October 14 release update
+
+Contained capture, broader redaction, bounded collection, atomic evidence artifacts and portable Windows path/ACL handling improve failure evidence.
