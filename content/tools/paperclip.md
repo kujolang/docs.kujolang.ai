@@ -45,3 +45,9 @@ Quality reports and suggested checks are not proof that tests ran. Approved Eval
 The plugin ships pinned, checksummed component sources and Kujo 1.8.1. Its offline RAG subset has separate plugin qualification; the standalone RAG 1.1.0 candidate remains unpublished pending its required review evidence. This does not certify arbitrary hosted RAG deployments.
 
 See the [0.2.0 release](https://github.com/kujolang/paperclip/releases/tag/v0.2.0), [usage guide](https://github.com/kujolang/paperclip/blob/v0.2.0/docs/USAGE.md), [execution boundaries](https://github.com/kujolang/paperclip/blob/v0.2.0/docs/EXECUTION.md) and [knowledge guide](https://github.com/kujolang/paperclip/blob/v0.2.0/docs/KNOWLEDGE.md).
+
+## Agent access and install compatibility
+
+Agents can discover the available workflows with `kujolang.paperclip:list-capabilities`. Use `kujolang.paperclip:get-context` to select bounded context, then `kujolang.paperclip:get-context-content` to read only approved selected content. `kujolang.paperclip:review-changes` and `kujolang.paperclip:capture-failure` retain the original review and evidence workflows. New execution tools may request human approval but cannot approve their own requests.
+
+Use the unversioned scoped package name in the install command above. The official host's exact-version scoped-package parsing fix remains under review in [paperclipai/paperclip#12745](https://github.com/paperclipai/paperclip/pull/12745); the normal installation command avoids that issue.
