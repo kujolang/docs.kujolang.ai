@@ -8,8 +8,8 @@ order: 120
 audience: developer
 difficulty: intermediate
 status: local scope verified
-version: current
-last_updated: 2026-08-23
+version: 1.1.0
+last_updated: "2026-10-14"
 scope: local-first
 source_repo: fence
 previous: /tools/scent/
@@ -60,3 +60,7 @@ Fence checks architecture; it is not a runtime sandbox or a complete security re
 ## Reference
 
 See the [Fence repository](https://github.com/kujolang/fence).
+
+## October 14 release update
+
+Snapshot inventory analysis, enforcement and cache improvements, governance checks and confined report publication strengthen architecture checks.

@@ -1,5 +1,10 @@
 # Changelog
 
+## Ecosystem release alignment — 2026-10-14
+
+- Align published companion versions, Dispatch 1.4.0 runtime and upgrade boundaries, and Paperclip 0.2.0 installation and feature guidance.
+- Keep standalone RAG candidate and hosted deployment qualification boundaries explicit.
+
 ## Content update — 2026-10-13
 
 - Document Agents SDK 1.1.3 installation, hardening changes, token accounting, upgrade behavior, and the cost-unit limit; update the dated release inventory.

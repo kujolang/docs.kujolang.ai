@@ -1,6 +1,6 @@
 ---
 title: Kujo for Paperclip
-description: Add focused context, change review, and reproducible failure evidence to Paperclip tasks.
+description: "Project knowledge, repository understanding, native quality checks and human-approved Kujo workflows in Paperclip."
 template: docs
 section: Tools
 nav_title: Paperclip
@@ -8,8 +8,8 @@ order: 255
 audience: developer
 difficulty: beginner
 status: released
-version: 0.1.7
-last_updated: 2026-09-04
+version: 0.2.0
+last_updated: 2026-10-14
 scope: local Paperclip integration
 source_repo: paperclip
 previous: /tools/howl/
@@ -17,69 +17,41 @@ next: /tools/site-kit/
 tags: [tool, agents, context, review, evidence]
 ---
 
-## Use it when…
+## What is new in 0.2.0
 
-Paperclip agents need a small, visible set of repository context, a clear review of change scope, or a safe record of failed command output.
+Kujo for Paperclip brings repository understanding, project knowledge, native quality checks and human-approved workflows into the project and issue views.
 
-Kujo works in Paperclip's current task view. You do not need the Classic Task Interface.
+- **Understand a repository:** Scout maps its structure; Scent selects bounded context; ChangeBucket and PatchBrief explain a change.
+- **Ask your project:** explicitly select local files, build a private offline index, ask questions with snapshot citations, inspect freshness and delete retained indexes. No provider key is required.
+- **Check quality:** inspect architecture boundaries, artifact drift, task contracts, release-readiness signals and package declarations using canonical Kujo tools.
+- **Build with Kujo:** preview script, AI-agent, SQLite API and MCP starters. Separately enabled project creation and source run/test actions require exact human approval.
+- **Run approved work:** opt-in Eval execution and shipped offline Dispatch examples use human approval, bounded execution, checkpoints and retained receipts.
+- **Keep evidence:** inspect, compare and export bounded redacted history; explicitly attach evidence to an issue.
 
-## Install
+## Install and upgrade
 
-You need Paperclip `2026.824.1` or later and Node.js `24.11.0` or later.
+Use official Paperclip **2026.1012.0** or later and Node.js **24.11.0** or later. The release is qualified against official Paperclip 2026.1012.0. No custom host fork, separate Kujo installation, provider key or manual installation of bundled tools is needed.
 
 ```bash
 npx paperclipai plugin install @kujolang/paperclip
 ```
 
-Restart Paperclip if it is already running, then open an issue. The Kujo workspace appears in the task view. You can also open the **Kujo** tab on project, issue, and run pages.
+Back up your Paperclip data before upgrading, upgrade the host first, install the plugin and restart Paperclip. Open an issue, check runtime health, then select **Try the Kujo example**. Next try **Understand this repository** or index explicitly selected files with **Ask your project**. Execution features are separately enabled in company settings; requesting approval never starts execution automatically.
 
-The npm package includes the right Kujo runtime for supported macOS, Linux, and Windows systems. You do not need a separate Kujo install or Kujo API key.
+## Boundaries
 
-## Interface overview
+Quality reports and suggested checks are not proof that tests ran. Approved Eval and source execution run trusted code and can affect the host or network; they are not an operating-system sandbox. Starter previews do not install dependencies or start services. Workflow support is limited to the shipped offline examples; live providers and general recovery of uncertain external effects are not included.
 
-| Surface | What it does |
-| --- | --- |
-| Context Pack | Uses Scent to select a bounded, task-specific file set before broad reading |
-| Review Pack | Uses ChangeBucket and PatchBrief to measure scope, show risk signals, and prepare a handoff |
-| Failure Evidence | Uses CaseFile to save supplied command details and bounded logs with sensitive values redacted |
-| Agent tools | Exposes four Paperclip tools for context selection, approved file reads, change review, and failure capture |
+The plugin ships pinned, checksummed component sources and Kujo 1.8.1. Its offline RAG subset has separate plugin qualification; the standalone RAG 1.1.0 candidate remains unpublished pending its required review evidence. This does not certify arbitrary hosted RAG deployments.
 
-## First use
+See the [0.2.0 release](https://github.com/kujolang/paperclip/releases/tag/v0.2.0), [usage guide](https://github.com/kujolang/paperclip/blob/v0.2.0/docs/USAGE.md), [execution boundaries](https://github.com/kujolang/paperclip/blob/v0.2.0/docs/EXECUTION.md) and [knowledge guide](https://github.com/kujolang/paperclip/blob/v0.2.0/docs/KNOWLEDGE.md).
 
-1. Open the Paperclip issue you want to work on.
-2. Create a focused Context Pack.
-3. Make and test the change with the repository's normal tools.
-4. Create a Review Pack.
-5. Save Failure Evidence when a command fails.
+## Agent access and install compatibility
 
-The plugin stores the latest result in Paperclip plugin state. It does not write reports into the repository.
+Agents can discover the available workflows with `kujolang.paperclip:list-capabilities`. Use `kujolang.paperclip:get-context` to select bounded context, then `kujolang.paperclip:get-context-content` to read only approved selected content. `kujolang.paperclip:review-changes` and `kujolang.paperclip:capture-failure` retain the original review and evidence workflows. New execution tools may request human approval but cannot approve their own requests.
 
-## Agent tools
+Use the unversioned scoped package name in the install command above. The official host's exact-version scoped-package parsing fix remains under review in [paperclipai/paperclip#12745](https://github.com/paperclipai/paperclip/pull/12745); the normal installation command avoids that issue.
 
-| Tool | Use |
-| --- | --- |
-| `kujolang.paperclip:get-context` | Select files at minimal, focused, or broad depth |
-| `kujolang.paperclip:get-context-content` | Read safe content only from files selected by that Context Pack |
-| `kujolang.paperclip:review-changes` | Measure a working tree or Git range and create a review handoff |
-| `kujolang.paperclip:capture-failure` | Save supplied command output as redacted evidence without running it |
+### Upgrading from 0.1.x
 
-```text
-Use kujolang.paperclip:get-context with task "trace the OAuth callback" and depth "focused".
-Read only the selected files needed for the change.
-Use kujolang.paperclip:review-changes after the edit.
-If a check fails, use kujolang.paperclip:capture-failure with the command, exit code, and bounded log.
-```
-
-## Safety boundary
-
-The worker starts child processes without a shell, uses a canonical Paperclip workspace, caps time and output, and passes a small environment. The content tool rejects files outside the matching Context Pack, traversal, symlink escapes, binary files, and oversized files. Failure Evidence never runs a command.
-
-Suggested checks remain suggestions until another system records that they ran.
-
-## Current install note
-
-Use the unversioned package name in the install command for now. Current Paperclip releases mishandle an exact version suffix on scoped npm packages. The fix is under review in [paperclipai/paperclip#12745](https://github.com/paperclipai/paperclip/pull/12745). Normal installation and use are not blocked.
-
-## Reference
-
-Read the [Kujo for Paperclip repository](https://github.com/kujolang/paperclip), [complete usage guide](https://github.com/kujolang/paperclip/blob/v0.1.7/docs/USAGE.md), [compatibility contract](https://github.com/kujolang/paperclip/blob/v0.1.7/docs/COMPATIBILITY.md), and [v0.1.7 release](https://github.com/kujolang/paperclip/releases/tag/v0.1.7).
+Back up Paperclip data. As an instance administrator, uninstall the existing Kujo plugin with **data retention enabled (do not purge)**, then immediately use the install command above to install the new release, then restart Paperclip. Review the expanded permissions: scheduled jobs, private database storage, local workflow folders and issue interaction/document actions support the new features. The official 2026.1012.0 host's dedicated Upgrade action rejects added capabilities; use its administrator install flow for this release. Do not select permanent data removal. The upgrade rehearsal preserves the existing plugin identity and retained failure evidence across restart.

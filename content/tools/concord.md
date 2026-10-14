@@ -8,8 +8,8 @@ order: 190
 audience: developer
 difficulty: intermediate
 status: local scope verified
-version: current
-last_updated: 2026-08-23
+version: 1.1.1
+last_updated: "2026-10-14"
 scope: local-first
 source_repo: concord
 previous: /tools/patchbrief/
@@ -60,3 +60,7 @@ Preview/dogfood wording remains visible while the ecosystem continues to stabili
 ## Reference
 
 See the [Concord repository](https://github.com/kujolang/concord).
+
+## October 14 release update
+
+Six native checks and fixes for drift false positives, reports, CLI/runtime behavior and bounded traversal improve artifact alignment.

@@ -8,8 +8,8 @@ order: 110
 audience: developer
 difficulty: beginner
 status: local scope verified
-version: current
-last_updated: 2026-08-23
+version: 1.1.0
+last_updated: "2026-10-14"
 scope: local-first
 source_repo: scent
 previous: /tools/agents-sdk/
@@ -59,3 +59,7 @@ Context packaging does not replace task contracts or access review.
 ## Reference
 
 See the [Scent repository](https://github.com/kujolang/scent).
+
+## October 14 release update
+
+Content-free selection metadata, packing correctness and performance, and Windows path handling improve focused context selection.

@@ -8,8 +8,8 @@ order: 200
 audience: developer
 difficulty: intermediate
 status: local scope verified
-version: current
-last_updated: 2026-08-23
+version: 1.0.1
+last_updated: "2026-10-14"
 scope: local-first
 source_repo: shipcheck
 previous: /tools/concord/
@@ -60,3 +60,7 @@ Preview/experimental wording stays visible. A gate report is not a production ce
 ## Reference
 
 See the [ShipCheck repository](https://github.com/kujolang/shipcheck).
+
+## October 14 release update
+
+Readiness false-positive repairs, CLI validation, terminal escaping and bounded portable Git improve release-readiness reports.

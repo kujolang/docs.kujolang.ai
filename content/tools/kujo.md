@@ -87,3 +87,7 @@ Kujo v1.8.0 supports isolated imports and native package-installer primitives, a
 ## Reference
 
 Use `kujo --help`, `kujo agent --help`, `kujo doctor --json`, the [language basics](/learn/language-basics/) guide, the [Agent Projects guide](/build/owned-agent-projects/), and the [Kujo repository](https://github.com/kujolang/kujo).
+
+## Runtime patch 1.8.1
+
+[Kujo 1.8.1](https://github.com/kujolang/kujo/releases/tag/v1.8.1) is published and is the required runtime for Dispatch 1.4.0 and the Paperclip expansion. See the release for patch details; the 1.8.0 feature overview above remains historical.

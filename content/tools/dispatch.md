@@ -8,8 +8,8 @@ order: 60
 audience: developer
 difficulty: intermediate
 status: local scope verified
-version: 1.3.0
-last_updated: 2026-09-29
+version: 1.4.0
+last_updated: "2026-10-14"
 scope: local-first
 source_repo: dispatch
 previous: /tools/scout/
@@ -63,15 +63,15 @@ Live integrations need separate proof; local workflow orchestration is the docum
 
 See the [Dispatch repository](https://github.com/kujolang/dispatch).
 
-## Dispatch 1.3.0
+## Dispatch 1.4.0
 
-[Dispatch 1.3.0](https://github.com/kujolang/dispatch/releases/tag/v1.3.0)
-requires Kujo 1.6.0 and uses released AI SDK and Agents SDK dependencies. It adds
+[Dispatch 1.4.0](https://github.com/kujolang/dispatch/releases/tag/v1.4.0)
+requires Kujo 1.8.1 and uses released AI SDK and Agents SDK dependencies. It retains
 process-owned run locks, durable review checkpoints, failure-control decisions,
 restart-safe continuation, retrieval preferences and bounded evidence inspection.
 Stop older workers before upgrading and retain a backup; do not mix locking or
 protected-state formats across versions. Follow the repository's
-[upgrade guidance](https://github.com/kujolang/dispatch/blob/v1.3.0/docs/UPGRADING_TO_1_3.md).
+[upgrade guidance](https://github.com/kujolang/dispatch/blob/v1.4.0/docs/UPGRADING_TO_1_3.md).
 
 `resume-decision` preserves configured tool authorization. An approval applies to
 its reviewed step, not every later gate; concurrent delivery cannot create another
@@ -92,8 +92,12 @@ No exactly-once effect guarantee, universal rollback, general machine-loss
 recovery, remote participant authentication or stable participant SDK is claimed.
 Source-blind agent adoption is technical evidence; human usability validation
 remains separate. See the
-[release notes](https://github.com/kujolang/dispatch/blob/v1.3.0/docs/RELEASE_1_3_0.md).
+[release notes](https://github.com/kujolang/dispatch/releases/tag/v1.4.0).
 
 ## Agent City
 
 [Agent City](/showcases/agent-city/) shows supported Dispatch task and workflow state alongside the underlying evidence.
+
+## Upgrade to 1.4.0
+
+Dispatch 1.4.0 adds revision-bound approval recovery, graph settlement and retained-host recovery, with resource and attempt accounting. Back up persisted state and stop older workers before upgrading. Filesystem and SQLite paused-workflow upgrade, restart and recovery checks passed. Experimental graph/operator state remains bound to its original source and dependency identities; automatic cross-version graph migration is not supported. Follow the [release and upgrade evidence](https://github.com/kujolang/dispatch/blob/v1.4.0/docs/audits/dispatch-1.4.0-release.md).

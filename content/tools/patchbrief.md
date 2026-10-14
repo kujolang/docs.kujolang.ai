@@ -8,8 +8,8 @@ order: 180
 audience: developer
 difficulty: beginner
 status: local scope verified
-version: current
-last_updated: 2026-08-23
+version: 1.0.2
+last_updated: "2026-10-14"
 scope: local-first
 source_repo: patchbrief
 previous: /tools/changebucket/
@@ -60,3 +60,7 @@ This remains preview/dogfood wording until broader release proof is available.
 ## Reference
 
 See the [PatchBrief repository](https://github.com/kujolang/patchbrief).
+
+## October 14 release update
+
+Bounded direct Git execution, disabled external diff/textconv, literal path handling and portable timestamps improve review consistency.
