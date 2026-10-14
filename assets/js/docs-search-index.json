@@ -394,6 +394,7 @@
         "[ecosystem, releases, versions, installation]"
       ],
       "headings": [
+        "Source 0.1.0 \u2014 October 14, 2026",
         "Start here",
         "What changed in 1.8",
         "Experimental companion contracts",
@@ -1997,26 +1998,26 @@
     },
     {
       "title": "Source",
-      "description": "Coordinate agent-first software work, evidence, decisions, and canonical Git state.",
+      "description": "Run Source 0.1.0 to connect Git proposals with tasks, agent sessions, evidence and authorized review decisions.",
       "url": "https://docs.kujolang.ai/tools/source/",
       "route": "tools/source/",
       "section": "Tools",
       "audience": "developer",
       "difficulty": "advanced",
-      "status": "MVP",
-      "version": "current",
+      "status": "experimental release",
+      "version": "0.1.0",
       "tags": [
         "[tool, git, collaboration, agents]"
       ],
       "headings": [
-        "Use it when\u2026",
-        "Interface overview",
-        "Five-minute example",
-        "What you get",
-        "Boundaries",
+        "Use it when",
+        "Install and run",
+        "Review and promotion",
+        "Cloudflare profile",
+        "Verification and limits",
         "Reference"
       ],
-      "text": "Use it when\u2026 A project needs work, sessions, changes, evidence, decisions, bounded agent capabilities, and canonical Git state represented in one inspectable system. Interface overview Source includes a CLI, HTTP API, management UI, smart-HTTP Git transport, capability-gated auth, JSON/SQLite/Postgres storage paths, organization and project isolation, a dura"
+      "text": "Use it when You need to trace an agent's proposed Git change through its task, session, evidence and review decision. Source provides a browser UI, CLI, HTTP API and scoped Git access around the same workflow. Install and run Source is public and MIT-licensed. Use Node.js 22, npm and Git: This local demo needs no Cloudflare account, PostgreSQL server or AI A"
     },
     {
       "title": "Spec",
