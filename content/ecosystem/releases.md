@@ -16,6 +16,10 @@ tags: [ecosystem, releases, versions, installation]
 
 This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP and Dispatch from September 29, SSG from October 12, Kujo from October 4, Tribunal from October 7, Commerce from October 10, and AI SDK and Agents SDK from October 13. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
 
+## Source 0.1.0 — October 14, 2026
+
+[Source 0.1.0](https://github.com/kujolang/source/releases/tag/v0.1.0) is the first public MIT release of the Git review and evidence platform. Its Node.js server, CLI and browser UI connect agent proposals to authorized decisions. Install through Git and npm; Source is not a Kennel package. The [Source guide](/tools/source/) covers local demos, Cloudflare integration and experimental deployment boundaries.
+
 ## Start here
 
 Install [Kujo 1.8.0](/install/) for the current runtime. A standalone binary runs ordinary Kujo programs without Python, Node.js, or Rust. Individual applications and tools retain their own dependencies, supported platforms, runtime pins, and update procedures.

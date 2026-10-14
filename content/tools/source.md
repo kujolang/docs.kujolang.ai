@@ -1,47 +1,67 @@
 ---
 title: Source
-description: Coordinate agent-first software work, evidence, decisions, and canonical Git state.
+description: Run Source 0.1.0 to connect Git proposals with tasks, agent sessions, evidence and authorized review decisions.
 template: docs
 section: Tools
 nav_title: Source
 order: 27
 audience: developer
 difficulty: advanced
-status: MVP
-version: current
-last_updated: 2026-08-23
+status: experimental release
+version: 0.1.0
+last_updated: 2026-10-14
 scope: local evaluation and deployment integration
 source_repo: source
 tags: [tool, git, collaboration, agents]
 ---
 
-## Use it when…
+## Use it when
 
-A project needs work, sessions, changes, evidence, decisions, bounded agent capabilities, and canonical Git state represented in one inspectable system.
+You need to trace an agent's proposed Git change through its task, session, evidence and review decision. Source provides a browser UI, CLI, HTTP API and scoped Git access around the same workflow.
 
-## Interface overview
+## Install and run
 
-Source includes a CLI, HTTP API, management UI, smart-HTTP Git transport, capability-gated auth, JSON/SQLite/Postgres storage paths, organization and project isolation, a durable job queue, and evidence integration seams for Kujo tools.
-
-## Five-minute example
+Source is public and MIT-licensed. Use Node.js 22, npm and Git:
 
 ```bash
-npm install
-npm test
-node bin/source.js demo --password '<12+ character local password>'
-node bin/source.js serve --port 8787
+git clone --branch v0.1.0 https://github.com/kujolang/source.git
+cd source
+npm ci
+npm run demo:contest -- --trace
 ```
 
-The demo prints the exact IDs used to sign in and does not create a shared default password.
+This local demo needs no Cloudflare account, PostgreSQL server or AI API key. Three scripted contributors create real commits and proposals. The demo checks approval denials, stale updates, conflict recovery and accepted promotion.
 
-## What you get
+To inspect the result, use the directory printed by the command:
 
-A local vertical slice for `Project → Work → Session → Change → Evidence → Decision → Canonical Git State`, plus agent discovery and Git contribution surfaces.
+```bash
+npm run demo:serve -- .contest-demo/run-XXXXXX
+```
 
-## Boundaries
+Open http://127.0.0.1:8787. Read the login IDs and password from that run's local `operator.json`. Keep this file private. Stop the server with Ctrl-C; each demo run has its own directory.
 
-Source is an MVP, not a blanket hosted-service claim. JSON is single-process; exposed or multi-process serving requires the documented Postgres, writer-fencing, TLS, worker, capacity, and operations controls.
+Source uses Git and npm. It is not an npm registry publication or a Kennel-installable Kujo package.
+
+## Review and promotion
+
+Source records `Work → Session → Change → Evidence → Decision → Canonical Git`. Contributors receive scoped capabilities. They can propose changes and attach checks; an authorized reviewer decides what may become canonical. Source rejects stale promotions and retains the revision history.
+
+## Cloudflare profile
+
+`npm run demo:hybrid` runs real Source, Worker handlers and Git with an emulated Artifacts service. To use live Cloudflare, follow the [hybrid setup guide](https://github.com/kujolang/source/blob/v0.1.0/docs/contest/HYBRID.md) with your own Workers/Artifacts access and securely supplied credentials.
+
+The [verified live demo](https://github.com/kujolang/source/blob/v0.1.0/docs/contest/CLOUDFLARE_LIVE.md) keeps Source and review data local. A deployed Worker creates repositories and issues short-lived credentials; accepted changes reach canonical Git on Artifacts. Expected-tip checks and retry reconciliation protect against stale updates and lost push acknowledgments.
+
+## Verification and limits
+
+Run `npm test`, `npm run test:cloudflare` and `npm run demo:hybrid` for local checks. PostgreSQL and container gates have separate prerequisites documented in the repository.
+
+Version 0.1.0 is an experimental release, not a production-readiness certification. JSON is single-process. Exposed serving requires PostgreSQL, shared durable Git storage, TLS, writer fencing and deployment-specific validation. Synchronous PostgreSQL maintenance is not atomic across records. Worker timeout does not guarantee cancellation of arbitrary action handlers. Review historical requester credentials and evidence fidelity before upgrading an affected deployment.
 
 ## Reference
 
-Source source is currently private. Public source access and installation are not available; the commands above are for authorized checkout owners.
+- [Public repository](https://github.com/kujolang/source)
+- [Source 0.1.0 release](https://github.com/kujolang/source/releases/tag/v0.1.0)
+- [Ecosystem page and hero](https://kujolang.ai/ecosystem/source/)
+- [Hardening and verification record](https://github.com/kujolang/source/blob/v0.1.0/docs/audits/repository-hardening.md)
+- [Deployment guide](https://github.com/kujolang/source/blob/v0.1.0/docs/source/23-tls-deployment.md)
