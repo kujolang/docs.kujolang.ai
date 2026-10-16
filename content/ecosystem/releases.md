@@ -68,7 +68,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [eval](https://github.com/kujolang/eval) | [v1.1.0](https://github.com/kujolang/eval/releases/tag/v1.1.0) | 2026-10-14 |
 | [fence](https://github.com/kujolang/fence) | [v1.1.0](https://github.com/kujolang/fence/releases/tag/v1.1.0) | 2026-10-14 |
 | [galleypack](https://github.com/kujolang/galleypack) | [v0.2.0](https://github.com/kujolang/galleypack/releases/tag/v0.2.0) | 2026-08-14 |
-| [howl](https://github.com/kujolang/howl) | [v1.1.0](https://github.com/kujolang/howl/releases/tag/v1.1.0) | 2026-08-11 |
+| [howl](https://github.com/kujolang/howl) | [v1.2.0](https://github.com/kujolang/howl/releases/tag/v1.2.0) | 2026-10-16 |
 | [kennel](https://github.com/kujolang/kennel) | [v1.2.0](https://github.com/kujolang/kennel/releases/tag/v1.2.0) | 2026-10-14 |
 | [kujo](https://github.com/kujolang/kujo) | [v1.8.1](https://github.com/kujolang/kujo/releases/tag/v1.8.1) | 2026-10-10 |
 | [kujo-agents](https://github.com/kujolang/kujo-agents) | [v1.4.0](https://github.com/kujolang/kujo-agents/releases/tag/v1.4.0) | 2026-09-07 |
