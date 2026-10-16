@@ -101,7 +101,7 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="howl">Howl</h1><p class="docs-description">Render verified examples into Markdown, HTML, SVG, gallery, and caption assets.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-08-23</span></div>
+		<h1 id="howl">Howl</h1><p class="docs-description">Render verified examples into Markdown, HTML, SVG, gallery, and caption assets.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>1.2.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-16</span></div>
 		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
 <p>Examples need deterministic cards, captions, galleries, or HTML artifacts that can be reviewed beside the source.</p>
 <h2 id="interface-overview">Interface overview</h2>
@@ -133,19 +133,44 @@
 <li>Preview a card or generate a deterministic sharing caption by ID.</li>
 <li>Render all assets into a static output directory suitable for review or SSG publication.</li>
 </ul>
+<h2 id="install-howl-1-2-0">Install Howl 1.2.0</h2>
+<p>Howl requires Kujo 1.3.1 or newer. For global installation, use Kennel 1.1.0</p>
+<p>or newer and its supported Kujo runtime:</p>
+<pre><code class="language-bash">kennel tool install howl@1.2.0
+howl version</code></pre>
+<p>Use <code>kennel add howl@1.2.0</code> for a project dependency. The repository launcher</p>
+<p>also supports an explicit <code>KUJO</code> executable.</p>
 <h2 id="five-minute-example">Five-minute example</h2>
-<pre><code class="language-bash">howl validate
+<pre><code class="language-bash">howl init
+howl validate
 howl render</code></pre>
+<h2 id="input-and-output-guarantees">Input and output guarantees</h2>
+<p>Manifests must be regular JSON files; symlinks to regular manifests are supported.</p>
+<p>Examples and assets must remain inside the manifest directory, including symlink</p>
+<p>targets. The <code>index</code> ID is reserved for the gallery. Output targets cannot be</p>
+<p>symlinks or collide with input files.</p>
+<p>Changed artifacts are replaced atomically; identical output retains its mtime.</p>
+<p>Forced init checks both destinations before replacing an example. A render is</p>
+<p>atomic per file, not a multi-file transaction; directories and ancestors must</p>
+<p>remain trusted.</p>
+<p>Metadata commands avoid loading unused example/asset contents. Rendering loads</p>
+<p>one card at a time, and SVG wrapping stops once overflow is proven. Standard SVG</p>
+<p>skips unused assets; transparent social SVG skips its background. Full public</p>
+<p>card models retain requested assets.</p>
+<p>For IDs beginning with <code>--</code>, end option parsing first:</p>
+<pre><code class="language-bash">howl show -- --format
+howl caption --platform x -- --format</code></pre>
 <h2 id="what-you-get">What you get</h2>
-<p>Verified example assets in Markdown, HTML, SVG, gallery, and caption forms.</p>
+<p>Reviewable example assets in Markdown, HTML, SVG, gallery, and caption forms.</p>
 <h2 id="how-it-fits">How it fits</h2>
 <p>Use with <a href="/showcases/ssg/">SSG</a> when examples need to become published documentation.</p>
 <h2 id="boundaries">Boundaries</h2>
 <p>Howl renders examples; it is not a scheduler or an AI caller.</p>
 <h2 id="reference">Reference</h2>
-<p>See the <a href="https://github.com/kujolang/howl">Howl repository</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/ward/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/paperclip/" rel="next"><span>Next</span></a></nav>
+<p>See the <a href="https://github.com/kujolang/howl/releases/tag/v1.2.0">Howl 1.2.0 release</a></p>
+<p>and <a href="https://github.com/kujolang/howl">Howl repository</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/ward/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/paperclip/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#install-howl-1-2-0">Install Howl 1.2.0</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#input-and-output-guarantees">Input and output guarantees</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">

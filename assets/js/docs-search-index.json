@@ -1412,7 +1412,7 @@
       "audience": "developer",
       "difficulty": "beginner",
       "status": "local scope verified",
-      "version": "current",
+      "version": "1.2.0",
       "tags": [
         "[tool, examples, publishing]"
       ],
@@ -1420,7 +1420,9 @@
         "Use it when\u2026",
         "Interface overview",
         "Main workflows",
+        "Install Howl 1.2.0",
         "Five-minute example",
+        "Input and output guarantees",
         "What you get",
         "How it fits",
         "Boundaries",
