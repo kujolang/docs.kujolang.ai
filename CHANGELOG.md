@@ -233,3 +233,5 @@ All notable changes to Kujo Docs are documented here.
 
 - Code-copy controls now work across the home hero and generated code blocks.
 - Nested-page footer links, Markdown tables, route ordering, duplicate page titles, and missing-route behavior.
+
+- Protect npm commands in section guides from Cloudflare email obfuscation, matching the main installation page.
