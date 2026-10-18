@@ -404,7 +404,8 @@
         "Agent discovery",
         "Kujo 1.8 runtime and companion delivery",
         "Agents SDK 1.1.3",
-        "October 14 capability updates"
+        "October 14 capability updates",
+        "Kujo OpenCode launch \u2014 2026-10-18"
       ],
       "text": "This inventory was checked against all 86 public kujolang repositories on September 9, 2026 , with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP and Dispatch from September 29, SSG from October 12, Kujo from October 4, Tribunal from October 7, Commerce from October 10, and"
     },
@@ -1481,6 +1482,33 @@
         "Operate and upgrade"
       ],
       "text": "Use it when\u2026 You want Command Code to discover and run a broad set of Kujo tools through one local MCP server while preserving Kujo approvals, receipts, identities, and project boundaries. Install The GitHub release is live. npm publication is temporarily pending restoration of the package's trusted-publisher or NPM TOKEN authorization, so the command above "
+    },
+    {
+      "title": "Kujo OpenCode",
+      "description": "Install Kujo tools in OpenCode 2, choose a specialist, review approvals, and inspect receipts.",
+      "url": "https://docs.kujolang.ai/tools/kujo-opencode/",
+      "route": "tools/kujo-opencode/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "released",
+      "version": "0.2.0",
+      "tags": [
+        "[tool, opencode, agents, ability, integration]"
+      ],
+      "headings": [
+        "Use it when",
+        "Install and verify",
+        "Choose a profile",
+        "Pick a specialist",
+        "Included projects",
+        "Review approvals and receipts",
+        "Connect a provider",
+        "Optional browser and services",
+        "Update and recover",
+        "Verified release scope"
+      ],
+      "text": "Use it when You want OpenCode to inspect a repository, build and test Kujo programs, review changes, check browser workflows, or collect release evidence. Kujo OpenCode provides a native plugin, six focused specialists, and a local MCP fallback. OpenCode owns the model connection; Kujo runs supported tools locally. Install and verify Requirements: Node.js 20"
     },
     {
       "title": "Kujo Pi",

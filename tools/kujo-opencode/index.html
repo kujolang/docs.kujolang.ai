@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="kujo-light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		(function() {
+			try {
+				if (window.localStorage.getItem('sk-theme') === 'kujo-dark') {
+					document.documentElement.dataset.theme = 'kujo-dark';
+				}
+			} catch (error) {}
+		})();
+	</script>
+	<title>Kujo OpenCode | Kujo Docs</title>
+	<meta name="description" content="Install Kujo tools in OpenCode 2, choose a specialist, review approvals, and inspect receipts.">
+	<meta name="keywords" content="SSG, Static Site Generator">
+	<meta name="author" content="Kujo">
+	<link rel="canonical" href="https://docs.kujolang.ai/tools/kujo-opencode/">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/assets/img/kujo-logomark-black.svg" color="#000000">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="application-name" content="Kujo Docs">
+	<meta name="apple-mobile-web-app-title" content="Kujo Docs">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Kujo OpenCode">
+	<meta property="og:description" content="Install Kujo tools in OpenCode 2, choose a specialist, review approvals, and inspect receipts.">
+	<meta property="og:url" content="https://docs.kujolang.ai/tools/kujo-opencode/">
+	<meta property="og:type" content="article">
+	<meta property="og:site_name" content="Kujo Docs">
+	<meta property="og:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Kujo OpenCode">
+	<meta name="twitter:description" content="Install Kujo tools in OpenCode 2, choose a specialist, review approvals, and inspect receipts.">
+	<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta name="twitter:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<link href="../../assets/css/fonts.css" rel="stylesheet">
+	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Kujo OpenCode","name":"Kujo OpenCode","description":"Install Kujo tools in OpenCode 2, choose a specialist, review approvals, and inspect receipts.","url":"https://docs.kujolang.ai/tools/kujo-opencode/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="docs-topbar" id="navigation">
+	<div class="docs-topbar-row">
+		<a class="docs-brand" href="../../index.html"><img class="docs-brand-mark" src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"> <span>Docs</span></a>
+		<label class="docs-search-shell">
+			<span class="sr-only">Search documentation</span>
+			<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
+		</label>
+		<div class="docs-header-actions">
+			<button class="docs-theme-button docs-icon-button" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-docs-theme>
+				<svg class="docs-moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c.132 0 .263 .003 .393 .008a7.5 7.5 0 0 0 7.599 9.6A9 9 0 1 1 12 3"/></svg>
+				<svg class="docs-sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-4 0a4 4 0 1 0 8 0 4 4 0 1 0-8 0M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+			</button>
+			<button class="docs-menu-button docs-icon-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu>
+				<svg class="docs-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+				<svg class="docs-close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+			</button>
+		</div>
+	</div>
+	<nav id="primary-navigation" class="docs-primary-nav" aria-label="Primary navigation">
+		<a href="/start-here/">Start here</a>
+		<a href="/learn/">Learn Kujo</a>
+		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
+		<a href="/tools/">Tools</a>
+		<a href="/showcases/">Showcases</a>
+	</nav>
+</header>
+<div id="docs-search-results" class="docs-search-results" aria-live="polite"></div>
+<main class="docs-shell" id="main-content">
+	<aside class="docs-sidebar" aria-label="Documentation sections">
+		<p class="docs-sidebar-label">Browse</p>
+		<ul>
+			<li><a href="/start-here/">Start here</a></li>
+			<li><a href="/install/">Install Kujo</a></li>
+			<li><a href="/upgrade/">Upgrade Kujo</a></li>
+			<li><a href="/quickstart/">Quickstart</a></li>
+			<li><a href="/choose-a-path/">Choose a path</a></li>
+			<li><a href="/learn/">Learn Kujo</a></li>
+			<li><a href="/build/">Build with Kujo</a></li>
+			<li><a href="/review/">Reviewable work</a></li>
+			<li><a href="/tools/">Tools</a></li>
+			<li><a href="/showcases/">Showcases</a></li>
+			<li><a href="/collections/">Collections</a></li>
+			<li><a href="/ecosystem/">Ecosystem</a></li>
+			<li><a href="/reference/">Reference</a></li>
+			<li><a href="/security/">Security model</a></li>
+			<li><a href="/release-boundaries/">Release boundaries</a></li>
+			<li><a href="/support/">Support</a></li>
+		</ul>
+	</aside>
+	<article class="docs-article">
+		<h1 id="kujo-opencode">Kujo OpenCode</h1><p class="docs-description">Install Kujo tools in OpenCode 2, choose a specialist, review approvals, and inspect receipts.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>released</span><span class="docs-badge docs-badge-version"><span>Version</span>0.2.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-18</span></div>
+		<div class="docs-body"><h2 id="use-it-when">Use it when</h2>
+<p>You want OpenCode to inspect a repository, build and test Kujo programs, review</p>
+<p>changes, check browser workflows, or collect release evidence. Kujo OpenCode</p>
+<p>provides a native plugin, six focused specialists, and a local MCP fallback.</p>
+<p>OpenCode owns the model connection; Kujo runs supported tools locally.</p>
+<h2 id="install-and-verify">Install and verify</h2>
+<p>Requirements: Node.js 20 or newer, npm, Git, and OpenCode 2 version 2.0.31 or</p>
+<p>newer. OpenCode 1 is not supported.</p>
+<pre><code class="language-sh">npm install --global @kujolang/kujo-opencode@0.2.0
+cd /path/to/your/project
+kujo-opencode setup
+kujo-opencode doctor
+kujo-opencode demo
+opencode</code></pre>
+<p>Setup downloads 28 pinned Kujo source repositories and the runtime, so allow</p>
+<p>several minutes, internet access, and disk space. A separate global Kujo install</p>
+<p>is not required. Doctor reports readiness and suggested fixes. The demo performs</p>
+<p>a read-only ShipCheck scan and returns a receipt without a model call. A successful</p>
+<p>scan alone does not certify your project for release.</p>
+<p>Open <code>/kujo</code> in OpenCode to choose a profile, manage individual capabilities,</p>
+<p>select a specialist, review a pending approval, or inspect evidence.</p>
+<h2 id="choose-a-profile">Choose a profile</h2>
+<table><thead><tr>
+<th>Profile</th>
+<th>Capabilities</th>
+<th>Use it for</th>
+</tr></thead><tbody>
+<tr>
+<td>Essentials</td>
+<td>5</td>
+<td>Repository understanding and change inspection</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>18</td>
+<td>Architecture, task contracts, context, and change size</td>
+</tr>
+<tr>
+<td>Build</td>
+<td>17</td>
+<td>Source inspection, reviewed execution, and starter projects</td>
+</tr>
+<tr>
+<td>Ship</td>
+<td>30</td>
+<td>Verification and durable release evidence</td>
+</tr>
+<tr>
+<td>Full</td>
+<td>62</td>
+<td>All supported operations, including optional service tools</td>
+</tr>
+</tbody></table>
+<p>You can also manage exposure from the terminal:</p>
+<pre><code class="language-sh">kujo-opencode profiles
+kujo-opencode profile review
+kujo-opencode enable lens
+kujo-opencode abilities</code></pre>
+<p>Restart OpenCode after CLI exposure changes. Native capability changes refresh</p>
+<p>immediately after host permission. Overrides survive profile changes and updates.</p>
+<p>Neither a profile nor an enabled capability grants permission to execute effects.</p>
+<h2 id="pick-a-specialist">Pick a specialist</h2>
+<table><thead><tr>
+<th>Specialist</th>
+<th>Work</th>
+</tr></thead><tbody>
+<tr>
+<td>Understand</td>
+<td>Scout repository inspection and Scent context packs</td>
+</tr>
+<tr>
+<td>Build</td>
+<td>Kujo source inspection, starter creation, and reviewed source/test execution</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>PatchBrief summaries, ChangeBucket measurements, and scoped checks</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td>Lens flow validation and optional real-browser checks</td>
+</tr>
+<tr>
+<td>Workflow</td>
+<td>Dispatch validation, execution, run inspection, and checkpoint decisions</td>
+</tr>
+<tr>
+<td>Ship</td>
+<td>ShipCheck scans, Eval runs, and linked RunLedger evidence</td>
+</tr>
+</tbody></table>
+<p>Give the specialist a concrete task in a trusted project. For example: “Review</p>
+<p>my current changes and explain the receipts,” or “Create a small Kujo starter,</p>
+<p>show me the proposed files, then run its checks after I approve.” Ship gathers</p>
+<p>evidence; it does not publish a release for you.</p>
+<h2 id="included-projects">Included projects</h2>
+<ul>
+<li><strong>Repository context:</strong> Scout, Scent, RAG, and Kujo Skills.</li>
+<li><strong>Build and integration:</strong> Ability, Agents SDK, MCP, CRUD API, and Kennel.</li>
+<li><strong>Review and checks:</strong> PatchBrief, ChangeBucket, Fence, Spec, Eval, Concord, and Lens.</li>
+<li><strong>Workflow and tracking:</strong> Dispatch, RunLedger, Watchdog, Muzzle, and PackWrite.</li>
+<li><strong>Evidence and release work:</strong> Casefile, Dossier, Redact, Tribunal, VersionSeal, ShipCheck, and Howl.</li>
+</ul>
+<p>The adapter exposes supported operations, not each project&apos;s entire interface.</p>
+<p>For exact schemas and scope, see the <a href="https://github.com/kujolang/kujo-opencode/tree/v0.2.0/catalog">released catalog</a>.</p>
+<h2 id="review-approvals-and-receipts">Review approvals and receipts</h2>
+<p>Before an effectful operation, OpenCode opens the Kujo operation review. Inspect</p>
+<p>the input, effects, destination, and approval identity. Return to the permission</p>
+<p>choice and select Allow once or Reject. Closing the review grants nothing.</p>
+<p>Kujo binds approval to the exact request and records the result as a receipt.</p>
+<p>Use <code>/kujo</code> to review pending approvals or inspect evidence. After a lost Dispatch</p>
+<p>response, inspect the retained run before retrying; an uncertain response does</p>
+<p>not prove that execution failed.</p>
+<p>The explicit MCP fallback uses terminal review instead:</p>
+<pre><code class="language-sh">kujo-opencode approve REQUEST_ID</code></pre>
+<p>This command requires an interactive human decision. Agents must not approve</p>
+<p>their own actions. OpenCode&apos;s own permission checks remain separate.</p>
+<h2 id="connect-a-provider">Connect a provider</h2>
+<p>Use OpenCode&apos;s provider controls to select an account and model. For ChatGPT,</p>
+<p>choose OpenAI, select Sign in with ChatGPT, and finish the browser sign-in.</p>
+<p>Requests use that connection&apos;s allowance. Kujo does not copy credentials, proxy</p>
+<p>model traffic, or silently choose a paid provider.</p>
+<p>Live acceptance used <code>openai/gpt-5.6-sol</code> on macOS x64 with OpenCode 2.0.32:</p>
+<p>six specialists and 50 operation checks passed. Model availability depends on</p>
+<p>your account. The free GLM and DeepSeek routes returned HTTP 403 for scoped</p>
+<p>specialist requests; their listing does not establish that they work here.</p>
+<h2 id="optional-browser-and-services">Optional browser and services</h2>
+<p>Lens flow validation does not need Chromium. Real browser checks require an</p>
+<p>explicit installation:</p>
+<pre><code class="language-sh">kujo-opencode browser install</code></pre>
+<p>Watchdog delivery and RunLedger lifecycle tracking are opt-in. Setup does not</p>
+<p>start services or turn on background telemetry. Remote Ability gateways, Leash,</p>
+<p>and other private services require their own configuration and authorization.</p>
+<p>Read the <a href="https://github.com/kujolang/kujo-opencode/blob/v0.2.0/docs/SERVICE-SUPPORT.md">service support boundaries</a></p>
+<p>before enabling them.</p>
+<h2 id="update-and-recover">Update and recover</h2>
+<p>Install the desired published npm version, then run <code>kujo-opencode update</code> in</p>
+<p>each project. Updates preserve profiles, overrides, and receipts. Projects on</p>
+<p>older versions retain their own projections.</p>
+<ul>
+<li><code>kujo-opencode status</code> shows the active installation.</li>
+<li><code>kujo-opencode doctor</code> reports missing prerequisites and repair guidance.</li>
+<li><code>kujo-opencode recover</code> handles an interrupted source/runtime transaction; it refuses to take over a live installer.</li>
+<li><code>kujo-opencode repair</code> restores owned plugin, MCP, skill, and command projections.</li>
+<li><code>kujo-opencode uninstall</code> removes the project&apos;s integration and retains shared data. Review the released guide before using <code>--purge</code>.</li>
+</ul>
+<p>Install this host integration through npm, not <code>kennel add kujo-opencode</code>.</p>
+<p>Kennel remains available inside the integration for supported Kujo dependency</p>
+<p>operations; it does not replace npm or OpenCode&apos;s host setup.</p>
+<h2 id="verified-release-scope">Verified release scope</h2>
+<p>Native and rendered host checks passed on Linux, macOS, and Windows with</p>
+<p>OpenCode 2.0.31 and 2.0.32. Linux coverage uses glibc Ubuntu; it does not establish</p>
+<p>musl compatibility. Live model testing is scoped to macOS and ChatGPT as above.</p>
+<p>Registry installation, upgrade, signatures, provenance, and the GitHub release</p>
+<p>archive were verified separately. Later host or provider versions need their own</p>
+<p>compatibility checks.</p>
+<ul>
+<li><a href="https://kujolang.ai/ecosystem/kujo-opencode/">Ecosystem overview</a></li>
+<li><a href="https://github.com/kujolang/kujo-opencode/releases/tag/v0.2.0">Kujo OpenCode 0.2.0 release and evidence</a></li>
+<li><a href="https://github.com/kujolang/kujo-opencode/blob/v0.2.0/docs/USER-GUIDE.md">Daily-use guide</a></li>
+<li><a href="https://github.com/kujolang/kujo-opencode/blob/v0.2.0/docs/COMPATIBILITY.md">Compatibility and troubleshooting</a></li>
+<li><a href="https://github.com/kujolang/kujo-opencode/tree/v0.2.0/docs/walkthrough">Walkthrough and demo source</a></li>
+</ul></div>
+	</article>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when</a></li><li class="toc-level-2"><a href="#install-and-verify">Install and verify</a></li><li class="toc-level-2"><a href="#choose-a-profile">Choose a profile</a></li><li class="toc-level-2"><a href="#pick-a-specialist">Pick a specialist</a></li><li class="toc-level-2"><a href="#included-projects">Included projects</a></li><li class="toc-level-2"><a href="#review-approvals-and-receipts">Review approvals and receipts</a></li><li class="toc-level-2"><a href="#connect-a-provider">Connect a provider</a></li><li class="toc-level-2"><a href="#optional-browser-and-services">Optional browser and services</a></li><li class="toc-level-2"><a href="#update-and-recover">Update and recover</a></li><li class="toc-level-2"><a href="#verified-release-scope">Verified release scope</a></li></ol></nav>
+</main>
+
+<footer class="docs-footer" id="footer">
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.4.5</span></div>
+	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
+</footer>
+<script src="../../assets/sitekit/sitekit.js"></script>
+<script src="../../assets/js/docs.js"></script>
+<script src="../../assets/js/kujo-webmcp.js" data-kujo-webmcp data-kujo-site-index="../../.well-known/kujo-site-index.json" defer></script></body>
+</html>
