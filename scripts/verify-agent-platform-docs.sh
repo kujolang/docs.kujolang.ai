@@ -179,3 +179,11 @@ require_text "showcases/ssg/index.html" "https://github.com/kujolang/ssg/release
 require_text "showcases/ssg/index.html" "npm ci --ignore-scripts"
 require_text "showcases/ssg/index.html" "--repository-check-timeout"
 require_text "ecosystem/releases/index.html" "https://github.com/kujolang/ssg/releases/tag/v1.2.0"
+
+# Released OpenCode integration must be reachable, installable, and scope its evidence.
+require_file tools/kujo-opencode/index.html
+require_text tools/kujo-opencode/index.html 'npm install --global @kujolang/kujo-opencode@0.2.0'
+require_text tools/kujo-opencode/index.html 'HTTP 403'
+require_text ecosystem/tooling/index.html '/tools/kujo-opencode/'
+require_text ecosystem/releases/index.html '/tools/kujo-opencode/'
+require_text sitemap.xml '/tools/kujo-opencode/'

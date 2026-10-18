@@ -72,6 +72,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [kennel](https://github.com/kujolang/kennel) | [v1.2.0](https://github.com/kujolang/kennel/releases/tag/v1.2.0) | 2026-10-14 |
 | [kujo](https://github.com/kujolang/kujo) | [v1.8.1](https://github.com/kujolang/kujo/releases/tag/v1.8.1) | 2026-10-10 |
 | [kujo-agents](https://github.com/kujolang/kujo-agents) | [v1.4.0](https://github.com/kujolang/kujo-agents/releases/tag/v1.4.0) | 2026-09-07 |
+| [kujo-opencode](https://github.com/kujolang/kujo-opencode) | [v0.2.0](https://github.com/kujolang/kujo-opencode/releases/tag/v0.2.0) | 2026-10-17 |
 | [kujo-pi](https://github.com/kujolang/kujo-pi) | [v1.1.0](https://github.com/kujolang/kujo-pi/releases/tag/v1.1.0) | 2026-09-26 |
 | [kujo-skills](https://github.com/kujolang/kujo-skills) | [v0.7.0](https://github.com/kujolang/kujo-skills/releases/tag/v0.7.0) | 2026-09-08 |
 | [kujo-workflows](https://github.com/kujolang/kujo-workflows) | [v0.6.0](https://github.com/kujolang/kujo-workflows/releases/tag/v0.6.0) | 2026-09-07 |
@@ -142,3 +143,7 @@ The October 13 patch hardens approval, handoff, state, storage, retry, and token
 ## October 14 capability updates
 
 PatchBrief 1.0.2, CaseFile 1.0.1, MCP 1.3.2, ShipCheck 1.0.1, Scent 1.1.0, Kennel 1.2.0, Fence 1.1.0, Concord 1.1.1, Eval 1.1.0, CRUD API 1.0.1 and Dispatch 1.4.0 are published. Dispatch 1.4.0 requires Kujo 1.8.1. RAG 1.1.0 remains an unpublished candidate pending required review evidence; local functional tests do not certify hosted deployments.
+
+## Kujo OpenCode launch — 2026-10-18
+
+[Kujo OpenCode 0.2.0](/tools/kujo-opencode/) is published on npm and GitHub. It brings six specialists, 62 supported capabilities, native approvals and inspectable receipts to OpenCode 2. Registry installation and upgrade checks passed. Native host checks cover Linux, macOS and Windows; live specialist evidence uses macOS and ChatGPT. Install through npm, not Kennel.

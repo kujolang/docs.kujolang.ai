@@ -24,6 +24,7 @@ Core engineering tools include:
 - [PackWrite](/tools/packwrite/) — repeatable agent execution packs.
 - [CaseFile](/tools/casefile/) — reproducible failure evidence bundles.
 - [Lens](/tools/lens/) — browser, accessibility, link, flow, and visual checks.
+- [Kujo OpenCode](/tools/kujo-opencode/) — run Kujo tools in OpenCode 2 with six specialists, native approvals, and receipts.
 - [Kujo CMD](/tools/kujo-cmd/) — install Kujo Abilities, scoped agents, approvals, receipts, and browser QA in Command Code.
 - [Ward](/tools/ward/) — local Dependabot monitoring and remediation planning.
 - [Howl](/tools/howl/) — deterministic example and launch-proof artifacts.

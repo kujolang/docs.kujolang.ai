@@ -1,5 +1,9 @@
 # Changelog
 
+## Kujo OpenCode launch — 2026-10-18
+
+- Add the OpenCode 0.2.0 installation and daily-use guide, tooling discovery, release links, provider limits, and verified platform scope.
+
 ## Ecosystem release alignment — 2026-10-14
 
 - Align published companion versions, Dispatch 1.4.0 runtime and upgrade boundaries, and Paperclip 0.2.0 installation and feature guidance.
