@@ -3,6 +3,7 @@
 ## Kujo OpenCode launch — 2026-10-18
 
 - Add the OpenCode 0.2.0 installation and daily-use guide, tooling discovery, release links, provider limits, and verified platform scope.
+- Protect npm commands in section guides from Cloudflare email obfuscation, matching the main installation page.
 
 ## Ecosystem release alignment — 2026-10-14
 
@@ -233,5 +234,3 @@ All notable changes to Kujo Docs are documented here.
 
 - Code-copy controls now work across the home hero and generated code blocks.
 - Nested-page footer links, Markdown tables, route ordering, duplicate page titles, and missing-route behavior.
-
-- Protect npm commands in section guides from Cloudflare email obfuscation, matching the main installation page.
