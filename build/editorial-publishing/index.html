@@ -102,7 +102,7 @@
 	</aside>
 	<article class="docs-article">
 		<h1 id="editorial-publishing">Editorial publishing</h1><p class="docs-description">Move a commissioned idea through evidence, review, packaging, approval, publication, and learning.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>all</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>production-capable control plane</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-02</span></div>
-		<div class="docs-body"><p>The publishing-house tools keep ownership and evidence separate:</p>
+		<div class="docs-body"><!--email_off--><p>The publishing-house tools keep ownership and evidence separate:</p>
 <p>1. <a href="/tools/storydesk/">StoryDesk</a> owns ideas, campaigns, commissions, assignments, handoffs, and queues.</p>
 <p>2. <a href="/tools/dossier/">Dossier</a> owns claims, sources, evidence, quotes, consent, rights, and freshness.</p>
 <p>3. <a href="/tools/assetworks/">AssetWorks</a> owns media plans, provenance, and accessibility artifacts.</p>
@@ -112,7 +112,7 @@
 <p>7. <a href="/tools/presswire/">PressWire</a> owns bounded publication effects, reconciliation, corrections, and receipts.</p>
 <p>8. <a href="/tools/readersignal/">ReaderSignal</a> owns privacy-bounded measurements and evidence-linked learning.</p>
 <p>The <a href="/build/publishing-house-operator/">Publishing House Operator</a> is the durable control loop above these tools and the eleven workflow kits. It is part of the official <a href="https://github.com/kujolang/kujo-workflows/releases/tag/v0.4.0">kujo-workflows 0.4.0 release</a>. It reads StoryDesk, delegates resumable execution to Dispatch, invokes bounded workers through an explicit phase-adapter boundary, validates checksum-bound receipts, records checkpoints, routes exact-version approval, and lets PressWire own publication effects. Publication profiles currently cover the personal blog, <code>kujolang.ai</code>, <code>docs.kujolang.ai</code>, and <code>agents.kujolang.ai</code> without forking the agent roles.</p>
-<p>The control plane supports live execution and deterministic rehearsal. A production installation configures its model and retrieval phase adapter, authenticated PressWire provider for any authorized Git effect, and enabled ReaderSignal or WebOps measurement credentials. Missing deployment capabilities block only the affected work. No tool silently grants authority held by another stage, and no fixture result is presented as a live publication effect.</p></div>
+<p>The control plane supports live execution and deterministic rehearsal. A production installation configures its model and retrieval phase adapter, authenticated PressWire provider for any authorized Git effect, and enabled ReaderSignal or WebOps measurement credentials. Missing deployment capabilities block only the affected work. No tool silently grants authority held by another stage, and no fixture result is presented as a live publication effect.</p><!--/email_off--></div>
 	</article>
 
 </main>

@@ -102,7 +102,7 @@
 	</aside>
 	<article class="docs-article">
 		<h1 id="muzzle">Muzzle</h1><p class="docs-description">Run noisy workflows quietly while preserving complete logs and summaries.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.2</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-12</span></div>
-		<div class="docs-body"><h2 id="use-it-when">Use it when…</h2>
+		<div class="docs-body"><!--email_off--><h2 id="use-it-when">Use it when…</h2>
 <p>A trusted workflow produces too much console noise but its complete log and outcome still need to remain available.</p>
 <h2 id="interface-overview">Interface overview</h2>
 <table><thead><tr>
@@ -152,7 +152,7 @@ muzzle run hello-bash --json</code></pre>
 <p>Run trusted scripts only. Quiet output is not a sandbox. Raw logs can contain secrets; redaction applies to summaries. Serialize loop commands: concurrent loop writers are not coordinated.</p>
 <p>Version 1.1.2 fixes unsafe initialization and cleanup paths, ambiguous options, invalid loop writes, and failure-excerpt handling. It preserves the CLI and versioned JSON contracts. New projects ignore all <code>.muzzle/state/</code>; existing projects should add <code>state/</code> to <code>.muzzle/.gitignore</code>. Existing files are never silently rewritten. Ignore rules do not untrack files already committed.</p>
 <h2 id="reference">Reference</h2>
-<p>See the <a href="https://github.com/kujolang/muzzle">Muzzle repository</a>.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/leash/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/runledger/" rel="next"><span>Next</span></a></nav>
+<p>See the <a href="https://github.com/kujolang/muzzle">Muzzle repository</a>.</p><!--/email_off--></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/leash/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/runledger/" rel="next"><span>Next</span></a></nav>
 	</article>
 	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#main-workflows">Main workflows</a></li><li class="toc-level-2"><a href="#install-or-update">Install or update</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#what-you-get">What you get</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
 </main>

@@ -102,7 +102,7 @@
 	</aside>
 	<article class="docs-article">
 		<h1 id="packages-with-kennel">Packages with Kennel</h1><p class="docs-description">Keep manifests, lockfiles, source policy, and trust decisions deterministic.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>stable</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-13</span></div>
-		<div class="docs-body"><p>Kujo&apos;s built-in package commands and the separate Kennel client have different manifests. Choose one deliberately; their lockfiles are not interchangeable.</p>
+		<div class="docs-body"><!--email_off--><p>Kujo&apos;s built-in package commands and the separate Kennel client have different manifests. Choose one deliberately; their lockfiles are not interchangeable.</p>
 <table><thead><tr>
 <th>Tool</th>
 <th>Manifest</th>
@@ -137,7 +137,7 @@ kujo package-install --frozen</code></pre>
 <h2 id="official-registry-and-release-status">Official registry and release status</h2>
 <p><a href="https://kennel.kujolang.ai/">The official Kennel registry</a> distributes immutable first-party package releases. GitHub remains the development and release source. Public package reads need no account.</p>
 <p>Kennel <strong>1.1.0</strong> is the native registry client and requires <strong>Kujo 1.4.0 or newer</strong>. Install Kujo, install Kennel, then use package names such as <code>kennel add changebucket</code> or exact versions such as <code>kennel add changebucket@1.0.0</code>. The resulting lockfile records the exact version and verified artifact. Local development still supports <code>kennel add file:../some-local-package --alias some-local-package</code>.</p>
-<p>Read <a href="/tools/kennel/">Kennel</a> for local/source workflows and the <a href="/ecosystem/providers/">provider index</a> for pinned provider packages. Third-party accounts, scoped publishing, and private-package services remain future work.</p></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/learn/capabilities/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/learn/editor-support/" rel="next"><span>Next</span></a></nav>
+<p>Read <a href="/tools/kennel/">Kennel</a> for local/source workflows and the <a href="/ecosystem/providers/">provider index</a> for pinned provider packages. Third-party accounts, scoped publishing, and private-package services remain future work.</p><!--/email_off--></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/learn/capabilities/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/learn/editor-support/" rel="next"><span>Next</span></a></nav>
 	</article>
 	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#kennel-project-dependencies">Kennel project dependencies</a></li><li class="toc-level-2"><a href="#built-in-runtime-commands">Built-in runtime commands</a></li><li class="toc-level-2"><a href="#official-registry-and-release-status">Official registry and release status</a></li></ol></nav>
 </main>
