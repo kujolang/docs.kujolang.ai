@@ -106,8 +106,8 @@
 <h2 id="source-0-1-0-october-14-2026">Source 0.1.0 — October 14, 2026</h2>
 <p><a href="https://github.com/kujolang/source/releases/tag/v0.1.0">Source 0.1.0</a> is the first public MIT release of the Git review and evidence platform. Its Node.js server, CLI and browser UI connect agent proposals to authorized decisions. Install through Git and npm; Source is not a Kennel package. The <a href="/tools/source/">Source guide</a> covers local demos, Cloudflare integration and experimental deployment boundaries.</p>
 <h2 id="start-here">Start here</h2>
-<p>Install <a href="/install/">Kujo 1.8.1</a> for the current runtime. A standalone binary runs ordinary Kujo programs without Python, Node.js, or Rust. Individual applications and tools retain their own dependencies, supported platforms, runtime pins, and update procedures.</p>
-<p><a href="https://kennel.kujolang.ai/">Kennel&apos;s official registry</a> distributes first-party package artifacts. Kennel 1.2.0 is published separately; Kujo 1.8.0 does not change its version or historical package artifacts. See <a href="/learn/packages/">package workflows</a> before assuming that upgrading Kujo also updates Kennel or other tools.</p>
+<p>Install <a href="/install/">Kujo 1.8.2</a> for the current runtime. A standalone binary runs ordinary Kujo programs without Python, Node.js, or Rust. Individual applications and tools retain their own dependencies, supported platforms, runtime pins, and update procedures.</p>
+<p><a href="https://kennel.kujolang.ai/">Kennel&apos;s official registry</a> distributes first-party package artifacts. Kennel 1.2.0 is published separately; Kujo 1.8.2 does not change its version or historical package artifacts. See <a href="/learn/packages/">package workflows</a> before assuming that upgrading Kujo also updates Kennel or other tools.</p>
 <h2 id="what-changed-in-1-8">What changed in 1.8</h2>
 <p>Kujo 1.8.0 shares optional program analysis between CLI checking and the LSP, improves gradual inference and editor information, adds struct generator methods, and retains one measured generator-resume optimization. It strengthens VM/interpreter and optimizer-safety evidence without changing the v1 language contract.</p>
 <p>Durable review, checkpoints, restart/resume and external-effect replay control are implemented with companion tools such as Dispatch. Watchdog and RunLedger observe and correlate evidence; they do not become workflow authority.</p>
@@ -244,8 +244,8 @@
 </tr>
 <tr>
 <td><a href="https://github.com/kujolang/kujo">kujo</a></td>
-<td><a href="https://github.com/kujolang/kujo/releases/tag/v1.8.1">v1.8.1</a></td>
-<td>2026-10-10</td>
+<td><a href="https://github.com/kujolang/kujo/releases/tag/v1.8.2">v1.8.2</a></td>
+<td>2026-10-19</td>
 </tr>
 <tr>
 <td><a href="https://github.com/kujolang/kujo-agents">kujo-agents</a></td>
@@ -433,13 +433,16 @@
 <h2 id="october-14-capability-updates">October 14 capability updates</h2>
 <p>PatchBrief 1.0.2, CaseFile 1.0.1, MCP 1.3.2, ShipCheck 1.0.1, Scent 1.1.0, Kennel 1.2.0, Fence 1.1.0, Concord 1.1.1, Eval 1.1.0, CRUD API 1.0.1 and Dispatch 1.4.0 are published. Dispatch 1.4.0 requires Kujo 1.8.1. RAG 1.1.0 remains an unpublished candidate pending required review evidence; local functional tests do not certify hosted deployments.</p>
 <h2 id="kujo-opencode-launch-2026-10-18">Kujo OpenCode launch — 2026-10-18</h2>
-<p><a href="/tools/kujo-opencode/">Kujo OpenCode 0.2.0</a> is published on npm and GitHub. It brings six specialists, 62 supported capabilities, native approvals and inspectable receipts to OpenCode 2. Registry installation and upgrade checks passed. Native host checks cover Linux, macOS and Windows; live specialist evidence uses macOS and ChatGPT. Install through npm, not Kennel.</p><!--/email_off--></div>
+<p><a href="/tools/kujo-opencode/">Kujo OpenCode 0.2.0</a> is published on npm and GitHub. It brings six specialists, 62 supported capabilities, native approvals and inspectable receipts to OpenCode 2. Registry installation and upgrade checks passed. Native host checks cover Linux, macOS and Windows; live specialist evidence uses macOS and ChatGPT. Install through npm, not Kennel.</p>
+<h2 id="kujo-1-8-2-maintenance-release">Kujo 1.8.2 maintenance release</h2>
+<p><a href="https://github.com/kujolang/kujo/releases/tag/v1.8.2">Kujo 1.8.2</a> resolves ZIP security advisories and retired YAML, credential-store and bincode dependencies. It preserves Kujo archive behavior, stored credentials and legacy hyphenation dictionaries, corrects native dictionary handling and tightens capability and filesystem boundaries. Bounded HTTP stream collection is available. Rust embedders accessing <code>Value::ZipArchive.writer</code> must follow the <a href="https://github.com/kujolang/kujo/blob/v1.8.2/docs/ZIP_9_RUST_MIGRATION.md">ZIP 9 migration guide</a>; Kujo scripts require no archive API migration.</p>
+<p>See the <a href="https://github.com/kujolang/kujo/blob/main/docs/RELEASE_NOTES_1_8_2.md">release notes</a>. Rust 1.89 remains the source-build minimum; experimental companion protocols and participant SDKs are not promoted by this patch.</p><!--/email_off--></div>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#source-0-1-0-october-14-2026">Source 0.1.0 — October 14, 2026</a></li><li class="toc-level-2"><a href="#start-here">Start here</a></li><li class="toc-level-2"><a href="#what-changed-in-1-8">What changed in 1.8</a></li><li class="toc-level-2"><a href="#published-package-releases">Published package releases</a></li><li class="toc-level-2"><a href="#recent-changes-worth-checking">Recent changes worth checking</a></li><li class="toc-level-2"><a href="#tags-and-source-only-packages">Tags and source-only packages</a></li><li class="toc-level-2"><a href="#agent-discovery">Agent discovery</a></li><li class="toc-level-2"><a href="#kujo-1-8-runtime-and-companion-delivery">Kujo 1.8 runtime and companion delivery</a></li><li class="toc-level-2"><a href="#agents-sdk-1-1-3">Agents SDK 1.1.3</a></li><li class="toc-level-2"><a href="#october-14-capability-updates">October 14 capability updates</a></li><li class="toc-level-2"><a href="#kujo-opencode-launch-2026-10-18">Kujo OpenCode launch — 2026-10-18</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#source-0-1-0-october-14-2026">Source 0.1.0 — October 14, 2026</a></li><li class="toc-level-2"><a href="#start-here">Start here</a></li><li class="toc-level-2"><a href="#what-changed-in-1-8">What changed in 1.8</a></li><li class="toc-level-2"><a href="#published-package-releases">Published package releases</a></li><li class="toc-level-2"><a href="#recent-changes-worth-checking">Recent changes worth checking</a></li><li class="toc-level-2"><a href="#tags-and-source-only-packages">Tags and source-only packages</a></li><li class="toc-level-2"><a href="#agent-discovery">Agent discovery</a></li><li class="toc-level-2"><a href="#kujo-1-8-runtime-and-companion-delivery">Kujo 1.8 runtime and companion delivery</a></li><li class="toc-level-2"><a href="#agents-sdk-1-1-3">Agents SDK 1.1.3</a></li><li class="toc-level-2"><a href="#october-14-capability-updates">October 14 capability updates</a></li><li class="toc-level-2"><a href="#kujo-opencode-launch-2026-10-18">Kujo OpenCode launch — 2026-10-18</a></li><li class="toc-level-2"><a href="#kujo-1-8-2-maintenance-release">Kujo 1.8.2 maintenance release</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
-	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.4.5</span></div>
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.4.6</span></div>
 	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
 </footer>
 <script src="../../assets/sitekit/sitekit.js"></script>

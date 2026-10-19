@@ -405,7 +405,8 @@
         "Kujo 1.8 runtime and companion delivery",
         "Agents SDK 1.1.3",
         "October 14 capability updates",
-        "Kujo OpenCode launch \u2014 2026-10-18"
+        "Kujo OpenCode launch \u2014 2026-10-18",
+        "Kujo 1.8.2 maintenance release"
       ],
       "text": "This inventory was checked against all 86 public kujolang repositories on September 9, 2026 , with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP and Dispatch from September 29, SSG from October 12, Kujo from October 4, Tribunal from October 7, Commerce from October 10, and"
     },
@@ -567,14 +568,14 @@
     },
     {
       "title": "Install Kujo",
-      "description": "Install Kujo v1.8.1 and the tool group you need, or build the CLI from source.",
+      "description": "Install Kujo v1.8.2 and the tool group you need, or build the CLI from source.",
       "url": "https://docs.kujolang.ai/install/",
       "route": "install/",
       "section": "Start here",
       "audience": "developer",
       "difficulty": "beginner",
       "status": "stable",
-      "version": "1.8.1",
+      "version": "1.8.2",
       "tags": [
         "[install, cli, stable]"
       ],
@@ -587,7 +588,7 @@
         "Verify",
         "Troubleshooting"
       ],
-      "text": "Kujo v1.8.1 is the current stable release. On Linux and macOS, the public ecosystem installer selects the correct archive, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory. On Windows, use the Windows archive from the release or the npm installation path described in the runtime repository. Install Kuj"
+      "text": "Kujo v1.8.2 is the current stable release. On Linux and macOS, the public ecosystem installer selects the correct archive, verifies its SHA-256 checksum, and places the CLI and requested ecosystem tools under your user directory. On Windows, use the Windows archive from the release or the npm installation path described in the runtime repository. Install Kuj"
     },
     {
       "title": "Quickstart",
@@ -715,7 +716,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "stable",
-      "version": "1.8.1",
+      "version": "1.8.2",
       "tags": [
         "[upgrade, runtime, cli, installation]"
       ],
@@ -1107,7 +1108,8 @@
         "Verification",
         "Related tools",
         "Reference",
-        "License"
+        "License",
+        "Runtime for incremental HTTP collection"
       ],
       "text": "Use it when You need chat or embedding calls with a shared response contract, retries, redaction, usage accounting, and offline fixtures. Install AI SDK 1.2.0 requires Kujo 1.6.0 or newer and Kennel 1.1.0 or newer: Import src/ai sdk.kujo and src/providers.kujo. AI SDK is a library; it has no separate CLI. In a checkout, run kujo run examples/main.kujo to try"
     },
@@ -1540,8 +1542,8 @@
       "section": "Tools",
       "audience": "developer",
       "difficulty": "beginner",
-      "status": "stable v1.8.0",
-      "version": "1.8.0",
+      "status": "stable v1.8.2",
+      "version": "1.8.2",
       "tags": [
         "[tool, foundation, language]"
       ],
@@ -1558,7 +1560,8 @@
         "Runtime maintenance",
         "Native scripting",
         "Reference",
-        "Runtime patch 1.8.1"
+        "Runtime patch 1.8.1",
+        "Kujo 1.8.2 maintenance release"
       ],
       "text": "Use it when\u2026 You want to write a small program, check it, and run it with the same VM-first CLI path used by the rest of the ecosystem. Interface overview | Surface | What is available | | --- | --- | | Run and inspect | kujo run <file , kujo check <file , kujo doctor | | Test and document | kujo test, kujo test-run <file , kujo docgen <path | | Projects and"
     },
