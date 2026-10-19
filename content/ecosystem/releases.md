@@ -24,7 +24,7 @@ This inventory was checked against all **86 public kujolang repositories on Sept
 
 Install [Kujo 1.8.2](/install/) for the current runtime. A standalone binary runs ordinary Kujo programs without Python, Node.js, or Rust. Individual applications and tools retain their own dependencies, supported platforms, runtime pins, and update procedures.
 
-[Kennel's official registry](https://kennel.kujolang.ai/) distributes first-party package artifacts. Kennel 1.2.0 is published separately; Kujo 1.8.0 does not change its version or historical package artifacts. See [package workflows](/learn/packages/) before assuming that upgrading Kujo also updates Kennel or other tools.
+[Kennel's official registry](https://kennel.kujolang.ai/) distributes first-party package artifacts. Kennel 1.2.0 is published separately; Kujo 1.8.2 does not change its version or historical package artifacts. See [package workflows](/learn/packages/) before assuming that upgrading Kujo also updates Kennel or other tools.
 
 ## What changed in 1.8
 
