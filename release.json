@@ -1,4 +1,4 @@
 {
-  "date": "2026-10-12",
-  "summary": "Current MCP 1.3.1, SSG, CMS, Agent City, Commerce, Tribunal, AI Chat, Kujo CMD, runtime, ecosystem, showcase, and workflow documentation."
+  "date": "2026-10-19",
+  "summary": "Kujo 1.8.2 installation, upgrade, dependency maintenance and Rust ZIP migration guidance; independent ecosystem release boundaries preserved."
 }

@@ -25,7 +25,7 @@ jobs:
         id: kujo
         uses: kujolang/kujo/.github/actions/setup-kujo@a91702682e2969a66938b561b8059034ab2bc717
         with:
-          version: v1.8.0
+          version: v1.8.2
       - name: Build and validate complete documentation
         working-directory: docs
         env:

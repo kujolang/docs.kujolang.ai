@@ -70,3 +70,7 @@ Use [Agents SDK](/tools/agents-sdk/) when calls need tools, approvals, handoffs,
 ## License
 
 MIT
+
+### Runtime for incremental HTTP collection
+
+Kujo 1.8.2 includes `http_stream_collect`, supporting the optional transport-chunk callback. Older published 1.5/1.6 runtime limitations remain historical compatibility boundaries; upgrading the runtime does not change provider credentials or application retry and streaming policy.

@@ -7,8 +7,8 @@ nav_title: Kujo
 order: 10
 audience: developer
 difficulty: beginner
-status: stable v1.8.0
-version: 1.8.0
+status: stable v1.8.2
+version: 1.8.2
 last_updated: 2026-10-04
 scope: local-first
 source_repo: kujo
@@ -56,7 +56,7 @@ Start here, then add [Kennel](/tools/kennel/) when the project needs dependencie
 
 ## Boundaries
 
-Kujo `v1.8.0` is the current published stable release. The CLI coordinates repository-owned Agent Projects, but their provider, runtime, retrieval, evaluation, observability, and package capabilities remain explicit ecosystem dependencies rather than hidden core services.
+Kujo `v1.8.2` is the current published stable release. The CLI coordinates repository-owned Agent Projects, but their provider, runtime, retrieval, evaluation, observability, and package capabilities remain explicit ecosystem dependencies rather than hidden core services.
 
 ## What changed in 1.8
 
@@ -91,3 +91,9 @@ Use `kujo --help`, `kujo agent --help`, `kujo doctor --json`, the [language basi
 ## Runtime patch 1.8.1
 
 [Kujo 1.8.1](https://github.com/kujolang/kujo/releases/tag/v1.8.1) is published and is the required runtime for Dispatch 1.4.0 and the Paperclip expansion. See the release for patch details; the 1.8.0 feature overview above remains historical.
+
+## Kujo 1.8.2 maintenance release
+
+[Kujo 1.8.2](https://github.com/kujolang/kujo/releases/tag/v1.8.2) resolves ZIP security advisories and retired YAML, credential-store and bincode dependencies. It preserves Kujo archive behavior, stored credentials and legacy hyphenation dictionaries, corrects native dictionary handling and tightens capability and filesystem boundaries. Bounded HTTP stream collection is available. Rust embedders accessing `Value::ZipArchive.writer` must follow the [ZIP 9 migration guide](https://github.com/kujolang/kujo/blob/v1.8.2/docs/ZIP_9_RUST_MIGRATION.md); Kujo scripts require no archive API migration.
+
+See the [release notes](https://github.com/kujolang/kujo/blob/main/docs/RELEASE_NOTES_1_8_2.md). Rust 1.89 remains the source-build minimum; experimental companion protocols and participant SDKs are not promoted by this patch.

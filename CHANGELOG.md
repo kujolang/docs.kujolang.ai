@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.6 — 2026-10-19
+
+- Update current runtime installation, upgrade and release guidance to Kujo 1.8.2.
+- Document dependency maintenance and the Rust-only ZIP 9 API migration.
+- Build and verify documentation with the published 1.8.2 runtime; preserve historical component pins and experimental boundaries.
+
 ## Kujo OpenCode launch — 2026-10-18
 
 - Add the OpenCode 0.2.0 installation and daily-use guide, tooling discovery, release links, provider limits, and verified platform scope.

@@ -22,7 +22,7 @@ This inventory was checked against all **86 public kujolang repositories on Sept
 
 ## Start here
 
-Install [Kujo 1.8.1](/install/) for the current runtime. A standalone binary runs ordinary Kujo programs without Python, Node.js, or Rust. Individual applications and tools retain their own dependencies, supported platforms, runtime pins, and update procedures.
+Install [Kujo 1.8.2](/install/) for the current runtime. A standalone binary runs ordinary Kujo programs without Python, Node.js, or Rust. Individual applications and tools retain their own dependencies, supported platforms, runtime pins, and update procedures.
 
 [Kennel's official registry](https://kennel.kujolang.ai/) distributes first-party package artifacts. Kennel 1.2.0 is published separately; Kujo 1.8.0 does not change its version or historical package artifacts. See [package workflows](/learn/packages/) before assuming that upgrading Kujo also updates Kennel or other tools.
 
@@ -70,7 +70,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [galleypack](https://github.com/kujolang/galleypack) | [v0.2.0](https://github.com/kujolang/galleypack/releases/tag/v0.2.0) | 2026-08-14 |
 | [howl](https://github.com/kujolang/howl) | [v1.2.0](https://github.com/kujolang/howl/releases/tag/v1.2.0) | 2026-10-16 |
 | [kennel](https://github.com/kujolang/kennel) | [v1.2.0](https://github.com/kujolang/kennel/releases/tag/v1.2.0) | 2026-10-14 |
-| [kujo](https://github.com/kujolang/kujo) | [v1.8.1](https://github.com/kujolang/kujo/releases/tag/v1.8.1) | 2026-10-10 |
+| [kujo](https://github.com/kujolang/kujo) | [v1.8.2](https://github.com/kujolang/kujo/releases/tag/v1.8.2) | 2026-10-19 |
 | [kujo-agents](https://github.com/kujolang/kujo-agents) | [v1.4.0](https://github.com/kujolang/kujo-agents/releases/tag/v1.4.0) | 2026-09-07 |
 | [kujo-opencode](https://github.com/kujolang/kujo-opencode) | [v0.2.0](https://github.com/kujolang/kujo-opencode/releases/tag/v0.2.0) | 2026-10-17 |
 | [kujo-pi](https://github.com/kujolang/kujo-pi) | [v1.1.0](https://github.com/kujolang/kujo-pi/releases/tag/v1.1.0) | 2026-09-26 |
@@ -147,3 +147,9 @@ PatchBrief 1.0.2, CaseFile 1.0.1, MCP 1.3.2, ShipCheck 1.0.1, Scent 1.1.0, Kenne
 ## Kujo OpenCode launch — 2026-10-18
 
 [Kujo OpenCode 0.2.0](/tools/kujo-opencode/) is published on npm and GitHub. It brings six specialists, 62 supported capabilities, native approvals and inspectable receipts to OpenCode 2. Registry installation and upgrade checks passed. Native host checks cover Linux, macOS and Windows; live specialist evidence uses macOS and ChatGPT. Install through npm, not Kennel.
+
+## Kujo 1.8.2 maintenance release
+
+[Kujo 1.8.2](https://github.com/kujolang/kujo/releases/tag/v1.8.2) resolves ZIP security advisories and retired YAML, credential-store and bincode dependencies. It preserves Kujo archive behavior, stored credentials and legacy hyphenation dictionaries, corrects native dictionary handling and tightens capability and filesystem boundaries. Bounded HTTP stream collection is available. Rust embedders accessing `Value::ZipArchive.writer` must follow the [ZIP 9 migration guide](https://github.com/kujolang/kujo/blob/v1.8.2/docs/ZIP_9_RUST_MIGRATION.md); Kujo scripts require no archive API migration.
+
+See the [release notes](https://github.com/kujolang/kujo/blob/main/docs/RELEASE_NOTES_1_8_2.md). Rust 1.89 remains the source-build minimum; experimental companion protocols and participant SDKs are not promoted by this patch.
