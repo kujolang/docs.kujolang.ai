@@ -8,8 +8,8 @@ order: 40
 audience: developer
 difficulty: intermediate
 status: local scope verified
-version: 1.2.0
-last_updated: 2026-10-12
+version: "1.2.1"
+last_updated: "2026-10-21"
 scope: local-first
 source_repo: ssg
 previous: /showcases/ai-chat/
@@ -22,7 +22,7 @@ tags: [showcase, static, publishing]
 
 You need a transparent, deterministic static publishing pipeline whose content, templates, assets, and generated outputs stay visible.
 
-[Release 1.2.0](https://github.com/kujolang/ssg/releases/tag/v1.2.0), published October 12, 2026, hardens network/filesystem and JSON-LD boundaries, bounds Ability inspection, replaces text minification with esbuild parsing, and makes DocGen configuration and CI evidence reliable. Default-on experimental WebMCP and the independent local Ability pack remain available.
+[Release 1.2.1](https://github.com/kujolang/ssg/releases/tag/v1.2.1), published October 21, 2026, hardens network/filesystem and JSON-LD boundaries, bounds Ability inspection, replaces text minification with esbuild parsing, and makes DocGen configuration and CI evidence reliable. Default-on experimental WebMCP and the independent local Ability pack remain available.
 
 ## Interface overview
 
@@ -73,9 +73,9 @@ kujo run build.kujo -- --site-url https://example.com --no-webmcp
 
 Or set `webmcp: false` in the site config. Drafts never enter the public index, including preview builds. `search_exclude: true` removes search visibility but does not restrict list or exact retrieval. `nav_hide` only affects navigation.
 
-The executable local Ability pack covers project/source inspection, validation, full and sharded builds with approved draft previews, output inspection, comparison, deployment readiness, and deterministic artifact export. Pack 1.0.0 and its pinned Ability 1.0.1 dependency are versioned independently of SSG 1.2.0. Writes require explicit approval and keyed idempotency. MCP hosts bind these operations in a trusted local process or authenticated gateway; generated pages cannot execute them. No publish or deploy Ability is included.
+The executable local Ability pack covers project/source inspection, validation, full and sharded builds with approved draft previews, output inspection, comparison, deployment readiness, and deterministic artifact export. Pack 1.0.0 and its pinned Ability 1.0.1 dependency are versioned independently of SSG 1.2.1. Writes require explicit approval and keyed idempotency. MCP hosts bind these operations in a trusted local process or authenticated gateway; generated pages cannot execute them. No publish or deploy Ability is included.
 
-See the [WebMCP guide](https://github.com/kujolang/ssg/blob/v1.2.0/docs/webmcp.md) and [Ability integration](https://github.com/kujolang/ssg/blob/v1.2.0/docs/ability-integration.md).
+See the [WebMCP guide](https://github.com/kujolang/ssg/blob/v1.2.1/docs/webmcp.md) and [Ability integration](https://github.com/kujolang/ssg/blob/v1.2.1/docs/ability-integration.md).
 
 ## How it fits
 

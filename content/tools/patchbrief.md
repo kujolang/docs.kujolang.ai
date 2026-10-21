@@ -8,8 +8,8 @@ order: 180
 audience: developer
 difficulty: beginner
 status: local scope verified
-version: 1.0.2
-last_updated: "2026-10-14"
+version: "1.0.3"
+last_updated: "2026-10-21"
 scope: local-first
 source_repo: patchbrief
 previous: /tools/changebucket/

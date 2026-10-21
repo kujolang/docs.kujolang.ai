@@ -8,8 +8,8 @@ order: 160
 audience: developer
 difficulty: beginner
 status: local scope verified
-version: current
-last_updated: 2026-09-09
+version: "1.2.1"
+last_updated: "2026-10-21"
 scope: local-first
 source_repo: runledger
 previous: /tools/muzzle/
@@ -64,6 +64,6 @@ See the [RunLedger repository](https://github.com/kujolang/runledger).
 
 ## Published release and current development
 
-The latest published GitHub Release checked on September 9 is [v1.1.0](https://github.com/kujolang/runledger/releases/tag/v1.1.0). Recent default-branch work adds cross-system telemetry correlation links. These link evidence across systems without transferring execution or authorization authority.
+The latest published GitHub Release checked on September 9 is [1.2.1](https://github.com/kujolang/runledger/releases/tag/v1.2.1). Recent default-branch work adds cross-system telemetry correlation links. These link evidence across systems without transferring execution or authorization authority.
 
 These newer changes are [source work at 92cb06344386](https://github.com/kujolang/runledger/tree/92cb06344386fc0a78d92b1db92f417edb22b285); they are not retroactively included in the older release archive.

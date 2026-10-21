@@ -10,7 +10,7 @@ audience: all
 difficulty: beginner
 status: dated release inventory
 version: current
-last_updated: 2026-10-13
+last_updated: 2026-10-21
 tags: [ecosystem, releases, versions, installation]
 ---
 
@@ -19,6 +19,10 @@ This inventory was checked against all **86 public kujolang repositories on Sept
 ## Source 0.1.0 — October 14, 2026
 
 [Source 0.1.0](https://github.com/kujolang/source/releases/tag/v0.1.0) is the first public MIT release of the Git review and evidence platform. Its Node.js server, CLI and browser UI connect agent proposals to authorized decisions. Install through Git and npm; Source is not a Kennel package. The [Source guide](/tools/source/) covers local demos, Cloudflare integration and experimental deployment boundaries.
+
+## October 21 companion updates
+
+Ability 1.3.0, AI Chat 1.3.1, CaseFile 1.0.2, Concord 1.1.2, ShipCheck 1.0.2, RunLedger 1.2.1, PatchBrief 1.0.3, Spec 1.0.2, SSG 1.2.1, Source 0.1.1, Muzzle 1.1.3 and Watchdog 1.2.2 are published. The table and linked guides identify the current versions. Each project retains its documented installation and deployment boundaries.
 
 ## Start here
 
@@ -46,22 +50,22 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 
 | Package | Latest published release | Published (UTC) |
 | --- | --- | --- |
-| [ability](https://github.com/kujolang/ability) | [v1.2.0](https://github.com/kujolang/ability/releases/tag/v1.2.0) | 2026-09-29 |
+| [ability](https://github.com/kujolang/ability) | [v1.3.0](https://github.com/kujolang/ability/releases/tag/v1.3.0) | 2026-10-21 |
 | [agents-sdk](https://github.com/kujolang/agents-sdk) | [v1.1.3](https://github.com/kujolang/agents-sdk/releases/tag/v1.1.3) | 2026-10-13 |
-| [ai-chat](https://github.com/kujolang/ai-chat) | [v1.3.0](https://github.com/kujolang/ai-chat/releases/tag/v1.3.0) | 2026-10-06 |
+| [ai-chat](https://github.com/kujolang/ai-chat) | [v1.3.1](https://github.com/kujolang/ai-chat/releases/tag/v1.3.1) | 2026-10-21 |
 | [ai-sdk](https://github.com/kujolang/ai-sdk) | [v1.2.0](https://github.com/kujolang/ai-sdk/releases/tag/v1.2.0) | 2026-10-13 |
 | [anthropic](https://github.com/kujolang/anthropic) | [v0.1.2](https://github.com/kujolang/anthropic/releases/tag/v0.1.2) | 2026-08-27 |
 | [assetworks](https://github.com/kujolang/assetworks) | [v0.2.0](https://github.com/kujolang/assetworks/releases/tag/v0.2.0) | 2026-08-14 |
 | [bb-kujo](https://github.com/kujolang/bb-kujo) | [v0.2.2](https://github.com/kujolang/bb-kujo/releases/tag/v0.2.2) | 2026-10-21 |
 | [bluepencil](https://github.com/kujolang/bluepencil) | [v0.2.0](https://github.com/kujolang/bluepencil/releases/tag/v0.2.0) | 2026-08-14 |
-| [casefile](https://github.com/kujolang/casefile) | [v1.0.1](https://github.com/kujolang/casefile/releases/tag/v1.0.1) | 2026-10-14 |
+| [casefile](https://github.com/kujolang/casefile) | [v1.0.2](https://github.com/kujolang/casefile/releases/tag/v1.0.2) | 2026-10-21 |
 | [changebucket](https://github.com/kujolang/changebucket) | [v1.1.0](https://github.com/kujolang/changebucket/releases/tag/v1.1.0) | 2026-09-22 |
 | [cms](https://github.com/kujolang/cms) | [v1.2.0](https://github.com/kujolang/cms/releases/tag/v1.2.0) | 2026-10-12 |
 | [cms-contact-form](https://github.com/kujolang/cms-contact-form) | [v1.0.0](https://github.com/kujolang/cms-contact-form/releases/tag/v1.0.0) | 2026-08-29 |
 | [cms-example](https://github.com/kujolang/cms-example) | [v1.1.0](https://github.com/kujolang/cms-example/releases/tag/v1.1.0) | 2026-08-30 |
 | [cms-field-notes-theme](https://github.com/kujolang/cms-field-notes-theme) | [v1.0.2](https://github.com/kujolang/cms-field-notes-theme/releases/tag/v1.0.2) | 2026-08-29 |
 | [commerce](https://github.com/kujolang/commerce) | [v0.5.0](https://github.com/kujolang/commerce/releases/tag/v0.5.0) | 2026-10-10 |
-| [concord](https://github.com/kujolang/concord) | [v1.1.1](https://github.com/kujolang/concord/releases/tag/v1.1.1) | 2026-10-14 |
+| [concord](https://github.com/kujolang/concord) | [v1.1.2](https://github.com/kujolang/concord/releases/tag/v1.1.2) | 2026-10-21 |
 | [contentgraph](https://github.com/kujolang/contentgraph) | [v0.3.0](https://github.com/kujolang/contentgraph/releases/tag/v0.3.0) | 2026-08-13 |
 | [crud-api](https://github.com/kujolang/crud-api) | [v1.0.1](https://github.com/kujolang/crud-api/releases/tag/v1.0.1) | 2026-10-14 |
 | [dispatch](https://github.com/kujolang/dispatch) | [v1.4.0](https://github.com/kujolang/dispatch/releases/tag/v1.4.0) | 2026-10-14 |
@@ -79,29 +83,29 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [kujo-workflows](https://github.com/kujolang/kujo-workflows) | [v0.6.0](https://github.com/kujolang/kujo-workflows/releases/tag/v0.6.0) | 2026-09-07 |
 | [lens](https://github.com/kujolang/lens) | [v1.1.0](https://github.com/kujolang/lens/releases/tag/v1.1.0) | 2026-09-07 |
 | [mcp](https://github.com/kujolang/mcp) | [v1.3.2](https://github.com/kujolang/mcp/releases/tag/v1.3.2) | 2026-10-14 |
-| [muzzle](https://github.com/kujolang/muzzle) | [v1.1.2](https://github.com/kujolang/muzzle/releases/tag/v1.1.2) | 2026-10-12 |
+| [muzzle](https://github.com/kujolang/muzzle) | [v1.1.3](https://github.com/kujolang/muzzle/releases/tag/v1.1.3) | 2026-10-21 |
 | [ollama](https://github.com/kujolang/ollama) | [v0.1.10](https://github.com/kujolang/ollama/releases/tag/v0.1.10) | 2026-08-27 |
 | [packwrite](https://github.com/kujolang/packwrite) | [v1.1.1](https://github.com/kujolang/packwrite/releases/tag/v1.1.1) | 2026-10-13 |
 | [paperclip](https://github.com/kujolang/paperclip) | [v0.2.1](https://github.com/kujolang/paperclip/releases/tag/v0.2.1) | 2026-10-21 |
-| [patchbrief](https://github.com/kujolang/patchbrief) | [v1.0.2](https://github.com/kujolang/patchbrief/releases/tag/v1.0.2) | 2026-10-14 |
+| [patchbrief](https://github.com/kujolang/patchbrief) | [v1.0.3](https://github.com/kujolang/patchbrief/releases/tag/v1.0.3) | 2026-10-21 |
 | [presswire](https://github.com/kujolang/presswire) | [v0.2.0](https://github.com/kujolang/presswire/releases/tag/v0.2.0) | 2026-08-14 |
 | [rag](https://github.com/kujolang/rag) | [v1.0.0](https://github.com/kujolang/rag/releases/tag/v1.0.0) | 2026-08-08 |
 | [readersignal](https://github.com/kujolang/readersignal) | [v0.3.0](https://github.com/kujolang/readersignal/releases/tag/v0.3.0) | 2026-09-26 |
 | [redact](https://github.com/kujolang/redact) | [v1.0.0](https://github.com/kujolang/redact/releases/tag/v1.0.0) | 2026-08-09 |
 | [relay](https://github.com/kujolang/relay) | [v1.1.0](https://github.com/kujolang/relay/releases/tag/v1.1.0) | 2026-08-27 |
-| [runledger](https://github.com/kujolang/runledger) | [v1.2.0](https://github.com/kujolang/runledger/releases/tag/v1.2.0) | 2026-09-28 |
+| [runledger](https://github.com/kujolang/runledger) | [v1.2.1](https://github.com/kujolang/runledger/releases/tag/v1.2.1) | 2026-10-21 |
 | [scent](https://github.com/kujolang/scent) | [v1.1.0](https://github.com/kujolang/scent/releases/tag/v1.1.0) | 2026-10-14 |
 | [scout](https://github.com/kujolang/scout) | [v1.1.0](https://github.com/kujolang/scout/releases/tag/v1.1.0) | 2026-09-26 |
 | [searchbridge](https://github.com/kujolang/searchbridge) | [v1.0.0](https://github.com/kujolang/searchbridge/releases/tag/v1.0.0) | 2026-09-04 |
-| [shipcheck](https://github.com/kujolang/shipcheck) | [v1.0.1](https://github.com/kujolang/shipcheck/releases/tag/v1.0.1) | 2026-10-14 |
+| [shipcheck](https://github.com/kujolang/shipcheck) | [v1.0.2](https://github.com/kujolang/shipcheck/releases/tag/v1.0.2) | 2026-10-21 |
 | [site-kit](https://github.com/kujolang/site-kit) | [v1.0.0](https://github.com/kujolang/site-kit/releases/tag/v1.0.0) | 2026-08-09 |
 | [siteprobe](https://github.com/kujolang/siteprobe) | [v0.3.0](https://github.com/kujolang/siteprobe/releases/tag/v0.3.0) | 2026-09-07 |
-| [spec](https://github.com/kujolang/spec) | [v1.0.1](https://github.com/kujolang/spec/releases/tag/v1.0.1) | 2026-08-30 |
-| [ssg](https://github.com/kujolang/ssg) | [v1.2.0](https://github.com/kujolang/ssg/releases/tag/v1.2.0) | 2026-10-12 |
+| [spec](https://github.com/kujolang/spec) | [v1.0.2](https://github.com/kujolang/spec/releases/tag/v1.0.2) | 2026-10-21 |
+| [ssg](https://github.com/kujolang/ssg) | [v1.2.1](https://github.com/kujolang/ssg/releases/tag/v1.2.1) | 2026-10-21 |
 | [storydesk](https://github.com/kujolang/storydesk) | [v0.2.0](https://github.com/kujolang/storydesk/releases/tag/v0.2.0) | 2026-08-14 |
 | [tribunal](https://github.com/kujolang/tribunal) | [v1.0.2](https://github.com/kujolang/tribunal/releases/tag/v1.0.2) | 2026-10-07 |
 | [versionseal](https://github.com/kujolang/versionseal) | [v0.2.0](https://github.com/kujolang/versionseal/releases/tag/v0.2.0) | 2026-08-14 |
-| [watchdog](https://github.com/kujolang/watchdog) | [v1.2.1](https://github.com/kujolang/watchdog/releases/tag/v1.2.1) | 2026-10-12 |
+| [watchdog](https://github.com/kujolang/watchdog) | [v1.2.2](https://github.com/kujolang/watchdog/releases/tag/v1.2.2) | 2026-10-21 |
 | [workcell](https://github.com/kujolang/workcell) | [v1.2.0](https://github.com/kujolang/workcell/releases/tag/v1.2.0) | 2026-09-29 |
 
 The Kujo Pi row was refreshed on September 26, 2026. Other entries retain their individually documented inventory dates.

@@ -8,8 +8,8 @@ order: 190
 audience: developer
 difficulty: intermediate
 status: local scope verified
-version: 1.1.1
-last_updated: "2026-10-14"
+version: "1.1.2"
+last_updated: "2026-10-21"
 scope: local-first
 source_repo: concord
 previous: /tools/patchbrief/

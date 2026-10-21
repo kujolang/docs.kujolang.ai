@@ -176,10 +176,10 @@ reject_text "install/index.html" "&lt;!--email_off--&gt;"
 reject_text "install/index.html" '<h1 id="kujo-1-8-0">'
 
 # SSG release migration requirements remain visible and linked.
-require_text "showcases/ssg/index.html" "https://github.com/kujolang/ssg/releases/tag/v1.2.0"
+require_text "showcases/ssg/index.html" "https://github.com/kujolang/ssg/releases/tag/v1.2.1"
 require_text "showcases/ssg/index.html" "npm ci --ignore-scripts"
 require_text "showcases/ssg/index.html" "--repository-check-timeout"
-require_text "ecosystem/releases/index.html" "https://github.com/kujolang/ssg/releases/tag/v1.2.0"
+require_text "ecosystem/releases/index.html" "https://github.com/kujolang/ssg/releases/tag/v1.2.1"
 
 # Released OpenCode integration must be reachable, installable, and scope its evidence.
 require_file tools/kujo-opencode/index.html

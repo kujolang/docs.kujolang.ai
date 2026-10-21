@@ -8,8 +8,8 @@ order: 220
 audience: developer
 difficulty: beginner
 status: local scope verified
-version: 1.0.1
-last_updated: "2026-10-14"
+version: "1.0.2"
+last_updated: "2026-10-21"
 scope: local-first
 source_repo: casefile
 previous: /tools/packwrite/

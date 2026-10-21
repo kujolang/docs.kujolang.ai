@@ -8,8 +8,8 @@ order: 30
 audience: developer
 difficulty: beginner
 status: local scope verified
-version: current
-last_updated: 2026-08-23
+version: "1.0.2"
+last_updated: "2026-10-21"
 scope: local-first
 source_repo: spec
 previous: /tools/kennel/

@@ -8,8 +8,8 @@ order: 30
 audience: developer
 difficulty: intermediate
 status: local scope verified
-version: 1.3.0
-last_updated: 2026-10-06
+version: "1.3.1"
+last_updated: "2026-10-21"
 scope: local-first
 source_repo: ai-chat
 previous: /showcases/crud-api/
@@ -67,8 +67,8 @@ See the [AI Chat repository](https://github.com/kujolang/ai-chat) for API, provi
 
 ## Current release and upgrade
 
-[AI Chat 1.3.0](https://github.com/kujolang/ai-chat/releases/tag/v1.3.0) ships harness roadmap items HR-01 through HR-10: live per-pane code diffs, review comments, encrypted checkpoints and rewind, plans and steering, managed Git worktrees, typed attachments, execution artifacts, scoped MCP connections, an attention inbox, a command palette, and persistent multi-chat tabs. Deferred tools and external MCP capabilities remain subject to request-scoped authorization and interactive approvals.
+[AI Chat 1.3.1](https://github.com/kujolang/ai-chat/releases/tag/v1.3.1) ships harness roadmap items HR-01 through HR-10: live per-pane code diffs, review comments, encrypted checkpoints and rewind, plans and steering, managed Git worktrees, typed attachments, execution artifacts, scoped MCP connections, an attention inbox, a command palette, and persistent multi-chat tabs. Deferred tools and external MCP capabilities remain subject to request-scoped authorization and interactive approvals.
 
-Use **patched Node 22.23.4** and `npm ci`. Back up the database with its matching encryption secret, configuration, action manifests, and uncommitted managed worktrees before upgrading. Browser execution additionally needs Playwright Chromium and macOS Seatbelt or Linux Bubblewrap with permitted namespaces; unavailable containment fails closed. Follow the [versioned upgrade procedure](https://github.com/kujolang/ai-chat/blob/v1.3.0/SETUP_AND_INSTALL.md#upgrading-to-130).
+Use **Node 22.23.4+, 24.22.1+, or 26.12.1+** and `npm ci`. Back up the database with its matching encryption secret, configuration, action manifests, and uncommitted managed worktrees before upgrading. Browser execution additionally needs Playwright Chromium and macOS Seatbelt or Linux Bubblewrap with permitted namespaces; unavailable containment fails closed. Follow the [versioned upgrade procedure](https://github.com/kujolang/ai-chat/blob/v1.3.1/SETUP_AND_INSTALL.md#upgrading-to-130).
 
 The release passed 758 local tests with 756 passes and two platform skips, authenticated fixture smoke, a zero-vulnerability production dependency audit, ShipCheck's error-level gate, and GitHub CI. Its historical eight-hour reliability soak remains incomplete; the partial run is not a production-readiness certification.

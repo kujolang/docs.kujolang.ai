@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: kujolang/ssg
-          ref: c948263bd77ef2c0f75a9f6524dbcff8518f8f91
+          ref: a2f33f2df95ce45b6dd9151a48853f765df70792
           path: ssg
       - uses: actions/setup-python@v5
         with:
