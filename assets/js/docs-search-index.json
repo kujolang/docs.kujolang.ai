@@ -1136,6 +1136,26 @@
       "text": "Use it when\u2026 Media work needs an immutable plan, provenance, captions or accessibility artifacts, deterministic probes, and checksum-backed validation. Five-minute example What you get Immutable records, append-only audit events, deterministic media evidence, optional signed manifests, and portable exports. Boundaries FFmpeg, image tooling, hosted storage, a"
     },
     {
+      "title": "BB Kujo",
+      "description": "Install the Kujo light and dark theme plugin for BB.",
+      "url": "https://docs.kujolang.ai/tools/bb-kujo/",
+      "route": "tools/bb-kujo/",
+      "section": "Tools",
+      "audience": "developer",
+      "difficulty": "beginner",
+      "status": "released",
+      "version": "0.2.2",
+      "tags": [
+        "[tool, theme, integration]"
+      ],
+      "headings": [
+        "Install",
+        "Update or remove",
+        "Release"
+      ],
+      "text": "Install BB Kujo 0.2.2 requires BB 0.43.x. Install through BB rather than Kennel: The package includes light and dark workspace themes, code and terminal colors, bundled Departure Mono and Tabler icons, and reduced-motion-aware decoration. Some third-party panels retain their own styling. Update or remove For an existing installation, use BB's plugin update f"
+    },
+    {
       "title": "BluePencil",
       "description": "Record structured editorial reviews, verdicts, disagreements, and calibration evidence.",
       "url": "https://docs.kujolang.ai/tools/bluepencil/",
@@ -1442,7 +1462,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "stable",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "tags": [
         "[tool, packages, dependencies]"
       ],
@@ -1455,7 +1475,7 @@
         "How it fits",
         "Boundaries",
         "Reference",
-        "Release 1.2.0",
+        "Current release: 1.2.1",
         "Agent City",
         "October 14 release update"
       ],
@@ -1470,7 +1490,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "released",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "tags": [
         "[tool, command-code, mcp, agents, integration]"
       ],
@@ -1494,7 +1514,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "released",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "tags": [
         "[tool, opencode, agents, ability, integration]"
       ],
@@ -1510,7 +1530,7 @@
         "Update and recover",
         "Verified release scope"
       ],
-      "text": "Use it when You want OpenCode to inspect a repository, build and test Kujo programs, review changes, check browser workflows, or collect release evidence. Kujo OpenCode provides a native plugin, six focused specialists, and a local MCP fallback. OpenCode owns the model connection; Kujo runs supported tools locally. Install and verify Requirements: Node.js 20"
+      "text": "Use it when You want OpenCode to inspect a repository, build and test Kujo programs, review changes, check browser workflows, or collect release evidence. Kujo OpenCode provides a native plugin, six focused specialists, and a local MCP fallback. OpenCode owns the model connection; Kujo runs supported tools locally. Install and verify Requirements: Node.js 22"
     },
     {
       "title": "Kujo Pi",
@@ -1521,7 +1541,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "released",
-      "version": "1.1.0",
+      "version": "1.2.1",
       "tags": [
         "[tool, pi, integrations, telemetry, ability]"
       ],
@@ -1532,7 +1552,7 @@
         "Receipts and compatibility",
         "Reference"
       ],
-      "text": "Install and start Kujo Pi 1.1.0 is a separate npm package for the Pi host. It requires Node.js 22.19.0 or newer, npm 10 or newer, and Pi 0.84.3 or newer within the 0.x line. Install the Kujo runtime /install/ separately for Kujo-backed operations. Start Pi in a trusted repository, configure KUJO BIN or put Kujo on PATH, then run: Use kujo doctor to inspect a"
+      "text": "Install and start Kujo Pi 1.2.1 is a separate npm package for the Pi host. It requires Node.js 22.23.4 on 22.x, 24.22.1 on 24.x, or 26.12.1 and later; npm 10 or newer; and Pi 0.84.3 or newer below 2.0. Use an existing Kujo runtime /install/ , or explicitly preview and approve the managed Kujo/Kennel setup on macOS and Linux. Windows users can use an existing"
     },
     {
       "title": "Kujo",
@@ -1711,18 +1731,18 @@
       "audience": "developer",
       "difficulty": "beginner",
       "status": "released",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "tags": [
         "[tool, agents, context, review, evidence]"
       ],
       "headings": [
-        "What is new in 0.2.0",
+        "Included features",
         "Install and upgrade",
         "Boundaries",
         "Agent access and install compatibility",
         "Upgrading from 0.1.x"
       ],
-      "text": "What is new in 0.2.0 Kujo for Paperclip brings repository understanding, project knowledge, native quality checks and human-approved workflows into the project and issue views. - Understand a repository: Scout maps its structure; Scent selects bounded context; ChangeBucket and PatchBrief explain a change. - Ask your project: explicitly select local files, bu"
+      "text": "Included features Kujo for Paperclip brings repository understanding, project knowledge, native quality checks and human-approved workflows into the project and issue views. - Understand a repository: Scout maps its structure; Scent selects bounded context; ChangeBucket and PatchBrief explain a change. - Ask your project: explicitly select local files, build"
     },
     {
       "title": "PatchBrief",

@@ -64,6 +64,7 @@ A local-first path through the Kujo language and ecosystem.
 - [Agents SDK](https://docs.kujolang.ai/tools/agents-sdk/) — Build agents with tools, approvals, handoffs, tracing, stores, and budgets.
 - [AI SDK](https://docs.kujolang.ai/tools/ai-sdk/) — Use normalized chat and embedding contracts with fixtures, retries, and redaction.
 - [AssetWorks](https://docs.kujolang.ai/tools/assetworks/) — Plan media assets and preserve provenance, accessibility records, and checksums.
+- [BB Kujo](https://docs.kujolang.ai/tools/bb-kujo/) — Install the Kujo light and dark theme plugin for BB.
 - [BluePencil](https://docs.kujolang.ai/tools/bluepencil/) — Record structured editorial reviews, verdicts, disagreements, and calibration evidence.
 - [CaseFile](https://docs.kujolang.ai/tools/casefile/) — Capture a failure as a reproducible evidence bundle.
 - [ChangeBucket](https://docs.kujolang.ai/tools/changebucket/) — Measure change footprint, categories, and blast radius.

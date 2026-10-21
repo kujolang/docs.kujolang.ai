@@ -101,12 +101,12 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="kujo-opencode">Kujo OpenCode</h1><p class="docs-description">Install Kujo tools in OpenCode 2, choose a specialist, review approvals, and inspect receipts.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>released</span><span class="docs-badge docs-badge-version"><span>Version</span>0.2.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-18</span></div>
+		<h1 id="kujo-opencode">Kujo OpenCode</h1><p class="docs-description">Install Kujo tools in OpenCode 2, choose a specialist, review approvals, and inspect receipts.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>released</span><span class="docs-badge docs-badge-version"><span>Version</span>0.2.1</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-21</span></div>
 		<div class="docs-body"><!--email_off--><h2 id="use-it-when">Use it when</h2>
 <p>You want OpenCode to inspect a repository, build and test Kujo programs, review changes, check browser workflows, or collect release evidence. Kujo OpenCode provides a native plugin, six focused specialists, and a local MCP fallback. OpenCode owns the model connection; Kujo runs supported tools locally.</p>
 <h2 id="install-and-verify">Install and verify</h2>
-<p>Requirements: Node.js 20 or newer, npm, Git, and OpenCode 2 version 2.0.31 or newer. OpenCode 1 is not supported.</p>
-<pre><code class="language-sh">npm install --global @kujolang/kujo-opencode@0.2.0
+<p>Requirements: Node.js 22.23.4+, 24.22.1+, or 26.12.1+ on those release lines, npm, Git, and OpenCode 2 version 2.0.31 or newer. OpenCode 1 is not supported.</p>
+<pre><code class="language-sh">npm install --global @kujolang/kujo-opencode@0.2.1
 cd /path/to/your/project
 kujo-opencode setup
 kujo-opencode doctor
@@ -191,7 +191,7 @@ kujo-opencode abilities</code></pre>
 <li><strong>Workflow and tracking:</strong> Dispatch, RunLedger, Watchdog, Muzzle, and PackWrite.</li>
 <li><strong>Evidence and release work:</strong> Casefile, Dossier, Redact, Tribunal, VersionSeal, ShipCheck, and Howl.</li>
 </ul>
-<p>The adapter exposes supported operations, not each project&apos;s entire interface. For exact schemas and scope, see the <a href="https://github.com/kujolang/kujo-opencode/tree/v0.2.0/catalog">released catalog</a>.</p>
+<p>The adapter exposes supported operations, not each project&apos;s entire interface. For exact schemas and scope, see the <a href="https://github.com/kujolang/kujo-opencode/tree/v0.2.1/catalog">released catalog</a>.</p>
 <h2 id="review-approvals-and-receipts">Review approvals and receipts</h2>
 <p>Before an effectful operation, OpenCode opens the Kujo operation review. Inspect the input, effects, destination, and approval identity. Return to the permission choice and select Allow once or Reject. Closing the review grants nothing. Kujo binds approval to the exact request and records the result as a receipt.</p>
 <p>Use <code>/kujo</code> to review pending approvals or inspect evidence. After a lost Dispatch response, inspect the retained run before retrying; an uncertain response does not prove that execution failed.</p>
@@ -200,11 +200,11 @@ kujo-opencode abilities</code></pre>
 <p>This command requires an interactive human decision. Agents must not approve their own actions. OpenCode&apos;s own permission checks remain separate.</p>
 <h2 id="connect-a-provider">Connect a provider</h2>
 <p>Use OpenCode&apos;s provider controls to select an account and model. For ChatGPT, choose OpenAI, select Sign in with ChatGPT, and finish the browser sign-in. Requests use that connection&apos;s allowance. Kujo does not copy credentials, proxy model traffic, or silently choose a paid provider.</p>
-<p>Live acceptance used <code>openai/gpt-5.6-sol</code> on macOS x64 with OpenCode 2.0.32: six specialists and 50 operation checks passed. Model availability depends on your account. The free GLM and DeepSeek routes returned HTTP 403 for scoped specialist requests; their listing does not establish that they work here.</p>
+<p>Live acceptance used an explicitly configured local Hermes connection with <code>reflection/beam-1.0-501b-a23b:free</code> on macOS x64 with OpenCode 2.1.2: six specialists and 50 operation checks passed. Model availability depends on your account. The free GLM and DeepSeek routes returned HTTP 403 for scoped specialist requests; their listing does not establish that they work here.</p>
 <h2 id="optional-browser-and-services">Optional browser and services</h2>
 <p>Lens flow validation does not need Chromium. Real browser checks require an explicit installation:</p>
 <pre><code class="language-sh">kujo-opencode browser install</code></pre>
-<p>Watchdog delivery and RunLedger lifecycle tracking are opt-in. Setup does not start services or turn on background telemetry. Remote Ability gateways, Leash, and other private services require their own configuration and authorization. Read the <a href="https://github.com/kujolang/kujo-opencode/blob/v0.2.0/docs/SERVICE-SUPPORT.md">service support boundaries</a> before enabling them.</p>
+<p>Watchdog delivery and RunLedger lifecycle tracking are opt-in. Setup does not start services or turn on background telemetry. Remote Ability gateways, Leash, and other private services require their own configuration and authorization. Read the <a href="https://github.com/kujolang/kujo-opencode/blob/v0.2.1/docs/SERVICE-SUPPORT.md">service support boundaries</a> before enabling them.</p>
 <h2 id="update-and-recover">Update and recover</h2>
 <p>Install the desired published npm version, then run <code>kujo-opencode update</code> in each project. Updates preserve profiles, overrides, and receipts. Projects on older versions retain their own projections.</p>
 <ul>
@@ -216,13 +216,13 @@ kujo-opencode abilities</code></pre>
 </ul>
 <p>Install this host integration through npm, not <code>kennel add kujo-opencode</code>. Kennel remains available inside the integration for supported Kujo dependency operations; it does not replace npm or OpenCode&apos;s host setup.</p>
 <h2 id="verified-release-scope">Verified release scope</h2>
-<p>Native and rendered host checks passed on Linux, macOS, and Windows with OpenCode 2.0.31 and 2.0.32. Linux coverage uses glibc Ubuntu; it does not establish musl compatibility. Live model testing is scoped to macOS and ChatGPT as above. Registry installation, upgrade, signatures, provenance, and the GitHub release archive were verified separately. Later host or provider versions need their own compatibility checks.</p>
+<p>Native and rendered host checks passed on Linux, macOS, and Windows with OpenCode 2.0.31 and 2.1.2. Linux coverage uses glibc Ubuntu; it does not establish musl compatibility. Live model testing is scoped to macOS and the Hermes provider as above. Registry installation, upgrade, signatures, provenance, and the GitHub release archive were verified separately. Later host or provider versions need their own compatibility checks.</p>
 <ul>
 <li><a href="https://kujolang.ai/ecosystem/kujo-opencode/">Ecosystem overview</a></li>
-<li><a href="https://github.com/kujolang/kujo-opencode/releases/tag/v0.2.0">Kujo OpenCode 0.2.0 release and evidence</a></li>
-<li><a href="https://github.com/kujolang/kujo-opencode/blob/v0.2.0/docs/USER-GUIDE.md">Daily-use guide</a></li>
-<li><a href="https://github.com/kujolang/kujo-opencode/blob/v0.2.0/docs/COMPATIBILITY.md">Compatibility and troubleshooting</a></li>
-<li><a href="https://github.com/kujolang/kujo-opencode/tree/v0.2.0/docs/walkthrough">Walkthrough and demo source</a></li>
+<li><a href="https://github.com/kujolang/kujo-opencode/releases/tag/v0.2.1">Kujo OpenCode 0.2.1 release and evidence</a></li>
+<li><a href="https://github.com/kujolang/kujo-opencode/blob/v0.2.1/docs/USER-GUIDE.md">Daily-use guide</a></li>
+<li><a href="https://github.com/kujolang/kujo-opencode/blob/v0.2.1/docs/COMPATIBILITY.md">Compatibility and troubleshooting</a></li>
+<li><a href="https://github.com/kujolang/kujo-opencode/tree/v0.2.1/docs/walkthrough">Walkthrough and demo source</a></li>
 </ul><!--/email_off--></div>
 	</article>
 	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when</a></li><li class="toc-level-2"><a href="#install-and-verify">Install and verify</a></li><li class="toc-level-2"><a href="#choose-a-profile">Choose a profile</a></li><li class="toc-level-2"><a href="#pick-a-specialist">Pick a specialist</a></li><li class="toc-level-2"><a href="#included-projects">Included projects</a></li><li class="toc-level-2"><a href="#review-approvals-and-receipts">Review approvals and receipts</a></li><li class="toc-level-2"><a href="#connect-a-provider">Connect a provider</a></li><li class="toc-level-2"><a href="#optional-browser-and-services">Optional browser and services</a></li><li class="toc-level-2"><a href="#update-and-recover">Update and recover</a></li><li class="toc-level-2"><a href="#verified-release-scope">Verified release scope</a></li></ol></nav>
