@@ -13,7 +13,7 @@
 		})();
 	</script>
 	<title>Source | Kujo Docs</title>
-	<meta name="description" content="Run Source 0.1.0 to connect Git proposals with tasks, agent sessions, evidence and authorized review decisions.">
+	<meta name="description" content="Run Source 0.1.1 to connect Git proposals with tasks, agent sessions, evidence and authorized review decisions.">
 	<meta name="keywords" content="SSG, Static Site Generator">
 	<meta name="author" content="Kujo">
 	<link rel="canonical" href="https://docs.kujolang.ai/tools/source/">
@@ -30,7 +30,7 @@
 	<meta name="msapplication-config" content="/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<meta property="og:title" content="Source">
-	<meta property="og:description" content="Run Source 0.1.0 to connect Git proposals with tasks, agent sessions, evidence and authorized review decisions.">
+	<meta property="og:description" content="Run Source 0.1.1 to connect Git proposals with tasks, agent sessions, evidence and authorized review decisions.">
 	<meta property="og:url" content="https://docs.kujolang.ai/tools/source/">
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="Kujo Docs">
@@ -40,13 +40,13 @@
 	<meta property="og:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Source">
-	<meta name="twitter:description" content="Run Source 0.1.0 to connect Git proposals with tasks, agent sessions, evidence and authorized review decisions.">
+	<meta name="twitter:description" content="Run Source 0.1.1 to connect Git proposals with tasks, agent sessions, evidence and authorized review decisions.">
 	<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
 	<meta name="twitter:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
 	<link href="../../assets/css/fonts.css" rel="stylesheet">
 	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
 	<link href="../../assets/css/style.css" rel="stylesheet">
-	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Source","name":"Source","description":"Run Source 0.1.0 to connect Git proposals with tasks, agent sessions, evidence and authorized review decisions.","url":"https://docs.kujolang.ai/tools/source/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Source","name":"Source","description":"Run Source 0.1.1 to connect Git proposals with tasks, agent sessions, evidence and authorized review decisions.","url":"https://docs.kujolang.ai/tools/source/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -101,12 +101,12 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="source">Source</h1><p class="docs-description">Run Source 0.1.0 to connect Git proposals with tasks, agent sessions, evidence and authorized review decisions.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>experimental release</span><span class="docs-badge docs-badge-version"><span>Version</span>0.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-14</span></div>
+		<h1 id="source">Source</h1><p class="docs-description">Run Source 0.1.1 to connect Git proposals with tasks, agent sessions, evidence and authorized review decisions.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>advanced</span><span class="docs-badge docs-badge-status"><span>Status</span>experimental release</span><span class="docs-badge docs-badge-version"><span>Version</span>0.1.1</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-21</span></div>
 		<div class="docs-body"><!--email_off--><h2 id="use-it-when">Use it when</h2>
 <p>You need to trace an agent&apos;s proposed Git change through its task, session, evidence and review decision. Source provides a browser UI, CLI, HTTP API and scoped Git access around the same workflow.</p>
 <h2 id="install-and-run">Install and run</h2>
 <p>Source is public and MIT-licensed. Use Node.js 22, npm and Git:</p>
-<pre><code class="language-bash">git clone --branch v0.1.0 https://github.com/kujolang/source.git
+<pre><code class="language-bash">git clone --branch v0.1.1 https://github.com/kujolang/source.git
 cd source
 npm ci
 npm run demo:contest -- --trace</code></pre>
@@ -118,18 +118,18 @@ npm run demo:contest -- --trace</code></pre>
 <h2 id="review-and-promotion">Review and promotion</h2>
 <p>Source records <code>Work → Session → Change → Evidence → Decision → Canonical Git</code>. Contributors receive scoped capabilities. They can propose changes and attach checks; an authorized reviewer decides what may become canonical. Source rejects stale promotions and retains the revision history.</p>
 <h2 id="cloudflare-profile">Cloudflare profile</h2>
-<p><code>npm run demo:hybrid</code> runs real Source, Worker handlers and Git with an emulated Artifacts service. To use live Cloudflare, follow the <a href="https://github.com/kujolang/source/blob/v0.1.0/docs/contest/HYBRID.md">hybrid setup guide</a> with your own Workers/Artifacts access and securely supplied credentials.</p>
-<p>The <a href="https://github.com/kujolang/source/blob/v0.1.0/docs/contest/CLOUDFLARE_LIVE.md">verified live demo</a> keeps Source and review data local. A deployed Worker creates repositories and issues short-lived credentials; accepted changes reach canonical Git on Artifacts. Expected-tip checks and retry reconciliation protect against stale updates and lost push acknowledgments.</p>
+<p><code>npm run demo:hybrid</code> runs real Source, Worker handlers and Git with an emulated Artifacts service. To use live Cloudflare, follow the <a href="https://github.com/kujolang/source/blob/v0.1.1/docs/contest/HYBRID.md">hybrid setup guide</a> with your own Workers/Artifacts access and securely supplied credentials.</p>
+<p>The <a href="https://github.com/kujolang/source/blob/v0.1.1/docs/contest/CLOUDFLARE_LIVE.md">verified live demo</a> keeps Source and review data local. A deployed Worker creates repositories and issues short-lived credentials; accepted changes reach canonical Git on Artifacts. Expected-tip checks and retry reconciliation protect against stale updates and lost push acknowledgments.</p>
 <h2 id="verification-and-limits">Verification and limits</h2>
 <p>Run <code>npm test</code>, <code>npm run test:cloudflare</code> and <code>npm run demo:hybrid</code> for local checks. PostgreSQL and container gates have separate prerequisites documented in the repository.</p>
-<p>Version 0.1.0 is an experimental release, not a production-readiness certification. JSON is single-process. Exposed serving requires PostgreSQL, shared durable Git storage, TLS, writer fencing and deployment-specific validation. Synchronous PostgreSQL maintenance is not atomic across records. Worker timeout does not guarantee cancellation of arbitrary action handlers. Review historical requester credentials and evidence fidelity before upgrading an affected deployment.</p>
+<p>Version 0.1.1 is an experimental release, not a production-readiness certification. JSON is single-process. Exposed serving requires PostgreSQL, shared durable Git storage, TLS, writer fencing and deployment-specific validation. Synchronous PostgreSQL maintenance is not atomic across records. Worker timeout does not guarantee cancellation of arbitrary action handlers. Review historical requester credentials and evidence fidelity before upgrading an affected deployment.</p>
 <h2 id="reference">Reference</h2>
 <ul>
 <li><a href="https://github.com/kujolang/source">Public repository</a></li>
-<li><a href="https://github.com/kujolang/source/releases/tag/v0.1.0">Source 0.1.0 release</a></li>
+<li><a href="https://github.com/kujolang/source/releases/tag/v0.1.1">Source 0.1.1 release</a></li>
 <li><a href="https://kujolang.ai/ecosystem/source/">Ecosystem page and hero</a></li>
-<li><a href="https://github.com/kujolang/source/blob/v0.1.0/docs/audits/repository-hardening.md">Hardening and verification record</a></li>
-<li><a href="https://github.com/kujolang/source/blob/v0.1.0/docs/source/23-tls-deployment.md">Deployment guide</a></li>
+<li><a href="https://github.com/kujolang/source/blob/v0.1.1/docs/audits/repository-hardening.md">Hardening and verification record</a></li>
+<li><a href="https://github.com/kujolang/source/blob/v0.1.1/docs/source/23-tls-deployment.md">Deployment guide</a></li>
 </ul><!--/email_off--></div>
 	</article>
 	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when</a></li><li class="toc-level-2"><a href="#install-and-run">Install and run</a></li><li class="toc-level-2"><a href="#review-and-promotion">Review and promotion</a></li><li class="toc-level-2"><a href="#cloudflare-profile">Cloudflare profile</a></li><li class="toc-level-2"><a href="#verification-and-limits">Verification and limits</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>

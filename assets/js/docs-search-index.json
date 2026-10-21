@@ -395,6 +395,7 @@
       ],
       "headings": [
         "Source 0.1.0 \u2014 October 14, 2026",
+        "October 21 companion updates",
         "Start here",
         "What changed in 1.8",
         "Experimental companion contracts",
@@ -843,7 +844,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "1.3.0",
+      "version": "1.3.1",
       "tags": [
         "[showcase, ai, chat]"
       ],
@@ -991,7 +992,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "tags": [
         "[showcase, static, publishing]"
       ],
@@ -1007,7 +1008,7 @@
         "Boundaries",
         "Reference"
       ],
-      "text": "Use it when\u2026 You need a transparent, deterministic static publishing pipeline whose content, templates, assets, and generated outputs stay visible. Release 1.2.0 https://github.com/kujolang/ssg/releases/tag/v1.2.0 , published October 12, 2026, hardens network/filesystem and JSON-LD boundaries, bounds Ability inspection, replaces text minification with esbuil"
+      "text": "Use it when\u2026 You need a transparent, deterministic static publishing pipeline whose content, templates, assets, and generated outputs stay visible. Release 1.2.1 https://github.com/kujolang/ssg/releases/tag/v1.2.1 , published October 21, 2026, hardens network/filesystem and JSON-LD boundaries, bounds Ability inspection, replaces text minification with esbuil"
     },
     {
       "title": "TotalRecall",
@@ -1042,7 +1043,7 @@
       "audience": "developer",
       "difficulty": "advanced",
       "status": "stable runtime; SDK previews",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "tags": [
         "[tool, contracts, agents, mcp]"
       ],
@@ -1053,9 +1054,9 @@
         "Try the development kit",
         "Connect applications and agents",
         "Verify and learn more",
-        "Version 1.2.0 and Kujo 1.6"
+        "Version 1.3.0 and Kujo 1.6"
       ],
-      "text": "Kujo Ability gives an operation a stable identity, input and output schemas, declared effects, and retry semantics. Applications bind that definition to handlers and retain control of identity, permissions, credentials, approvals, storage, and transport. Install Ability 1.2.0 requires Kujo 1.6.0 or newer. Install the tagged release with Kennel /tools/kennel/"
+      "text": "Kujo Ability gives an operation a stable identity, input and output schemas, declared effects, and retry semantics. Applications bind that definition to handlers and retain control of identity, permissions, credentials, approvals, storage, and transport. Install Ability 1.3.0 requires Kujo 1.6.0 or newer. Install the tagged release with Kennel /tools/kennel/"
     },
     {
       "title": "Agents SDK",
@@ -1186,7 +1187,7 @@
       "audience": "developer",
       "difficulty": "beginner",
       "status": "local scope verified",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "tags": [
         "[tool, evidence, failures]"
       ],
@@ -1261,7 +1262,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "1.1.1",
+      "version": "1.1.2",
       "tags": [
         "[tool, drift, docs]"
       ],
@@ -1673,7 +1674,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "1.1.2",
+      "version": "1.1.3",
       "tags": [
         "[tool, workflows, logs]"
       ],
@@ -1753,7 +1754,7 @@
       "audience": "developer",
       "difficulty": "beginner",
       "status": "local scope verified",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "tags": [
         "[tool, review, diff]"
       ],
@@ -1895,7 +1896,7 @@
       "audience": "developer",
       "difficulty": "beginner",
       "status": "local scope verified",
-      "version": "current",
+      "version": "1.2.1",
       "tags": [
         "[tool, evidence, receipts]"
       ],
@@ -1996,7 +1997,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "tags": [
         "[tool, release, gates]"
       ],
@@ -2060,14 +2061,14 @@
     },
     {
       "title": "Source",
-      "description": "Run Source 0.1.0 to connect Git proposals with tasks, agent sessions, evidence and authorized review decisions.",
+      "description": "Run Source 0.1.1 to connect Git proposals with tasks, agent sessions, evidence and authorized review decisions.",
       "url": "https://docs.kujolang.ai/tools/source/",
       "route": "tools/source/",
       "section": "Tools",
       "audience": "developer",
       "difficulty": "advanced",
       "status": "experimental release",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "tags": [
         "[tool, git, collaboration, agents]"
       ],
@@ -2090,7 +2091,7 @@
       "audience": "developer",
       "difficulty": "beginner",
       "status": "local scope verified",
-      "version": "current",
+      "version": "1.0.2",
       "tags": [
         "[tool, contracts, tasks]"
       ],
@@ -2208,7 +2209,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "1.2.1",
+      "version": "1.2.2",
       "tags": [
         "[tool, telemetry, ai]"
       ],

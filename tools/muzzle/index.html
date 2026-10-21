@@ -101,7 +101,7 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="muzzle">Muzzle</h1><p class="docs-description">Run noisy workflows quietly while preserving complete logs and summaries.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.2</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-12</span></div>
+		<h1 id="muzzle">Muzzle</h1><p class="docs-description">Run noisy workflows quietly while preserving complete logs and summaries.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>local scope verified</span><span class="docs-badge docs-badge-version"><span>Version</span>1.1.3</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-21</span></div>
 		<div class="docs-body"><!--email_off--><h2 id="use-it-when">Use it when…</h2>
 <p>A trusted workflow produces too much console noise but its complete log and outcome still need to remain available.</p>
 <h2 id="interface-overview">Interface overview</h2>
@@ -134,12 +134,12 @@
 <li>Open the report or rerun with <code>--verbose</code> when the compact summary is not enough.</li>
 </ul>
 <h2 id="install-or-update">Install or update</h2>
-<p>Muzzle <strong>v1.1.2</strong> is the current release. With <a href="/tools/kennel/">Kennel</a> installed:</p>
+<p>Muzzle <strong>v1.1.3</strong> is the current release. With <a href="/tools/kennel/">Kennel</a> installed:</p>
 <pre><code class="language-bash">kennel tool install muzzle
 <h1 id="update-an-existing-unpinned-installation">Update an existing unpinned installation:</h1>
 kennel tool update muzzle
 muzzle version</code></pre>
-<p>The version output starts with <code>Muzzle v1.1.2</code>. Use <code>kennel add muzzle</code> for a project dependency. Source installations can check out <a href="https://github.com/kujolang/muzzle/releases/tag/v1.1.2">v1.1.2</a> and run <code>bash scripts/install.sh --prefix /absolute/prefix</code>; use <code>--force</code> only to replace an existing launcher intentionally.</p>
+<p>The version output starts with <code>Muzzle v1.1.3</code>. Use <code>kennel add muzzle</code> for a project dependency. Source installations can check out <a href="https://github.com/kujolang/muzzle/releases/tag/v1.1.3">v1.1.3</a> and run <code>bash scripts/install.sh --prefix /absolute/prefix</code>; use <code>--force</code> only to replace an existing launcher intentionally.</p>
 <h2 id="five-minute-example">Five-minute example</h2>
 <pre><code class="language-bash">muzzle init
 muzzle run hello-bash --dry-run
@@ -150,7 +150,7 @@ muzzle run hello-bash --json</code></pre>
 <p>Use Muzzle around <a href="/tools/packwrite/">PackWrite</a> or a bounded <a href="/tools/dispatch/">Dispatch</a> run.</p>
 <h2 id="boundaries">Boundaries</h2>
 <p>Run trusted scripts only. Quiet output is not a sandbox. Raw logs can contain secrets; redaction applies to summaries. Serialize loop commands: concurrent loop writers are not coordinated.</p>
-<p>Version 1.1.2 fixes unsafe initialization and cleanup paths, ambiguous options, invalid loop writes, and failure-excerpt handling. It preserves the CLI and versioned JSON contracts. New projects ignore all <code>.muzzle/state/</code>; existing projects should add <code>state/</code> to <code>.muzzle/.gitignore</code>. Existing files are never silently rewritten. Ignore rules do not untrack files already committed.</p>
+<p>Version 1.1.3 fixes unsafe initialization and cleanup paths, ambiguous options, invalid loop writes, and failure-excerpt handling. It preserves the CLI and versioned JSON contracts. New projects ignore all <code>.muzzle/state/</code>; existing projects should add <code>state/</code> to <code>.muzzle/.gitignore</code>. Existing files are never silently rewritten. Ignore rules do not untrack files already committed.</p>
 <h2 id="reference">Reference</h2>
 <p>See the <a href="https://github.com/kujolang/muzzle">Muzzle repository</a>.</p><!--/email_off--></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/leash/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/runledger/" rel="next"><span>Next</span></a></nav>
 	</article>
