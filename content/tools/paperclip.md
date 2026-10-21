@@ -8,8 +8,8 @@ order: 255
 audience: developer
 difficulty: beginner
 status: released
-version: 0.2.0
-last_updated: 2026-10-14
+version: 0.2.1
+last_updated: "2026-10-21"
 scope: local Paperclip integration
 source_repo: paperclip
 previous: /tools/howl/
@@ -17,7 +17,7 @@ next: /tools/site-kit/
 tags: [tool, agents, context, review, evidence]
 ---
 
-## What is new in 0.2.0
+## Included features
 
 Kujo for Paperclip brings repository understanding, project knowledge, native quality checks and human-approved workflows into the project and issue views.
 
@@ -30,7 +30,7 @@ Kujo for Paperclip brings repository understanding, project knowledge, native qu
 
 ## Install and upgrade
 
-Use official Paperclip **2026.1012.0** or later and Node.js **24.11.0** or later. The release is qualified against official Paperclip 2026.1012.0. No custom host fork, separate Kujo installation, provider key or manual installation of bundled tools is needed.
+Use official Paperclip **2026.1012.0** or later and Node.js **24.22.1** on the 24.x line or **26.12.1** and later. The release is qualified against official Paperclip 2026.1012.0. No custom host fork, separate Kujo installation, provider key or manual installation of bundled tools is needed.
 
 ```bash
 npx paperclipai plugin install @kujolang/paperclip
@@ -44,7 +44,7 @@ Quality reports and suggested checks are not proof that tests ran. Approved Eval
 
 The plugin ships pinned, checksummed component sources and Kujo 1.8.1. Its offline RAG subset has separate plugin qualification; the standalone RAG 1.1.0 candidate remains unpublished pending its required review evidence. This does not certify arbitrary hosted RAG deployments.
 
-See the [0.2.0 release](https://github.com/kujolang/paperclip/releases/tag/v0.2.0), [usage guide](https://github.com/kujolang/paperclip/blob/v0.2.0/docs/USAGE.md), [execution boundaries](https://github.com/kujolang/paperclip/blob/v0.2.0/docs/EXECUTION.md) and [knowledge guide](https://github.com/kujolang/paperclip/blob/v0.2.0/docs/KNOWLEDGE.md).
+See the [0.2.1 release](https://github.com/kujolang/paperclip/releases/tag/v0.2.1), [usage guide](https://github.com/kujolang/paperclip/blob/v0.2.1/docs/USAGE.md), [execution boundaries](https://github.com/kujolang/paperclip/blob/v0.2.1/docs/EXECUTION.md) and [knowledge guide](https://github.com/kujolang/paperclip/blob/v0.2.1/docs/KNOWLEDGE.md).
 
 ## Agent access and install compatibility
 

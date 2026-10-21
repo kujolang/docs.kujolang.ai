@@ -182,7 +182,7 @@ require_text "ecosystem/releases/index.html" "https://github.com/kujolang/ssg/re
 
 # Released OpenCode integration must be reachable, installable, and scope its evidence.
 require_file tools/kujo-opencode/index.html
-require_text tools/kujo-opencode/index.html 'npm install --global @kujolang/kujo-opencode@0.2.0'
+require_text tools/kujo-opencode/index.html 'npm install --global @kujolang/kujo-opencode@0.2.1'
 require_text tools/kujo-opencode/index.html 'HTTP 403'
 require_text ecosystem/tooling/index.html '/tools/kujo-opencode/'
 require_text ecosystem/releases/index.html '/tools/kujo-opencode/'

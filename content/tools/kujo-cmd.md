@@ -8,8 +8,8 @@ order: 235
 audience: developer
 difficulty: intermediate
 status: released
-version: 0.2.0
-last_updated: 2026-10-06
+version: 0.3.0
+last_updated: "2026-10-21"
 scope: local-first Command Code integration
 source_repo: kujo-cmd
 previous: /tools/lens/
@@ -27,14 +27,14 @@ and project boundaries.
 
 ```bash
 cd /path/to/your/project
-npx github:kujolang/kujo-cmd#v0.2.0 setup
+npx github:kujolang/kujo-cmd#v0.3.0 setup
 command-code
 ```
 
 The GitHub release is live. npm publication is temporarily pending restoration
 of the package's trusted-publisher or `NPM_TOKEN` authorization, so the command
 above runs the same tagged package directly from GitHub. Use
-`npx @kujolang/kujo-cmd@0.2.0 setup` after the registry release appears.
+`npx @kujolang/kujo-cmd@0.3.0 setup` after the registry release appears.
 
 The first setup downloads 25 pinned Kujo source projects and the Kujo runtime.
 Normal execution is local and works offline. No Kujo account or hosted Kujo
@@ -107,7 +107,7 @@ kujo-cmd repair
 kujo-cmd update
 ```
 
-Kujo CMD 0.2.0 is verified against Command Code 1.75.1. See the
-[0.2.0 release](https://github.com/kujolang/kujo-cmd/releases/tag/v0.2.0) and
+Kujo CMD 0.3.0 is verified against Command Code 1.75.1. See the
+[0.3.0 release](https://github.com/kujolang/kujo-cmd/releases/tag/v0.3.0) and
 [repository](https://github.com/kujolang/kujo-cmd) for the complete catalog,
 security boundaries, and troubleshooting guidance.

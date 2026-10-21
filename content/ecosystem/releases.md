@@ -24,7 +24,7 @@ This inventory was checked against all **86 public kujolang repositories on Sept
 
 Install [Kujo 1.8.2](/install/) for the current runtime. A standalone binary runs ordinary Kujo programs without Python, Node.js, or Rust. Individual applications and tools retain their own dependencies, supported platforms, runtime pins, and update procedures.
 
-[Kennel's official registry](https://kennel.kujolang.ai/) distributes first-party package artifacts. Kennel 1.2.0 is published separately; Kujo 1.8.2 does not change its version or historical package artifacts. See [package workflows](/learn/packages/) before assuming that upgrading Kujo also updates Kennel or other tools.
+[Kennel's official registry](https://kennel.kujolang.ai/) distributes first-party package artifacts. Kennel 1.2.1 is published separately; Kujo 1.8.2 does not change its version or historical package artifacts. See [package workflows](/learn/packages/) before assuming that upgrading Kujo also updates Kennel or other tools.
 
 ## What changed in 1.8
 
@@ -52,6 +52,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [ai-sdk](https://github.com/kujolang/ai-sdk) | [v1.2.0](https://github.com/kujolang/ai-sdk/releases/tag/v1.2.0) | 2026-10-13 |
 | [anthropic](https://github.com/kujolang/anthropic) | [v0.1.2](https://github.com/kujolang/anthropic/releases/tag/v0.1.2) | 2026-08-27 |
 | [assetworks](https://github.com/kujolang/assetworks) | [v0.2.0](https://github.com/kujolang/assetworks/releases/tag/v0.2.0) | 2026-08-14 |
+| [bb-kujo](https://github.com/kujolang/bb-kujo) | [v0.2.2](https://github.com/kujolang/bb-kujo/releases/tag/v0.2.2) | 2026-10-21 |
 | [bluepencil](https://github.com/kujolang/bluepencil) | [v0.2.0](https://github.com/kujolang/bluepencil/releases/tag/v0.2.0) | 2026-08-14 |
 | [casefile](https://github.com/kujolang/casefile) | [v1.0.1](https://github.com/kujolang/casefile/releases/tag/v1.0.1) | 2026-10-14 |
 | [changebucket](https://github.com/kujolang/changebucket) | [v1.1.0](https://github.com/kujolang/changebucket/releases/tag/v1.1.0) | 2026-09-22 |
@@ -69,11 +70,11 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [fence](https://github.com/kujolang/fence) | [v1.1.0](https://github.com/kujolang/fence/releases/tag/v1.1.0) | 2026-10-14 |
 | [galleypack](https://github.com/kujolang/galleypack) | [v0.2.0](https://github.com/kujolang/galleypack/releases/tag/v0.2.0) | 2026-08-14 |
 | [howl](https://github.com/kujolang/howl) | [v1.2.0](https://github.com/kujolang/howl/releases/tag/v1.2.0) | 2026-10-16 |
-| [kennel](https://github.com/kujolang/kennel) | [v1.2.0](https://github.com/kujolang/kennel/releases/tag/v1.2.0) | 2026-10-14 |
+| [kennel](https://github.com/kujolang/kennel) | [v1.2.1](https://github.com/kujolang/kennel/releases/tag/v1.2.1) | 2026-10-21 |
 | [kujo](https://github.com/kujolang/kujo) | [v1.8.2](https://github.com/kujolang/kujo/releases/tag/v1.8.2) | 2026-10-19 |
 | [kujo-agents](https://github.com/kujolang/kujo-agents) | [v1.4.0](https://github.com/kujolang/kujo-agents/releases/tag/v1.4.0) | 2026-09-07 |
-| [kujo-opencode](https://github.com/kujolang/kujo-opencode) | [v0.2.0](https://github.com/kujolang/kujo-opencode/releases/tag/v0.2.0) | 2026-10-17 |
-| [kujo-pi](https://github.com/kujolang/kujo-pi) | [v1.1.0](https://github.com/kujolang/kujo-pi/releases/tag/v1.1.0) | 2026-09-26 |
+| [kujo-opencode](https://github.com/kujolang/kujo-opencode) | [v0.2.1](https://github.com/kujolang/kujo-opencode/releases/tag/v0.2.1) | 2026-10-21 |
+| [kujo-pi](https://github.com/kujolang/kujo-pi) | [v1.2.1](https://github.com/kujolang/kujo-pi/releases/tag/v1.2.1) | 2026-10-21 |
 | [kujo-skills](https://github.com/kujolang/kujo-skills) | [v0.7.0](https://github.com/kujolang/kujo-skills/releases/tag/v0.7.0) | 2026-09-08 |
 | [kujo-workflows](https://github.com/kujolang/kujo-workflows) | [v0.6.0](https://github.com/kujolang/kujo-workflows/releases/tag/v0.6.0) | 2026-09-07 |
 | [lens](https://github.com/kujolang/lens) | [v1.1.0](https://github.com/kujolang/lens/releases/tag/v1.1.0) | 2026-09-07 |
@@ -81,7 +82,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [muzzle](https://github.com/kujolang/muzzle) | [v1.1.2](https://github.com/kujolang/muzzle/releases/tag/v1.1.2) | 2026-10-12 |
 | [ollama](https://github.com/kujolang/ollama) | [v0.1.10](https://github.com/kujolang/ollama/releases/tag/v0.1.10) | 2026-08-27 |
 | [packwrite](https://github.com/kujolang/packwrite) | [v1.1.1](https://github.com/kujolang/packwrite/releases/tag/v1.1.1) | 2026-10-13 |
-| [paperclip](https://github.com/kujolang/paperclip) | [v0.2.0](https://github.com/kujolang/paperclip/releases/tag/v0.2.0) | 2026-10-14 |
+| [paperclip](https://github.com/kujolang/paperclip) | [v0.2.1](https://github.com/kujolang/paperclip/releases/tag/v0.2.1) | 2026-10-21 |
 | [patchbrief](https://github.com/kujolang/patchbrief) | [v1.0.2](https://github.com/kujolang/patchbrief/releases/tag/v1.0.2) | 2026-10-14 |
 | [presswire](https://github.com/kujolang/presswire) | [v0.2.0](https://github.com/kujolang/presswire/releases/tag/v0.2.0) | 2026-08-14 |
 | [rag](https://github.com/kujolang/rag) | [v1.0.0](https://github.com/kujolang/rag/releases/tag/v1.0.0) | 2026-08-08 |

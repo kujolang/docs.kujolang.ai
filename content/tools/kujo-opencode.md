@@ -9,8 +9,8 @@ order: 236
 audience: developer
 difficulty: intermediate
 status: released
-version: 0.2.0
-last_updated: 2026-10-18
+version: 0.2.1
+last_updated: "2026-10-21"
 scope: local OpenCode 2 integration
 source_repo: kujo-opencode
 tags: [tool, opencode, agents, ability, integration]
@@ -22,10 +22,10 @@ You want OpenCode to inspect a repository, build and test Kujo programs, review 
 
 ## Install and verify
 
-Requirements: Node.js 20 or newer, npm, Git, and OpenCode 2 version 2.0.31 or newer. OpenCode 1 is not supported.
+Requirements: Node.js 22.23.4+, 24.22.1+, or 26.12.1+ on those release lines, npm, Git, and OpenCode 2 version 2.0.31 or newer. OpenCode 1 is not supported.
 
 ```sh
-npm install --global @kujolang/kujo-opencode@0.2.0
+npm install --global @kujolang/kujo-opencode@0.2.1
 cd /path/to/your/project
 kujo-opencode setup
 kujo-opencode doctor
@@ -79,7 +79,7 @@ Give the specialist a concrete task in a trusted project. For example: “Review
 - **Workflow and tracking:** Dispatch, RunLedger, Watchdog, Muzzle, and PackWrite.
 - **Evidence and release work:** Casefile, Dossier, Redact, Tribunal, VersionSeal, ShipCheck, and Howl.
 
-The adapter exposes supported operations, not each project's entire interface. For exact schemas and scope, see the [released catalog](https://github.com/kujolang/kujo-opencode/tree/v0.2.0/catalog).
+The adapter exposes supported operations, not each project's entire interface. For exact schemas and scope, see the [released catalog](https://github.com/kujolang/kujo-opencode/tree/v0.2.1/catalog).
 
 ## Review approvals and receipts
 
@@ -99,7 +99,7 @@ This command requires an interactive human decision. Agents must not approve the
 
 Use OpenCode's provider controls to select an account and model. For ChatGPT, choose OpenAI, select Sign in with ChatGPT, and finish the browser sign-in. Requests use that connection's allowance. Kujo does not copy credentials, proxy model traffic, or silently choose a paid provider.
 
-Live acceptance used `openai/gpt-5.6-sol` on macOS x64 with OpenCode 2.0.32: six specialists and 50 operation checks passed. Model availability depends on your account. The free GLM and DeepSeek routes returned HTTP 403 for scoped specialist requests; their listing does not establish that they work here.
+Live acceptance used an explicitly configured local Hermes connection with `reflection/beam-1.0-501b-a23b:free` on macOS x64 with OpenCode 2.1.2: six specialists and 50 operation checks passed. Model availability depends on your account. The free GLM and DeepSeek routes returned HTTP 403 for scoped specialist requests; their listing does not establish that they work here.
 
 ## Optional browser and services
 
@@ -109,7 +109,7 @@ Lens flow validation does not need Chromium. Real browser checks require an expl
 kujo-opencode browser install
 ```
 
-Watchdog delivery and RunLedger lifecycle tracking are opt-in. Setup does not start services or turn on background telemetry. Remote Ability gateways, Leash, and other private services require their own configuration and authorization. Read the [service support boundaries](https://github.com/kujolang/kujo-opencode/blob/v0.2.0/docs/SERVICE-SUPPORT.md) before enabling them.
+Watchdog delivery and RunLedger lifecycle tracking are opt-in. Setup does not start services or turn on background telemetry. Remote Ability gateways, Leash, and other private services require their own configuration and authorization. Read the [service support boundaries](https://github.com/kujolang/kujo-opencode/blob/v0.2.1/docs/SERVICE-SUPPORT.md) before enabling them.
 
 ## Update and recover
 
@@ -125,10 +125,10 @@ Install this host integration through npm, not `kennel add kujo-opencode`. Kenne
 
 ## Verified release scope
 
-Native and rendered host checks passed on Linux, macOS, and Windows with OpenCode 2.0.31 and 2.0.32. Linux coverage uses glibc Ubuntu; it does not establish musl compatibility. Live model testing is scoped to macOS and ChatGPT as above. Registry installation, upgrade, signatures, provenance, and the GitHub release archive were verified separately. Later host or provider versions need their own compatibility checks.
+Native and rendered host checks passed on Linux, macOS, and Windows with OpenCode 2.0.31 and 2.1.2. Linux coverage uses glibc Ubuntu; it does not establish musl compatibility. Live model testing is scoped to macOS and the Hermes provider as above. Registry installation, upgrade, signatures, provenance, and the GitHub release archive were verified separately. Later host or provider versions need their own compatibility checks.
 
 - [Ecosystem overview](https://kujolang.ai/ecosystem/kujo-opencode/)
-- [Kujo OpenCode 0.2.0 release and evidence](https://github.com/kujolang/kujo-opencode/releases/tag/v0.2.0)
-- [Daily-use guide](https://github.com/kujolang/kujo-opencode/blob/v0.2.0/docs/USER-GUIDE.md)
-- [Compatibility and troubleshooting](https://github.com/kujolang/kujo-opencode/blob/v0.2.0/docs/COMPATIBILITY.md)
-- [Walkthrough and demo source](https://github.com/kujolang/kujo-opencode/tree/v0.2.0/docs/walkthrough)
+- [Kujo OpenCode 0.2.1 release and evidence](https://github.com/kujolang/kujo-opencode/releases/tag/v0.2.1)
+- [Daily-use guide](https://github.com/kujolang/kujo-opencode/blob/v0.2.1/docs/USER-GUIDE.md)
+- [Compatibility and troubleshooting](https://github.com/kujolang/kujo-opencode/blob/v0.2.1/docs/COMPATIBILITY.md)
+- [Walkthrough and demo source](https://github.com/kujolang/kujo-opencode/tree/v0.2.1/docs/walkthrough)

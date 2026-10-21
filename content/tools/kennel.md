@@ -8,8 +8,8 @@ order: 20
 audience: developer
 difficulty: intermediate
 status: stable
-version: 1.2.0
-last_updated: "2026-10-14"
+version: 1.2.1
+last_updated: "2026-10-21"
 scope: official registry and local development
 source_repo: kennel
 previous: /tools/kujo/
@@ -68,17 +68,17 @@ Read [Packages with Kennel](/learn/packages/) before choosing registry or file d
 
 ## Boundaries
 
-The official static registry is available at [kennel.kujolang.ai](https://kennel.kujolang.ai/). Kennel 1.1.0 provides the native bootstrap and global tool commands, using Kujo 1.4.0 or newer. Native Windows bootstrap is not supported. Use `kennel.toml` and `kennel.lock` for this client. Upgrading Kujo, including to 1.8.0, does not automatically upgrade Kennel. Accounts and third-party publishing are not available.
+The official static registry is available at [kennel.kujolang.ai](https://kennel.kujolang.ai/). Kennel 1.2.1 provides the native bootstrap and global tool commands, using Kujo 1.4.0 or newer. Native Windows bootstrap is not supported. Use `kennel.toml` and `kennel.lock` for this client. Upgrading Kujo, including to 1.8.0, does not automatically upgrade Kennel. Accounts and third-party publishing are not available.
 
 ## Reference
 
 See the [Kennel repository](https://github.com/kujolang/kennel) for manifest and trust policy details.
 
-## Release 1.2.0
+## Current release: 1.2.1
 
-[Kennel 1.2.0](https://github.com/kujolang/kennel/releases/tag/v1.2.0) adds offline declaration inspection and canonical registry directory URLs, preserving optional manifest/lockfile defaults. Previously published archives remain immutable. Release checks used Kujo 1.8.1.
+[Kennel 1.2.1](https://github.com/kujolang/kennel/releases/tag/v1.2.1) includes offline declaration inspection and canonical registry directory URLs, preserving optional manifest/lockfile defaults. Previously published archives remain immutable. Release checks used Kujo 1.8.2.
 
-Use `kennel self update` to select the latest stable client, or `kennel self update --version 1.2.0` for an explicit version. Package checksums and provenance remain mandatory; package names alone are not trust anchors.
+Use `kennel self update` to select the latest stable client, or `kennel self update --version 1.2.1` for an explicit version. Package checksums and provenance remain mandatory; package names alone are not trust anchors.
 
 ## Agent City
 

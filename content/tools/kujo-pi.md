@@ -9,8 +9,8 @@ order: 75
 audience: developer
 difficulty: intermediate
 status: released
-version: 1.1.0
-last_updated: 2026-09-26
+version: 1.2.1
+last_updated: "2026-10-21"
 scope: opt-in Pi integration
 source_repo: kujo-pi
 tags: [tool, pi, integrations, telemetry, ability]
@@ -18,10 +18,10 @@ tags: [tool, pi, integrations, telemetry, ability]
 
 ## Install and start
 
-Kujo Pi 1.1.0 is a separate npm package for the Pi host. It requires Node.js 22.19.0 or newer, npm 10 or newer, and Pi 0.84.3 or newer within the 0.x line. Install the [Kujo runtime](/install/) separately for Kujo-backed operations.
+Kujo Pi 1.2.1 is a separate npm package for the Pi host. It requires Node.js 22.23.4 on 22.x, 24.22.1 on 24.x, or 26.12.1 and later; npm 10 or newer; and Pi 0.84.3 or newer below 2.0. Use an existing [Kujo runtime](/install/), or explicitly preview and approve the managed Kujo/Kennel setup on macOS and Linux. Windows users can use an existing runtime or WSL for Kennel-managed tools.
 
 ```bash
-pi install npm:@kujolang/kujo-pi@1.1.0
+pi install npm:@kujolang/kujo-pi@1.2.1
 ```
 
 Start Pi in a trusted repository, configure `KUJO_BIN` or put Kujo on PATH, then run:
@@ -66,7 +66,7 @@ Artifact snapshots cover at most 128 files, 10,000,000 content bytes and 4,096 e
 
 ## Reference
 
-- [Kujo Pi 1.1.0 release](https://github.com/kujolang/kujo-pi/releases/tag/v1.1.0)
-- [Pinned onboarding guide](https://github.com/kujolang/kujo-pi/blob/v1.1.0/docs/pi-onboarding.md)
-- [Telemetry configuration and recovery](https://github.com/kujolang/kujo-pi/blob/v1.1.0/docs/watchdog-telemetry-bridge.md)
-- [Operation and receipt contracts](https://github.com/kujolang/kujo-pi/blob/v1.1.0/docs/contracts.md)
+- [Kujo Pi 1.2.1 release](https://github.com/kujolang/kujo-pi/releases/tag/v1.2.1)
+- [Pinned onboarding guide](https://github.com/kujolang/kujo-pi/blob/v1.2.1/docs/pi-onboarding.md)
+- [Telemetry configuration and recovery](https://github.com/kujolang/kujo-pi/blob/v1.2.1/docs/watchdog-telemetry-bridge.md)
+- [Operation and receipt contracts](https://github.com/kujolang/kujo-pi/blob/v1.2.1/docs/contracts.md)
