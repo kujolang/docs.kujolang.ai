@@ -60,10 +60,10 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [bluepencil](https://github.com/kujolang/bluepencil) | [v0.2.0](https://github.com/kujolang/bluepencil/releases/tag/v0.2.0) | 2026-08-14 |
 | [casefile](https://github.com/kujolang/casefile) | [v1.0.2](https://github.com/kujolang/casefile/releases/tag/v1.0.2) | 2026-10-21 |
 | [changebucket](https://github.com/kujolang/changebucket) | [v1.1.0](https://github.com/kujolang/changebucket/releases/tag/v1.1.0) | 2026-09-22 |
-| [cms](https://github.com/kujolang/cms) | [v1.2.0](https://github.com/kujolang/cms/releases/tag/v1.2.0) | 2026-10-12 |
-| [cms-contact-form](https://github.com/kujolang/cms-contact-form) | [v1.0.0](https://github.com/kujolang/cms-contact-form/releases/tag/v1.0.0) | 2026-08-29 |
-| [cms-example](https://github.com/kujolang/cms-example) | [v1.1.0](https://github.com/kujolang/cms-example/releases/tag/v1.1.0) | 2026-08-30 |
-| [cms-field-notes-theme](https://github.com/kujolang/cms-field-notes-theme) | [v1.0.2](https://github.com/kujolang/cms-field-notes-theme/releases/tag/v1.0.2) | 2026-08-29 |
+| [cms](https://github.com/kujolang/cms) | [v1.2.1](https://github.com/kujolang/cms/releases/tag/v1.2.1) | 2026-10-22 |
+| [cms-contact-form](https://github.com/kujolang/cms-contact-form) | [v1.0.1](https://github.com/kujolang/cms-contact-form/releases/tag/v1.0.1) | 2026-10-22 |
+| [cms-example](https://github.com/kujolang/cms-example) | [v1.2.0](https://github.com/kujolang/cms-example/releases/tag/v1.2.0) | 2026-10-22 |
+| [cms-field-notes-theme](https://github.com/kujolang/cms-field-notes-theme) | [v1.0.3](https://github.com/kujolang/cms-field-notes-theme/releases/tag/v1.0.3) | 2026-10-22 |
 | [commerce](https://github.com/kujolang/commerce) | [v0.5.1](https://github.com/kujolang/commerce/releases/tag/v0.5.1) | 2026-10-22 |
 | [concord](https://github.com/kujolang/concord) | [v1.1.2](https://github.com/kujolang/concord/releases/tag/v1.1.2) | 2026-10-21 |
 | [contentgraph](https://github.com/kujolang/contentgraph) | [v0.3.0](https://github.com/kujolang/contentgraph/releases/tag/v0.3.0) | 2026-08-13 |
