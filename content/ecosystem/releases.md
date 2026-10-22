@@ -110,6 +110,9 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [versionseal](https://github.com/kujolang/versionseal) | [v0.2.0](https://github.com/kujolang/versionseal/releases/tag/v0.2.0) | 2026-08-14 |
 | [watchdog](https://github.com/kujolang/watchdog) | [v1.2.2](https://github.com/kujolang/watchdog/releases/tag/v1.2.2) | 2026-10-21 |
 | [workcell](https://github.com/kujolang/workcell) | [v1.3.0](https://github.com/kujolang/workcell/releases/tag/v1.3.0) | 2026-10-22 |
+| [workcell-studio](https://github.com/kujolang/workcell-studio) | [v0.1.0-rc.4 — prerelease](https://github.com/kujolang/workcell-studio/releases/tag/v0.1.0-rc.4) | 2026-10-22 |
+
+Workcell Studio remains a source prerelease, verified with Kujo 1.6.0 and Workcell 1.3.0. Its real Chrome WebMCP failure/repair/Eval checks do not certify a public deployment.
 
 Foreman, SSG WebMCP, and VideoOps are source releases. Their release notes define installation and verification scope; publication does not certify a hosted service, cloud provider, or media entitlement.
 
