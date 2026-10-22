@@ -8,8 +8,8 @@ order: 45
 audience: developer
 difficulty: intermediate
 status: preview
-version: 0.3.0
-last_updated: 2026-10-03
+version: 0.3.1
+last_updated: "2026-10-22"
 scope: optional presentation package
 source_repo: presentations
 previous: /showcases/ssg/
@@ -66,7 +66,7 @@ Explore the [live presentation examples](https://presentations.kujolang.ai/) to 
 
 ## Boundaries
 
-Version 0.3.0 is a preview distributed as source through GitHub releases; it is not published to npm. Native authoring and build tools are verified on macOS and Linux, not Windows. Automated browser and accessibility checks do not replace human screen-reader, language, or presentation review.
+Version 0.3.1 is a preview distributed as source through GitHub releases; it is not published to npm. Native authoring and build tools are verified on macOS and Linux, not Windows. Automated browser and accessibility checks do not replace human screen-reader, language, or presentation review.
 
 Generated decks are static files. Presentations does not provide accounts, tenant isolation, hosted rendering, or server-side access control. Use a trusted build workspace, keep private files outside the published asset tree, and put confidential decks behind host-level authentication.
 
@@ -74,8 +74,8 @@ Generated decks are static files. Presentations does not provide accounts, tenan
 
 - [Kujolang.ai Presentations showcase](https://kujolang.ai/ecosystem/presentations/)
 - [Presentations repository](https://github.com/kujolang/presentations)
-- [Presentations 0.3.0 release](https://github.com/kujolang/presentations/releases/tag/v0.3.0)
-- [Getting started](https://github.com/kujolang/presentations/blob/v0.3.0/docs/getting-started.md)
-- [Authoring guide](https://github.com/kujolang/presentations/blob/v0.3.0/docs/authoring.md)
-- [Feature and presenter-tool guide](https://github.com/kujolang/presentations/blob/v0.3.0/docs/presentation-features.md)
-- [Support matrix](https://github.com/kujolang/presentations/blob/v0.3.0/docs/support-matrix.md)
+- [Presentations 0.3.1 release](https://github.com/kujolang/presentations/releases/tag/v0.3.1)
+- [Getting started](https://github.com/kujolang/presentations/blob/v0.3.1/docs/getting-started.md)
+- [Authoring guide](https://github.com/kujolang/presentations/blob/v0.3.1/docs/authoring.md)
+- [Feature and presenter-tool guide](https://github.com/kujolang/presentations/blob/v0.3.1/docs/presentation-features.md)
+- [Support matrix](https://github.com/kujolang/presentations/blob/v0.3.1/docs/support-matrix.md)

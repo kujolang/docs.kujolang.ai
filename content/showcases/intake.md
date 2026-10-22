@@ -8,8 +8,8 @@ order: 60
 audience: developer
 difficulty: intermediate
 status: GitHub source release for local operators
-version: 0.2.0
-last_updated: 2026-10-13
+version: 0.3.0
+last_updated: "2026-10-22"
 scope: local-first reference application
 source_repo: intake
 tags: [showcase, intake, approvals, automation]
@@ -21,10 +21,10 @@ Intake normalizes manual, file, webhook, Slack, GitHub, Jira, Linear, ClickUp, a
 
 ## Install and try it
 
-Requires Node.js 20.19 or newer.
+Requires patched Node.js 22.23.4+, 24.22.1+, or 26.12.1+.
 
 ```bash
-git clone --branch v0.2.0 https://github.com/kujolang/intake.git
+git clone --branch v0.3.0 https://github.com/kujolang/intake.git
 cd intake
 npm ci
 npm link
@@ -40,7 +40,7 @@ Local state under `.intake/`, a token-authenticated localhost dashboard, source 
 
 ## Boundary
 
-Intake 0.2.0 is the first tagged GitHub source release. It is a JavaScript app, not a native Kujo package. The npm manifest remains private, and the app is not enrolled in Kennel.
+Intake 0.3.0 is a GitHub source release. It is a JavaScript app, not a native Kujo package. The npm manifest remains private, and the app is not enrolled in Kennel.
 
 Use it for local operation and adapter development. Direct sending is blocked by default. Validate live providers, deployment access controls, and recovery requirements before relying on it in a shared environment.
 
@@ -48,11 +48,11 @@ Use it for local operation and adapter development. Direct sending is blocked by
 
 Receiver retries preserve classification and operator changes. Interrupted configuration imports and restores leave journals that block ordinary access until recovery. Stop writers, repair filesystem errors, and run `intake store recover --dir STORE`. Keep corrupt metadata for inspection; `--force` does not bypass schema or journal validation.
 
-Recovery never replays outbound actions. Reconcile any uncertain external effect before approving another attempt. See the [upgrade notes](https://github.com/kujolang/intake/blob/v0.2.0/docs/releases/0.2.0.md).
+Recovery never replays outbound actions. Reconcile any uncertain external effect before approving another attempt. See the [upgrade notes](https://github.com/kujolang/intake/blob/v0.3.0/docs/releases/0.3.0.md).
 
 ## Reference
 
-- [Intake 0.2.0 release](https://github.com/kujolang/intake/releases/tag/v0.2.0)
+- [Intake 0.3.0 release](https://github.com/kujolang/intake/releases/tag/v0.3.0)
 - [Website overview](https://kujolang.ai/ecosystem/intake/)
 
 

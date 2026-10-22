@@ -8,8 +8,8 @@ order: 48
 audience: developer
 difficulty: intermediate
 status: local scope verified
-version: 0.2.0
-last_updated: 2026-10-08
+version: 0.2.1
+last_updated: "2026-10-22"
 scope: local agent workspace
 source_repo: agent-city
 tags: [showcase, agents, tasks, review, replay]
@@ -26,7 +26,7 @@ You want to see which tools an agent used, inspect the work it produced, review 
 Supported platforms are macOS Intel and Apple Silicon, and Linux x64 and ARM64.
 
 ```sh
-curl --proto '=https' --tlsv1.2 -fsSL https://github.com/kujolang/agent-city/releases/download/v0.2.0/install.sh | sh
+curl --proto '=https' --tlsv1.2 -fsSL https://github.com/kujolang/agent-city/releases/download/v0.2.1/install.sh | sh
 ```
 
 The installer supplies pinned application and Kujo dependencies, and a private Node runtime when needed. It starts the app at `http://127.0.0.1:5178`, or the address printed in the terminal. Keep the terminal open; Ctrl+C stops the app. Installation does not submit a task.
@@ -98,7 +98,7 @@ Importing profiles does not install their tools or grant permissions. Hosted mul
 ## Related tools and guides
 
 - [Agent City showcase](https://kujolang.ai/ecosystem/agent-city/)
-- [Agent City 0.2.0 release](https://github.com/kujolang/agent-city/releases/tag/v0.2.0)
+- [Agent City 0.2.1 release](https://github.com/kujolang/agent-city/releases/tag/v0.2.1)
 - [Supported workflows](https://github.com/kujolang/agent-city/blob/main/docs/workflow-support.md)
 - [First-task guide](https://github.com/kujolang/agent-city/blob/main/TRY-AGENT-CITY.md)
 - [VideoOps setup](https://github.com/kujolang/agent-city/blob/main/docs/videoops.md)
