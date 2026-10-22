@@ -77,9 +77,12 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [kennel](https://github.com/kujolang/kennel) | [v1.2.1](https://github.com/kujolang/kennel/releases/tag/v1.2.1) | 2026-10-21 |
 | [kujo](https://github.com/kujolang/kujo) | [v1.8.2](https://github.com/kujolang/kujo/releases/tag/v1.8.2) | 2026-10-19 |
 | [kujo-agents](https://github.com/kujolang/kujo-agents) | [v1.4.0](https://github.com/kujolang/kujo-agents/releases/tag/v1.4.0) | 2026-09-07 |
+| [kujo-foreman](https://github.com/robertdevore/kujo-foreman) | [v0.1.0](https://github.com/robertdevore/kujo-foreman/releases/tag/v0.1.0) | 2026-10-22 |
 | [kujo-opencode](https://github.com/kujolang/kujo-opencode) | [v0.2.1](https://github.com/kujolang/kujo-opencode/releases/tag/v0.2.1) | 2026-10-21 |
 | [kujo-pi](https://github.com/kujolang/kujo-pi) | [v1.2.1](https://github.com/kujolang/kujo-pi/releases/tag/v1.2.1) | 2026-10-21 |
 | [kujo-skills](https://github.com/kujolang/kujo-skills) | [v0.7.1](https://github.com/kujolang/kujo-skills/releases/tag/v0.7.1) | 2026-10-22 |
+| [kujo-ssg-webmcp](https://github.com/robertdevore/kujo-ssg-webmcp) | [v1.0.0](https://github.com/robertdevore/kujo-ssg-webmcp/releases/tag/v1.0.0) | 2026-10-22 |
+| [kujo-videoops](https://github.com/kujolang/kujo-videoops) | [v0.3.1](https://github.com/kujolang/kujo-videoops/releases/tag/v0.3.1) | 2026-10-22 |
 | [kujo-workflows](https://github.com/kujolang/kujo-workflows) | [v0.6.2](https://github.com/kujolang/kujo-workflows/releases/tag/v0.6.2) | 2026-10-22 |
 | [lens](https://github.com/kujolang/lens) | [v1.1.1](https://github.com/kujolang/lens/releases/tag/v1.1.1) | 2026-10-22 |
 | [mcp](https://github.com/kujolang/mcp) | [v1.3.3](https://github.com/kujolang/mcp/releases/tag/v1.3.3) | 2026-10-22 |
@@ -107,6 +110,8 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [versionseal](https://github.com/kujolang/versionseal) | [v0.2.0](https://github.com/kujolang/versionseal/releases/tag/v0.2.0) | 2026-08-14 |
 | [watchdog](https://github.com/kujolang/watchdog) | [v1.2.2](https://github.com/kujolang/watchdog/releases/tag/v1.2.2) | 2026-10-21 |
 | [workcell](https://github.com/kujolang/workcell) | [v1.3.0](https://github.com/kujolang/workcell/releases/tag/v1.3.0) | 2026-10-22 |
+
+Foreman, SSG WebMCP, and VideoOps are source releases. Their release notes define installation and verification scope; publication does not certify a hosted service, cloud provider, or media entitlement.
 
 The Kujo Pi row was refreshed on September 26, 2026. Other entries retain their individually documented inventory dates.
 
