@@ -8,8 +8,8 @@ order: 60
 audience: developer
 difficulty: intermediate
 status: local scope verified
-version: 1.4.0
-last_updated: "2026-10-14"
+version: 1.4.1
+last_updated: "2026-10-21"
 scope: local-first
 source_repo: dispatch
 previous: /tools/scout/
@@ -63,15 +63,15 @@ Live integrations need separate proof; local workflow orchestration is the docum
 
 See the [Dispatch repository](https://github.com/kujolang/dispatch).
 
-## Dispatch 1.4.0
+## Dispatch 1.4.1
 
-[Dispatch 1.4.0](https://github.com/kujolang/dispatch/releases/tag/v1.4.0)
+[Dispatch 1.4.1](https://github.com/kujolang/dispatch/releases/tag/v1.4.1)
 requires Kujo 1.8.1 and uses released AI SDK and Agents SDK dependencies. It retains
 process-owned run locks, durable review checkpoints, failure-control decisions,
 restart-safe continuation, retrieval preferences and bounded evidence inspection.
 Stop older workers before upgrading and retain a backup; do not mix locking or
 protected-state formats across versions. Follow the repository's
-[upgrade guidance](https://github.com/kujolang/dispatch/blob/v1.4.0/docs/UPGRADING_TO_1_3.md).
+[upgrade guidance](https://github.com/kujolang/dispatch/blob/v1.4.1/docs/UPGRADING_TO_1_3.md).
 
 `resume-decision` preserves configured tool authorization. An approval applies to
 its reviewed step, not every later gate; concurrent delivery cannot create another
@@ -92,7 +92,7 @@ No exactly-once effect guarantee, universal rollback, general machine-loss
 recovery, remote participant authentication or stable participant SDK is claimed.
 Source-blind agent adoption is technical evidence; human usability validation
 remains separate. See the
-[release notes](https://github.com/kujolang/dispatch/releases/tag/v1.4.0).
+[release notes](https://github.com/kujolang/dispatch/releases/tag/v1.4.1).
 
 ## Agent City
 

@@ -68,7 +68,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [concord](https://github.com/kujolang/concord) | [v1.1.2](https://github.com/kujolang/concord/releases/tag/v1.1.2) | 2026-10-21 |
 | [contentgraph](https://github.com/kujolang/contentgraph) | [v0.3.0](https://github.com/kujolang/contentgraph/releases/tag/v0.3.0) | 2026-08-13 |
 | [crud-api](https://github.com/kujolang/crud-api) | [v1.0.1](https://github.com/kujolang/crud-api/releases/tag/v1.0.1) | 2026-10-14 |
-| [dispatch](https://github.com/kujolang/dispatch) | [v1.4.0](https://github.com/kujolang/dispatch/releases/tag/v1.4.0) | 2026-10-14 |
+| [dispatch](https://github.com/kujolang/dispatch) | [v1.4.1](https://github.com/kujolang/dispatch/releases/tag/v1.4.1) | 2026-10-22 |
 | [dossier](https://github.com/kujolang/dossier) | [v0.2.0](https://github.com/kujolang/dossier/releases/tag/v0.2.0) | 2026-08-14 |
 | [eval](https://github.com/kujolang/eval) | [v1.1.0](https://github.com/kujolang/eval/releases/tag/v1.1.0) | 2026-10-14 |
 | [fence](https://github.com/kujolang/fence) | [v1.1.0](https://github.com/kujolang/fence/releases/tag/v1.1.0) | 2026-10-14 |
