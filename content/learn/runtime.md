@@ -44,7 +44,7 @@ kujo run --isolated-imports /path/to/tool/main.kujo -- argument
 
 `KUJO_ISOLATED_IMPORTS=1` enables the same mode for inherited launches. Entry and configured roots still apply; ordinary `kujo run` keeps its existing import behavior. Arguments, including empty strings, reach the program unchanged.
 
-The runtime also provides bounded HTTP downloads, HTML and XML processing, JSON/JSONL artifacts, digests, and confined file publication. Callback and lexical-scope corrections keep VM and interpreter workflows consistent. See the [v1.8.2 changelog](https://github.com/kujolang/kujo/blob/v1.8.2/CHANGELOG.md) and [standard library contracts](https://github.com/kujolang/kujo/blob/v1.8.2/docs/STANDARD_LIBRARY.md) for exact signatures, limits, capabilities, and platform boundaries.
+The runtime also provides bounded HTTP downloads, HTML and XML processing, JSON/JSONL artifacts, digests, and confined file publication. Callback and lexical-scope corrections keep VM and interpreter workflows consistent. See the [v1.9.0 changelog](https://github.com/kujolang/kujo/blob/v1.9.0/CHANGELOG.md) and [standard library contracts](https://github.com/kujolang/kujo/blob/v1.9.0/docs/STANDARD_LIBRARY.md) for exact signatures, limits, capabilities, and platform boundaries.
 
 These runtime features support the native Kennel 1.1.0 client. Installing or upgrading Kujo does not install or release Kennel; follow the separate [Kennel guide](/tools/kennel/) for its current package workflow.
 

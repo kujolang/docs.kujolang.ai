@@ -26,9 +26,9 @@ Ability 1.3.0, AI Chat 1.3.1, CaseFile 1.0.2, Concord 1.1.2, ShipCheck 1.0.2, Ru
 
 ## Start here
 
-Install [Kujo 1.8.2](/install/) for the current runtime. A standalone binary runs ordinary Kujo programs without Python, Node.js, or Rust. Individual applications and tools retain their own dependencies, supported platforms, runtime pins, and update procedures.
+Install [Kujo 1.9.0](/install/) for the current runtime. A standalone binary runs ordinary Kujo programs without Python, Node.js, or Rust. Individual applications and tools retain their own dependencies, supported platforms, runtime pins, and update procedures.
 
-[Kennel's official registry](https://kennel.kujolang.ai/) distributes first-party package artifacts. Kennel 1.2.1 is published separately; Kujo 1.8.2 does not change its version or historical package artifacts. See [package workflows](/learn/packages/) before assuming that upgrading Kujo also updates Kennel or other tools.
+[Kennel's official registry](https://kennel.kujolang.ai/) distributes first-party package artifacts. Kennel 1.2.1 is published separately; Kujo 1.9.0 does not change its version or historical package artifacts. See [package workflows](/learn/packages/) before assuming that upgrading Kujo also updates Kennel or other tools.
 
 ## What changed in 1.8
 
@@ -75,7 +75,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [galleypack](https://github.com/kujolang/galleypack) | [v0.2.0](https://github.com/kujolang/galleypack/releases/tag/v0.2.0) | 2026-08-14 |
 | [howl](https://github.com/kujolang/howl) | [v1.2.0](https://github.com/kujolang/howl/releases/tag/v1.2.0) | 2026-10-16 |
 | [kennel](https://github.com/kujolang/kennel) | [v1.2.1](https://github.com/kujolang/kennel/releases/tag/v1.2.1) | 2026-10-21 |
-| [kujo](https://github.com/kujolang/kujo) | [v1.8.2](https://github.com/kujolang/kujo/releases/tag/v1.8.2) | 2026-10-19 |
+| [kujo](https://github.com/kujolang/kujo) | [v1.9.0](https://github.com/kujolang/kujo/releases/tag/v1.9.0) | 2026-10-22 |
 | [kujo-agents](https://github.com/kujolang/kujo-agents) | [v1.4.0](https://github.com/kujolang/kujo-agents/releases/tag/v1.4.0) | 2026-09-07 |
 | [kujo-foreman](https://github.com/robertdevore/kujo-foreman) | [v0.1.0](https://github.com/robertdevore/kujo-foreman/releases/tag/v0.1.0) | 2026-10-22 |
 | [kujo-opencode](https://github.com/kujolang/kujo-opencode) | [v0.2.1](https://github.com/kujolang/kujo-opencode/releases/tag/v0.2.1) | 2026-10-21 |
@@ -166,3 +166,10 @@ PatchBrief 1.0.2, CaseFile 1.0.1, MCP 1.3.2, ShipCheck 1.0.1, Scent 1.1.0, Kenne
 [Kujo 1.8.2](https://github.com/kujolang/kujo/releases/tag/v1.8.2) resolves ZIP security advisories and retired YAML, credential-store and bincode dependencies. It preserves Kujo archive behavior, stored credentials and legacy hyphenation dictionaries, corrects native dictionary handling and tightens capability and filesystem boundaries. Bounded HTTP stream collection is available. Rust embedders accessing `Value::ZipArchive.writer` must follow the [ZIP 9 migration guide](https://github.com/kujolang/kujo/blob/v1.8.2/docs/ZIP_9_RUST_MIGRATION.md); Kujo scripts require no archive API migration.
 
 See the [release notes](https://github.com/kujolang/kujo/blob/main/docs/RELEASE_NOTES_1_8_2.md). Rust 1.89 remains the source-build minimum; experimental companion protocols and participant SDKs are not promoted by this patch.
+
+
+## Kujo 1.9.0 runtime release
+
+[Kujo 1.9.0](https://github.com/kujolang/kujo/releases/tag/v1.9.0) adds checked nested collection and struct writes, strict UTF-8 conversion, byte iteration, fallible comparator sorting, regex callbacks and match counting, headerless CSV, decimal formatting and wrapping arithmetic. Shared bytecode and copy-on-write storage improvements preserve retained values and atomic failed writes.
+
+Native installation and upgrades from 1.8.2 and npm installation passed on all five targets. The [publication record](https://github.com/kujolang/kujo/blob/main/release/kujo-1.9.0-publication.json) identifies the exact source and verification runs. Companion protocols and participant SDKs retain their experimental boundaries.

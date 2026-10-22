@@ -164,10 +164,10 @@ print('docs release markers: all pages passed')
 PY
 
 # Current runtime release does not promote companion contracts.
-require_text "tools/kujo/index.html" "1.8.2"
+require_text "tools/kujo/index.html" "1.9.0"
 require_text "tools/kujo/index.html" "private/unpublished"
 require_text "tools/kujo/index.html" "human adopter usability remains post-release validation"
-require_text "install/index.html" "@kujolang/kujo-runtime@1.8.2"
+require_text "install/index.html" "@kujolang/kujo-runtime@1.9.0"
 require_text "install/index.html" "Windows x64"
 reject_text "install/index.html" "v1.4.0</code> is the current stable release"
 

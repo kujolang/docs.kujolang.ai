@@ -23,7 +23,7 @@ A consequential proposal needs independent specialist testimony, cross-examinati
 
 [Tribunal 1.0.2](https://github.com/kujolang/tribunal/releases/tag/v1.0.2) is a patch release for local and operator-controlled review. It hardens conditional store publication, governance history, event validation, encrypted inventories, and concurrent index locking. Archives contain only clean, committed inputs, and existing-directory handling avoids redundant parent traversal. The v1 library API and evidence formats are unchanged.
 
-Kujo 1.8.2 is the current runtime. The original 1.0.2 release reproduction matrix retains its Kujo 1.5.0 pin; consult the release notes for additional runtime verification. Download the release archive and its receipt, then follow [release verification](https://github.com/kujolang/tribunal/blob/v1.0.2/docs/RELEASE_VERIFICATION.md) before running it. Use the pinned Kujo runtime and integrations in the [integration matrix](https://github.com/kujolang/tribunal/blob/v1.0.2/docs/INTEGRATION_MATRIX.md) to reproduce release checks.
+Kujo 1.9.0 is the current runtime. The original 1.0.2 release reproduction matrix retains its Kujo 1.5.0 pin; consult the release notes for additional runtime verification. Download the release archive and its receipt, then follow [release verification](https://github.com/kujolang/tribunal/blob/v1.0.2/docs/RELEASE_VERIFICATION.md) before running it. Use the pinned Kujo runtime and integrations in the [integration matrix](https://github.com/kujolang/tribunal/blob/v1.0.2/docs/INTEGRATION_MATRIX.md) to reproduce release checks.
 
 ## Five-minute example
 
