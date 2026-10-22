@@ -8,8 +8,8 @@ order: 25
 audience: developer
 difficulty: advanced
 status: stable within local and CI scope
-version: 1.2.0
-last_updated: 2026-09-29
+version: 1.3.0
+last_updated: 2026-10-22
 scope: local and CI
 source_repo: workcell
 tags: [tool, execution, containers, security]
@@ -52,11 +52,11 @@ Workcell does not protect against a compromised daemon or host kernel, provide m
 
 See the [Workcell repository](https://github.com/kujolang/workcell) for installation, examples, contract references, provider operations, and current releases.
 
-## Version 1.2.0 and Kujo 1.6
+## Version 1.3.0 and Kujo 1.6
 
-Workcell 1.2.0 requires Kujo 1.6.0 and adds bounded preservation, portable execution results, conservative re-execution descriptors and expiry-gated owned cleanup. The Git CAS assurance profile and controlled process participant are experimental; Dispatch decides replay. Stable Docker/Podman scope and remote-adapter alpha boundaries remain unchanged.
+Workcell 1.3.0 requires Kujo 1.6.0 and adds retained-workspace observations, experimental checked Git boundaries, and cancellation improvements alongside bounded preservation and portable execution results. The Git CAS assurance profile and controlled process participant are experimental; Dispatch decides replay. Stable Docker/Podman scope and remote-adapter alpha boundaries remain unchanged.
 
-See the [1.2.0 release](https://github.com/kujolang/workcell/releases/tag/v1.2.0) for the exact source and release evidence. Assurance beta remains opt-in, required/deny and single-effect; controlled handoffs remain alpha. These package releases do not stabilize remote trust or participant SDKs.
+See the [1.3.0 release](https://github.com/kujolang/workcell/releases/tag/v1.3.0) for the exact source and release evidence. Assurance beta remains opt-in, required/deny and single-effect; controlled handoffs remain alpha. These package releases do not stabilize remote trust or participant SDKs.
 
 ## Agent City
 

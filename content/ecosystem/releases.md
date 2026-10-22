@@ -10,7 +10,7 @@ audience: all
 difficulty: beginner
 status: dated release inventory
 version: current
-last_updated: 2026-10-21
+last_updated: 2026-10-22
 tags: [ecosystem, releases, versions, installation]
 ---
 
@@ -79,10 +79,10 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [kujo-agents](https://github.com/kujolang/kujo-agents) | [v1.4.0](https://github.com/kujolang/kujo-agents/releases/tag/v1.4.0) | 2026-09-07 |
 | [kujo-opencode](https://github.com/kujolang/kujo-opencode) | [v0.2.1](https://github.com/kujolang/kujo-opencode/releases/tag/v0.2.1) | 2026-10-21 |
 | [kujo-pi](https://github.com/kujolang/kujo-pi) | [v1.2.1](https://github.com/kujolang/kujo-pi/releases/tag/v1.2.1) | 2026-10-21 |
-| [kujo-skills](https://github.com/kujolang/kujo-skills) | [v0.7.0](https://github.com/kujolang/kujo-skills/releases/tag/v0.7.0) | 2026-09-08 |
-| [kujo-workflows](https://github.com/kujolang/kujo-workflows) | [v0.6.0](https://github.com/kujolang/kujo-workflows/releases/tag/v0.6.0) | 2026-09-07 |
+| [kujo-skills](https://github.com/kujolang/kujo-skills) | [v0.7.1](https://github.com/kujolang/kujo-skills/releases/tag/v0.7.1) | 2026-10-22 |
+| [kujo-workflows](https://github.com/kujolang/kujo-workflows) | [v0.6.2](https://github.com/kujolang/kujo-workflows/releases/tag/v0.6.2) | 2026-10-22 |
 | [lens](https://github.com/kujolang/lens) | [v1.1.1](https://github.com/kujolang/lens/releases/tag/v1.1.1) | 2026-10-22 |
-| [mcp](https://github.com/kujolang/mcp) | [v1.3.2](https://github.com/kujolang/mcp/releases/tag/v1.3.2) | 2026-10-14 |
+| [mcp](https://github.com/kujolang/mcp) | [v1.3.3](https://github.com/kujolang/mcp/releases/tag/v1.3.3) | 2026-10-22 |
 | [muzzle](https://github.com/kujolang/muzzle) | [v1.1.3](https://github.com/kujolang/muzzle/releases/tag/v1.1.3) | 2026-10-21 |
 | [ollama](https://github.com/kujolang/ollama) | [v0.1.10](https://github.com/kujolang/ollama/releases/tag/v0.1.10) | 2026-08-27 |
 | [packwrite](https://github.com/kujolang/packwrite) | [v1.1.1](https://github.com/kujolang/packwrite/releases/tag/v1.1.1) | 2026-10-13 |
@@ -106,7 +106,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [tribunal](https://github.com/kujolang/tribunal) | [v1.0.2](https://github.com/kujolang/tribunal/releases/tag/v1.0.2) | 2026-10-07 |
 | [versionseal](https://github.com/kujolang/versionseal) | [v0.2.0](https://github.com/kujolang/versionseal/releases/tag/v0.2.0) | 2026-08-14 |
 | [watchdog](https://github.com/kujolang/watchdog) | [v1.2.2](https://github.com/kujolang/watchdog/releases/tag/v1.2.2) | 2026-10-21 |
-| [workcell](https://github.com/kujolang/workcell) | [v1.2.0](https://github.com/kujolang/workcell/releases/tag/v1.2.0) | 2026-09-29 |
+| [workcell](https://github.com/kujolang/workcell) | [v1.3.0](https://github.com/kujolang/workcell/releases/tag/v1.3.0) | 2026-10-22 |
 
 The Kujo Pi row was refreshed on September 26, 2026. Other entries retain their individually documented inventory dates.
 
@@ -115,9 +115,9 @@ The Kujo Pi row was refreshed on September 26, 2026. Other entries retain their 
 - **Kujo Pi 1.1.0:** approval-gated Ability tools, opt-in Watchdog v2 metadata, bounded telemetry and artifact inspection, and receipt-failure recovery. Read [Kujo Pi](/tools/kujo-pi/).
 
 - **AI Chat 1.3.0:** live code review, durable supervision, isolated worktrees, scoped MCP connections, an attention inbox, a command palette, and persistent chat tabs. Follow its Node, storage, permission, and worktree upgrade requirements; the historical eight-hour soak remains incomplete. Read [AI Chat](/showcases/ai-chat/).
-- **Workcell 1.2.0:** Docker/Podman execution and failure preservation, with Git assurance/process correlation experimental and remote adapters still alpha. Use the package's qualified Kujo 1.6.0 runtime. Read [Workcell](/tools/workcell/).
+- **Workcell 1.3.0:** Docker/Podman execution and failure preservation, with Git assurance/process correlation experimental and remote adapters still alpha. Use the package's qualified Kujo 1.6.0 runtime. Read [Workcell](/tools/workcell/).
 - **SiteProbe 0.3.0:** native Kujo product commands and platform-qualified source archives; its test tooling can still require Python. Read [SiteProbe](/tools/siteprobe/).
-- **Skills 0.7.0, Workflows 0.6.0, Agents 1.4.0:** 135 skills, 44 local workflows, and canonical VideoOps tools and schemas. Live media permission and provider limits remain explicit. Read [skills](/collections/skills/) and [workflows](/collections/workflows/).
+- **Skills 0.7.1, Workflows 0.6.2, Agents 1.4.0:** 135 skills, 44 local workflows, and canonical VideoOps tools and schemas. Live media permission and provider limits remain explicit. Read [skills](/collections/skills/) and [workflows](/collections/workflows/).
 - **Commerce 0.5.1:** adds optional PostgreSQL processing, Square payments/refunds, embedded checkout, billing workflows, OAuth connections, and recovery. Static hosted links remain lightweight. Install the versioned npm package; advanced features retain their acceptance gates. Read [Commerce](/tools/commerce/).
 - **Scout 1.1.0:** bounded rooted reads, aggregate limits, security exports, deterministic performance and labeled-corpus gates, stable CI diagnostics, and native Windows contract coverage. It requires Kujo 1.5.0 or newer. Read [Scout](/tools/scout/).
 - **Watchdog 1.1.0:** canonical v2 telemetry, JSONL/OTLP projections, Connected Sources management, and named proxy-profile changes that apply to new requests without restart. Read [Watchdog](/tools/watchdog/).

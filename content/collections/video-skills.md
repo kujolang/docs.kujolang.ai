@@ -8,8 +8,8 @@ order: 15
 audience: developer
 difficulty: intermediate
 status: released guidance
-version: 0.7.0
-last_updated: 2026-09-08
+version: 0.7.1
+last_updated: 2026-10-22
 scope: local-first
 source_repo: kujo-skills
 previous: /collections/skills/
@@ -19,7 +19,7 @@ tags: [collection, skills, video, hyperframes]
 
 Kujo's video skills help a coding agent turn source material into an editable HyperFrames composition and a rendered video. They cover demos, launches, explainers, feature reveals, integrations, and release announcements. ElevenLabs supplies narration when requested; the agent can also make an unnarrated video.
 
-The two video skills ship in [Kujo Skills v0.7.0](https://github.com/kujolang/kujo-skills/releases/tag/v0.7.0), alongside the VideoOps production skills. Their source now lives in `kujo-skills`, rather than `kujo-hyperframes`.
+The two video skills ship in [Kujo Skills v0.7.1](https://github.com/kujolang/kujo-skills/releases/tag/v0.7.1), alongside the VideoOps production skills. Their source now lives in `kujo-skills`, rather than `kujo-hyperframes`.
 
 ## Choose the entry point
 
@@ -36,7 +36,7 @@ The ten styles guide the story and motion. HyperFrames owns the native compositi
 From a new working directory, install the released skill folders:
 
 ```bash
-git clone --branch v0.7.0 --depth 1 https://github.com/kujolang/kujo-skills.git
+git clone --branch v0.7.1 --depth 1 https://github.com/kujolang/kujo-skills.git
 mkdir -p ~/.codex/skills
 cp -R kujo-skills/skills/kujo-video-styles ~/.codex/skills/
 cp -R kujo-skills/skills/kujo-release-video ~/.codex/skills/
@@ -110,14 +110,14 @@ python3 ~/.codex/skills/kujo-video-styles/scripts/video_styles.py list
 python3 ~/.codex/skills/kujo-video-styles/scripts/video_styles.py route --brief brief.json
 ```
 
-Read the [versioned pipeline contract](https://github.com/kujolang/kujo-skills/blob/v0.7.0/skills/kujo-video-styles/references/pipeline.md) before authoring a JSON brief. `prepare` creates an editable starter; it does not invent claims, generate narration, or certify the finished video. The agent still needs to inspect sources, author the composition, check frame boundaries and text, review audio, and render through HyperFrames.
+Read the [versioned pipeline contract](https://github.com/kujolang/kujo-skills/blob/v0.7.1/skills/kujo-video-styles/references/pipeline.md) before authoring a JSON brief. `prepare` creates an editable starter; it does not invent claims, generate narration, or certify the finished video. The agent still needs to inspect sources, author the composition, check frame boundaries and text, review audio, and render through HyperFrames.
 
 VideoOps team productions use the shared media provider workflow in [`kujo-agents/videoops/tools`](https://github.com/kujolang/kujo-agents/tree/main/videoops/tools). Keep original media and receipts, reuse existing takes when rebuilding, and distinguish technical checks from a complete visual and listening review.
 
 ## Source and related guides
 
-- [Kujo Video Styles source at v0.7.0](https://github.com/kujolang/kujo-skills/blob/v0.7.0/skills/kujo-video-styles/SKILL.md)
-- [Kujo Release Video source at v0.7.0](https://github.com/kujolang/kujo-skills/blob/v0.7.0/skills/kujo-release-video/SKILL.md)
-- [Released voice defaults and overrides](https://github.com/kujolang/kujo-skills/blob/v0.7.0/skills/kujo-video-styles/references/voices.md)
+- [Kujo Video Styles source at v0.7.1](https://github.com/kujolang/kujo-skills/blob/v0.7.1/skills/kujo-video-styles/SKILL.md)
+- [Kujo Release Video source at v0.7.1](https://github.com/kujolang/kujo-skills/blob/v0.7.1/skills/kujo-release-video/SKILL.md)
+- [Released voice defaults and overrides](https://github.com/kujolang/kujo-skills/blob/v0.7.1/skills/kujo-video-styles/references/voices.md)
 - [Browse all Kujo Skills](https://kujolang.ai/ecosystem/skills/)
 - [Build with AI and agents](/build/ai-and-agents/)

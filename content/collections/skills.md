@@ -1,6 +1,6 @@
 ---
 title: Skills
-description: Install and use the 135 Kujo Skills in v0.7.0, including development, WebOps, VideoOps, and ten HyperFrames video styles.
+description: Install and use the 135 Kujo Skills in v0.7.1, including development, WebOps, VideoOps, and ten HyperFrames video styles.
 template: docs
 section: Collections
 nav_title: Skills
@@ -8,8 +8,8 @@ order: 10
 audience: developer
 difficulty: intermediate
 status: local scope verified
-version: 0.7.0
-last_updated: 2026-09-08
+version: 0.7.1
+last_updated: 2026-10-22
 scope: local-first
 source_repo: kujo-skills
 previous: /showcases/
@@ -20,7 +20,7 @@ tags: [collection, skills, agents]
 
 Use the skill catalog to select a focused operating contract for a task. Read the skill instructions, follow their required evidence, and keep the selected skill's scope visible in the handoff.
 
-[Kujo Skills v0.7.0](https://github.com/kujolang/kujo-skills/releases/tag/v0.7.0) contains **135 skills** for development, WebOps, publishing, and video production. Browse the [complete website catalog](https://kujolang.ai/ecosystem/skills/) or the [versioned source index](https://github.com/kujolang/kujo-skills/blob/v0.7.0/SKILLS_INDEX.md).
+[Kujo Skills v0.7.1](https://github.com/kujolang/kujo-skills/releases/tag/v0.7.1) contains **135 skills** for development, WebOps, publishing, and video production. Browse the [complete website catalog](https://kujolang.ai/ecosystem/skills/) or the [versioned source index](https://github.com/kujolang/kujo-skills/blob/v0.7.1/SKILLS_INDEX.md).
 
 ## Make videos with your agent
 
