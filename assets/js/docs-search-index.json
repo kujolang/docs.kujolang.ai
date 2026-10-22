@@ -892,7 +892,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "released",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "tags": [
         "[showcase, cms, content, agents, webmcp, extensions]"
       ],
@@ -904,11 +904,12 @@
         "Five-minute example",
         "API and terminal parity",
         "How it fits",
-        "CMS 1.2.0 upgrade",
+        "Upgrading from before CMS 1.2",
         "Boundaries",
-        "Reference"
+        "Reference",
+        "Companion releases"
       ],
-      "text": "Kujo CMS 1.2.0 is a server-first content backend for human administration, custom frontends, integrations, terminal workflows, and agents. The core owns portable content behavior; the separate CMS Example shows one complete Vinext/React administration and publication experience without making that framework part of the CMS contract. Use it when\u2026 You need str"
+      "text": "Kujo CMS 1.2.1 is a server-first content backend for human administration, custom frontends, integrations, terminal workflows, and agents. The core owns portable content behavior; the separate CMS Example shows one complete Vinext/React administration and publication experience without making that framework part of the CMS contract. Use it when\u2026 You need str"
     },
     {
       "title": "CRUD API Showcase",

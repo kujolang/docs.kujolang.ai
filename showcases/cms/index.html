@@ -101,8 +101,8 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="cms">CMS</h1><p class="docs-description">A framework-neutral content backend with first-class administration, extensions, SEO, identity, AI abilities, MCP, and WebMCP.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>released</span><span class="docs-badge docs-badge-version"><span>Version</span>1.2.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-12</span></div>
-		<div class="docs-body"><!--email_off--><p>Kujo CMS 1.2.0 is a server-first content backend for human administration, custom frontends, integrations, terminal workflows, and agents. The core owns portable content behavior; the separate CMS Example shows one complete Vinext/React administration and publication experience without making that framework part of the CMS contract.</p>
+		<h1 id="cms">CMS</h1><p class="docs-description">A framework-neutral content backend with first-class administration, extensions, SEO, identity, AI abilities, MCP, and WebMCP.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>released</span><span class="docs-badge docs-badge-version"><span>Version</span>1.2.1</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-22</span></div>
+		<div class="docs-body"><!--email_off--><p>Kujo CMS 1.2.1 is a server-first content backend for human administration, custom frontends, integrations, terminal workflows, and agents. The core owns portable content behavior; the separate CMS Example shows one complete Vinext/React administration and publication experience without making that framework part of the CMS contract.</p>
 <h2 id="use-it-when">Use it when…</h2>
 <p>You need structured publishing that can serve a custom website, application, CLI, or agent without rebuilding the same identity, editorial, SEO, extension, and permission rules in every client.</p>
 <h2 id="interface-overview">Interface overview</h2>
@@ -154,7 +154,7 @@
 <p>Theme packages describe frontend entrypoints, templates, assets, settings, content types, menu locations, author links, branded artwork, and administration navigation. Plugin packages can declare connector, webhook, browser, or hybrid runtimes plus events, abilities, connectors, settings, and administration links.</p>
 <p>ZIP installation verifies compressed and expanded size, file count, package structure, manifest location, and SHA-256 integrity before registering the package. Uploading a package does not execute its code. The standalone <a href="https://github.com/kujolang/cms-field-notes-theme">Field Notes theme</a> and <a href="https://github.com/kujolang/cms-contact-form">contact form plugin</a> provide forkable package examples.</p>
 <h2 id="five-minute-example">Five-minute example</h2>
-<pre><code class="language-bash">git clone --branch v1.2.0 https://github.com/kujolang/cms.git
+<pre><code class="language-bash">git clone --branch v1.2.1 https://github.com/kujolang/cms.git
 cd cms
 kennel install
 cp .env.example .env
@@ -169,23 +169,51 @@ npm run dev</code></pre>
 <p>The core repository includes focused terminal helpers for SEO and social settings, content and media workflows, extension packages, and AI abilities and connectors. There is intentionally no second all-purpose CMS CLI that could drift from the HTTP contract.</p>
 <h2 id="how-it-fits">How it fits</h2>
 <p>Use the CMS when content needs an ongoing editorial and administration backend. Compare it with <a href="/showcases/crud-api/">CRUD API</a> for a smaller application API pattern and <a href="/showcases/ssg/">SSG</a> for deterministic file-based publishing.</p>
-<h2 id="cms-1-2-0-upgrade">CMS 1.2.0 upgrade</h2>
+<h2 id="upgrading-from-before-cms-1-2">Upgrading from before CMS 1.2</h2>
 <p>This release adds canonical Ability contracts and request-bound one-time approvals, tightens session expiry and request limits, protects extension cleanup and media reads, and fixes concurrent content composition and queue claims. Scheduler batches use one database transaction; workers wait for completion without a one-second polling delay per job.</p>
 <p>Back up the database and managed storage, install pinned dependencies, and let startup apply the migrations. Ability callers must obtain approval for the exact invocation; <code>confirmed: true</code> grants no authority. Keep the returned <code>updated_at</code> for later edits. Legacy extension directories without an ownership receipt are preserved. The CMS Ability pack and Ability dependency remain independently versioned at 1.0.1.</p>
-<p>Read the <a href="https://github.com/kujolang/cms/blob/v1.2.0/docs/releases/1.2.0.md">upgrade notes</a> before deployment. CMS Example’s current source pairs its public frontend and Studio with this backend. The Field Notes theme and contact form plugin retain their own versions and compatible manifest contracts.</p>
+<p>Read the <a href="https://github.com/kujolang/cms/blob/v1.2.1/docs/releases/1.2.0.md">upgrade notes</a> before deployment. CMS Example’s current source pairs its public frontend and Studio with this backend. The Field Notes theme and contact form plugin retain their own versions and compatible manifest contracts.</p>
 <h2 id="boundaries">Boundaries</h2>
-<p>CMS 1.2.0 supplies production-oriented application contracts and release gates; it does not make every deployment enterprise-complete. Infrastructure, compliance, observability, storage, recovery targets, provider credentials, and governance still require environment-specific proof. The default WebMCP tools are intentionally read-only, and extension code is not executed during package installation.</p>
+<p>CMS 1.2.1 supplies production-oriented application contracts and release gates; it does not make every deployment enterprise-complete. Infrastructure, compliance, observability, storage, recovery targets, provider credentials, and governance still require environment-specific proof. The default WebMCP tools are intentionally read-only, and extension code is not executed during package installation.</p>
 <h2 id="reference">Reference</h2>
 <ul>
-<li><a href="https://github.com/kujolang/cms/releases/tag/v1.2.0">CMS 1.2.0 release</a></li>
+<li><a href="https://github.com/kujolang/cms/releases/tag/v1.2.1">CMS 1.2.1 release</a></li>
 <li><a href="https://github.com/kujolang/cms">CMS repository</a></li>
 <li><a href="https://github.com/kujolang/cms-example">CMS Example frontend and Studio</a></li>
 <li><a href="https://github.com/kujolang/cms/blob/main/docs/framework-adapters.md">Framework adapter guidance</a></li>
 <li><a href="https://github.com/kujolang/cms/blob/main/docs/extensions.md">Extension package contract</a></li>
 <li><a href="https://github.com/kujolang/cms/blob/main/docs/webmcp.md">WebMCP contract</a></li>
-</ul><!--/email_off--></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/showcases/crud-api/" rel="next"><span>Next</span></a></nav>
+</ul>
+<h2 id="companion-releases">Companion releases</h2>
+<table><thead><tr>
+<th>Component</th>
+<th>Release</th>
+<th>Installation</th>
+</tr></thead><tbody>
+<tr>
+<td>CMS backend</td>
+<td><a href="https://github.com/kujolang/cms/releases/tag/v1.2.1">1.2.1</a></td>
+<td><code>kennel add cms</code> or the tagged source</td>
+</tr>
+<tr>
+<td>CMS Example frontend and Studio</td>
+<td><a href="https://github.com/kujolang/cms-example/releases/tag/v1.2.0">1.2.0</a></td>
+<td>Tagged source and <code>npm ci</code>; pairs with CMS 1.2.1</td>
+</tr>
+<tr>
+<td>Contact Form plugin</td>
+<td><a href="https://github.com/kujolang/cms-contact-form/releases/tag/v1.0.1">1.0.1</a></td>
+<td>Release ZIP through CMS Studio or the extension CLI</td>
+</tr>
+<tr>
+<td>Field Notes theme</td>
+<td><a href="https://github.com/kujolang/cms-field-notes-theme/releases/tag/v1.0.3">1.0.3</a></td>
+<td>Release ZIP through CMS Studio or the extension CLI</td>
+</tr>
+</tbody></table>
+<p>CMS Experience is an unreleased legacy adapter. Use CMS Example for the current frontend and Studio. The independently versioned embedded theme in CMS Example retains its own manifest identity. CMS 1.2.1 preserves the 1.2 API and storage contracts; see its <a href="https://github.com/kujolang/cms/blob/v1.2.1/docs/releases/1.2.1.md">maintenance release notes</a>.</p><!--/email_off--></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/showcases/crud-api/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#one-contract-for-people-and-agents">One contract for people and agents</a></li><li class="toc-level-2"><a href="#portable-themes-and-plugins">Portable themes and plugins</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#api-and-terminal-parity">API and terminal parity</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#cms-1-2-0-upgrade">CMS 1.2.0 upgrade</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when…</a></li><li class="toc-level-2"><a href="#interface-overview">Interface overview</a></li><li class="toc-level-2"><a href="#one-contract-for-people-and-agents">One contract for people and agents</a></li><li class="toc-level-2"><a href="#portable-themes-and-plugins">Portable themes and plugins</a></li><li class="toc-level-2"><a href="#five-minute-example">Five-minute example</a></li><li class="toc-level-2"><a href="#api-and-terminal-parity">API and terminal parity</a></li><li class="toc-level-2"><a href="#how-it-fits">How it fits</a></li><li class="toc-level-2"><a href="#upgrading-from-before-cms-1-2">Upgrading from before CMS 1.2</a></li><li class="toc-level-2"><a href="#boundaries">Boundaries</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li><li class="toc-level-2"><a href="#companion-releases">Companion releases</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
