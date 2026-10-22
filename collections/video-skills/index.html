@@ -101,9 +101,9 @@
 		</ul>
 	</aside>
 	<article class="docs-article">
-		<h1 id="make-videos-with-kujo-skills">Make videos with Kujo Skills</h1><p class="docs-description">Install Kujo&apos;s HyperFrames video skills, choose from ten styles, and set an ElevenLabs narrator for demos, launches, explainers, or releases.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>released guidance</span><span class="docs-badge docs-badge-version"><span>Version</span>0.7.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-09-08</span></div>
+		<h1 id="make-videos-with-kujo-skills">Make videos with Kujo Skills</h1><p class="docs-description">Install Kujo&apos;s HyperFrames video skills, choose from ten styles, and set an ElevenLabs narrator for demos, launches, explainers, or releases.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>released guidance</span><span class="docs-badge docs-badge-version"><span>Version</span>0.7.1</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-10-22</span></div>
 		<div class="docs-body"><!--email_off--><p>Kujo&apos;s video skills help a coding agent turn source material into an editable HyperFrames composition and a rendered video. They cover demos, launches, explainers, feature reveals, integrations, and release announcements. ElevenLabs supplies narration when requested; the agent can also make an unnarrated video.</p>
-<p>The two video skills ship in <a href="https://github.com/kujolang/kujo-skills/releases/tag/v0.7.0">Kujo Skills v0.7.0</a>, alongside the VideoOps production skills. Their source now lives in <code>kujo-skills</code>, rather than <code>kujo-hyperframes</code>.</p>
+<p>The two video skills ship in <a href="https://github.com/kujolang/kujo-skills/releases/tag/v0.7.1">Kujo Skills v0.7.1</a>, alongside the VideoOps production skills. Their source now lives in <code>kujo-skills</code>, rather than <code>kujo-hyperframes</code>.</p>
 <h2 id="choose-the-entry-point">Choose the entry point</h2>
 <table><thead><tr>
 <th>Skill</th>
@@ -125,7 +125,7 @@
 <p>The ten styles guide the story and motion. HyperFrames owns the native composition, preview, and render workflow. These skills are instructions and scripts, not a hosted video service or a substitute for the agent host&apos;s permissions.</p>
 <h2 id="install-in-codex">Install in Codex</h2>
 <p>From a new working directory, install the released skill folders:</p>
-<pre><code class="language-bash">git clone --branch v0.7.0 --depth 1 https://github.com/kujolang/kujo-skills.git
+<pre><code class="language-bash">git clone --branch v0.7.1 --depth 1 https://github.com/kujolang/kujo-skills.git
 mkdir -p ~/.codex/skills
 cp -R kujo-skills/skills/kujo-video-styles ~/.codex/skills/
 cp -R kujo-skills/skills/kujo-release-video ~/.codex/skills/</code></pre>
@@ -226,13 +226,13 @@ closing headline.</code></pre>
 <p>The style CLI exposes <code>list</code>, <code>route</code>, <code>init</code>, <code>validate</code>, and <code>prepare</code>:</p>
 <pre><code class="language-bash">python3 ~/.codex/skills/kujo-video-styles/scripts/video_styles.py list
 python3 ~/.codex/skills/kujo-video-styles/scripts/video_styles.py route --brief brief.json</code></pre>
-<p>Read the <a href="https://github.com/kujolang/kujo-skills/blob/v0.7.0/skills/kujo-video-styles/references/pipeline.md">versioned pipeline contract</a> before authoring a JSON brief. <code>prepare</code> creates an editable starter; it does not invent claims, generate narration, or certify the finished video. The agent still needs to inspect sources, author the composition, check frame boundaries and text, review audio, and render through HyperFrames.</p>
+<p>Read the <a href="https://github.com/kujolang/kujo-skills/blob/v0.7.1/skills/kujo-video-styles/references/pipeline.md">versioned pipeline contract</a> before authoring a JSON brief. <code>prepare</code> creates an editable starter; it does not invent claims, generate narration, or certify the finished video. The agent still needs to inspect sources, author the composition, check frame boundaries and text, review audio, and render through HyperFrames.</p>
 <p>VideoOps team productions use the shared media provider workflow in <a href="https://github.com/kujolang/kujo-agents/tree/main/videoops/tools"><code>kujo-agents/videoops/tools</code></a>. Keep original media and receipts, reuse existing takes when rebuilding, and distinguish technical checks from a complete visual and listening review.</p>
 <h2 id="source-and-related-guides">Source and related guides</h2>
 <ul>
-<li><a href="https://github.com/kujolang/kujo-skills/blob/v0.7.0/skills/kujo-video-styles/SKILL.md">Kujo Video Styles source at v0.7.0</a></li>
-<li><a href="https://github.com/kujolang/kujo-skills/blob/v0.7.0/skills/kujo-release-video/SKILL.md">Kujo Release Video source at v0.7.0</a></li>
-<li><a href="https://github.com/kujolang/kujo-skills/blob/v0.7.0/skills/kujo-video-styles/references/voices.md">Released voice defaults and overrides</a></li>
+<li><a href="https://github.com/kujolang/kujo-skills/blob/v0.7.1/skills/kujo-video-styles/SKILL.md">Kujo Video Styles source at v0.7.1</a></li>
+<li><a href="https://github.com/kujolang/kujo-skills/blob/v0.7.1/skills/kujo-release-video/SKILL.md">Kujo Release Video source at v0.7.1</a></li>
+<li><a href="https://github.com/kujolang/kujo-skills/blob/v0.7.1/skills/kujo-video-styles/references/voices.md">Released voice defaults and overrides</a></li>
 <li><a href="https://kujolang.ai/ecosystem/skills/">Browse all Kujo Skills</a></li>
 <li><a href="/build/ai-and-agents/">Build with AI and agents</a></li>
 </ul><!--/email_off--></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/collections/skills/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/collections/workflows/" rel="next"><span>Next</span></a></nav>

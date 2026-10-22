@@ -243,14 +243,14 @@
     },
     {
       "title": "Skills",
-      "description": "Install and use the 135 Kujo Skills in v0.7.0, including development, WebOps, VideoOps, and ten HyperFrames video styles.",
+      "description": "Install and use the 135 Kujo Skills in v0.7.1, including development, WebOps, VideoOps, and ten HyperFrames video styles.",
       "url": "https://docs.kujolang.ai/collections/skills/",
       "route": "collections/skills/",
       "section": "Collections",
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "0.7.0",
+      "version": "0.7.1",
       "tags": [
         "[collection, skills, agents]"
       ],
@@ -259,7 +259,7 @@
         "Start with the Kujo Way",
         "Browse the catalog"
       ],
-      "text": "Use the skill catalog to select a focused operating contract for a task. Read the skill instructions, follow their required evidence, and keep the selected skill's scope visible in the handoff. Kujo Skills v0.7.0 https://github.com/kujolang/kujo-skills/releases/tag/v0.7.0 contains 135 skills for development, WebOps, publishing, and video production. Browse t"
+      "text": "Use the skill catalog to select a focused operating contract for a task. Read the skill instructions, follow their required evidence, and keep the selected skill's scope visible in the handoff. Kujo Skills v0.7.1 https://github.com/kujolang/kujo-skills/releases/tag/v0.7.1 contains 135 skills for development, WebOps, publishing, and video production. Browse t"
     },
     {
       "title": "Make videos with Kujo Skills",
@@ -270,7 +270,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "released guidance",
-      "version": "0.7.0",
+      "version": "0.7.1",
       "tags": [
         "[collection, skills, video, hyperframes]"
       ],
@@ -282,7 +282,7 @@
         "Automate and review",
         "Source and related guides"
       ],
-      "text": "Kujo's video skills help a coding agent turn source material into an editable HyperFrames composition and a rendered video. They cover demos, launches, explainers, feature reveals, integrations, and release announcements. ElevenLabs supplies narration when requested; the agent can also make an unnarrated video. The two video skills ship in Kujo Skills v0.7.0"
+      "text": "Kujo's video skills help a coding agent turn source material into an editable HyperFrames composition and a rendered video. They cover demos, launches, explainers, feature reveals, integrations, and release announcements. ElevenLabs supplies narration when requested; the agent can also make an unnarrated video. The two video skills ship in Kujo Skills v0.7.1"
     },
     {
       "title": "Workflows",
@@ -293,14 +293,14 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "0.6.0",
+      "version": "0.6.2",
       "tags": [
         "[collection, workflows, receipts]"
       ],
       "headings": [
         "VideoOps production workflows"
       ],
-      "text": "Workflows connect a task contract to execution and evidence. Each pack should say what it consumes, what it runs, and where the receipt lives. The collection is the 0.6.0 release https://github.com/kujolang/kujo-workflows/releases/tag/v0.6.0 , with 44 local workflows. Kits have individual Ready, Limited, or Experimental labels; hosted runners and blanket pro"
+      "text": "Workflows connect a task contract to execution and evidence. Each pack should say what it consumes, what it runs, and where the receipt lives. The collection is the 0.6.2 release https://github.com/kujolang/kujo-workflows/releases/tag/v0.6.2 , with 44 local workflows. Kits have individual Ready, Limited, or Experimental labels; hosted runners and blanket pro"
     },
     {
       "title": "Core / Foundation",
@@ -1646,7 +1646,7 @@
       "audience": "developer",
       "difficulty": "advanced",
       "status": "local scope verified",
-      "version": "1.3.2",
+      "version": "1.3.3",
       "tags": [
         "[tool, mcp, integrations]"
       ],
@@ -1661,7 +1661,7 @@
         "Reference",
         "Portable operation contracts",
         "Public catalog and application gateways",
-        "Version 1.3.2 and Kujo 1.7",
+        "Version 1.3.3 and Kujo 1.7",
         "October 14 release update"
       ],
       "text": "Use it when\u2026 An agent needs a deliberate server boundary for tools or resources with roots, limits, auth, and a visible safety tier. Interface overview | Surface | What is available | | --- | --- | | Generator | make <repo with output and artifact-directory controls | | Profiles | Repo-specific discovery plus profile-only or artifacts-only generation | | Con"
@@ -2238,7 +2238,7 @@
       "audience": "developer",
       "difficulty": "advanced",
       "status": "stable within local and CI scope",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "tags": [
         "[tool, execution, containers, security]"
       ],
@@ -2250,7 +2250,7 @@
         "Evidence and recovery",
         "Boundaries",
         "Reference",
-        "Version 1.2.0 and Kujo 1.6",
+        "Version 1.3.0 and Kujo 1.6",
         "Agent City"
       ],
       "text": "Use it when\u2026 A workflow needs a disposable Git worktree, bounded container resources, explicit network and filesystem policy, declared artifact export, and an integrity-verifiable receipt. Interface overview Workcell validates an execution definition, prepares a disposable Git workspace, runs the workload through Docker or Podman, exports declared artifacts,"
