@@ -1237,21 +1237,21 @@
       "section": "Tools",
       "audience": "developer",
       "difficulty": "intermediate",
-      "status": "pre-1.0 release 0.5.0",
-      "version": "0.5.0",
+      "status": "pre-1.0 release 0.5.1",
+      "version": "0.5.1",
       "tags": [
         "[tool, commerce, ssg, web, square, stripe]"
       ],
       "headings": [
         "Use it when\u2026",
         "Install the released version",
-        "What 0.5.0 adds",
+        "Included in 0.5",
         "Upgrade from 0.4.0",
         "Deployment and acceptance",
         "Installation boundary",
         "Reference"
       ],
-      "text": "Use it when\u2026 A site needs validated products, hosted purchase links, a cart, or checkout that resolves trusted product data on the server. Start with Static Mode; add a runtime and durable processing only when needed. Install the released version Requires Node.js 20 or later. Version 0.5.0 is published on GitHub with a package tarball, SBOM, and build proven"
+      "text": "Use it when\u2026 A site needs validated products, hosted purchase links, a cart, or checkout that resolves trusted product data on the server. Start with Static Mode; add a runtime and durable processing only when needed. Install the released version Requires Node.js 22.23.4+, 24.22.1+, or 26.12.1+ within the supported release lines. Version 0.5.1 is published o"
     },
     {
       "title": "Concord",
