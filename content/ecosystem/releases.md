@@ -81,7 +81,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [kujo-pi](https://github.com/kujolang/kujo-pi) | [v1.2.1](https://github.com/kujolang/kujo-pi/releases/tag/v1.2.1) | 2026-10-21 |
 | [kujo-skills](https://github.com/kujolang/kujo-skills) | [v0.7.0](https://github.com/kujolang/kujo-skills/releases/tag/v0.7.0) | 2026-09-08 |
 | [kujo-workflows](https://github.com/kujolang/kujo-workflows) | [v0.6.0](https://github.com/kujolang/kujo-workflows/releases/tag/v0.6.0) | 2026-09-07 |
-| [lens](https://github.com/kujolang/lens) | [v1.1.0](https://github.com/kujolang/lens/releases/tag/v1.1.0) | 2026-09-07 |
+| [lens](https://github.com/kujolang/lens) | [v1.1.1](https://github.com/kujolang/lens/releases/tag/v1.1.1) | 2026-10-22 |
 | [mcp](https://github.com/kujolang/mcp) | [v1.3.2](https://github.com/kujolang/mcp/releases/tag/v1.3.2) | 2026-10-14 |
 | [muzzle](https://github.com/kujolang/muzzle) | [v1.1.3](https://github.com/kujolang/muzzle/releases/tag/v1.1.3) | 2026-10-21 |
 | [ollama](https://github.com/kujolang/ollama) | [v0.1.10](https://github.com/kujolang/ollama/releases/tag/v0.1.10) | 2026-08-27 |
@@ -98,7 +98,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [scout](https://github.com/kujolang/scout) | [v1.1.0](https://github.com/kujolang/scout/releases/tag/v1.1.0) | 2026-09-26 |
 | [searchbridge](https://github.com/kujolang/searchbridge) | [v1.0.2](https://github.com/kujolang/searchbridge/releases/tag/v1.0.2) | 2026-10-22 |
 | [shipcheck](https://github.com/kujolang/shipcheck) | [v1.0.2](https://github.com/kujolang/shipcheck/releases/tag/v1.0.2) | 2026-10-21 |
-| [site-kit](https://github.com/kujolang/site-kit) | [v1.0.0](https://github.com/kujolang/site-kit/releases/tag/v1.0.0) | 2026-08-09 |
+| [site-kit](https://github.com/kujolang/site-kit) | [v1.1.1](https://github.com/kujolang/site-kit/releases/tag/v1.1.1) | 2026-10-22 |
 | [siteprobe](https://github.com/kujolang/siteprobe) | [v0.3.0](https://github.com/kujolang/siteprobe/releases/tag/v0.3.0) | 2026-09-07 |
 | [spec](https://github.com/kujolang/spec) | [v1.0.2](https://github.com/kujolang/spec/releases/tag/v1.0.2) | 2026-10-21 |
 | [ssg](https://github.com/kujolang/ssg) | [v1.2.1](https://github.com/kujolang/ssg/releases/tag/v1.2.1) | 2026-10-21 |

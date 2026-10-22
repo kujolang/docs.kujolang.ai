@@ -8,8 +8,8 @@ order: 230
 audience: developer
 difficulty: intermediate
 status: local scope verified
-version: current
-last_updated: 2026-08-23
+version: 1.1.1
+last_updated: 2026-10-22
 scope: local-first
 source_repo: lens
 previous: /tools/casefile/

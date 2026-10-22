@@ -8,8 +8,8 @@ order: 260
 audience: developer
 difficulty: intermediate
 status: stable 1.0 consumer contract
-version: current
-last_updated: 2026-08-23
+version: 1.1.1
+last_updated: 2026-10-22
 scope: source and vendored distribution
 source_repo: site-kit
 previous: /tools/paperclip/

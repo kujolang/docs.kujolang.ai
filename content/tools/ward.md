@@ -8,8 +8,8 @@ order: 240
 audience: developer
 difficulty: advanced
 status: private preview
-version: current
-last_updated: 2026-08-23
+version: 1.0.0
+last_updated: 2026-10-22
 scope: local-first security operations
 source_repo: ward
 previous: /tools/kujo-cmd/
