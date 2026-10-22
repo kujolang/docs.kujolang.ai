@@ -1310,7 +1310,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "1.4.0",
+      "version": "1.4.1",
       "tags": [
         "[tool, workflows, orchestration]"
       ],
@@ -1323,7 +1323,7 @@
         "How it fits",
         "Boundaries",
         "Reference",
-        "Dispatch 1.4.0",
+        "Dispatch 1.4.1",
         "Experimental companion contracts",
         "Agent City",
         "Upgrade to 1.4.0"
