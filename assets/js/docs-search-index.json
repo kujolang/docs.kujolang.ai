@@ -1620,7 +1620,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "current",
+      "version": "1.1.1",
       "tags": [
         "[tool, browser, visual-qa]"
       ],
@@ -2023,7 +2023,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "stable 1.0 consumer contract",
-      "version": "current",
+      "version": "1.1.1",
       "tags": [
         "[tool, design-system, accessibility, web]"
       ],
@@ -2184,7 +2184,7 @@
       "audience": "developer",
       "difficulty": "advanced",
       "status": "private preview",
-      "version": "current",
+      "version": "1.0.0",
       "tags": [
         "[tool, dependabot, security]"
       ],
