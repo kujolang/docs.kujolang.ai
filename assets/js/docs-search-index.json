@@ -819,7 +819,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "local scope verified",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "tags": [
         "[showcase, agents, tasks, review, replay]"
       ],
@@ -945,7 +945,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "GitHub source release for local operators",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "tags": [
         "[showcase, intake, approvals, automation]"
       ],
@@ -957,7 +957,7 @@
         "Recovery",
         "Reference"
       ],
-      "text": "What it demonstrates Intake normalizes manual, file, webhook, Slack, GitHub, Jira, Linear, ClickUp, and email inputs into durable items, applies deterministic rules and safety checks, proposes actions, requires policy-defined approval, and exports reviewed learning. Install and try it Requires Node.js 20.19 or newer. What you get Local state under .intake/, "
+      "text": "What it demonstrates Intake normalizes manual, file, webhook, Slack, GitHub, Jira, Linear, ClickUp, and email inputs into durable items, applies deterministic rules and safety checks, proposes actions, requires policy-defined approval, and exports reviewed learning. Install and try it Requires patched Node.js 22.23.4+, 24.22.1+, or 26.12.1+. What you get Loc"
     },
     {
       "title": "Presentations",
@@ -968,7 +968,7 @@
       "audience": "developer",
       "difficulty": "intermediate",
       "status": "preview",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "tags": [
         "[showcase, presentations, slides, publishing, sitekit]"
       ],
