@@ -96,7 +96,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [runledger](https://github.com/kujolang/runledger) | [v1.2.1](https://github.com/kujolang/runledger/releases/tag/v1.2.1) | 2026-10-21 |
 | [scent](https://github.com/kujolang/scent) | [v1.1.0](https://github.com/kujolang/scent/releases/tag/v1.1.0) | 2026-10-14 |
 | [scout](https://github.com/kujolang/scout) | [v1.1.0](https://github.com/kujolang/scout/releases/tag/v1.1.0) | 2026-09-26 |
-| [searchbridge](https://github.com/kujolang/searchbridge) | [v1.0.0](https://github.com/kujolang/searchbridge/releases/tag/v1.0.0) | 2026-09-04 |
+| [searchbridge](https://github.com/kujolang/searchbridge) | [v1.0.2](https://github.com/kujolang/searchbridge/releases/tag/v1.0.2) | 2026-10-21 |
 | [shipcheck](https://github.com/kujolang/shipcheck) | [v1.0.2](https://github.com/kujolang/shipcheck/releases/tag/v1.0.2) | 2026-10-21 |
 | [site-kit](https://github.com/kujolang/site-kit) | [v1.0.0](https://github.com/kujolang/site-kit/releases/tag/v1.0.0) | 2026-08-09 |
 | [siteprobe](https://github.com/kujolang/siteprobe) | [v0.3.0](https://github.com/kujolang/siteprobe/releases/tag/v0.3.0) | 2026-09-07 |
