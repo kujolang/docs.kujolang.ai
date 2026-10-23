@@ -41,8 +41,8 @@ You need to ingest local knowledge, isolate namespaces, retrieve relevant chunks
 ## Five-minute example
 
 ```bash
-kujo run main.kujo --interpreter ingest --path ./docs --recursive true --namespace team_a
-kujo run main.kujo --interpreter query --question "How does this work?" --namespace team_a
+kujo run main.kujo -- ingest --path ./docs --recursive true --namespace team_a
+kujo run main.kujo -- query --question "How does this work?" --namespace team_a
 ```
 
 ## What you get

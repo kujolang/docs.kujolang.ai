@@ -57,7 +57,7 @@ git clone --branch v1.2.1 https://github.com/kujolang/cms.git
 cd cms
 kennel install
 cp .env.example .env
-kujo run --interpreter backend/runtime/main.kujo
+kujo run backend/runtime/main.kujo
 curl http://127.0.0.1:4200/v1/openapi.json
 ```
 

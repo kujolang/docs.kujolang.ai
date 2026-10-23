@@ -1,5 +1,8 @@
 # Kujo Docs
 
+[![Version](https://img.shields.io/badge/version-1.4.7-black)](https://github.com/kujolang/docs.kujolang.ai)
+[![built with Kujo](https://img.shields.io/badge/built%20with-Kujo-white.svg)](https://github.com/kujolang/kujo)
+
 The official documentation site for the Kujo language and ecosystem, published at [docs.kujolang.ai](https://docs.kujolang.ai).
 
 Version **1.4.7**, updated **October 22, 2026**, documents the verified Kujo 1.9.0 runtime, installation and upgrades alongside independently versioned ecosystem tools. Homepage and footer markers are generated from `VERSION` and `release.json` and verified during the build.

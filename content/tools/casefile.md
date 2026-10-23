@@ -41,9 +41,9 @@ A local failure needs to be handed to another person with enough context to repr
 ## Five-minute example
 
 ```bash
-kujo run casefile.kujo --interpreter -- capture --from-log build.log
-kujo run casefile.kujo --interpreter -- list
-kujo run casefile.kujo --interpreter -- show latest
+kujo run casefile.kujo -- capture --from-log build.log
+kujo run casefile.kujo -- list
+kujo run casefile.kujo -- show latest
 ```
 
 ## What you get

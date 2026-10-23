@@ -41,8 +41,8 @@ An agent needs a deliberate server boundary for tools or resources with roots, l
 ## Five-minute example
 
 ```bash
-kujo run mcp.kujo --interpreter make ./repo-folder --dry-run
-kujo run mcp.kujo --interpreter make ./repo-folder --validate
+kujo run mcp.kujo -- make ./repo-folder --dry-run
+kujo run mcp.kujo -- make ./repo-folder --validate
 ```
 
 ## What you get

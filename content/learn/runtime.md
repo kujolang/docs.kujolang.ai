@@ -26,7 +26,7 @@ kujo run app.kujo
 Use the interpreter when a compatibility or debugging workflow calls for it:
 
 ```bash
-kujo run --interpreter app.kujo
+kujo run app.kujo
 ```
 
 The CLI also owns project initialization, checks, formatting, linting, packages, DocGen, and serving static output. That common surface is why the first-time path introduces the language before the larger ecosystem.

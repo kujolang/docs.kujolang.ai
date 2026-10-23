@@ -40,7 +40,7 @@ kujo check hello.kujo
 `kujo run` uses the VM-first runtime. The interpreter is available when you need a compatibility or debugging path:
 
 ```bash
-kujo run --interpreter hello.kujo
+kujo run hello.kujo
 ```
 
 ## Create a project

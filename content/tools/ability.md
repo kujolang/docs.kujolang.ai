@@ -22,8 +22,8 @@ Kujo Ability gives an operation a stable identity, input and output schemas, dec
 Ability 1.3.0 requires Kujo 1.6.0 or newer. Install the tagged release with [Kennel](/tools/kennel/) and commit the generated lockfile:
 
 ```bash
-kujo run /path/to/kennel/kennel.kujo --interpreter -- add github:kujolang/ability@v1.3.0 --alias ability
-kujo run /path/to/kennel/kennel.kujo --interpreter -- install
+kujo run /path/to/kennel/kennel.kujo -- add github:kujolang/ability@v1.3.0 --alias ability
+kujo run /path/to/kennel/kennel.kujo -- install
 ```
 
 ```kujo

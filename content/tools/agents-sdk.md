@@ -56,7 +56,7 @@ credentials.
 From the Agents SDK source checkout with dependencies installed:
 
 ```bash
-kujo run examples/examples_smoke_runner.kujo --interpreter
+kujo run examples/examples_smoke_runner.kujo
 bash scripts/ci_no_network_enforcement.sh
 ```
 

@@ -44,7 +44,7 @@ You need a local proxy or dashboard to understand AI request volume, cost, laten
 ## Five-minute example
 
 ```bash
-WDG_HOST=127.0.0.1 kujo run --interpreter dashboard_server.kujo
+WDG_HOST=127.0.0.1 kujo run dashboard_server.kujo
 curl http://127.0.0.1:7700/api/proxy-config
 ```
 
