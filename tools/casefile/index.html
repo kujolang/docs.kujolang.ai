@@ -134,9 +134,9 @@
 <li>Review the redacted bundle before sharing it and mirror the captured exit code when CI must preserve failure status.</li>
 </ul>
 <h2 id="five-minute-example">Five-minute example</h2>
-<pre><code class="language-bash">kujo run casefile.kujo --interpreter -- capture --from-log build.log
-kujo run casefile.kujo --interpreter -- list
-kujo run casefile.kujo --interpreter -- show latest</code></pre>
+<pre><code class="language-bash">kujo run casefile.kujo -- capture --from-log build.log
+kujo run casefile.kujo -- list
+kujo run casefile.kujo -- show latest</code></pre>
 <h2 id="what-you-get">What you get</h2>
 <p>A redacted failure bundle with commands, environment facts, logs, and reproduction notes.</p>
 <h2 id="how-it-fits">How it fits</h2>

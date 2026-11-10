@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="kujo-light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		(function() {
+			try {
+				if (window.localStorage.getItem('sk-theme') === 'kujo-dark') {
+					document.documentElement.dataset.theme = 'kujo-dark';
+				}
+			} catch (error) {}
+		})();
+	</script>
+	<title>Kujo Hermes | Kujo Docs</title>
+	<meta name="description" content="Install native Kujo engineering tools in Hermes and inspect approvals, verification results and receipts.">
+	<meta name="keywords" content="SSG, Static Site Generator">
+	<meta name="author" content="Kujo">
+	<link rel="canonical" href="https://docs.kujolang.ai/tools/kujo-hermes/">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/assets/img/kujo-logomark-black.svg" color="#000000">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="application-name" content="Kujo Docs">
+	<meta name="apple-mobile-web-app-title" content="Kujo Docs">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Kujo Hermes">
+	<meta property="og:description" content="Install native Kujo engineering tools in Hermes and inspect approvals, verification results and receipts.">
+	<meta property="og:url" content="https://docs.kujolang.ai/tools/kujo-hermes/">
+	<meta property="og:type" content="article">
+	<meta property="og:site_name" content="Kujo Docs">
+	<meta property="og:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Kujo Hermes">
+	<meta name="twitter:description" content="Install native Kujo engineering tools in Hermes and inspect approvals, verification results and receipts.">
+	<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">
+	<meta name="twitter:image:alt" content="Kujo Docs — Build reviewable, local-first software with Kujo.">
+	<link href="../../assets/css/fonts.css" rel="stylesheet">
+	<link href="../../assets/sitekit/sitekit.css" rel="stylesheet">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Kujo Hermes","name":"Kujo Hermes","description":"Install native Kujo engineering tools in Hermes and inspect approvals, verification results and receipts.","url":"https://docs.kujolang.ai/tools/kujo-hermes/","publisher":{"@type":"Organization","name":"Kujo Docs"}}</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="docs-topbar" id="navigation">
+	<div class="docs-topbar-row">
+		<a class="docs-brand" href="../../index.html"><img class="docs-brand-mark" src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"> <span>Docs</span></a>
+		<label class="docs-search-shell">
+			<span class="sr-only">Search documentation</span>
+			<input id="docs-search" type="search" placeholder="Search docs" autocomplete="off">
+		</label>
+		<div class="docs-header-actions">
+			<button class="docs-theme-button docs-icon-button" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-docs-theme>
+				<svg class="docs-moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c.132 0 .263 .003 .393 .008a7.5 7.5 0 0 0 7.599 9.6A9 9 0 1 1 12 3"/></svg>
+				<svg class="docs-sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-4 0a4 4 0 1 0 8 0 4 4 0 1 0-8 0M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+			</button>
+			<button class="docs-menu-button docs-icon-button" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu" data-docs-menu>
+				<svg class="docs-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+				<svg class="docs-close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+			</button>
+		</div>
+	</div>
+	<nav id="primary-navigation" class="docs-primary-nav" aria-label="Primary navigation">
+		<a href="/start-here/">Start here</a>
+		<a href="/learn/">Learn Kujo</a>
+		<a href="/build/">Build with Kujo</a>
+		<a href="/ecosystem/providers/">Providers</a>
+		<a href="/tools/">Tools</a>
+		<a href="/showcases/">Showcases</a>
+	</nav>
+</header>
+<div id="docs-search-results" class="docs-search-results" aria-live="polite"></div>
+<main class="docs-shell" id="main-content">
+	<aside class="docs-sidebar" aria-label="Documentation sections">
+		<p class="docs-sidebar-label">Browse</p>
+		<ul>
+			<li><a href="/start-here/">Start here</a></li>
+			<li><a href="/install/">Install Kujo</a></li>
+			<li><a href="/upgrade/">Upgrade Kujo</a></li>
+			<li><a href="/quickstart/">Quickstart</a></li>
+			<li><a href="/choose-a-path/">Choose a path</a></li>
+			<li><a href="/learn/">Learn Kujo</a></li>
+			<li><a href="/build/">Build with Kujo</a></li>
+			<li><a href="/review/">Reviewable work</a></li>
+			<li><a href="/tools/">Tools</a></li>
+			<li><a href="/showcases/">Showcases</a></li>
+			<li><a href="/collections/">Collections</a></li>
+			<li><a href="/ecosystem/">Ecosystem</a></li>
+			<li><a href="/reference/">Reference</a></li>
+			<li><a href="/security/">Security model</a></li>
+			<li><a href="/release-boundaries/">Release boundaries</a></li>
+			<li><a href="/support/">Support</a></li>
+		</ul>
+	</aside>
+	<article class="docs-article">
+		<h1 id="kujo-hermes">Kujo Hermes</h1><p class="docs-description">Install native Kujo engineering tools in Hermes and inspect approvals, verification results and receipts.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>intermediate</span><span class="docs-badge docs-badge-status"><span>Status</span>released</span><span class="docs-badge docs-badge-version"><span>Version</span>0.1.0</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-11-10</span></div>
+		<div class="docs-body"><!--email_off--><p>Kujo Hermes connects Hermes directly to canonical Kujo tools. It works with repositories in the languages supported by those tools; it is not limited to writing Kujo code.</p>
+<h2 id="install-in-your-repository">Install in your repository</h2>
+<p>With Hermes 0.22.7 or newer, Git, and the official Kujo runtime installed, run:</p>
+<pre><code class="language-sh">hermes plugins install kujolang/kujo-hermes
+hermes kujo setup --trust-workspace .</code></pre>
+<p>Accept Hermes&apos;s dependency and enable prompts, then start a new conversation. Setup fetches 26 official source repositories at pinned commits and trusts only the workspace you name. It does not install the Kujo runtime, browser binaries, containers or credentials. macOS and Linux are supported; tested Hermes hosts are 0.22.7 and 0.23.0. No npm package or other agent plugin is needed.</p>
+<h2 id="give-hermes-checks-it-can-run">Give Hermes checks it can run</h2>
+<p>Ask: “Validate the specification, run Eval, and show the failed checks and receipts.”</p>
+<ul>
+<li><strong>Spec</strong> checks the task contract so Hermes can work against explicit requirements.</li>
+<li><strong>Eval</strong> runs deterministic checks so you can find regressions and rerun the same tests after a correction.</li>
+<li><strong>PackWrite</strong> prepares an execution pack so the agent has the task context and constraints together.</li>
+<li><strong>ShipCheck</strong> reports release-readiness findings so you can review what still needs attention.</li>
+<li><strong>Scout, PatchBrief and other installed Abilities</strong> help inspect repositories, review changes and gather evidence.</li>
+</ul>
+<p>Six native tools handle discovery, inspection, execution, status, receipts and diagnostics. Operation schemas load on demand. Profiles control which Abilities appear; they do not grant permission to execute them. Missing prerequisites remain visible with setup guidance.</p>
+<h2 id="inspect-the-evidence">Inspect the evidence</h2>
+<p>The <a href="https://github.com/kujolang/kujo-hermes/tree/main/demo/checkout-video">checkout demonstration</a> records a real Hermes conversation using a free local model. Eval catches a checkout regression; the model corrects the code and the unchanged tests pass. Both executions retain inspectable receipts. The edited film condenses model waits.</p>
+<p>Receipts preserve structured results and local SHA-256 integrity checks. They are not signed attestations or proof that all possible behavior is correct. A successful process exit does not replace the tool&apos;s actual verification verdict.</p>
+<h2 id="keep-execution-under-your-control">Keep execution under your control</h2>
+<p>Workspace trust and request-bound approvals restrict execution. Approved Eval, Loop and other operations can run repository-defined commands, so use trusted repositories. Ordinary CLI execution is not sandboxed; Workcell needs its own container prerequisites. Remote services and optional telemetry require explicit configuration. Long-running operations support status, cancellation and cleanup.</p>
+<p>Run <code>hermes kujo doctor</code> for dependency and configuration guidance. The setup command uses Hermes&apos;s default in-process plugin mode; isolated host-mode profiles use the documented manual configuration instead. The runtime requirement is Kujo &gt;=1.6,&lt;2; release checks used official Kujo 1.8.0. Some service, browser and container operations remain outside the verified baseline.</p>
+<h2 id="sources-and-next-steps">Sources and next steps</h2>
+<ul>
+<li><a href="https://github.com/kujolang/kujo-hermes/releases/tag/v0.1.0">Kujo Hermes 0.1.0 release</a></li>
+<li><a href="https://github.com/kujolang/kujo-hermes">Source, configuration and manual installation</a></li>
+<li><a href="https://github.com/kujolang/kujo-hermes/blob/main/docs/abilities.md">Tested Ability inventory and limitations</a></li>
+<li><a href="https://github.com/kujolang/kujo-hermes/blob/main/docs/readiness.md">Readiness evidence</a></li>
+</ul>
+<p><a href="https://kujolang.ai/ecosystem/kujo-hermes/">View the ecosystem overview</a>.</p><!--/email_off--></div>
+	</article>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#install-in-your-repository">Install in your repository</a></li><li class="toc-level-2"><a href="#give-hermes-checks-it-can-run">Give Hermes checks it can run</a></li><li class="toc-level-2"><a href="#inspect-the-evidence">Inspect the evidence</a></li><li class="toc-level-2"><a href="#keep-execution-under-your-control">Keep execution under your control</a></li><li class="toc-level-2"><a href="#sources-and-next-steps">Sources and next steps</a></li></ol></nav>
+</main>
+
+<footer class="docs-footer" id="footer">
+	<div class="docs-footer-brand"><a href="https://kujolang.ai"><img src="../../assets/img/kujo-logomark-black.svg" alt="" width="32" height="32"><strong>Kujo</strong></a><span>Docs v1.4.7</span></div>
+	<nav aria-label="Footer navigation"><a href="/reference/">Reference</a><a href="/support/">Support</a><a href="/release-boundaries/">Release boundaries</a><a href="/llms.txt">llms.txt</a></nav>
+</footer>
+<script src="../../assets/sitekit/sitekit.js"></script>
+<script src="../../assets/js/docs.js"></script>
+<script src="../../assets/js/kujo-webmcp.js" data-kujo-webmcp data-kujo-site-index="../../.well-known/kujo-site-index.json" defer></script></body>
+</html>

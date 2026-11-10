@@ -105,8 +105,8 @@
 		<div class="docs-body"><!--email_off--><p>Kujo Ability gives an operation a stable identity, input and output schemas, declared effects, and retry semantics. Applications bind that definition to handlers and retain control of identity, permissions, credentials, approvals, storage, and transport.</p>
 <h2 id="install">Install</h2>
 <p>Ability 1.3.0 requires Kujo 1.6.0 or newer. Install the tagged release with <a href="/tools/kennel/">Kennel</a> and commit the generated lockfile:</p>
-<pre><code class="language-bash">kujo run /path/to/kennel/kennel.kujo --interpreter -- add github:kujolang/ability@v1.3.0 --alias ability
-kujo run /path/to/kennel/kennel.kujo --interpreter -- install</code></pre>
+<pre><code class="language-bash">kujo run /path/to/kennel/kennel.kujo -- add github:kujolang/ability@v1.3.0 --alias ability
+kujo run /path/to/kennel/kennel.kujo -- install</code></pre>
 <pre><code class="language-kujo">from ability import validate_ability_definition, ability_definition_digest</code></pre>
 <p>Use the <a href="https://github.com/kujolang/ability/blob/v1.3.0/examples/content_find.json">complete definition example</a> to start. It is a documentation fixture, not a built-in content service.</p>
 <h2 id="what-the-release-includes">What the release includes</h2>

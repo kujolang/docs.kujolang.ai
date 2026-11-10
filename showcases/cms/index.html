@@ -158,7 +158,7 @@
 cd cms
 kennel install
 cp .env.example .env
-kujo run --interpreter backend/runtime/main.kujo
+kujo run backend/runtime/main.kujo
 curl http://127.0.0.1:4200/v1/openapi.json</code></pre>
 <p>To run the full site and administration showcase, clone <a href="https://github.com/kujolang/cms-example">CMS Example</a>, install its dependencies, then start the backend, seed data, and launch the frontend in separate terminals:</p>
 <pre><code class="language-bash">npm run cms:start
