@@ -45,3 +45,7 @@ Web and publishing tools include:
 - [VersionSeal](/tools/versionseal/) — checksum-bound human approvals, authority, and revocation.
 - [PressWire](/tools/presswire/) — approval-gated publication effects and receipts.
 - [ReaderSignal](/tools/readersignal/) — privacy-bounded measurement, crash recovery, bounded query pages, and exact-evidence checkpoints (0.3.0).
+
+## Kujo Hermes 0.1.0
+
+[Kujo Hermes](/tools/kujo-hermes/) adds native engineering checks, workspace trust, human approvals and execution receipts to Hermes. Install through Hermes; Kujo itself is a separate prerequisite. [Release and evidence](https://github.com/kujolang/kujo-hermes/releases/tag/v0.1.0).

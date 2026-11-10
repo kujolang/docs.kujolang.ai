@@ -173,3 +173,7 @@ See the [release notes](https://github.com/kujolang/kujo/blob/main/docs/RELEASE_
 [Kujo 1.9.0](https://github.com/kujolang/kujo/releases/tag/v1.9.0) adds checked nested collection and struct writes, strict UTF-8 conversion, byte iteration, fallible comparator sorting, regex callbacks and match counting, headerless CSV, decimal formatting and wrapping arithmetic. Shared bytecode and copy-on-write storage improvements preserve retained values and atomic failed writes.
 
 Native installation and upgrades from 1.8.2 and npm installation passed on all five targets. The [publication record](https://github.com/kujolang/kujo/blob/main/release/kujo-1.9.0-publication.json) identifies the exact source and verification runs. Companion protocols and participant SDKs retain their experimental boundaries.
+
+## Kujo Hermes 0.1.0
+
+[Kujo Hermes](/tools/kujo-hermes/) adds native engineering checks, workspace trust, human approvals and execution receipts to Hermes. Install through Hermes; Kujo itself is a separate prerequisite. [Release and evidence](https://github.com/kujolang/kujo-hermes/releases/tag/v0.1.0).
