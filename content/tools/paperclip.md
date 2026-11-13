@@ -53,7 +53,7 @@ Back up your Paperclip data before upgrading, upgrade the host first, install th
 
 Quality reports and suggested checks are not proof that tests ran. Approved Eval and source execution run trusted code and can affect the host or network; they are not an operating-system sandbox. Starter previews do not install dependencies or start services. Dispatch workflow support is limited to the shipped offline examples; live providers and general recovery of uncertain external effects are not included.
 
-Workcell requires a configured local Docker environment and approved immutable image; remote sandboxes are not exposed. Lens requires optional browser dependencies and unauthenticated loopback targets. PackWrite uses supplied plans, and Watchdog imports metadata only. The official 2026.1106.0 host does not mount plugin run tabs; use the issue Verification Center and scoped run-evidence tools.
+The new assurance execution workflows require macOS or Linux; existing compatible Windows tools remain available. Workcell requires a configured local Docker environment and approved immutable image; remote sandboxes are not exposed. Lens requires optional browser dependencies and unauthenticated loopback targets. PackWrite uses supplied plans, and Watchdog imports metadata only. The official 2026.1106.0 host does not mount plugin run tabs; use the issue Verification Center and scoped run-evidence tools.
 
 The plugin ships 19 pinned, checksummed component snapshots and Kujo 1.8.1. Its offline RAG subset has separate plugin qualification; the standalone RAG 1.1.0 candidate remains unpublished pending its required review evidence. This does not certify arbitrary hosted RAG deployments.
 
