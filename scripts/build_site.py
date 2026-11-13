@@ -242,6 +242,8 @@ def finalize_html(output: Path) -> None:
         return heading.sub(replace, document)
 
     for path in output.rglob("*.html"):
+        if path.is_relative_to(output / "assets" / "sitekit"):
+            continue  # Preserve upstream distribution bytes and manifest hashes.
         html = path.read_text(encoding="utf-8")
         for marker, value in markers.items():
             html = html.replace(marker, escape(value))

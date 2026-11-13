@@ -1,0 +1,8 @@
+{
+  "version": "1.2.0",
+  "repository": "https://github.com/kujolang/site-kit",
+  "tag": "v1.2.0",
+  "commit": "74cff7b73f2f21d658fc0219ac7f4d44f7f93efd",
+  "distribution": "assets/sitekit",
+  "archiveSha256": "3cd8407ae14b8e963b780e85044472306e8fe8fd9c1bf9413f540da433f19dea"
+}

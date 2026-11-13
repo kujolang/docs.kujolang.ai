@@ -131,7 +131,7 @@ while IFS= read -r generated_page; do
   require_text "$relative_page" '<meta property="og:image:width" content="1200">'
   require_text "$relative_page" '<meta property="og:image:height" content="630">'
   require_text "$relative_page" '<meta name="twitter:image" content="https://docs.kujolang.ai/assets/img/social/kujo-docs.jpg">'
-done < <(find "$output_dir" -type f -name '*.html' | sort)
+done < <(find "$output_dir" -type f -name '*.html' ! -path "$output_dir/assets/sitekit/recipes/*" | sort)
 
 printf 'Agent platform documentation contract passed.\n'
 
@@ -153,6 +153,8 @@ release = json.loads(Path('release.json').read_text())
 d = date.fromisoformat(release['date'])
 output = Path(sys.argv[1])
 for page in output.rglob('*.html'):
+    if page.is_relative_to(output / 'assets/sitekit/recipes'):
+        continue  # Upstream runnable assets do not use the documentation shell.
     text = page.read_text()
     assert '@@DOCS_' not in text, f'unresolved release marker: {page}'
     assert f'Docs v{version}' in text, f'stale or missing footer: {page}'
@@ -190,3 +192,5 @@ require_text ecosystem/releases/index.html '/tools/kujo-opencode/'
 require_text sitemap.xml '/tools/kujo-opencode/'
 require_text tools/kujo-opencode/index.html '<!--email_off-->'
 reject_text tools/kujo-opencode/index.html '&lt;!--email_off--&gt;'
+
+python3 scripts/verify-sitekit.py

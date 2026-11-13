@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Adopt SiteKit 1.2.0 with complete optional recipes and current release guidance; preserve upstream HTML bytes during docs postprocessing and verify the full distribution manifest.
+
 ## 1.4.6 — 2026-10-19
 
 - Update current runtime installation, upgrade and release guidance to Kujo 1.8.2.
