@@ -88,7 +88,7 @@ A local-first path through the Kujo language and ecosystem.
 - [MCP](https://docs.kujolang.ai/tools/mcp/) — Generate guarded MCP servers with roots, limits, auth, and safety tiers.
 - [Muzzle](https://docs.kujolang.ai/tools/muzzle/) — Run noisy workflows quietly while preserving complete logs and summaries.
 - [PackWrite](https://docs.kujolang.ai/tools/packwrite/) — Compile a repository mega prompt and bounded context into deterministic execution packs for implementation agents and reviewers.
-- [Kujo for Paperclip](https://docs.kujolang.ai/tools/paperclip/) — Project knowledge, repository understanding, native quality checks and human-approved Kujo workflows in Paperclip.
+- [Kujo for Paperclip](https://docs.kujolang.ai/tools/paperclip/) — Verify agent work with approved execution, browser checks, acceptance decisions and retained evidence in Paperclip.
 - [PatchBrief](https://docs.kujolang.ai/tools/patchbrief/) — Turn a diff into a reviewable summary and handoff.
 - [PressWire](https://docs.kujolang.ai/tools/presswire/) — Execute approval-gated publication effects with idempotency and receipts.
 - [RAG](https://docs.kujolang.ai/tools/rag/) — Build local retrieval flows with namespaces, citations, and offline fallbacks.

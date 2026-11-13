@@ -1753,19 +1753,20 @@
     },
     {
       "title": "Kujo for Paperclip",
-      "description": "Project knowledge, repository understanding, native quality checks and human-approved Kujo workflows in Paperclip.",
+      "description": "Verify agent work with approved execution, browser checks, acceptance decisions and retained evidence in Paperclip.",
       "url": "https://docs.kujolang.ai/tools/paperclip/",
       "route": "tools/paperclip/",
       "section": "Tools",
       "audience": "developer",
       "difficulty": "beginner",
       "status": "released",
-      "version": "0.2.1",
+      "version": "0.3.0",
       "tags": [
         "[tool, agents, context, review, evidence]"
       ],
       "headings": [
         "Included features",
+        "Verification Center in 0.3.0",
         "Install and upgrade",
         "Boundaries",
         "Agent access and install compatibility",
