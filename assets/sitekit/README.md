@@ -1,0 +1,9 @@
+# SiteKit 1.2.0 distribution
+
+This directory is the supported SiteKit v1 source-vendored artifact. Copy it as a unit, load `sitekit.css`, and optionally load `sitekit.js` for progressive behavior. Keep `fonts/` beside the CSS file because the relative font URLs are part of the contract.
+
+The bundle order is reset, tokens, themes, base, components, and utilities. `LICENSE` covers SiteKit; `fonts/DepartureMono-LICENSE.txt` covers the bundled Departure Mono assets. The curated Tabler sprite is in icons/tabler.svg; preserve icons/LICENSE.txt. Theme-aware scrollbars apply throughout the bundle, with forced-color system fallback. npm publication is not part of SiteKit v1.
+
+Optional documentation compositions are in `recipes/`; open `recipes/code-panel.html` for runnable examples and read `recipes/README.md`. Their CSS and behavior are explicit opt-ins, separate from core components.
+
+The optional `compat/bzby.css` palette requires an explicit consumer opt-in. See the [upgrade, integrity and asset guide](https://github.com/kujolang/site-kit/blob/v1.2.0/docs/consumer-upgrades.md) before replacing existing assets.

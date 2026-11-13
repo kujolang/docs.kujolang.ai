@@ -2050,8 +2050,8 @@
       "section": "Tools",
       "audience": "developer",
       "difficulty": "intermediate",
-      "status": "stable 1.0 consumer contract",
-      "version": "1.1.1",
+      "status": "stable v1 consumer contract",
+      "version": "1.2.0",
       "tags": [
         "[tool, design-system, accessibility, web]"
       ],
@@ -2059,10 +2059,11 @@
         "Use it when\u2026",
         "Install or vendor",
         "What you get",
+        "New in 1.2.0",
         "Boundaries",
         "Reference"
       ],
-      "text": "Use it when\u2026 A static site needs shared tokens, themes, component CSS, templates, recipes, and progressive enhancement without a framework runtime. Install or vendor Build with Node 20 or newer and copy the generated dist/ directory into the consumer, or vendor the dist/ directory from an exact GitHub release archive. Keep its directory structure intact so f"
+      "text": "Use it when\u2026 A static site needs shared tokens, themes, component CSS, templates, recipes, and progressive enhancement without a framework runtime. Install or vendor Build with a supported patched Node.js branch 22.23.4+, 24.22.1+, or 26.12.1+, within its corresponding major and copy the generated dist/ directory into the consumer, or vendor the dist/ direct"
     },
     {
       "title": "SiteProbe",
