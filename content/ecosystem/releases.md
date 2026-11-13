@@ -89,7 +89,7 @@ See the [1.8.0 release and checksums](https://github.com/kujolang/kujo/releases/
 | [muzzle](https://github.com/kujolang/muzzle) | [v1.1.3](https://github.com/kujolang/muzzle/releases/tag/v1.1.3) | 2026-10-21 |
 | [ollama](https://github.com/kujolang/ollama) | [v0.1.10](https://github.com/kujolang/ollama/releases/tag/v0.1.10) | 2026-08-27 |
 | [packwrite](https://github.com/kujolang/packwrite) | [v1.1.1](https://github.com/kujolang/packwrite/releases/tag/v1.1.1) | 2026-10-13 |
-| [paperclip](https://github.com/kujolang/paperclip) | [v0.2.1](https://github.com/kujolang/paperclip/releases/tag/v0.2.1) | 2026-10-21 |
+| [paperclip](https://github.com/kujolang/paperclip) | [v0.3.0](https://github.com/kujolang/paperclip/releases/tag/v0.3.0) | 2026-11-12 |
 | [patchbrief](https://github.com/kujolang/patchbrief) | [v1.0.3](https://github.com/kujolang/patchbrief/releases/tag/v1.0.3) | 2026-10-21 |
 | [presswire](https://github.com/kujolang/presswire) | [v0.2.0](https://github.com/kujolang/presswire/releases/tag/v0.2.0) | 2026-08-14 |
 | [rag](https://github.com/kujolang/rag) | [v1.0.0](https://github.com/kujolang/rag/releases/tag/v1.0.0) | 2026-08-08 |

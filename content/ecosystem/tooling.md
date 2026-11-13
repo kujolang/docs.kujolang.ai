@@ -28,7 +28,7 @@ Core engineering tools include:
 - [Kujo CMD](/tools/kujo-cmd/) — install Kujo Abilities, scoped agents, approvals, receipts, and browser QA in Command Code.
 - [Ward](/tools/ward/) — local Dependabot monitoring and remediation planning.
 - [Howl](/tools/howl/) — deterministic example and launch-proof artifacts.
-- [Kujo for Paperclip](/tools/paperclip/) — focused context, change review, and failure evidence inside Paperclip tasks.
+- [Kujo for Paperclip](/tools/paperclip/) — approved execution, browser verification, acceptance decisions and retained evidence inside Paperclip tasks.
 
 Web and publishing tools include:
 
