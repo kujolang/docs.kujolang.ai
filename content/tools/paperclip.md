@@ -1,6 +1,6 @@
 ---
 title: Kujo for Paperclip
-description: "Project knowledge, repository understanding, native quality checks and human-approved Kujo workflows in Paperclip."
+description: "Verify agent work with approved execution, browser checks, acceptance decisions and retained evidence in Paperclip."
 template: docs
 section: Tools
 nav_title: Paperclip
@@ -8,8 +8,8 @@ order: 255
 audience: developer
 difficulty: beginner
 status: released
-version: 0.2.1
-last_updated: "2026-10-21"
+version: 0.3.0
+last_updated: "2026-11-12"
 scope: local Paperclip integration
 source_repo: paperclip
 previous: /tools/howl/
@@ -28,9 +28,20 @@ Kujo for Paperclip brings repository understanding, project knowledge, native qu
 - **Run approved work:** opt-in Eval execution and shipped offline Dispatch examples use human approval, bounded execution, checkpoints and retained receipts.
 - **Keep evidence:** inspect, compare and export bounded redacted history; explicitly attach evidence to an issue.
 
+## Verification Center in 0.3.0
+
+The issue Verification Center connects approved execution, recorded results and human acceptance to Paperclip's existing tasks, agents and runs. All 21 previous tools remain available; `manage-kujo-assurance` adds the new workflows.
+
+- **Run approved checks:** opt into local Docker execution with Workcell, loopback browser checks with Lens, named Muzzle workflows and PackWrite validation or supplied-plan compilation.
+- **Review evidence:** inspect logs, browser screenshots, failed and corrected attempts, recorded approval and native agent/run identity. Import RunLedger receipts and available Watchdog metadata; imported claims remain explicitly unverified.
+- **Decide acceptance:** distinguish current, stale, missing and failed evidence, request human review and record authorized waivers. These decisions do not override native issue status.
+- **Inspect delegated work:** browse native child assignments in bounded 50-issue pages; restart when tree membership changes.
+
+The real-host demonstration uses four deterministic process agents and retains failures, human review and evidence across restart. It does not claim autonomous LLM staffing or provider cost measurement. See the [release notes](https://github.com/kujolang/paperclip/blob/v0.3.0/docs/RELEASE_0_3_0.md) and [configuration guide](https://github.com/kujolang/paperclip/blob/v0.3.0/docs/ACCOUNTABILITY.md).
+
 ## Install and upgrade
 
-Use official Paperclip **2026.1012.0** or later and Node.js **24.22.1** on the 24.x line or **26.12.1** and later. The release is qualified against official Paperclip 2026.1012.0. No custom host fork, separate Kujo installation, provider key or manual installation of bundled tools is needed.
+Use official Paperclip **2026.1012.0** or later and Node.js **24.22.1** on the 24.x line or **26.12.1** and later. Version 0.3.0 is qualified against official Paperclip 2026.1106.0. No custom host fork, separate Kujo installation, provider key or manual installation of bundled tools is needed.
 
 ```bash
 npx paperclipai plugin install @kujolang/paperclip
@@ -40,11 +51,13 @@ Back up your Paperclip data before upgrading, upgrade the host first, install th
 
 ## Boundaries
 
-Quality reports and suggested checks are not proof that tests ran. Approved Eval and source execution run trusted code and can affect the host or network; they are not an operating-system sandbox. Starter previews do not install dependencies or start services. Workflow support is limited to the shipped offline examples; live providers and general recovery of uncertain external effects are not included.
+Quality reports and suggested checks are not proof that tests ran. Approved Eval and source execution run trusted code and can affect the host or network; they are not an operating-system sandbox. Starter previews do not install dependencies or start services. Dispatch workflow support is limited to the shipped offline examples; live providers and general recovery of uncertain external effects are not included.
 
-The plugin ships pinned, checksummed component sources and Kujo 1.8.1. Its offline RAG subset has separate plugin qualification; the standalone RAG 1.1.0 candidate remains unpublished pending its required review evidence. This does not certify arbitrary hosted RAG deployments.
+Workcell requires a configured local Docker environment and approved immutable image; remote sandboxes are not exposed. Lens requires optional browser dependencies and unauthenticated loopback targets. PackWrite uses supplied plans, and Watchdog imports metadata only. The official 2026.1106.0 host does not mount plugin run tabs; use the issue Verification Center and scoped run-evidence tools.
 
-See the [0.2.1 release](https://github.com/kujolang/paperclip/releases/tag/v0.2.1), [usage guide](https://github.com/kujolang/paperclip/blob/v0.2.1/docs/USAGE.md), [execution boundaries](https://github.com/kujolang/paperclip/blob/v0.2.1/docs/EXECUTION.md) and [knowledge guide](https://github.com/kujolang/paperclip/blob/v0.2.1/docs/KNOWLEDGE.md).
+The plugin ships 19 pinned, checksummed component snapshots and Kujo 1.8.1. Its offline RAG subset has separate plugin qualification; the standalone RAG 1.1.0 candidate remains unpublished pending its required review evidence. This does not certify arbitrary hosted RAG deployments.
+
+See the [0.3.0 release](https://github.com/kujolang/paperclip/releases/tag/v0.3.0), [usage guide](https://github.com/kujolang/paperclip/blob/v0.3.0/docs/USAGE.md), [execution boundaries](https://github.com/kujolang/paperclip/blob/v0.3.0/docs/EXECUTION.md) and [knowledge guide](https://github.com/kujolang/paperclip/blob/v0.3.0/docs/KNOWLEDGE.md).
 
 ## Agent access and install compatibility
 
