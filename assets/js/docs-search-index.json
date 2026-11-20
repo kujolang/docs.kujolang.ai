@@ -1141,7 +1141,7 @@
         "License",
         "Runtime for incremental HTTP collection"
       ],
-      "text": "Use it when You need chat or embedding calls with a shared response contract, retries, redaction, usage accounting, and offline fixtures. Install AI SDK 1.2.0 requires Kujo 1.6.0 or newer and Kennel 1.1.0 or newer: Import src/ai sdk.kujo and src/providers.kujo. AI SDK is a library; it has no separate CLI. In a checkout, run kujo run examples/main.kujo to try"
+      "text": "Use it when You need chat or embedding calls with a shared response contract, retries, redaction, usage accounting, and offline fixtures. Install Install the published AI SDK 1.2.0 package with Kennel 1.1.0 or newer and Kujo 1.6.0 or newer. Kennel AI SDK releases https://kennel.kujolang.ai/ai-sdk/ Import src/ai sdk.kujo and src/providers.kujo. AI SDK is a li"
     },
     {
       "title": "AssetWorks",
