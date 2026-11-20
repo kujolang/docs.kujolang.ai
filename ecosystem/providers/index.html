@@ -102,7 +102,7 @@
 	</aside>
 	<article class="docs-article">
 		<h1 id="providers">Providers</h1><p class="docs-description">Find 35 Kujo integrations for local inference, hosted models, media, embeddings, and reranking.</p><div class="docs-meta" aria-label="Page metadata"><span class="docs-badge docs-badge-audience"><span>Audience</span>developer</span><span class="docs-badge docs-badge-difficulty"><span>Difficulty</span>beginner</span><span class="docs-badge docs-badge-status"><span>Status</span>source-backed inventory</span><span class="docs-badge docs-badge-version"><span>Version</span>current</span><span class="docs-badge docs-badge-updated"><span>Updated</span>2026-11-20</span></div>
-		<div class="docs-body"><!--email_off--><p>Kujo has 35 provider integrations. Choose a <a href="#choose-a-provider">standalone package</a> for native APIs or a <a href="#ai-sdk-presets">shared AI SDK preset</a> for local inference, hosted chat, embeddings, and reranking.</p>
+		<div class="docs-body"><!--email_off--><p>Kujo has 35 provider integrations. Choose a <a href="#choose-a-provider">standalone package</a> or a <a href="#ai-sdk-presets">built-in AI SDK preset</a> for local inference, hosted models, retrieval, or native jobs. Start every integration with the <a href="#configure-a-provider">same setup workflow</a>.</p>
 <h2 id="choose-a-provider">Choose a provider</h2>
 <p>This table lists the 25 standalone provider packages reviewed on <strong>2026-08-30</strong>. <code>AI SDK</code> means the package exports a public provider factory and depends on AI SDK <code>v1.1.0</code>; <code>Native only</code> means no normalized driver is advertised in that package release.</p>
 <table><thead><tr>
@@ -315,11 +315,52 @@
 </tr>
 </tbody></table>
 <p>The package versions above are immutable Git tags. The installation example pins those tags directly.</p>
-<h2 id="install-a-provider">Install a provider</h2>
-<p>Install the package into the project&apos;s Kennel lockfile. Replace <code>PACKAGE</code> and <code>TAG</code> with a row from the table:</p>
-<pre><code class="language-bash">kujo kennel add github:kujolang/PACKAGE@TAG
-kujo kennel install</code></pre>
-<p>Then export the provider&apos;s credential in your shell or secret manager. Never put a real key in a <code>.kujo</code> file, a lockfile, or a committed example. The package repositories and <a href="/learn/packages/">Packages with Kennel</a> explain the local lockfile and trust boundary.</p>
+<h2 id="configure-a-provider">Configure a provider</h2>
+<p>Use Kujo 1.9.0. From your application directory, check out the SDK source</p>
+<p>revision that includes the common provider registry. The published AI SDK</p>
+<p>1.2.0 package predates it.</p>
+<pre><code class="language-bash">git clone https://github.com/kujolang/ai-sdk.git
+git -C ai-sdk checkout 43164526150d93f21209c0128d33de7ca9e77b6e
+export AI_SDK_ROOT=&quot;$PWD/ai-sdk&quot;
+export KENNEL_SCRIPT=/path/to/kennel/kennel.kujo
+export KUJO_MODULE_PATH=&quot;$AI_SDK_ROOT/src:$PWD/kennel_packages&quot;
+kujo run &quot;$AI_SDK_ROOT/examples/provider_quickstart.kujo&quot; -- list
+kujo run &quot;$AI_SDK_ROOT/examples/provider_quickstart.kujo&quot; -- anthropic setup</code></pre>
+<p>Replace <code>anthropic</code> with the provider ID. The <code>setup</code> command prints the</p>
+<p>pinned install commands, package import, credential environment variable</p>
+<p>names, and starter code for that provider. If the project has no Kennel</p>
+<p>manifest, first run <code>kujo run &quot;$KENNEL_SCRIPT&quot; -- init --name my-app</code>.</p>
+<p>Set your credential through the shell or a secret manager.</p>
+<table><thead><tr>
+<th>Use</th>
+<th>Configuration</th>
+<th>First operation</th>
+</tr></thead><tbody>
+<tr>
+<td>Built-in presets</td>
+<td><code>configure_provider(id, model, {})</code></td>
+<td>Chat or embeddings through the AI SDK</td>
+</tr>
+<tr>
+<td>Packaged SDK drivers</td>
+<td>Add the package and pass its provider factory to <code>configure_provider</code></td>
+<td>The same SDK chat or embedding call when the driver supports it</td>
+</tr>
+<tr>
+<td>Bedrock, Azure AI and Vertex AI</td>
+<td>Pass the package client factory and cloud settings to <code>configure_provider</code></td>
+<td>Invoke the package&apos;s native model or deployment operation</td>
+</tr>
+<tr>
+<td>Replicate and fal.ai</td>
+<td>Pass the package client factory to <code>configure_provider</code></td>
+<td>Submit a job, then check its status or cancel with its ID</td>
+</tr>
+</tbody></table>
+<p>For native clients, <code>configure_provider</code> returns the package client and</p>
+<p>selected model. For SDK calls it returns a provider dictionary for</p>
+<p><code>create_client</code>. The <a href="https://github.com/kujolang/ai-sdk/blob/43164526150d93f21209c0128d33de7ca9e77b6e/docs/PROVIDER_SETUP.md">common configuration guide</a></p>
+<p>shows both paths with examples.</p>
 <h2 id="ai-sdk-presets">AI SDK presets</h2>
 <p>These ten presets are available from a pinned AI SDK source checkout. The</p>
 <p>published AI SDK 1.2.0 package predates them. Use Kujo 1.9.0 and supply the</p>
@@ -402,21 +443,14 @@ kujo kennel install</code></pre>
 <td>Text embeddings, reranking, and Reader URL extraction</td>
 </tr>
 </tbody></table>
-<h3 id="configure-a-preset">Configure a preset</h3>
-<pre><code class="language-bash">git clone https://github.com/kujolang/ai-sdk.git
-cd ai-sdk
-git checkout c2223914ac1ac40c44e2fe7b395b16bf1f58210d
-export KUJO_MODULE_PATH=&quot;$PWD/src&quot;
-kujo run examples/provider_quickstart.kujo -- llama-cpp models YOUR_MODEL_ID
-kujo run examples/provider_quickstart.kujo -- llama-cpp chat YOUR_MODEL_ID</code></pre>
-<p>Start your local server before running <code>models</code> or <code>chat</code>. To use another</p>
-<p>preset, replace <code>llama-cpp</code> with its ID and set the credential listed above</p>
-<p>when the server requires one. For Voyage and Jina, use <code>embed</code> or <code>rerank</code></p>
-<p>with a model ID for that operation. A custom local or self-hosted endpoint can</p>
-<p>be set through <code>KUJO_PROVIDER_BASE_URL</code> and optionally <code>KUJO_PROVIDER_API_KEY</code>.</p>
-<p>Tool calls, structured output, and embeddings depend on the model and</p>
-<p>serving configuration. The setup guide explains the opt-ins, local server</p>
-<p>settings, and troubleshooting. <a href="https://github.com/kujolang/ai-sdk/blob/c2223914ac1ac40c44e2fe7b395b16bf1f58210d/docs/PROVIDER_SETUP.md">AI SDK provider setup</a></p>
+<h3 id="run-a-built-in-preset">Run a built-in preset</h3>
+<p>With the same checkout and module path, start your local server and run:</p>
+<pre><code class="language-bash">kujo run &quot;$AI_SDK_ROOT/examples/provider_quickstart.kujo&quot; -- llama-cpp models YOUR_MODEL_ID
+kujo run &quot;$AI_SDK_ROOT/examples/provider_quickstart.kujo&quot; -- llama-cpp chat YOUR_MODEL_ID</code></pre>
+<p>For Voyage and Jina, use <code>embed</code> or <code>rerank</code> with a model ID for that</p>
+<p>operation. Use <code>KUJO_PROVIDER_BASE_URL</code> and optionally</p>
+<p><code>KUJO_PROVIDER_API_KEY</code> to configure a self-hosted endpoint. Tools, schemas</p>
+<p>and embeddings depend on the selected model and server options.</p>
 <h2 id="provider-sections">Provider sections</h2>
 <p>Each section gives the package, immutable release, official documentation, native surface, AI SDK status, authentication variable, and a small starting point. Model IDs are copied from the provider repository examples; verify availability with the provider before using them in production.</p>
 <h3 id="ollama">Ollama</h3>
@@ -581,7 +615,7 @@ print(result[&quot;data&quot;])</code></pre>
 </ul>
 <p>Standalone package evidence date: 2026-08-30. Recheck the linked Kujo repository and official provider documentation before pinning a new release or model in a production system.</p><!--/email_off--></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/learn/packages/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/ai-sdk/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#choose-a-provider">Choose a provider</a></li><li class="toc-level-2"><a href="#install-a-provider">Install a provider</a></li><li class="toc-level-2"><a href="#ai-sdk-presets">AI SDK presets</a></li><li class="toc-level-2"><a href="#provider-sections">Provider sections</a></li><li class="toc-level-2"><a href="#contracts-and-related-guides">Contracts and related guides</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#choose-a-provider">Choose a provider</a></li><li class="toc-level-2"><a href="#configure-a-provider">Configure a provider</a></li><li class="toc-level-2"><a href="#ai-sdk-presets">AI SDK presets</a></li><li class="toc-level-2"><a href="#provider-sections">Provider sections</a></li><li class="toc-level-2"><a href="#contracts-and-related-guides">Contracts and related guides</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">

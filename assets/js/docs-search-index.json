@@ -349,9 +349,9 @@
       ],
       "headings": [
         "Choose a provider",
-        "Install a provider",
+        "Configure a provider",
         "AI SDK presets",
-        "Configure a preset",
+        "Run a built-in preset",
         "Provider sections",
         "Ollama",
         "Anthropic",
@@ -380,7 +380,7 @@
         "Baseten",
         "Contracts and related guides"
       ],
-      "text": "Kujo has 35 provider integrations. Choose a standalone package choose-a-provider for native APIs or a shared AI SDK preset ai-sdk-presets for local inference, hosted chat, embeddings, and reranking. Choose a provider This table lists the 25 standalone provider packages reviewed on 2026-08-30 . AI SDK means the package exports a public provider factory and de"
+      "text": "Kujo has 35 provider integrations. Choose a standalone package choose-a-provider or a built-in AI SDK preset ai-sdk-presets for local inference, hosted models, retrieval, or native jobs. Start every integration with the same setup workflow configure-a-provider . Choose a provider This table lists the 25 standalone provider packages reviewed on 2026-08-30 . A"
     },
     {
       "title": "Ecosystem releases",
@@ -1131,7 +1131,7 @@
       "headings": [
         "Use it when",
         "Install",
-        "Provider presets from source",
+        "Configure an integration from source",
         "What 1.2.0 changes",
         "Streaming and compatibility",
         "Accounting boundaries",

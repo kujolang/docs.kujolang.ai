@@ -109,12 +109,12 @@
 <pre><code class="language-bash">kennel add ai-sdk@1.2.0
 kennel install</code></pre>
 <p>Import <code>src/ai_sdk.kujo</code> and <code>src/providers.kujo</code>. AI SDK is a library; it has no separate CLI. In a checkout, run <code>kujo run examples/main.kujo</code> to try fixtures without a provider key.</p>
-<h2 id="provider-presets-from-source">Provider presets from source</h2>
-<p>The AI SDK source checkout adds ten presets for local inference, hosted chat,</p>
-<p>embeddings, and reranking. Use <code>configure_provider</code> from <code>provider_registry</code></p>
-<p>with the preset ID and your model ID. The provider index gives the source</p>
-<p>pin, endpoint defaults, credentials, and quickstart commands.</p>
-<p><a href="/ecosystem/providers/#ai-sdk-presets">Configure an AI SDK preset</a></p>
+<h2 id="configure-an-integration-from-source">Configure an integration from source</h2>
+<p>The AI SDK source registry gives all 35 integrations one setup entry point.</p>
+<p>The 20 packaged SDK drivers use their existing protocols, and five cloud or</p>
+<p>media packages return native clients for their own operations. Use the</p>
+<p><a href="/ecosystem/providers/#configure-a-provider">provider configuration guide</a></p>
+<p>for the source pin, install commands, credentials, and starter code.</p>
 <h2 id="what-1-2-0-changes">What 1.2.0 changes</h2>
 <ul>
 <li>Client copies share persistent process-local counters. Inspect them with <code>client_state</code>; use the documented reset APIs for cleanup.</li>
@@ -144,7 +144,7 @@ kennel install</code></pre>
 <h3 id="runtime-for-incremental-http-collection">Runtime for incremental HTTP collection</h3>
 <p>Kujo 1.8.2 includes <code>http_stream_collect</code>, supporting the optional transport-chunk callback. Older published 1.5/1.6 runtime limitations remain historical compatibility boundaries; upgrading the runtime does not change provider credentials or application retry and streaming policy.</p><!--/email_off--></div><nav class="docs-prev-next" aria-label="Previous and next pages"><a class="docs-pagination-link docs-pagination-prev" href="/tools/rag/" rel="prev"><span>Previous</span></a><a class="docs-pagination-link docs-pagination-next" href="/tools/agents-sdk/" rel="next"><span>Next</span></a></nav>
 	</article>
-	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when</a></li><li class="toc-level-2"><a href="#install">Install</a></li><li class="toc-level-2"><a href="#provider-presets-from-source">Provider presets from source</a></li><li class="toc-level-2"><a href="#what-1-2-0-changes">What 1.2.0 changes</a></li><li class="toc-level-2"><a href="#streaming-and-compatibility">Streaming and compatibility</a></li><li class="toc-level-2"><a href="#accounting-boundaries">Accounting boundaries</a></li><li class="toc-level-2"><a href="#verification">Verification</a></li><li class="toc-level-2"><a href="#related-tools">Related tools</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li><li class="toc-level-2"><a href="#license">License</a></li></ol></nav>
+	<nav class="docs-toc" aria-label="On this page"><h2 id="on-this-page">On this page</h2><ol><li class="toc-level-2"><a href="#use-it-when">Use it when</a></li><li class="toc-level-2"><a href="#install">Install</a></li><li class="toc-level-2"><a href="#configure-an-integration-from-source">Configure an integration from source</a></li><li class="toc-level-2"><a href="#what-1-2-0-changes">What 1.2.0 changes</a></li><li class="toc-level-2"><a href="#streaming-and-compatibility">Streaming and compatibility</a></li><li class="toc-level-2"><a href="#accounting-boundaries">Accounting boundaries</a></li><li class="toc-level-2"><a href="#verification">Verification</a></li><li class="toc-level-2"><a href="#related-tools">Related tools</a></li><li class="toc-level-2"><a href="#reference">Reference</a></li><li class="toc-level-2"><a href="#license">License</a></li></ol></nav>
 </main>
 
 <footer class="docs-footer" id="footer">
