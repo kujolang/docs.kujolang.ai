@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.8 - 2026-11-20
+
+- Align install, upgrade and runtime documentation with Kujo 1.10.0.
+
 ## Unreleased
 
 - Document ten AI SDK source presets alongside the 25 standalone provider packages, with endpoint defaults, credential names and quickstart commands.

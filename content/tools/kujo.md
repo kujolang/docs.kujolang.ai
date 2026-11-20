@@ -7,9 +7,9 @@ nav_title: Kujo
 order: 10
 audience: developer
 difficulty: beginner
-status: stable v1.9.0
-version: 1.9.0
-last_updated: 2026-10-22
+status: stable v1.10.0
+version: 1.10.0
+last_updated: 2026-11-20
 scope: local-first
 source_repo: kujo
 next: /tools/kennel/
@@ -56,7 +56,7 @@ Start here, then add [Kennel](/tools/kennel/) when the project needs dependencie
 
 ## Boundaries
 
-Kujo `v1.9.0` is the current published stable release. The CLI coordinates repository-owned Agent Projects, but their provider, runtime, retrieval, evaluation, observability, and package capabilities remain explicit ecosystem dependencies rather than hidden core services.
+Kujo `v1.10.0` is the current published stable release. The CLI coordinates repository-owned Agent Projects, but their provider, runtime, retrieval, evaluation, observability, and package capabilities remain explicit ecosystem dependencies rather than hidden core services.
 
 ## What changed in 1.8
 
@@ -98,6 +98,16 @@ Use `kujo --help`, `kujo agent --help`, `kujo doctor --json`, the [language basi
 
 See the [release notes](https://github.com/kujolang/kujo/blob/main/docs/RELEASE_NOTES_1_8_2.md). Rust 1.89 remains the source-build minimum; experimental companion protocols and participant SDKs are not promoted by this patch.
 
+
+## Kujo 1.10.0 runtime release
+
+[Kujo 1.10.0](https://github.com/kujolang/kujo/releases/tag/v1.10.0)
+includes runtime correctness fixes, bounded loop and collection optimizations,
+date and timezone dependency maintenance, and separate Linux/macOS and Windows
+JIT memory disclosures. See the
+[release notes](https://github.com/kujolang/kujo/blob/main/docs/RELEASE_NOTES_1_10_0.md)
+and [publication record](https://github.com/kujolang/kujo/blob/main/release/kujo-1.10.0-publication.json)
+for compatibility and verification details.
 
 ## Kujo 1.9.0 runtime release
 
