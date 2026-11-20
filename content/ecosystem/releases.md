@@ -139,7 +139,7 @@ The Kujo Pi row was refreshed on September 26, 2026. Other entries retain their 
 
 ## Tags and source-only packages
 
-The [25-provider index](/ecosystem/providers/) records pinned source tags and driver compatibility. Many provider tags have no corresponding GitHub Release. Their tag-based installation instructions remain valid; do not substitute an older GitHub Release solely because it has a release page. AI SDK's documented 1.1.0 provider baseline is likewise distinct from its latest GitHub Release.
+The [provider index](/ecosystem/providers/) records pinned source tags and driver compatibility for 25 standalone packages and documents ten presets available from an AI SDK source checkout. Many provider tags have no corresponding GitHub Release. Their tag-based installation instructions remain valid; do not substitute an older GitHub Release solely because it has a release page. AI SDK's documented 1.1.0 provider baseline is likewise distinct from its latest GitHub Release.
 
 Kujo Pi 1.1.0 is published on GitHub and npm; install `npm:@kujolang/kujo-pi@1.1.0` through Pi. See [Kujo Pi](/tools/kujo-pi/) for its separate host and runtime requirements. Repositories without a GitHub Release, including infrastructure and some application sources, are not assigned invented release versions here. Private projects retain their documented access boundaries.
 

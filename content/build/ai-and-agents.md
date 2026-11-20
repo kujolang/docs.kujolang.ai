@@ -36,7 +36,7 @@ For a cross-cutting Kujo project, begin with the [`kujo-way-development`](/colle
 - [Dispatch](/tools/dispatch/) for resumable, auditable workflows.
 - [Watchdog](/tools/watchdog/) for local request, cost, latency, error, and audit visibility.
 
-Choose a package from the [provider index](/ecosystem/providers/) when a live model is part of the question. Begin with fixture mode when it is not. Add live credentials only at the boundary where they are needed.
+Choose a package or AI SDK preset from the [provider index](/ecosystem/providers/) when a live model is part of the question. Begin with fixture mode when it is not. Add live credentials only at the boundary where they are needed.
 
 ## Make videos with an agent
 

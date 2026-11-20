@@ -9,7 +9,7 @@ audience: developer
 difficulty: intermediate
 status: release documented
 version: 1.2.0
-last_updated: 2026-10-13
+last_updated: 2026-11-20
 scope: local-first
 source_repo: ai-sdk
 previous: /tools/rag/
@@ -32,6 +32,14 @@ kennel install
 ```
 
 Import `src/ai_sdk.kujo` and `src/providers.kujo`. AI SDK is a library; it has no separate CLI. In a checkout, run `kujo run examples/main.kujo` to try fixtures without a provider key.
+
+## Provider presets from source
+
+The AI SDK source checkout adds ten presets for local inference, hosted chat,
+embeddings, and reranking. Use `configure_provider` from `provider_registry`
+with the preset ID and your model ID. The provider index gives the source
+pin, endpoint defaults, credentials, and quickstart commands.
+[Configure an AI SDK preset](/ecosystem/providers/#ai-sdk-presets)
 
 ## What 1.2.0 changes
 

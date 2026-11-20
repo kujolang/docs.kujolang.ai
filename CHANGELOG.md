@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Document ten AI SDK source presets alongside the 25 standalone provider packages, with endpoint defaults, credential names and quickstart commands.
+
 - Adopt SiteKit 1.2.0 with complete optional recipes and current release guidance; preserve upstream HTML bytes during docs postprocessing and verify the full distribution manifest.
 
 ## 1.4.6 — 2026-10-19

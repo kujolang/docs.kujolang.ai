@@ -1,6 +1,6 @@
 ---
 title: Providers
-description: Choose and install a Kujo provider package, then move from a first request to native features.
+description: Find 35 Kujo integrations for local inference, hosted models, media, embeddings, and reranking.
 template: docs
 section: Ecosystem
 nav_title: Providers
@@ -9,17 +9,17 @@ audience: developer
 difficulty: beginner
 status: source-backed inventory
 version: current
-last_updated: 2026-09-09
+last_updated: 2026-11-20
 previous: /learn/packages/
 next: /tools/ai-sdk/
 tags: [ecosystem, providers, ai, packages]
 ---
 
-Kujo provider packages keep each provider's wire format visible while offering a normalized AI SDK driver when the package supports one. Choose a package here, install its immutable tag with Kennel, and use the provider's native API first when you need provider-specific fields.
+Kujo has 35 provider integrations. Choose a [standalone package](#choose-a-provider) for native APIs or a [shared AI SDK preset](#ai-sdk-presets) for local inference, hosted chat, embeddings, and reranking.
 
 ## Choose a provider
 
-The inventory below is checked against the official Kujo provider repositories on **2026-08-30**. `AI SDK` means the package exports a public provider factory and depends on AI SDK `v1.1.0`; `Native only` means no normalized driver is advertised in that package release.
+This table lists the 25 standalone provider packages reviewed on **2026-08-30**. `AI SDK` means the package exports a public provider factory and depends on AI SDK `v1.1.0`; `Native only` means no normalized driver is advertised in that package release.
 
 | Provider | Kujo package | Release tag | Protocol | AI SDK | Authentication |
 | --- | --- | --- | --- | --- | --- |
@@ -49,7 +49,7 @@ The inventory below is checked against the official Kujo provider repositories o
 | [fal.ai](#fal-ai) | `fal` | `v0.1.1` | Queue and media inference API | Native only | `FAL_KEY` |
 | [Baseten](#baseten) | `baseten` | `v0.1.1` | OpenAI-compatible deployment API | Yes | `BASETEN_API_KEY` |
 
-All package versions above are immutable Git tags. The public package registry is not yet operated, so install from GitHub tags rather than using an unqualified package name.
+The package versions above are immutable Git tags. The installation example pins those tags directly.
 
 ## Install a provider
 
@@ -61,6 +61,46 @@ kujo kennel install
 ```
 
 Then export the provider's credential in your shell or secret manager. Never put a real key in a `.kujo` file, a lockfile, or a committed example. The package repositories and [Packages with Kennel](/learn/packages/) explain the local lockfile and trust boundary.
+
+## AI SDK presets
+
+These ten presets are available from a pinned AI SDK source checkout. The
+published AI SDK 1.2.0 package predates them. Use Kujo 1.9.0 and supply the
+model ID from your deployment or provider account.
+
+| Provider | Preset ID | Default endpoint | API key environment variable | Use it for |
+| --- | --- | --- | --- | --- |
+| [LM Studio](https://lmstudio.ai/docs/developer/rest) | `lm-studio` | `http://127.0.0.1:1234/v1` | `LM_STUDIO_API_KEY` optional | Chat, embeddings, model discovery and management |
+| [vLLM](https://docs.vllm.ai/en/latest/serving/openai_compatible_server/) | `vllm` | `http://127.0.0.1:8000/v1` | `VLLM_API_KEY` optional | Self-hosted chat, streaming and embeddings with a pooling runner |
+| [llama.cpp](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md) | `llama-cpp` | `http://127.0.0.1:8080/v1` | `LLAMA_CPP_API_KEY` optional | Local GGUF chat, streaming, schema-constrained output and pooled embeddings |
+| [SGLang](https://docs.sglang.io/docs/advanced_features/structured_outputs) | `sglang` | `http://127.0.0.1:30000/v1` | `SGLANG_API_KEY` optional | Self-hosted chat, streaming, and deployment-specific tools and schemas |
+| [Moonshot AI / Kimi](https://platform.kimi.ai/docs/get-your-api-key) | `moonshot` | `https://api.moonshot.ai/v1` | `MOONSHOT_API_KEY` | Direct chat, streaming and model-specific reasoning |
+| [MiniMax](https://platform.minimax.io/docs/api-reference/text-openai-api) | `minimax` | `https://api.minimax.io/v1` | `MINIMAX_API_KEY` | Chat, streaming and synchronous text-to-speech |
+| [SiliconFlow](https://docs.siliconflow.com/en/api-reference/chat-completions/chat-completions) | `siliconflow` | `https://api.siliconflow.com/v1` | `SILICONFLOW_API_KEY` | Hosted chat, streaming and embeddings |
+| [Novita AI](https://docs.novita.ai/guides/llm-api) | `novita` | `https://api.novita.ai/openai/v1` | `NOVITA_API_KEY` | Hosted chat, streaming and model-specific schemas |
+| [Voyage AI](https://docs.voyageai.com/reference/embeddings-api) | `voyage` | `https://api.voyageai.com/v1` | `VOYAGE_API_KEY` | Text embeddings and reranking with independent model selection |
+| [Jina AI](https://docs.jina.ai/) | `jina` | `https://api.jina.ai/v1` | `JINA_API_KEY` | Text embeddings, reranking, and Reader URL extraction |
+
+### Configure a preset
+
+```bash
+git clone https://github.com/kujolang/ai-sdk.git
+cd ai-sdk
+git checkout c2223914ac1ac40c44e2fe7b395b16bf1f58210d
+export KUJO_MODULE_PATH="$PWD/src"
+kujo run examples/provider_quickstart.kujo -- llama-cpp models YOUR_MODEL_ID
+kujo run examples/provider_quickstart.kujo -- llama-cpp chat YOUR_MODEL_ID
+```
+
+Start your local server before running `models` or `chat`. To use another
+preset, replace `llama-cpp` with its ID and set the credential listed above
+when the server requires one. For Voyage and Jina, use `embed` or `rerank`
+with a model ID for that operation. A custom local or self-hosted endpoint can
+be set through `KUJO_PROVIDER_BASE_URL` and optionally `KUJO_PROVIDER_API_KEY`.
+
+Tool calls, structured output, and embeddings depend on the model and
+serving configuration. The setup guide explains the opt-ins, local server
+settings, and troubleshooting. [AI SDK provider setup](https://github.com/kujolang/ai-sdk/blob/c2223914ac1ac40c44e2fe7b395b16bf1f58210d/docs/PROVIDER_SETUP.md)
 
 ## Provider sections
 
@@ -402,4 +442,4 @@ The documented provider compatibility baseline from 2026-08-30 is Kujo `v1.1.0`,
 - [AI and agents](/build/ai-and-agents/) — the path from a provider call to agents and workflows.
 - [Release boundaries](/release-boundaries/) — how to interpret repository maturity and evidence.
 
-Evidence date: 2026-08-30. Recheck the linked Kujo repository and official provider documentation before pinning a new release or model in a production system.
+Standalone package evidence date: 2026-08-30. Recheck the linked Kujo repository and official provider documentation before pinning a new release or model in a production system.
