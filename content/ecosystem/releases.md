@@ -10,11 +10,15 @@ audience: all
 difficulty: beginner
 status: dated release inventory
 version: current
-last_updated: 2026-10-22
+last_updated: 2026-11-20
 tags: [ecosystem, releases, versions, installation]
 ---
 
 This inventory was checked against all **86 public kujolang repositories on September 9, 2026**, with Scout and ReaderSignal refreshed from their September 26 releases, the first companion batch from September 28, Workcell/Ability/MCP and Dispatch from September 29, SSG from October 12, Kujo from October 4, Tribunal from October 7, Commerce from October 10, and AI SDK and Agents SDK from October 13. Product releases, protocol versions, repository tags, and the docs site's version are separate. The table lists the latest non-draft, non-prerelease **GitHub Release** found for each package; it does not claim that every current default-branch feature exists in that release.
+
+## Software Factory 0.2.0
+
+[Software Factory 0.2.0](https://github.com/kujolang/software-factory/releases/tag/0.2.0) turns supported software missions into independently tested local candidates with portable evidence. The [Software Factory guide](/showcases/software-factory/) covers the pinned Git and npm setup, qualified runtime profiles, and local review boundaries.
 
 ## Source 0.1.0 — October 14, 2026
 

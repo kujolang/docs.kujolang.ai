@@ -15,6 +15,8 @@ tags: [ecosystem, showcases]
 
 The showcase set includes:
 
+- [Software Factory](/showcases/software-factory/) — take a software brief or issue through independent local tests and export evidence for review.
+
 - [Agent City](/showcases/agent-city/) — run local agent tasks, follow observed work through a pixel-art city, review outputs, and replay recorded runs.
 
 - [CMS](/showcases/cms/) — framework-neutral content, administration, extensions, SEO, identity, abilities, MCP, WebMCP, and production operations.
