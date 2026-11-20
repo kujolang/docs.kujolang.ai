@@ -12,7 +12,7 @@ version: current
 last_updated: 2026-11-20
 previous: /learn/packages/
 next: /tools/ai-sdk/
-tags: [ecosystem, providers, ai, packages]
+tags: [ecosystem, providers, ai, packages, LM Studio, vLLM, llama.cpp, SGLang, Moonshot AI, Kimi, MiniMax, SiliconFlow, Novita AI, Voyage AI, Jina AI]
 ---
 
 Kujo has 35 provider integrations. Choose a [standalone package](#choose-a-provider) for native APIs or a [shared AI SDK preset](#ai-sdk-presets) for local inference, hosted chat, embeddings, and reranking.
