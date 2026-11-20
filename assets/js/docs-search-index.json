@@ -336,7 +336,7 @@
     },
     {
       "title": "Providers",
-      "description": "Choose and install a Kujo provider package, then move from a first request to native features.",
+      "description": "Find 35 Kujo integrations for local inference, hosted models, media, embeddings, and reranking.",
       "url": "https://docs.kujolang.ai/ecosystem/providers/",
       "route": "ecosystem/providers/",
       "section": "Ecosystem",
@@ -350,6 +350,8 @@
       "headings": [
         "Choose a provider",
         "Install a provider",
+        "AI SDK presets",
+        "Configure a preset",
         "Provider sections",
         "Ollama",
         "Anthropic",
@@ -378,7 +380,7 @@
         "Baseten",
         "Contracts and related guides"
       ],
-      "text": "Kujo provider packages keep each provider's wire format visible while offering a normalized AI SDK driver when the package supports one. Choose a package here, install its immutable tag with Kennel, and use the provider's native API first when you need provider-specific fields. Choose a provider The inventory below is checked against the official Kujo provid"
+      "text": "Kujo has 35 provider integrations. Choose a standalone package choose-a-provider for native APIs or a shared AI SDK preset ai-sdk-presets for local inference, hosted chat, embeddings, and reranking. Choose a provider This table lists the 25 standalone provider packages reviewed on 2026-08-30 . AI SDK means the package exports a public provider factory and de"
     },
     {
       "title": "Ecosystem releases",
@@ -1129,6 +1131,7 @@
       "headings": [
         "Use it when",
         "Install",
+        "Provider presets from source",
         "What 1.2.0 changes",
         "Streaming and compatibility",
         "Accounting boundaries",
