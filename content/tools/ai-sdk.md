@@ -24,7 +24,7 @@ You need chat or embedding calls with a shared response contract, retries, redac
 
 ## Install
 
-AI SDK 1.2.0 requires Kujo 1.6.0 or newer and Kennel 1.1.0 or newer:
+Install the published AI SDK 1.2.0 package with Kennel 1.1.0 or newer and Kujo 1.6.0 or newer. [Kennel AI SDK releases](https://kennel.kujolang.ai/ai-sdk/)
 
 ```bash
 kennel add ai-sdk@1.2.0

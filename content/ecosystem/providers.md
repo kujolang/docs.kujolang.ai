@@ -51,6 +51,8 @@ This table lists the 25 standalone provider packages reviewed on **2026-08-30**.
 
 The package versions above are immutable Git tags. The installation example pins those tags directly.
 
+Compare integrations and open their starters in the [Kujo Providers directory](https://kujolang.ai/providers/).
+
 ## Configure a provider
 
 Use Kujo 1.9.0. From your application directory, check out the SDK source
@@ -71,7 +73,8 @@ Replace `anthropic` with the provider ID. The `setup` command prints the
 pinned install commands, package import, credential environment variable
 names, and starter code for that provider. If the project has no Kennel
 manifest, first run `kujo run "$KENNEL_SCRIPT" -- init --name my-app`.
-Set your credential through the shell or a secret manager.
+Set your credential through the shell or a secret manager. Install Kennel
+first if you need to add a standalone package. [Kennel installation](https://kennel.kujolang.ai/getting-started/)
 
 | Use | Configuration | First operation |
 | --- | --- | --- |
