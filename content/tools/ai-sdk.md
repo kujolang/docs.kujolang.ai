@@ -33,13 +33,13 @@ kennel install
 
 Import `src/ai_sdk.kujo` and `src/providers.kujo`. AI SDK is a library; it has no separate CLI. In a checkout, run `kujo run examples/main.kujo` to try fixtures without a provider key.
 
-## Provider presets from source
+## Configure an integration from source
 
-The AI SDK source checkout adds ten presets for local inference, hosted chat,
-embeddings, and reranking. Use `configure_provider` from `provider_registry`
-with the preset ID and your model ID. The provider index gives the source
-pin, endpoint defaults, credentials, and quickstart commands.
-[Configure an AI SDK preset](/ecosystem/providers/#ai-sdk-presets)
+The AI SDK source registry gives all 35 integrations one setup entry point.
+The 20 packaged SDK drivers use their existing protocols, and five cloud or
+media packages return native clients for their own operations. Use the
+[provider configuration guide](/ecosystem/providers/#configure-a-provider)
+for the source pin, install commands, credentials, and starter code.
 
 ## What 1.2.0 changes
 
