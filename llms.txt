@@ -55,6 +55,7 @@ A local-first path through the Kujo language and ecosystem.
 - [CRUD API Showcase](https://docs.kujolang.ai/showcases/crud-api/) — A SQLite API and frontend playground showing auth strategies, recovery patterns, and contracts.
 - [Intake](https://docs.kujolang.ai/showcases/intake/) — Normalize inbound work, route it through policy, and require approval before external effects.
 - [Presentations](https://docs.kujolang.ai/showcases/presentations/) — Browser-native slide decks with static routes, reading and print editions, presenter tools, and optional motion.
+- [Software Factory](https://docs.kujolang.ai/showcases/software-factory/) — Turn a software brief or GitHub issue into a locally tested candidate with evidence you can review and verify offline.
 - [SSG](https://docs.kujolang.ai/showcases/ssg/) — Deterministic Markdown-to-site publishing with templates, feeds, sitemap, and llms.txt.
 - [TotalRecall](https://docs.kujolang.ai/showcases/totalrecall/) — A local-first ingestion showcase for meetings, chat exports, Slack threads, and GitHub activity.
 - [Start here](https://docs.kujolang.ai/start-here/) — Choose the shortest path from discovering Kujo to running a program or repository-owned agent.

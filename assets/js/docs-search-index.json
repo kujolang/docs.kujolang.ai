@@ -394,6 +394,7 @@
         "[ecosystem, releases, versions, installation]"
       ],
       "headings": [
+        "Software Factory 0.2.0",
         "Source 0.1.0 \u2014 October 14, 2026",
         "October 21 companion updates",
         "Start here",
@@ -427,7 +428,7 @@
         "[ecosystem, showcases]"
       ],
       "headings": [],
-      "text": "The showcase set includes: - Agent City /showcases/agent-city/ \u2014 run local agent tasks, follow observed work through a pixel-art city, review outputs, and replay recorded runs. - CMS /showcases/cms/ \u2014 framework-neutral content, administration, extensions, SEO, identity, abilities, MCP, WebMCP, and production operations. - CRUD API Showcase /showcases/crud-ap"
+      "text": "The showcase set includes: - Software Factory /showcases/software-factory/ \u2014 take a software brief or issue through independent local tests and export evidence for review. - Agent City /showcases/agent-city/ \u2014 run local agent tasks, follow observed work through a pixel-art city, review outputs, and replay recorded runs. - CMS /showcases/cms/ \u2014 framework-neut"
     },
     {
       "title": "Tooling",
@@ -987,6 +988,26 @@
         "Reference"
       ],
       "text": "Kujo Presentations turns structured deck source into a browser-native static site. Each deck gets numbered slide URLs, an overview, a reading edition, print and PDF output, and an optional presenter console. The source stays in normal files instead of a proprietary presentation format. Use it when\u2026 You need a deck that can be reviewed in Git, hosted as stati"
+    },
+    {
+      "title": "Software Factory",
+      "description": "Turn a software brief or GitHub issue into a locally tested candidate with evidence you can review and verify offline.",
+      "url": "https://docs.kujolang.ai/showcases/software-factory/",
+      "route": "showcases/software-factory/",
+      "section": "Showcases",
+      "audience": "developer",
+      "difficulty": "intermediate",
+      "status": "local scope verified",
+      "version": "0.2.0",
+      "tags": [
+        "[showcase, agents, workcell, testing, evidence]"
+      ],
+      "headings": [
+        "What you can do",
+        "Install the tagged release",
+        "Review the boundaries"
+      ],
+      "text": "Start with an idea, a reviewed spec, a supported local repository, or a GitHub issue. Software Factory 0.2.0 gives you a candidate you can inspect, the checks that ran against it, and an evidence bundle a second operator can verify offline. What you can do - Freeze requirements and acceptance criteria with Spec before construction. The pinned catalog include"
     },
     {
       "title": "SSG",
