@@ -6,6 +6,10 @@
 
 ## Unreleased
 
+- Link the provider setup guide to the public directory, Kennel onboarding, and the released AI SDK package.
+
+- Give all 35 provider integrations one setup guide with pinned install commands and operation-specific examples.
+
 - Document ten AI SDK source presets alongside the 25 standalone provider packages, with endpoint defaults, credential names and quickstart commands.
 
 - Adopt SiteKit 1.2.0 with complete optional recipes and current release guidance; preserve upstream HTML bytes during docs postprocessing and verify the full distribution manifest.

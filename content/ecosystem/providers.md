@@ -15,7 +15,7 @@ next: /tools/ai-sdk/
 tags: [ecosystem, providers, ai, packages, LM Studio, vLLM, llama.cpp, SGLang, Moonshot AI, Kimi, MiniMax, SiliconFlow, Novita AI, Voyage AI, Jina AI]
 ---
 
-Kujo has 35 provider integrations. Choose a [standalone package](#choose-a-provider) for native APIs or a [shared AI SDK preset](#ai-sdk-presets) for local inference, hosted chat, embeddings, and reranking.
+Kujo has 35 provider integrations. Choose a [standalone package](#choose-a-provider) or a [built-in AI SDK preset](#ai-sdk-presets) for local inference, hosted models, retrieval, or native jobs. Start every integration with the [same setup workflow](#configure-a-provider).
 
 ## Choose a provider
 
@@ -51,16 +51,42 @@ This table lists the 25 standalone provider packages reviewed on **2026-08-30**.
 
 The package versions above are immutable Git tags. The installation example pins those tags directly.
 
-## Install a provider
+Compare integrations and open their starters in the [Kujo Providers directory](https://kujolang.ai/providers/).
 
-Install the package into the project's Kennel lockfile. Replace `PACKAGE` and `TAG` with a row from the table:
+## Configure a provider
+
+Use Kujo 1.9.0. From your application directory, check out the SDK source
+revision that includes the common provider registry. The published AI SDK
+1.2.0 package predates it.
 
 ```bash
-kujo kennel add github:kujolang/PACKAGE@TAG
-kujo kennel install
+git clone https://github.com/kujolang/ai-sdk.git
+git -C ai-sdk checkout 43164526150d93f21209c0128d33de7ca9e77b6e
+export AI_SDK_ROOT="$PWD/ai-sdk"
+export KENNEL_SCRIPT=/path/to/kennel/kennel.kujo
+export KUJO_MODULE_PATH="$AI_SDK_ROOT/src:$PWD/kennel_packages"
+kujo run "$AI_SDK_ROOT/examples/provider_quickstart.kujo" -- list
+kujo run "$AI_SDK_ROOT/examples/provider_quickstart.kujo" -- anthropic setup
 ```
 
-Then export the provider's credential in your shell or secret manager. Never put a real key in a `.kujo` file, a lockfile, or a committed example. The package repositories and [Packages with Kennel](/learn/packages/) explain the local lockfile and trust boundary.
+Replace `anthropic` with the provider ID. The `setup` command prints the
+pinned install commands, package import, credential environment variable
+names, and starter code for that provider. If the project has no Kennel
+manifest, first run `kujo run "$KENNEL_SCRIPT" -- init --name my-app`.
+Set your credential through the shell or a secret manager. Install Kennel
+first if you need to add a standalone package. [Kennel installation](https://kennel.kujolang.ai/getting-started/)
+
+| Use | Configuration | First operation |
+| --- | --- | --- |
+| Built-in presets | `configure_provider(id, model, {})` | Chat or embeddings through the AI SDK |
+| Packaged SDK drivers | Add the package and pass its provider factory to `configure_provider` | The same SDK chat or embedding call when the driver supports it |
+| Bedrock, Azure AI and Vertex AI | Pass the package client factory and cloud settings to `configure_provider` | Invoke the package's native model or deployment operation |
+| Replicate and fal.ai | Pass the package client factory to `configure_provider` | Submit a job, then check its status or cancel with its ID |
+
+For native clients, `configure_provider` returns the package client and
+selected model. For SDK calls it returns a provider dictionary for
+`create_client`. The [common configuration guide](https://github.com/kujolang/ai-sdk/blob/43164526150d93f21209c0128d33de7ca9e77b6e/docs/PROVIDER_SETUP.md)
+shows both paths with examples.
 
 ## AI SDK presets
 
@@ -81,26 +107,19 @@ model ID from your deployment or provider account.
 | [Voyage AI](https://docs.voyageai.com/reference/embeddings-api) | `voyage` | `https://api.voyageai.com/v1` | `VOYAGE_API_KEY` | Text embeddings and reranking with independent model selection |
 | [Jina AI](https://docs.jina.ai/) | `jina` | `https://api.jina.ai/v1` | `JINA_API_KEY` | Text embeddings, reranking, and Reader URL extraction |
 
-### Configure a preset
+### Run a built-in preset
+
+With the same checkout and module path, start your local server and run:
 
 ```bash
-git clone https://github.com/kujolang/ai-sdk.git
-cd ai-sdk
-git checkout c2223914ac1ac40c44e2fe7b395b16bf1f58210d
-export KUJO_MODULE_PATH="$PWD/src"
-kujo run examples/provider_quickstart.kujo -- llama-cpp models YOUR_MODEL_ID
-kujo run examples/provider_quickstart.kujo -- llama-cpp chat YOUR_MODEL_ID
+kujo run "$AI_SDK_ROOT/examples/provider_quickstart.kujo" -- llama-cpp models YOUR_MODEL_ID
+kujo run "$AI_SDK_ROOT/examples/provider_quickstart.kujo" -- llama-cpp chat YOUR_MODEL_ID
 ```
 
-Start your local server before running `models` or `chat`. To use another
-preset, replace `llama-cpp` with its ID and set the credential listed above
-when the server requires one. For Voyage and Jina, use `embed` or `rerank`
-with a model ID for that operation. A custom local or self-hosted endpoint can
-be set through `KUJO_PROVIDER_BASE_URL` and optionally `KUJO_PROVIDER_API_KEY`.
-
-Tool calls, structured output, and embeddings depend on the model and
-serving configuration. The setup guide explains the opt-ins, local server
-settings, and troubleshooting. [AI SDK provider setup](https://github.com/kujolang/ai-sdk/blob/c2223914ac1ac40c44e2fe7b395b16bf1f58210d/docs/PROVIDER_SETUP.md)
+For Voyage and Jina, use `embed` or `rerank` with a model ID for that
+operation. Use `KUJO_PROVIDER_BASE_URL` and optionally
+`KUJO_PROVIDER_API_KEY` to configure a self-hosted endpoint. Tools, schemas
+and embeddings depend on the selected model and server options.
 
 ## Provider sections
 
