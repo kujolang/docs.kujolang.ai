@@ -345,7 +345,7 @@
       "status": "source-backed inventory",
       "version": "current",
       "tags": [
-        "[ecosystem, providers, ai, packages]"
+        "[ecosystem, providers, ai, packages, LM Studio, vLLM, llama.cpp, SGLang, Moonshot AI, Kimi, MiniMax, SiliconFlow, Novita AI, Voyage AI, Jina AI]"
       ],
       "headings": [
         "Choose a provider",
